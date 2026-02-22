@@ -1,0 +1,79 @@
+/* ============================================
+   Print-Optimized CSS for Questionnaires
+   ============================================ */
+
+@media print {
+  /* Hide navigation, search, and other UI elements */
+  .md-header,
+  .md-footer,
+  .md-sidebar,
+  .md-tabs,
+  .md-search,
+  .pwa-install-banner,
+  .md-top {
+    display: none !important;
+  }
+
+  /* Full width content */
+  .md-content {
+    margin: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .md-main__inner {
+    margin: 0 !important;
+  }
+
+  /* Page breaks */
+  h1, h2 {
+    page-break-after: avoid;
+  }
+
+  table {
+    page-break-inside: avoid;
+  }
+
+  .admonition, details {
+    page-break-inside: avoid;
+  }
+
+  /* Ensure tables fit on page */
+  .md-typeset table {
+    font-size: 10pt;
+  }
+
+  /* Print-friendly colors for admonitions */
+  .md-typeset .admonition.brzi-pregled {
+    border: 2px solid #2e7d32;
+    background: #f0f7f0 !important;
+  }
+
+  .md-typeset .admonition.crvena-zastavica {
+    border: 2px solid #c62828;
+    background: #fef0f0 !important;
+  }
+
+  .md-typeset .admonition.zamka {
+    border: 2px solid #ef6c00;
+    background: #fef5e0 !important;
+  }
+
+  /* Links show URL in print */
+  .md-typeset a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    color: #666;
+  }
+
+  /* Questionnaire-specific: ensure checkboxes are visible */
+  .md-typeset input[type="checkbox"] {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* A5 page size for booklet printing */
+  @page {
+    size: A5;
+    margin: 1.5cm;
+  }
+}
