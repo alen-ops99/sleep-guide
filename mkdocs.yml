@@ -1,0 +1,100 @@
+site_name: Vodič za poremećaje spavanja u PZZ
+site_description: Praktični vodič za liječnike obiteljske medicine — prepoznavanje, probir i trijaža poremećaja spavanja
+site_author: Alen Juginović, dr. med.
+site_url: ""
+
+theme:
+  name: material
+  custom_dir: docs/overrides
+  language: hr
+  palette:
+    - scheme: default
+      primary: custom
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: Tamni način
+    - scheme: slate
+      primary: custom
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Svijetli način
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.indexes
+    - navigation.footer
+    - search.highlight
+    - search.suggest
+    - search.share
+    - content.tabs.link
+    - toc.follow
+    - toc.integrate
+  icon:
+    logo: material/sleep
+
+nav:
+  - Početna: index.md
+  - Poglavlja:
+    - 1. Nesanica: guide/01-nesanica.md
+    - 2. Opstruktivna apneja u snu: guide/02-osa.md
+    - 3. RLS / PLMD: guide/03-rls-plmd.md
+    - 4. REM poremećaj ponašanja: guide/04-rbd.md
+    - 5. NREM parasomnije: guide/05-nrem-parasomnias.md
+    - 6. Narkolepsija: guide/06-narkolepsija.md
+    - 7. Idiopatska hipersomnija: guide/07-idiopatska-hipersomnija.md
+    - 8. Cirkadijani poremećaji: guide/08-cirkadijani-poremecaji.md
+    - 9. Bruksizam u snu: guide/09-bruksizam.md
+    - 10. Nedovoljan san: guide/10-nedovoljan-san.md
+    - 11. Noćne more: guide/11-poremecaj-nocnih-mora.md
+    - 12. SRED: guide/12-sred.md
+    - 13. Centralna apneja: guide/13-centralna-apneja.md
+  - Alati za probir:
+    - Upitnik za pacijente: screening/patient-questions-hr.md
+    - Klinički dijagrami toka: screening/clinical-flowchart.md
+    - Algoritmi bodovanja: screening/scoring-algorithms.md
+    - Dnevnik spavanja: screening/dnevnik-spavanja.md
+    - Predložak uputnice: screening/predlozak-uputnice.md
+  - Upitnici:
+    - ESS (pospanost): questionnaires/ess-hr.md
+    - STOP-BANG (apneja): questionnaires/stop-bang-hr.md
+    - IRLS (nemirne noge): questionnaires/irls-hr.md
+    - ISI (nesanica): questionnaires/isi-hr.md
+    - RBDSQ (RBD): questionnaires/rbdsq-hr.md
+  - Reference: guide/14-reference.md
+
+extra_css:
+  - stylesheets/custom.css
+
+extra:
+  social: []
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - tables
+  - attr_list
+  - md_in_html
+  - def_list
+  - toc:
+      permalink: true
+      toc_depth: 3
+
+plugins:
+  - search:
+      lang: hr
