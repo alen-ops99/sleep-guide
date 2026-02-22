@@ -1,0 +1,135 @@
+{% extends "main.html" %}
+
+{% block tabs %}
+  {{ super() }}
+{% endblock %}
+
+{% block content %}
+<div class="home-content">
+
+  <!-- Hero Section -->
+  <div class="home-hero">
+    <h1>Vodič za poremećaje spavanja</h1>
+    <p class="subtitle">Za liječnike obiteljske medicine</p>
+  </div>
+
+  <!-- Quick Access Buttons -->
+  <div class="quick-access">
+    <a href="questionnaires/ess-hr/">📋 Upitnici</a>
+    <a href="screening/clinical-flowchart/">🔀 Dijagrami</a>
+    <a href="screening/dnevnik-spavanja/">📓 Dnevnik</a>
+  </div>
+
+  <!-- Disorders Section -->
+  <div class="section-label">Poremećaji</div>
+
+  <div class="subsection-label">Često u ordinaciji</div>
+  <div class="card-grid">
+    <a href="guide/01-nesanica/">
+      <span class="card-icon">😴</span>
+      Nesanica
+      <span class="card-chapter">Pogl. 1</span>
+    </a>
+    <a href="guide/02-osa/">
+      <span class="card-icon">😤</span>
+      OSA
+      <span class="card-chapter">Pogl. 2</span>
+    </a>
+    <a href="guide/13-centralna-apneja/">
+      <span class="card-icon">💨</span>
+      CSA
+      <span class="card-chapter">Pogl. 13</span>
+    </a>
+  </div>
+
+  <div class="subsection-label">Često propušteni</div>
+  <div class="card-grid">
+    <a href="guide/03-rls-plmd/">
+      <span class="card-icon">🦵</span>
+      RLS
+      <span class="card-chapter">Pogl. 3</span>
+    </a>
+    <a href="guide/04-rbd/">
+      <span class="card-icon">🧠</span>
+      RBD
+      <span class="card-chapter">Pogl. 4</span>
+    </a>
+    <a href="guide/06-narkolepsija/">
+      <span class="card-icon">⚡</span>
+      Narkolepsija
+      <span class="card-chapter">Pogl. 6</span>
+    </a>
+    <a href="guide/07-idiopatska-hipersomnija/">
+      <span class="card-icon">🛌</span>
+      IH
+      <span class="card-chapter">Pogl. 7</span>
+    </a>
+    <a href="guide/08-cirkadijani-poremecaji/">
+      <span class="card-icon">🕐</span>
+      Cirkadijani
+      <span class="card-chapter">Pogl. 8</span>
+    </a>
+  </div>
+
+  <div class="subsection-label">Noćni događaji</div>
+  <div class="card-grid">
+    <a href="guide/05-nrem-parasomnias/">
+      <span class="card-icon">🚶</span>
+      NREM
+      <span class="card-chapter">Pogl. 5</span>
+    </a>
+    <a href="guide/09-bruksizam/">
+      <span class="card-icon">🦷</span>
+      Bruksizam
+      <span class="card-chapter">Pogl. 9</span>
+    </a>
+    <a href="guide/12-sred/">
+      <span class="card-icon">🍽️</span>
+      SRED
+      <span class="card-chapter">Pogl. 12</span>
+    </a>
+    <a href="guide/11-poremecaj-nocnih-mora/">
+      <span class="card-icon">👻</span>
+      Noćne more
+      <span class="card-chapter">Pogl. 11</span>
+    </a>
+    <a href="guide/10-nedovoljan-san/">
+      <span class="card-icon">⏰</span>
+      Nedovoljan san
+      <span class="card-chapter">Pogl. 10</span>
+    </a>
+  </div>
+
+  <!-- Tools Section -->
+  <div class="section-label">Alati</div>
+  <div class="card-grid">
+    <a href="screening/predlozak-uputnice/">
+      <span class="card-icon">📄</span>
+      Uputnica
+    </a>
+    <a href="screening/scoring-algorithms/">
+      <span class="card-icon">🔢</span>
+      Bodovanje
+    </a>
+    <a href="guide/14-reference/">
+      <span class="card-icon">📚</span>
+      Reference
+    </a>
+    <a href="screening/patient-questions-hr/">
+      <span class="card-icon">❓</span>
+      Probir
+    </a>
+  </div>
+
+  <!-- Author Footer -->
+  <div class="author-footer">
+    <strong>Alen Juginović, dr. med.</strong><br>
+    Harvard Medical School · Odjel za neurobiologiju<br>
+    <small>Posljednje ažuriranje: veljača 2026.</small>
+  </div>
+
+</div>
+
+<!-- Render the markdown content from index.md below the card grid -->
+{{ super() }}
+{% endblock %}
