@@ -1,0 +1,478 @@
+/* ============================================
+   Croatian Sleep Disorders Pocket Guide
+   Custom Medical Reference App Styling
+   ============================================ */
+
+/* --- Color System (CSS Custom Properties) --- */
+:root {
+  --md-primary-fg-color: #1a237e;
+  --md-primary-fg-color--light: #3949ab;
+  --md-primary-fg-color--dark: #0d1642;
+  --md-accent-fg-color: #00897b;
+
+  /* Clinical box colors */
+  --color-brzi-pregled: #2e7d32;
+  --color-brzi-pregled-bg: #e8f5e9;
+  --color-brzi-pregled-border: #4caf50;
+
+  --color-crvena-zastavica: #c62828;
+  --color-crvena-zastavica-bg: #ffebee;
+  --color-crvena-zastavica-border: #ef5350;
+
+  --color-zamka: #ef6c00;
+  --color-zamka-bg: #fff3e0;
+  --color-zamka-border: #ff9800;
+
+  --color-kljucna-poruka: #1565c0;
+  --color-kljucna-poruka-bg: #e3f2fd;
+  --color-kljucna-poruka-border: #42a5f5;
+}
+
+/* Dark mode overrides */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #5c6bc0;
+  --md-primary-fg-color--light: #7986cb;
+  --md-primary-fg-color--dark: #3949ab;
+
+  --color-brzi-pregled-bg: #1b3a1e;
+  --color-brzi-pregled-border: #388e3c;
+
+  --color-crvena-zastavica-bg: #3e1515;
+  --color-crvena-zastavica-border: #c62828;
+
+  --color-zamka-bg: #3e2a0e;
+  --color-zamka-border: #e65100;
+
+  --color-kljucna-poruka-bg: #0d2744;
+  --color-kljucna-poruka-border: #1565c0;
+}
+
+/* --- Custom Admonitions --- */
+
+/* Brzi pregled (Quick Overview) — Green */
+.md-typeset .admonition.brzi-pregled,
+.md-typeset details.brzi-pregled {
+  border-color: var(--color-brzi-pregled-border);
+  background-color: var(--color-brzi-pregled-bg);
+}
+
+.md-typeset .brzi-pregled > .admonition-title,
+.md-typeset .brzi-pregled > summary {
+  background-color: rgba(46, 125, 50, 0.15);
+  border-color: var(--color-brzi-pregled-border);
+  color: var(--color-brzi-pregled);
+  font-weight: 700;
+  font-size: 1.05em;
+}
+
+.md-typeset .brzi-pregled > .admonition-title::before,
+.md-typeset .brzi-pregled > summary::before {
+  background-color: var(--color-brzi-pregled);
+  -webkit-mask-image: var(--md-admonition-icon--tip);
+  mask-image: var(--md-admonition-icon--tip);
+}
+
+/* Crvena zastavica (Red Flags) — Red */
+.md-typeset .admonition.crvena-zastavica,
+.md-typeset details.crvena-zastavica {
+  border-color: var(--color-crvena-zastavica-border);
+  background-color: var(--color-crvena-zastavica-bg);
+}
+
+.md-typeset .crvena-zastavica > .admonition-title,
+.md-typeset .crvena-zastavica > summary {
+  background-color: rgba(198, 40, 40, 0.15);
+  border-color: var(--color-crvena-zastavica-border);
+  color: var(--color-crvena-zastavica);
+  font-weight: 700;
+  font-size: 1.05em;
+}
+
+.md-typeset .crvena-zastavica > .admonition-title::before,
+.md-typeset .crvena-zastavica > summary::before {
+  background-color: var(--color-crvena-zastavica);
+  -webkit-mask-image: var(--md-admonition-icon--danger);
+  mask-image: var(--md-admonition-icon--danger);
+}
+
+/* Zamka (Common Pitfalls) — Amber */
+.md-typeset .admonition.zamka,
+.md-typeset details.zamka {
+  border-color: var(--color-zamka-border);
+  background-color: var(--color-zamka-bg);
+}
+
+.md-typeset .zamka > .admonition-title,
+.md-typeset .zamka > summary {
+  background-color: rgba(239, 108, 0, 0.15);
+  border-color: var(--color-zamka-border);
+  color: var(--color-zamka);
+  font-weight: 700;
+  font-size: 1.05em;
+}
+
+.md-typeset .zamka > .admonition-title::before,
+.md-typeset .zamka > summary::before {
+  background-color: var(--color-zamka);
+  -webkit-mask-image: var(--md-admonition-icon--warning);
+  mask-image: var(--md-admonition-icon--warning);
+}
+
+/* Ključna poruka (Key Messages) — Blue */
+.md-typeset .admonition.kljucna-poruka,
+.md-typeset details.kljucna-poruka {
+  border-color: var(--color-kljucna-poruka-border);
+  background-color: var(--color-kljucna-poruka-bg);
+}
+
+.md-typeset .kljucna-poruka > .admonition-title,
+.md-typeset .kljucna-poruka > summary {
+  background-color: rgba(21, 101, 192, 0.15);
+  border-color: var(--color-kljucna-poruka-border);
+  color: var(--color-kljucna-poruka);
+  font-weight: 700;
+  font-size: 1.05em;
+}
+
+.md-typeset .kljucna-poruka > .admonition-title::before,
+.md-typeset .kljucna-poruka > summary::before {
+  background-color: var(--color-kljucna-poruka);
+  -webkit-mask-image: var(--md-admonition-icon--info);
+  mask-image: var(--md-admonition-icon--info);
+}
+
+/* --- MKB/ICSD Classification Badge --- */
+.md-typeset .klasifikacija {
+  display: inline-block;
+  background: linear-gradient(135deg, #e8eaf6, #f3e5f5);
+  border: 1px solid #9fa8da;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+  color: #283593;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .klasifikacija {
+  background: linear-gradient(135deg, #1a1a3e, #2a1a3e);
+  border-color: #5c6bc0;
+  color: #9fa8da;
+}
+
+/* --- Homepage Card Grid --- */
+.home-hero {
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+  background: linear-gradient(135deg, #1a237e 0%, #283593 50%, #00897b 100%);
+  color: white;
+  border-radius: 16px;
+  margin-bottom: 2rem;
+}
+
+.home-hero h1 {
+  color: white !important;
+  font-size: 1.6rem;
+  margin-bottom: 0.25rem;
+}
+
+.home-hero .subtitle {
+  opacity: 0.9;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Quick access buttons on homepage */
+.quick-access {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.quick-access a {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.6rem 1.2rem;
+  background: white;
+  color: #1a237e;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.15s, box-shadow 0.15s;
+  min-height: 44px;
+}
+
+.quick-access a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+[data-md-color-scheme="slate"] .quick-access a {
+  background: #2e2e4a;
+  color: #9fa8da;
+}
+
+/* Section headers on homepage */
+.section-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #5c6bc0;
+  margin: 2.5rem 0 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid #e8eaf6;
+}
+
+[data-md-color-scheme="slate"] .section-label {
+  color: #7986cb;
+  border-bottom-color: #2e2e4a;
+}
+
+.subsection-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #78909c;
+  margin: 1.5rem 0 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Card grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-grid a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0.5rem;
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #1a237e;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-align: center;
+  transition: transform 0.15s, box-shadow 0.15s, border-color 0.15s;
+  min-height: 44px;
+  line-height: 1.3;
+}
+
+.card-grid a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  border-color: #5c6bc0;
+}
+
+.card-grid a .card-icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.3rem;
+}
+
+.card-grid a .card-chapter {
+  font-size: 0.7rem;
+  color: #9e9e9e;
+  font-weight: 400;
+  margin-top: 0.15rem;
+}
+
+[data-md-color-scheme="slate"] .card-grid a {
+  background: #2e2e4a;
+  border-color: #404060;
+  color: #b0bec5;
+}
+
+[data-md-color-scheme="slate"] .card-grid a:hover {
+  border-color: #7986cb;
+}
+
+/* --- Mobile Responsive Enhancements --- */
+
+/* Ensure minimum 44px touch targets */
+.md-typeset a,
+.md-typeset button,
+.md-nav__link {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Mobile card grid: 2 columns */
+@media screen and (max-width: 600px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+
+  .card-grid a {
+    padding: 0.75rem 0.4rem;
+    font-size: 0.8rem;
+  }
+
+  .home-hero h1 {
+    font-size: 1.3rem;
+  }
+
+  .quick-access {
+    gap: 0.5rem;
+  }
+
+  .quick-access a {
+    font-size: 0.8rem;
+    padding: 0.5rem 0.8rem;
+  }
+}
+
+/* Tablet: 3 columns */
+@media screen and (min-width: 601px) and (max-width: 960px) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* --- Chapter Page Enhancements --- */
+
+/* Make the brzi-pregled box the first prominent element */
+.md-typeset .admonition.brzi-pregled {
+  margin-top: 0;
+  border-width: 2px;
+  border-radius: 12px;
+  padding: 0.5rem;
+}
+
+.md-typeset .admonition.crvena-zastavica {
+  border-width: 2px;
+  border-radius: 12px;
+}
+
+.md-typeset .admonition.zamka {
+  border-width: 2px;
+  border-radius: 12px;
+}
+
+.md-typeset .admonition.kljucna-poruka {
+  border-width: 2px;
+  border-radius: 12px;
+}
+
+/* Table styling for medical tables */
+.md-typeset table:not([class]) {
+  font-size: 0.85rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.md-typeset table:not([class]) th {
+  background-color: #e8eaf6;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
+  background-color: #2e2e4a;
+}
+
+/* Bold text in admonitions */
+.md-typeset .admonition strong,
+.md-typeset details strong {
+  font-weight: 700;
+}
+
+/* --- Navigation Footer (Prev/Next) --- */
+.md-footer-nav {
+  font-weight: 600;
+}
+
+/* --- PWA Install Banner --- */
+.pwa-install-banner {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #1a237e;
+  color: white;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  z-index: 100;
+  box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.2);
+}
+
+.pwa-install-banner button {
+  background: white;
+  color: #1a237e;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-left: 0.75rem;
+}
+
+.pwa-install-banner .dismiss {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: underline;
+}
+
+/* --- Author Footer --- */
+.author-footer {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  margin-top: 2rem;
+  border-top: 1px solid #e0e0e0;
+  font-size: 0.85rem;
+  color: #78909c;
+}
+
+.author-footer strong {
+  color: #1a237e;
+}
+
+[data-md-color-scheme="slate"] .author-footer {
+  border-top-color: #404060;
+}
+
+[data-md-color-scheme="slate"] .author-footer strong {
+  color: #9fa8da;
+}
+
+/* --- Smooth scrolling --- */
+html {
+  scroll-behavior: smooth;
+}
+
+/* --- Mermaid Diagram Mobile Overflow --- */
+.md-typeset .mermaid {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  max-width: 100%;
+}
+
+/* --- PWA Banner Content Spacing --- */
+/* Prevent fixed PWA install banner from overlapping page content */
+.md-content {
+  padding-bottom: 70px;
+}
+
+/* --- Dark Mode Card Border Enhancement --- */
+[data-md-color-scheme="slate"] .card-grid a {
+  border-color: #505078;
+}
+
+[data-md-color-scheme="slate"] .card-grid a:hover {
+  border-color: #9fa8da;
+}
