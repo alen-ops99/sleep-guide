@@ -2,7 +2,7 @@
 
 > **MKB-10:** G47.1 — Poremećaji s pretjeranom pospanosti (hipersomnija) | **ICSD-3:** Idiopatska hipersomnija (*Idiopathic Hypersomnia*)
 
-!!! brzi-pregled "🔍 Brzi pregled"
+!!! brzi-pregled "Brzi pregled"
 
     **Prepoznaj:** Pretjerana pospanost + teška inercija spavanja (30-60+ min „pijanstvo od sna" ujutro) + neokrepljujući drijemovi + produljeno noćno spavanje (>10 sati). Nema katapleksije.
 
@@ -12,49 +12,68 @@
 
 ---
 
-## Što je to?
+??? note "Što je to?"
 
-Idiopatska hipersomnija (IH) je poremećaj centralne hipersomnolencije obilježen **kroničnom, teškom pretjeranom dnevnom pospanošću (EDS)**, unatoč adekvatnom ili čak pretjerano dugom noćnom snu. Ključno obilježje koje izdvaja IH od drugih poremećaja pospanosti je trijas: (1) produženo noćno spavanje koje često premašuje 10-11 sati, (2) neodoljiva pospanost tijekom dana s dugim, neosvježavajućim drijemanjima, i (3) izražena **inercija spavanja** — stanje teške konfuzije i disfunkcije nakon buđenja koje može trajati 30-60 i više minuta.
+    Idiopatska hipersomnija (IH) je poremećaj centralne hipersomnolencije obilježen **kroničnom, teškom pretjeranom dnevnom pospanošću (EDS)**, unatoč adekvatnom ili čak pretjerano dugom noćnom snu. Ključno obilježje koje izdvaja IH od drugih poremećaja pospanosti je trijas: (1) produženo noćno spavanje koje često premašuje 10-11 sati, (2) neodoljiva pospanost tijekom dana s dugim, neosvježavajućim drijemanjima, i (3) izražena **inercija spavanja** — stanje teške konfuzije i disfunkcije nakon buđenja koje može trajati 30-60 i više minuta.
 
-Uzrok je nepoznat — otuda naziv „idiopatska". IH nije lijeni pacijent, nije depresija i nije loša disciplina spavanja. Radi se o neurobiološkom poremećaju koji devastira kvalitetu života — pacijenti gube poslove, padaju ispite, raspadaju im se veze — a prosječno vrijeme do dijagnoze iznosi **10-15 godina**.
+    Uzrok je nepoznat — otuda naziv „idiopatska". IH nije lijeni pacijent, nije depresija i nije loša disciplina spavanja. Radi se o neurobiološkom poremećaju koji devastira kvalitetu života — pacijenti gube poslove, padaju ispite, raspadaju im se veze — a prosječno vrijeme do dijagnoze iznosi **10-15 godina**.
 
-Za liječnika obiteljske medicine, ključna uloga je prepoznati kliničku sliku, isključiti česte imitatore (ponajprije sindrom nedovoljnog sna i OSA-u) te pravodobno uputiti specijalistu. Ovo je poremećaj koji se ne može dijagnosticirati u ordinaciji LOM-a, ali se u ordinaciji LOM-a može — i mora — posumnjati na njega.
-
----
-
-## Koliko je često?
-
-| Populacija | Prevalencija |
-|---|---|
-| Opća populacija | ~0,005–0,01% (procjena) |
-| Među pacijentima centara za medicinu spavanja | 1–3% svih dijagnosticiranih poremećaja |
-| Omjer spolova | Blaga predominacija žena |
-| Prosječna dob početka simptoma | 16–25 godina |
-
-**Kontekst za LOM praksu:** IH je rijedak poremećaj — prosječni LOM s 2.000 pacijenata možda nema niti jednog dijagnosticiranog oboljelog. No upravo zato što je slabo poznat, pacijenti kroče od liječnika do liječnika godinama prije dijagnoze. Razlika između "nema ga" i "ne prepoznajemo ga" je ogromna.
+    Za liječnika obiteljske medicine, ključna uloga je prepoznati kliničku sliku, isključiti česte imitatore (ponajprije sindrom nedovoljnog sna i OSA-u) te pravodobno uputiti specijalistu. Ovo je poremećaj koji se ne može dijagnosticirati u ordinaciji LOM-a, ali se u ordinaciji LOM-a može — i mora — posumnjati na njega.
 
 ---
 
-## Kako prepoznati?
+??? note "Koliko je često?"
 
-### Ključni simptomi
+    | Populacija | Prevalencija |
+    |---|---|
+    | Opća populacija | ~0,005–0,01% (procjena) |
+    | Među pacijentima centara za medicinu spavanja | 1–3% svih dijagnosticiranih poremećaja |
+    | Omjer spolova | Blaga predominacija žena |
+    | Prosječna dob početka simptoma | 16–25 godina |
 
-- **Teška inercija spavanja (sleep drunkenness) — patognomonično obilježje** — pacijent se ne može probuditi unatoč višestrukim alarmima. Konfuzija, dezorijentacija i motorička nespretnost traju **30-60 i više minuta**. Obitelj opisuje: „Kao da budi nekoga tko je pod anestezijom."
-- **Produženo noćno spavanje** — pacijent spava **10-11+ sati** i budi se neodmoren. San je neodoljiv i neosvježavajući.
-- **Duga, neosvježavajuća drijemanja** — za razliku od narkolepsije (kratka, osvježavajuća drijemanja), pacijenti s IH drijemaju **1-4 sata** i bude se s istom ili gorom pospanosti.
-- **Konstantna dnevna pospanost** — ne u napadima, nego stalna, neodoljiva pospanost koja se ne popravlja nakon sna ili kofeina.
-- **Kognitivni deficit** — „brain fog", smanjena koncentracija, osjećaj „hodanja kroz maglu" tijekom cijelog dana.
-
-### Na što obratiti pozornost u anamnezi
-
-- „Koliko vam treba da se potpuno probudite ujutro?" — odgovor >30 minuta uz opis konfuzije snažno upućuje na IH
-- „Osjećate li se odmorni nakon drijemanja?" — kod IH: ne; kod narkolepsije: da
-- „Koliko sati spavate kada nemate obaveze (vikend, odmor)?" — >10 sati = prolongirano noćno spavanje
-- „Jeste li ikada imali epizode slabosti mišića uz emocije (smijeh, iznenađenje)?" — isključiti katapleksiju (narkolepsija tip 1)
+    **Kontekst za LOM praksu:** IH je rijedak poremećaj — prosječni LOM s 2.000 pacijenata možda nema niti jednog dijagnosticiranog oboljelog. No upravo zato što je slabo poznat, pacijenti kroče od liječnika do liječnika godinama prije dijagnoze. Razlika između "nema ga" i "ne prepoznajemo ga" je ogromna.
 
 ---
 
-!!! crvena-zastavica "🚩 Crvene zastavice"
+??? note "Kako prepoznati?"
+
+    <div class="symptom-tiers" markdown>
+
+    <div class="symptom-tier tier-critical" markdown>
+    ### Kritični znakovi
+    - **Pretjerana dnevna pospanost unatoč dovoljnom (ili čak produženom) noćnom snu** — konstantna, neodoljiva pospanost koja se ne popravlja nakon sna ili kofeina
+    - **Drijemanje NE osvježava** (ključna razlika od narkolepsije!) — pacijenti drijemaju 1-4 sata i bude se s istom ili gorom pospanosti
+    - **"Pijanost sna" (sleep drunkenness / sleep inertia)** — teško buđenje, konfuznost i dezorijentacija pri buđenju traju 30-60+ minuta; obitelj opisuje: "Kao da budi nekoga tko je pod anestezijom"
+    </div>
+
+    <div class="symptom-tier tier-supporting" markdown>
+    ### Podržavajući znakovi
+    - **Ukupno vrijeme spavanja >11 sati/24h** (ako je produženi tip) — pacijent spava 10-11+ sati i budi se neodmoren
+    - **Simptomi traju >3 mjeseca** — kronična prezentacija
+    - **Poteškoće s alarmom** — pacijent "ne čuje" ili gasi više alarma; ne može se probuditi bez pomoći ukućana
+    - **Kognitivni "brain fog" tijekom dana** — smanjena koncentracija, osjećaj "hodanja kroz maglu"
+    </div>
+
+    <div class="symptom-tier tier-differential" markdown>
+    ### Diferencijalni tragovi
+    - **Narkolepsija** — katapleksija prisutna, drijemanje OSVJEŽAVA, fragmentiran noćni san
+    - **Nedovoljan san** — simptomi nestaju s produžetkom sna na 9-10h x 2 tjedna
+    - **Hipotireoza** — provjeriti TSH
+    - **Depresija** — provjeriti PHQ-9; umor, ne pospanost; gubitak interesa i anhedonija
+    </div>
+
+    </div>
+
+    ### Na što obratiti pozornost u anamnezi
+
+    - „Koliko vam treba da se potpuno probudite ujutro?" — odgovor >30 minuta uz opis konfuzije snažno upućuje na IH
+    - „Osjećate li se odmorni nakon drijemanja?" — kod IH: ne; kod narkolepsije: da
+    - „Koliko sati spavate kada nemate obaveze (vikend, odmor)?" — >10 sati = prolongirano noćno spavanje
+    - „Jeste li ikada imali epizode slabosti mišića uz emocije (smijeh, iznenađenje)?" — isključiti katapleksiju (narkolepsija tip 1)
+
+---
+
+!!! crvena-zastavica "Crvene zastavice"
 
     > **SIGURNOSNO-KRITIČNO** — Pacijent koji zaspe za volanom ili opisuje epizode neodoljive pospanosti tijekom vožnje zahtijeva hitnu obradu i privremenu zabranu vožnje do specijalističke evaluacije.
 
@@ -66,122 +85,122 @@ Za liječnika obiteljske medicine, ključna uloga je prepoznati kliničku sliku,
 
 ---
 
-## Probir i dijagnostika
+??? note "Probir i dijagnostika"
 
-### Što LOM može učiniti
+    ### Što LOM može učiniti
 
-**1. Epworthova ljestvica pospanosti (ESS)**
+    **1. Epworthova ljestvica pospanosti (ESS)**
 
-ESS ≥10 ukazuje na klinički značajnu pospanost. Kod IH, ESS je tipično ≥14, nerijetko ≥18. Međutim, ESS mjeri **tendenciju zasipanja**, ne ukupnu "teškoću" bolesti — ne bilježi inerciju spavanja ni prolongirano spavanje.
+    ESS ≥10 ukazuje na klinički značajnu pospanost. Kod IH, ESS je tipično ≥14, nerijetko ≥18. Međutim, ESS mjeri **tendenciju zasipanja**, ne ukupnu "teškoću" bolesti — ne bilježi inerciju spavanja ni prolongirano spavanje.
 
-**2. Dnevnik spavanja (minimalno 2 tjedna)**
+    **2. Dnevnik spavanja (minimalno 2 tjedna)**
 
-Ovo je **najvažniji alat u ordinaciji LOM-a** za razlikovanje IH od sindroma nedovoljnog sna:
+    Ovo je **najvažniji alat u ordinaciji LOM-a** za razlikovanje IH od sindroma nedovoljnog sna:
 
-| Parametar | IH | Nedovoljan san |
-|---|---|---|
-| Ukupno vrijeme spavanja (radni dani) | Često >9 sati | Često <7 sati |
-| Ukupno vrijeme spavanja (slobodni dani) | >10-11 sati | Kompenzatorno spavanje >9 sati |
-| Simptomi nakon produženog sna (2 tjedna) | **Perzistiraju** | **Nestaju** |
+    | Parametar | IH | Nedovoljan san |
+    |---|---|---|
+    | Ukupno vrijeme spavanja (radni dani) | Često >9 sati | Često <7 sati |
+    | Ukupno vrijeme spavanja (slobodni dani) | >10-11 sati | Kompenzatorno spavanje >9 sati |
+    | Simptomi nakon produženog sna (2 tjedna) | **Perzistiraju** | **Nestaju** |
 
-> **Ključni dijagnostički korak u PZZ-u:** Dati pacijentu instrukciju da 2 tjedna spava bez alarma, s produženim vremenom u krevetu (≥9-10 sati). Ako se EDS potpuno povuče — radi se o **sindromu nedovoljnog sna**, a ne IH. Ako pospanost i inercija spavanja perzistiraju unatoč produženom snu — daljnja obrada za centralnu hipersomniju.
+    > **Ključni dijagnostički korak u PZZ-u:** Dati pacijentu instrukciju da 2 tjedna spava bez alarma, s produženim vremenom u krevetu (≥9-10 sati). Ako se EDS potpuno povuče — radi se o **sindromu nedovoljnog sna**, a ne IH. Ako pospanost i inercija spavanja perzistiraju unatoč produženom snu — daljnja obrada za centralnu hipersomniju.
 
-**3. Isključiti česte imitatore**
+    **3. Isključiti česte imitatore**
 
-Prije upućivanja specijalistu, LOM treba razmotriti i po mogućnosti isključiti:
+    Prije upućivanja specijalistu, LOM treba razmotriti i po mogućnosti isključiti:
 
-- **Sindrom nedovoljnog sna** (najčešći imitator!) — kroničan san <7 sati uz dnevnu pospanost; nestaje s produženim snom
-- **OSA** — STOP-BANG, anamneza o hrkanju i apnejama; može koegzistirati s IH
-- **Lijekovi koji uzrokuju pospanost** — antihistaminici, benzodiazepini, antiepileptici, antidepresivi (osobito mirtazapin, trazodon), opioidi, antipsihotici
-- **Depresija** — ali oprez: depresija i IH mogu koegzistirati; depresija ima gubitak interesa i anhedoniju, IH ima izoliranu hipersomnolenciju
-- **Hipotireoza** — TSH
-- **Anemija** — KKS
-- **Sistemske bolesti** — kronične upalne bolesti, hepatička encefalopatija, postinfektivni umor
+    - **Sindrom nedovoljnog sna** (najčešći imitator!) — kroničan san <7 sati uz dnevnu pospanost; nestaje s produženim snom
+    - **OSA** — STOP-BANG, anamneza o hrkanju i apnejama; može koegzistirati s IH
+    - **Lijekovi koji uzrokuju pospanost** — antihistaminici, benzodiazepini, antiepileptici, antidepresivi (osobito mirtazapin, trazodon), opioidi, antipsihotici
+    - **Depresija** — ali oprez: depresija i IH mogu koegzistirati; depresija ima gubitak interesa i anhedoniju, IH ima izoliranu hipersomnolenciju
+    - **Hipotireoza** — TSH
+    - **Anemija** — KKS
+    - **Sistemske bolesti** — kronične upalne bolesti, hepatička encefalopatija, postinfektivni umor
 
-### Što zahtijeva specijalista — formalna dijagnostika
+    ### Što zahtijeva specijalista — formalna dijagnostika
 
-**Dijagnoza IH je specijalistička dijagnoza. LOM ne može i ne smije postavljati ovu dijagnozu.**
+    **Dijagnoza IH je specijalistička dijagnoza. LOM ne može i ne smije postavljati ovu dijagnozu.**
 
-Formalni dijagnostički put uključuje:
+    Formalni dijagnostički put uključuje:
 
-| Test | Što se traži | Kriterij za IH |
-|---|---|---|
-| **Polisomnografija (PSG)** — noć prije MSLT-a | Isključiti OSA, PLMD; dokumentirati normalnu arhitekturu sna | Bez značajne OSA (AHI <5) ili PLMD; ukupno vrijeme spavanja često produženo |
-| **MSLT (test multiple latencije usnivanja)** | 5 prilika za drijemanje tijekom dana, u razmacima od 2 sata | Srednja latencija usnivanja **≤8 minuta**, ali **<2 SOREMP-a** (REM unutar 15 min od usnivanja) |
-| **Alternativa: 24-satna PSG ili aktigrafija ≥7 dana** | Dokumentirati ukupno vrijeme spavanja | **Ukupno spavanje ≥11 sati u 24 sata** |
+    | Test | Što se traži | Kriterij za IH |
+    |---|---|---|
+    | **Polisomnografija (PSG)** — noć prije MSLT-a | Isključiti OSA, PLMD; dokumentirati normalnu arhitekturu sna | Bez značajne OSA (AHI <5) ili PLMD; ukupno vrijeme spavanja često produženo |
+    | **MSLT (test multiple latencije usnivanja)** | 5 prilika za drijemanje tijekom dana, u razmacima od 2 sata | Srednja latencija usnivanja **≤8 minuta**, ali **<2 SOREMP-a** (REM unutar 15 min od usnivanja) |
+    | **Alternativa: 24-satna PSG ili aktigrafija ≥7 dana** | Dokumentirati ukupno vrijeme spavanja | **Ukupno spavanje ≥11 sati u 24 sata** |
 
-> **Važno:** MSLT mora biti izveden nakon noćne PSG s ≥7 sati sna. Pacijent mora biti bez REM-supresivnih lijekova (antidepresivi!) minimalno 2 tjedna prije MSLT-a. Neadekvatan MSLT = nepouzdana dijagnoza.
-
----
-
-### Usporedna tablica: IH vs. Narkolepsija tip 2 vs. Sindrom nedovoljnog sna
-
-| Značajka | Idiopatska hipersomnija | Narkolepsija tip 2 | Sindrom nedovoljnog sna |
-|---|---|---|---|
-| **EDS** | Konstantna, teška | Napadima, teška | Konstantna, umjerena do teška |
-| **MSLT nalaz** | Latencija ≤8 min, <2 SOREMP-a | Latencija ≤8 min, **≥2 SOREMP-a** | Latencija može biti ≤8 min, <2 SOREMP-a |
-| **Ukupno noćno spavanje** | Često >10-11 sati | Normalno ili blago produženo (7-9 sati) | Skraćeno (<7 sati radnim danima) |
-| **Kvaliteta drijemanja** | Duga (1-4 sata), **neosvježavajuća** | Kratka (15-20 min), **osvježavajuća** | Varijabilna; osvježavajuća ako dovoljno duga |
-| **Inercija spavanja** | **Teška** (30-60+ min, „sleep drunkenness") | Blaga do umjerena | Blaga |
-| **Katapleksija** | Nema | Nema (za razliku od narkolepsije tip 1) | Nema |
-| **Odgovor na produžen san (2 tjedna)** | EDS **perzistira** | EDS **perzistira** | EDS **nestaje** |
+    > **Važno:** MSLT mora biti izveden nakon noćne PSG s ≥7 sati sna. Pacijent mora biti bez REM-supresivnih lijekova (antidepresivi!) minimalno 2 tjedna prije MSLT-a. Neadekvatan MSLT = nepouzdana dijagnoza.
 
 ---
 
-## Liječenje u primarnoj zdravstvenoj zaštiti
+??? note "Usporedna tablica: IH vs. Narkolepsija tip 2 vs. Sindrom nedovoljnog sna"
 
-> ⚠️ **Važno:** LOM ne bi trebao inicirati farmakološko liječenje IH. Farmakoterapiju propisuje specijalist za medicinu spavanja ili neurolog nakon formalne dijagnostike (PSG + MSLT). Uloga LOM-a je probir, isključivanje imitatora, upućivanje specijalistu te potpora pacijentu u svakodnevnom funkcioniranju.
-
-### Nefarmakološke mjere (što LOM može savjetovati)
-
-**Upravljanje inercijom spavanja:**
-- **Višestruki alarmi** u različitim dijelovima prostorije (ne na dohvat ruke) — pacijent mora fizički ustati
-- **Jako svjetlo odmah po buđenju** — otvoriti rolete ili koristiti svjetlosni alarm (wake-up light, 10.000 luksa); svjetlo suprimira melatonin i pomaže prijelazu u budnost
-- **Zamoliti ukućane za pomoć pri buđenju** — dogovoreni rituali buđenja
-- **Izbjegavati kritične jutarnje obveze** kada je moguće — pomicanje ispita, radnog vremena
-- Hladna voda na lice ili kratki hladan tuš nakon alarma
-
-**Optimizacija rasporeda spavanja:**
-- **Redovito vrijeme lijeganja i buđenja** — čak i vikendom; iregularan raspored pogoršava simptome
-- **Planirana kratka drijemanja** (20-30 min s alarmom) — manje učinkovita nego kod narkolepsije, ali može donijeti kratkotrajan benefit
-- Izbjegavati neplanirana duga drijemanja (>1 sat) jer pogoršavaju inerciju
-
-**Opće mjere:**
-- Umjerena tjelesna aktivnost (ne kasno navečer) — može blago poboljšati budnost
-- Izbjegavati alkohol i sedative — pogoršavaju pospanost
-- Kofein — umjeren učinak; ne zabraniti, ali upozoriti da masivan unos neće riješiti problem i može poremetiti noćni san
-
-### Specijalistička farmakoterapija (informativno za LOM-a)
-
-LOM treba biti upoznat s lijekovima koje specijalist može propisati, jer će pacijent dolaziti na kontrole u primarnu zaštitu:
-
-| Lijek | Mehanizam | Napomena |
-|---|---|---|
-| **Modafinil / armodafinil** | Poticanje budnosti (wake-promoting) | Prva linija; učinak kod IH često **slabiji** nego kod narkolepsije; doza 100-400 mg ujutro |
-| **Metilfenidat** | Psihostimulans | Druga linija; brz učinak, ali kratak poluživot; rizik ovisnosti |
-| **Natrijev/niženatrijev oksibat (Xyrem/Xywav)** | GABA-B agonist; konsolidira noćni san | Poboljšava inerciju spavanja i EDS; Xywav FDA-odobren za IH (2021); **NIJE dostupan u Hrvatskoj** |
-| **Solriamfetol** | Inhibitor ponovne pohrane dopamina i noradrenalina | Off-label za IH; **nije dostupan u Hrvatskoj** |
-| **Pitolisant** | Inverzni agonist H3 histaminskih receptora | Off-label za IH; ograničena dostupnost u HR |
-
-> ⚠️ **Dostupnost u Hrvatskoj:** Modafinil je dostupan uz posebno odobrenje. Xywav i solriamfetol **nisu dostupni u Hrvatskoj**. Mnogi pacijenti s IH ostaju suboptimalno liječeni.
+    | Značajka | Idiopatska hipersomnija | Narkolepsija tip 2 | Sindrom nedovoljnog sna |
+    |---|---|---|---|
+    | **EDS** | Konstantna, teška | Napadima, teška | Konstantna, umjerena do teška |
+    | **MSLT nalaz** | Latencija ≤8 min, <2 SOREMP-a | Latencija ≤8 min, **≥2 SOREMP-a** | Latencija može biti ≤8 min, <2 SOREMP-a |
+    | **Ukupno noćno spavanje** | Često >10-11 sati | Normalno ili blago produženo (7-9 sati) | Skraćeno (<7 sati radnim danima) |
+    | **Kvaliteta drijemanja** | Duga (1-4 sata), **neosvježavajuća** | Kratka (15-20 min), **osvježavajuća** | Varijabilna; osvježavajuća ako dovoljno duga |
+    | **Inercija spavanja** | **Teška** (30-60+ min, „sleep drunkenness") | Blaga do umjerena | Blaga |
+    | **Katapleksija** | Nema | Nema (za razliku od narkolepsije tip 1) | Nema |
+    | **Odgovor na produžen san (2 tjedna)** | EDS **perzistira** | EDS **perzistira** | EDS **nestaje** |
 
 ---
 
-## Kada uputiti specijalistu?
+??? note "Liječenje u primarnoj zdravstvenoj zaštiti"
 
-| Uputiti kada... | Kamo | Razlog |
-|---|---|---|
-| Kronična EDS (>3 mjeseca) + prolongirano spavanje (>9h) + teška inercija spavanja, a isključen nedovoljan san, OSA i depresija | Centar za medicinu spavanja / neurolog | Potrebna PSG + MSLT za formalnu dijagnozu |
-| ESS ≥14 uz dnevnik spavanja koji pokazuje >10h sna i perzistentnu pospanost | Centar za medicinu spavanja | Visoka sumnja na centralnu hipersomniju |
-| Mladi pacijent s kronično neobjašnjenom pospanosti koji je „probao sve" | Neurolog / centar za medicinu spavanja | Čest profil IH pacijenta — ne otpuštati bez obrade |
-| Pospanost za volanom ili sigurnosno-kritično zanimanje | Centar za medicinu spavanja — **hitno** | Sigurnosni rizik; ne čekati redovni termin |
-| Sumnja na narkolepsiju (napadaji pospanosti, katapleksija, hipnagogne halucinacije) | Neurolog / centar za medicinu spavanja | Diferencijalna dijagnoza zahtijeva MSLT |
+    > ⚠️ **Važno:** LOM ne bi trebao inicirati farmakološko liječenje IH. Farmakoterapiju propisuje specijalist za medicinu spavanja ili neurolog nakon formalne dijagnostike (PSG + MSLT). Uloga LOM-a je probir, isključivanje imitatora, upućivanje specijalistu te potpora pacijentu u svakodnevnom funkcioniranju.
 
-> **Savjet za uputnicu:** Navedite ESS rezultat, trajanje simptoma, rezultat dnevnika spavanja (prosječno vrijeme u krevetu i ukupno spavanje), isključene diferencijalne dijagnoze (OSA, depresija, nedovoljan san, lijekovi). Kvalitetna uputnica drastično ubrzava obradu.
+    ### Nefarmakološke mjere (što LOM može savjetovati)
+
+    **Upravljanje inercijom spavanja:**
+    - **Višestruki alarmi** u različitim dijelovima prostorije (ne na dohvat ruke) — pacijent mora fizički ustati
+    - **Jako svjetlo odmah po buđenju** — otvoriti rolete ili koristiti svjetlosni alarm (wake-up light, 10.000 luksa); svjetlo suprimira melatonin i pomaže prijelazu u budnost
+    - **Zamoliti ukućane za pomoć pri buđenju** — dogovoreni rituali buđenja
+    - **Izbjegavati kritične jutarnje obveze** kada je moguće — pomicanje ispita, radnog vremena
+    - Hladna voda na lice ili kratki hladan tuš nakon alarma
+
+    **Optimizacija rasporeda spavanja:**
+    - **Redovito vrijeme lijeganja i buđenja** — čak i vikendom; iregularan raspored pogoršava simptome
+    - **Planirana kratka drijemanja** (20-30 min s alarmom) — manje učinkovita nego kod narkolepsije, ali može donijeti kratkotrajan benefit
+    - Izbjegavati neplanirana duga drijemanja (>1 sat) jer pogoršavaju inerciju
+
+    **Opće mjere:**
+    - Umjerena tjelesna aktivnost (ne kasno navečer) — može blago poboljšati budnost
+    - Izbjegavati alkohol i sedative — pogoršavaju pospanost
+    - Kofein — umjeren učinak; ne zabraniti, ali upozoriti da masivan unos neće riješiti problem i može poremetiti noćni san
+
+    ### Specijalistička farmakoterapija (informativno za LOM-a)
+
+    LOM treba biti upoznat s lijekovima koje specijalist može propisati, jer će pacijent dolaziti na kontrole u primarnu zaštitu:
+
+    | Lijek | Mehanizam | Napomena |
+    |---|---|---|
+    | **Modafinil / armodafinil** | Poticanje budnosti (wake-promoting) | Prva linija; učinak kod IH često **slabiji** nego kod narkolepsije; doza 100-400 mg ujutro |
+    | **Metilfenidat** | Psihostimulans | Druga linija; brz učinak, ali kratak poluživot; rizik ovisnosti |
+    | **Natrijev/niženatrijev oksibat (Xyrem/Xywav)** | GABA-B agonist; konsolidira noćni san | Poboljšava inerciju spavanja i EDS; Xywav FDA-odobren za IH (2021); **NIJE dostupan u Hrvatskoj** |
+    | **Solriamfetol** | Inhibitor ponovne pohrane dopamina i noradrenalina | Off-label za IH; **nije dostupan u Hrvatskoj** |
+    | **Pitolisant** | Inverzni agonist H3 histaminskih receptora | Off-label za IH; ograničena dostupnost u HR |
+
+    > ⚠️ **Dostupnost u Hrvatskoj:** Modafinil je dostupan uz posebno odobrenje. Xywav i solriamfetol **nisu dostupni u Hrvatskoj**. Mnogi pacijenti s IH ostaju suboptimalno liječeni.
 
 ---
 
-!!! zamka "⚠️ Česte zamke"
+??? note "Kada uputiti specijalistu?"
+
+    | Uputiti kada... | Kamo | Razlog |
+    |---|---|---|
+    | Kronična EDS (>3 mjeseca) + prolongirano spavanje (>9h) + teška inercija spavanja, a isključen nedovoljan san, OSA i depresija | Centar za medicinu spavanja / neurolog | Potrebna PSG + MSLT za formalnu dijagnozu |
+    | ESS ≥14 uz dnevnik spavanja koji pokazuje >10h sna i perzistentnu pospanost | Centar za medicinu spavanja | Visoka sumnja na centralnu hipersomniju |
+    | Mladi pacijent s kronično neobjašnjenom pospanosti koji je „probao sve" | Neurolog / centar za medicinu spavanja | Čest profil IH pacijenta — ne otpuštati bez obrade |
+    | Pospanost za volanom ili sigurnosno-kritično zanimanje | Centar za medicinu spavanja — **hitno** | Sigurnosni rizik; ne čekati redovni termin |
+    | Sumnja na narkolepsiju (napadaji pospanosti, katapleksija, hipnagogne halucinacije) | Neurolog / centar za medicinu spavanja | Diferencijalna dijagnoza zahtijeva MSLT |
+
+    > **Savjet za uputnicu:** Navedite ESS rezultat, trajanje simptoma, rezultat dnevnika spavanja (prosječno vrijeme u krevetu i ukupno spavanje), isključene diferencijalne dijagnoze (OSA, depresija, nedovoljan san, lijekovi). Kvalitetna uputnica drastično ubrzava obradu.
+
+---
+
+!!! zamka "Česte zamke"
 
     | ❌ Pogreška | ✅ Ispravni pristup |
     |---|---|
@@ -194,17 +213,17 @@ LOM treba biti upoznat s lijekovima koje specijalist može propisati, jer će pa
 
 ---
 
-## Ključne poruke
+??? note "Ključne poruke"
 
-1. **Inercija spavanja (sleep drunkenness) je kardinalni simptom IH** — pacijent koji ne može ustati unatoč višestrukim alarmima, koji je konfuzan i dezorijentiran 30-60+ minuta po buđenju, i čija su drijemanja duga i neosvježavajuća, zaslužuje obradu za centralnu hipersomniju.
+    1. **Inercija spavanja (sleep drunkenness) je kardinalni simptom IH** — pacijent koji ne može ustati unatoč višestrukim alarmima, koji je konfuzan i dezorijentiran 30-60+ minuta po buđenju, i čija su drijemanja duga i neosvježavajuća, zaslužuje obradu za centralnu hipersomniju.
 
-2. **Sindrom nedovoljnog sna je najvažnija diferencijalna dijagnoza** — prije ikakve obrade za IH, pacijent treba provesti 2 tjedna s produženim snom (≥9-10 sati). Ako se EDS potpuno povuče, dijagnoza je nedovoljan san, ne IH.
+    2. **Sindrom nedovoljnog sna je najvažnija diferencijalna dijagnoza** — prije ikakve obrade za IH, pacijent treba provesti 2 tjedna s produženim snom (≥9-10 sati). Ako se EDS potpuno povuče, dijagnoza je nedovoljan san, ne IH.
 
-3. **IH je specijalistička dijagnoza — uloga LOM-a je probir i upućivanje.** LOM isključuje česte imitatore (nedovoljan san, OSA, depresija, lijekovi, hipotireoza), dokumentira ESS i dnevnik spavanja, te upućuje u centar za medicinu spavanja s kvalitetnom uputnicom.
+    3. **IH je specijalistička dijagnoza — uloga LOM-a je probir i upućivanje.** LOM isključuje česte imitatore (nedovoljan san, OSA, depresija, lijekovi, hipotireoza), dokumentira ESS i dnevnik spavanja, te upućuje u centar za medicinu spavanja s kvalitetnom uputnicom.
 
-4. **Ne propisivati stimulanse bez formalne dijagnostike.** Farmakoterapiju inicira specijalist nakon PSG + MSLT. Preuranjena farmakoterapija maskira simptome i onemogućuje pouzdanu dijagnostiku.
+    4. **Ne propisivati stimulanse bez formalne dijagnostike.** Farmakoterapiju inicira specijalist nakon PSG + MSLT. Preuranjena farmakoterapija maskira simptome i onemogućuje pouzdanu dijagnostiku.
 
-5. **Pacijenti s IH nisu lijeni — imaju neurobiološki poremećaj koji devastira kvalitetu života.** Prosječno vrijeme do dijagnoze je 10-15 godina. Svaki LOM koji prepozna ovaj poremećaj i pravodobno uputi pacijenta specijalistu može promijeniti nečiji život.
+    5. **Pacijenti s IH nisu lijeni — imaju neurobiološki poremećaj koji devastira kvalitetu života.** Prosječno vrijeme do dijagnoze je 10-15 godina. Svaki LOM koji prepozna ovaj poremećaj i pravodobno uputi pacijenta specijalistu može promijeniti nečiji život.
 
 ---
 

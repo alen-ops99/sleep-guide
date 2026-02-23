@@ -2,7 +2,7 @@
 
 > **MKB-10:** G25.81 (RLS), G47.61 (PLMD) | **ICSD-3:** Poremećaji pokreta povezani sa spavanjem (*Sleep-Related Movement Disorders*)
 
-!!! brzi-pregled "🔍 Brzi pregled"
+!!! brzi-pregled "Brzi pregled"
 
     **Prepoznaj:** Nemir/nelagoda u nogama navečer u mirovanju, poboljšanje na pokret, pogoršanje navečer — 4 klinička kriterija. Nije anksioznost, nije loša cirkulacija.
 
@@ -12,74 +12,80 @@
 
 ---
 
-## Što je to?
+??? note "Što je to?"
 
-**Sindrom nemirnih nogu** (*Restless Legs Syndrome*, RLS) je neurološki poremećaj karakteriziran **neodoljivim nagonom za pokretanjem nogu**, obično popraćenim neugodnim osjetima (puzanje, strujanje, mravinjanje). Simptomi se javljaju u mirovanju, pogoršavaju navečer i ublažavaju pokretom. RLS nije „anksioznost" i nije „slaba cirkulacija" — to je poremećaj dopaminergičke funkcije mozga, snažno povezan s metabolizmom željeza u SŽS-u.
+    **Sindrom nemirnih nogu** (*Restless Legs Syndrome*, RLS) je neurološki poremećaj karakteriziran **neodoljivim nagonom za pokretanjem nogu**, obično popraćenim neugodnim osjetima (puzanje, strujanje, mravinjanje). Simptomi se javljaju u mirovanju, pogoršavaju navečer i ublažavaju pokretom. RLS nije „anksioznost" i nije „slaba cirkulacija" — to je poremećaj dopaminergičke funkcije mozga, snažno povezan s metabolizmom željeza u SŽS-u.
 
-**Periodični pokreti udova u snu** (*Periodic Limb Movement Disorder*, PLMD) obilježen je ponavljajućim trzajima nogu tijekom spavanja koje pacijent ne osjeća — primjećuje ih partner. PLMD uzrokuje fragmentaciju sna i dnevnu pospanost. Oko 80% pacijenata s RLS-om ima i periodične pokrete udova (PLMS), ali većina osoba s PLMS-om nema RLS. Dijagnoza PLMD-a zahtijeva PSG i postavlja se samo kad postoje izolirani PLMS s kliničkim posljedicama, bez RLS simptoma.
-
----
-
-## Koliko je često?
-
-| Populacija | Prevalencija RLS-a |
-|---|---|
-| Opća odrasla populacija | 5–10% |
-| Žene (1,5–2× češće od muškaraca) | 7–12% |
-| Trudnice (osobito 3. tromjesečje) | 15–25% |
-| Kronična bubrežna bolest / dijaliza | 20–30% |
-| Sideropenična anemija | 20–25% |
-| Parkinsonova bolest | 10–20% |
-| Dijabetička neuropatija | 15–25% |
-| Starija dob (>65 godina) | 10–15% |
-
-**Kontekst za LOM praksu:** U praksi s 2.000 pacijenata, **100-200 ih ima RLS** — većina godinama pogrešno liječena kao „anksioznost" ili „venska insuficijencija". Klinički značajan RLS (umjeren do težak) prisutan je u 2–3% populacije, što znači **40–60 pacijenata** kojima bi specifična terapija dramatično poboljšala kvalitetu života.
+    **Periodični pokreti udova u snu** (*Periodic Limb Movement Disorder*, PLMD) obilježen je ponavljajućim trzajima nogu tijekom spavanja koje pacijent ne osjeća — primjećuje ih partner. PLMD uzrokuje fragmentaciju sna i dnevnu pospanost. Oko 80% pacijenata s RLS-om ima i periodične pokrete udova (PLMS), ali većina osoba s PLMS-om nema RLS. Dijagnoza PLMD-a zahtijeva PSG i postavlja se samo kad postoje izolirani PLMS s kliničkim posljedicama, bez RLS simptoma.
 
 ---
 
-## Kako prepoznati?
+??? note "Koliko je često?"
 
-### Četiri esencijalna IRLS dijagnostička kriterija
+    | Populacija | Prevalencija RLS-a |
+    |---|---|
+    | Opća odrasla populacija | 5–10% |
+    | Žene (1,5–2× češće od muškaraca) | 7–12% |
+    | Trudnice (osobito 3. tromjesečje) | 15–25% |
+    | Kronična bubrežna bolest / dijaliza | 20–30% |
+    | Sideropenična anemija | 20–25% |
+    | Parkinsonova bolest | 10–20% |
+    | Dijabetička neuropatija | 15–25% |
+    | Starija dob (>65 godina) | 10–15% |
 
-Za dijagnozu RLS-a **sva četiri kriterija moraju biti prisutna** (prema IRLSSG/ICSD-3):
-
-1. **Nagon za pokretanjem nogu, obično popraćen neugodnim osjetima** — puzanje, mravinjanje, vučenje, peckanje, „čudan osjećaj duboko u nogama"
-2. **Simptomi se javljaju ili pogoršavaju u mirovanju** — ključna razlika od neuropatije (konstantna) i venske insuficijencije (gora pri stajanju)
-3. **Simptomi se ublažavaju pokretom** — hodanje, istezanje donosi olakšanje, ali samo dok pokret traje
-4. **Simptomi su gori navečer ili noću** — cirkadijana komponenta, kulminiraju u kasnim večernjim satima
-
-> **Peti kriterij (potvrdni):** Simptomi se ne mogu objasniti drugim stanjem (grčevi, venska staza, artritis, akatizija).
-
-### Ključna anamnestička pitanja
-
-Koristite ova pitanja u svakodnevnoj praksi — RLS se dijagnosticira **isključivo klinički, na temelju anamneze**:
-
-- *„Osjećate li neugodan osjećaj u nogama koji vas tjera da ih pomaknete, osobito navečer?"*
-- *„Je li taj osjećaj gori kad mirujete — kad sjedite ili ležite?"*
-- *„Pomaže li hodanje ili pomicanje nogu?"*
-- *„Je li taj problem gori navečer i noću nego ujutro?"*
-- *„Ometa li vas taj osjećaj pri uspavljivanju?"*
-- *„Koliko dugo imate te simptome?"* (RLS može biti prisutan godinama prije dijagnoze)
-- *„Uzimate li antihistaminike, antidepresive ili lijekove protiv mučnine?"* (mogući pogoršavajući čimbenici)
-- *„Kaže li vam partner/ica da vam se noge trzu ili udaraju u snu?"* (ukazuje na moguće PLMS)
-
-### Diferencijalna dijagnoza — što RLS NIJE
-
-| Stanje | Razlika od RLS-a |
-|---|---|
-| **Periferna neuropatija** | Konstantni simptomi neovisno o aktivnosti; parestezije i hipostezije. RLS i neuropatija mogu koegzistirati! |
-| **Venska insuficijencija** | Gora pri stajanju, olakšanje elevacijom; vidljive varikozitete. RLS je gori u ležećem položaju. |
-| **Noćni mišićni grčevi** | Nagla bolna kontrakcija (vidljiva, palpabilna). RLS je senzorni nagon, ne kontrakcija. |
-| **Akatizija** | Nemir cijelog tijela, povezana s antipsihoticima; nema večernju predominaciju. |
-| **Anksioznost** | Generaliziran nemir, ne ispunjava 4 IRLS kriterija. |
-
-### PLMD — Kako prepoznati?
-
-Posumnjajte na PLMD kod: partnera koji opisuje **ritmičko trzanje nogu** u snu, **neosvježavajućeg spavanja** bez jasnog uzroka (kad ste isključili OSA, nesanicu, nedovoljan san), ili neobjašnjive **dnevne pospanosti**.
+    **Kontekst za LOM praksu:** U praksi s 2.000 pacijenata, **100-200 ih ima RLS** — većina godinama pogrešno liječena kao „anksioznost" ili „venska insuficijencija". Klinički značajan RLS (umjeren do težak) prisutan je u 2–3% populacije, što znači **40–60 pacijenata** kojima bi specifična terapija dramatično poboljšala kvalitetu života.
 
 ---
 
-!!! crvena-zastavica "🚩 Crvene zastavice"
+??? note "Kako prepoznati?"
+
+    <div class="symptom-tiers" markdown>
+
+    <div class="symptom-tier tier-critical" markdown>
+    ### Kritični znakovi
+    - Nagon za kretanjem nogu uz neugodne senzacije (trnjenje, puzanje, bol)
+    - Simptomi se pogoršavaju u mirovanju (sjedenje, ležanje)
+    - Simptomi se poboljšavaju kretanjem (hodanje, istezanje)
+    - Simptomi imaju cirkadijanu komponentu — najjači navečer/noću
+    </div>
+
+    <div class="symptom-tier tier-supporting" markdown>
+    ### Podržavajući znakovi
+    - Pozitivna obiteljska anamneza (>50% slučajeva)
+    - Nizak feritin (<75 µg/L) ili anemija
+    - Komorbidna trudnoća, kronična bubrežna bolest ili neuropatija
+    - Nemiran san, česti noćni pokreti nogu (PLMS — primjećuje partner)
+    </div>
+
+    <div class="symptom-tier tier-differential" markdown>
+    ### Diferencijalni tragovi
+    - Akatizia (lijekovima izazvana) — nema cirkadijanog obrasca, povezana s antipsihoticima
+    - Periferna neuropatija — konstantni simptomi, ne samo navečer
+    - Noćni grčevi — izolirani, bolni, bez nagona za kretanjem
+    </div>
+
+    </div>
+
+    ### Ključna anamnestička pitanja
+
+    Koristite ova pitanja u svakodnevnoj praksi — RLS se dijagnosticira **isključivo klinički, na temelju anamneze**:
+
+    - *„Osjećate li neugodan osjećaj u nogama koji vas tjera da ih pomaknete, osobito navečer?"*
+    - *„Je li taj osjećaj gori kad mirujete — kad sjedite ili ležite?"*
+    - *„Pomaže li hodanje ili pomicanje nogu?"*
+    - *„Je li taj problem gori navečer i noću nego ujutro?"*
+    - *„Ometa li vas taj osjećaj pri uspavljivanju?"*
+    - *„Koliko dugo imate te simptome?"* (RLS može biti prisutan godinama prije dijagnoze)
+    - *„Uzimate li antihistaminike, antidepresive ili lijekove protiv mučnine?"* (mogući pogoršavajući čimbenici)
+    - *„Kaže li vam partner/ica da vam se noge trzu ili udaraju u snu?"* (ukazuje na moguće PLMS)
+
+    ### PLMD — Kako prepoznati?
+
+    Posumnjajte na PLMD kod: partnera koji opisuje **ritmičko trzanje nogu** u snu, **neosvježavajućeg spavanja** bez jasnog uzroka (kad ste isključili OSA, nesanicu, nedovoljan san), ili neobjašnjive **dnevne pospanosti**.
+
+---
+
+!!! crvena-zastavica "Crvene zastavice"
 
     ### Augmentacija — najvažnija crvena zastavica kod liječenih pacijenata
 
@@ -114,141 +120,141 @@ Posumnjajte na PLMD kod: partnera koji opisuje **ritmičko trzanje nogu** u snu,
 
 ---
 
-## Probir i dijagnostika
+??? note "Probir i dijagnostika"
 
-### Što LOM može (i treba) učiniti
+    ### Što LOM može (i treba) učiniti
 
-**RLS je klinička dijagnoza** — ne zahtijeva polisomnografiju niti bilo koji instrumentalni test. Četiri IRLS kriterija u anamnezi dovoljni su za postavljanje dijagnoze. Ovo je ključna poruka: **LOM može i treba dijagnosticirati RLS u svojoj ordinaciji.**
+    **RLS je klinička dijagnoza** — ne zahtijeva polisomnografiju niti bilo koji instrumentalni test. Četiri IRLS kriterija u anamnezi dovoljni su za postavljanje dijagnoze. Ovo je ključna poruka: **LOM može i treba dijagnosticirati RLS u svojoj ordinaciji.**
 
-#### Korak 1: Klinička dijagnoza
-- Primijenite 4 esencijalna IRLS dijagnostička kriterija (svi moraju biti prisutni)
-- Isključite najčešće diferencijalne dijagnoze (neuropatija, venski problem, grčevi, akatizija)
+    #### Korak 1: Klinička dijagnoza
+    - Primijenite 4 esencijalna IRLS dijagnostička kriterija (svi moraju biti prisutni)
+    - Isključite najčešće diferencijalne dijagnoze (neuropatija, venski problem, grčevi, akatizija)
 
-#### Korak 2: Procjena težine — IRLS ljestvica
-International Restless Legs Syndrome Rating Scale (IRLS) — 10 pitanja, svako 0–4 boda, ukupno 0–40:
+    #### Korak 2: Procjena težine — IRLS ljestvica
+    International Restless Legs Syndrome Rating Scale (IRLS) — 10 pitanja, svako 0–4 boda, ukupno 0–40:
 
-| Bodovi | Težina |
-|---|---|
-| 1–10 | Blagi RLS |
-| 11–20 | Umjereni RLS |
-| 21–30 | Teški RLS |
-| 31–40 | Vrlo teški RLS |
+    | Bodovi | Težina |
+    |---|---|
+    | 1–10 | Blagi RLS |
+    | 11–20 | Umjereni RLS |
+    | 21–30 | Teški RLS |
+    | 31–40 | Vrlo teški RLS |
 
-Farmakoterapija se preporučuje kod umjerenog do teškog RLS-a (IRLS ≥11). Blagi RLS može se zbrinjavati nefarmakološkim mjerama i korekcijom željeza.
+    Farmakoterapija se preporučuje kod umjerenog do teškog RLS-a (IRLS ≥11). Blagi RLS može se zbrinjavati nefarmakološkim mjerama i korekcijom željeza.
 
-#### Korak 3: Laboratorijska obrada
+    #### Korak 3: Laboratorijska obrada
 
-| Nalaz | Razlog | Napomena |
-|---|---|---|
-| **Feritin** | Isključiti deficit željeza | **Cilj: ≥100 ng/mL** (AASM 2024). Feritin <75: oralno ILI IV željezo. Feritin 75–100: SAMO IV željezo. POZOR: feritin je i reaktant akutne faze — ako je CRP povišen, feritin može biti lažno normalan! |
-| **Kompletna krvna slika** | Anemija, sideropenija | MCV, retikulociti |
-| **TSH** | Isključiti hipotireozu | Hipotireoza može izazvati RLS |
-| **Kompletni metabolički panel (GUK, kreatinin, elektroliti)** | Isključiti kroničnu bubrežnu bolest, dijabetes | Bubrežna insuficijencija čest je sekundarni uzrok |
-| **HbA1c** | Dijabetička neuropatija | Ako nije nedavno kontroliran |
-| **Vitamin B12** | Isključiti deficit B12 | Ako sumnjate na neuropatiju |
+    | Nalaz | Razlog | Napomena |
+    |---|---|---|
+    | **Feritin** | Isključiti deficit željeza | **Cilj: ≥100 ng/mL** (AASM 2024). Feritin <75: oralno ILI IV željezo. Feritin 75–100: SAMO IV željezo. POZOR: feritin je i reaktant akutne faze — ako je CRP povišen, feritin može biti lažno normalan! |
+    | **Kompletna krvna slika** | Anemija, sideropenija | MCV, retikulociti |
+    | **TSH** | Isključiti hipotireozu | Hipotireoza može izazvati RLS |
+    | **Kompletni metabolički panel (GUK, kreatinin, elektroliti)** | Isključiti kroničnu bubrežnu bolest, dijabetes | Bubrežna insuficijencija čest je sekundarni uzrok |
+    | **HbA1c** | Dijabetička neuropatija | Ako nije nedavno kontroliran |
+    | **Vitamin B12** | Isključiti deficit B12 | Ako sumnjate na neuropatiju |
 
-#### Korak 4: Dodatna obrada po potrebi
-- **Elektromiografija / studije provodljivosti živaca (EMG/ENG)** — Samo ako sumnjate na neuropatiju (hipostezija, parestezije stalno prisutne, abnormalan neurološki pregled)
-- **Polisomnografija (PSG)** — NIJE potrebna za dijagnozu RLS-a! Indicirana samo za dijagnozu PLMD-a i kad sumnjate na komorbidnu OSA
+    #### Korak 4: Dodatna obrada po potrebi
+    - **Elektromiografija / studije provodljivosti živaca (EMG/ENG)** — Samo ako sumnjate na neuropatiju (hipostezija, parestezije stalno prisutne, abnormalan neurološki pregled)
+    - **Polisomnografija (PSG)** — NIJE potrebna za dijagnozu RLS-a! Indicirana samo za dijagnozu PLMD-a i kad sumnjate na komorbidnu OSA
 
-### Dijagnostika PLMD-a
+    ### Dijagnostika PLMD-a
 
-**PLMD zahtijeva polisomnografiju** — LOM upućuje na PSG ako partner opisuje ritmičke trzaje nogu uz neobjašnjivu dnevnu pospanost, a RLS i OSA su isključeni.
-
----
-
-## Liječenje u primarnoj zdravstvenoj zaštiti
-
-### Nefarmakološke mjere (za sve pacijente)
-
-- **Izbjegavati kofein, alkohol i nikotin** — Pogoršavaju simptome, osobito navečer
-- **Umjerena tjelesna aktivnost** — Redovita, ali ne intenzivna i ne kasno navečer
-- **Higijena spavanja** — Redovito vrijeme lijeganja, hladna soba, tamna prostorija
-- **Masaža nogu, topla kupka ili hladni oblozi** — Simptomatsko olakšanje kod nekih pacijenata
-- **Pregledati i prilagoditi terapiju** — Ukinuti lijekove koji pogoršavaju RLS (antihistaminike, metoklopramid; razmotriti zamjenu antidepresiva)
-- **Izbjegavati produljeno mirovanje** — Savjetujte pacijentima da se pokrenu na dugim putovanjima, u kinu, čekaonicama
-
-### Farmakoterapija — Stupnjeviti pristup
-
-#### PRVI KORAK: Nadomjestak željeza (ako je feritin <100 ng/mL) — AASM 2024 dvostupanjski pristup
-
-Smjernica AASM iz 2024. uvodi **dvostupanjski pristup** suplementaciji željezom temeljen na razini feritina:
-
-| Razina feritina | Preporučeni pristup | Obrazloženje |
-|---|---|---|
-| **<75 ng/mL** | Oralna **ILI** intravenska suplementacija željezom | Pri ovim razinama oralno željezo može biti učinkovito; IV je alternativa pri nepodnošenju ili malapsorpciji |
-| **75–100 ng/mL** | **SAMO intravenska** suplementacija željezom | Oralno željezo se slabo apsorbira pri ovim razinama feritina — homeostatski mehanizmi ograničavaju crijevnu apsorpciju kada su zalihe djelomično popunjene |
-| **≥100 ng/mL** | Suplementacija nije indicirana | Ciljna vrijednost postignuta |
-
-**Oralna suplementacija (feritin <75 ng/mL):**
-
-| Lijek | Doza | Način primjene | Napomena |
-|---|---|---|---|
-| **Željezov sulfat** (*ferrous sulfate*) | 325 mg (65 mg elementarnog Fe) | Peroralno, **svaki drugi dan** | Svaki drugi dan = bolja apsorpcija nego svakodnevno! |
-| + **Vitamin C** | 100–200 mg | Uz svaku dozu željeza | Poboljšava apsorpciju željeza |
-
-- **Uzimati natašte** ili barem 1 sat prije obroka
-- **Razdvojiti od antacida, IPP-ova i levotiroksina** (≥2 sata za antacide, ≥4 sata za levotiroksin)
-- **Ciljna vrijednost: feritin ≥100 ng/mL** (AASM 2024)
-- **Kontrola feritina za 8–12 tjedana**
-- **Učinak na RLS simptome: 4–12 tjedana** — upozorite pacijenta da nije brz lijek
-
-**Intravenska suplementacija (feritin 75–100 ng/mL ili nepodnošenje oralnog željeza):**
-
-- **Ferikarbekstol maltoza** ili **željezov karboksimaltoza** — uputite pacijenta za IV infuziju
-- Indicirana OBAVEZNO kad je feritin 75–100 ng/mL (oralno željezo neće učinkovito podići feritin iznad 75 ng/mL)
-- Indicirana i kod feritina <75 ng/mL ako pacijent ne podnosi peroralne preparate (GI smetnje, malapsorpcija)
-
-> ⚠️ **UVIJEK provjerite feritin prije bilo kakve farmakoterapije RLS-a.** Ciljna vrijednost feritina je **≥100 ng/mL** (AASM 2024). Korekcija željeza može potpuno riješiti simptome kod značajnog dijela pacijenata i mora biti prvi terapijski korak.
-
-#### DRUGI KORAK: Alfa-2-delta ligandi (PREFERIRANA prva linija farmakoterapije)
-
-Alfa-2-delta ligandi (gabapentinski lijekovi) danas su **preporučena prva linija** farmakoterapije za RLS prema AASM, IRLSSG i europskim smjernicama. Razlog: **nema rizika od augmentacije**, pomažu i kod komorbiditeta (neuropatska bol, nesanica, anksioznost).
-
-| Lijek | Početna doza | Raspon doza | Doziranje | Napomene |
-|---|---|---|---|---|
-| **Gabapentin** | 300 mg navečer | 300–1800 mg | Doza navečer ili podijeljena (17h + navečer) | Nelinearno se apsorbira — veće doze se slabije apsorbiraju. Polako titrirati. |
-| **Pregabalin** | 75 mg navečer | 150–450 mg | Navečer ili podijeljena doza | Linearna farmakokinetika (predvidljivije doziranje). Kontrolirani lijek (u nekim zemljama). |
-
-**Nuspojave:** Somnolencija, vrtoglavica, periferni edemi, povećanje tjelesne mase. Oprez kod pacijenata sa srčanim zatajivanjem (edemi) i starijih (rizik od padova).
-
-**Prilagodba doze:** Potrebna kod bubrežne insuficijencije (oba lijeka se izlučuju renalno).
-
-**Početak učinka:** 1–2 tjedna.
-
-#### TREĆI KORAK: Dopaminski agonisti — PREPUSTITI SPECIJALISTU
-
-> 🔴 **PARADIGMATSKA PROMJENA (AASM 2024):** Dopaminski agonisti (pramipeksol, ropinirol) **više se NE preporučuju kao rutinska terapija** za RLS — **uvjetna preporuka PROTIV** zbog visokog rizika od augmentacije (30–50%) i poremećaja kontrole impulsa (6–17%).
-
-Ako alfa-2-delta ligandi nisu dovoljni i feritin je korigiran (≥100 ng/mL) — **uputiti neurologu** za razmatranje dopaminskog agonista. LOM ne bi trebao samostalno uvoditi DA za RLS.
-
-> ⚠️ **Ako pacijent VEĆ prima DA (pramipeksol, ropinirol):** Na svakoj kontroli pitajte: *„Javljaju li se simptomi ranije u danu? Šire li se na ruke?"* (augmentacija) i *„Jeste li primijetili promjene u ponašanju — kockanje, pretjerano trošenje novca?"* (poremećaji kontrole impulsa). Ako da → NE povećavajte dozu → uputite specijalistu.
-
-#### Dostupnost u Hrvatskoj (HALMED)
-
-Gabapentin, pregabalin, pramipeksol, ropinirol i željezov sulfat — **svi dostupni** u RH. Gabapentin enakarbil i rotigotinski flaster **NISU** registrirani u RH.
-
-### Liječenje PLMD-a
-
-Liječi se samo ako uzrokuje simptome i ako su isključeni drugi uzroci. Pristup je isti kao za RLS: korekcija željeza, revizija lijekova, alfa-2-delta ligandi. Uputiti specijalistu.
+    **PLMD zahtijeva polisomnografiju** — LOM upućuje na PSG ako partner opisuje ritmičke trzaje nogu uz neobjašnjivu dnevnu pospanost, a RLS i OSA su isključeni.
 
 ---
 
-## Kada uputiti specijalistu?
+??? note "Liječenje u primarnoj zdravstvenoj zaštiti"
 
-| Klinička situacija | Kamo uputiti | Razlog |
-|---|---|---|
-| Sumnja na **augmentaciju** | Neurolog / centar za medicinu spavanja | Potrebna planirana detoksifikacija s dopaminskog agonista i prijelaz na drugu terapiju |
-| **Refraktorni RLS** (neodgovaranje na ≥2 terapijska pokušaja) | Neurolog / centar za medicinu spavanja | Razmotriti kombiniranu terapiju, IV željezo, niskodozni opioid |
-| **Atipična prezentacija** (simptomi samo danju, asimetrični, bez senzorne komponente) | Neurolog | Isključiti mimike RLS-a (radikulopatija, vaskulitis, mijelopatija) |
-| Sumnja na **PLMD** (partner opisuje periodičke pokrete, neobjašnjeno neosvježavajuće spavanje) | Centar za medicinu spavanja | Potrebna PSG za postavljanje dijagnoze |
-| **Teški RLS u trudnoći** | Neurolog + ginekolog | Ograničene farmakoterapijske opcije; kontrola željeza prioritet |
-| **Poremećaji kontrole impulsa** na terapiji DA | Neurolog | Potrebna prilagodba terapije |
-| **Djeca i adolescenti** sa sumnjom na RLS | Neuropedijatar | Specifični dijagnostički kriteriji za dječju dob |
+    ### Nefarmakološke mjere (za sve pacijente)
+
+    - **Izbjegavati kofein, alkohol i nikotin** — Pogoršavaju simptome, osobito navečer
+    - **Umjerena tjelesna aktivnost** — Redovita, ali ne intenzivna i ne kasno navečer
+    - **Higijena spavanja** — Redovito vrijeme lijeganja, hladna soba, tamna prostorija
+    - **Masaža nogu, topla kupka ili hladni oblozi** — Simptomatsko olakšanje kod nekih pacijenata
+    - **Pregledati i prilagoditi terapiju** — Ukinuti lijekove koji pogoršavaju RLS (antihistaminike, metoklopramid; razmotriti zamjenu antidepresiva)
+    - **Izbjegavati produljeno mirovanje** — Savjetujte pacijentima da se pokrenu na dugim putovanjima, u kinu, čekaonicama
+
+    ### Farmakoterapija — Stupnjeviti pristup
+
+    #### PRVI KORAK: Nadomjestak željeza (ako je feritin <100 ng/mL) — AASM 2024 dvostupanjski pristup
+
+    Smjernica AASM iz 2024. uvodi **dvostupanjski pristup** suplementaciji željezom temeljen na razini feritina:
+
+    | Razina feritina | Preporučeni pristup | Obrazloženje |
+    |---|---|---|
+    | **<75 ng/mL** | Oralna **ILI** intravenska suplementacija željezom | Pri ovim razinama oralno željezo može biti učinkovito; IV je alternativa pri nepodnošenju ili malapsorpciji |
+    | **75–100 ng/mL** | **SAMO intravenska** suplementacija željezom | Oralno željezo se slabo apsorbira pri ovim razinama feritina — homeostatski mehanizmi ograničavaju crijevnu apsorpciju kada su zalihe djelomično popunjene |
+    | **≥100 ng/mL** | Suplementacija nije indicirana | Ciljna vrijednost postignuta |
+
+    **Oralna suplementacija (feritin <75 ng/mL):**
+
+    | Lijek | Doza | Način primjene | Napomena |
+    |---|---|---|---|
+    | **Željezov sulfat** (*ferrous sulfate*) | 325 mg (65 mg elementarnog Fe) | Peroralno, **svaki drugi dan** | Svaki drugi dan = bolja apsorpcija nego svakodnevno! |
+    | + **Vitamin C** | 100–200 mg | Uz svaku dozu željeza | Poboljšava apsorpciju željeza |
+
+    - **Uzimati natašte** ili barem 1 sat prije obroka
+    - **Razdvojiti od antacida, IPP-ova i levotiroksina** (≥2 sata za antacide, ≥4 sata za levotiroksin)
+    - **Ciljna vrijednost: feritin ≥100 ng/mL** (AASM 2024)
+    - **Kontrola feritina za 8–12 tjedana**
+    - **Učinak na RLS simptome: 4–12 tjedana** — upozorite pacijenta da nije brz lijek
+
+    **Intravenska suplementacija (feritin 75–100 ng/mL ili nepodnošenje oralnog željeza):**
+
+    - **Ferikarbekstol maltoza** ili **željezov karboksimaltoza** — uputite pacijenta za IV infuziju
+    - Indicirana OBAVEZNO kad je feritin 75–100 ng/mL (oralno željezo neće učinkovito podići feritin iznad 75 ng/mL)
+    - Indicirana i kod feritina <75 ng/mL ako pacijent ne podnosi peroralne preparate (GI smetnje, malapsorpcija)
+
+    > ⚠️ **UVIJEK provjerite feritin prije bilo kakve farmakoterapije RLS-a.** Ciljna vrijednost feritina je **≥100 ng/mL** (AASM 2024). Korekcija željeza može potpuno riješiti simptome kod značajnog dijela pacijenata i mora biti prvi terapijski korak.
+
+    #### DRUGI KORAK: Alfa-2-delta ligandi (PREFERIRANA prva linija farmakoterapije)
+
+    Alfa-2-delta ligandi (gabapentinski lijekovi) danas su **preporučena prva linija** farmakoterapije za RLS prema AASM, IRLSSG i europskim smjernicama. Razlog: **nema rizika od augmentacije**, pomažu i kod komorbiditeta (neuropatska bol, nesanica, anksioznost).
+
+    | Lijek | Početna doza | Raspon doza | Doziranje | Napomene |
+    |---|---|---|---|---|
+    | **Gabapentin** | 300 mg navečer | 300–1800 mg | Doza navečer ili podijeljena (17h + navečer) | Nelinearno se apsorbira — veće doze se slabije apsorbiraju. Polako titrirati. |
+    | **Pregabalin** | 75 mg navečer | 150–450 mg | Navečer ili podijeljena doza | Linearna farmakokinetika (predvidljivije doziranje). Kontrolirani lijek (u nekim zemljama). |
+
+    **Nuspojave:** Somnolencija, vrtoglavica, periferni edemi, povećanje tjelesne mase. Oprez kod pacijenata sa srčanim zatajivanjem (edemi) i starijih (rizik od padova).
+
+    **Prilagodba doze:** Potrebna kod bubrežne insuficijencije (oba lijeka se izlučuju renalno).
+
+    **Početak učinka:** 1–2 tjedna.
+
+    #### TREĆI KORAK: Dopaminski agonisti — PREPUSTITI SPECIJALISTU
+
+    > 🔴 **PARADIGMATSKA PROMJENA (AASM 2024):** Dopaminski agonisti (pramipeksol, ropinirol) **više se NE preporučuju kao rutinska terapija** za RLS — **uvjetna preporuka PROTIV** zbog visokog rizika od augmentacije (30–50%) i poremećaja kontrole impulsa (6–17%).
+
+    Ako alfa-2-delta ligandi nisu dovoljni i feritin je korigiran (≥100 ng/mL) — **uputiti neurologu** za razmatranje dopaminskog agonista. LOM ne bi trebao samostalno uvoditi DA za RLS.
+
+    > ⚠️ **Ako pacijent VEĆ prima DA (pramipeksol, ropinirol):** Na svakoj kontroli pitajte: *„Javljaju li se simptomi ranije u danu? Šire li se na ruke?"* (augmentacija) i *„Jeste li primijetili promjene u ponašanju — kockanje, pretjerano trošenje novca?"* (poremećaji kontrole impulsa). Ako da → NE povećavajte dozu → uputite specijalistu.
+
+    #### Dostupnost u Hrvatskoj (HALMED)
+
+    Gabapentin, pregabalin, pramipeksol, ropinirol i željezov sulfat — **svi dostupni** u RH. Gabapentin enakarbil i rotigotinski flaster **NISU** registrirani u RH.
+
+    ### Liječenje PLMD-a
+
+    Liječi se samo ako uzrokuje simptome i ako su isključeni drugi uzroci. Pristup je isti kao za RLS: korekcija željeza, revizija lijekova, alfa-2-delta ligandi. Uputiti specijalistu.
 
 ---
 
-!!! zamka "⚠️ Česte zamke"
+??? note "Kada uputiti specijalistu?"
+
+    | Klinička situacija | Kamo uputiti | Razlog |
+    |---|---|---|
+    | Sumnja na **augmentaciju** | Neurolog / centar za medicinu spavanja | Potrebna planirana detoksifikacija s dopaminskog agonista i prijelaz na drugu terapiju |
+    | **Refraktorni RLS** (neodgovaranje na ≥2 terapijska pokušaja) | Neurolog / centar za medicinu spavanja | Razmotriti kombiniranu terapiju, IV željezo, niskodozni opioid |
+    | **Atipična prezentacija** (simptomi samo danju, asimetrični, bez senzorne komponente) | Neurolog | Isključiti mimike RLS-a (radikulopatija, vaskulitis, mijelopatija) |
+    | Sumnja na **PLMD** (partner opisuje periodičke pokrete, neobjašnjeno neosvježavajuće spavanje) | Centar za medicinu spavanja | Potrebna PSG za postavljanje dijagnoze |
+    | **Teški RLS u trudnoći** | Neurolog + ginekolog | Ograničene farmakoterapijske opcije; kontrola željeza prioritet |
+    | **Poremećaji kontrole impulsa** na terapiji DA | Neurolog | Potrebna prilagodba terapije |
+    | **Djeca i adolescenti** sa sumnjom na RLS | Neuropedijatar | Specifični dijagnostički kriteriji za dječju dob |
+
+---
+
+!!! zamka "Česte zamke"
 
     | ❌ Pogreška | ✅ Ispravni pristup |
     |---|---|
@@ -262,17 +268,17 @@ Liječi se samo ako uzrokuje simptome i ako su isključeni drugi uzroci. Pristup
 
 ---
 
-## Ključne poruke
+!!! kljucna-poruka "Ključne poruke"
 
-1. **RLS se dijagnosticira klinički — 4 IRLS kriterija.** Ne treba PSG ni neurolog za dijagnozu. Pitajte aktivno — pogađa 5–10% populacije.
+    1. **RLS se dijagnosticira klinički — 4 IRLS kriterija.** Ne treba PSG ni neurolog za dijagnozu. Pitajte aktivno — pogađa 5–10% populacije.
 
-2. **Uvijek provjerite feritin — cilj ≥100 ng/mL (AASM 2024).** Feritin od 30 ng/mL je „laboratorijski normalan" ali nedovoljan za mozak. Feritin <75 → oralno/IV željezo; 75–100 → samo IV.
+    2. **Uvijek provjerite feritin — cilj ≥100 ng/mL (AASM 2024).** Feritin od 30 ng/mL je „laboratorijski normalan" ali nedovoljan za mozak. Feritin <75 → oralno/IV željezo; 75–100 → samo IV.
 
-3. **Gabapentin/pregabalin su prva linija. AASM 2024 uvjetno PROTIV dopaminskih agonista** (augmentacija u 30–50%). DA samo ako gabapentinoidi ne pomažu — i tada specijalist uvodi.
+    3. **Gabapentin/pregabalin su prva linija. AASM 2024 uvjetno PROTIV dopaminskih agonista** (augmentacija u 30–50%). DA samo ako gabapentinoidi ne pomažu — i tada specijalist uvodi.
 
-4. **Antihistaminici, SSRI/SNRI, antipsihotici i metoklopramid pogoršavaju RLS.** Revizija terapije može biti dovoljna intervencija.
+    4. **Antihistaminici, SSRI/SNRI, antipsihotici i metoklopramid pogoršavaju RLS.** Revizija terapije može biti dovoljna intervencija.
 
-5. **Simptomi ranije u danu + širenje na ruke = augmentacija.** Ne povećavajte dozu DA. Uputite specijalistu.
+    5. **Simptomi ranije u danu + širenje na ruke = augmentacija.** Ne povećavajte dozu DA. Uputite specijalistu.
 
 ---
 

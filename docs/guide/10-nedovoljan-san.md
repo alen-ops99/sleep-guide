@@ -2,7 +2,7 @@
 
 > **MKB-10:** F51.12 | **ICSD-3:** Behaviorally Induced Insufficient Sleep Syndrome (Sindrom nedovoljnog spavanja izazvan ponašanjem)
 
-!!! brzi-pregled "🔍 Brzi pregled"
+!!! brzi-pregled "Brzi pregled"
 
     **Prepoznaj:** Pacijent spava <7h radnim danom, ≥2h dulje vikendom, ovisan o alarmu. Dnevna pospanost i umor koji nestaju na odmoru. Najčešći uzrok EDS-a — ispred narkolepsije!
 
@@ -12,63 +12,81 @@
 
 ---
 
-## Što je to?
+??? note "Što je to?"
 
-Sindrom nedovoljnog spavanja je stanje u kojem pacijent **kronično i dobrovoljno spava kraće nego što mu organizam zahtijeva**, što rezultira pretjeranom dnevnom pospanosti (EDS) i kognitivnim deficitom. Ključna riječ je *dobrovoljno* — pacijent mogao bi spavati dovoljno, ali ne čini to zbog radnih obveza, ekrana ili zato što „nema vremena za spavanje".
+    Sindrom nedovoljnog spavanja je stanje u kojem pacijent **kronično i dobrovoljno spava kraće nego što mu organizam zahtijeva**, što rezultira pretjeranom dnevnom pospanosti (EDS) i kognitivnim deficitom. Ključna riječ je *dobrovoljno* — pacijent mogao bi spavati dovoljno, ali ne čini to zbog radnih obveza, ekrana ili zato što „nema vremena za spavanje".
 
-Najvažniji paradoks: **pacijent se ne žali na san, nego na pospanost.** Spavanje od 5-6 sati postalo mu je identitet: *„Ja sam osoba koja ne treba puno sna."*
+    Najvažniji paradoks: **pacijent se ne žali na san, nego na pospanost.** Spavanje od 5-6 sati postalo mu je identitet: *„Ja sam osoba koja ne treba puno sna."*
 
-Dijagnoza se potvrđuje jednostavno: **ako se simptomi povuku nakon 2 tjedna adekvatnog sna (7-9 sati), dijagnoza je potvrđena.** Nema potrebe za PSG-om ni skupom obradom. Za LOM-a, ovo bi trebao biti **prvi diferencijalno-dijagnostički korak** kod svakog pacijenta s dnevnom pospanosti ili kroničnim umorom.
-
----
-
-## Koliko je često?
-
-| Skupina | Podatak |
-|---|---|
-| Odrasli koji habitualno spavaju <7 sati | **20-35%** populacije |
-| Adolescenti koji spavaju <8 sati školskim danom | **60-75%** |
-| Pacijenti upućeni u centar za spavanje zbog EDS-a kod kojih je pravi uzrok nedovoljan san | **Procjena: 20-40%** |
-| Smjenski radnici | Osobito pogođeni — prisilna restrikcija sna |
-
-**Kontekstualizacija za LOM praksu:** U prosječnom timu s 2.000 pacijenata, **300-700 odraslih habitualno spava <7 sati.** Ovo je gotovo sigurno **najčešći uzrok EDS-a u primarnoj zdravstvenoj zaštiti** — daleko ispred narkolepsije ili IH. Rijetko se razmatra kao dijagnoza jer je kronično kratko spavanje kulturalno normalizirano.
+    Dijagnoza se potvrđuje jednostavno: **ako se simptomi povuku nakon 2 tjedna adekvatnog sna (7-9 sati), dijagnoza je potvrđena.** Nema potrebe za PSG-om ni skupom obradom. Za LOM-a, ovo bi trebao biti **prvi diferencijalno-dijagnostički korak** kod svakog pacijenta s dnevnom pospanosti ili kroničnim umorom.
 
 ---
 
-## Kako prepoznati?
+??? note "Koliko je često?"
 
-### Ključna pitanja u ordinaciji
+    | Skupina | Podatak |
+    |---|---|
+    | Odrasli koji habitualno spavaju <7 sati | **20-35%** populacije |
+    | Adolescenti koji spavaju <8 sati školskim danom | **60-75%** |
+    | Pacijenti upućeni u centar za spavanje zbog EDS-a kod kojih je pravi uzrok nedovoljan san | **Procjena: 20-40%** |
+    | Smjenski radnici | Osobito pogođeni — prisilna restrikcija sna |
 
-Dijagnoza ovisi o **jednom dobrom pitanju**:
-
-> **„Koliko sati zapravo spavate radnim danom — od trenutka kad ugasite svjetlo do alarma?"**
-
-Ako je odgovor **manje od 7 sati**, slijede dva ključna dodatna pitanja:
-
-1. **„Koliko spavate vikendom ili na godišnjem odmoru, kada nemate obveza?"**
-   - Razlika ≥2 sata između radnog dana i vikenda = **dug sna** (*social jetlag*) — jasan znak kronične deprivacije
-   - Ako pacijent vikendom spava 9-10 sati, to nije „lijenost" — to je biološka kompenzacija kroničnog deficita
-
-2. **„Trebate li alarm da se probudite?"**
-   - Osoba koja spava dovoljno budi se spontano ili neposredno prije alarma
-   - Ovisnost o alarmu (osobito s višestrukim odgodama) = nedovoljan san
-
-### Klinička slika
-
-- **Pretjerana dnevna pospanost** — zaspe za volanom, pred TV-om, na predavanju
-- **Kronični umor** — pogrešno pripisuje se stresu, depresiji ili „godinama"
-- **Kognitivni deficit** — „magla u glavi", smanjena koncentracija
-- **Simptomi se poboljšavaju na odmoru** — pacijent se osjeća „kao novi čovjek" na godišnjem odmoru
-- **Potreba za kofeinom** — više od 3-4 kave dnevno da „preživi dan"
-
-### Na što obratiti pozornost
-
-- *„Ja zaspim odmah"* — može opisivati **patološku pospanost**, ne zdrav san. Usnivanje za <5 minuta = znak deprivacije.
-- *„Ja sam kratko spavač"* — pravi kratki spavači čine **<1% populacije** i nemaju dnevnu pospanost. Ako postoje tegobe, nije kratki spavač.
+    **Kontekstualizacija za LOM praksu:** U prosječnom timu s 2.000 pacijenata, **300-700 odraslih habitualno spava <7 sati.** Ovo je gotovo sigurno **najčešći uzrok EDS-a u primarnoj zdravstvenoj zaštiti** — daleko ispred narkolepsije ili IH. Rijetko se razmatra kao dijagnoza jer je kronično kratko spavanje kulturalno normalizirano.
 
 ---
 
-!!! crvena-zastavica "🚩 Crvene zastavice"
+??? note "Kako prepoznati?"
+
+    <div class="symptom-tiers" markdown>
+
+    <div class="symptom-tier tier-critical" markdown>
+    ### Kritični znakovi
+    - **Spava <7 sati radnim danima, ali značajno duže vikendom/na odmoru** (>2h razlike)
+    - **Dnevna pospanost, umor, poteškoće s koncentracijom**
+    - **Simptomi se poboljšavaju pri produženom snu** (vikend, odmor, bolovanje)
+    </div>
+
+    <div class="symptom-tier tier-supporting" markdown>
+    ### Podržavajući znakovi
+    - Višestruki alarmi za buđenje
+    - Prekomjerna konzumacija kofeina (>3 šalice/dan)
+    - Pacijent „nema vremena za spavanje" (profesionalne, obiteljske ili društvene obaveze)
+    - Microsleep epizode (kratki „zastoji" za volanom ili na poslu)
+    </div>
+
+    <div class="symptom-tier tier-differential" markdown>
+    ### Diferencijalni tragovi
+    - **OSA** — pospanost unatoč „dovoljnom" vremenu u krevetu; hrkanje+apneja
+    - **Narkolepsija** — pospanost neovisna o trajanju sna, katapleksija
+    - **Hipotireoza** — umor uz debljanje, intoleranciju hladnoće; provjera TSH
+    </div>
+
+    </div>
+
+    ### Ključna pitanja u ordinaciji
+
+    Dijagnoza ovisi o **jednom dobrom pitanju**:
+
+    > **„Koliko sati zapravo spavate radnim danom — od trenutka kad ugasite svjetlo do alarma?"**
+
+    Ako je odgovor **manje od 7 sati**, slijede dva ključna dodatna pitanja:
+
+    1. **„Koliko spavate vikendom ili na godišnjem odmoru, kada nemate obveze?"**
+       - Razlika ≥2 sata između radnog dana i vikenda = **dug sna** (*social jetlag*) — jasan znak kronične deprivacije
+       - Ako pacijent vikendom spava 9-10 sati, to nije „lijenost" — to je biološka kompenzacija kroničnog deficita
+
+    2. **„Trebate li alarm da se probudite?"**
+       - Osoba koja spava dovoljno budi se spontano ili neposredno prije alarma
+       - Ovisnost o alarmu (osobito s višestrukim odgodama) = nedovoljan san
+
+    ### Na što obratiti pozornost
+
+    - *„Ja zaspim odmah"* — može opisivati **patološku pospanost**, ne zdrav san. Usnivanje za <5 minuta = znak deprivacije.
+    - *„Ja sam kratko spavač"* — pravi kratki spavači čine **<1% populacije** i nemaju dnevnu pospanost. Ako postoje tegobe, nije kratki spavač.
+
+---
+
+!!! crvena-zastavica "Crvene zastavice"
 
     | Crvena zastavica | Zašto je važna | Akcija |
     |---|---|---|
@@ -79,101 +97,101 @@ Ako je odgovor **manje od 7 sati**, slijede dva ključna dodatna pitanja:
 
 ---
 
-## Probir i dijagnostika
+??? note "Probir i dijagnostika"
 
-### Što LOM može učiniti — jednostavan dijagnostički algoritam
+    ### Što LOM može učiniti — jednostavan dijagnostički algoritam
 
-**Korak 1: Epworthova ljestvica pospanosti (ESS)**
+    **Korak 1: Epworthova ljestvica pospanosti (ESS)**
 
-| ESS ukupni zbroj | Interpretacija |
-|---|---|
-| 0-10 | Normalna dnevna pospanost |
-| **11-15** | **Umjerena pospanost — indicirana obrada** |
-| **≥16** | **Teška pospanost — hitna obrada** |
+    | ESS ukupni zbroj | Interpretacija |
+    |---|---|
+    | 0-10 | Normalna dnevna pospanost |
+    | **11-15** | **Umjerena pospanost — indicirana obrada** |
+    | **≥16** | **Teška pospanost — hitna obrada** |
 
-**Korak 2: Dnevnik spavanja (2 tjedna)**
+    **Korak 2: Dnevnik spavanja (2 tjedna)**
 
-Ključni parametar: **prosječno vrijeme spavanja radnim danom vs. vikend.** San **<7 sati** radnim danom + vikend san ≥2 sata duži = **visoka sumnja na nedovoljan san.**
+    Ključni parametar: **prosječno vrijeme spavanja radnim danom vs. vikend.** San **<7 sati** radnim danom + vikend san ≥2 sata duži = **visoka sumnja na nedovoljan san.**
 
-**Korak 3: Dijagnostički test — produženje sna (2 tjedna)**
+    **Korak 3: Dijagnostički test — produženje sna (2 tjedna)**
 
-> Ovo je istovremeno dijagnostički test i liječenje.
+    > Ovo je istovremeno dijagnostički test i liječenje.
 
-Protokol:
-- Pacijent **2 tjedna** ide u krevet dovoljno rano da omogući **8-9 sati u krevetu** svaku noć
-- Bez alarma vikendom (dopustiti spontano buđenje)
-- Nakon 2 tjedna — ponoviti ESS i evaluirati simptome
+    Protokol:
+    - Pacijent **2 tjedna** ide u krevet dovoljno rano da omogući **8-9 sati u krevetu** svaku noć
+    - Bez alarma vikendom (dopustiti spontano buđenje)
+    - Nakon 2 tjedna — ponoviti ESS i evaluirati simptome
 
-| Ishod | Interpretacija |
-|---|---|
-| EDS se povukla, ESS normaliziran, pacijent se osjeća značajno bolje | **Dijagnoza potvrđena: sindrom nedovoljnog spavanja** |
-| EDS perzistira unatoč dokumentiranom adekvatnom snu (7-9h) kroz 2+ tjedna | **Isključen nedovoljan san → daljnja obrada (MSLT, PSG)** |
+    | Ishod | Interpretacija |
+    |---|---|
+    | EDS se povukla, ESS normaliziran, pacijent se osjeća značajno bolje | **Dijagnoza potvrđena: sindrom nedovoljnog spavanja** |
+    | EDS perzistira unatoč dokumentiranom adekvatnom snu (7-9h) kroz 2+ tjedna | **Isključen nedovoljan san → daljnja obrada (MSLT, PSG)** |
 
-### Kritična napomena: nedovoljan san i MSLT
+    ### Kritična napomena: nedovoljan san i MSLT
 
-> ⚠️ **MSLT NIKADA se ne smije raditi bez prethodnog dokumentiranog adekvatnog sna (≥2 tjedna po ≥7 sati/noć).** Nedovoljan san može na MSLT-u dati skraćenu latenciju i SOREMP-ove — rezultat: **lažno pozitivna dijagnoza narkolepsije.** Svaki pacijent upućen na MSLT mora imati dokumentirani dnevnik spavanja ≥2 tjedna prije testa.
-
----
-
-## Liječenje u primarnoj zdravstvenoj zaštiti
-
-### Jedini lijek: PRODUŽENJE SNA
-
-Ne postoji farmakoterapija za sindrom nedovoljnog spavanja. Stimulansi **ne liječe uzrok** — samo maskiraju simptome. Jedini lijek je **spavati dovoljno**. PSG nije potrebna — dijagnoza je klinička.
-
-### Kako to provesti u praksi
-
-**1. Odredite ciljno vrijeme u krevetu**
-
-Preporuka za odrasle (AASM/Sleep Research Society, 2015):
-- **18-64 godine:** 7-9 sati sna po noći
-- **≥65 godina:** 7-8 sati sna po noći
-- Individualna potreba varira — ciljati vrijeme u krevetu 8-8,5 sati da se osigura ≥7 sati stvarnog sna
-
-**2. Izračunajte potrebno vrijeme lijeganja**
-
-Jednostavan račun s pacijentom:
-- *„U koliko se morate probuditi radnim danom?"* → npr. 06:00
-- *„Trebate 8 sati u krevetu"* → lijeganje najkasnije do 22:00
-- *„To znači da morate početi rutinu pripreme za san u 21:30"*
-
-**3. Identificirajte i adresirajte barijere**
-
-| Česta barijera | Pristup |
-|---|---|
-| **Ekrani navečer** | Pravilo „bez ekrana 60 min prije sna" |
-| **Radne obveze / prekovremeni rad** | Edukacija o zdravstvenim posljedičama; po potrebi liječnička preporuka poslodavcu |
-| **„Revenge bedtime procrastination"** | Pacijent koristi noć kao jedino slobodno vrijeme — pomoći restrukturirati raspored |
-| **Smjenski rad** | Vidi poglavlje 8 (cirkadijani poremećaji) |
-| **Mala djeca** | Rotacija noćnih obaveza s partnerom; vikend kompenzacija |
-
-**4. Educirajte o zdravstvenim posljedicama kroničnog nedovoljnog sna**
-
-Pacijent mora razumjeti da kronično kratko spavanje nije samo pitanje umora — to je čimbenik rizika za:
-
-- **Kardiovaskularne bolesti** — hipertenzija, infarkt miokarda, moždani udar (rizik povećan 20-40%)
-- **Metaboličke bolesti** — pretilost, inzulinska rezistencija, dijabetes tipa 2 (rizik povećan 30-50%)
-- **Kognitivno oštećenje i demencija** — smanjena pažnja, pamćenje, egzekutivne funkcije
-- **Prometne i radne nesreće** — 24h bez sna = ekvivalent 1,0‰ alkohola u krvi
-
-**5. Kontrola za 2-4 tjedna** — evaluacija dnevnika spavanja, ponavljanje ESS-a. Ako EDS perzistira uz dokumentirano adekvatan san → uputiti na daljnju obradu.
-
-> **Ovo je 100% u domeni LOM-a.** Anamneza, dnevnik spavanja, ESS, terapijski test produljenjem sna — LOM ima sve alate za potpuno samostalno zbrinjavanje.
+    > ⚠️ **MSLT NIKADA se ne smije raditi bez prethodnog dokumentiranog adekvatnog sna (≥2 tjedna po ≥7 sati/noć).** Nedovoljan san može na MSLT-u dati skraćenu latenciju i SOREMP-ove — rezultat: **lažno pozitivna dijagnoza narkolepsije.** Svaki pacijent upućen na MSLT mora imati dokumentirani dnevnik spavanja ≥2 tjedna prije testa.
 
 ---
 
-## Kada uputiti specijalistu?
+??? note "Liječenje u primarnoj zdravstvenoj zaštiti"
 
-| Situacija | Akcija |
-|---|---|
-| **EDS perzistira unatoč ≥2 tjedna dokumentiranog sna 7-9h/noć** | Uputiti u centar za medicinu spavanja — razmotriti narkolepsiju, IH, PLMD, idiopatsku hipersomniju |
-| **Sumnja na komorbidnu OSA-u** (hrkanje, apneje, BMI >30) | Uputiti pulmologu na sleep studiju — nedovoljan san + OSA česta kombinacija |
-| **Pacijent ne može produljiti san zbog smjenskog rada** | Razmotriti uputnicu specijalistu medicine rada; pogledati poglavlje o cirkadijanim poremećajima |
-| **Psihijatrijski komorbiditet** koji onemogućuje produženje sna (teška anksioznost, PTSP) | Psihijatar — liječiti osnovni poremećaj paralelno |
+    ### Jedini lijek: PRODUŽENJE SNA
+
+    Ne postoji farmakoterapija za sindrom nedovoljnog spavanja. Stimulansi **ne liječe uzrok** — samo maskiraju simptome. Jedini lijek je **spavati dovoljno**. PSG nije potrebna — dijagnoza je klinička.
+
+    ### Kako to provesti u praksi
+
+    **1. Odredite ciljno vrijeme u krevetu**
+
+    Preporuka za odrasle (AASM/Sleep Research Society, 2015):
+    - **18-64 godine:** 7-9 sati sna po noći
+    - **≥65 godina:** 7-8 sati sna po noći
+    - Individualna potreba varira — ciljati vrijeme u krevetu 8-8,5 sati da se osigura ≥7 sati stvarnog sna
+
+    **2. Izračunajte potrebno vrijeme lijeganja**
+
+    Jednostavan račun s pacijentom:
+    - *„U koliko se morate probuditi radnim danom?"* → npr. 06:00
+    - *„Trebate 8 sati u krevetu"* → lijeganje najkasnije do 22:00
+    - *„To znači da morate početi rutinu pripreme za san u 21:30"*
+
+    **3. Identificirajte i adresirajte barijere**
+
+    | Česta barijera | Pristup |
+    |---|---|
+    | **Ekrani navečer** | Pravilo „bez ekrana 60 min prije sna" |
+    | **Radne obveze / prekovremeni rad** | Edukacija o zdravstvenim posljedičama; po potrebi liječnička preporuka poslodavcu |
+    | **„Revenge bedtime procrastination"** | Pacijent koristi noć kao jedino slobodno vrijeme — pomoći restrukturirati raspored |
+    | **Smjenski rad** | Vidi poglavlje 8 (cirkadijani poremećaji) |
+    | **Mala djeca** | Rotacija noćnih obaveza s partnerom; vikend kompenzacija |
+
+    **4. Educirajte o zdravstvenim posljedicama kroničnog nedovoljnog sna**
+
+    Pacijent mora razumjeti da kronično kratko spavanje nije samo pitanje umora — to je čimbenik rizika za:
+
+    - **Kardiovaskularne bolesti** — hipertenzija, infarkt miokarda, moždani udar (rizik povećan 20-40%)
+    - **Metaboličke bolesti** — pretilost, inzulinska rezistencija, dijabetes tipa 2 (rizik povećan 30-50%)
+    - **Kognitivno oštećenje i demencija** — smanjena pažnja, pamćenje, egzekutivne funkcije
+    - **Prometne i radne nesreće** — 24h bez sna = ekvivalent 1,0‰ alkohola u krvi
+
+    **5. Kontrola za 2-4 tjedna** — evaluacija dnevnika spavanja, ponavljanje ESS-a. Ako EDS perzistira uz dokumentirano adekvatan san → uputiti na daljnju obradu.
+
+    > **Ovo je 100% u domeni LOM-a.** Anamneza, dnevnik spavanja, ESS, terapijski test produljenjem sna — LOM ima sve alate za potpuno samostalno zbrinjavanje.
 
 ---
 
-!!! zamka "⚠️ Česte zamke"
+??? note "Kada uputiti specijalistu?"
+
+    | Situacija | Akcija |
+    |---|---|
+    | **EDS perzistira unatoč ≥2 tjedna dokumentiranog sna 7-9h/noć** | Uputiti u centar za medicinu spavanja — razmotriti narkolepsiju, IH, PLMD, idiopatsku hipersomniju |
+    | **Sumnja na komorbidnu OSA-u** (hrkanje, apneje, BMI >30) | Uputiti pulmologu na sleep studiju — nedovoljan san + OSA česta kombinacija |
+    | **Pacijent ne može produljiti san zbog smjenskog rada** | Razmotriti uputnicu specijalistu medicine rada; pogledati poglavlje o cirkadijanim poremećajima |
+    | **Psihijatrijski komorbiditet** koji onemogućuje produženje sna (teška anksioznost, PTSP) | Psihijatar — liječiti osnovni poremećaj paralelno |
+
+---
+
+!!! zamka "Česte zamke"
 
     | ❌ Pogreška | ✅ Ispravni pristup |
     |---|---|
@@ -186,17 +204,17 @@ Pacijent mora razumjeti da kronično kratko spavanje nije samo pitanje umora —
 
 ---
 
-## Ključne poruke
+??? note "Ključne poruke"
 
-1. **Sindrom nedovoljnog spavanja je najčešći uzrok pretjerane dnevne pospanosti** — daleko ispred narkolepsije ili idiopatske hipersomnije. Mora biti isključen prije bilo kakve daljnje obrade.
+    1. **Sindrom nedovoljnog spavanja je najčešći uzrok pretjerane dnevne pospanosti** — daleko ispred narkolepsije ili idiopatske hipersomnije. Mora biti isključen prije bilo kakve daljnje obrade.
 
-2. **Dijagnoza se postavlja jednim pitanjem:** *„Koliko sati zapravo spavate radnim danom?"* Ako je odgovor <7 sati uz razliku ≥2 sata prema vikendu — klinička sumnja je visoka.
+    2. **Dijagnoza se postavlja jednim pitanjem:** *„Koliko sati zapravo spavate radnim danom?"* Ako je odgovor <7 sati uz razliku ≥2 sata prema vikendu — klinička sumnja je visoka.
 
-3. **Dijagnostički test je ujedno i liječenje:** 2 tjedna produženog sna (8-9 sati u krevetu). Ako se simptomi povuku — dijagnoza je potvrđena, a pacijent je izliječen.
+    3. **Dijagnostički test je ujedno i liječenje:** 2 tjedna produženog sna (8-9 sati u krevetu). Ako se simptomi povuku — dijagnoza je potvrđena, a pacijent je izliječen.
 
-4. **MSLT bez prethodnog adekvatnog sna daje lažne rezultate** — moguća posljedica je pogrešna dijagnoza narkolepsije i nepotrebno doživotno propisivanje stimulansa.
+    4. **MSLT bez prethodnog adekvatnog sna daje lažne rezultate** — moguća posljedica je pogrešna dijagnoza narkolepsije i nepotrebno doživotno propisivanje stimulansa.
 
-5. **Ovo je potpuno u domeni LOM-a** — ne zahtijeva specijalista, PSG ni skupu opremu. Zahtijeva samo dobru anamnezu, dnevnik spavanja i 15 minuta edukacije pacijenta.
+    5. **Ovo je potpuno u domeni LOM-a** — ne zahtijeva specijalista, PSG ni skupu opremu. Zahtijeva samo dobru anamnezu, dnevnik spavanja i 15 minuta edukacije pacijenta.
 
 ---
 

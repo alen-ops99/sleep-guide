@@ -1,8 +1,8 @@
 {
   "name": "Vodič za poremećaje spavanja",
-  "short_name": "Sleep Guide",
+  "short_name": "Probir spavanja",
   "description": "Praktični vodič za liječnike obiteljske medicine — prepoznavanje, probir i trijaža poremećaja spavanja",
-  "start_url": "/",
+  "start_url": "/screening/interactive-screening/",
   "display": "standalone",
   "orientation": "portrait",
   "theme_color": "#1a237e",

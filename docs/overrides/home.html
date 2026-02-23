@@ -7,37 +7,66 @@
 {% block content %}
 <div class="home-content">
 
-  <!-- Hero Section -->
-  <div class="home-hero">
-    <h1>Vodič za poremećaje spavanja</h1>
-    <p class="subtitle">Za liječnike obiteljske medicine</p>
+  <!-- Screening CTA — dominates viewport -->
+  <div class="screening-cta">
+    <h2>Brzi probir spavanja</h2>
+    <p class="cta-subtitle">Interaktivni alat za sistematsku detekciju poremećaja spavanja</p>
+    <div class="cta-badges">
+      <span class="cta-badge">14 pitanja</span>
+      <span class="cta-badge">2–3 min</span>
+      <span class="cta-badge">Automatska interpretacija</span>
+    </div>
+    <a href="screening/interactive-screening/" class="cta-button">Započni probir</a>
   </div>
 
-  <!-- Quick Access Buttons -->
-  <div class="quick-access">
-    <a href="questionnaires/ess-hr/">📋 Upitnici</a>
-    <a href="screening/clinical-flowchart/">🔀 Dijagrami</a>
-    <a href="screening/dnevnik-spavanja/">📓 Dnevnik</a>
+  <!-- Interactive Questionnaires -->
+  <div class="section-label">Interaktivni upitnici</div>
+  <div class="questionnaire-grid">
+    <a href="questionnaires/ess-interactive/">
+      <span class="q-icon"><span class="material-symbols-outlined">assignment</span></span>
+      ESS
+      <span class="q-name">Pospanost</span>
+    </a>
+    <a href="questionnaires/stop-bang-interactive/">
+      <span class="q-icon"><span class="material-symbols-outlined">pulmonology</span></span>
+      STOP-BANG
+      <span class="q-name">Apneja u snu</span>
+    </a>
+    <a href="questionnaires/isi-interactive/">
+      <span class="q-icon"><span class="material-symbols-outlined">bedtime</span></span>
+      ISI
+      <span class="q-name">Nesanica</span>
+    </a>
+    <a href="questionnaires/irls-interactive/">
+      <span class="q-icon"><span class="material-symbols-outlined">sprint</span></span>
+      IRLS
+      <span class="q-name">Nemirne noge</span>
+    </a>
+    <a href="questionnaires/rbdsq-interactive/">
+      <span class="q-icon"><span class="material-symbols-outlined">neurology</span></span>
+      RBDSQ
+      <span class="q-name">REM poremećaj</span>
+    </a>
   </div>
 
-  <!-- Disorders Section -->
-  <div class="section-label">Poremećaji</div>
+  <!-- Chapters — grouped by clinical relevance -->
+  <div class="section-label">Poglavlja</div>
 
   <div class="subsection-label">Često u ordinaciji</div>
   <div class="card-grid">
     <a href="guide/01-nesanica/">
-      <span class="card-icon">😴</span>
+      <span class="card-icon"><span class="material-symbols-outlined">bedtime</span></span>
       Nesanica
       <span class="card-chapter">Pogl. 1</span>
     </a>
     <a href="guide/02-osa/">
-      <span class="card-icon">😤</span>
-      OSA
+      <span class="card-icon"><span class="material-symbols-outlined">pulmonology</span></span>
+      Opstruktivna apneja
       <span class="card-chapter">Pogl. 2</span>
     </a>
     <a href="guide/13-centralna-apneja/">
-      <span class="card-icon">💨</span>
-      CSA
+      <span class="card-icon"><span class="material-symbols-outlined">cardiology</span></span>
+      Centralna apneja
       <span class="card-chapter">Pogl. 13</span>
     </a>
   </div>
@@ -45,28 +74,28 @@
   <div class="subsection-label">Često propušteni</div>
   <div class="card-grid">
     <a href="guide/03-rls-plmd/">
-      <span class="card-icon">🦵</span>
-      RLS
+      <span class="card-icon"><span class="material-symbols-outlined">sprint</span></span>
+      Nemirne noge
       <span class="card-chapter">Pogl. 3</span>
     </a>
     <a href="guide/04-rbd/">
-      <span class="card-icon">🧠</span>
-      RBD
+      <span class="card-icon"><span class="material-symbols-outlined">neurology</span></span>
+      REM poremećaj ponašanja
       <span class="card-chapter">Pogl. 4</span>
     </a>
     <a href="guide/06-narkolepsija/">
-      <span class="card-icon">⚡</span>
+      <span class="card-icon"><span class="material-symbols-outlined">bolt</span></span>
       Narkolepsija
       <span class="card-chapter">Pogl. 6</span>
     </a>
     <a href="guide/07-idiopatska-hipersomnija/">
-      <span class="card-icon">🛌</span>
-      IH
+      <span class="card-icon"><span class="material-symbols-outlined">bed</span></span>
+      Idiopatska hipersomnija
       <span class="card-chapter">Pogl. 7</span>
     </a>
     <a href="guide/08-cirkadijani-poremecaji/">
-      <span class="card-icon">🕐</span>
-      Cirkadijani
+      <span class="card-icon"><span class="material-symbols-outlined">schedule</span></span>
+      Cirkadijani poremećaji
       <span class="card-chapter">Pogl. 8</span>
     </a>
   </div>
@@ -74,27 +103,27 @@
   <div class="subsection-label">Noćni događaji</div>
   <div class="card-grid">
     <a href="guide/05-nrem-parasomnias/">
-      <span class="card-icon">🚶</span>
-      NREM
+      <span class="card-icon"><span class="material-symbols-outlined">directions_walk</span></span>
+      NREM parasomnije
       <span class="card-chapter">Pogl. 5</span>
     </a>
     <a href="guide/09-bruksizam/">
-      <span class="card-icon">🦷</span>
+      <span class="card-icon"><span class="material-symbols-outlined">dentistry</span></span>
       Bruksizam
       <span class="card-chapter">Pogl. 9</span>
     </a>
     <a href="guide/12-sred/">
-      <span class="card-icon">🍽️</span>
-      SRED
+      <span class="card-icon"><span class="material-symbols-outlined">restaurant</span></span>
+      Jedenje u snu (SRED)
       <span class="card-chapter">Pogl. 12</span>
     </a>
     <a href="guide/11-poremecaj-nocnih-mora/">
-      <span class="card-icon">👻</span>
+      <span class="card-icon"><span class="material-symbols-outlined">thunderstorm</span></span>
       Noćne more
       <span class="card-chapter">Pogl. 11</span>
     </a>
     <a href="guide/10-nedovoljan-san/">
-      <span class="card-icon">⏰</span>
+      <span class="card-icon"><span class="material-symbols-outlined">alarm</span></span>
       Nedovoljan san
       <span class="card-chapter">Pogl. 10</span>
     </a>
@@ -103,21 +132,29 @@
   <!-- Tools Section -->
   <div class="section-label">Alati</div>
   <div class="card-grid">
+    <a href="screening/patient-questions-hr/">
+      <span class="card-icon"><span class="material-symbols-outlined">quiz</span></span>
+      Upitnik za pacijente
+    </a>
+    <a href="screening/clinical-flowchart/">
+      <span class="card-icon"><span class="material-symbols-outlined">account_tree</span></span>
+      Dijagrami toka
+    </a>
+    <a href="screening/dnevnik-spavanja/">
+      <span class="card-icon"><span class="material-symbols-outlined">edit_note</span></span>
+      Dnevnik spavanja
+    </a>
     <a href="screening/predlozak-uputnice/">
-      <span class="card-icon">📄</span>
-      Uputnica
+      <span class="card-icon"><span class="material-symbols-outlined">description</span></span>
+      Predložak uputnice
     </a>
     <a href="screening/scoring-algorithms/">
-      <span class="card-icon">🔢</span>
-      Bodovanje
+      <span class="card-icon"><span class="material-symbols-outlined">calculate</span></span>
+      Algoritmi bodovanja
     </a>
     <a href="guide/14-reference/">
-      <span class="card-icon">📚</span>
+      <span class="card-icon"><span class="material-symbols-outlined">menu_book</span></span>
       Reference
-    </a>
-    <a href="screening/patient-questions-hr/">
-      <span class="card-icon">❓</span>
-      Probir
     </a>
   </div>
 

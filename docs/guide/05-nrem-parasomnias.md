@@ -2,7 +2,7 @@
 
 > **MKB-10:** F51.3 (somnambulizam), F51.4 (noćni strahovi), G47.51 (konfuzna buđenja) | **ICSD-3:** Poremećaji buđenja iz NREM sna (*Disorders of Arousal from NREM Sleep*)
 
-!!! brzi-pregled "🔍 Brzi pregled"
+!!! brzi-pregled "Brzi pregled"
 
     **Prepoznaj:** Hodanje u snu, noćni strahovi ili konfuzna buđenja — prva trećina noći, oči otvorene, amnezija za događaj, konfuzija pri buđenju. Djeca: uglavnom benigno. Odrasli: novi početak zahtijeva obradu.
 
@@ -12,55 +12,71 @@
 
 ---
 
-## Što je to?
+??? note "Što je to?"
 
-NREM parasomnije čine spektar tri srodna poremećaja koji proizlaze iz istog mehanizma — **nepotpunog buđenja iz dubokog (N3) sna**. Mozak ostaje „zarobljen" između sna i budnosti: tijelo se pokreće, ali svjesnost i pamćenje ostaju „isključeni". Rezultat je složeno ponašanje bez sjećanja na epizodu.
+    NREM parasomnije čine spektar tri srodna poremećaja koji proizlaze iz istog mehanizma — **nepotpunog buđenja iz dubokog (N3) sna**. Mozak ostaje „zarobljen" između sna i budnosti: tijelo se pokreće, ali svjesnost i pamćenje ostaju „isključeni". Rezultat je složeno ponašanje bez sjećanja na epizodu.
 
-Tri podtipa:
-- **Somnambulizam (mjesečarenje)** — hodanje u snu s otvorenim očima i smanjenom svjesnošću. Amnezija za epizodu.
-- **Noćni strahovi (pavor nocturnus)** — naglo buđenje s krikom, izrazom užasa, autonomnom aktivacijom (tahikardija, znojenje). Osoba je nekonzolabilna. Potpuna amnezija. **Nije noćna mora.**
-- **Konfuzna buđenja** — dezorijentiranost pri buđenju iz dubokog sna. Ponekad neprimjereno ponašanje (agresivnost, seksualno ponašanje — tzv. *sexsomnia*). Amnezija.
+    Tri podtipa:
+    - **Somnambulizam (mjesečarenje)** — hodanje u snu s otvorenim očima i smanjenom svjesnošću. Amnezija za epizodu.
+    - **Noćni strahovi (pavor nocturnus)** — naglo buđenje s krikom, izrazom užasa, autonomnom aktivacijom (tahikardija, znojenje). Osoba je nekonzolabilna. Potpuna amnezija. **Nije noćna mora.**
+    - **Konfuzna buđenja** — dezorijentiranost pri buđenju iz dubokog sna. Ponekad neprimjereno ponašanje (agresivnost, seksualno ponašanje — tzv. *sexsomnia*). Amnezija.
 
-Sva tri stanja javljaju se u **prvoj trećini noći** (kada je N3 najdublji) i često koegzistiraju. Pozitivna obiteljska anamneza prisutna je u **do 60% somnambulista**.
-
----
-
-## Koliko je često?
-
-| Poremećaj | Djeca | Odrasli |
-|---|---|---|
-| **Somnambulizam** | 10–17% (vrh: 8–12 godina) | 1–4% |
-| **Noćni strahovi** | 1–6% (vrh: 5–7 godina) | <1% |
-| **Konfuzna buđenja** | Do 17% (najčešće u dojenačkoj i ranoj dječjoj dobi) | 2–4% |
-
-**Kontekst za LOM praksu:** NREM parasomnije su daleko najčešći razlog za „neobično ponašanje noću" u djece — roditelji će zabrinuto pitati za mjesečarenje ili noćne strahove. U velikoj većini slučajeva, dovoljno je razumno objašnjenje i mjere sigurnosti. U odraslih je situacija drukčija: novonastalo mjesečarenje u odraslog pacijenta zahtijeva aktivnu dijagnostičku obradu (isključiti OSA, epilepsiju, lijekove).
+    Sva tri stanja javljaju se u **prvoj trećini noći** (kada je N3 najdublji) i često koegzistiraju. Pozitivna obiteljska anamneza prisutna je u **do 60% somnambulista**.
 
 ---
 
-## Kako prepoznati?
+??? note "Koliko je često?"
 
-### Prepoznatljive značajke po podtipu
+    | Poremećaj | Djeca | Odrasli |
+    |---|---|---|
+    | **Somnambulizam** | 10–17% (vrh: 8–12 godina) | 1–4% |
+    | **Noćni strahovi** | 1–6% (vrh: 5–7 godina) | <1% |
+    | **Konfuzna buđenja** | Do 17% (najčešće u dojenačkoj i ranoj dječjoj dobi) | 2–4% |
 
-| Podtip | Ključni znakovi | Trajanje |
-|---|---|---|
-| **Somnambulizam** | Hodanje u snu, oči otvorene, složene radnje (otvaranje vrata, izlazak iz kuće), smanjena reakcija na podražaje. Amnezija. | 5–30 min |
-| **Noćni strahovi** | Naglo sjedanje s krikom/vrištanjem, izraz užasa, tahikardija, znojenje. **Nekonzolabilan.** Amnezija. | 30 s – 3 min |
-| **Konfuzna buđenja** | Dezorijentiranost pri buđenju, nekoherentan govor, ponekad agresivnost. Može se javiti i pri forsiranom buđenju (alarm, telefon). Amnezija. | Min do 30 min |
-
-Sva tri podtipa: **prva trećina noći**, oči otvorene, potpuna amnezija.
-
-### Kritične razlike od drugih poremećaja
-
-| Značajka | NREM parasomnije | RBD | Što to znači? |
-|---|---|---|---|
-| **Doba noći** | Prva trećina | Zadnja trećina | NREM parasomnije se javljaju rano jer je tada N3 najdublji |
-| **Oči** | Otvorene | Zatvorene | Ovo je brza i pouzdana anamnestička distinkcija |
-| **Sjećanje na san** | Nema — amnezija | Da — živi, često nasilni snovi | Pacijent s RBD-om će reći „sanjao sam da se borim" |
-| **Dob** | Djeca > odrasli | >50 godina | RBD u mlađih je rijedak i zahtijeva specifičnu obradu |
+    **Kontekst za LOM praksu:** NREM parasomnije su daleko najčešći razlog za „neobično ponašanje noću" u djece — roditelji će zabrinuto pitati za mjesečarenje ili noćne strahove. U velikoj većini slučajeva, dovoljno je razumno objašnjenje i mjere sigurnosti. U odraslih je situacija drukčija: novonastalo mjesečarenje u odraslog pacijenta zahtijeva aktivnu dijagnostičku obradu (isključiti OSA, epilepsiju, lijekove).
 
 ---
 
-!!! crvena-zastavica "🚩 Crvene zastavice"
+??? note "Kako prepoznati?"
+
+    <div class="symptom-tiers" markdown>
+
+    <div class="symptom-tier tier-critical" markdown>
+    ### Kritični znakovi
+    - Hodanje u snu (somnambulizam) — složene radnje bez svjesnosti
+    - Konfuzna buđenja — dezorijentiranost, usporeni odgovori, moguća agitacija
+    - Noćni strahovi (pavor nocturnus) — nagle epizode vrištanja, autonomna aktivacija (tahikardija, znojenje), amnezija za događaj
+    </div>
+
+    <div class="symptom-tier tier-supporting" markdown>
+    ### Podržavajući znakovi
+    - Epizode se javljaju u prvoj trećini noći (dominantan duboki NREM san)
+    - Pozitivna obiteljska anamneza
+    - Deprivacija sna, alkohol ili stres kao okidači
+    - Djeca češće pogođena, ali može perzistirati ili se javiti de novo u odraslih
+    </div>
+
+    <div class="symptom-tier tier-differential" markdown>
+    ### Diferencijalni tragovi
+    - RBD — druga polovica noći, živopisni snovi, starija populacija
+    - Noćna frontalna epilepsija — stereotipne kratke epizode, moguće više puta u noći
+    - OSA kao okidač — arousali iz apneja mogu provocirati NREM parasomnije (ispitati hrkanje!)
+    </div>
+
+    </div>
+
+    ### Kritične razlike od drugih poremećaja
+
+    | Značajka | NREM parasomnije | RBD | Što to znači? |
+    |---|---|---|---|
+    | **Doba noći** | Prva trećina | Zadnja trećina | NREM parasomnije se javljaju rano jer je tada N3 najdublji |
+    | **Oči** | Otvorene | Zatvorene | Ovo je brza i pouzdana anamnestička distinkcija |
+    | **Sjećanje na san** | Nema — amnezija | Da — živi, često nasilni snovi | Pacijent s RBD-om će reći „sanjao sam da se borim" |
+    | **Dob** | Djeca > odrasli | >50 godina | RBD u mlađih je rijedak i zahtijeva specifičnu obradu |
+
+---
+
+!!! crvena-zastavica "Crvene zastavice"
 
     > **VAŽNO** — Svaka od sljedećih situacija zahtijeva aktivnu dijagnostičku obradu, a ne samo „praćenje".
 
@@ -82,123 +98,123 @@ Sva tri podtipa: **prva trećina noći**, oči otvorene, potpuna amnezija.
 
 ---
 
-## Probir i dijagnostika
+??? note "Probir i dijagnostika"
 
-### Što LOM može učiniti
+    ### Što LOM može učiniti
 
-**1. Detaljna anamneza — temelj dijagnoze**
+    **1. Detaljna anamneza — temelj dijagnoze**
 
-Klinička anamneza je u većini slučajeva dovoljna za postavljanje dijagnoze. Ključna pitanja:
+    Klinička anamneza je u većini slučajeva dovoljna za postavljanje dijagnoze. Ključna pitanja:
 
-- **„U koje doba noći se to događa?"** — Prva trećina = NREM parasomnije; zadnja trećina = RBD
-- **„Jesu li oči otvorene ili zatvorene?"** — NREM = otvorene; RBD = zatvorene
-- **„Sjeća li se nečega ujutro?"** — NREM = amnezija; RBD = sjećanje na san
-- **„Može li se osoba utješiti/smiriti?"** — Noćni strahovi: ne; noćna mora: da (dijete se budi, traži utjehu)
-- **„Koliko traju epizode i koliko su česte?"** — Stereotipne kratke epizode (<60 s) = epilepsija
-- **„Hrče li? Ima li apneje?"** — Obavezno za sve odrasle s parasomnjama (OSA je čest trigger)
-- **„Koji lijekove uzima?"** — Zolpidem, litij, sedativi, antihistaminici
-- **„Je li nedavno bio(la) jako neispavan(a)?"** — Deprivacija sna je najjači provocirajući čimbenik
-- **„Ima li tko u obitelji slična ponašanja?"** — Genetska predispozicija je snažna
+    - **„U koje doba noći se to događa?"** — Prva trećina = NREM parasomnije; zadnja trećina = RBD
+    - **„Jesu li oči otvorene ili zatvorene?"** — NREM = otvorene; RBD = zatvorene
+    - **„Sjeća li se nečega ujutro?"** — NREM = amnezija; RBD = sjećanje na san
+    - **„Može li se osoba utješiti/smiriti?"** — Noćni strahovi: ne; noćna mora: da (dijete se budi, traži utjehu)
+    - **„Koliko traju epizode i koliko su česte?"** — Stereotipne kratke epizode (<60 s) = epilepsija
+    - **„Hrče li? Ima li apneje?"** — Obavezno za sve odrasle s parasomnjama (OSA je čest trigger)
+    - **„Koji lijekove uzima?"** — Zolpidem, litij, sedativi, antihistaminici
+    - **„Je li nedavno bio(la) jako neispavan(a)?"** — Deprivacija sna je najjači provocirajući čimbenik
+    - **„Ima li tko u obitelji slična ponašanja?"** — Genetska predispozicija je snažna
 
-**2. Video snimka — iznimno korisna**
+    **2. Video snimka — iznimno korisna**
 
-Zamolite partnera ili roditelja da **snimi epizodu mobilnim telefonom** (bez ugrožavanja sigurnosti). Video zapis omogućuje kliničaru da procijeni:
-- Otvorenost očiju
-- Stupanj svjesnosti i reakcije na okolinu
-- Tip pokreta (složeni/dezorganizirani vs. stereotipni/repetitivni)
-- Trajanje epizode
+    Zamolite partnera ili roditelja da **snimi epizodu mobilnim telefonom** (bez ugrožavanja sigurnosti). Video zapis omogućuje kliničaru da procijeni:
+    - Otvorenost očiju
+    - Stupanj svjesnosti i reakcije na okolinu
+    - Tip pokreta (složeni/dezorganizirani vs. stereotipni/repetitivni)
+    - Trajanje epizode
 
-**3. Probir za OSA**
+    **3. Probir za OSA**
 
-Kod svakog odraslog pacijenta s novonastalim NREM parasomnijom učinite barem STOP-Bang upitnik i pitajte o hrkanju i svjedočenim apnejama. OSA fragmentira san, destabilizira prijelaze između stadija i time provocira parasomnije.
+    Kod svakog odraslog pacijenta s novonastalim NREM parasomnijom učinite barem STOP-Bang upitnik i pitajte o hrkanju i svjedočenim apnejama. OSA fragmentira san, destabilizira prijelaze između stadija i time provocira parasomnije.
 
-### Što zahtijeva specijalista
+    ### Što zahtijeva specijalista
 
-**Video-PSG** je indicirana kada: dijagnostička nesigurnost (NREM vs. epilepsija vs. RBD), ozljede, stereotipne kratke epizode (sumnja na epilepsiju), ili novonastale parasomnije u odraslog.
+    **Video-PSG** je indicirana kada: dijagnostička nesigurnost (NREM vs. epilepsija vs. RBD), ozljede, stereotipne kratke epizode (sumnja na epilepsiju), ili novonastale parasomnije u odraslog.
 
-> **Napomena:** Rutinska PSG NIJE potrebna za tipične dječje NREM parasomnije s jasnom kliničkom slikom i pozitivnom obiteljskom anamnezom.
-
----
-
-## Liječenje u primarnoj zdravstvenoj zaštiti
-
-### 1. Mjere sigurnosti — UVIJEK PRVO
-
-Bez obzira na vrstu i težinu NREM parasomnije, sigurnosne mjere su temelj zbrinjavanja:
-
-- **Zaključati ulazna vrata i prozore** — ključ držati na nedostupnom mjestu za osobu koja mjesečari
-- **Alarmi na vratima spavaće sobe** — jeftina zvona ili elektronički alarmi koji upozoravaju ukućane
-- **Ukloniti opasne predmete** iz spavaće sobe i hodnika: oštri predmeti, stakleni stolovi, noževi
-- **Spavaća soba u prizemlju** — ako je moguće, izbjegavati stepenice
-- **Sigurnosne ograde na prozorima** — posebno u višekatnicama
-- **Staviti madrac na pod** — kod djece s čestim epizodama, kako bi se smanjio rizik pada iz kreveta
-- **Partner/ukućani:** NE pokušavati probuditi osobu na silu — samo osigurati sigurnost i nježno je usmjeriti natrag u krevet
-
-### 2. Identifikacija i otklanjanje provocirajućih čimbenika
-
-Ovo je najvažniji terapijski korak u većine pacijenata:
-
-| Provocirajući čimbenik | Učestalost | Intervencija |
-|---|---|---|
-| **Deprivacija sna** | Najčešći trigger | Osigurati redovit raspored spavanja; dovoljna količina sna za dob |
-| **Alkohol** | Čest | Savjetovati izbjegavanje alkohola, posebno navečer |
-| **Stres i anksioznost** | Čest | Tehnike relaksacije; ako je potrebno, uputiti psihologa |
-| **Febrilna bolest** | Čest (djeca) | Objasniti roditeljima da su epizode za vrijeme bolesti očekivane i prolazne |
-| **Lijekovi** | Značajan u odraslih | **Zolpidem** — najčešći farmakološki uzrok; **litij**, antihistaminici, neuroleptici — preispitati terapiju |
-| **OSA** | Čest u odraslih | Dijagnostika i liječenje OSA može potpuno eliminirati parasomnije |
-| **Pun mokraćni mjehur** | Podcijenjeni | Izbjegavati pretjerani unos tekućine navečer |
-| **Buka i okolišni podražaji** | Povremeno | Optimizirati okruženje za spavanje |
-
-### 3. Planirana buđenja (*scheduled awakenings*)
-
-Korisna nefarmakološka tehnika za **djecu s predvidljivim vremenskim obrascem** epizoda:
-
-- Roditelj prati i bilježi u kojem se satu epizode najčešće javljaju
-- **15–30 minuta PRIJE uobičajenog vremena epizode**, roditelj nježno probudi dijete (dovoljno da se dijete promeškolji i promijeni poziciju, ne potpuno buđenje)
-- Ovo „resetira" ciklus sna i sprečava nepotpuno buđenje iz N3
-- Primjenjivati svaku noć kroz 2–4 tjedna, zatim postupno ukidati
-- Učinkovitost: značajna u studijama, posebno za noćne strahove s predvidljivim rasporedom
-
-### 4. Farmakoterapija — samo za teške i opasne slučajeve
-
-> ⚠️ Farmakoterapija je rezervirana za slučajeve s ozljedama, visokim rizikom od ozljede, ili teškim poremećajem kvalitete života unatoč nefarmakološkim mjerama.
-
-**Lijekovi dostupni u Hrvatskoj:**
-
-| Lijek | Doza | Napomene |
-|---|---|---|
-| **Klonazepam** | 0,25–2 mg navečer | Prva linija farmakoterapije za teške NREM parasomnije. Mehanizam: suprimira buđenja iz N3 sna. Učinkovit u ~80% slučajeva. Dugotrajna primjena moguća uz nadzor — tolerancija je rijetka za ovu indikaciju. Oprez: dnevna sedacija, rizik padova u starijih. |
-| **Melatonin** | 2–6 mg navečer | Može pomoći stabiliziranju arhitekture sna. Siguran profil nuspojava. Posebno razmotriti u djece. |
-| **Trazodon** | 25–100 mg navečer | Alternativa klonazepamu; reducira buđenja iz dubokog sna. Off-label, ali korisan u pacijenata kod kojih su benzodiazepini kontraindicirani. |
-| **SSRI** (paroksetin, sertralin) | Uobičajene doze | Ponekad korišteni za teške slučajeve, posebno uz komorbidnu anksioznost. Dokazi su slabiji nego za klonazepam. |
-
-> **Napomena o klonazepamu:** Za razliku od nesanice (gdje su benzodiazepini problematični), klonazepam u niskim dozama za parasomnije ima dugogodišnje iskustvo sigurne primjene. Tolerancija i eskalacija doze su rijetke za ovu specifičnu indikaciju, ali lijek treba propisivati uz nadzor i uz jasnu dokumentaciju indikacije.
-
-### 5. Posebne napomene za djecu
-
-- **Razuvjeravanje roditelja je najvažnija intervencija** — objasniti da su NREM parasomnije u djece benigne, da ih dijete prerasta (većina prestaje do puberteta), i da ne ukazuju na psihijatrijsku bolest
-- Ne pokušavati buditi dijete — samo osigurati sigurnost
-- Osigurati dovoljno sna za dob (deprivacija sna je najčešći trigger!)
-- Planirana buđenja ako su epizode česte i predvidljive
-- Farmakoterapija samo iznimno — kod teških, učestalih epizoda s ozljedama
+    > **Napomena:** Rutinska PSG NIJE potrebna za tipične dječje NREM parasomnije s jasnom kliničkom slikom i pozitivnom obiteljskom anamnezom.
 
 ---
 
-## Kada uputiti specijalistu?
+??? note "Liječenje u primarnoj zdravstvenoj zaštiti"
 
-| Uputiti kada... | Kamo | Razlog |
-|---|---|---|
-| Novonastale parasomnije u odraslog (posebno >40 godina) | Neurolog / Centar za medicinu spavanja | Isključiti OSA, epilepsiju, neurodegenerativnu bolest; potrebna PSG |
-| Ozljede tijekom epizoda | Centar za medicinu spavanja | Video-PSG za preciznu dijagnozu; optimizacija farmakoterapije |
-| Stereotipne, kratke, višestruke epizode u jednoj noći | Neurolog (epileptolog) | Visoka sumnja na noćnu epilepsiju; potreban video-EEG |
-| Dijagnostička nesigurnost (NREM vs. RBD vs. epilepsija) | Centar za medicinu spavanja | Video-PSG s proširenim EEG montažom |
-| Nasilno ili seksualno ponašanje tijekom sna | Centar za medicinu spavanja | Medikolegalna procjena; precizna dijagnoza |
-| Parasomnije rezistentne na nefarmakološke mjere i klonazepam | Centar za medicinu spavanja | Reevaluacija dijagnoze; isključivanje skrivenog triggera |
-| Sumnja na komorbidnu OSA | Pulmolog / Centar za medicinu spavanja | PSG za dijagnozu OSA; CPAP može eliminirati parasomnije |
+    ### 1. Mjere sigurnosti — UVIJEK PRVO
+
+    Bez obzira na vrstu i težinu NREM parasomnije, sigurnosne mjere su temelj zbrinjavanja:
+
+    - **Zaključati ulazna vrata i prozore** — ključ držati na nedostupnom mjestu za osobu koja mjesečari
+    - **Alarmi na vratima spavaće sobe** — jeftina zvona ili elektronički alarmi koji upozoravaju ukućane
+    - **Ukloniti opasne predmete** iz spavaće sobe i hodnika: oštri predmeti, stakleni stolovi, noževi
+    - **Spavaća soba u prizemlju** — ako je moguće, izbjegavati stepenice
+    - **Sigurnosne ograde na prozorima** — posebno u višekatnicama
+    - **Staviti madrac na pod** — kod djece s čestim epizodama, kako bi se smanjio rizik pada iz kreveta
+    - **Partner/ukućani:** NE pokušavati probuditi osobu na silu — samo osigurati sigurnost i nježno je usmjeriti natrag u krevet
+
+    ### 2. Identifikacija i otklanjanje provocirajućih čimbenika
+
+    Ovo je najvažniji terapijski korak u većine pacijenata:
+
+    | Provocirajući čimbenik | Učestalost | Intervencija |
+    |---|---|---|
+    | **Deprivacija sna** | Najčešći trigger | Osigurati redovit raspored spavanja; dovoljna količina sna za dob |
+    | **Alkohol** | Čest | Savjetovati izbjegavanje alkohola, posebno navečer |
+    | **Stres i anksioznost** | Čest | Tehnike relaksacije; ako je potrebno, uputiti psihologa |
+    | **Febrilna bolest** | Čest (djeca) | Objasniti roditeljima da su epizode za vrijeme bolesti očekivane i prolazne |
+    | **Lijekovi** | Značajan u odraslih | **Zolpidem** — najčešći farmakološki uzrok; **litij**, antihistaminici, neuroleptici — preispitati terapiju |
+    | **OSA** | Čest u odraslih | Dijagnostika i liječenje OSA može potpuno eliminirati parasomnije |
+    | **Pun mokraćni mjehur** | Podcijenjeni | Izbjegavati pretjerani unos tekućine navečer |
+    | **Buka i okolišni podražaji** | Povremeno | Optimizirati okruženje za spavanje |
+
+    ### 3. Planirana buđenja (*scheduled awakenings*)
+
+    Korisna nefarmakološka tehnika za **djecu s predvidljivim vremenskim obrascem** epizoda:
+
+    - Roditelj prati i bilježi u kojem se satu epizode najčešće javljaju
+    - **15–30 minuta PRIJE uobičajenog vremena epizode**, roditelj nježno probudi dijete (dovoljno da se dijete promeškolji i promijeni poziciju, ne potpuno buđenje)
+    - Ovo „resetira" ciklus sna i sprečava nepotpuno buđenje iz N3
+    - Primjenjivati svaku noć kroz 2–4 tjedna, zatim postupno ukidati
+    - Učinkovitost: značajna u studijama, posebno za noćne strahove s predvidljivim rasporedom
+
+    ### 4. Farmakoterapija — samo za teške i opasne slučajeve
+
+    > ⚠️ Farmakoterapija je rezervirana za slučajeve s ozljedama, visokim rizikom od ozljede, ili teškim poremećajem kvalitete života unatoč nefarmakološkim mjerama.
+
+    **Lijekovi dostupni u Hrvatskoj:**
+
+    | Lijek | Doza | Napomene |
+    |---|---|---|
+    | **Klonazepam** | 0,25–2 mg navečer | Prva linija farmakoterapije za teške NREM parasomnije. Mehanizam: suprimira buđenja iz N3 sna. Učinkovit u ~80% slučajeva. Dugotrajna primjena moguća uz nadzor — tolerancija je rijetka za ovu indikaciju. Oprez: dnevna sedacija, rizik padova u starijih. |
+    | **Melatonin** | 2–6 mg navečer | Može pomoći stabiliziranju arhitekture sna. Siguran profil nuspojava. Posebno razmotriti u djece. |
+    | **Trazodon** | 25–100 mg navečer | Alternativa klonazepamu; reducira buđenja iz dubokog sna. Off-label, ali korisan u pacijenata kod kojih su benzodiazepini kontraindicirani. |
+    | **SSRI** (paroksetin, sertralin) | Uobičajene doze | Ponekad korišteni za teške slučajeve, posebno uz komorbidnu anksioznost. Dokazi su slabiji nego za klonazepam. |
+
+    > **Napomena o klonazepamu:** Za razliku od nesanice (gdje su benzodiazepini problematični), klonazepam u niskim dozama za parasomnije ima dugogodišnje iskustvo sigurne primjene. Tolerancija i eskalacija doze su rijetke za ovu specifičnu indikaciju, ali lijek treba propisivati uz nadzor i uz jasnu dokumentaciju indikacije.
+
+    ### 5. Posebne napomene za djecu
+
+    - **Razuvjeravanje roditelja je najvažnija intervencija** — objasniti da su NREM parasomnije u djece benigne, da ih dijete prerasta (većina prestaje do puberteta), i da ne ukazuju na psihijatrijsku bolest
+    - Ne pokušavati buditi dijete — samo osigurati sigurnost
+    - Osigurati dovoljno sna za dob (deprivacija sna je najčešći trigger!)
+    - Planirana buđenja ako su epizode česte i predvidljive
+    - Farmakoterapija samo iznimno — kod teških, učestalih epizoda s ozljedama
 
 ---
 
-!!! zamka "⚠️ Česte zamke"
+??? note "Kada uputiti specijalistu?"
+
+    | Uputiti kada... | Kamo | Razlog |
+    |---|---|---|
+    | Novonastale parasomnije u odraslog (posebno >40 godina) | Neurolog / Centar za medicinu spavanja | Isključiti OSA, epilepsiju, neurodegenerativnu bolest; potrebna PSG |
+    | Ozljede tijekom epizoda | Centar za medicinu spavanja | Video-PSG za preciznu dijagnozu; optimizacija farmakoterapije |
+    | Stereotipne, kratke, višestruke epizode u jednoj noći | Neurolog (epileptolog) | Visoka sumnja na noćnu epilepsiju; potreban video-EEG |
+    | Dijagnostička nesigurnost (NREM vs. RBD vs. epilepsija) | Centar za medicinu spavanja | Video-PSG s proširenim EEG montažom |
+    | Nasilno ili seksualno ponašanje tijekom sna | Centar za medicinu spavanja | Medikolegalna procjena; precizna dijagnoza |
+    | Parasomnije rezistentne na nefarmakološke mjere i klonazepam | Centar za medicinu spavanja | Reevaluacija dijagnoze; isključivanje skrivenog triggera |
+    | Sumnja na komorbidnu OSA | Pulmolog / Centar za medicinu spavanja | PSG za dijagnozu OSA; CPAP može eliminirati parasomnije |
+
+---
+
+!!! zamka "Česte zamke"
 
     | ❌ Pogreška | ✅ Ispravni pristup |
     |---|---|
@@ -213,17 +229,17 @@ Korisna nefarmakološka tehnika za **djecu s predvidljivim vremenskim obrascem**
 
 ---
 
-## Ključne poruke
+!!! kljucna-poruka "Ključne poruke"
 
-1. **NREM parasomnije (somnambulizam, noćni strahovi, konfuzna buđenja) su spektar istog poremećaja** — nepotpuno buđenje iz dubokog N3 sna. U djece su česte i benigne, u odraslih zahtijevaju obradu.
+    1. **NREM parasomnije (somnambulizam, noćni strahovi, konfuzna buđenja) su spektar istog poremećaja** — nepotpuno buđenje iz dubokog N3 sna. U djece su česte i benigne, u odraslih zahtijevaju obradu.
 
-2. **Tri pitanja za diferencijalnu dijagnozu:** Kada noću? (prva vs. zadnja trećina) — Jesu li oči otvorene? — Sjeća li se? Ovim se s visokom pouzdanošću razlikuju NREM parasomnije od RBD-a.
+    2. **Tri pitanja za diferencijalnu dijagnozu:** Kada noću? (prva vs. zadnja trećina) — Jesu li oči otvorene? — Sjeća li se? Ovim se s visokom pouzdanošću razlikuju NREM parasomnije od RBD-a.
 
-3. **Novonastalo mjesečarenje u odraslog pacijenta nije normalno** — obavezno isključiti OSA (najčešći trigger u odraslih), lijekove (zolpidem!), noćnu epilepsiju i neurološku bolest.
+    3. **Novonastalo mjesečarenje u odraslog pacijenta nije normalno** — obavezno isključiti OSA (najčešći trigger u odraslih), lijekove (zolpidem!), noćnu epilepsiju i neurološku bolest.
 
-4. **Sigurnost je prva i najvažnija intervencija** — zaključati vrata, ukloniti opasne predmete, alarmi na vratima. Ne buditi osobu na silu. Kod djece: planirana buđenja. Klonazepam samo za teške i opasne slučajeve.
+    4. **Sigurnost je prva i najvažnija intervencija** — zaključati vrata, ukloniti opasne predmete, alarmi na vratima. Ne buditi osobu na silu. Kod djece: planirana buđenja. Klonazepam samo za teške i opasne slučajeve.
 
-5. **Djeca gotovo uvijek prerastu NREM parasomnije** — razuvjeravanje roditelja i edukacija o mjerama sigurnosti često su jedina potrebna intervencija. Farmakoterapija je iznimno rijetko indicirana u dječjoj dobi.
+    5. **Djeca gotovo uvijek prerastu NREM parasomnije** — razuvjeravanje roditelja i edukacija o mjerama sigurnosti često su jedina potrebna intervencija. Farmakoterapija je iznimno rijetko indicirana u dječjoj dobi.
 
 ---
 

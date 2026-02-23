@@ -40,36 +40,44 @@ theme:
 
 nav:
   - Početna: index.md
+  - Brzi probir spavanja: screening/interactive-screening.md
+  - Interaktivni upitnici:
+    - Epworthova ljestvica pospanosti (ESS): questionnaires/ess-interactive.md
+    - STOP-BANG — probir apneje u snu: questionnaires/stop-bang-interactive.md
+    - Indeks težine nesanice (ISI): questionnaires/isi-interactive.md
+    - Ljestvica nemirnih nogu (IRLS): questionnaires/irls-interactive.md
+    - Probir REM poremećaja ponašanja (RBDSQ): questionnaires/rbdsq-interactive.md
   - Poglavlja:
-    - 1. Nesanica: guide/01-nesanica.md
-    - 2. Opstruktivna apneja u snu: guide/02-osa.md
-    - 3. RLS / PLMD: guide/03-rls-plmd.md
-    - 4. REM poremećaj ponašanja: guide/04-rbd.md
-    - 5. NREM parasomnije: guide/05-nrem-parasomnias.md
-    - 6. Narkolepsija: guide/06-narkolepsija.md
-    - 7. Idiopatska hipersomnija: guide/07-idiopatska-hipersomnija.md
-    - 8. Cirkadijani poremećaji: guide/08-cirkadijani-poremecaji.md
-    - 9. Bruksizam u snu: guide/09-bruksizam.md
-    - 10. Nedovoljan san: guide/10-nedovoljan-san.md
-    - 11. Noćne more: guide/11-poremecaj-nocnih-mora.md
-    - 12. SRED: guide/12-sred.md
-    - 13. Centralna apneja: guide/13-centralna-apneja.md
-  - Alati za probir:
+    - Nesanica: guide/01-nesanica.md
+    - Opstruktivna apneja u snu: guide/02-osa.md
+    - Sindrom nemirnih nogu i PLMD: guide/03-rls-plmd.md
+    - REM poremećaj ponašanja u snu: guide/04-rbd.md
+    - NREM parasomnije: guide/05-nrem-parasomnias.md
+    - Narkolepsija: guide/06-narkolepsija.md
+    - Idiopatska hipersomnija: guide/07-idiopatska-hipersomnija.md
+    - Cirkadijani poremećaji: guide/08-cirkadijani-poremecaji.md
+    - Bruksizam u snu: guide/09-bruksizam.md
+    - Nedovoljan san: guide/10-nedovoljan-san.md
+    - Poremećaj noćnih mora: guide/11-poremecaj-nocnih-mora.md
+    - Poremećaj jedenja u snu (SRED): guide/12-sred.md
+    - Centralna apneja u snu: guide/13-centralna-apneja.md
+  - Alati:
     - Upitnik za pacijente: screening/patient-questions-hr.md
     - Klinički dijagrami toka: screening/clinical-flowchart.md
     - Algoritmi bodovanja: screening/scoring-algorithms.md
     - Dnevnik spavanja: screening/dnevnik-spavanja.md
     - Predložak uputnice: screening/predlozak-uputnice.md
-  - Upitnici:
-    - ESS (pospanost): questionnaires/ess-hr.md
-    - STOP-BANG (apneja): questionnaires/stop-bang-hr.md
-    - IRLS (nemirne noge): questionnaires/irls-hr.md
-    - ISI (nesanica): questionnaires/isi-hr.md
-    - RBDSQ (RBD): questionnaires/rbdsq-hr.md
+  - Upitnici (tiskovna verzija):
+    - Epworthova ljestvica pospanosti (ESS): questionnaires/ess-hr.md
+    - STOP-BANG (apneja u snu): questionnaires/stop-bang-hr.md
+    - Indeks težine nesanice (ISI): questionnaires/isi-hr.md
+    - Ljestvica nemirnih nogu (IRLS): questionnaires/irls-hr.md
+    - Probir REM poremećaja ponašanja (RBDSQ): questionnaires/rbdsq-hr.md
   - Reference: guide/14-reference.md
 
 extra_css:
   - stylesheets/custom.css
+  - stylesheets/screening.css
 
 extra:
   social: []

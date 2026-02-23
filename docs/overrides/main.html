@@ -14,10 +14,17 @@
 
   <!-- Print stylesheet -->
   <link rel="stylesheet" href="{{ config.site_url }}stylesheets/print.css" media="print">
+
+  <!-- Material Symbols for professional icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap">
 {% endblock %}
 
 {% block scripts %}
   {{ super() }}
+
+  <!-- Alpine.js for interactive screening & questionnaires -->
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
   <script>
     // Service Worker Registration
     if ('serviceWorker' in navigator) {
