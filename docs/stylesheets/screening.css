@@ -5,8 +5,8 @@
 
 /* --- CSS Custom Properties --- */
 :root {
-  --screening-primary: #1a237e;
-  --screening-accent: #00897b;
+  --screening-primary: #0f766e;
+  --screening-accent: #0d9488;
   --screening-red: #c62828;
   --screening-red-bg: #ffebee;
   --screening-amber: #ef6c00;
@@ -23,8 +23,8 @@
 }
 
 [data-md-color-scheme="slate"] {
-  --screening-primary: #7986cb;
-  --screening-accent: #4db6ac;
+  --screening-primary: #2dd4bf;
+  --screening-accent: #5eead4;
   --screening-red: #ef5350;
   --screening-red-bg: #3e1515;
   --screening-amber: #ffb74d;
@@ -103,7 +103,7 @@
 
 /* --- Welcome Screen --- */
 .welcome-card {
-  background: #1a237e;
+  background: linear-gradient(135deg, #0f766e, #0d9488);
   color: white;
   border-radius: 16px;
   padding: 2rem 1.5rem;
@@ -443,9 +443,9 @@
 .urgency-badge {
   display: inline-flex;
   align-items: center;
-  padding: 0.2rem 0.6rem;
+  padding: 0.25rem 0.65rem;
   border-radius: 20px;
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -843,13 +843,48 @@
   background: var(--screening-card-border);
 }
 
+/* --- Educational Clinical Hints --- */
+.question-hint {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+  padding: 0.6rem 0.75rem;
+  background: rgba(15, 118, 110, 0.06);
+  border-left: 3px solid rgba(15, 118, 110, 0.3);
+  border-radius: 0 8px 8px 0;
+}
+
+.hint-icon {
+  font-size: 16px;
+  color: #0f766e;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.hint-text {
+  font-size: 0.78rem;
+  line-height: 1.45;
+  color: var(--screening-text-secondary);
+}
+
+[data-md-color-scheme="slate"] .question-hint {
+  background: rgba(45, 212, 191, 0.08);
+  border-left-color: rgba(45, 212, 191, 0.3);
+}
+
+[data-md-color-scheme="slate"] .hint-icon {
+  color: #2dd4bf;
+}
+
 /* --- Print Styles for Screening --- */
 @media print {
   .screening-progress,
   .screen-nav,
   .action-buttons .btn-action:not(.primary),
   .btn-start,
-  .disorder-links {
+  .disorder-links,
+  .question-hint {
     display: none !important;
   }
 
@@ -939,7 +974,7 @@
 
 /* --- Homepage CTA Styles --- */
 .screening-cta {
-  background: #1a237e;
+  background: linear-gradient(135deg, #0f766e, #0d9488);
   color: white;
   border-radius: 20px;
   padding: 2.5rem 2rem;
@@ -986,7 +1021,7 @@
   display: inline-block;
   padding: 1rem 2.5rem;
   background: white;
-  color: #1a237e;
+  color: #0f766e;
   border-radius: 14px;
   text-decoration: none;
   font-weight: 700;
@@ -1002,8 +1037,8 @@
 }
 
 [data-md-color-scheme="slate"] .screening-cta .cta-button {
-  background: #e8eaf6;
-  color: #1a237e;
+  background: #ccfbf1;
+  color: #0f766e;
 }
 
 /* --- Questionnaire Cards on Homepage --- */
