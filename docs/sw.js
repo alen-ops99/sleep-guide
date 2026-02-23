@@ -1,10 +1,12 @@
-const CACHE_NAME = 'sleep-guide-v1';
+const CACHE_NAME = 'sleep-guide-v2';
 
 // Core assets to cache immediately
 const PRECACHE_ASSETS = [
   '/',
+  '/screening/interactive-screening/',
   '/manifest.json',
   '/stylesheets/custom.css',
+  '/stylesheets/screening.css',
   '/stylesheets/print.css',
   '/assets/icon-192.svg',
   '/assets/icon-512.svg'
@@ -60,9 +62,9 @@ self.addEventListener('fetch', (event) => {
           if (cachedResponse) {
             return cachedResponse;
           }
-          // If the request is for a page, return the cached homepage
+          // If the request is for a page, return the cached screening tool
           if (event.request.headers.get('accept').includes('text/html')) {
-            return caches.match('/');
+            return caches.match('/screening/interactive-screening/');
           }
         });
       })

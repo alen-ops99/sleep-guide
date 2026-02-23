@@ -1,0 +1,880 @@
+{% extends "main.html" %}
+
+{% block tabs %}
+  {{ super() }}
+{% endblock %}
+
+{% block content %}
+<div class="screening-app" x-data="screeningApp()" x-cloak>
+
+  <!-- Progress Bar -->
+  <div class="screening-progress" x-show="screen > 0 && screen < 6">
+    <div class="progress-bar-track">
+      <div class="progress-bar-fill" :style="'width:' + Math.round((screen / 5) * 100) + '%'"></div>
+    </div>
+    <div class="progress-label">
+      <span x-text="screenNames[screen]"></span>
+      <span x-text="screen + ' / 5'"></span>
+    </div>
+  </div>
+
+  <!-- ============ SCREEN 0: Welcome ============ -->
+  <div class="screening-screen" x-show="screen === 0" x-transition>
+    <div class="welcome-card">
+      <h1>Brzi probir spavanja</h1>
+      <p>Interaktivni alat za sistematsku detekciju poremećaja spavanja u ordinaciji</p>
+      <div class="badge-row">
+        <span class="badge">14 pitanja</span>
+        <span class="badge">2–3 min</span>
+        <span class="badge">Automatska interpretacija</span>
+      </div>
+    </div>
+
+    <div class="patient-info">
+      <div class="field-group">
+        <label for="patient-age">Dob pacijenta (godine)</label>
+        <input type="number" id="patient-age" x-model.number="patientAge" placeholder="npr. 58" min="0" max="120">
+      </div>
+    </div>
+
+    <button class="btn-start" @click="screen = 1">
+      Započni probir
+    </button>
+  </div>
+
+  <!-- ============ SCREEN 1: Poteškoće sa spavanjem ============ -->
+  <div class="screening-screen" x-show="screen === 1" x-transition>
+    <div class="screen-title">Skupina A — Poteškoće sa spavanjem</div>
+    <div class="screen-subtitle">Pitanja o kvaliteti noćnog sna</div>
+
+    <!-- Q1 -->
+    <div class="question-card" :class="{'answered': answers[1] !== null, 'answered-yes': answers[1] === true}">
+      <span class="question-number">1</span>
+      <div class="question-text">Imate li poteškoća s <strong>uspavljivanjem ili održavanjem sna</strong> barem 3 noći tjedno?</div>
+      <div class="yn-buttons">
+        <button class="yn-btn" :class="{'selected-yes': answers[1] === true}" @click="answers[1] = true">DA</button>
+        <button class="yn-btn" :class="{'selected-no': answers[1] === false}" @click="answers[1] = false">NE</button>
+      </div>
+    </div>
+
+    <!-- Q2 -->
+    <div class="question-card" :class="{'answered': answers[2] !== null, 'answered-yes': answers[2] === true}">
+      <span class="question-number">2</span>
+      <div class="question-text"><strong>Hrkate li glasno</strong> — toliko da se čuje iz druge sobe?</div>
+      <div class="yn-buttons">
+        <button class="yn-btn" :class="{'selected-yes': answers[2] === true}" @click="answers[2] = true">DA</button>
+        <button class="yn-btn" :class="{'selected-no': answers[2] === false}" @click="answers[2] = false">NE</button>
+      </div>
+    </div>
+
+    <!-- Q3 -->
+    <div class="question-card" :class="{'answered': answers[3] !== null, 'answered-yes': answers[3] === true}">
+      <span class="question-number">3</span>
+      <div class="question-text">Je li vam itko rekao da <strong>prestajete disati ili se gušite u snu</strong>?</div>
+      <div class="yn-buttons">
+        <button class="yn-btn" :class="{'selected-yes': answers[3] === true}" @click="answers[3] = true">DA</button>
+        <button class="yn-btn" :class="{'selected-no': answers[3] === false}" @click="answers[3] = false">NE</button>
+      </div>
+    </div>
+
+    <div class="screen-nav">
+      <button class="btn-prev" @click="screen = 0">Natrag</button>
+      <button class="btn-next" @click="screen = 2" :disabled="!screenComplete(1)">Dalje</button>
+    </div>
+  </div>
+
+  <!-- ============ SCREEN 2: Dnevna pospanost ============ -->
+  <div class="screening-screen" x-show="screen === 2" x-transition>
+    <div class="screen-title">Skupina B — Dnevna pospanost</div>
+    <div class="screen-subtitle">Pitanja o budnosti tijekom dana</div>
+
+    <!-- Q4 -->
+    <div class="question-card" :class="{'answered': answers[4] !== null, 'answered-yes': answers[4] === true}">
+      <span class="question-number">4</span>
+      <div class="question-text">Osjećate li se <strong>pretjerano pospano tijekom dana</strong>, unatoč tome što ste spavali noću?</div>
+      <div class="yn-buttons">
+        <button class="yn-btn" :class="{'selected-yes': answers[4] === true}" @click="answers[4] = true">DA</button>
+        <button class="yn-btn" :class="{'selected-no': answers[4] === false}" @click="answers[4] = false">NE</button>
+      </div>
+    </div>
+
+    <!-- Q5 -->
+    <div class="question-card" :class="{'answered': answers[5] !== null, 'answered-yes': answers[5] === true}">
+      <span class="question-number">5</span>
+      <div class="question-text">Spavate li radnim danom <strong>manje od 7 sati</strong>?</div>
+      <div class="yn-buttons">
+        <button class="yn-btn" :class="{'selected-yes': answers[5] === true}" @click="answers[5] = true">DA</button>
+        <button class="yn-btn" :class="{'selected-no': answers[5] === false}" @click="answers[5] = false">NE</button>
+      </div>
+    </div>
+
+    <!-- Q6 -->
+    <div class="question-card" :class="{'answered': answers[6] !== null, 'answered-yes': answers[6] === true}">
+      <span class="question-number">6</span>
+      <div class="question-text">Jeste li ikad osjetili <strong>iznenadnu slabost mišića</strong> (u nogama, čeljusti ili vratu) pri smijehu, iznenađenju ili jakim emocijama?</div>
+      <div class="yn-buttons">
+        <button class="yn-btn" :class="{'selected-yes': answers[6] === true}" @click="answers[6] = true">DA</button>
+        <button class="yn-btn" :class="{'selected-no': answers[6] === false}" @click="answers[6] = false">NE</button>
+      </div>
+    </div>
+
+    <div class="screen-nav">
+      <button class="btn-prev" @click="screen = 1">Natrag</button>
+      <button class="btn-next" @click="screen = 3" :disabled="!screenComplete(2)">Dalje</button>
+    </div>
+  </div>
+
+  <!-- ============ SCREEN 3: Noćni događaji ============ -->
+  <div class="screening-screen" x-show="screen === 3" x-transition>
+    <div class="screen-title">Skupina C — Noćni događaji</div>
+    <div class="screen-subtitle">Pitanja o ponašanju tijekom spavanja</div>
+
+    <!-- Q7 -->
+    <div class="question-card" :class="{'answered': answers[7] !== null, 'answered-yes': answers[7] === true}">
+      <span class="question-number">7</span>
+      <div class="question-text">Osjećate li <strong>neugodne senzacije u nogama</strong> navečer (trnjenje, puzanje, nemir) koje vas tjeraju da ih pomičete, a poboljšavaju se kretanjem?</div>
+      <div class="yn-buttons">
+        <button class="yn-btn" :class="{'selected-yes': answers[7] === true}" @click="answers[7] = true">DA</button>
+        <button class="yn-btn" :class="{'selected-no': answers[7] === false}" @click="answers[7] = false">NE</button>
+      </div>
+    </div>
+
+    <!-- Q8 -->
+    <div class="question-card" :class="{'answered': answers[8] !== null, 'answered-yes': answers[8] === true}">
+      <span class="question-number">8</span>
+      <div class="question-text">Je li vam partner ili ukućanin ikad rekao da se u snu <strong>tučete, udarate, vičete ili izvodite snove</strong>?</div>
+      <div class="yn-buttons">
+        <button class="yn-btn" :class="{'selected-yes': answers[8] === true}" @click="answers[8] = true">DA</button>
+        <button class="yn-btn" :class="{'selected-no': answers[8] === false}" @click="answers[8] = false">NE</button>
+      </div>
+    </div>
+
+    <!-- Q9 -->
+    <div class="question-card" :class="{'answered': answers[9] !== null, 'answered-yes': answers[9] === true}">
+      <span class="question-number">9</span>
+      <div class="question-text">Je li vam partner ili ukućanin ikad rekao da <strong>hodate u snu ili vrištite iz sna</strong>?</div>
+      <div class="yn-buttons">
+        <button class="yn-btn" :class="{'selected-yes': answers[9] === true}" @click="answers[9] = true">DA</button>
+        <button class="yn-btn" :class="{'selected-no': answers[9] === false}" @click="answers[9] = false">NE</button>
+      </div>
+    </div>
+
+    <!-- Q10 -->
+    <div class="question-card" :class="{'answered': answers[10] !== null, 'answered-yes': answers[10] === true}">
+      <span class="question-number">10</span>
+      <div class="question-text"><strong>Škrgućete li zubima</strong> u snu (ili vam to kaže partner)?</div>
+      <div class="yn-buttons">
+        <button class="yn-btn" :class="{'selected-yes': answers[10] === true}" @click="answers[10] = true">DA</button>
+        <button class="yn-btn" :class="{'selected-no': answers[10] === false}" @click="answers[10] = false">NE</button>
+      </div>
+    </div>
+
+    <!-- Q11 -->
+    <div class="question-card" :class="{'answered': answers[11] !== null, 'answered-yes': answers[11] === true}">
+      <span class="question-number">11</span>
+      <div class="question-text">Nalazite li <strong>tragove da ste jeli noću</strong>, a ne sjećate se toga?</div>
+      <div class="yn-buttons">
+        <button class="yn-btn" :class="{'selected-yes': answers[11] === true}" @click="answers[11] = true">DA</button>
+        <button class="yn-btn" :class="{'selected-no': answers[11] === false}" @click="answers[11] = false">NE</button>
+      </div>
+      <!-- Q11a: Conditional zolpidem follow-up -->
+      <template x-if="answers[11] === true">
+        <div class="follow-up-card">
+          <span class="question-number">11a</span>
+          <div class="question-text">Koristi li pacijent <strong>zolpidem</strong> (Sanval, Zolsana) ili drugi hipnotik?</div>
+          <div class="yn-buttons">
+            <button class="yn-btn" :class="{'selected-yes': answers['11a'] === true}" @click="answers['11a'] = true">DA</button>
+            <button class="yn-btn" :class="{'selected-no': answers['11a'] === false}" @click="answers['11a'] = false">NE</button>
+          </div>
+        </div>
+      </template>
+    </div>
+
+    <div class="screen-nav">
+      <button class="btn-prev" @click="screen = 2">Natrag</button>
+      <button class="btn-next" @click="screen = 4" :disabled="!screenComplete(3)">Dalje</button>
+    </div>
+  </div>
+
+  <!-- ============ SCREEN 4: Raspored spavanja ============ -->
+  <div class="screening-screen" x-show="screen === 4" x-transition>
+    <div class="screen-title">Skupina D — Raspored spavanja</div>
+    <div class="screen-subtitle">Pitanje o cirkadijanom ritmu</div>
+
+    <!-- Q12 -->
+    <div class="question-card" :class="{'answered': answers[12] !== null, 'answered-yes': answers[12] === true}">
+      <span class="question-number">12</span>
+      <div class="question-text">Ne možete li zaspati <strong>prije 2–3 sata ujutro</strong>, ali spavate dobro kad nemate obaveza (vikend, odmor)?</div>
+      <div class="yn-buttons">
+        <button class="yn-btn" :class="{'selected-yes': answers[12] === true}" @click="answers[12] = true">DA</button>
+        <button class="yn-btn" :class="{'selected-no': answers[12] === false}" @click="answers[12] = false">NE</button>
+      </div>
+    </div>
+
+    <div class="section-divider">Skupina E — Ostalo</div>
+
+    <!-- Q13 -->
+    <div class="question-card" :class="{'answered': answers[13] !== null, 'answered-yes': answers[13] === true}">
+      <span class="question-number">13</span>
+      <div class="question-text">Imate li <strong>česte noćne more</strong> koje vas bude i uznemiruju?</div>
+      <div class="yn-buttons">
+        <button class="yn-btn" :class="{'selected-yes': answers[13] === true}" @click="answers[13] = true">DA</button>
+        <button class="yn-btn" :class="{'selected-no': answers[13] === false}" @click="answers[13] = false">NE</button>
+      </div>
+    </div>
+
+    <!-- Q14 -->
+    <div class="question-card" :class="{'answered': answers[14] !== null, 'answered-yes': answers[14] === true}">
+      <span class="question-number">14</span>
+      <div class="question-text">Imate li <strong>srčano zatajenje</strong>, koristite li <strong>opioide</strong> ili ste imali <strong>moždani udar</strong>?</div>
+      <div class="yn-buttons">
+        <button class="yn-btn" :class="{'selected-yes': answers[14] === true}" @click="answers[14] = true">DA</button>
+        <button class="yn-btn" :class="{'selected-no': answers[14] === false}" @click="answers[14] = false">NE</button>
+      </div>
+    </div>
+
+    <div class="screen-nav">
+      <button class="btn-prev" @click="screen = 3">Natrag</button>
+      <button class="btn-next" @click="screen = 5; computeResults()" :disabled="!screenComplete(4)">Prikaži rezultate</button>
+    </div>
+  </div>
+
+  <!-- ============ SCREEN 5: Results ============ -->
+  <div class="screening-screen" x-show="screen === 5" x-transition>
+    <div class="results-header">
+      <h2>Nalaz probira</h2>
+      <div class="results-summary">
+        Pozitivni odgovori: <strong x-text="positiveCount()"></strong> / 14
+        <template x-if="patientAge > 0"> | Dob: <strong x-text="patientAge"></strong> god.</template>
+      </div>
+    </div>
+
+    <!-- Disclaimer -->
+    <div class="screening-disclaimer">
+      <strong>Napomena:</strong> Ovaj probir nije dijagnostički instrument. Rezultati ukazuju na moguće poremećaje koje treba potvrditi kliničkom obradom. Ne zamjenjuje klinički pregled niti specijalističku procjenu.
+    </div>
+
+    <!-- Red Flags -->
+    <template x-if="redFlags.length > 0">
+      <div>
+        <div class="section-divider">Crvene zastave — hitno</div>
+        <template x-for="flag in redFlags" :key="flag.id">
+          <div class="red-flag-card">
+            <div class="red-flag-header">
+              <span class="red-flag-icon">&#9888;</span>
+              <span class="red-flag-title" x-text="flag.title"></span>
+            </div>
+            <div class="red-flag-body" x-text="flag.description"></div>
+            <div class="red-flag-action" x-text="flag.action"></div>
+          </div>
+        </template>
+      </div>
+    </template>
+
+    <!-- Suspected Disorders -->
+    <template x-if="disorders.length > 0">
+      <div>
+        <div class="section-divider">Sumnja na poremećaj</div>
+        <template x-for="d in disorders" :key="d.id">
+          <div class="disorder-card">
+            <div class="disorder-header">
+              <span class="disorder-name" x-text="d.name"></span>
+              <span class="urgency-badge" :class="'urgency-' + d.urgency" x-text="d.urgencyLabel"></span>
+            </div>
+
+            <!-- Clinical basis -->
+            <div class="result-clinical-basis" x-text="d.clinicalBasis"></div>
+
+            <!-- Confirmation steps -->
+            <template x-if="d.confirmSteps && d.confirmSteps.length > 0">
+              <div class="result-section">
+                <div class="result-section-label">Potvrditi</div>
+                <ul class="result-checklist">
+                  <template x-for="step in d.confirmSteps" :key="step">
+                    <li x-text="step"></li>
+                  </template>
+                </ul>
+              </div>
+            </template>
+
+            <!-- Initial management -->
+            <template x-if="d.initialManagement && d.initialManagement.length > 0">
+              <div class="result-section">
+                <div class="result-section-label">Započeti odmah</div>
+                <ul class="result-checklist">
+                  <template x-for="action in d.initialManagement" :key="action">
+                    <li x-text="action"></li>
+                  </template>
+                </ul>
+              </div>
+            </template>
+
+            <!-- Labs -->
+            <template x-if="d.labs && d.labs.length > 0">
+              <div class="result-section">
+                <div class="result-section-label">Laboratorij</div>
+                <div class="lab-tags">
+                  <template x-for="lab in d.labs" :key="lab">
+                    <span class="lab-tag" x-text="lab"></span>
+                  </template>
+                </div>
+              </div>
+            </template>
+
+            <!-- Referral -->
+            <template x-if="d.referral">
+              <div class="result-referral">
+                <span class="result-referral-label" x-text="d.referral.urgency"></span>
+                <span><span x-text="d.referral.specialist"></span><template x-if="d.referral.note"> — <span x-text="d.referral.note" style="font-style:italic;"></span></template></span>
+              </div>
+            </template>
+
+            <!-- Links -->
+            <div class="disorder-links" style="margin-top:0.75rem;">
+              <template x-if="d.questionnaireUrl">
+                <a class="disorder-link" :href="d.questionnaireUrl">Upitnik</a>
+              </template>
+              <template x-if="d.chapterUrl">
+                <a class="disorder-link" :href="d.chapterUrl">Poglavlje</a>
+              </template>
+            </div>
+          </div>
+        </template>
+      </div>
+    </template>
+
+    <!-- No findings -->
+    <template x-if="redFlags.length === 0 && disorders.length === 0">
+      <div class="no-findings">
+        <div class="no-findings-icon">&#10003;</div>
+        <h3>Bez pozitivnih nalaza</h3>
+        <p>Nema indicija za specifični poremećaj spavanja na temelju ovog probira. Ako pacijent i dalje ima tegobe, razmotriti dnevnik spavanja i kontrolni pregled.</p>
+      </div>
+    </template>
+
+    <!-- Action Buttons -->
+    <div class="action-buttons">
+      <button class="btn-action primary" @click="copyResults()" :class="{'btn-copy-success': copySuccess}" x-text="copySuccess ? 'Kopirano!' : 'Kopiraj nalaz probira'"></button>
+      <button class="btn-action" @click="window.print()">Ispiši</button>
+      <button class="btn-action" @click="resetAll()">Ispočetka</button>
+    </div>
+  </div>
+
+</div>
+
+<script>
+function screeningApp() {
+  return {
+    screen: 0,
+    patientAge: null,
+    answers: {
+      1: null, 2: null, 3: null, 4: null, 5: null, 6: null, 7: null,
+      8: null, 9: null, 10: null, 11: null, 12: null, 13: null, 14: null,
+      '11a': null
+    },
+    redFlags: [],
+    disorders: [],
+    copySuccess: false,
+    screenNames: {
+      1: 'Poteškoće sa spavanjem',
+      2: 'Dnevna pospanost',
+      3: 'Noćni događaji',
+      4: 'Raspored i ostalo',
+      5: 'Rezultati'
+    },
+
+    get takesZolpidem() {
+      return this.answers['11a'] === true;
+    },
+
+    screenComplete(s) {
+      const groups = {
+        1: [1, 2, 3],
+        2: [4, 5, 6],
+        3: [7, 8, 9, 10, 11],
+        4: [12, 13, 14]
+      };
+      const base = groups[s].every(q => this.answers[q] !== null);
+      if (s === 3 && this.answers[11] === true && this.answers['11a'] === null) return false;
+      return base;
+    },
+
+    positiveCount() {
+      let count = 0;
+      for (let i = 1; i <= 14; i++) { if (this.answers[i] === true) count++; }
+      return count;
+    },
+
+    computeResults() {
+      this.redFlags = [];
+      this.disorders = [];
+      const a = this.answers;
+
+      // --- RED FLAGS ---
+      if (a[8] && this.patientAge > 50) {
+        this.redFlags.push({
+          id: 'rbd-neuro',
+          title: 'REM poremećaj ponašanja u snu — mogući prodrom neurodegenerativne bolesti',
+          description: 'Izvođenje snova uz dob >50 godina snažno asocirano s razvojem Parkinsonove bolesti, demencije s Lewyjevim tjelešcima ili multiple sistemske atrofije unutar 10-15 godina.',
+          action: 'HITNO uputiti neurologu. Ne čekati kontrolu.'
+        });
+      }
+
+      if (a[3] && a[14]) {
+        this.redFlags.push({
+          id: 'csa-cardio',
+          title: 'Centralna apneja u snu uz kardiovaskularnu bolest',
+          description: 'Prestanci disanja u kombinaciji sa srčanim zatajenjem, opioidima ili moždanim udarom upućuju na centralnu apneju u snu — zahtijeva hitnu specijalističku obradu.',
+          action: 'HITNO uputiti kardiologu / specijalistu za medicinu spavanja.'
+        });
+      }
+
+      if (a[6]) {
+        this.redFlags.push({
+          id: 'cataplexy',
+          title: 'Katapleksija — patognomonična za narkolepsiju tip 1',
+          description: 'Iznenadna slabost mišića izazvana emocijama je patognomonični simptom narkolepsije tip 1 (autoimuna destrukcija hipokretinskih neurona). Rizik od ozljede pri epizodama.',
+          action: 'HITNO uputiti neurologu.'
+        });
+      }
+
+      if (a[11] && this.takesZolpidem) {
+        this.redFlags.push({
+          id: 'sred-zolpidem',
+          title: 'Poremećaj jedenja u snu induciran zolpidemom',
+          description: 'Nesvjesno noćno jedenje uz korištenje zolpidema — poznati neželjeni učinak, osobito pri višim dozama (do 5% korisnika).',
+          action: 'ODMAH ukinuti zolpidem, razmotriti alternativni hipnotik.'
+        });
+      }
+
+      // --- SUSPECTED DISORDERS ---
+
+      // Q1 → Insomnia
+      if (a[1]) {
+        this.disorders.push({
+          id: 'insomnia',
+          name: 'Nesanica (kronična insomnia)',
+          urgency: 'routine',
+          urgencyLabel: 'Planirano',
+          clinicalBasis: 'Poteškoće s uspavljivanjem/održavanjem sna ≥3 noći/tjedan (pitanje 1).',
+          confirmSteps: [
+            'Primijeniti ISI upitnik (Insomnia Severity Index)',
+            'Preporučiti dnevnik spavanja 2 tjedna',
+            'Isključiti komorbidnu depresiju/anksioznost (PHQ-9, GAD-7)'
+          ],
+          initialManagement: [
+            'Edukacija o higijeni spavanja (pisani letak)',
+            'Uputiti na CBT-I (kognitivno-bihevioralna terapija za nesanicu) — prva linija',
+            'Izbjegavati propisivanje benzodiazepina/Z-lijekova kao prvu terapiju'
+          ],
+          referral: { specialist: 'Psihijatar ili specijalist za medicinu spavanja', urgency: 'PLANIRANO', note: 'Ako nesanica traje >3 mjeseca unatoč CBT-I' },
+          labs: null,
+          questionnaireUrl: '../questionnaires/isi-interactive/',
+          chapterUrl: '../guide/01-nesanica/'
+        });
+      }
+
+      // Q2 or Q3 → OSA
+      if (a[2] || a[3]) {
+        this.disorders.push({
+          id: 'osa',
+          name: 'Opstruktivna apneja u snu (OSA)',
+          urgency: 'routine',
+          urgencyLabel: 'Planirano',
+          clinicalBasis: (a[2] ? 'Glasno hrkanje (pitanje 2)' : '') + (a[2] && a[3] ? ' + ' : '') + (a[3] ? 'Svjedočeni prestanci disanja (pitanje 3)' : '') + '.',
+          confirmSteps: [
+            'Primijeniti STOP-BANG upitnik',
+            'Ako STOP-BANG ≥3 — uputiti na polisomnografiju (PSG) ili poligrafiju (HSAT)',
+            'Izmjeriti opseg vrata (>43 cm M / >41 cm Ž = rizik)'
+          ],
+          initialManagement: [
+            'Savjetovati spavanje na boku (izbjegavati leđni položaj)',
+            'Redukcija tjelesne mase ako BMI >25',
+            'Izbjegavati alkohol 3h prije spavanja',
+            'Oprez: sedativi pogoršavaju OSA'
+          ],
+          referral: { specialist: 'Specijalist za medicinu spavanja (ORL/pulmolog)', urgency: 'PLANIRANO', note: 'PSG/HSAT za potvrdu i određivanje AHI' },
+          labs: null,
+          questionnaireUrl: '../questionnaires/stop-bang-interactive/',
+          chapterUrl: '../guide/02-osa/'
+        });
+      }
+
+      // Q3 + Q14 → CSA
+      if (a[3] && a[14]) {
+        this.disorders.push({
+          id: 'csa',
+          name: 'Centralna apneja u snu (CSA)',
+          urgency: 'urgent',
+          urgencyLabel: 'Hitno',
+          clinicalBasis: 'Svjedočeni prestanci disanja (pitanje 3) uz srčano zatajenje/opioide/moždani udar (pitanje 14).',
+          confirmSteps: [
+            'Uputiti na laboratorijsku PSG (polisomnografija) — HSAT nije dovoljna za CSA!',
+            'Provjeriti ejekcijsku frakciju (EF) ako ima srčano zatajenje',
+            'Popis lijekova — opioidi? doza?'
+          ],
+          initialManagement: [
+            'Optimizacija srčanog zatajenja (kardiolog)',
+            'Ako na opioidima — razmotriti smanjenje doze s propisivačem',
+            'NE propisivati CPAP bez PSG potvrde (ASV može biti kontraindiciran kod EF <45%)'
+          ],
+          referral: { specialist: 'Kardiolog + specijalist za medicinu spavanja', urgency: 'HITNO', note: 'PSG obavezna, ne HSAT' },
+          labs: ['NT-proBNP', 'Ehokardiografija'],
+          questionnaireUrl: null,
+          chapterUrl: '../guide/13-centralna-apneja/'
+        });
+      }
+
+      // Q14 alone → CSA risk
+      if (a[14] && !a[3]) {
+        this.disorders.push({
+          id: 'csa-risk',
+          name: 'Povišen rizik za centralnu apneju u snu',
+          urgency: 'routine',
+          urgencyLabel: 'Planirano',
+          clinicalBasis: 'Srčano zatajenje, opioidi ili moždani udar (pitanje 14) bez svjedočenih prestanaka disanja.',
+          confirmSteps: [
+            'Aktivno pitati partnera o prestancima disanja ili Cheyne-Stokesovom tipu',
+            'Razmotriti uputnicu specijalistu za PSG ako se pojave simptomi'
+          ],
+          initialManagement: [
+            'Optimizacija kardiovaskularne terapije',
+            'Praćenje simptoma — educirajte pacijenta i partnera'
+          ],
+          referral: { specialist: 'Specijalist za medicinu spavanja', urgency: 'PLANIRANO', note: 'Ako se razviju simptomi (prestanci disanja, EDS, noćna dispneja)' },
+          labs: null,
+          questionnaireUrl: null,
+          chapterUrl: '../guide/13-centralna-apneja/'
+        });
+      }
+
+      // Q4 + Q5 → Insufficient sleep
+      if (a[4] && a[5]) {
+        this.disorders.push({
+          id: 'insufficient-sleep',
+          name: 'Sindrom nedovoljnog spavanja',
+          urgency: 'elective',
+          urgencyLabel: 'Edukacija',
+          clinicalBasis: 'Dnevna pospanost (pitanje 4) uz spavanje <7h radnim danom (pitanje 5).',
+          confirmSteps: [
+            'Dnevnik spavanja 2 tjedna — dokumentirati trajanje sna',
+            'Probni produžetak sna na 7-9h × 2 tjedna',
+            'Ako se pospanost poboljša → potvrđena dijagnoza'
+          ],
+          initialManagement: [
+            'Edukacija: najčešći uzrok dnevne pospanosti u populaciji',
+            'Dogovoriti produžetak sna (realan plan s pacijentom)',
+            'Kontrolni pregled za 2-4 tjedna za reevaluaciju'
+          ],
+          referral: null,
+          labs: null,
+          questionnaireUrl: null,
+          chapterUrl: '../guide/10-nedovoljan-san/'
+        });
+      }
+
+      // Q4 + Q6 → Narcolepsy
+      if (a[4] && a[6]) {
+        this.disorders.push({
+          id: 'narcolepsy',
+          name: 'Narkolepsija',
+          urgency: 'urgent',
+          urgencyLabel: 'Hitno',
+          clinicalBasis: 'Dnevna pospanost (pitanje 4) uz katapleksiju — iznenadnu mišićnu slabost pri emocijama (pitanje 6).',
+          confirmSteps: [
+            'Primijeniti ESS upitnik (Epworth Sleepiness Scale)',
+            'Hitno uputiti neurologu — prosječno kašnjenje dijagnoze: 8-15 godina',
+            'Neurolog indicira MSLT (multiple sleep latency test)'
+          ],
+          initialManagement: [
+            'SIGURNOST: zabrana vožnje do specijalističke procjene',
+            'Educirajte pacijenta o riziku od ozljeda pri katapleksiji',
+            'Ne propisivati samostalno stimulanse — čekati neurologa'
+          ],
+          referral: { specialist: 'Neurolog (centar za medicinu spavanja)', urgency: 'HITNO', note: 'Katapleksija = patognomonično za narkolepsiju tip 1' },
+          labs: null,
+          questionnaireUrl: '../questionnaires/ess-interactive/',
+          chapterUrl: '../guide/06-narkolepsija/'
+        });
+      }
+
+      // Q4 alone → IH
+      if (a[4] && !a[5] && !a[6]) {
+        this.disorders.push({
+          id: 'ih',
+          name: 'Idiopatska hipersomnija (IH)',
+          urgency: 'routine',
+          urgencyLabel: 'Planirano',
+          clinicalBasis: 'Dnevna pospanost (pitanje 4) unatoč dovoljnom snu, bez katapleksije.',
+          confirmSteps: [
+            'Primijeniti ESS upitnik',
+            'Dnevnik spavanja 2 tjedna — dokumentirati ukupno vrijeme spavanja',
+            'Isključiti druge uzroke (OSA, depresija, hipotireoza, anemija)'
+          ],
+          initialManagement: [
+            'Isključiti česte uzroke: OSA, nedovoljan san, depresija',
+            'Laboratorij: TSH, KKS, feritin'
+          ],
+          referral: { specialist: 'Specijalist za medicinu spavanja', urgency: 'PLANIRANO', note: 'Za MSLT i definitivnu dijagnozu' },
+          labs: ['TSH', 'KKS', 'Feritin'],
+          questionnaireUrl: '../questionnaires/ess-interactive/',
+          chapterUrl: '../guide/07-idiopatska-hipersomnija/'
+        });
+      }
+
+      // Q7 → RLS
+      if (a[7]) {
+        this.disorders.push({
+          id: 'rls',
+          name: 'Sindrom nemirnih nogu (RLS)',
+          urgency: 'routine',
+          urgencyLabel: 'Planirano',
+          clinicalBasis: 'Neugodne senzacije u nogama s nagonom za kretanjem, pogoršanje navečer (pitanje 7).',
+          confirmSteps: [
+            'Provjeriti 4 IRLSSG dijagnostička kriterija (svi moraju biti prisutni)',
+            'Primijeniti IRLS upitnik za težinu',
+            'Laboratorij: feritin (cilj ≥75 µg/L, idealno ≥100)'
+          ],
+          initialManagement: [
+            'Ako feritin <75 µg/L → nadoknada željeza (65 mg elementarnog Fe + vitamin C)',
+            'Prekinuti lijekove koji pogoršavaju RLS (antihistaminici, SSRI, metoklopramid)',
+            'Higijena sna, umjerena tjelovježba, izbjegavati kofein'
+          ],
+          referral: { specialist: 'Neurolog ili specijalist za medicinu spavanja', urgency: 'PLANIRANO', note: 'Ako nema odgovora na željezo ili feritin uredan' },
+          labs: ['Feritin', 'KKS', 'Kreatinin', 'GUK'],
+          questionnaireUrl: '../questionnaires/irls-interactive/',
+          chapterUrl: '../guide/03-rls-plmd/'
+        });
+      }
+
+      // Q8 → RBD
+      if (a[8]) {
+        const isUrgent = this.patientAge > 50;
+        this.disorders.push({
+          id: 'rbd',
+          name: 'REM poremećaj ponašanja u snu (RBD)',
+          urgency: isUrgent ? 'urgent' : 'routine',
+          urgencyLabel: isUrgent ? 'Hitno' : 'Planirano',
+          clinicalBasis: 'Izvođenje snova — udaranje, vikanje u snu (pitanje 8)' + (isUrgent ? ', dob >50 godina.' : '.'),
+          confirmSteps: [
+            'Primijeniti RBDSQ upitnik',
+            'Uputiti neurologu za video-polisomnografiju (v-PSG)',
+            isUrgent ? 'Neurološki pregled za rane znakove parkinsonizma (bradikinezija, hiposmija, obstipacija)' : 'Isključiti lijekovima inducirani RBD (SSRI, SNRI, beta-blokatori)'
+          ],
+          initialManagement: [
+            'SIGURNOST SPAVAČA: ukloniti oštre predmete, spustiti krevet, zaštitne ograde',
+            'Razmotriti melatonin 3-12 mg prije spavanja (1. linija za sigurnost)',
+            'Edukacija partnera o riziku od ozljede'
+          ],
+          referral: { specialist: 'Neurolog', urgency: isUrgent ? 'HITNO' : 'PLANIRANO', note: isUrgent ? 'Dob >50 = povišen rizik za α-sinukleinopatiju' : 'Za v-PSG i potvrdu dijagnoze' },
+          labs: null,
+          questionnaireUrl: '../questionnaires/rbdsq-interactive/',
+          chapterUrl: '../guide/04-rbd/'
+        });
+      }
+
+      // Q9 → NREM parasomnia
+      if (a[9]) {
+        this.disorders.push({
+          id: 'nrem',
+          name: 'NREM parasomnije (somnambulizam, pavor nocturnus)',
+          urgency: 'elective',
+          urgencyLabel: 'Planirano',
+          clinicalBasis: 'Hodanje u snu ili vrištanje iz sna (pitanje 9).',
+          confirmSteps: [
+            'Detaljnija anamneza: učestalost, trajanje, sjećanje na epizodu?',
+            'Isključiti OSA kao okidač (čest komorbiditet!)',
+            'Ako atipične značajke ili ozljede → uputiti na v-PSG'
+          ],
+          initialManagement: [
+            'SIGURNOST: zaključati prozore/vrata, ukloniti opasne predmete',
+            'Regulirati raspored spavanja (deprivacija sna je okidač)',
+            'Izbjegavati alkohol i sedative prije spavanja'
+          ],
+          referral: { specialist: 'Specijalist za medicinu spavanja', urgency: 'PLANIRANO', note: 'Ako česte epizode, ozljede ili sumnja na epilepsiju' },
+          labs: null,
+          questionnaireUrl: null,
+          chapterUrl: '../guide/05-nrem-parasomnias/'
+        });
+      }
+
+      // Q10 → Bruxism
+      if (a[10]) {
+        this.disorders.push({
+          id: 'bruxism',
+          name: 'Bruksizam u snu',
+          urgency: 'elective',
+          urgencyLabel: 'Planirano',
+          clinicalBasis: 'Škrgutanje zubima u snu (pitanje 10).',
+          confirmSteps: [
+            'Stomatološki pregled — trošenje zubne cakline, frakture, bol u TMZ-u',
+            'Ispitati komorbiditet s OSA (česta asocijacija)'
+          ],
+          initialManagement: [
+            'Uputiti stomatologu za okluzijsku udlagu (splint)',
+            'Ako prisutno hrkanje → razmisliti o STOP-BANG za OSA probir'
+          ],
+          referral: { specialist: 'Stomatolog (protetika/gnatologija)', urgency: 'PLANIRANO', note: 'Za okluzijsku udlagu i procjenu oštećenja' },
+          labs: null,
+          questionnaireUrl: null,
+          chapterUrl: '../guide/09-bruksizam/'
+        });
+      }
+
+      // Q11 → SRED
+      if (a[11]) {
+        const zolp = this.takesZolpidem;
+        this.disorders.push({
+          id: 'sred',
+          name: 'Poremećaj jedenja povezan sa spavanjem (SRED)',
+          urgency: zolp ? 'urgent' : 'routine',
+          urgencyLabel: zolp ? 'Hitno' : 'Planirano',
+          clinicalBasis: 'Nesvjesno noćno jedenje (pitanje 11)' + (zolp ? ' uz korištenje zolpidema (pitanje 11a).' : '.'),
+          confirmSteps: zolp
+            ? ['Potvrditi korištenje zolpidema — doza, trajanje', 'Dokumentirati epizode noćnog jedenja (partner/ukućani)']
+            : ['Ispitati koristi li pacijent bilo koji hipnotik', 'Dokumentirati epizode — učestalost, vrsta hrane, sjećanje', 'Isključiti noćni sindrom jedenja (NES) — svjesno jedenje navečer'],
+          initialManagement: zolp
+            ? ['ODMAH ukinuti zolpidem', 'Razmotriti alternativni hipnotik (trazodon, suvoreksant)', 'Sigurnost kuhinje — zaključati ili alarm']
+            : ['Sigurnost kuhinje — zaključati opasne predmete, alarm', 'Provjeriti lijekove koji mogu izazvati SRED'],
+          referral: zolp
+            ? { specialist: 'Specijalist za medicinu spavanja', urgency: 'HITNO', note: 'Ukinuti zolpidem i reevaluirati' }
+            : { specialist: 'Specijalist za medicinu spavanja', urgency: 'PLANIRANO', note: 'Za dijagnostičku obradu i terapiju' },
+          labs: null,
+          questionnaireUrl: null,
+          chapterUrl: '../guide/12-sred/'
+        });
+      }
+
+      // Q12 → DSWPD
+      if (a[12]) {
+        this.disorders.push({
+          id: 'dswpd',
+          name: 'Poremećaj kasne faze spavanja (DSWPD)',
+          urgency: 'elective',
+          urgencyLabel: 'Planirano',
+          clinicalBasis: 'Ne može zaspati prije 2-3h ujutro, ali spava dobro bez obaveza (pitanje 12).',
+          confirmSteps: [
+            'Dnevnik spavanja 2 tjedna (uključujući vikend i slobodne dane)',
+            'Razmotriti aktigrafiju za objektivnu potvrdu',
+            'Isključiti nesanicu (kod DSWPD pacijent MOŽE spavati, samo kasno)'
+          ],
+          initialManagement: [
+            'Melatonin 0.5-3 mg 4-5h prije željenog vremena spavanja',
+            'Jutarnja ekspozicija jakoj svjetlosti (30 min, >10.000 lux ili sunce)',
+            'Izbjegavati plavo svjetlo navečer (ekrani) 2h prije spavanja'
+          ],
+          referral: { specialist: 'Specijalist za medicinu spavanja', urgency: 'PLANIRANO', note: 'Ako nema odgovora na melatonin + kronoterapiju' },
+          labs: null,
+          questionnaireUrl: null,
+          chapterUrl: '../guide/08-cirkadijani-poremecaji/'
+        });
+      }
+
+      // Q13 → Nightmares
+      if (a[13]) {
+        this.disorders.push({
+          id: 'nightmares',
+          name: 'Poremećaj noćnih mora',
+          urgency: 'elective',
+          urgencyLabel: 'Planirano',
+          clinicalBasis: 'Česte noćne more koje bude i uznemiruju (pitanje 13).',
+          confirmSteps: [
+            'PTSP probir — PCL-5 upitnik (noćne more su čest simptom PTSP-a)',
+            'Pitati o traumatskim iskustvima',
+            'Provjeriti lijekove (beta-blokatori, SSRI mogu izazvati noćne more)'
+          ],
+          initialManagement: [
+            'Ako pozitivan PCL-5 → uputiti na psihoterapiju za traumu',
+            'Razmotriti IRT (imagery rehearsal therapy) — prva linija za noćne more',
+            'Prazosin 1-15 mg ako teške noćne more (off-label, ali dokazana učinkovitost)'
+          ],
+          referral: { specialist: 'Psihijatar ili psihoterapeut', urgency: 'PLANIRANO', note: 'Za IRT i/ili terapiju traume ako PTSP+' },
+          labs: null,
+          questionnaireUrl: null,
+          chapterUrl: '../guide/11-poremecaj-nocnih-mora/'
+        });
+      }
+    },
+
+    copyResults() {
+      let text = '════════════════════════════════════════\n';
+      text += '  NALAZ PROBIRA SPAVANJA\n';
+      text += '════════════════════════════════════════\n';
+      text += 'NAPOMENA: Ovaj probir nije dijagnostički\n';
+      text += 'instrument. Rezultati ukazuju na moguće\n';
+      text += 'poremećaje koje treba potvrditi kliničkom\n';
+      text += 'obradom.\n';
+      text += '────────────────────────────────────────\n';
+      text += 'Datum: ' + new Date().toLocaleDateString('hr-HR') + '\n';
+      if (this.patientAge) text += 'Dob: ' + this.patientAge + ' god.\n';
+      text += 'Pozitivni odgovori: ' + this.positiveCount() + '/14\n\n';
+
+      if (this.redFlags.length > 0) {
+        text += '⚠ CRVENE ZASTAVE:\n';
+        this.redFlags.forEach(f => {
+          text += '  [!] ' + f.title + '\n';
+          text += '      → ' + f.action + '\n';
+        });
+        text += '\n';
+      }
+
+      if (this.disorders.length > 0) {
+        text += 'SUMNJA NA:\n';
+        this.disorders.forEach(d => {
+          text += '\n  ■ ' + d.name + ' [' + d.urgencyLabel + ']\n';
+          text += '    Temelj: ' + d.clinicalBasis + '\n';
+          if (d.confirmSteps) {
+            text += '    Potvrditi:\n';
+            d.confirmSteps.forEach(s => text += '      ☐ ' + s + '\n');
+          }
+          if (d.initialManagement) {
+            text += '    Započeti odmah:\n';
+            d.initialManagement.forEach(s => text += '      ☐ ' + s + '\n');
+          }
+          if (d.labs) {
+            text += '    Laboratorij: ' + d.labs.join(', ') + '\n';
+          }
+          if (d.referral) {
+            text += '    Uputiti: ' + d.referral.specialist + ' [' + d.referral.urgency + ']\n';
+          }
+        });
+        text += '\n';
+      }
+
+      if (this.redFlags.length === 0 && this.disorders.length === 0) {
+        text += 'Bez pozitivnih nalaza.\n\n';
+      }
+
+      text += '────────────────────────────────────────\n';
+      text += 'Pozitivna pitanja: ';
+      const pos = [];
+      for (let i = 1; i <= 14; i++) { if (this.answers[i]) pos.push(i); }
+      text += pos.length > 0 ? pos.join(', ') : 'nema';
+      text += '\n';
+      text += 'Generirano: Vodič za poremećaje spavanja u PZZ\n';
+
+      navigator.clipboard.writeText(text).then(() => {
+        this.copySuccess = true;
+        setTimeout(() => this.copySuccess = false, 2000);
+      });
+    },
+
+    resetAll() {
+      this.screen = 0;
+      this.patientAge = null;
+      for (let i = 1; i <= 14; i++) this.answers[i] = null;
+      this.answers['11a'] = null;
+      this.redFlags = [];
+      this.disorders = [];
+      this.copySuccess = false;
+      window.scrollTo(0, 0);
+    }
+  };
+}
+</script>
+
+<style>
+  [x-cloak] { display: none !important; }
+</style>
+
+{% endblock %}

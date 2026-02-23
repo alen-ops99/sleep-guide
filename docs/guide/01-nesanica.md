@@ -2,7 +2,7 @@
 
 > **MKB-10:** G47.0 (organska nesanica), F51.0 (neorganska nesanica) | **ICSD-3:** Kronični poremećaj nesanice (*Chronic Insomnia Disorder*)
 
-!!! brzi-pregled "🔍 Brzi pregled"
+!!! brzi-pregled "Brzi pregled"
 
     **Prepoznaj:** Teškoća usnivanja ili održavanja sna ≥3 noći/tjedan kroz ≥3 mjeseca + dnevna disfunkcija (umor, iritabilnost, pad koncentracije).
 
@@ -12,53 +12,70 @@
 
 ---
 
-## Što je to?
+??? note "Što je to?"
 
-Kronična nesanica je **subjektivna teškoća usnivanja, održavanja sna ili preranog buđenja**, unatoč adekvatnoj prilici za spavanje, uz posljedičnu dnevnu disfunkciju (umor, iritabilnost, smanjena koncentracija, pad radne sposobnosti).
+    Kronična nesanica je **subjektivna teškoća usnivanja, održavanja sna ili preranog buđenja**, unatoč adekvatnoj prilici za spavanje, uz posljedičnu dnevnu disfunkciju (umor, iritabilnost, smanjena koncentracija, pad radne sposobnosti).
 
-Današnje smjernice (ICSD-3) definiraju jedinstvenu dijagnozu — **kronični poremećaj nesanice** — i naglašavaju da nesanicu treba liječiti i kada postoji komorbiditet (depresija, bol, OSA), jer se rijetko spontano povlači nakon liječenja osnovnog stanja.
-
----
-
-## Koliko je često?
-
-| Populacija | Prevalencija |
-|---|---|
-| Opća populacija — simptomi nesanice | 30–35% |
-| Opća populacija — kronična nesanica (po strogim kriterijima) | 10–15% |
-| Žene (postmenopauza) | 15–25% |
-| Starija populacija (>65 godina) | 20–30% |
-| Pacijenti s kroničnom boli | 50–75% |
-| Pacijenti s depresijom | 60–80% |
-
-**Kontekst za LOM praksu:** Prosječni liječnik obiteljske medicine s 2.000 opredijeljenih pacijenata ima **200–300 pacijenata s kroničnom nesanicom** u svojoj praksi. Većina ih se nikada neće spontano požaliti na san — potrebno je aktivno pitati.
+    Današnje smjernice (ICSD-3) definiraju jedinstvenu dijagnozu — **kronični poremećaj nesanice** — i naglašavaju da nesanicu treba liječiti i kada postoji komorbiditet (depresija, bol, OSA), jer se rijetko spontano povlači nakon liječenja osnovnog stanja.
 
 ---
 
-## Kako prepoznati?
+??? note "Koliko je često?"
 
-### Ključni simptomi
+    | Populacija | Prevalencija |
+    |---|---|
+    | Opća populacija — simptomi nesanice | 30–35% |
+    | Opća populacija — kronična nesanica (po strogim kriterijima) | 10–15% |
+    | Žene (postmenopauza) | 15–25% |
+    | Starija populacija (>65 godina) | 20–30% |
+    | Pacijenti s kroničnom boli | 50–75% |
+    | Pacijenti s depresijom | 60–80% |
 
-- **Teškoća usnivanja** (latencija >30 min) — „ne može isključiti misli"
-- **Česta noćna buđenja** — ukupno budno vrijeme noću >30 minuta
-- **Prerano jutarnje buđenje** — ≥30 min prije željenog vremena, bez ponovnog usnivanja
-- **Dnevna disfunkcija** — umor, iritabilnost, pad koncentracije i produktivnosti
-- **≥3 noći/tjedan kroz ≥3 mjeseca** — razlika od kratkotrajne (akutne) nesanice
-- **Adekvatna prilika za spavanje** — pacijent ima uvjete za san, ali ne može spavati
-
-### Na što obratiti pozornost u anamnezi
-
-- „Kada ste zadnji put spavali dobro?" — kronična nesanica često traje godinama prije prvog posjeta
-- „Što radite kada ne možete zaspati?" — otkriva kompenzatorne mehanizme (TV u krevetu, alkohol, dugo ležanje)
-- „Koliko vremena provodite u krevetu?" — nesaničari često provode 9–10 sati u krevetu za 5–6 sati sna
-- „Hrčete li? Imate li pauze u disanju?" — **obavezno pitanje** za isključivanje OSA (COMISA)
-- „Imate li nemir u nogama navečer?" — diferencijalna dijagnoza: sindrom nemirnih nogu (RLS)
-- „Koji lijekove uzimate?" — mnogi lijekovi pogoršavaju nesanicu (SSRI, kortikosteroidi, beta-blokatori, teofilin)
-- „Koliko kofeina pijete, i kada?" — čest, a zanemareni čimbenik
+    **Kontekst za LOM praksu:** Prosječni liječnik obiteljske medicine s 2.000 opredijeljenih pacijenata ima **200–300 pacijenata s kroničnom nesanicom** u svojoj praksi. Većina ih se nikada neće spontano požaliti na san — potrebno je aktivno pitati.
 
 ---
 
-!!! crvena-zastavica "🚩 Crvene zastavice"
+??? note "Kako prepoznati?"
+
+    <div class="symptom-tiers" markdown>
+
+    <div class="symptom-tier tier-critical" markdown>
+    ### Kritični znakovi
+    - Poteškoće s uspavljivanjem, održavanjem sna ili preranim buđenjem ≥3 noći/tjedan
+    - Tegobe traju ≥3 mjeseca
+    - Dnevne posljedice (umor, poteškoće s koncentracijom, promjene raspoloženja)
+    </div>
+
+    <div class="symptom-tier tier-supporting" markdown>
+    ### Podržavajući znakovi
+    - Pacijent provodi prekomjerno vrijeme u krevetu ("pokušava nadoknaditi san")
+    - Pojačana aktivacija pred spavanje (ruminacije, anksioznost)
+    - Nepravilna higijena spavanja (ekrani, kofein navečer, nepravilan raspored)
+    - Komorbidna depresija ili anksioznost
+    </div>
+
+    <div class="symptom-tier tier-differential" markdown>
+    ### Diferencijalni tragovi
+    - Ako je pospanost dominantna (a ne umor) → razmisliti o OSA ili hipersomnolentnijim stanjima
+    - Ako se simptomi javljaju samo uz pomaknut raspored → razmotriti cirkadijani poremećaj
+    - Ako je prisutno glasno hrkanje → isključiti OSA s komorbidnom nesanicom (COMISA)
+    </div>
+
+    </div>
+
+    ### Na što obratiti pozornost u anamnezi
+
+    - „Kada ste zadnji put spavali dobro?" — kronična nesanica često traje godinama prije prvog posjeta
+    - „Što radite kada ne možete zaspati?" — otkriva kompenzatorne mehanizme (TV u krevetu, alkohol, dugo ležanje)
+    - „Koliko vremena provodite u krevetu?" — nesaničari često provode 9–10 sati u krevetu za 5–6 sati sna
+    - „Hrčete li? Imate li pauze u disanju?" — **obavezno pitanje** za isključivanje OSA (COMISA)
+    - „Imate li nemir u nogama navečer?" — diferencijalna dijagnoza: sindrom nemirnih nogu (RLS)
+    - „Koji lijekove uzimate?" — mnogi lijekovi pogoršavaju nesanicu (SSRI, kortikosteroidi, beta-blokatori, teofilin)
+    - „Koliko kofeina pijete, i kada?" — čest, a zanemareni čimbenik
+
+---
+
+!!! crvena-zastavica "Crvene zastavice"
 
     > **HITNO** — Izražena suicidalna ideacija u kontekstu teške nesanice s depresijom — upućivanje psihijatru isti dan.
 
@@ -71,102 +88,102 @@ Današnje smjernice (ICSD-3) definiraju jedinstvenu dijagnozu — **kronični po
 
 ---
 
-## Probir i dijagnostika
+??? note "Probir i dijagnostika"
 
-### Što LOM može učiniti
+    ### Što LOM može učiniti
 
-**1. Insomnia Severity Index (ISI) — primarni alat za probir**
+    **1. Insomnia Severity Index (ISI) — primarni alat za probir**
 
-ISI je validirani upitnik od 7 pitanja (ispunjava pacijent u 2–3 minute):
+    ISI je validirani upitnik od 7 pitanja (ispunjava pacijent u 2–3 minute):
 
-| ISI ukupni zbroj | Interpretacija |
-|---|---|
-| 0–7 | Nema klinički značajne nesanice |
-| 8–14 | Subklinička (blaga) nesanica |
-| 15–21 | Umjerena nesanica — **indicirana intervencija** |
-| 22–28 | Teška nesanica — **hitna intervencija** |
+    | ISI ukupni zbroj | Interpretacija |
+    |---|---|
+    | 0–7 | Nema klinički značajne nesanice |
+    | 8–14 | Subklinička (blaga) nesanica |
+    | 15–21 | Umjerena nesanica — **indicirana intervencija** |
+    | 22–28 | Teška nesanica — **hitna intervencija** |
 
-> ISI se može koristiti i za praćenje odgovora na liječenje — klinički značajan odgovor = pad ≥8 bodova; remisija = ISI <8.
+    > ISI se može koristiti i za praćenje odgovora na liječenje — klinički značajan odgovor = pad ≥8 bodova; remisija = ISI <8.
 
-**2. Dnevnik spavanja (2 tjedna)**
+    **2. Dnevnik spavanja (2 tjedna)**
 
-Pacijent bilježi vrijeme lijeganja, usnivanja, buđenja i ustajanja. **Zlatni standard subjektivne procjene** i neophodan za CBT-I.
+    Pacijent bilježi vrijeme lijeganja, usnivanja, buđenja i ustajanja. **Zlatni standard subjektivne procjene** i neophodan za CBT-I.
 
-**3. Klinička anamneza i diferencijalna dijagnoza**
+    **3. Klinička anamneza i diferencijalna dijagnoza**
 
-- Isključiti poremećaje koji oponašaju nesanicu: **OSA, RLS, cirkadijani poremećaji, poremećaj rasporeda rada u smjenama**
-- Evaluirati psihijatrijske komorbiditete: depresija, anksioznost, PTSP
-- Pregledati listu lijekova
+    - Isključiti poremećaje koji oponašaju nesanicu: **OSA, RLS, cirkadijani poremećaji, poremećaj rasporeda rada u smjenama**
+    - Evaluirati psihijatrijske komorbiditete: depresija, anksioznost, PTSP
+    - Pregledati listu lijekova
 
-### Što zahtijeva specijalista
+    ### Što zahtijeva specijalista
 
-- **Polisomnografija (PSG)** — NIJE indicirana za rutinsku nesanicu. Indicirana samo kada se sumnja na komorbidnu OSA, periodične pokrete udova (PLMD) ili parasomnije
-- **Aktigrafija** — korisna za procjenu cirkadijanih poremećaja; u Hrvatskoj ograničeno dostupna
-- **Kognitivno testiranje** — ako postoji sumnja na neurodegenerativni proces
-
----
-
-## Liječenje u primarnoj zdravstvenoj zaštiti
-
-### Prva linija: kognitivno-bihevioralna terapija za nesanicu (CBT-I)
-
-> ⚠️ **CBT-I je jedina terapija s razinom dokaza Ia za kroničnu nesanicu — prva je linija liječenja prema SVIM važećim smjernicama (AASM, ACP, ESRS, NICE).** Propisivanje hipnotika bez ponude ili pokušaja CBT-I predstavlja suboptimalnu skrb.
-
-**Što je CBT-I?** Strukturirani program od **4–8 seansi** koji uključuje:
-
-| Komponenta | Opis |
-|---|---|
-| **Restrikcija sna** | Skratiti vrijeme u krevetu na stvarno vrijeme spavanja (npr. 00:00–06:00). Povećava pritisak za spavanje. |
-| **Kontrola stimulusa** | Krevet = samo san i seks. Ako ne zaspiš za 15–20 min → ustani. |
-| **Kognitivna restrukturacija** | Mijenjanje katastrofizirajućih misli o snu |
-| **Relaksacijske tehnike** | Progresivna mišićna relaksacija, dijafragmalno disanje |
-| **Edukacija o higijeni sna** | Sastavni dio CBT-I, nikad kao samostalna terapija |
-
-**Dostupnost u Hrvatskoj:**
-- Psiholozi educirani za CBT-I — ograničen broj, većinom u Zagrebu i većim gradovima
-- **Digitalni CBT-I (dCBT-I)** — jednaka razina dokaza; prepreka je jezik (većina aplikacija na engleskom)
-- **LOM može primijeniti restrikciju sna + kontrolu stimulusa** i bez formalnog CBT-I treninga — učinak je značajan i samo s te dvije komponente
-
-> **Higijenska mjera ≠ liječenje.** Savjet o higijeni sna (izbjegavanje kofeina, tamna soba, redovit raspored) sam za sebe **NIJE dovoljan** za kroničnu nesanicu i ne smije se koristiti kao jedini tretman.
-
-### Farmakoterapija — druga linija ili kratkotrajna pomoć
-
-Lijekovi su indicirani: (1) kratkoročno, dok se čeka pristup CBT-I; (2) uz CBT-I kod teške nesanice; (3) kada CBT-I nije dostupan ili pacijent ga ne tolerira.
-
-**Lijekovi dostupni u Hrvatskoj (provjera: HALMED, veljača 2026):**
-
-| Lijek | Doza | Trajanje | Napomene |
-|---|---|---|---|
-| **Zolpidem** | 5–10 mg (žene: 5 mg) | Do 4 tjedna | Z-lijek; oprez: kompleksno ponašanje u snu (SRED, somnambulizam); ne za dugotrajnu upotrebu |
-| **Melatonin** (s produljenim otpuštanjem) | 2 mg | Do 13 tjedana (>55 god.) | Skroman učinak na nesanicu; koristan za cirkadijanu komponentu; ne djeluje kao hipnotik |
-| **Trazodon** (off-label) | 25–100 mg | Dulje prikladan | Antidepresiv u niskoj dozi; sedativan bez rizika ovisnosti; oprez: ortostatska hipotenzija, prijapizam (rijetko) |
-| **Hidroksizin** | 25–50 mg | Kratkoročno | Antihistaminik; sedativan; antikolinergički učinci ograničavaju uporabu u starijih |
-| **Benzodiazepini** (diazepam, oksazepam) | — | **Izbjegavati** | Tolerancija, ovisnost, padovi u starijih, rebound nesanica; NE koristiti kao prvu liniju |
-
-> ⚠️ **Važno:** Lijekovi koji NISU dostupni u Hrvatskoj ili nemaju indikaciju za nesanicu: eszopiclone, suvorexant, lemborexant, daridorexant, ramelteon, doxepin u niskoj dozi (3–6 mg). Ne propisivati i ne obećavati pacijentu pristup ovim lijekovima.
-
-**Stariji pacijenti (>65 godina):** Benzodiazepini i Z-lijekovi su na Beers listi za izbjegavanje (padovi, frakture, delirijum). Prva linija ostaje CBT-I; ako je nužan lijek → trazodon 25–50 mg ili melatonin 2 mg.
-
-### COMISA — ne zaboraviti!
-
-**COMISA** prisutna je u **30–50% pacijenata s nesanicom**. Liječenje samo nesanice bez dijagnoze OSA = suboptimalan rezultat. **Kod svakog pacijenta s nesanicom pitajte o hrkanju, svjedočenim apnejama i dnevnoj pospanosti (ne samo umoru).**
+    - **Polisomnografija (PSG)** — NIJE indicirana za rutinsku nesanicu. Indicirana samo kada se sumnja na komorbidnu OSA, periodične pokrete udova (PLMD) ili parasomnije
+    - **Aktigrafija** — korisna za procjenu cirkadijanih poremećaja; u Hrvatskoj ograničeno dostupna
+    - **Kognitivno testiranje** — ako postoji sumnja na neurodegenerativni proces
 
 ---
 
-## Kada uputiti specijalistu?
+??? note "Liječenje u primarnoj zdravstvenoj zaštiti"
 
-| Uputiti kada... | Kamo | Razlog |
-|---|---|---|
-| ISI ≥15 i nema odgovora na osnovne bihevioralne mjere (4–6 tjedana) | Psiholog/psihijatar s CBT-I edukacijom | Potreban strukturirani CBT-I program |
-| Sumnja na komorbidnu OSA (hrkanje, apneje, BMI >30, Epworth >10) | Centar za medicinu spavanja / pulmolog | PSG za potvrdu dijagnoze i titraciju CPAP-a |
-| Ovisnost o benzodiazepinima ili Z-lijekovima | Psihijatar | Postupna redukcija uz nadzor; zamjenska terapija |
-| Rezistentna nesanica unatoč CBT-I + farmakoterapiji (>3 mjeseca) | Centar za medicinu spavanja | Evaluacija za skrivene komorbiditete (PLMD, cirkadijani poremećaj) |
-| Sumnja na psihijatrijsku etiologiju (teška depresija, bipolarni poremećaj, PTSP) | Psihijatar | Optimizacija psihofarmakoterapije |
-| Parasomnije ili atipično ponašanje u snu | Neurolog / Centar za medicinu spavanja | Potrebna PSG |
+    ### Prva linija: kognitivno-bihevioralna terapija za nesanicu (CBT-I)
+
+    > ⚠️ **CBT-I je jedina terapija s razinom dokaza Ia za kroničnu nesanicu — prva je linija liječenja prema SVIM važećim smjernicama (AASM, ACP, ESRS, NICE).** Propisivanje hipnotika bez ponude ili pokušaja CBT-I predstavlja suboptimalnu skrb.
+
+    **Što je CBT-I?** Strukturirani program od **4–8 seansi** koji uključuje:
+
+    | Komponenta | Opis |
+    |---|---|
+    | **Restrikcija sna** | Skratiti vrijeme u krevetu na stvarno vrijeme spavanja (npr. 00:00–06:00). Povećava pritisak za spavanje. |
+    | **Kontrola stimulusa** | Krevet = samo san i seks. Ako ne zaspiš za 15–20 min → ustani. |
+    | **Kognitivna restrukturacija** | Mijenjanje katastrofizirajućih misli o snu |
+    | **Relaksacijske tehnike** | Progresivna mišićna relaksacija, dijafragmalno disanje |
+    | **Edukacija o higijeni sna** | Sastavni dio CBT-I, nikad kao samostalna terapija |
+
+    **Dostupnost u Hrvatskoj:**
+    - Psiholozi educirani za CBT-I — ograničen broj, većinom u Zagrebu i većim gradovima
+    - **Digitalni CBT-I (dCBT-I)** — jednaka razina dokaza; prepreka je jezik (većina aplikacija na engleskom)
+    - **LOM može primijeniti restrikciju sna + kontrolu stimulusa** i bez formalnog CBT-I treninga — učinak je značajan i samo s te dvije komponente
+
+    > **Higijenska mjera ≠ liječenje.** Savjet o higijeni sna (izbjegavanje kofeina, tamna soba, redovit raspored) sam za sebe **NIJE dovoljan** za kroničnu nesanicu i ne smije se koristiti kao jedini tretman.
+
+    ### Farmakoterapija — druga linija ili kratkotrajna pomoć
+
+    Lijekovi su indicirani: (1) kratkoročno, dok se čeka pristup CBT-I; (2) uz CBT-I kod teške nesanice; (3) kada CBT-I nije dostupan ili pacijent ga ne tolerira.
+
+    **Lijekovi dostupni u Hrvatskoj (provjera: HALMED, veljača 2026):**
+
+    | Lijek | Doza | Trajanje | Napomene |
+    |---|---|---|---|
+    | **Zolpidem** | 5–10 mg (žene: 5 mg) | Do 4 tjedna | Z-lijek; oprez: kompleksno ponašanje u snu (SRED, somnambulizam); ne za dugotrajnu upotrebu |
+    | **Melatonin** (s produljenim otpuštanjem) | 2 mg | Do 13 tjedana (>55 god.) | Skroman učinak na nesanicu; koristan za cirkadijanu komponentu; ne djeluje kao hipnotik |
+    | **Trazodon** (off-label) | 25–100 mg | Dulje prikladan | Antidepresiv u niskoj dozi; sedativan bez rizika ovisnosti; oprez: ortostatska hipotenzija, prijapizam (rijetko) |
+    | **Hidroksizin** | 25–50 mg | Kratkoročno | Antihistaminik; sedativan; antikolinergički učinci ograničavaju uporabu u starijih |
+    | **Benzodiazepini** (diazepam, oksazepam) | — | **Izbjegavati** | Tolerancija, ovisnost, padovi u starijih, rebound nesanica; NE koristiti kao prvu liniju |
+
+    > ⚠️ **Važno:** Lijekovi koji NISU dostupni u Hrvatskoj ili nemaju indikaciju za nesanicu: eszopiclone, suvorexant, lemborexant, daridorexant, ramelteon, doxepin u niskoj dozi (3–6 mg). Ne propisivati i ne obećavati pacijentu pristup ovim lijekovima.
+
+    **Stariji pacijenti (>65 godina):** Benzodiazepini i Z-lijekovi su na Beers listi za izbjegavanje (padovi, frakture, delirijum). Prva linija ostaje CBT-I; ako je nužan lijek → trazodon 25–50 mg ili melatonin 2 mg.
+
+    ### COMISA — ne zaboraviti!
+
+    **COMISA** prisutna je u **30–50% pacijenata s nesanicom**. Liječenje samo nesanice bez dijagnoze OSA = suboptimalan rezultat. **Kod svakog pacijenta s nesanicom pitajte o hrkanju, svjedočenim apnejama i dnevnoj pospanosti (ne samo umoru).**
 
 ---
 
-!!! zamka "⚠️ Česte zamke"
+??? note "Kada uputiti specijalistu?"
+
+    | Uputiti kada... | Kamo | Razlog |
+    |---|---|---|
+    | ISI ≥15 i nema odgovora na osnovne bihevioralne mjere (4–6 tjedana) | Psiholog/psihijatar s CBT-I edukacijom | Potreban strukturirani CBT-I program |
+    | Sumnja na komorbidnu OSA (hrkanje, apneje, BMI >30, Epworth >10) | Centar za medicinu spavanja / pulmolog | PSG za potvrdu dijagnoze i titraciju CPAP-a |
+    | Ovisnost o benzodiazepinima ili Z-lijekovima | Psihijatar | Postupna redukcija uz nadzor; zamjenska terapija |
+    | Rezistentna nesanica unatoč CBT-I + farmakoterapiji (>3 mjeseca) | Centar za medicinu spavanja | Evaluacija za skrivene komorbiditete (PLMD, cirkadijani poremećaj) |
+    | Sumnja na psihijatrijsku etiologiju (teška depresija, bipolarni poremećaj, PTSP) | Psihijatar | Optimizacija psihofarmakoterapije |
+    | Parasomnije ili atipično ponašanje u snu | Neurolog / Centar za medicinu spavanja | Potrebna PSG |
+
+---
+
+!!! zamka "Česte zamke"
 
     | ❌ Pogreška | ✅ Ispravni pristup |
     |---|---|
@@ -181,13 +198,13 @@ Lijekovi su indicirani: (1) kratkoročno, dok se čeka pristup CBT-I; (2) uz CBT
 
 ---
 
-## Ključne poruke
+!!! kljucna-poruka "Ključne poruke"
 
-1. **CBT-I je prva linija liječenja kronične nesanice** — učinkovitija od lijekova dugoročno, bez nuspojava, s dokazima razine Ia. LOM može primijeniti osnovne bihevioralne komponente (restrikcija sna + kontrola stimulusa) i bez formalnog CBT-I treninga.
-2. **Benzodiazepini i Z-lijekovi nisu prva linija** — koriste se samo kratkoročno (do 4 tjedna), uz jasnu strategiju izlaska. Posebno izbjegavati u starijih (>65 godina).
-3. **Uvijek probir za OSA** — kod svakog pacijenta s kroničnom nesanicom postavljajte pitanja o hrkanju i apnejama. COMISA je prisutna u trećine do polovice nesaničara.
-4. **Higijena sna sama nije terapija** — nikada ne otpuštajte pacijenta samo sa savjetom „izbjegavajte kofein i ugasite mobitel". To je samo jedna komponenta CBT-I.
-5. **Kronična nesanica = ≥3 noći/tjedan kroz ≥3 mjeseca s dnevnom disfunkcijom.** Jasni kriteriji razlikuju kroničnu nesanicu od prolaznih teškoća spavanja.
+    1. **CBT-I je prva linija liječenja kronične nesanice** — učinkovitija od lijekova dugoročno, bez nuspojava, s dokazima razine Ia. LOM može primijeniti osnovne bihevioralne komponente (restrikcija sna + kontrola stimulusa) i bez formalnog CBT-I treninga.
+    2. **Benzodiazepini i Z-lijekovi nisu prva linija** — koriste se samo kratkoročno (do 4 tjedna), uz jasnu strategiju izlaska. Posebno izbjegavati u starijih (>65 godina).
+    3. **Uvijek probir za OSA** — kod svakog pacijenta s kroničnom nesanicom postavljajte pitanja o hrkanju i apnejama. COMISA je prisutna u trećine do polovice nesaničara.
+    4. **Higijena sna sama nije terapija** — nikada ne otpuštajte pacijenta samo sa savjetom „izbjegavajte kofein i ugasite mobitel". To je samo jedna komponenta CBT-I.
+    5. **Kronična nesanica = ≥3 noći/tjedan kroz ≥3 mjeseca s dnevnom disfunkcijom.** Jasni kriteriji razlikuju kroničnu nesanicu od prolaznih teškoća spavanja.
 
 ---
 

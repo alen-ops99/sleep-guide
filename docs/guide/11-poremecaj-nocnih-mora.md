@@ -2,7 +2,7 @@
 
 > **MKB-10:** F51.5 | **ICSD-3:** Nightmare Disorder (parasomnije povezane s REM spavanjem)
 
-!!! brzi-pregled "🔍 Brzi pregled"
+!!! brzi-pregled "Brzi pregled"
 
     **Prepoznaj:** Česte noćne more s buđenjem u strahu, potpunim sjećanjem, bez motoričke aktivnosti (za razliku od RBD-a). Pitajte o traumi/PTSP-u — većina liječnika izbjegava to pitanje!
 
@@ -12,67 +12,86 @@
 
 ---
 
-## Što je to?
+??? note "Što je to?"
 
-Noćne more su **živopisni, uznemirujući snovi koji završavaju buđenjem pacijenta** uz puni sjećanje na sadržaj sna i značajan emocionalni distres. Javljaju se tijekom REM spavanja, koje dominira u **drugoj polovici noći** — stoga su epizode najčešće u ranim jutarnjim satima.
+    Noćne more su **živopisni, uznemirujući snovi koji završavaju buđenjem pacijenta** uz puni sjećanje na sadržaj sna i značajan emocionalni distres. Javljaju se tijekom REM spavanja, koje dominira u **drugoj polovici noći** — stoga su epizode najčešće u ranim jutarnjim satima.
 
-Svaki čovjek povremeno ima neugodne snove. Poremećaj noćnih mora dijagnosticira se kada su one **ponavljajuće, uzrokuju značajan distres ili narušavaju funkcioniranje** — strah od ponovnog usnivanja, izbjegavanje spavanja, dnevna iscrpljenost, pad raspoloženja i produktivnosti.
+    Svaki čovjek povremeno ima neugodne snove. Poremećaj noćnih mora dijagnosticira se kada su one **ponavljajuće, uzrokuju značajan distres ili narušavaju funkcioniranje** — strah od ponovnog usnivanja, izbjegavanje spavanja, dnevna iscrpljenost, pad raspoloženja i produktivnosti.
 
-Dva su glavna uzroka: **idiopatski** (bez jasnog uzroka, često od djetinjstva) i **noćne more povezane s PTSP-om** — daleko najčešći uzrok kroničnih noćnih mora u odraslih. Trauma je najsnažniji precipitirajući čimbenik i uvijek se mora aktivno istražiti.
+    Dva su glavna uzroka: **idiopatski** (bez jasnog uzroka, često od djetinjstva) i **noćne more povezane s PTSP-om** — daleko najčešći uzrok kroničnih noćnih mora u odraslih. Trauma je najsnažniji precipitirajući čimbenik i uvijek se mora aktivno istražiti.
 
-**Ključna diferencijalna dijagnoza:**
+    **Ključna diferencijalna dijagnoza:**
 
-| Značajka | **Noćne more** | **Noćni strahovi** | **RBD** |
-|---|---|---|---|
-| **Stadij sna** | REM (druga polovica noći) | NREM / N3 (prva trećina noći) | REM (druga polovica noći) |
-| **Sjećanje na san** | **Da** — živopisno | **Ne** — amnezija | **Da** — odgovara ponašanju |
-| **Motorička aktivnost** | Minimalna | Sjedanje, vikanje, tahikardija | Udaranje, padanje iz kreveta |
-| **Buđenje** | Potpuno, brza orijentacija | Teško probudiv, konfuzija | Brzo, potpuna orijentacija |
-
----
-
-## Koliko je često?
-
-| Populacija | Prevalencija |
-|---|---|
-| Opća odrasla populacija — povremene noćne more | 35–45% |
-| Kronični poremećaj noćnih mora (klinički značajan) | **2–8%** |
-| Pacijenti s PTSP-om | **50–70%** |
-| Pacijenti nakon traume (ratno iskustvo, seksualno nasilje) | Do 80% |
-| Psihijatrijski pacijenti (depresija, anksioznost, BPD) | 20–40% |
-
-**Kontekst za LOM praksu:** Hrvatska ima specifičnu epidemiologiju — Domovinski rat i poslijeratna trauma znače da značajan dio populacije starije od 45 godina ima iskustvo traume. Mnogi nikada nisu dijagnosticirani s PTSP-om. Kronične noćne more mogu biti jedini prezentirajući simptom neprepoznatog PTSP-a — posebice u muškaraca koji nerado govore o traumi i emocionalnim tegobama.
+    | Značajka | **Noćne more** | **Noćni strahovi** | **RBD** |
+    |---|---|---|---|
+    | **Stadij sna** | REM (druga polovica noći) | NREM / N3 (prva trećina noći) | REM (druga polovica noći) |
+    | **Sjećanje na san** | **Da** — živopisno | **Ne** — amnezija | **Da** — odgovara ponašanju |
+    | **Motorička aktivnost** | Minimalna | Sjedanje, vikanje, tahikardija | Udaranje, padanje iz kreveta |
+    | **Buđenje** | Potpuno, brza orijentacija | Teško probudiv, konfuzija | Brzo, potpuna orijentacija |
 
 ---
 
-## Kako prepoznati?
+??? note "Koliko je često?"
 
-### Ključni simptomi
+    | Populacija | Prevalencija |
+    |---|---|
+    | Opća odrasla populacija — povremene noćne more | 35–45% |
+    | Kronični poremećaj noćnih mora (klinički značajan) | **2–8%** |
+    | Pacijenti s PTSP-om | **50–70%** |
+    | Pacijenti nakon traume (ratno iskustvo, seksualno nasilje) | Do 80% |
+    | Psihijatrijski pacijenti (depresija, anksioznost, BPD) | 20–40% |
 
-- **Ponavljajući uznemirujući snovi** — pacijent se budi prestrašen, uz puno sjećanje na sadržaj sna
-- **Potpuna orijentacija nakon buđenja** — za razliku od noćnih strahova, pacijent je odmah budan i svjestan
-- **Strah od spavanja** — pacijent odgađa odlazak u krevet, što dovodi do kronične deprivacije sna
-- **Dnevni distres** — umor, iritabilnost, smanjena koncentracija, pad raspoloženja
-
-### Pitanja za anamnestičko vođenje
-
-- *„Imate li uznemirujuće snove koji Vas bude iz sna?"*
-- *„Koliko se često to događa? Jednom tjedno? Svake noći?"*
-- *„Možete li opisati snove? Ima li ponavljajući sadržaj?"*
-- *„Bojite li se ići spavati? Odgađate li odlazak u krevet?"*
-- *„Kako se osjećate tijekom dana — umor, razdražljivost, teškoće koncentracije?"*
-
-**Uvijek pitajte o traumi/PTSP-u:**
-
-- *„Jeste li ikada doživjeli traumatičan događaj — nasilje, nesreću, ratno iskustvo, zlostavljanje?"*
-- *„Postoji li veza između sadržaja snova i nečega što ste proživjeli?"*
-- *„Imate li nametajuće misli ili sjećanja na traumatičan događaj i tijekom budnog stanja?"*
-
-Ovo pitanje izbjegava većina liječnika — a upravo je ono najvažnije. PTSP je najčešći uzrok kroničnih noćnih mora i bez pitanja o traumi dijagnostika je nepotpuna.
+    **Kontekst za LOM praksu:** Hrvatska ima specifičnu epidemiologiju — Domovinski rat i poslijeratna trauma znače da značajan dio populacije starije od 45 godina ima iskustvo traume. Mnogi nikada nisu dijagnosticirani s PTSP-om. Kronične noćne more mogu biti jedini prezentirajući simptom neprepoznatog PTSP-a — posebice u muškaraca koji nerado govore o traumi i emocionalnim tegobama.
 
 ---
 
-!!! crvena-zastavica "🚩 Crvene zastavice"
+??? note "Kako prepoznati?"
+
+    <div class="symptom-tiers" markdown>
+
+    <div class="symptom-tier tier-critical" markdown>
+    ### Kritični znakovi
+    - **Česte, uznemirujuće noćne more koje izazivaju buđenje s punom orijentacijom**
+    - **Javljaju se u drugoj polovici noći** (REM dominantan period)
+    - **Pacijent se jasno sjeća sadržaja sna**
+    </div>
+
+    <div class="symptom-tier tier-supporting" markdown>
+    ### Podržavajući znakovi
+    - Anamneza traumatskog iskustva ili PTSP-a
+    - Izbjegavanje spavanja zbog straha od noćnih mora
+    - Lijekovi koji mogu provocirati: beta-blokatori, SSRI, melatonin u visokim dozama
+    - Komorbidna anksioznost ili depresija
+    </div>
+
+    <div class="symptom-tier tier-differential" markdown>
+    ### Diferencijalni tragovi
+    - **Noćni strahovi (pavor nocturnus)** — NREM, prva trećina noći, amnezija za događaj, autonomna aktivacija
+    - **RBD** — izvođenje snova s motoričkom aktivnošću, starija populacija, partner primjećuje
+    - **Noćne panične atake** — budnost s intenzivnim strahom ali BEZ sna/vizualnog sadržaja
+    </div>
+
+    </div>
+
+    ### Pitanja za anamnezu
+
+    - *„Imate li uznemirujuće snove koji Vas bude iz sna?"*
+    - *„Koliko se često to događa? Jednom tjedno? Svake noći?"*
+    - *„Možete li opisati snove? Ima li ponavljajući sadržaj?"*
+    - *„Bojite li se ići spavati? Odgađate li odlazak u krevet?"*
+    - *„Kako se osjećate tijekom dana — umor, razdražljivost, teškoće koncentracije?"*
+
+    **Uvijek pitajte o traumi/PTSP-u:**
+
+    - *„Jeste li ikada doživjeli traumatičan događaj — nasilje, nesreću, ratno iskustvo, zlostavljanje?"*
+    - *„Postoji li veza između sadržaja snova i nečega što ste proživjeli?"*
+    - *„Imate li nametajuće misli ili sjećanja na traumatičan događaj i tijekom budnog stanja?"*
+
+    Ovo pitanje izbjegava većina liječnika — a upravo je ono najvažnije. PTSP je najčešći uzrok kroničnih noćnih mora i bez pitanja o traumi dijagnostika je nepotpuna.
+
+---
+
+!!! crvena-zastavica "Crvene zastavice"
 
     > **HITNO** — Suicidalna ideacija u kontekstu kroničnih noćnih mora — kronične noćne more su **nezavisni čimbenik rizika za suicid**. Pitajte aktivno i uputite psihijatru isti dan.
 
@@ -83,116 +102,116 @@ Ovo pitanje izbjegava većina liječnika — a upravo je ono najvažnije. PTSP j
 
 ---
 
-## Probir i dijagnostika
+??? note "Probir i dijagnostika"
 
-### Što LOM može učiniti
+    ### Što LOM može učiniti
 
-**1. Klinička dijagnoza — dovoljna u većini slučajeva**
+    **1. Klinička dijagnoza — dovoljna u većini slučajeva**
 
-**Klinička dijagnoza** — ne zahtijeva PSG ni laboratorij. Ključni kriteriji (ICSD-3):
+    **Klinička dijagnoza** — ne zahtijeva PSG ni laboratorij. Ključni kriteriji (ICSD-3):
 
-- Ponavljajuće epizode živopisnih, uznemirujućih snova s buđenjem
-- Puni sjećanje na sadržaj sna
-- Potpuna orijentacija i budnost nakon buđenja
-- Značajan distres ili narušeno funkcioniranje
+    - Ponavljajuće epizode živopisnih, uznemirujućih snova s buđenjem
+    - Puni sjećanje na sadržaj sna
+    - Potpuna orijentacija i budnost nakon buđenja
+    - Značajan distres ili narušeno funkcioniranje
 
-**2. Probir za PTSP — obavezan korak**
+    **2. Probir za PTSP — obavezan korak**
 
-Kod svakog pacijenta s kroničnim noćnim morama:
+    Kod svakog pacijenta s kroničnim noćnim morama:
 
-- **PCL-5** (*PTSD Checklist for DSM-5*) — 20 čestica, 5–10 minuta. **Rezultat ≥31-33** → upućivanje psihijatru
+    - **PCL-5** (*PTSD Checklist for DSM-5*) — 20 čestica, 5–10 minuta. **Rezultat ≥31-33** → upućivanje psihijatru
 
-**3. Diferencijalna dijagnoza** — vidi tablicu u „Što je to?" Ključno: isključiti noćne strahove (NREM, amnezija), RBD (motorička aktivnost) i noćne napadaje panike (bez sadržaja sna).
+    **3. Diferencijalna dijagnoza** — vidi tablicu u „Što je to?" Ključno: isključiti noćne strahove (NREM, amnezija), RBD (motorička aktivnost) i noćne napadaje panike (bez sadržaja sna).
 
-**Polisomnografija NIJE potrebna** za dijagnozu. Indicirana je samo ako postoji sumnja na RBD, NREM parasomnije ili epilepsiju.
-
----
-
-## Liječenje u primarnoj zdravstvenoj zaštiti
-
-### Prva linija: Image Rehearsal Therapy (IRT)
-
-> **IRT je najučinkovitija terapija za poremećaj noćnih mora** — razina dokaza A (AASM). LOM je može naučiti pacijenta u ordinaciji za 10–15 minuta.
-
-IRT je kognitivno-bihevioralna tehnika kojom pacijent **preoblikuje sadržaj noćne more** dok je budan, a zatim uvježbava novu verziju sna. Jednostavna je, neinvazivna i učinkovita — smanjuje učestalost i intenzitet noćnih mora za **50–80%** unutar 4–8 tjedana.
-
-> ### IRT PROTOKOL — Upute za pacijenta
->
-> **Korak 1: Zapišite noćnu moru**
-> Opišite svoju tipičnu ili najčešću noćnu moru u 5–10 rečenica. Zapišite je detaljno — što vidite, čujete, osjećate. Radite to danju, u sigurnom okruženju (ne pred spavanje).
->
-> **Korak 2: Promijenite završetak**
-> Prepišite san tako da završi **neutralno ili pozitivno**. Ne morate mijenjati cijeli san — dovoljno je promijeniti rasplet. Primjeri:
-> - Umjesto da vas netko juri → shvatite da možete letjeti i odletite na sigurno
-> - Umjesto da ste zarobljeni → nalazite izlaz i izlazite na sunce
-> - Umjesto da ste bespomoćni → pojavljuje se netko tko vam pomaže
->
-> **Korak 3: Uvježbavajte novu verziju**
-> Svaki dan, **10–20 minuta**, u opuštenom stanju (sjedite ili ležite), zatvorite oči i **zamislite novu verziju sna od početka do novog završetka**. Vizualizirajte je što živopisnije — boje, zvukove, emocije.
->
-> **Korak 4: Ponavljajte svakodnevno**
-> Vježbajte novu verziju svaki dan, najmanje **3–4 tjedna**. Većina pacijenata osjeća poboljšanje unutar 2–4 tjedna. Ako imate više ponavljajućih noćnih mora, obradite jednu po jednu.
->
-> **Napomena za LOM-a:** IRT NE zahtijeva detaljnu analizu traume i nije isto što i ekspozicijska terapija. Pacijent ne treba „proradit" traumu — samo promijeniti scenarij sna. To je sigurna tehnika i za LOM-a bez psihoterapijske edukacije.
-
-### Druga linija: Prazosin
-
-| Parametar | Detalji |
-|---|---|
-| **Lijek** | Prazosin (alfa-1 adrenergički antagonist) |
-| **Indikacija** | Noćne more povezane s **PTSP-om** — najbolji dokazi upravo za ovu populaciju |
-| **Početna doza** | **1 mg** navečer (30–60 min prije spavanja) |
-| **Titracija** | Povećavati za 1–2 mg svaka 3–7 dana prema odgovoru |
-| **Ciljana doza** | **2–6 mg** (muškarci mogu zahtijevati do 15 mg) |
-| **Dostupnost u HR** | Dostupan — registriran za hipertenziju, off-label za PTSP noćne more |
-
-**Mjere opreza uz prazosin:**
-
-- **Ortostatska hipotenzija** — najčešća nuspojava. Savjetujte pacijenta da prvu tabletu uzme ležeći u krevetu i da ustane polako sljedeće jutro
-- **Ne uvoditi bez prethodnog mjerenja krvnog tlaka** — mjeriti ležeći i stojeći
-- Oprez u starijih (rizik padova) i kod istovremene antihipertenzivne terapije
-
-**Napomena o dokazima:** Dokazi su mješoviti — veća RCT studija kod ratnih veterana nije pokazala prednost nad placebom, dok neke metaanalize sugeriraju učinkovitost u civilnoj populaciji. Odluku o uvođenju donijeti individualno, idealno u suradnji sa specijalistom.
-
-### Liječenje osnovnog PTSP-a
-
-Prazosin i IRT liječe simptom (noćne more), ali **ne liječe PTSP**. Ako postoji sumnja na PTSP — **uputiti psihijatru**. LOM može započeti prazosin i IRT dok pacijent čeka termin.
-
-### Opće mjere
-
-- **Izbjegavati alkohol** — uzrokuje REM rebound i pogoršava noćne more
-- **Izbjegavati uznemirujući sadržaj prije spavanja** — vijesti, horror filmovi, nasilne igrice
-- **Redoviti raspored spavanja** — deprivacija sna pojačava REM pritisak i intenzitet snova
-- **Relaksacijske tehnike** pred spavanje — dijafragmalno disanje, progresivna mišićna relaksacija
-
-### Lijekovi koji mogu UZROKOVATI noćne more
-
-**Uvijek pregledajte farmakoterapiju** pacijenta s noćnim morama:
-
-| Skupina | Primjeri |
-|---|---|
-| **Beta-blokatori** | propranolol, metoprolol, bisoprolol |
-| **SSRI nagli prekid** | sertralin, paroksetin, escitalopram |
-| **Inhibitori kolinesteraze** | donepezil, rivastigmin |
-| **Dopaminergički agonisti** | pramipeksol, ropinirol |
-| **Kortikosteroidi** | prednizon, metilprednizolon |
-| **Melatonin** (rijetko) | pojačan REM u nekih pacijenata |
+    **Polisomnografija NIJE potrebna** za dijagnozu. Indicirana je samo ako postoji sumnja na RBD, NREM parasomnije ili epilepsiju.
 
 ---
 
-## Kada uputiti specijalistu?
+??? note "Liječenje u primarnoj zdravstvenoj zaštiti"
 
-| Situacija | Kamo uputiti | Hitnost |
-|---|---|---|
-| Sumnja na PTSP | **Psihijatar** | Unutar 2–4 tjedna |
-| Suicidalna ideacija uz noćne more | **Psihijatar — hitno** | **ISTI DAN** |
-| Noćne more rezistentne na IRT + prazosin (>8 tjedana) | **Psihijatar** ili centar za medicinu spavanja | Redovna uputnica |
-| Sumnja na drugu parasomnije (RBD, noćni strahovi, epilepsija) | **Neurolog** / centar za medicinu spavanja → PSG | Redovna uputnica |
-| Teška zlouporaba tvari kao samomediciranje | **Psihijatar** + centar za ovisnosti | Unutar 1–2 tjedna |
+    ### Prva linija: Image Rehearsal Therapy (IRT)
+
+    > **IRT je najučinkovitija terapija za poremećaj noćnih mora** — razina dokaza A (AASM). LOM je može naučiti pacijenta u ordinaciji za 10–15 minuta.
+
+    IRT je kognitivno-bihevioralna tehnika kojom pacijent **preoblikuje sadržaj noćne more** dok je budan, a zatim uvježbava novu verziju sna. Jednostavna je, neinvazivna i učinkovita — smanjuje učestalost i intenzitet noćnih mora za **50–80%** unutar 4–8 tjedana.
+
+    > ### IRT PROTOKOL — Upute za pacijenta
+    >
+    > **Korak 1: Zapišite noćnu moru**
+    > Opišite svoju tipičnu ili najčešću noćnu moru u 5–10 rečenica. Zapišite je detaljno — što vidite, čujete, osjećate. Radite to danju, u sigurnom okruženju (ne pred spavanje).
+    >
+    > **Korak 2: Promijenite završetak**
+    > Prepišite san tako da završi **neutralno ili pozitivno**. Ne morate mijenjati cijeli san — dovoljno je promijeniti rasplet. Primjeri:
+    > - Umjesto da vas netko juri → shvatite da možete letjeti i odletite na sigurno
+    > - Umjesto da ste zarobljeni → nalazite izlaz i izlazite na sunce
+    > - Umjesto da ste bespomoćni → pojavljuje se netko tko vam pomaže
+    >
+    > **Korak 3: Uvježbavajte novu verziju**
+    > Svaki dan, **10–20 minuta**, u opuštenom stanju (sjedite ili ležite), zatvorite oči i **zamislite novu verziju sna od početka do novog završetka**. Vizualizirajte je što živopisnije — boje, zvukove, emocije.
+    >
+    > **Korak 4: Ponavljajte svakodnevno**
+    > Vježbajte novu verziju svaki dan, najmanje **3–4 tjedna**. Većina pacijenata osjeća poboljšanje unutar 2–4 tjedna. Ako imate više ponavljajućih noćnih mora, obradite jednu po jednu.
+    >
+    > **Napomena za LOM-a:** IRT NE zahtijeva detaljnu analizu traume i nije isto što i ekspozicijska terapija. Pacijent ne treba „proradit" traumu — samo promijeniti scenarij sna. To je sigurna tehnika i za LOM-a bez psihoterapijske edukacije.
+
+    ### Druga linija: Prazosin
+
+    | Parametar | Detalji |
+    |---|---|
+    | **Lijek** | Prazosin (alfa-1 adrenergički antagonist) |
+    | **Indikacija** | Noćne more povezane s **PTSP-om** — najbolji dokazi upravo za ovu populaciju |
+    | **Početna doza** | **1 mg** navečer (30–60 min prije spavanja) |
+    | **Titracija** | Povećavati za 1–2 mg svaka 3–7 dana prema odgovoru |
+    | **Ciljana doza** | **2–6 mg** (muškarci mogu zahtijevati do 15 mg) |
+    | **Dostupnost u HR** | Dostupan — registriran za hipertenziju, off-label za PTSP noćne more |
+
+    **Mjere opreza uz prazosin:**
+
+    - **Ortostatska hipotenzija** — najčešća nuspojava. Savjetujte pacijenta da prvu tabletu uzme ležeći u krevetu i da ustane polako sljedeće jutro
+    - **Ne uvoditi bez prethodnog mjerenja krvnog tlaka** — mjeriti ležeći i stojeći
+    - Oprez u starijih (rizik padova) i kod istovremene antihipertenzivne terapije
+
+    **Napomena o dokazima:** Dokazi su mješoviti — veća RCT studija kod ratnih veterana nije pokazala prednost nad placebom, dok neke metaanalize sugeriraju učinkovitost u civilnoj populaciji. Odluku o uvođenju donijeti individualno, idealno u suradnji sa specijalistom.
+
+    ### Liječenje osnovnog PTSP-a
+
+    Prazosin i IRT liječe simptom (noćne more), ali **ne liječe PTSP**. Ako postoji sumnja na PTSP — **uputiti psihijatru**. LOM može započeti prazosin i IRT dok pacijent čeka termin.
+
+    ### Opće mjere
+
+    - **Izbjegavati alkohol** — uzrokuje REM rebound i pogoršava noćne more
+    - **Izbjegavati uznemirujući sadržaj prije spavanja** — vijesti, horror filmovi, nasilne igrice
+    - **Redoviti raspored spavanja** — deprivacija sna pojačava REM pritisak i intenzitet snova
+    - **Relaksacijske tehnike** pred spavanje — dijafragmalno disanje, progresivna mišićna relaksacija
+
+    ### Lijekovi koji mogu UZROKOVATI noćne more
+
+    **Uvijek pregledajte farmakoterapiju** pacijenta s noćnim morama:
+
+    | Skupina | Primjeri |
+    |---|---|
+    | **Beta-blokatori** | propranolol, metoprolol, bisoprolol |
+    | **SSRI nagli prekid** | sertralin, paroksetin, escitalopram |
+    | **Inhibitori kolinesteraze** | donepezil, rivastigmin |
+    | **Dopaminergički agonisti** | pramipeksol, ropinirol |
+    | **Kortikosteroidi** | prednizon, metilprednizolon |
+    | **Melatonin** (rijetko) | pojačan REM u nekih pacijenata |
 
 ---
 
-!!! zamka "⚠️ Česte zamke"
+??? note "Kada uputiti specijalistu?"
+
+    | Situacija | Kamo uputiti | Hitnost |
+    |---|---|---|
+    | Sumnja na PTSP | **Psihijatar** | Unutar 2–4 tjedna |
+    | Suicidalna ideacija uz noćne more | **Psihijatar — hitno** | **ISTI DAN** |
+    | Noćne more rezistentne na IRT + prazosin (>8 tjedana) | **Psihijatar** ili centar za medicinu spavanja | Redovna uputnica |
+    | Sumnja na drugu parasomnije (RBD, noćni strahovi, epilepsija) | **Neurolog** / centar za medicinu spavanja → PSG | Redovna uputnica |
+    | Teška zlouporaba tvari kao samomediciranje | **Psihijatar** + centar za ovisnosti | Unutar 1–2 tjedna |
+
+---
+
+!!! zamka "Česte zamke"
 
     | ❌ Pogreška | ✅ Ispravni pristup |
     |---|---|

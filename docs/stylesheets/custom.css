@@ -159,11 +159,145 @@
   color: #9fa8da;
 }
 
+/* --- Brzi Pregled 3-Section Styling --- */
+/* Prepoznaj (green), Učini (blue), Uputi (amber) colored left borders */
+.md-typeset .admonition.brzi-pregled > .admonition-title ~ p:first-of-type {
+  border-left: 4px solid #2e7d32;
+  background: rgba(46, 125, 50, 0.06);
+  padding: 0.75rem 1rem;
+  border-radius: 0 8px 8px 0;
+  margin-bottom: 0.5rem;
+}
+
+.md-typeset .admonition.brzi-pregled > .admonition-title ~ p:nth-of-type(2) {
+  border-left: 4px solid #1565c0;
+  background: rgba(21, 101, 192, 0.06);
+  padding: 0.75rem 1rem;
+  border-radius: 0 8px 8px 0;
+  margin-bottom: 0.5rem;
+}
+
+.md-typeset .admonition.brzi-pregled > .admonition-title ~ p:nth-of-type(3) {
+  border-left: 4px solid #ef6c00;
+  background: rgba(239, 108, 0, 0.06);
+  padding: 0.75rem 1rem;
+  border-radius: 0 8px 8px 0;
+  margin-bottom: 0.5rem;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .admonition.brzi-pregled > .admonition-title ~ p:first-of-type {
+  background: rgba(46, 125, 50, 0.12);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .admonition.brzi-pregled > .admonition-title ~ p:nth-of-type(2) {
+  background: rgba(21, 101, 192, 0.12);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .admonition.brzi-pregled > .admonition-title ~ p:nth-of-type(3) {
+  background: rgba(239, 108, 0, 0.12);
+}
+
+/* --- Symptom Tier Styles --- */
+.symptom-tiers {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.symptom-tier {
+  border-left: 4px solid;
+  padding: 0.75rem 1rem;
+  border-radius: 0 8px 8px 0;
+}
+
+.symptom-tier h3 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0 0 0.5rem 0;
+}
+
+.symptom-tier ul {
+  margin: 0;
+}
+
+.tier-critical {
+  border-color: #c62828;
+  background: rgba(198, 40, 40, 0.05);
+}
+
+.tier-critical h3 {
+  color: #c62828;
+}
+
+.tier-supporting {
+  border-color: #1565c0;
+  background: rgba(21, 101, 192, 0.05);
+}
+
+.tier-supporting h3 {
+  color: #1565c0;
+}
+
+.tier-differential {
+  border-color: #78909c;
+  background: rgba(120, 144, 156, 0.05);
+}
+
+.tier-differential h3 {
+  color: #78909c;
+}
+
+/* Symptom tiers dark mode */
+[data-md-color-scheme="slate"] .tier-critical {
+  border-color: #ef5350;
+  background: rgba(239, 83, 80, 0.1);
+}
+
+[data-md-color-scheme="slate"] .tier-critical h3 {
+  color: #ef5350;
+}
+
+[data-md-color-scheme="slate"] .tier-supporting {
+  border-color: #64b5f6;
+  background: rgba(100, 181, 246, 0.1);
+}
+
+[data-md-color-scheme="slate"] .tier-supporting h3 {
+  color: #64b5f6;
+}
+
+[data-md-color-scheme="slate"] .tier-differential {
+  border-color: #90a4ae;
+  background: rgba(144, 164, 174, 0.1);
+}
+
+[data-md-color-scheme="slate"] .tier-differential h3 {
+  color: #90a4ae;
+}
+
+/* --- Material Symbols Icon Sizing --- */
+.card-icon .material-symbols-outlined {
+  font-size: 1.6rem;
+  color: var(--md-primary-fg-color);
+}
+
+.q-icon .material-symbols-outlined {
+  font-size: 1.6rem;
+  color: var(--md-primary-fg-color);
+}
+
+[data-md-color-scheme="slate"] .card-icon .material-symbols-outlined,
+[data-md-color-scheme="slate"] .q-icon .material-symbols-outlined {
+  color: #9fa8da;
+}
+
 /* --- Homepage Card Grid --- */
 .home-hero {
   text-align: center;
   padding: 2rem 1rem 1rem;
-  background: linear-gradient(135deg, #1a237e 0%, #283593 50%, #00897b 100%);
+  background: #1a237e;
   color: white;
   border-radius: 16px;
   margin-bottom: 2rem;
