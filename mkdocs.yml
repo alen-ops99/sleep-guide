@@ -48,6 +48,7 @@ nav:
     - Ljestvica nemirnih nogu (IRLS): questionnaires/irls-interactive.md
     - Probir REM poremećaja ponašanja (RBDSQ): questionnaires/rbdsq-interactive.md
   - Poglavlja:
+    - Uvod — O vodiču: guide/00-uvod.md
     - Nesanica: guide/01-nesanica.md
     - Opstruktivna apneja u snu: guide/02-osa.md
     - Sindrom nemirnih nogu i PLMD: guide/03-rls-plmd.md

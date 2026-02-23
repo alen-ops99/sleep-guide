@@ -55,6 +55,10 @@
         <button class="yn-btn" :class="{'selected-yes': answers[1] === true}" @click="answers[1] = true">DA</button>
         <button class="yn-btn" :class="{'selected-no': answers[1] === false}" @click="answers[1] = false">NE</button>
       </div>
+      <div class="question-hint" x-show="answers[1] !== null" x-transition.opacity>
+        <span class="material-symbols-outlined hint-icon">school</span>
+        <span class="hint-text">Kronična nesanica pogađa 10–15% odrasle populacije. Ako traje >3 mjeseca, CBT-I je prva linija — ne hipnotici.</span>
+      </div>
     </div>
 
     <!-- Q2 -->
@@ -65,6 +69,10 @@
         <button class="yn-btn" :class="{'selected-yes': answers[2] === true}" @click="answers[2] = true">DA</button>
         <button class="yn-btn" :class="{'selected-no': answers[2] === false}" @click="answers[2] = false">NE</button>
       </div>
+      <div class="question-hint" x-show="answers[2] !== null" x-transition.opacity>
+        <span class="material-symbols-outlined hint-icon">school</span>
+        <span class="hint-text">Glasno hrkanje je najjači prediktor OSA-e. STOP-BANG ≥3 = visoki rizik. Prevalencija: ~25% muškaraca, ~10% žena.</span>
+      </div>
     </div>
 
     <!-- Q3 -->
@@ -74,6 +82,10 @@
       <div class="yn-buttons">
         <button class="yn-btn" :class="{'selected-yes': answers[3] === true}" @click="answers[3] = true">DA</button>
         <button class="yn-btn" :class="{'selected-no': answers[3] === false}" @click="answers[3] = false">NE</button>
+      </div>
+      <div class="question-hint" x-show="answers[3] !== null" x-transition.opacity>
+        <span class="material-symbols-outlined hint-icon">school</span>
+        <span class="hint-text">Svjedočeni prestanci disanja imaju specifičnost >90% za apneju u snu. Uvijek pitajte partnera/ukućane.</span>
       </div>
     </div>
 
@@ -96,6 +108,10 @@
         <button class="yn-btn" :class="{'selected-yes': answers[4] === true}" @click="answers[4] = true">DA</button>
         <button class="yn-btn" :class="{'selected-no': answers[4] === false}" @click="answers[4] = false">NE</button>
       </div>
+      <div class="question-hint" x-show="answers[4] !== null" x-transition.opacity>
+        <span class="material-symbols-outlined hint-icon">school</span>
+        <span class="hint-text">Pospanost ≠ umor. Pospanost = neodoljiv nagon za spavanjem. DDx: OSA, narkolepsija, nedovoljan san, hipotireoza.</span>
+      </div>
     </div>
 
     <!-- Q5 -->
@@ -106,6 +122,10 @@
         <button class="yn-btn" :class="{'selected-yes': answers[5] === true}" @click="answers[5] = true">DA</button>
         <button class="yn-btn" :class="{'selected-no': answers[5] === false}" @click="answers[5] = false">NE</button>
       </div>
+      <div class="question-hint" x-show="answers[5] !== null" x-transition.opacity>
+        <span class="material-symbols-outlined hint-icon">school</span>
+        <span class="hint-text">Najčešći uzrok dnevne pospanosti je jednostavno premalo sna. Trećina odraslih spava <7 sati.</span>
+      </div>
     </div>
 
     <!-- Q6 -->
@@ -115,6 +135,10 @@
       <div class="yn-buttons">
         <button class="yn-btn" :class="{'selected-yes': answers[6] === true}" @click="answers[6] = true">DA</button>
         <button class="yn-btn" :class="{'selected-no': answers[6] === false}" @click="answers[6] = false">NE</button>
+      </div>
+      <div class="question-hint" x-show="answers[6] !== null" x-transition.opacity>
+        <span class="material-symbols-outlined hint-icon">school</span>
+        <span class="hint-text">Katapleksija je patognomonična za narkolepsiju tip 1. Prosječno kašnjenje dijagnoze: 8–15 godina!</span>
       </div>
     </div>
 
@@ -137,6 +161,10 @@
         <button class="yn-btn" :class="{'selected-yes': answers[7] === true}" @click="answers[7] = true">DA</button>
         <button class="yn-btn" :class="{'selected-no': answers[7] === false}" @click="answers[7] = false">NE</button>
       </div>
+      <div class="question-hint" x-show="answers[7] !== null" x-transition.opacity>
+        <span class="material-symbols-outlined hint-icon">school</span>
+        <span class="hint-text">RLS pogađa 5–10% populacije. Feritin <75 µg/L → nadoknada željeza. Čest uzrok "nesanice pri uspavljivanju" koji se propusti.</span>
+      </div>
     </div>
 
     <!-- Q8 -->
@@ -146,6 +174,10 @@
       <div class="yn-buttons">
         <button class="yn-btn" :class="{'selected-yes': answers[8] === true}" @click="answers[8] = true">DA</button>
         <button class="yn-btn" :class="{'selected-no': answers[8] === false}" @click="answers[8] = false">NE</button>
+      </div>
+      <div class="question-hint" x-show="answers[8] !== null" x-transition.opacity>
+        <span class="material-symbols-outlined hint-icon">school</span>
+        <span class="hint-text">RBD u dobi >50 godina: 80% razvije neurodegeneraciju (Parkinson, DLB) unutar 15 godina. Ključan biomarker.</span>
       </div>
     </div>
 
@@ -157,6 +189,10 @@
         <button class="yn-btn" :class="{'selected-yes': answers[9] === true}" @click="answers[9] = true">DA</button>
         <button class="yn-btn" :class="{'selected-no': answers[9] === false}" @click="answers[9] = false">NE</button>
       </div>
+      <div class="question-hint" x-show="answers[9] !== null" x-transition.opacity>
+        <span class="material-symbols-outlined hint-icon">school</span>
+        <span class="hint-text">NREM parasomnije su česte u djece (do 15%), rjeđe u odraslih (~2%). U odraslih uvijek isključite OSA kao okidač.</span>
+      </div>
     </div>
 
     <!-- Q10 -->
@@ -166,6 +202,10 @@
       <div class="yn-buttons">
         <button class="yn-btn" :class="{'selected-yes': answers[10] === true}" @click="answers[10] = true">DA</button>
         <button class="yn-btn" :class="{'selected-no': answers[10] === false}" @click="answers[10] = false">NE</button>
+      </div>
+      <div class="question-hint" x-show="answers[10] !== null" x-transition.opacity>
+        <span class="material-symbols-outlined hint-icon">school</span>
+        <span class="hint-text">Bruksizam u snu: prevalencija ~8% odraslih. Česta asocijacija s OSA — liječenje OSA često smanjuje bruksizam.</span>
       </div>
     </div>
 
@@ -177,6 +217,10 @@
         <button class="yn-btn" :class="{'selected-yes': answers[11] === true}" @click="answers[11] = true">DA</button>
         <button class="yn-btn" :class="{'selected-no': answers[11] === false}" @click="answers[11] = false">NE</button>
       </div>
+      <div class="question-hint" x-show="answers[11] !== null" x-transition.opacity>
+        <span class="material-symbols-outlined hint-icon">school</span>
+        <span class="hint-text">SRED: amnezija za epizode jedenja je pravilo, ne iznimka. Ključno pitanje: koristi li pacijent hipnotike?</span>
+      </div>
       <!-- Q11a: Conditional zolpidem follow-up -->
       <template x-if="answers[11] === true">
         <div class="follow-up-card">
@@ -185,6 +229,10 @@
           <div class="yn-buttons">
             <button class="yn-btn" :class="{'selected-yes': answers['11a'] === true}" @click="answers['11a'] = true">DA</button>
             <button class="yn-btn" :class="{'selected-no': answers['11a'] === false}" @click="answers['11a'] = false">NE</button>
+          </div>
+          <div class="question-hint" x-show="answers['11a'] !== null" x-transition.opacity>
+            <span class="material-symbols-outlined hint-icon">school</span>
+            <span class="hint-text">Zolpidem je najčešći farmakološki uzrok SRED-a. Ukidanje lijeka često potpuno rješava problem.</span>
           </div>
         </div>
       </template>
@@ -209,6 +257,10 @@
         <button class="yn-btn" :class="{'selected-yes': answers[12] === true}" @click="answers[12] = true">DA</button>
         <button class="yn-btn" :class="{'selected-no': answers[12] === false}" @click="answers[12] = false">NE</button>
       </div>
+      <div class="question-hint" x-show="answers[12] !== null" x-transition.opacity>
+        <span class="material-symbols-outlined hint-icon">school</span>
+        <span class="hint-text">DSWPD pogađa ~3% populacije, do 16% adolescenata. Melatonin 0.5–3mg 4–5h prije željenog spavanja + jutarnje svjetlo.</span>
+      </div>
     </div>
 
     <div class="section-divider">Skupina E — Ostalo</div>
@@ -221,6 +273,10 @@
         <button class="yn-btn" :class="{'selected-yes': answers[13] === true}" @click="answers[13] = true">DA</button>
         <button class="yn-btn" :class="{'selected-no': answers[13] === false}" @click="answers[13] = false">NE</button>
       </div>
+      <div class="question-hint" x-show="answers[13] !== null" x-transition.opacity>
+        <span class="material-symbols-outlined hint-icon">school</span>
+        <span class="hint-text">Noćne more: 4–8% odraslih. Obavezno probirati PTSP (PCL-5). IRT (imagery rehearsal therapy) je prva linija.</span>
+      </div>
     </div>
 
     <!-- Q14 -->
@@ -230,6 +286,10 @@
       <div class="yn-buttons">
         <button class="yn-btn" :class="{'selected-yes': answers[14] === true}" @click="answers[14] = true">DA</button>
         <button class="yn-btn" :class="{'selected-no': answers[14] === false}" @click="answers[14] = false">NE</button>
+      </div>
+      <div class="question-hint" x-show="answers[14] !== null" x-transition.opacity>
+        <span class="material-symbols-outlined hint-icon">school</span>
+        <span class="hint-text">Centralna apneja prisutna u 30–40% pacijenata sa srčanim zatajenjem. ASV kontraindiciran ako EF <45%!</span>
       </div>
     </div>
 
@@ -455,7 +515,7 @@ function screeningApp() {
           id: 'insomnia',
           name: 'Nesanica (kronična insomnia)',
           urgency: 'routine',
-          urgencyLabel: 'Planirano',
+          urgencyLabel: 'Ambulantna obrada',
           clinicalBasis: 'Poteškoće s uspavljivanjem/održavanjem sna ≥3 noći/tjedan (pitanje 1).',
           confirmSteps: [
             'Primijeniti ISI upitnik (Insomnia Severity Index)',
@@ -467,7 +527,7 @@ function screeningApp() {
             'Uputiti na CBT-I (kognitivno-bihevioralna terapija za nesanicu) — prva linija',
             'Izbjegavati propisivanje benzodiazepina/Z-lijekova kao prvu terapiju'
           ],
-          referral: { specialist: 'Psihijatar ili specijalist za medicinu spavanja', urgency: 'PLANIRANO', note: 'Ako nesanica traje >3 mjeseca unatoč CBT-I' },
+          referral: { specialist: 'Psihijatar ili specijalist za medicinu spavanja', urgency: 'AMBULANTNO', note: 'Ako nesanica traje >3 mjeseca unatoč CBT-I' },
           labs: null,
           questionnaireUrl: '../questionnaires/isi-interactive/',
           chapterUrl: '../guide/01-nesanica/'
@@ -480,7 +540,7 @@ function screeningApp() {
           id: 'osa',
           name: 'Opstruktivna apneja u snu (OSA)',
           urgency: 'routine',
-          urgencyLabel: 'Planirano',
+          urgencyLabel: 'Ambulantna obrada',
           clinicalBasis: (a[2] ? 'Glasno hrkanje (pitanje 2)' : '') + (a[2] && a[3] ? ' + ' : '') + (a[3] ? 'Svjedočeni prestanci disanja (pitanje 3)' : '') + '.',
           confirmSteps: [
             'Primijeniti STOP-BANG upitnik',
@@ -493,7 +553,7 @@ function screeningApp() {
             'Izbjegavati alkohol 3h prije spavanja',
             'Oprez: sedativi pogoršavaju OSA'
           ],
-          referral: { specialist: 'Specijalist za medicinu spavanja (ORL/pulmolog)', urgency: 'PLANIRANO', note: 'PSG/HSAT za potvrdu i određivanje AHI' },
+          referral: { specialist: 'Specijalist za medicinu spavanja (ORL/pulmolog)', urgency: 'AMBULANTNO', note: 'PSG/HSAT za potvrdu i određivanje AHI' },
           labs: null,
           questionnaireUrl: '../questionnaires/stop-bang-interactive/',
           chapterUrl: '../guide/02-osa/'
@@ -506,7 +566,7 @@ function screeningApp() {
           id: 'csa',
           name: 'Centralna apneja u snu (CSA)',
           urgency: 'urgent',
-          urgencyLabel: 'Hitno',
+          urgencyLabel: 'Hitna obrada',
           clinicalBasis: 'Svjedočeni prestanci disanja (pitanje 3) uz srčano zatajenje/opioide/moždani udar (pitanje 14).',
           confirmSteps: [
             'Uputiti na laboratorijsku PSG (polisomnografija) — HSAT nije dovoljna za CSA!',
@@ -518,7 +578,7 @@ function screeningApp() {
             'Ako na opioidima — razmotriti smanjenje doze s propisivačem',
             'NE propisivati CPAP bez PSG potvrde (ASV može biti kontraindiciran kod EF <45%)'
           ],
-          referral: { specialist: 'Kardiolog + specijalist za medicinu spavanja', urgency: 'HITNO', note: 'PSG obavezna, ne HSAT' },
+          referral: { specialist: 'Kardiolog + specijalist za medicinu spavanja', urgency: 'HITNA OBRADA', note: 'PSG obavezna, ne HSAT' },
           labs: ['NT-proBNP', 'Ehokardiografija'],
           questionnaireUrl: null,
           chapterUrl: '../guide/13-centralna-apneja/'
@@ -531,7 +591,7 @@ function screeningApp() {
           id: 'csa-risk',
           name: 'Povišen rizik za centralnu apneju u snu',
           urgency: 'routine',
-          urgencyLabel: 'Planirano',
+          urgencyLabel: 'Ambulantna obrada',
           clinicalBasis: 'Srčano zatajenje, opioidi ili moždani udar (pitanje 14) bez svjedočenih prestanaka disanja.',
           confirmSteps: [
             'Aktivno pitati partnera o prestancima disanja ili Cheyne-Stokesovom tipu',
@@ -541,7 +601,7 @@ function screeningApp() {
             'Optimizacija kardiovaskularne terapije',
             'Praćenje simptoma — educirajte pacijenta i partnera'
           ],
-          referral: { specialist: 'Specijalist za medicinu spavanja', urgency: 'PLANIRANO', note: 'Ako se razviju simptomi (prestanci disanja, EDS, noćna dispneja)' },
+          referral: { specialist: 'Specijalist za medicinu spavanja', urgency: 'AMBULANTNO', note: 'Ako se razviju simptomi (prestanci disanja, EDS, noćna dispneja)' },
           labs: null,
           questionnaireUrl: null,
           chapterUrl: '../guide/13-centralna-apneja/'
@@ -554,7 +614,7 @@ function screeningApp() {
           id: 'insufficient-sleep',
           name: 'Sindrom nedovoljnog spavanja',
           urgency: 'elective',
-          urgencyLabel: 'Edukacija',
+          urgencyLabel: 'Savjetovanje',
           clinicalBasis: 'Dnevna pospanost (pitanje 4) uz spavanje <7h radnim danom (pitanje 5).',
           confirmSteps: [
             'Dnevnik spavanja 2 tjedna — dokumentirati trajanje sna',
@@ -579,7 +639,7 @@ function screeningApp() {
           id: 'narcolepsy',
           name: 'Narkolepsija',
           urgency: 'urgent',
-          urgencyLabel: 'Hitno',
+          urgencyLabel: 'Hitna obrada',
           clinicalBasis: 'Dnevna pospanost (pitanje 4) uz katapleksiju — iznenadnu mišićnu slabost pri emocijama (pitanje 6).',
           confirmSteps: [
             'Primijeniti ESS upitnik (Epworth Sleepiness Scale)',
@@ -591,7 +651,7 @@ function screeningApp() {
             'Educirajte pacijenta o riziku od ozljeda pri katapleksiji',
             'Ne propisivati samostalno stimulanse — čekati neurologa'
           ],
-          referral: { specialist: 'Neurolog (centar za medicinu spavanja)', urgency: 'HITNO', note: 'Katapleksija = patognomonično za narkolepsiju tip 1' },
+          referral: { specialist: 'Neurolog (centar za medicinu spavanja)', urgency: 'HITNA OBRADA', note: 'Katapleksija = patognomonično za narkolepsiju tip 1' },
           labs: null,
           questionnaireUrl: '../questionnaires/ess-interactive/',
           chapterUrl: '../guide/06-narkolepsija/'
@@ -604,7 +664,7 @@ function screeningApp() {
           id: 'ih',
           name: 'Idiopatska hipersomnija (IH)',
           urgency: 'routine',
-          urgencyLabel: 'Planirano',
+          urgencyLabel: 'Ambulantna obrada',
           clinicalBasis: 'Dnevna pospanost (pitanje 4) unatoč dovoljnom snu, bez katapleksije.',
           confirmSteps: [
             'Primijeniti ESS upitnik',
@@ -615,7 +675,7 @@ function screeningApp() {
             'Isključiti česte uzroke: OSA, nedovoljan san, depresija',
             'Laboratorij: TSH, KKS, feritin'
           ],
-          referral: { specialist: 'Specijalist za medicinu spavanja', urgency: 'PLANIRANO', note: 'Za MSLT i definitivnu dijagnozu' },
+          referral: { specialist: 'Specijalist za medicinu spavanja', urgency: 'AMBULANTNO', note: 'Za MSLT i definitivnu dijagnozu' },
           labs: ['TSH', 'KKS', 'Feritin'],
           questionnaireUrl: '../questionnaires/ess-interactive/',
           chapterUrl: '../guide/07-idiopatska-hipersomnija/'
@@ -628,7 +688,7 @@ function screeningApp() {
           id: 'rls',
           name: 'Sindrom nemirnih nogu (RLS)',
           urgency: 'routine',
-          urgencyLabel: 'Planirano',
+          urgencyLabel: 'Ambulantna obrada',
           clinicalBasis: 'Neugodne senzacije u nogama s nagonom za kretanjem, pogoršanje navečer (pitanje 7).',
           confirmSteps: [
             'Provjeriti 4 IRLSSG dijagnostička kriterija (svi moraju biti prisutni)',
@@ -640,7 +700,7 @@ function screeningApp() {
             'Prekinuti lijekove koji pogoršavaju RLS (antihistaminici, SSRI, metoklopramid)',
             'Higijena sna, umjerena tjelovježba, izbjegavati kofein'
           ],
-          referral: { specialist: 'Neurolog ili specijalist za medicinu spavanja', urgency: 'PLANIRANO', note: 'Ako nema odgovora na željezo ili feritin uredan' },
+          referral: { specialist: 'Neurolog ili specijalist za medicinu spavanja', urgency: 'AMBULANTNO', note: 'Ako nema odgovora na željezo ili feritin uredan' },
           labs: ['Feritin', 'KKS', 'Kreatinin', 'GUK'],
           questionnaireUrl: '../questionnaires/irls-interactive/',
           chapterUrl: '../guide/03-rls-plmd/'
@@ -654,7 +714,7 @@ function screeningApp() {
           id: 'rbd',
           name: 'REM poremećaj ponašanja u snu (RBD)',
           urgency: isUrgent ? 'urgent' : 'routine',
-          urgencyLabel: isUrgent ? 'Hitno' : 'Planirano',
+          urgencyLabel: isUrgent ? 'Hitna obrada' : 'Ambulantna obrada',
           clinicalBasis: 'Izvođenje snova — udaranje, vikanje u snu (pitanje 8)' + (isUrgent ? ', dob >50 godina.' : '.'),
           confirmSteps: [
             'Primijeniti RBDSQ upitnik',
@@ -666,7 +726,7 @@ function screeningApp() {
             'Razmotriti melatonin 3-12 mg prije spavanja (1. linija za sigurnost)',
             'Edukacija partnera o riziku od ozljede'
           ],
-          referral: { specialist: 'Neurolog', urgency: isUrgent ? 'HITNO' : 'PLANIRANO', note: isUrgent ? 'Dob >50 = povišen rizik za α-sinukleinopatiju' : 'Za v-PSG i potvrdu dijagnoze' },
+          referral: { specialist: 'Neurolog', urgency: isUrgent ? 'HITNA OBRADA' : 'AMBULANTNO', note: isUrgent ? 'Dob >50 = povišen rizik za α-sinukleinopatiju' : 'Za v-PSG i potvrdu dijagnoze' },
           labs: null,
           questionnaireUrl: '../questionnaires/rbdsq-interactive/',
           chapterUrl: '../guide/04-rbd/'
@@ -679,7 +739,7 @@ function screeningApp() {
           id: 'nrem',
           name: 'NREM parasomnije (somnambulizam, pavor nocturnus)',
           urgency: 'elective',
-          urgencyLabel: 'Planirano',
+          urgencyLabel: 'Savjetovanje',
           clinicalBasis: 'Hodanje u snu ili vrištanje iz sna (pitanje 9).',
           confirmSteps: [
             'Detaljnija anamneza: učestalost, trajanje, sjećanje na epizodu?',
@@ -691,7 +751,7 @@ function screeningApp() {
             'Regulirati raspored spavanja (deprivacija sna je okidač)',
             'Izbjegavati alkohol i sedative prije spavanja'
           ],
-          referral: { specialist: 'Specijalist za medicinu spavanja', urgency: 'PLANIRANO', note: 'Ako česte epizode, ozljede ili sumnja na epilepsiju' },
+          referral: { specialist: 'Specijalist za medicinu spavanja', urgency: 'AMBULANTNO', note: 'Ako česte epizode, ozljede ili sumnja na epilepsiju' },
           labs: null,
           questionnaireUrl: null,
           chapterUrl: '../guide/05-nrem-parasomnias/'
@@ -704,7 +764,7 @@ function screeningApp() {
           id: 'bruxism',
           name: 'Bruksizam u snu',
           urgency: 'elective',
-          urgencyLabel: 'Planirano',
+          urgencyLabel: 'Savjetovanje',
           clinicalBasis: 'Škrgutanje zubima u snu (pitanje 10).',
           confirmSteps: [
             'Stomatološki pregled — trošenje zubne cakline, frakture, bol u TMZ-u',
@@ -714,7 +774,7 @@ function screeningApp() {
             'Uputiti stomatologu za okluzijsku udlagu (splint)',
             'Ako prisutno hrkanje → razmisliti o STOP-BANG za OSA probir'
           ],
-          referral: { specialist: 'Stomatolog (protetika/gnatologija)', urgency: 'PLANIRANO', note: 'Za okluzijsku udlagu i procjenu oštećenja' },
+          referral: { specialist: 'Stomatolog (protetika/gnatologija)', urgency: 'AMBULANTNO', note: 'Za okluzijsku udlagu i procjenu oštećenja' },
           labs: null,
           questionnaireUrl: null,
           chapterUrl: '../guide/09-bruksizam/'
@@ -728,7 +788,7 @@ function screeningApp() {
           id: 'sred',
           name: 'Poremećaj jedenja povezan sa spavanjem (SRED)',
           urgency: zolp ? 'urgent' : 'routine',
-          urgencyLabel: zolp ? 'Hitno' : 'Planirano',
+          urgencyLabel: zolp ? 'Hitna obrada' : 'Ambulantna obrada',
           clinicalBasis: 'Nesvjesno noćno jedenje (pitanje 11)' + (zolp ? ' uz korištenje zolpidema (pitanje 11a).' : '.'),
           confirmSteps: zolp
             ? ['Potvrditi korištenje zolpidema — doza, trajanje', 'Dokumentirati epizode noćnog jedenja (partner/ukućani)']
@@ -737,8 +797,8 @@ function screeningApp() {
             ? ['ODMAH ukinuti zolpidem', 'Razmotriti alternativni hipnotik (trazodon, suvoreksant)', 'Sigurnost kuhinje — zaključati ili alarm']
             : ['Sigurnost kuhinje — zaključati opasne predmete, alarm', 'Provjeriti lijekove koji mogu izazvati SRED'],
           referral: zolp
-            ? { specialist: 'Specijalist za medicinu spavanja', urgency: 'HITNO', note: 'Ukinuti zolpidem i reevaluirati' }
-            : { specialist: 'Specijalist za medicinu spavanja', urgency: 'PLANIRANO', note: 'Za dijagnostičku obradu i terapiju' },
+            ? { specialist: 'Specijalist za medicinu spavanja', urgency: 'HITNA OBRADA', note: 'Ukinuti zolpidem i reevaluirati' }
+            : { specialist: 'Specijalist za medicinu spavanja', urgency: 'AMBULANTNO', note: 'Za dijagnostičku obradu i terapiju' },
           labs: null,
           questionnaireUrl: null,
           chapterUrl: '../guide/12-sred/'
@@ -751,7 +811,7 @@ function screeningApp() {
           id: 'dswpd',
           name: 'Poremećaj kasne faze spavanja (DSWPD)',
           urgency: 'elective',
-          urgencyLabel: 'Planirano',
+          urgencyLabel: 'Savjetovanje',
           clinicalBasis: 'Ne može zaspati prije 2-3h ujutro, ali spava dobro bez obaveza (pitanje 12).',
           confirmSteps: [
             'Dnevnik spavanja 2 tjedna (uključujući vikend i slobodne dane)',
@@ -763,7 +823,7 @@ function screeningApp() {
             'Jutarnja ekspozicija jakoj svjetlosti (30 min, >10.000 lux ili sunce)',
             'Izbjegavati plavo svjetlo navečer (ekrani) 2h prije spavanja'
           ],
-          referral: { specialist: 'Specijalist za medicinu spavanja', urgency: 'PLANIRANO', note: 'Ako nema odgovora na melatonin + kronoterapiju' },
+          referral: { specialist: 'Specijalist za medicinu spavanja', urgency: 'AMBULANTNO', note: 'Ako nema odgovora na melatonin + kronoterapiju' },
           labs: null,
           questionnaireUrl: null,
           chapterUrl: '../guide/08-cirkadijani-poremecaji/'
@@ -776,7 +836,7 @@ function screeningApp() {
           id: 'nightmares',
           name: 'Poremećaj noćnih mora',
           urgency: 'elective',
-          urgencyLabel: 'Planirano',
+          urgencyLabel: 'Savjetovanje',
           clinicalBasis: 'Česte noćne more koje bude i uznemiruju (pitanje 13).',
           confirmSteps: [
             'PTSP probir — PCL-5 upitnik (noćne more su čest simptom PTSP-a)',
@@ -788,7 +848,7 @@ function screeningApp() {
             'Razmotriti IRT (imagery rehearsal therapy) — prva linija za noćne more',
             'Prazosin 1-15 mg ako teške noćne more (off-label, ali dokazana učinkovitost)'
           ],
-          referral: { specialist: 'Psihijatar ili psihoterapeut', urgency: 'PLANIRANO', note: 'Za IRT i/ili terapiju traume ako PTSP+' },
+          referral: { specialist: 'Psihijatar ili psihoterapeut', urgency: 'AMBULANTNO', note: 'Za IRT i/ili terapiju traume ako PTSP+' },
           labs: null,
           questionnaireUrl: null,
           chapterUrl: '../guide/11-poremecaj-nocnih-mora/'
