@@ -25,7 +25,7 @@
   align: center + horizon,
   inset: (x: 2.5pt, y: 2pt),
   stroke: 0.4pt + rgb("#d1d5db"),
-  fill: (_, row) => if row == 0 { color-teal.lighten(85%) } else { white },
+  fill: (_, row) => if row == 0 { color-teal.lighten(85%) } else if row == 1 { rgb("#FFF8E1") } else { white },
 
   // Header row
   table.header(
@@ -38,6 +38,16 @@
     text(weight: "bold", fill: color-teal, size: 6.5pt)[Kvaliteta\ (1–5)],
     text(weight: "bold", fill: color-teal, size: 6.5pt)[Dnevna\ pospanost\ (1–5)],
   ),
+
+  // Example row (pre-filled)
+  text(size: 6pt, style: "italic")[Pon 3.2.],
+  text(size: 6pt, style: "italic")[23:00],
+  text(size: 6pt, style: "italic")[23:30],
+  text(size: 6pt, style: "italic")[2× / 25 min],
+  text(size: 6pt, style: "italic")[05:45],
+  text(size: 6pt, style: "italic")[06:00],
+  text(size: 6pt, style: "italic")[3],
+  text(size: 6pt, style: "italic")[4],
 
   // Day 1
   ecell, ecell, ecell, ecell, ecell, ecell, ecell, ecell,
@@ -84,3 +94,6 @@
     Buđenja: upišite broj buđenja i ukupno minuta budnosti (npr. "2 × / 40 min") #h(6pt) *Donesite ispunjeni dnevnik na sljedeći pregled.*
   ]
 )
+
+#v(2pt)
+#text(size: 6.5pt, fill: color-gray, style: "italic")[Ova stranica i Brzi vodič dizajnirani su za ispis i laminiranje — idealno za džep bijele kute.]

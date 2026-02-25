@@ -66,6 +66,8 @@ OSA je poremećaj disanja u snu obilježen ponavljanim epizodama djelomičnog (*
 
 #pearl[Žene s OSA-om prosječno posjete 3--5 specijalista prije dijagnoze. Žena s rezistentnom nesanicom, neobjašnjenim umorom ili refraktornom depresijom -- razmislite o OSA-i.]
 
+#pearl[*Trudnoća:* OSA u trudnoći povećava rizik gestacijske hipertenzije i preeklampsije — probir kod trudnica s BMI >30, kroničnim hrkanjem ili hipertenzijom u trudnoći.]
+
 *Pitanja za ordinaciju:*
 + „Hrčete li?" (pitajte i partnera!)
 + „Je li vam itko rekao da prestajete disati u snu?"

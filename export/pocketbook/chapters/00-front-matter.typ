@@ -179,6 +179,35 @@
   #set text(size: 9.5pt)
 
   #v(6pt)
+  #text(weight: "bold", fill: color-teal, size: 9pt)[Što LOM može samostalno?]
+  #v(3pt)
+
+  #set text(size: 7pt)
+  #table(
+    columns: (auto, 1fr, 1fr, 1fr),
+    inset: (x: 4pt, y: 3pt),
+    fill: (_, row) => if row == 0 { color-teal.lighten(85%) } else if calc.rem(row, 2) == 0 { color-gray-bg } else { white },
+    stroke: 0.4pt + rgb("#d1d5db"),
+    table.header(
+      text(weight: "bold")[Poglavlje],
+      text(weight: "bold")[LOM samostalno],
+      text(weight: "bold")[LOM + specijalist],
+      text(weight: "bold")[Specijalist vodi],
+    ),
+    [1. Nedovoljan san], [✓ potpuno], [], [],
+    [2. Nesanica], [CBT-I, kratkoročni lijek], [Refraktorna], [],
+    [3. OSA], [Probir, CPAP adherencija], [Dijagnostika, titracija], [],
+    [4. Cirkadijani], [DSWPD, smjenski rad], [Refraktorni], [Non-24],
+    [5. RLS], [Feritin, gabapentinoidi], [Augmentacija], [],
+    [6. Noćne more], [IRT, prazosin], [PTSP], [],
+    [7. NREM parasomnije], [Djeca, sigurnost], [Odrasli, ozljede], [Epilepsija DD],
+    [8. Bruksizam], [Probir, buspiron], [OSA komorbiditet], [],
+    [9. RBD], [Sigurnost, melatonin], [], [Neurolog uvijek],
+    [10. Hipersomnolencija], [Probir, isključiti druge], [], [Neurolog uvijek],
+  )
+  #set text(size: 9.5pt)
+
+  #v(6pt)
 
   *Dodaci na kraju* donose cjelovite farmakološke tablice, matricu interakcija, prilagodbe doza za posebne populacije, upitnike za probir i predložak uputnice.
 ]
@@ -227,6 +256,7 @@
     [*IRT*], [Image Rehearsal Therapy],
     [*LOM*], [Liječnik obiteljske medicine],
     [*MAO*], [Monoamino-oksidaza],
+    [*MED*], [Morfinski ekvivalent doze (_Morphine Equivalent Dose_)],
     [*MKB-10*], [Međunarodna klasifikacija bolesti, 10. revizija],
     [*MSLT*], [Test multiplih latencija spavanja],
     [*NES*], [Sindrom noćnog jedenja],

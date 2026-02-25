@@ -182,6 +182,8 @@
 
 #pearl[Gabapentin enakarbil i rotigotinski flaster *NISU registrirani u RH* (HALMED). Ne propisivati.]
 
+#pearl[*Gabapentin i pregabalin imaju potencijal zlouporabe* — propisivati s oprezom kod pacijenata s anamnezom ovisnosti. Pratiti znakove eskalacije doze.]
+
 === 3. korak: Dopaminski agonisti -- PREPUSTITI SPECIJALISTU
 
 #pearl[*PARADIGMATSKA PROMJENA (AASM 2024):* Dopaminski agonisti (pramipeksol, ropinirol) *više se NE preporučuju rutinski* -- uvjetna preporuka PROTIV zbog augmentacije (30--50%) i poremećaja kontrole impulsa (6--17%). Ako gabapentinoidi ne pomažu i feritin ≥100 → uputiti neurologu.#evidence("Ia")]

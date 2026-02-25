@@ -172,7 +172,7 @@ Istovremeno dijagnostički test i liječenje:
   [*Ekrani navečer*], [Pravilo „bez ekrana 60 min prije sna"],
   [*Prekovremeni rad*], [Edukacija o zdravstvenim posljedicama; liječnička preporuka],
   [*Odgađanje spavanja*], [Noć kao jedino slobodno vrijeme → restrukturirati dnevni raspored],
-  [*Smjenski rad*], [Vidi poglavlje 8 (cirkadijani poremećaji)],
+  [*Smjenski rad*], [Vidi poglavlje 4 (cirkadijani poremećaji)],
   [*Mala djeca*], [Rotacija noćnih obaveza s partnerom; vikend kompenzacija],
 )
 #set text(size: 9.5pt)
