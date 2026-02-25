@@ -20,7 +20,7 @@
   stroke: (left: 2pt + color-gray),
   text(size: 8pt, style: "italic")[*Sara, 22 g.*, studentica, zaspi na predavanjima, za volanom, u razgovoru. Spava 9–10 h i nikad se ne osjeća odmornom. Na pitanje „Osjećate li slabost u mišićima kad se smijete?" — „Da! Koljena mi klecnu." Simptomi od 16. godine.]
 )
-#v(4pt)
+#v(3pt)
 
 #brzi-pregled[
   #set text(size: 8.5pt)
@@ -34,7 +34,7 @@
   )
 ]
 
-#v(6pt)
+#v(4pt)
 #kljucna-poruka[
   + *Narkolepsija je neurološka bolest, ne lijenost.* Kašnjenje dijagnoze: 8–15 godina — LOM može skratiti to razdoblje postavljanjem pravih pitanja.
   + *Katapleksija je patognomonična za tip 1.* Pitajte svakoga s kroničnim EDS-om: „Slabost u mišićima kad se smijete?"
@@ -44,15 +44,21 @@
   + *IH = inercija spavanja + neosvježavajući drijemovi.* Isključite nedovoljan san (2 tj. produženog sna). Uputite specijalistu.
 ]
 
-// === Definicija i patofiziologija ===
-== Definicija i patofiziologija
-
-Narkolepsija je *kronična neurološka bolest* — nemogućnost mozga da normalno regulira ciklus budnost-spavanje. *Tip 1* nastaje zbog gubitka hipokretinskih neurona (autoimuni mehanizam); *tip 2* nema katapleksije.
-
-*Prevalencija:* Narkolepsija 1 na 2.000–5.000; IH ~0,005–0,01%. Prosječni LOM s 2.000 pacijenata ima *1–2 bolesnika* — gotovo sigurno nedijagnosticirane. Kašnjenje dijagnoze: *8–15 godina*.
+#v(4pt)
+#pitanja-box[
+  #pitanja-table((
+    [„Zaspite li u situacijama u kojima većina ne bi?"], [Neodoljivi napadaji sna = kardinalni simptom],
+    [„Imate li iznenadnu slabost kad se smijete?"], [Katapleksija = patognomonično za narkolepsiju tip 1],
+    [„Osvježe li vas kratki drijemeži od 15–20 min?"], [DA = narkolepsija; NE = idiopatska hipersomnija],
+    [„Koliko vam treba da se potpuno probudite?"], [>30 min + konfuzija = inercija spavanja → IH],
+    [„Imate li zastrašujuće halucinacije pri zaspiavanju?"], [Hipnagogičke halucinacije → narkolepsija],
+  ))
+]
 
 // === Kako prepoznati? ===
 == Kako prepoznati?
+
+Narkolepsija je kronična neurološka bolest — nemogućnost mozga da regulira ciklus budnost-spavanje; tip 1 nastaje zbog gubitka hipokretinskih neurona. Prevalencija: 1 na 2.000–5.000; kašnjenje dijagnoze 8–15 godina. U praksi s 2.000 pacijenata: 1–2 bolesnika.
 
 *Kritični znakovi:*
 - *EDS >3 mjeseca* — neodoljivi napadaji sna u neprimjerenim situacijama (razgovor, obrok, vožnja)
@@ -95,9 +101,9 @@ Narkolepsija je *kronična neurološka bolest* — nemogućnost mozga da normaln
 #pearl[Pitanje o katapleksiji je *najvažnije pitanje koje LOM može postaviti*. Većina bolesnika nikad nije upitana jer ne znaju da je to simptom.]
 
 // === Crvene zastavice ===
-#v(4pt)
+#v(3pt)
 #crvena-zastavica[
-  *SIGURNOSNI RIZIK:* Neliječena narkolepsija = *3–7× veći rizik* prometne nesreće
+  *Unutar tjedan dana:* Neliječena narkolepsija = *3–7× veći rizik* prometne nesreće — sigurnosna procjena obavezna
 
   - *Pospanost za volanom* — obavezno pitajte i dokumentirajte. Savjetujte prestanak vožnje do dijagnoze i liječenja
   - *Katapleksija s padovima* — rizik prijeloma, ozljeda glave
@@ -162,7 +168,6 @@ IH je poremećaj centralne hipersomnolencije s *kroničnom EDS-om* unatoč adekv
   [*Nakon spec. dg.*], [Ponoviti ESS svaka 3–6 mj. Pratiti nuspojave spec. lijekova],
   [*Trajno*], [Sigurnost vožnje. Psihosocijalna podrška. Komorbidna depresija?],
 )
-#set text(size: 9.5pt)
 
 // === Kada uputiti ===
 == Kada uputiti specijalistu?

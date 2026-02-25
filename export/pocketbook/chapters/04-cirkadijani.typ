@@ -20,7 +20,7 @@
   stroke: (left: 2pt + color-gray),
   text(size: 8pt, style: "italic")[*Luka, 17 g.*, majka ga dovodi jer „ne može zaspati". U krevet ide u 23h, ali zaspi tek u 02–03h. Ujutro se jedva budi za školu. Vikendom? Spava od 03h do 12h — „odlično se naspava". Pedijatar propisao zolpidem — bez učinka (zolpidem nije indiciran u maloljetnika).]
 )
-#v(4pt)
+#v(3pt)
 
 #brzi-pregled[
   #set text(size: 8.5pt)
@@ -34,7 +34,7 @@
   )
 ]
 
-#v(6pt)
+#v(4pt)
 #kljucna-poruka[
   + *Cirkadijani poremećaji = problem VREMENA, ne KVALITETE sna.* Ključno pitanje: „Spavate li dobro vikendom?" Ako DA → nije nesanica.
   + *DSWPD je najčešći propušteni cirkadijani poremećaj.* Adolescenti koji „ne mogu zaspati" nemaju nesanicu — hipnotik ne pomaže.
@@ -43,15 +43,21 @@
   + *Rano buđenje starijih nije uvijek depresija.* Očuvano raspoloženje → ASWPD. Večernje svjetlo pomaže.
 ]
 
-// === Definicija i patofiziologija ===
-== Definicija i patofiziologija
-
-Poremećaji cirkadijanog ritma (CRSWD) su stanja u kojima je *unutarnji biološki sat pomaknut u odnosu na društveno zahtijevani raspored*. Temeljna razlika od nesanice: problem nije kvaliteta sna, nego *vremenski raspored*. Kada pacijent spava u skladu sa svojim satom (npr. vikendom) — san je normalan.
-
-*Prevalencija:* DSWPD 1–3% opće populacije (*7–16% adolescenata*); poremećaj smjenskog rada 10–40% smjenskih radnika. U timu s 2.000 pacijenata: 20–60 ima DSWPD, a većina nikada neće dobiti ispravnu dijagnozu.
+#v(4pt)
+#pitanja-box[
+  #pitanja-table((
+    [„Spavate li dobro vikendom kada nemate obaveza?"], [DA + loš san radnim danom = cirkadijani, ne nesanica],
+    [„Kada biste najradije išli spavati bez ikakvih obaveza?"], [>02h = sumnja na DSWPD],
+    [„U koliko sati se prirodno budite vikendom?"], [Spontano buđenje otkriva endogeni ritam],
+    [„Je li problem samo usnivanje ili i održavanje sna?"], [Samo usnivanje + vikendom OK = klasični DSWPD],
+    [„Radite li u smjenama?"], [Smjenski rad → specifičan protokol upravljanja],
+  ))
+]
 
 // === Kako prepoznati? ===
 == Kako prepoznati?
+
+Poremećaji cirkadijanog ritma nastaju kad je unutarnji biološki sat pomaknut u odnosu na društveni raspored — problem vremena, ne kvalitete sna. Prevalencija: DSWPD 1–3% opće populacije (7–16% adolescenata); u praksi s 2.000 pacijenata: 20–60 ima DSWPD.
 
 === DSWPD — pomak unatrag
 
@@ -103,7 +109,6 @@ Gotovo isključivo u *potpuno slijepih osoba* — endogeni sat „slobodno trči
   [Trajanje sna], [3–4 h], [7–9 h], [Skraćeno],
   [Kvaliteta], ["Odličan kad zaspim"], [Odlična], [Loša],
 )
-#set text(size: 9.5pt)
 
 #pearl[Obrazac *kratkog sna radnim danima + dugog, kvalitetnog sna vikendom* gotovo je patognomoničan za DSWPD.]
 
@@ -112,7 +117,7 @@ Gotovo isključivo u *potpuno slijepih osoba* — endogeni sat „slobodno trči
 *LOM može klinički dijagnosticirati DSWPD i poremećaj smjenskog rada* na temelju anamneze i 2-tjednog dnevnika.
 
 // === Crvene zastavice ===
-#v(4pt)
+#v(3pt)
 #crvena-zastavica[
   *DSWPD:*
   - *Školski neuspjeh/odustajanje od školovanja* — kronična deprivacija uzrokuje pad kognitivnih funkcija
@@ -147,7 +152,6 @@ Cilj: *pomicanje cirkadijanog ritma unaprijed* — melatonin (pomicanje sata) + 
   [*Trajanje*], [Min. 4 tjedna, obično dugoročno],
   [*HR*], [Melatonin 2 mg PR registriran; niže doze OTC],
 )
-#set text(size: 9.5pt)
 
 #pearl[*Česta pogreška:* Melatonin 5–10 mg u ponoć = koristi se kao (slab) hipnotik. Ispravno: *mala doza, rano navečer* — za pomicanje faze.]
 
@@ -191,7 +195,7 @@ Potpuna eliminacija smjenskog rada je idealna, ali rijetko praktična.
     [*Melatonin*\ #text(size: 7pt)[(kronobiološki)]],
     [0,5–3 mg\ t½ 40–60 min\ #text(size: 7pt)[(u 18–19h)]],
     [Hepat.\ CYP1A2],
-    [Fluvoksamin *Y*],
+    [Fluvoksamin *⚠*],
     [✓],
   ),
   // Melatonin PR
@@ -199,7 +203,7 @@ Potpuna eliminacija smjenskog rada je idealna, ali rijetko praktična.
     [*Melatonin PR*\ #text(size: 7pt)[(2 mg)]],
     [2 mg\ t½ 3,5–4 h\ #text(size: 7pt)[(>55 god.)]],
     [Hepat.\ CYP1A2],
-    [Fluvoksamin *Y*],
+    [Fluvoksamin *⚠*],
     [✓],
   ),
   // Modafinil
@@ -207,7 +211,7 @@ Potpuna eliminacija smjenskog rada je idealna, ali rijetko praktična.
     [*Modafinil*\ #text(size: 7pt)[(smjenski rad)]],
     [100–200 mg\ t½ 15 h\ #text(size: 7pt)[(prije smjene)]],
     [Hepat.\ CYP3A4 ind.],
-    [Kontraceptivi *Y*\ CYP2C19 substr. *Y*],
+    [Kontraceptivi *⚠*\ CYP2C19 substr. *⚠*],
     [○],
   ),
 ))
@@ -229,7 +233,6 @@ Potpuna eliminacija smjenskog rada je idealna, ali rijetko praktična.
   [*3 mjeseca*], [Provjera održavanja rasporeda. Upozoriti na vikendom konzistentnost.],
   [*Smjenski rad*], [Godišnji probir: GUK, lipidogram, RR, STOP-BANG.],
 )
-#set text(size: 9.5pt)
 
 // === Kada uputiti ===
 == Kada uputiti specijalistu?

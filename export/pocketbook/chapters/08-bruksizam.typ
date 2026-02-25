@@ -20,7 +20,7 @@
   stroke: (left: 2pt + color-gray),
   text(size: 8pt, style: "italic")[*Maja, 35 g.*, stomatolog je uputio — istrošena caklina, bolnost masetera ujutro. Na pitanje „Hrčete li?" — „Da, muž se žali." STOP-BANG 3/8. Uzima sertralin 50 mg za anksioznost.]
 )
-#v(4pt)
+#v(3pt)
 
 #brzi-pregled[
   #set text(size: 8.5pt)
@@ -34,7 +34,7 @@
   )
 ]
 
-#v(6pt)
+#v(4pt)
 #kljucna-poruka[
   + *Bruksizam nije bezazlen* — trajno oštećenje cakline, frakture, TMZ disfunkcija. Svaki pacijent treba uputnicu stomatologu.
   + *Uvijek pitajte o hrkanju* — 25–50% komorbiditet s OSA. CPAP može značajno reducirati bruksizam.
@@ -42,15 +42,21 @@
   + *Okluzalna udlaga štiti zube, ali ne liječi uzrok.* Potreban sveobuhvatan pristup: OSA, stres, lijekovi.
 ]
 
-// === Definicija i patofiziologija ===
-== Definicija i patofiziologija
-
-Bruksizam u snu je poremećaj pokreta vezan za spavanje koji se očituje *repetitivnim stiskanjem i/ili škrgutanjem zuba* tijekom sna.
-
-*Prevalencija:* 8–13% odraslih; *25–50% pacijenata s OSA-om* ima komorbidni bruksizam. U timu s 2.000 pacijenata: *160–260 odraslih*.
+#v(4pt)
+#pitanja-box[
+  #pitanja-table((
+    [„Je li vam itko rekao da škrgućete zubima u snu?"], [Najčešći način otkrivanja — partner čuje],
+    [„Budite li se s bolnom ili ukočenom čeljusti?"], [Jutarnja bol masetera = klasičan znak],
+    [„Imate li jutarnje glavobolje?"], [Tenzijske glavobolje koje nestaju za 30–60 min],
+    [„Hrčete li? Prestajete li disati u snu?"], [25–50% bruksizma ima komorbidnu OSA-u],
+    [„Koji lijekove uzimate?"], [SSRI, SNRI, stimulansi = jatrogeni uzročnici],
+  ))
+]
 
 // === Kako prepoznati? ===
 == Kako prepoznati?
+
+Bruksizam u snu je repetitivno stiskanje i škrgutanje zuba tijekom sna s prevalencijom od 8–13% odraslih; 25–50% pacijenata s OSA-om ima komorbidni bruksizam. U praksi s 2.000 pacijenata: 160–260 odraslih.
 
 *Ključni simptomi:*
 - *Škrgutanje zubi u snu* (prijavljuje partner) — najčešći način otkrivanja
@@ -88,7 +94,7 @@ Bruksizam u snu je poremećaj pokreta vezan za spavanje koji se očituje *repeti
 *PSG* — NIJE potrebna za rutinsku dijagnozu. Indicirana samo pri sumnji na komorbidnu OSA.
 
 // === Crvene zastavice ===
-#v(4pt)
+#v(3pt)
 #crvena-zastavica[
   - *Značajno oštećenje zuba* (frakture, gubitak cakline do dentina) → hitna uputnica stomatologu
   - *Disfunkcija TMZ-a* (zaključavanje čeljusti, nemogućnost otvaranja usta) → TMZ specijalist / maksilofacijalni kirurg
@@ -137,7 +143,6 @@ Ako probir ukaže na OSA: uputiti na sleep studiju. *CPAP može značajno reduci
   [*Alkohol*], [Fragmentacija sna, arousali], [Izbjegavati 3–4 h prije spavanja],
   [*Kofein*], [Mišićna ekscitabilnost], [Izbjegavati nakon 14h],
 )
-#set text(size: 9.5pt)
 
 #pearl[*Buspiron* (5-HT1A parcijalni agonist) 5–10 mg navečer može reducirati SSRI-inducirani bruksizam. Najčešće korištena strategija kada zamjena antidepresiva nije moguća. Buspiron je *dostupan u Hrvatskoj*.]
 
@@ -151,7 +156,7 @@ Za jutarnju bol: ibuprofen 400–600 mg po potrebi + topli oblozi na maseter (15
     [*Buspiron*\ #text(size: 7pt)[(za SSRI-bruksizam)]],
     [5–10 mg\ t½ 2–3 h\ #text(size: 7pt)[(navečer)]],
     [Hepat.\ CYP3A4],
-    [MAOI *R*\ CYP3A4 inhib. *Y*],
+    [MAOI *✖*\ CYP3A4 inhib. *⚠*],
     [✓],
   ),
 ))
@@ -172,7 +177,6 @@ Za jutarnju bol: ibuprofen 400–600 mg po potrebi + topli oblozi na maseter (15
   [*6–12 mj.*], [Stomatološka kontrola (udlaga se troši). Probir za OSA ako ranije propušteno.],
   [*Trajno*], [Bruksizam je kroničan; redovite revizije simptoma i farmakoterapije.],
 )
-#set text(size: 9.5pt)
 
 // === Kada uputiti ===
 == Kada uputiti specijalistu?

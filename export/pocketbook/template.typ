@@ -1,5 +1,5 @@
 // ============================================================================
-// Džepni priručnik za spavanje 2026 — Design System (v2 — post-audit)
+// Džepni priručnik za spavanje 2026 — Design System (v4 — UX overhaul)
 // Author: Alen Juginović, MD
 // ============================================================================
 
@@ -7,10 +7,11 @@
 #let color-teal    = rgb("#0f766e")   // Headings, chapter titles, default
 #let color-orange  = rgb("#f97316")   // Warnings, zamke
 #let color-green   = rgb("#2e7d32")   // Brzi pregled boxes
-#let color-red     = rgb("#c62828")   // Crvene zastavice
+#let color-red     = rgb("#c62828")   // Crvene zastavice → NE PROPUSTITE
 #let color-blue    = rgb("#1565c0")   // Ključne poruke
 #let color-gray-bg = rgb("#f5f5f5")   // Light background for tables
 #let color-gray    = rgb("#4b5563")   // Subtle text (darkened for contrast)
+#let color-pitanja = rgb("#0d9488")   // Teal for pitanja-box
 
 // --- Category Colors (ICSD-3 groups, used for chapter color-coding) ---
 #let cat-insomnia      = rgb("#4338CA")   // Indigo — Nesanica
@@ -33,7 +34,7 @@
   title: "",
   color: color-teal,
   icon: "",
-  border-style: "left",  // "left", "full", "left-bottom", "left-dashed"
+  border-style: "left",  // "left", "full", "left-bottom", "left-dashed", "left-thick"
   body,
 ) = {
   let stroke-spec = if border-style == "full" {
@@ -42,6 +43,8 @@
     (left: 3pt + color, bottom: 1pt + color)
   } else if border-style == "left-dashed" {
     (left: stroke(paint: color, thickness: 3pt, dash: "dashed"))
+  } else if border-style == "left-thick" {
+    (left: 4pt + color, top: 0.75pt + color)
   } else {
     (left: 3pt + color)
   }
@@ -77,10 +80,10 @@
   )
 }
 
-// Crvene zastavice box (red — Red Flags) — full border (unique silhouette)
+// Ne propustite box (red — Do Not Miss) — full border (unique silhouette)
 #let crvena-zastavica(body) = {
   info-box(
-    title: "CRVENE ZASTAVICE",
+    title: "NE PROPUSTITE",
     color: color-red,
     icon: "▲",
     border-style: "full",
@@ -99,13 +102,13 @@
   )
 }
 
-// Zamke box (orange — Common Pitfalls) — dashed left border
+// Klinički kompas box (orange — Clinical Compass) — thick left + top border
 #let zamka-box(body) = {
   info-box(
-    title: "ČESTE ZAMKE",
+    title: "KLINIČKI KOMPAS",
     color: color-orange,
     icon: "◆",
-    border-style: "left-dashed",
+    border-style: "left-thick",
     body
   )
 }
@@ -141,7 +144,7 @@
     columns: (1.2fr, 1fr, 0.8fr, 1.5fr, 0.4fr),
     fill: (_, row) => if row == 0 { color-teal.lighten(85%) } else if calc.rem(row, 2) == 0 { color-gray-bg } else { white },
     align: (left, left, left, left, center),
-    inset: 5pt,
+    inset: (x: 4pt, y: 3pt),
     stroke: 0.4pt + rgb("#d1d5db"),
     table.header(
       text(weight: "bold")[Lijek],
@@ -185,7 +188,7 @@
     columns: (1.5fr, 1fr, 1.5fr),
     fill: (_, row) => if row == 0 { color-teal.lighten(85%) } else if calc.rem(row, 2) == 0 { color-gray-bg } else { white },
     align: left,
-    inset: 5pt,
+    inset: (x: 4pt, y: 3pt),
     stroke: 0.4pt + rgb("#d1d5db"),
     table.header(
       text(weight: "bold")[Uputiti kada...],
@@ -203,11 +206,11 @@
     columns: (1fr, 1fr),
     fill: (_, row) => if row == 0 { color-orange.lighten(88%) } else if calc.rem(row, 2) == 0 { rgb("#fff7ed") } else { white },
     align: left,
-    inset: 5pt,
+    inset: (x: 4pt, y: 3pt),
     stroke: 0.4pt + rgb("#d1d5db"),
     table.header(
-      text(weight: "bold", fill: color-orange)[Pogreška],
-      text(weight: "bold", fill: color-green)[Ispravni pristup],
+      text(weight: "bold", fill: color-orange)[Česta praksa],
+      text(weight: "bold", fill: color-green)[Preporučeni pristup],
     ),
     ..data.flatten()
   )
@@ -227,32 +230,70 @@
   text(size: 7.5pt, fill: color-gray)[
     *MKB-10:* #mkb #h(8pt) | #h(8pt) *ICSD-3:* #icsd
   ]
-  v(4pt)
+  v(3pt)
   line(length: 100%, stroke: 1.5pt + color)
-  v(8pt)
+  v(6pt)
 }
 
 // Appendix title — emits heading(level:1) for TOC + PDF bookmarks
 #let appendix-title(letter: "", title: "") = {
   heading(level: 1, numbering: none)[Dodatak #letter. #title]
-  v(6pt)
+  v(4pt)
   text(size: 18pt, weight: "black", fill: color-teal)[Dodatak #letter.]
   h(4pt)
   text(size: 13pt, weight: "bold", fill: color-teal)[#title]
-  v(4pt)
+  v(3pt)
   line(length: 100%, stroke: 1.5pt + color-teal)
-  v(8pt)
+  v(6pt)
 }
+
+// Interaction symbol helpers
+#let ix-major = text(fill: color-red, weight: "bold")[✖]
+#let ix-caution = text(fill: rgb("#d97706"), weight: "bold")[⚠]
 
 // Interaction matrix cell
 #let ix-cell(level) = {
   if level == "R" {
-    table.cell(fill: rgb("#fecaca"))[#text(weight: "bold", fill: color-red)[R]]
+    table.cell(fill: rgb("#fecaca"))[#text(weight: "bold", fill: color-red)[✖]]
   } else if level == "Y" {
-    table.cell(fill: rgb("#fef3c7"))[#text(weight: "bold", fill: rgb("#d97706"))[Y]]
+    table.cell(fill: rgb("#fef3c7"))[#text(weight: "bold", fill: rgb("#d97706"))[⚠]]
   } else {
     []
   }
+}
+
+// Pitanja box — clinical history questions (teal left+bottom, green fill)
+#let pitanja-box(body) = {
+  block(
+    width: 100%,
+    inset: (x: 8pt, y: 6pt),
+    radius: 3pt,
+    stroke: (left: 3pt + color-pitanja, bottom: 1pt + color-pitanja),
+    fill: rgb("#f0fdf4"),
+    [
+      #text(weight: "bold", fill: color-pitanja, size: 8.5pt)[🔍 KLJUČNA PITANJA ZA ANAMNEZU]
+      #v(3pt)
+      #set text(size: 8pt)
+      #body
+    ]
+  )
+}
+
+// Pitanja table — 2-column question/answer table for pitanja-box
+#let pitanja-table(data) = {
+  set text(size: 7.5pt)
+  table(
+    columns: (1fr, 1fr),
+    fill: (_, row) => if row == 0 { rgb("#d1fae5") } else if calc.rem(row, 2) == 0 { rgb("#f0fdf4") } else { white },
+    align: left,
+    inset: (x: 4pt, y: 3pt),
+    stroke: 0.4pt + rgb("#d1d5db"),
+    table.header(
+      text(weight: "bold", fill: color-pitanja)[Pitanje],
+      text(weight: "bold", fill: color-pitanja)[Pozitivan odgovor → sumnja na...],
+    ),
+    ..data.flatten()
+  )
 }
 
 // Per-chapter recommended reading
@@ -285,7 +326,7 @@
   set page(
     width: page-width,
     height: page-height,
-    margin: (top: 18mm, bottom: 18mm, left: 17mm, right: 17mm),
+    margin: (top: 16mm, bottom: 14mm, left: 16mm, right: 16mm),
     header: context {
       if counter(page).get().first() > 4 {
         set text(size: 7pt, fill: color-gray)
@@ -313,7 +354,7 @@
   // Typography
   set text(
     font: "Source Sans 3",
-    size: 9.5pt,
+    size: 8.5pt,
     lang: "hr",
     region: "HR",
     hyphenate: true,
@@ -322,7 +363,7 @@
   // Paragraph settings
   set par(
     justify: true,
-    leading: 0.65em,       // Increased from 0.58em for readability
+    leading: 0.65em,       // Tight leading for pocket format
     first-line-indent: 0pt,
   )
 
@@ -335,17 +376,17 @@
   }
 
   show heading.where(level: 2): it => {
-    v(8pt)
-    text(weight: "bold", fill: color-teal, size: 10.5pt, upper(it.body))
+    v(6pt)
+    text(weight: "bold", fill: color-teal, size: 9.5pt, upper(it.body))
     v(2pt)
     line(length: 100%, stroke: 0.5pt + color-teal.lighten(60%))
-    v(4pt)
+    v(3pt)
   }
 
   show heading.where(level: 3): it => {
-    v(8pt)
-    text(weight: "bold", fill: color-teal, size: 10pt)[#it.body]
-    v(3pt)
+    v(6pt)
+    text(weight: "bold", fill: color-teal, size: 9pt)[#it.body]
+    v(2pt)
   }
 
   // List styling
