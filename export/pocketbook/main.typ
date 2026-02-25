@@ -33,11 +33,8 @@
 // --- Classification of Sleep Disorders ---
 #include "chapters/00b-klasifikacija.typ"
 
-// --- At a Glance Summary ---
-#include "chapters/00a-pregled.typ"
-
-// --- Diagnostic Algorithm ---
-#include "chapters/00d-algoritam.typ"
+// --- Merged Clinical Guide (replaces 00a-pregled + 00d-algoritam) ---
+#include "chapters/00c-klinicki-vodic.typ"
 
 // ============================
 // POREMEĆAJI SPAVANJA (10 poglavlja — poredano po učestalosti i relevantnosti za LOM)
@@ -54,6 +51,9 @@
 #include "chapters/09-rbd.typ"
 #include "chapters/10-hipersomnolencija.typ"
 
+// --- LOM Autonomy Summary (bridge between chapters and appendices) ---
+#include "chapters/00e-lom-sazetak.typ"
+
 // ============================
 // DODACI
 // ============================
@@ -62,6 +62,7 @@
 #include "appendices/B-dnevnik-spavanja.typ"
 #include "appendices/C-indeks-lijekova.typ"
 #include "appendices/D-posebne-populacije.typ"
+#include "appendices/E-upitnici.typ"
 
 // --- Back Page ---
 #include "chapters/99-back-page.typ"

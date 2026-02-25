@@ -20,7 +20,7 @@
   stroke: (left: 2pt + color-gray),
   text(size: 8pt, style: "italic")[*Petra, 28 g.*, cimerica je dovodi jer „hoda po stanu noću, oči otvorene, ne reagira". Epizode u prvoj trećini noći, bez sjećanja. Uzima zolpidem 10 mg za nesanicu. Nedavno pala i udarila glavu.]
 )
-#v(4pt)
+#v(3pt)
 
 #brzi-pregled[
   #set text(size: 8.5pt)
@@ -34,7 +34,7 @@
   )
 ]
 
-#v(6pt)
+#v(4pt)
 #kljucna-poruka[
   + *Tri podtipa — isti mehanizam:* nepotpuno buđenje iz N3 sna. U djece česte i benigne, u odraslih zahtijevaju obradu.
   + *Tri pitanja za diferencijalnu dijagnozu:* Kada noću? Oči otvorene? Sjeća li se? — razlikuje NREM od RBD-a.
@@ -44,17 +44,21 @@
   + *SRED = parasomnije s jedenjem u snu.* Zolpidem je najčešći uzrok. Ukinuti lijek, osigurati kuhinju.
 ]
 
-// === Definicija i patofiziologija ===
-== Definicija i patofiziologija
+#v(4pt)
+#pitanja-box[
+  #pitanja-table((
+    [„U koje doba noći se to događa?"], [Prva trećina = NREM; zadnja trećina = RBD],
+    [„Jesu li oči otvorene ili zatvorene?"], [Otvorene = NREM; zatvorene = RBD],
+    [„Sjeća li se nečega ujutro?"], [Amnezija = NREM; sjećanje na san = RBD ili noćne more],
+    [„Hrče li? Ima li apneje?"], [OSA je čest trigger NREM parasomnija u odraslih],
+    [„Koji lijekove uzima?"], [Zolpidem, litij, sedativi — česti uzročnici],
+  ))
+]
 
-NREM parasomnije su spektar triju srodnih poremećaja koji proizlaze iz *nepotpunog buđenja iz dubokog (N3) sna* — mozak ostaje između sna i budnosti: tijelo se pokreće, ali svjesnost i pamćenje ostaju „isključeni".
+// === Kako prepoznati? ===
+== Kako prepoznati?
 
-*Tri podtipa:*
-- *Somnambulizam (mjesečarenje)* — hodanje u snu s otvorenim očima, amnezija
-- *Noćni strahovi (pavor nocturnus)* — naglo buđenje s krikom, tahikardija, znojenje, nekonzolabilan, amnezija. *Nije noćna mora*
-- *Konfuzna buđenja* — dezorijentiranost pri buđenju iz dubokog sna, ponekad neprimjereno ponašanje, amnezija
-
-*Prevalencija:*
+NREM parasomnije su spektar triju poremećaja (somnambulizam, noćni strahovi, konfuzna buđenja) koji proizlaze iz nepotpunog buđenja iz dubokog N3 sna — tijelo se pokreće, ali svjesnost ostaje „isključena".
 
 #set text(size: 8.5pt)
 #table(
@@ -67,13 +71,9 @@ NREM parasomnije su spektar triju srodnih poremećaja koji proizlaze iz *nepotpu
     text(weight: "bold")[Odrasli],
   ),
   [Somnambulizam], [10–17% (vrh: 8–12 g.)], [1–4%],
-  [Noćni strahovi], [1–6% (vrh: 5–7 g.)], [< 1%],
+  [Noćni strahovi], [1–6% (vrh: 5–7 g.)], [\< 1%],
   [Konfuzna buđenja], [Do 17%], [2–4%],
 )
-#set text(size: 9.5pt)
-
-// === Kako prepoznati? ===
-== Kako prepoznati?
 
 *Kritični znakovi:*
 - Hodanje u snu — složene radnje bez svjesnosti
@@ -106,7 +106,7 @@ NREM parasomnije su spektar triju srodnih poremećaja koji proizlaze iz *nepotpu
 #text(size: 8pt, fill: color-gray)[Rutinska PSG NIJE potrebna za tipične dječje NREM parasomnije s jasnom kliničkom slikom.]
 
 // === Crvene zastavice ===
-#v(4pt)
+#v(3pt)
 #crvena-zastavica[
   - *Novonastalo mjesečarenje u odraslog* — obavezno isključiti: OSA, noćnu epilepsiju, lijekove (zolpidem!), neurološku bolest
   - *Ozljede tijekom epizoda* — padovi, rezanje, napuštanje kuće
@@ -145,7 +145,6 @@ NREM parasomnije su spektar triju srodnih poremećaja koji proizlaze iz *nepotpu
   [*OSA*], [Dijagnostika i liječenje može eliminirati parasomnije],
   [*Stres*], [Tehnike relaksacije; ako potrebno → psiholog],
 )
-#set text(size: 9.5pt)
 
 === 3. Planirana buđenja (djeca)
 
@@ -159,7 +158,7 @@ Za djecu s predvidljivim vremenskim obrascem: *15–30 min PRIJE uobičajenog vr
     [*Klonazepam*\ #text(size: 7pt)[(prva linija)]],
     [0,25–2 mg\ t½ 30–40 h],
     [Hepat.\ CYP3A4],
-    [CNS depresanti *R*\ Opioidi *R*\ Alkohol *R*],
+    [CNS depresanti *✖*\ Opioidi *✖*\ Alkohol *✖*],
     [✓],
   ),
   // Melatonin
@@ -167,7 +166,7 @@ Za djecu s predvidljivim vremenskim obrascem: *15–30 min PRIJE uobičajenog vr
     [*Melatonin*],
     [2–6 mg\ t½ 40–60 min],
     [Hepat.\ CYP1A2],
-    [Fluvoksamin *Y*],
+    [Fluvoksamin *⚠*],
     [✓],
   ),
   // Trazodon
@@ -175,7 +174,7 @@ Za djecu s predvidljivim vremenskim obrascem: *15–30 min PRIJE uobičajenog vr
     [*Trazodon*\ #text(size: 7pt)[(off-label)]],
     [25–100 mg\ t½ 5–9 h],
     [Hepat.\ CYP3A4],
-    [MAOI *R*\ QTc lijekovi *Y*],
+    [MAOI *✖*\ QTc lijekovi *⚠*],
     [✓],
   ),
 ))
@@ -219,7 +218,6 @@ SRED je NREM parasomnije — epizode nehotičnog jedenja iz dubokog sna uz *amne
   [*1–3 mjeseca*], [Učestalost epizoda? Ako farmakoterapija → procjena odgovora],
   [*6–12 mjeseci*], [Djeca: praćenje do spontane rezolucije. Odrasli: kontrola okidača],
 )
-#set text(size: 9.5pt)
 
 // === Kada uputiti ===
 == Kada uputiti specijalistu?

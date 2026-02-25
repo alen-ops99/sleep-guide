@@ -20,7 +20,7 @@
   stroke: (left: 2pt + color-gray),
   text(size: 8pt, style: "italic")[*Tomislav, 54 g.*, branitelj, dolazi zbog „loše spava". Na izravno pitanje: kronične noćne more 3–4× tjedno, isti scenarij. Izbjegava spavanje, pije 3–4 piva navečer „da lakše zaspi". Nikada nije govorio o traumi. Supruga: „Viče u snu, znoji se."]
 )
-#v(4pt)
+#v(3pt)
 
 #brzi-pregled[
   #set text(size: 8.5pt)
@@ -34,7 +34,7 @@
   )
 ]
 
-#v(6pt)
+#v(4pt)
 #kljucna-poruka[
   + *IRT je najučinkovitija terapija* (razina A) — LOM je može naučiti pacijenta u 10–15 min. Prazosin je farmakološka opcija za PTSP.
   + *Uvijek pitajte o traumi.* PTSP je najčešći uzrok kroničnih noćnih mora. U HR kontekstu — ratna trauma, nasilje u obitelji se rijetko spontano prijavljuju.
@@ -43,23 +43,21 @@
   + *Pregledajte listu lijekova* — beta-blokatori, nagli prekid SSRI-ja, kortikosteroidi mogu uzrokovati noćne more.
 ]
 
-// === Definicija i patofiziologija ===
-== Definicija i patofiziologija
-
-Noćne more su *živopisni, uznemirujući snovi koji završavaju buđenjem* uz puno sjećanje na sadržaj i značajan emocionalni distres. Javljaju se tijekom REM spavanja — dominira u *drugoj polovici noći* (rane jutarnje sati).
-
-*Dijagnoza* se postavlja kada su noćne more *ponavljajuće* i uzrokuju *značajan distres ili narušavanje funkcioniranja* — strah od usnivanja, izbjegavanje spavanja, dnevna iscrpljenost, pad raspoloženja.
-
-*Dva glavna uzroka:*
-- *Idiopatski* — bez jasnog uzroka, često od djetinjstva
-- *PTSP-povezane noćne more* — daleko najčešći uzrok kroničnih noćnih mora u odraslih; trauma je najsnažniji precipitirajući čimbenik
-
-*Prevalencija:* Kronični poremećaj u 2–8% opće populacije; *50–70% pacijenata s PTSP-om* ima noćne more.
-
-*Hrvatski kontekst:* Domovinski rat i poslijeratna trauma — značajan dio populacije >45 g. ima neprepoznati PTSP. Kronične noćne more mogu biti jedini prezentirajući simptom.
+#v(4pt)
+#pitanja-box[
+  #pitanja-table((
+    [„Imate li uznemirujuće snove koji Vas bude iz sna?"], [Ponavljajuće noćne more → poremećaj],
+    [„Koliko često? Ima li ponavljajući sadržaj?"], [Isti scenarij → PTSP-povezane noćne more],
+    [„Bojite li se ići spavati?"], [Izbjegavanje sna → značajan funkcionalni utjecaj],
+    [„Jeste li doživjeli traumatičan događaj?"], [PTSP je najčešći uzrok kroničnih noćnih mora],
+    [„Pijete li alkohol da lakše zaspite?"], [Alkohol → REM rebound → pogoršava noćne more],
+  ))
+]
 
 // === Kako prepoznati? ===
 == Kako prepoznati?
+
+Noćne more su živopisni, uznemirujući snovi koji završavaju buđenjem uz puno sjećanje na sadržaj — javljaju se tijekom REM spavanja (druga polovica noći). Prevalencija: 2–8% opće populacije; 50–70% pacijenata s PTSP-om. Hrvatski kontekst: Domovinski rat — značajan dio populacije >45 g. ima neprepoznati PTSP.
 
 *Ključni simptomi:*
 - *Česte uznemirujuće noćne more s buđenjem* uz punu orijentaciju
@@ -97,9 +95,9 @@ Noćne more su *živopisni, uznemirujući snovi koji završavaju buđenjem* uz p
 *PSG* — NIJE potrebna. Indicirana samo pri sumnji na RBD, NREM parasomnije ili epilepsiju.
 
 // === Crvene zastavice ===
-#v(4pt)
+#v(3pt)
 #crvena-zastavica[
-  *HITNO:* Suicidalna ideacija uz kronične noćne more → psihijatar *isti dan*. Kronične noćne more su *nezavisni čimbenik rizika za suicid*.
+  *Isti dan:* Suicidalna ideacija uz kronične noćne more → psihijatar. Kronične noćne more su *nezavisni čimbenik rizika za suicid*.
 
   - *Neotkriveni PTSP* — kronične noćne more mogu biti jedini prezentirajući simptom
   - *Suicidalna ideacija* — povećan rizik neovisno o depresiji i PTSP-u
@@ -132,7 +130,7 @@ Pacijent *preoblikuje sadržaj noćne more* dok je budan, zatim uvježbava novu 
     [*Prazosin*\ #text(size: 7pt)[(alfa-1 antag.)]],
     [1–6 mg\ t½ 2–3 h\ #text(size: 7pt)[(muški do 15 mg)]],
     [Hepat.\ CYP razni],
-    [Antihipertenzivi *Y*\ Alfa-blokatori *Y*\ PDE5-inhib. *R*],
+    [Antihipertenzivi *⚠*\ Alfa-blokatori *⚠*\ PDE5-inhib. *✖*],
     [✓],
   ),
 ))
@@ -168,7 +166,6 @@ Prazosin i IRT liječe *simptom* (noćne more), ali *ne liječe PTSP*. Sumnja na
   [*Inhib. kolinesteraze*], [donepezil, rivastigmin],
   [*Kortikosteroidi*], [prednizon, metilprednizolon],
 )
-#set text(size: 9.5pt)
 
 // === Praćenje ===
 == Praćenje
@@ -187,7 +184,6 @@ Prazosin i IRT liječe *simptom* (noćne more), ali *ne liječe PTSP*. Sumnja na
   [*Prazosin*], [Kontrola RR (ležeći/stojeći) svaka 2 tj. tijekom titracije],
   [*3 mjeseca*], [Ponoviti procjenu. Ako rezistentno → uputiti specijalistu],
 )
-#set text(size: 9.5pt)
 
 // === Kada uputiti ===
 == Kada uputiti specijalistu?

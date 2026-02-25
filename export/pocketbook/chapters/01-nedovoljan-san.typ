@@ -20,7 +20,7 @@
   stroke: (left: 2pt + color-gray),
   text(size: 8pt, style: "italic")[*Marko, 42 g.*, dolazi zbog „stalne iscrpljenosti i gubitka koncentracije". Spava 5–5,5 h radnim danom, vikendom 9 h. Tri kave dnevno. „Ja sam oduvijek kratko spavač, to mi ne smeta." ESS 14/24 — umjerena pospanost.]
 )
-#v(4pt)
+#v(3pt)
 
 #brzi-pregled[
   #set text(size: 8.5pt)
@@ -34,7 +34,7 @@
   )
 ]
 
-#v(6pt)
+#v(4pt)
 #kljucna-poruka[
   + *Najčešći uzrok EDS-a u PZZ* — daleko ispred narkolepsije. Mora biti isključen prije daljnje obrade.
   + *Dijagnoza jednim pitanjem:* „Koliko sati zapravo spavate radnim danom?" \<7h + razlika ≥2h prema vikendu = klinička sumnja.
@@ -43,19 +43,21 @@
   + *100% u domeni LOM-a.* Dobra anamneza, dnevnik spavanja i 15 minuta edukacije — bez PSG-a i specijalista.
 ]
 
-// === Definicija i patofiziologija ===
-== Definicija i patofiziologija
-
-Sindrom nedovoljnog spavanja je stanje u kojem pacijent *kronično i dobrovoljno spava kraće nego što mu organizam zahtijeva*, uz posljedičnu pretjeranu dnevnu pospanost (EDS) i kognitivni deficit. Ključna riječ: *dobrovoljno* — mogao bi spavati dovoljno, ali ne čini to zbog obveza, ekrana ili uvjerenja da „ne treba puno sna".
-
-*Najvažniji paradoks:* Pacijent se ne žali na san, nego na pospanost. Spavanje od 5–6 h postalo mu je identitet: _„Ja sam osoba koja ne treba puno sna."_
-
-Dijagnoza se potvrđuje jednostavno: *ako se simptomi povuku nakon 2 tjedna adekvatnog sna (7–9 h), dijagnoza je potvrđena.* Nema potrebe za PSG-om.
-
-*Prevalencija:* 20–35% odraslih habitualno spava \<7h; 60–75% adolescenata spava \<8h školskim danom. Procjena: 20–40% pacijenata upućenih u centar za spavanje zbog EDS-a ima nedovoljan san kao pravi uzrok. U timu s 2.000 pacijenata: *300–700 odraslih* habitualno spava \<7h — gotovo sigurno *najčešći uzrok EDS-a u PZZ*.
+#v(4pt)
+#pitanja-box[
+  #pitanja-table((
+    [„Koliko sati stvarno spavate radnim danom?"], [\<7h + vikendom ≥2h više = nedovoljan san],
+    [„Koliko spavate vikendom bez alarma?"], [Razlika ≥2h = socialni jetlag → kronični dug sna],
+    [„Trebate li alarm za buđenje?"], [Ovisnost o alarmu = biološki deficit sna],
+    [„Zaspite li brzo kad legnete?"], [\<5 min = znak deprivacije, ne „zdravog sna"],
+    [„Pijete li više od 3 kave dnevno?"], [Kompenzatorna strategija za kroničnu pospanost],
+  ))
+]
 
 // === Kako prepoznati? ===
 == Kako prepoznati?
+
+Sindrom nedovoljnog spavanja je kronično, dobrovoljno skraćivanje sna uz posljedičnu pretjeranu dnevnu pospanost (EDS). Prevalencija: 20–35% odraslih habitualno spava \<7h; u praksi s 2.000 pacijenata: 300–700 odraslih.
 
 *Ključni simptomi:*
 - *Spava \<7h radnim danima, ali značajno dulje vikendom/na odmoru* (≥2h razlike)
@@ -100,7 +102,6 @@ Dijagnoza se potvrđuje jednostavno: *ako se simptomi povuku nakon 2 tjedna adek
   [*11–15*], [*Umjerena pospanost — indicirana obrada*],
   [*≥16*], [*Teška pospanost — hitna obrada*],
 )
-#set text(size: 9.5pt)
 
 === Korak 2: Dnevnik spavanja (2 tjedna)
 
@@ -125,13 +126,12 @@ Istovremeno dijagnostički test i liječenje:
   [EDS se povukla, ESS normaliziran], [*Dijagnoza potvrđena: nedovoljan san*],
   [EDS perzistira unatoč snu 7–9 h ≥2 tj.], [*Isključen nedovoljan san → daljnja obrada (MSLT, PSG)*],
 )
-#set text(size: 9.5pt)
 
 #v(4pt)
 #pearl[*MSLT NIKADA bez prethodnog adekvatnog sna ≥2 tj.* Nedovoljan san daje skraćenu latenciju i SOREMP-ove na MSLT-u → moguća *lažno pozitivna dijagnoza narkolepsije*.]
 
 // === Crvene zastavice ===
-#v(4pt)
+#v(3pt)
 #crvena-zastavica[
   - *Pospanost za volanom* — \<6h sna = rizik prometne nesreće 2–3× veći. Upozoriti; savjetovati izbjegavanje vožnje
   - *Zasipanje na rizičnom radnom mjestu* — industrijske nesreće, medicinske pogreške → hitna intervencija
@@ -175,7 +175,6 @@ Istovremeno dijagnostički test i liječenje:
   [*Smjenski rad*], [Vidi poglavlje 4 (cirkadijani poremećaji)],
   [*Mala djeca*], [Rotacija noćnih obaveza s partnerom; vikend kompenzacija],
 )
-#set text(size: 9.5pt)
 
 *4. Educirajte o zdravstvenim posljedicama:*
 - *KV bolesti:* Hipertenzija, IM, CVI — rizik povećan 20–40%
@@ -204,7 +203,6 @@ Istovremeno dijagnostički test i liječenje:
   [*Ako EDS perzistira*], [Dokumentirani adekvatan san ≥2 tj., a EDS traje → uputiti na MSLT/PSG.],
   [*Dugoročno*], [Pacijenti se često vraćaju na stare navike. Redovit podsjetnik na kontrolama.],
 )
-#set text(size: 9.5pt)
 
 // === Kada uputiti ===
 == Kada uputiti specijalistu?

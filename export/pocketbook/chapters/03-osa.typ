@@ -20,7 +20,7 @@
   stroke: (left: 2pt + color-gray),
   text(size: 8pt, style: "italic")[*Ivan, 55 g.*, dolazi na kontrolu hipertenzije — 3 antihipertenziva, RR i dalje 155/95. Supruga kaže da „hrče kao traktor i prestaje disati". BMI 33. Umoran je, ali „to je normalno u mojim godinama." STOP-BANG 6/8.]
 )
-#v(4pt)
+#v(3pt)
 
 #brzi-pregled[
   #set text(size: 8.5pt)
@@ -34,7 +34,7 @@
   )
 ]
 
-#v(6pt)
+#v(4pt)
 #kljucna-poruka[
   + *OSA je dramatično poddijagnosticirana* -- osobito kod žena (nesanica, umor, depresija). Aktivno pitajte i kod „atipičnog" profila.
   + *STOP-BANG ≥3 uz kliničku sumnju = uputnica za sleep studiju.* Ne čekajte -- svaki mjesec neliječene teške OSA-e je mjesec KV oštećenja.
@@ -43,15 +43,21 @@
   + *Nikada sedative bez isključenja OSA-e.* BZD i opioidi pogoršavaju apneje i suzbijaju zaštitno buđenje.
 ]
 
-// === Definicija i patofiziologija ===
-== Definicija i patofiziologija
-
-OSA je poremećaj disanja u snu obilježen ponavljanim epizodama djelomičnog (*hipopneja*) ili potpunog (*apneja*) kolapsa gornjeg dišnog puta tijekom spavanja. Dijagnoza se temelji na *apneja-hipopneja indeksu (AHI)* -- broju apneja i hipopneja po satu.
-
-*Prevalencija:* Muškarci 9--38%, žene 4--28% (ovisi o definiciji AHI). U praksi s 2.000 pacijenata: *150--400 odraslih ima klinički značajnu OSA-u* -- većina nedijagnosticirana. Svaki pacijent s rezistentnom hipertenzijom, pretilošću, DM2 ili fibrilacijom atrija zaslužuje probir.
+#v(4pt)
+#pitanja-box[
+  #pitanja-table((
+    [„Hrčete li?" (pitajte i partnera!)], [Glasno, iregularno hrkanje → visoka sumnja na OSA],
+    [„Je li vam itko rekao da prestajete disati u snu?"], [Svjedočene apneje = gotovo patognomonično],
+    [„Osjećate li se odmorni ujutro?"], [Neosvježavajući san unatoč dovoljnom trajanju → OSA],
+    [„Zasipate li nenamjerno — za volanom, čitajući?"], [Pozitivno = sigurnosno kritično → hitna obrada],
+    [„Budite li se noću na mokrenje više od jednom?"], [Nokturija ≥2× = čest, podcijenjen simptom OSA-e],
+  ))
+]
 
 // === Kako prepoznati? ===
 == Kako prepoznati?
+
+OSA je poremećaj disanja u snu s ponavljanim epizodama kolapsa gornjeg dišnog puta, mjereno apneja-hipopneja indeksom (AHI). Prevalencija: u praksi s 2.000 pacijenata: 150–400 odraslih ima klinički značajnu OSA-u.
 
 *Klasična prezentacija* (češće muškarci):
 - Glasno, iregularno hrkanje s pauzama u disanju
@@ -100,7 +106,6 @@ OSA je poremećaj disanja u snu obilježen ponavljanim epizodama djelomičnog (*
   [*N*], [Opseg vrata >40 cm?], [Da],
   [*G*], [Muški spol?], [Da],
 )
-#set text(size: 9.5pt)
 
 *Interpretacija:* 0--2 = niski rizik; *3--4 = intermedijarni → uputiti*; *≥5 = visoki → hitno uputiti*.
 
@@ -127,12 +132,11 @@ OSA je poremećaj disanja u snu obilježen ponavljanim epizodama djelomičnog (*
   [*Umjerena*], [*15--29*], [Indikacija za CPAP ili MAD],
   [*Teška*], [*≥30*], [CPAP obavezan; visoki KV rizik],
 )
-#set text(size: 9.5pt)
 
 *PSG* -- zlatni standard. *HSAT* (kućna studija) -- prikladna za visoku pretestnu vjerojatnost bez značajnog komorbiditeta.
 
 // === Crvene zastavice ===
-#v(4pt)
+#v(3pt)
 #crvena-zastavica[
   *Rezistentna hipertenzija* (≥3 antihipertenziva) → OSA u 70--83%; liječenje može omogućiti kontrolu tlaka
 
@@ -176,7 +180,7 @@ COMISA pogađa *30--50% pacijenata s OSA-om*. Liječiti *oboje istovremeno* -- C
 CSA nastaje zbog *smanjenog ili odsutnog respiratornog napora* — mozak prestaje slati signal dišnoj muskulaturi. Za razliku od OSA (fizička blokada uz napor), kod CSA *nema napora za disanje*.
 
 *Kada posumnjati:*
-- *Srčano zatajenje (HFrEF, EF < 45%)* — Cheyne-Stokesovo disanje prisutno u 30–50%
+- *Srčano zatajenje (HFrEF, EF \< 45%)* — Cheyne-Stokesovo disanje prisutno u 30–50%
 - *Kronična opioidna terapija* (morfij, oksikodon, metadon) — osobito ≥100 mg/dan MED
 - *Preboljeli moždani udar* — 10–25% akutnih CVI-a
 - Partner opisuje *tihe pauze u disanju* (manje hrkanja nego kod OSA)
@@ -205,7 +209,6 @@ CSA nastaje zbog *smanjenog ili odsutnog respiratornog napora* — mozak prestaj
   [*6--12 mj.*], [ESS, KV rizik, CPAP podaci. Značajan gubitak TM → ponoviti sleep studiju.],
   [*Godišnje*], [Praćenje KV komorbiditeta, CPAP adherencija, TM.],
 )
-#set text(size: 9.5pt)
 
 // === Kada uputiti ===
 == Kada uputiti specijalistu?

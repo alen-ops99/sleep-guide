@@ -20,7 +20,7 @@
   stroke: (left: 2pt + color-gray),
   text(size: 8pt, style: "italic")[*Mirjana, 62 g.*, žali se na „nemirne noge navečer" — neodoljiv nagon za pomicanjem, pogoršava se u mirovanju, prolazi hodanjem. Liječena kao anksioznost — paroksetin 20 mg (koji pogoršava RLS!). Feritin 35 ng/mL — „u granicama normale".]
 )
-#v(4pt)
+#v(3pt)
 
 #brzi-pregled[
   #set text(size: 8.5pt)
@@ -34,7 +34,7 @@
   )
 ]
 
-#v(6pt)
+#v(4pt)
 #kljucna-poruka[
   + *RLS se dijagnosticira klinički* -- 4 IRLS kriterija. Ne treba PSG. Pitajte aktivno -- 5--10% populacije.
   + *Uvijek feritin -- cilj ≥100 ng/mL* (AASM 2024). Feritin \< 75 → oralno/IV; 75--100 → samo IV.
@@ -43,15 +43,22 @@
   + *Augmentacija* = simptomi ranije + širenje na ruke. NE povećavajte DA dozu. Uputite specijalistu.
 ]
 
-// === Definicija i patofiziologija ===
-== Definicija i patofiziologija
-
-*RLS* je neurološki poremećaj karakteriziran *neodoljivim nagonom za pokretanjem nogu*, popraćenim neugodnim osjetima (puzanje, strujanje, mravinjanje). Simptomi se javljaju u mirovanju, pogoršavaju navečer i ublažavaju pokretom. PLMD obilježavaju ponavljajući trzaji nogu tijekom spavanja — dijagnoza zahtijeva PSG.
-
-*Prevalencija:* RLS 5--10% opće populacije; žene 1,5--2× češće. U praksi s 2.000 pacijenata: *100--200 pacijenata s RLS-om*, većina pogrešno liječena kao „anksioznost".
+#v(4pt)
+#pitanja-box[
+  #pitanja-table((
+    [„Osjećate li neugodan osjećaj u nogama koji vas tjera da ih pomaknete?"], [Ključni URGED kriterij — nagon za pokretanjem],
+    [„Je li gori kad mirujete — kad sjedite ili ležite?"], [Pogoršanje u mirovanju = drugi kriterij],
+    [„Pomaže li hodanje ili pomicanje nogu?"], [Poboljšanje pokretom = treći kriterij],
+    [„Je li problem gori navečer i noću?"], [Cirkadijani obrazac = četvrti kriterij],
+    [„Uzimate li antihistaminike, antidepresive ili lijekove protiv mučnine?"], [Česti jatrogeni pogoršavači RLS-a],
+    [„Kaže li vam partner da vam se noge trzu u snu?"], [Pozitivno → sumnja na PLMD (zahtijeva PSG)],
+  ))
+]
 
 // === Kako prepoznati? ===
 == Kako prepoznati?
+
+RLS je neurološki poremećaj s neodoljivim nagonom za pokretanjem nogu uz neugodne senzacije; PLMD obilježavaju ponavljajući trzaji nogu tijekom sna. Prevalencija: 5–10% opće populacije; u praksi s 2.000 pacijenata: 100–200 pacijenata s RLS-om.
 
 *URGED mnemonik* -- svih 5 kriterija mora biti prisutno:
 - #strong[U]rge to move -- nagon za kretanjem uz neugodne senzacije
@@ -96,7 +103,6 @@
   [*21--30*], [*Teški*],
   [*31--40*], [*Vrlo teški*],
 )
-#set text(size: 9.5pt)
 
 === Laboratorijska obrada
 
@@ -109,7 +115,7 @@
 *PSG* -- NIJE potrebna za RLS. Indicirana samo za PLMD i pri sumnji na komorbidnu OSA-u.
 
 // === Crvene zastavice ===
-#v(4pt)
+#v(3pt)
 #crvena-zastavica[
   *Augmentacija* -- najvažnija crvena zastavica (30--50% na DA; rizik 7--10%/god.):
   - Simptomi se javljaju *ranije u danu*
@@ -149,7 +155,6 @@
   [*75--100 ng/mL*], [*SAMO IV* suplementacija (oralno neučinkovito)],
   [*≥100 ng/mL*], [Suplementacija nije indicirana],
 )
-#set text(size: 9.5pt)
 
 *Oralno:* Željezov sulfat 325 mg (65 mg elem. Fe) + vitamin C 100--200 mg, *svaki drugi dan* (bolja apsorpcija). Natašte. Razdvojiti od antacida/IPP/levotiroksina. Kontrola feritina za 8--12 tjedana. Učinak na RLS: 4--12 tjedana.
 
@@ -164,14 +169,14 @@
     [*Gabapentin*\ #text(size: 7pt)[(α2δ ligand)]],
     [300--1800 mg\ t½ 5--7 h],
     [Renalno\ 100%],
-    [CNS depresanti *Y*\ Antacidi (↓ apsorpcija)],
+    [CNS depresanti *⚠*\ Antacidi (↓ apsorpcija)],
     [✓],
   ),
   (
     [*Pregabalin*\ #text(size: 7pt)[(α2δ ligand)]],
     [75--450 mg\ t½ 6 h],
     [Renalno\ 90%],
-    [CNS depresanti *Y*],
+    [CNS depresanti *⚠*],
     [✓],
   ),
 ))
@@ -205,7 +210,6 @@
   [*3 mjeseca*], [IRLS ponovo. Odgovor na terapiju? Augmentacija?],
   [*Svaka kontrola*], [Kod pacijenata na DA: „Simptomi ranije u danu? Šire se na ruke?" + kontrola impulsa.],
 )
-#set text(size: 9.5pt)
 
 // === Kada uputiti ===
 == Kada uputiti specijalistu?

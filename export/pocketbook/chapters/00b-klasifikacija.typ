@@ -107,4 +107,38 @@
       ]
     )
   ]
+
+  #v(6pt)
+
+  // --- Prevalence visualization ---
+  #text(weight: "bold", fill: color-teal, size: 8.5pt)[Koliko su česti? Procjena za praksu od 2.000 pacijenata]
+  #v(3pt)
+
+  #let prev-bar(name, low, high, color) = {
+    let max-val = 700
+    let bar-width = calc.min(high / max-val * 100, 100)
+    block(below: 2pt)[
+      #grid(
+        columns: (35%, 50%, 15%),
+        column-gutter: 3pt,
+        align: (right + horizon, left + horizon, left + horizon),
+        text(size: 6.5pt, fill: color-gray)[#name],
+        box(width: 100%, height: 7pt, radius: 1pt, fill: rgb("#e5e7eb"), clip: true,
+          box(width: bar-width * 1%, height: 100%, radius: 1pt, fill: color)
+        ),
+        text(size: 6pt, fill: color-gray)[#low–#high],
+      )
+    ]
+  }
+
+  #prev-bar("Nedovoljan san", 300, 700, cat-hypersomnia)
+  #prev-bar("Nesanica", 200, 300, cat-insomnia)
+  #prev-bar("OSA (neliječena)", 150, 400, cat-breathing)
+  #prev-bar("Bruksizam", 160, 260, cat-movement)
+  #prev-bar("RLS", 100, 200, cat-movement)
+  #prev-bar("Noćne more", 40, 160, cat-parasomnia)
+  #prev-bar("NREM parasomnije", 20, 80, cat-parasomnia)
+  #prev-bar("Cirkadijani", 20, 60, cat-circadian)
+  #prev-bar("RBD", 15, 40, cat-parasomnia)
+  #prev-bar("Narkolepsija/IH", 1, 2, cat-hypersomnia)
 ]

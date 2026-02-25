@@ -20,7 +20,7 @@
   stroke: (left: 2pt + color-gray),
   text(size: 8pt, style: "italic")[*Zdravko, 67 g.*, supruga kaže da „udara rukama, viče i pada iz kreveta u snu" — počelo prije 2 godine. Epizode u drugoj polovici noći. On se ničega ne sjeća. U posljednje vrijeme primjećuje „sporije hodanje i trnu mu prsti."]
 )
-#v(4pt)
+#v(3pt)
 
 #brzi-pregled[
   #set text(size: 8.5pt)
@@ -34,7 +34,7 @@
   )
 ]
 
-#v(6pt)
+#v(4pt)
 #kljucna-poruka[
   + *RBD = prozor u budućnost mozga.* >80% razvit će PD, DLB ili MSA unutar 10--15 godina. Rana dijagnoza omogućuje praćenje i pripremu.
   + *Pitajte partnera, ne samo pacijenta.* Heteroanamneza je najvažniji dijagnostički alat u PZZ.
@@ -43,17 +43,21 @@
   + *Provjerite listu lijekova.* SSRI, SNRI i beta-blokatori mogu izazvati ili demaskirati RBD.
 ]
 
-// === Definicija i patofiziologija ===
-== Definicija i patofiziologija
-
-Tijekom normalnog REM spavanja fiziološka *REM atonija* sprječava izvođenje pokreta iz snova. Kod RBD-a ta atonija izostaje -- pacijent doslovno *izvodi svoje snove*.
-
-*RBD je najsnažniji poznati prodrom alfa-sinukleinopatija* (PD, DLB, MSA) -- više od 80% razvit će neurodegenerativnu bolest unutar 10--15 godina.
-
-*Prevalencija:* 1--2% opće populacije; >50 god.: 5--13%. Muškarci 3--4× češće. U praksi s 2.000 pacijenata: *15--40 pacijenata s RBD-om* -- većina nedijagnosticiranih.
+#v(4pt)
+#pitanja-box[
+  #pitanja-table((
+    [Partner: „Je li Vaš partner ikada udarao, vikao ili se micao u snu?"], [Heteroanamneza je najvažniji dijagnostički alat],
+    [„Je li ikada pao iz kreveta tijekom spavanja?"], [Padanje iz kreveta → rizik ozljede + potvrda motorike u snu],
+    [„Sjećate li se živopisnih, nasilnih snova?"], [Sjećanje na san + motorička aktivnost = RBD],
+    [„Osjećate li gubitak njuha?"], [Anosmija + RBD → gotovo patognomonično za prodrom PD],
+    [„Primjećujete li sporije hodanje, ukočenost?"], [Rani parkinsonizam → fenokonverzija u tijeku],
+  ))
+]
 
 // === Kako prepoznati? ===
 == Kako prepoznati?
+
+RBD nastaje kad fiziološka REM atonija izostane — pacijent doslovno izvodi svoje snove. RBD je najsnažniji poznati prodrom alfa-sinukleinopatija (PD, DLB, MSA) — >80% razvit će neurodegenerativnu bolest unutar 10–15 godina. Prevalencija: u praksi s 2.000 pacijenata: 15–40 pacijenata, većina nedijagnosticiranih.
 
 *Kritični znakovi:*
 - Partner prijavljuje da se pacijent *tuče, udara, viče ili pada iz kreveta* u snu
@@ -96,7 +100,6 @@ Tijekom normalnog REM spavanja fiziološka *REM atonija* sprječava izvođenje p
   [Dob], [>50 godina], [Dječja dob], [Svaka dob],
   [Neurodeg.], [*>80%*], [Ne], [Ne],
 )
-#set text(size: 9.5pt)
 
 // === Probir i dijagnostika ===
 == Probir i dijagnostika
@@ -108,7 +111,7 @@ LOM ne postavlja definitivnu dijagnozu -- to zahtijeva *video-PSG s proširenim 
 - Osjetljivost 96%, specifičnost 56% (znatan broj lažno pozitivnih → PSG neophodan za potvrdu)
 
 // === Crvene zastavice ===
-#v(4pt)
+#v(3pt)
 #crvena-zastavica[
   - *Dob >50 + novo izvođenje snova* → visoka vjerojatnost prodroma α-sinukleinopatije → *HITNA uputnica*
   - *Ozljede pacijenta ili partnera* → subduralni hematom, frakture → sigurnost + hitna obrada
@@ -139,14 +142,14 @@ Najvažnija intervencija, *odmah*, prije dijagnostike ili farmakoterapije:
     [*Melatonin*\ #text(size: 7pt)[(1. linija)]],
     [3--12 mg\ t½ 40--60 min],
     [Hepat.\ CYP1A2],
-    [Fluvoksamin *Y*],
+    [Fluvoksamin *⚠*],
     [✓],
   ),
   (
     [*Klonazepam*\ #text(size: 7pt)[(2. linija)]],
     [0,25--2 mg\ t½ 30--40 h],
     [Hepat.\ CYP3A4],
-    [Opioidi *R*\ CNS depresanti *R*\ Alkohol *R*],
+    [Opioidi *✖*\ CNS depresanti *✖*\ Alkohol *✖*],
     [✓],
   ),
 ))
@@ -182,7 +185,6 @@ Najvažnija intervencija, *odmah*, prije dijagnostike ili farmakoterapije:
   [*6--12 mj.*], [Praćenje: hiposmija, motorički simptomi, kognitivni status.],
   [*Godišnje*], [Neurološki pregled. Pratiti fenokonverziju (tremor, bradikinezija, kognitivni pad).],
 )
-#set text(size: 9.5pt)
 
 // === Kada uputiti ===
 == Kada uputiti specijalistu?
