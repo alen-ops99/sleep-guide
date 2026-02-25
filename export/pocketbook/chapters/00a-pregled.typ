@@ -10,7 +10,7 @@
 #let disorder-card(number: 0, name: "", tagline: "", cat-color: color-teal, pitajte: "", ucinite: "", uputite: "") = {
   block(
     width: 100%,
-    below: 3pt,
+    below: 4pt,
     inset: (left: 7pt, right: 5pt, top: 3pt, bottom: 3pt),
     radius: 1.5pt,
     stroke: (left: 2.5pt + cat-color),
@@ -35,6 +35,9 @@
   #line(length: 100%, stroke: 1pt + color-teal)
   #v(1pt)
   #text(size: 6.5pt, fill: color-gray)[Za svaki poremećaj: ključno pitanje za probir, prvi korak u ambulanti, kriterij za uputnicu.]
+  #v(2pt)
+  #text(size: 6.5pt, fill: color-gray, style: "italic")[Ova stranica dizajnirana je za ispis i laminiranje — idealno za džep bijele kute.]
+  #v(2pt)
   #v(3pt)
 
   #disorder-card(

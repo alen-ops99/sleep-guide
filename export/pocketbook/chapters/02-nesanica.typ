@@ -150,6 +150,11 @@ Kronična nesanica je *subjektivna teškoća usnivanja, održavanja sna ili prer
 
 #pearl[LOM može primijeniti restrikciju sna + kontrolu podražaja i *bez* formalnog CBT-I treninga — učinak je značajan i samo s te dvije komponente.#evidence("Ib")]
 
+#v(4pt)
+#crvena-zastavica[
+  *Oprez pri restrikciji sna:* Kontraindicirana ili zahtijeva poseban oprez kod *bipolarnog poremećaja* (rizik manije), *epilepsije* (snižen prag napadaja) i pacijenata u *sigurnosno-kritičnim zanimanjima* tijekom početne faze (povećana pospanost).
+]
+
 *Dostupnost u HR:* Psiholozi s CBT-I edukacijom ograničeni na Zagreb i veće gradove. dCBT-I ima jednaku razinu dokaza, ali većina aplikacija je na engleskom.
 
 === Farmakoterapija — druga linija
@@ -204,6 +209,30 @@ Indicirani: (1) kratkoročno dok se čeka CBT-I; (2) uz CBT-I kod teške nesanic
 
 #v(4pt)
 #pearl[Eszopiclone, suvorexant, lemborexant, daridorexant, ramelteon, doxepin (3–6 mg) — *NISU dostupni u Hrvatskoj*. Ne propisivati i ne obećavati pristup.]
+
+#v(6pt)
+#text(weight: "bold", fill: color-teal, size: 9pt)[Lijekovi koji uzrokuju/pogoršavaju nesanicu]
+#v(3pt)
+
+#set text(size: 8pt)
+#table(
+  columns: (1fr, 1.5fr),
+  inset: 5pt,
+  fill: (_, row) => if row == 0 { color-teal.lighten(85%) } else if calc.rem(row, 2) == 0 { color-gray-bg } else { white },
+  table.header(
+    text(weight: "bold")[Skupina],
+    text(weight: "bold")[Primjeri],
+  ),
+  [*SSRI (aktivirajući)*], [fluoksetin, sertralin (osobito jutarnja doza)],
+  [*Kortikosteroidi*], [prednizon, metilprednizolon, deksametazon],
+  [*Beta-blokatori*], [propranolol, metoprolol, atenolol],
+  [*Teofilin/bronhodilatatori*], [teofilin, salbutamol],
+  [*Stimulansi*], [metilfenidat, modafinil, kofein],
+  [*Levotiroksin*], [previsoka doza — provjeriti TSH],
+  [*Interferoni*], [interferon-alfa],
+  [*Diuretici*], [nikturija → fragmentacija sna],
+)
+#set text(size: 9.5pt)
 
 === Posebne populacije
 

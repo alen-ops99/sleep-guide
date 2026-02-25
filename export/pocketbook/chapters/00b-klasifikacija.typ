@@ -15,6 +15,8 @@
 
   #text(fill: color-gray)[Prema ICSD-3, poremećaji spavanja dijele se u šest skupina. Boja svake kategorije koristi se dosljedno kroz cijeli priručnik.]
 
+  #text(size: 7pt, fill: color-gray)[_Uz boje, svaka kategorija nosi slovnu oznaku (N, D, H, C, P, M) za raspoznavanje u crno-bijelom ispisu._]
+
   #v(5pt)
 
   // Helper for category blocks
@@ -43,7 +45,7 @@
   // --- 1. Nesanica ---
   #cat-block(
     color: cat-insomnia,
-    name: "NESANICA",
+    name: "[N] NESANICA",
     chapters: "Poglavlje 2",
     desc: "Teškoće s usnivanjem ili održavanjem sna uz dnevne posljedice.",
   )
@@ -51,7 +53,7 @@
   // --- 2. Poremećaji disanja u snu ---
   #cat-block(
     color: cat-breathing,
-    name: "POREMEĆAJI DISANJA U SNU",
+    name: "[D] POREMEĆAJI DISANJA U SNU",
     chapters: "Poglavlje 3",
     desc: "Opstruktivna i centralna apneja — ponavljani prekidi disanja koji fragmentiraju san.",
   )
@@ -59,7 +61,7 @@
   // --- 3. Hipersomnolencija ---
   #cat-block(
     color: cat-hypersomnia,
-    name: "HIPERSOMNOLENCIJA",
+    name: "[H] HIPERSOMNOLENCIJA",
     chapters: "Poglavlja 1, 10",
     desc: "Pretjerana dnevna pospanost: najčešće nedovoljan san, rijetko narkolepsija ili idiopatska hipersomnija.",
   )
@@ -67,7 +69,7 @@
   // --- 4. Cirkadijani poremećaji ---
   #cat-block(
     color: cat-circadian,
-    name: "CIRKADIJANI POREMEĆAJI",
+    name: "[C] CIRKADIJANI POREMEĆAJI",
     chapters: "Poglavlje 4",
     desc: "Neusklađenost biološkog sata s društvenim rasporedom — problem vremena, ne kvalitete sna.",
   )
@@ -75,7 +77,7 @@
   // --- 5. Parasomnije ---
   #cat-block(
     color: cat-parasomnia,
-    name: "PARASOMNIJE",
+    name: "[P] PARASOMNIJE",
     chapters: "Poglavlja 6, 7, 9",
     desc: "Neželjeni doživljaji ili ponašanja u snu: noćne more, mjesečarenje, izvođenje snova (RBD).",
   )
@@ -83,7 +85,7 @@
   // --- 6. Poremećaji pokreta ---
   #cat-block(
     color: cat-movement,
-    name: "POREMEĆAJI POKRETA",
+    name: "[M] POREMEĆAJI POKRETA",
     chapters: "Poglavlja 5, 8",
     desc: "Ponavljani pokreti koji ometaju san: sindrom nemirnih nogu (RLS) i bruksizam.",
   )

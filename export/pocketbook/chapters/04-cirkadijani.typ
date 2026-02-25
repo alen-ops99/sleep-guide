@@ -18,7 +18,7 @@
   radius: 2pt,
   fill: color-gray-bg,
   stroke: (left: 2pt + color-gray),
-  text(size: 8pt, style: "italic")[*Luka, 17 g.*, majka ga dovodi jer „ne može zaspati". U krevet ide u 23h, ali zaspi tek u 02–03h. Ujutro se jedva budi za školu. Vikendom? Spava od 03h do 12h — „odlično se naspava". Pedijatar propisao zolpidem — bez učinka.]
+  text(size: 8pt, style: "italic")[*Luka, 17 g.*, majka ga dovodi jer „ne može zaspati". U krevet ide u 23h, ali zaspi tek u 02–03h. Ujutro se jedva budi za školu. Vikendom? Spava od 03h do 12h — „odlično se naspava". Pedijatar propisao zolpidem — bez učinka (zolpidem nije indiciran u maloljetnika).]
 )
 #v(4pt)
 

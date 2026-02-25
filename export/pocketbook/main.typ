@@ -60,6 +60,8 @@
 
 #include "appendices/A-farmakologija-pregled.typ"
 #include "appendices/B-dnevnik-spavanja.typ"
+#include "appendices/C-indeks-lijekova.typ"
+#include "appendices/D-posebne-populacije.typ"
 
 // --- Back Page ---
 #include "chapters/99-back-page.typ"
