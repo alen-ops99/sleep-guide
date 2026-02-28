@@ -2507,7 +2507,9 @@ function screeningApp() {
     // --- Helper methods ---
 
     timeToMinutes(t) {
+      if (!t || typeof t !== 'string') return 0;
       const [h, m] = t.split(':').map(Number);
+      if (isNaN(h)) return 0;
       return h * 60 + (m || 0);
     },
 
@@ -2526,10 +2528,10 @@ function screeningApp() {
         case 3:
           return a.loudSnoring !== null && a.witnessedApnea !== null
             && a.dryMouth !== null && a.bmi !== null && a.naps !== null
-            && (a.naps !== true || a.napRefreshing !== null);
+            && (a.naps !== true || (a.napRefreshing !== null && a.napDuration !== null));
         case 4:
           return a.fatigueSleepiness !== null && a.cataplexy !== null && a.shortSleep !== null
-            && ((a.fatigueSleepiness !== 'sleepiness' && a.fatigueSleepiness !== 'both') || a.sleepinessSeverity !== null);
+            && ((a.fatigueSleepiness !== 'sleepiness' && a.fatigueSleepiness !== 'both') || (a.sleepinessSeverity !== null && a.sleepinessPattern !== null));
         case 5:
           return a.nremCurrently !== null && a.rbdMovements !== null
             && a.bruxism !== null && a.nocturnalEating !== null

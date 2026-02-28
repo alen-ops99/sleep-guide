@@ -1,4 +1,4 @@
-const CACHE_NAME = 'sleep-guide-v3';
+const CACHE_NAME = 'sleep-guide-v4';
 const BASE = '/sleep-guide';
 
 // Core assets to cache immediately
@@ -64,7 +64,7 @@ self.addEventListener('fetch', (event) => {
             return cachedResponse;
           }
           // If the request is for a page, return the cached screening tool
-          if (event.request.headers.get('accept').includes('text/html')) {
+          if (event.request.headers.get('accept')?.includes('text/html')) {
             return caches.match(BASE + '/screening/interactive-screening/');
           }
         });
