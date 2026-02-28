@@ -100,7 +100,11 @@ Narkolepsija je kronična neurološka bolest — nemogućnost mozga da regulira 
 
 *Dijagnozu narkolepsije MORA postaviti specijalist* na temelju PSG + MSLT (test multiplih latencija spavanja) ili hipokretina-1 u likvoru.
 
+#pearl[*MSLT zamke:* Granični prag od 8 min NIJE biološki prag — ~15% narkoleptičara ima latenciju >8 min. Antidepresivi suprimiraju SOREMP-ove → lažno negativan MSLT (obavezno isključiti ≥2 tj. prije; fluoksetin 6 tj.). Nedovoljan san prije MSLT-a daje lažno pozitivne rezultate. Pošaljite pacijenta na MSLT *pripremljenog*: ≥8 h u krevetu × 2 tj., aktigrafija.]
+
 #pearl[Pitanje o katapleksiji je *najvažnije pitanje koje LOM može postaviti*. Većina bolesnika nikad nije upitana jer ne znaju da je to simptom.]
+
+#pearl[*Parcijalna katapleksija* je mnogo češća od potpunog kolapsa — pad čeljusti, klonulost glave, podkošavanje koljena, ispuštanje predmeta iz ruke. Okidač su *pozitivne emocije* (smijeh, iznenađenje). Ako je okidač kašalj → pomislite na sinkopalni kašalj, ne katapleksiju.]
 
 // === Crvene zastavice ===
 #v(3pt)
@@ -152,7 +156,9 @@ IH je poremećaj centralne hipersomnolencije s *kroničnom EDS-om* unatoč adekv
 
 *Ključni dijagnostički korak u PZZ:* Dati pacijentu instrukciju da *2 tjedna spava bez alarma (≥9–10 h)*. Ako se EDS potpuno povuče → nedovoljan san, ne IH. Ako perzistira → uputiti specijalistu.
 
-#pearl[Pitanje o inerciji spavanja je *najspecifičniji trag za IH* — „Koliko vam treba da se potpuno probudite?“ >30 min uz konfuziju snažno upućuje na IH.]
+#pearl[Pitanje o inerciji spavanja je *najspecifičniji trag za IH* — „Koliko vam treba da se potpuno probudite?” >30 min uz konfuziju snažno upućuje na IH.]
+
+#pearl[*Razlikovanje pospanosti od umora na kliničkom pregledu:* Pospanost = „Oči mi se zatvaraju, glava pada, ako sjednem zaspit ću.” Umor = „Nemam energije u tijelu, mišići su iscrpljeni, ali ne moram nužno zaspati.” Razlika je ključna jer upućuje na potpuno različite dijagnostičke puteve.]
 
 // === Praćenje ===
 == Praćenje

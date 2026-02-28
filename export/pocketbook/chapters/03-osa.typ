@@ -162,9 +162,11 @@ OSA je poremećaj disanja u snu s ponavljanim epizodama kolapsa gornjeg dišnog 
 
 CPAP je zlatni standard za umjerenu i tešku OSA-u. Pulmolog propisuje, ali *LOM je ključan za adherenciju* (30--50% prestane unutar 1 godine).
 
-- Pitati na *svakoj kontroli:* „Koristite li CPAP svaku noć? Koliko sati?“ (cilj: ≥4 h/noć, ≥70% noći)
+- Pitati na *svakoj kontroli:* „Koristite li CPAP svaku noć? Koliko sati?” (cilj: ≥4 h/noć, ≥70% noći)
 - Identificirati barijere: suhoća nosa → grijani ovlaživač; klaustrofobija → promjena maske
 - Značajno mršavljenje → retitracija CPAP-a
+
+#pearl[*Prva maska vjerojatno neće biti dobra* — recite to pacijentu unaprijed. Dr. Silber (specijalist za spavanje s OSA-om) promijenio je 6+ sučelja prije optimalnog. Traka za usta > traka za bradu kod curenja zraka na nosnim jastučićima.]
 
 === Oralni uređaj (MAD)
 
@@ -200,6 +202,8 @@ CSA nastaje zbog *smanjenog ili odsutnog respiratornog napora* — mozak prestaj
 *Uloga LOM-a:* (1) Identificirati rizične pacijente (HF, opioidi, CVI). (2) Optimizirati liječenje srčanog zatajenja — to može eliminirati CSA. (3) Uputiti na PSG u laboratoriju.
 
 #pearl[*ASV je KONTRAINDICIRAN kod HFrEF (EF ≤45%).* Studija SERVE-HF pokazala povećanu smrtnost. Ako pacijent s HFrEF koristi ASV → hitno kontaktirati kardiologa i pulmologa.]
+
+#pearl[*Tretmanski emergentna CSA:* Kad se na CPAP downloadu pojave centralne apneje: (1) isključiti EPR/flex, (2) prebaciti s auto-CPAP-a na fiksni tlak, (3) ako se ne razriješi u 1 mjesec — neće ni u 3; uputiti specijalistu. Samo 1/3 se potpuno razriješi.]
 
 // === Praćenje ===
 == Praćenje
@@ -244,8 +248,10 @@ CSA nastaje zbog *smanjenog ili odsutnog respiratornog napora* — mozak prestaj
   [BZD za „nesanicu“ bez isključenja OSA-e], [Potencijalno fatalno -- sedativi pogoršavaju apneje],
   [Liječenje samo hipertenzije bez probira], [OSA najčešći sekund. uzrok rezistentne HTN],
   [CPAP bez praćenja adherencije], [CPAP bez praćenja = CPAP u ladici],
-  [Neprepoznavanje COMISA-e], [„Ne može spavati“ + „ne podnosi CPAP“ → CBT-I paralelno],
+  [Neprepoznavanje COMISA-e], [„Ne može spavati” + „ne podnosi CPAP” → CBT-I paralelno],
 ))
+
+#pearl[*Svaki pacijent s moždanim udarom treba probir na OSA-u* — samo 2% ih trenutno dobiva. OSA = 3× veći rizik CVI-a (mehanizam: atrijska fibrilacija). 70--90% akutnih CVI pacijenata razvije OSA-u.]
 
 #literatura((
   [Benjafield AV et al. Estimation of the global prevalence and burden of obstructive sleep apnoea: a literature-based analysis. _Lancet Respir Med._ 2019;7(8):687–698.],

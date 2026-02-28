@@ -187,6 +187,10 @@ Potpuna eliminacija smjenskog rada je idealna, ali rijetko praktična.
 - *Tamne naočale:* Na putu kući nakon noćne smjene
 - *Rotacija u smjeru kazaljke na satu* (jutarnja → popodnevna → noćna)
 
+#pearl[*Strateški drijemež* je jedina preporuka razine "standard" za smjenski rad. Manje od 45 min, prije ili na početku smjene. Kombinacija drijemež + kofein sinergistički djeluje. Drijemež >50 min narušava dnevni san.]
+
+#pearl[*Slobodni dani noćnog smjenara:* Umjesto potpunog prebacivanja (nerealno) ili zadržavanja noćnog rasporeda (izolacija), koristiti "kompromisnu poziciju sna" — spavati od 03:00 do 12:00. Očuvani obiteljski kontakt uz podjednak kognitivni učinak.]
+
 *Zdravstveni probir* za smjenske radnike >5 god.: GUK, HbA1c, lipidogram, RR, STOP-BANG za OSA.
 
 === Farmakoterapija
