@@ -1,0 +1,306 @@
+{% extends "main.html" %}
+
+{% block tabs %}
+  {{ super() }}
+{% endblock %}
+
+{% block content %}
+<div class="questionnaire-app" x-cloak x-data="{
+  q1: null, q2: null, q3: null, q4: null, q5: null,
+  q6_1: null, q6_2: null, q6_3: null, q6_4: null,
+  q7: null, q8: null, q9: null, q10: null,
+  displayScore: 0,
+  get q6score() {
+    return (this.q6_1 === true || this.q6_2 === true || this.q6_3 === true || this.q6_4 === true) ? 1 : 0;
+  },
+  get score() {
+    if (!this.allAnswered) return 0;
+    let s = 0;
+    if (this.q1 === true) s++;
+    if (this.q2 === true) s++;
+    if (this.q3 === true) s++;
+    if (this.q4 === true) s++;
+    if (this.q5 === true) s++;
+    s += this.q6score;
+    if (this.q7 === true) s++;
+    if (this.q8 === true) s++;
+    if (this.q9 === true) s++;
+    if (this.q10 === true) s++;
+    return s;
+  },
+  get answeredCount() {
+    return [this.q1, this.q2, this.q3, this.q4, this.q5,
+            this.q6_1, this.q6_2, this.q6_3, this.q6_4,
+            this.q7, this.q8, this.q9, this.q10].filter(v => v !== null).length;
+  },
+  get allAnswered() {
+    return this.q1 !== null && this.q2 !== null && this.q3 !== null &&
+           this.q4 !== null && this.q5 !== null &&
+           this.q6_1 !== null && this.q6_2 !== null &&
+           this.q6_3 !== null && this.q6_4 !== null &&
+           this.q7 !== null && this.q8 !== null &&
+           this.q9 !== null && this.q10 !== null;
+  },
+  animateScoreUp() {
+    const target = this.score;
+    const duration = 600;
+    const start = performance.now();
+    const from = this.displayScore;
+    const step = (now) => {
+      const elapsed = now - start;
+      const progress = Math.min(elapsed / duration, 1);
+      const ease = 1 - Math.pow(1 - progress, 3);
+      this.displayScore = Math.round(from + (target - from) * ease);
+      if (progress < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  },
+  get interpretation() {
+    const s = this.score;
+    if (s < 5) return 'RBD malo vjerojatan';
+    return 'Pozitivan probir — moguć RBD, potrebna daljnja obrada';
+  },
+  get interpretationDetail() {
+    const s = this.score;
+    if (s < 5) return '';
+    return 'Osjetljivost 96%. Potrebna video-polisomnografija (v-PSG) za potvrdu.';
+  },
+  get severityClass() {
+    const s = this.score;
+    if (s < 5) return 'severity-normal';
+    return 'severity-severe';
+  },
+  copySuccess: false,
+  copyResult() {
+    let text = 'UPITNIK ZA PROBIR REM POREMEĆAJA PONAŠANJA U SNU (RBDSQ)\n';
+    text += '======================================\n';
+    text += 'Datum: ' + new Date().toLocaleDateString('hr-HR') + '\n\n';
+    text += 'UKUPAN REZULTAT: ' + this.score + ' / 10\n';
+    text += 'INTERPRETACIJA: ' + this.interpretation + '\n';
+    if (this.interpretationDetail) {
+      text += 'DETALJ: ' + this.interpretationDetail + '\n';
+    }
+    text += '\nODGOVORI:\n';
+    const qs = [
+      { n: '1', t: 'Imate li ponekad vrlo žive snove?', a: this.q1 },
+      { n: '2', t: 'Jesu li Vaši snovi ponekad agresivnog ili uzbudljivog sadržaja?', a: this.q2 },
+      { n: '3', t: 'Podudara li se sadržaj Vaših snova s Vašim ponašanjem tijekom spavanja?', a: this.q3 },
+      { n: '4', t: 'Znate li da Vam se ruke ili noge pokreću tijekom spavanja?', a: this.q4 },
+      { n: '5', t: 'Jeste li se tijekom spavanja ikad ozlijedili ili ozlijedili osobu s kojom spavate?', a: this.q5 },
+      { n: '6.1', t: 'Govorite, vičete, psujete ili se smijete glasno u snu?', a: this.q6_1 },
+      { n: '6.2', t: 'Naglo pokrećete ruke ili noge u snu?', a: this.q6_2 },
+      { n: '6.3', t: 'Izvodite složene pokrete u snu?', a: this.q6_3 },
+      { n: '6.4', t: 'Padaju Vam stvari s noćnog ormarića ili predmeti padaju oko kreveta?', a: this.q6_4 },
+      { n: '7', t: 'Jeste li se ikad probudili zbog vlastitih pokreta u snu?', a: this.q7 },
+      { n: '8', t: 'Sjećate li se nakon buđenja sadržaja snova prilično dobro?', a: this.q8 },
+      { n: '9', t: 'Je li Vaš san često poremećen?', a: this.q9 },
+      { n: '10', t: 'Imate li ili ste imali neku bolest živčanog sustava?', a: this.q10 }
+    ];
+    qs.forEach(q => {
+      text += '  ' + q.n + '. ' + q.t + ' — ' + (q.a ? 'DA' : 'NE') + '\n';
+    });
+    text += '\nBodovanje Q6: ' + (this.q6score === 1 ? '1 bod (barem jedan DA)' : '0 bodova') + '\n';
+    text += '\nGenerirano pomoću: Vodič za poremećaje spavanja u PZZ\n';
+    text += 'Napomena: Upitnik nije dijagnostički instrument.\n';
+
+    navigator.clipboard.writeText(text).then(() => {
+      this.copySuccess = true;
+      setTimeout(() => this.copySuccess = false, 2000);
+    });
+  },
+  reset() {
+    this.q1 = null; this.q2 = null; this.q3 = null;
+    this.q4 = null; this.q5 = null;
+    this.q6_1 = null; this.q6_2 = null;
+    this.q6_3 = null; this.q6_4 = null;
+    this.q7 = null; this.q8 = null;
+    this.q9 = null; this.q10 = null;
+    this.copySuccess = false;
+    window.scrollTo(0, 0);
+  }
+}">
+
+  <!-- Header -->
+  <div class="questionnaire-header">
+    <h1>Upitnik za probir REM poremećaja ponašanja u snu (RBDSQ)</h1>
+    <div class="subtitle">Probir za poremećaj ponašanja u REM spavanju</div>
+    <div class="progress-badge" x-show="answeredCount > 0 && !allAnswered" x-transition>
+      <span x-text="answeredCount"></span> / 13 odgovoreno
+    </div>
+  </div>
+
+  <!-- Question 1 -->
+  <div class="question-card" :class="{'answered': q1 !== null}">
+    <div class="question-number">1</div>
+    <div class="question-text">Imate li ponekad vrlo žive snove?</div>
+    <div class="yn-buttons">
+      <button class="yn-btn" :class="{'selected-yes': q1 === true}" @click="q1 = true">Da</button>
+      <button class="yn-btn" :class="{'selected-no': q1 === false}" @click="q1 = false">Ne</button>
+    </div>
+  </div>
+
+  <!-- Question 2 -->
+  <div class="question-card" :class="{'answered': q2 !== null}">
+    <div class="question-number">2</div>
+    <div class="question-text">Jesu li Vaši snovi ponekad agresivnog ili uzbudljivog sadržaja (npr. borba, bježanje, tučnjava)?</div>
+    <div class="yn-buttons">
+      <button class="yn-btn" :class="{'selected-yes': q2 === true}" @click="q2 = true">Da</button>
+      <button class="yn-btn" :class="{'selected-no': q2 === false}" @click="q2 = false">Ne</button>
+    </div>
+  </div>
+
+  <!-- Question 3 -->
+  <div class="question-card" :class="{'answered': q3 !== null}">
+    <div class="question-number">3</div>
+    <div class="question-text">Podudara li se sadržaj Vaših snova s Vašim ponašanjem tijekom spavanja?</div>
+    <div class="yn-buttons">
+      <button class="yn-btn" :class="{'selected-yes': q3 === true}" @click="q3 = true">Da</button>
+      <button class="yn-btn" :class="{'selected-no': q3 === false}" @click="q3 = false">Ne</button>
+    </div>
+  </div>
+
+  <!-- Question 4 -->
+  <div class="question-card" :class="{'answered': q4 !== null}">
+    <div class="question-number">4</div>
+    <div class="question-text">Znate li da Vam se ruke ili noge pokreću tijekom spavanja?</div>
+    <div class="yn-buttons">
+      <button class="yn-btn" :class="{'selected-yes': q4 === true}" @click="q4 = true">Da</button>
+      <button class="yn-btn" :class="{'selected-no': q4 === false}" @click="q4 = false">Ne</button>
+    </div>
+  </div>
+
+  <!-- Question 5 -->
+  <div class="question-card" :class="{'answered': q5 !== null}">
+    <div class="question-number">5</div>
+    <div class="question-text">Jeste li se tijekom spavanja ikad ozlijedili ili ozlijedili osobu s kojom spavate?</div>
+    <div class="yn-buttons">
+      <button class="yn-btn" :class="{'selected-yes': q5 === true}" @click="q5 = true">Da</button>
+      <button class="yn-btn" :class="{'selected-no': q5 === false}" @click="q5 = false">Ne</button>
+    </div>
+  </div>
+
+  <!-- Question 6 — Group -->
+  <div class="section-divider">Pitanje 6</div>
+
+  <div class="question-card" style="margin-bottom: 0.5rem;">
+    <div class="question-number">6</div>
+    <div class="question-text" style="margin-bottom: 0;">Jeste li primijetili ili Vam je netko rekao da tijekom spavanja radite nešto od sljedećeg:</div>
+  </div>
+
+  <!-- Sub-item 6.1 -->
+  <div class="question-card" :class="{'answered': q6_1 !== null}" style="margin-left: 1.5rem;">
+    <div class="question-number">6.1</div>
+    <div class="question-text">Govorite, vičete, psujete ili se smijete glasno u snu?</div>
+    <div class="yn-buttons">
+      <button class="yn-btn" :class="{'selected-yes': q6_1 === true}" @click="q6_1 = true">Da</button>
+      <button class="yn-btn" :class="{'selected-no': q6_1 === false}" @click="q6_1 = false">Ne</button>
+    </div>
+  </div>
+
+  <!-- Sub-item 6.2 -->
+  <div class="question-card" :class="{'answered': q6_2 !== null}" style="margin-left: 1.5rem;">
+    <div class="question-number">6.2</div>
+    <div class="question-text">Naglo pokrećete ruke ili noge u snu?</div>
+    <div class="yn-buttons">
+      <button class="yn-btn" :class="{'selected-yes': q6_2 === true}" @click="q6_2 = true">Da</button>
+      <button class="yn-btn" :class="{'selected-no': q6_2 === false}" @click="q6_2 = false">Ne</button>
+    </div>
+  </div>
+
+  <!-- Sub-item 6.3 -->
+  <div class="question-card" :class="{'answered': q6_3 !== null}" style="margin-left: 1.5rem;">
+    <div class="question-number">6.3</div>
+    <div class="question-text">Izvodite složene pokrete u snu (npr. mahanje, udaranje, gestikuliranje)?</div>
+    <div class="yn-buttons">
+      <button class="yn-btn" :class="{'selected-yes': q6_3 === true}" @click="q6_3 = true">Da</button>
+      <button class="yn-btn" :class="{'selected-no': q6_3 === false}" @click="q6_3 = false">Ne</button>
+    </div>
+  </div>
+
+  <!-- Sub-item 6.4 -->
+  <div class="question-card" :class="{'answered': q6_4 !== null}" style="margin-left: 1.5rem;">
+    <div class="question-number">6.4</div>
+    <div class="question-text">Padaju Vam stvari s noćnog ormarića ili predmeti padaju oko kreveta?</div>
+    <div class="yn-buttons">
+      <button class="yn-btn" :class="{'selected-yes': q6_4 === true}" @click="q6_4 = true">Da</button>
+      <button class="yn-btn" :class="{'selected-no': q6_4 === false}" @click="q6_4 = false">Ne</button>
+    </div>
+  </div>
+
+  <!-- Question 7 -->
+  <div class="section-divider">Nastavak</div>
+
+  <div class="question-card" :class="{'answered': q7 !== null}">
+    <div class="question-number">7</div>
+    <div class="question-text">Jeste li se ikad probudili zbog vlastitih pokreta u snu?</div>
+    <div class="yn-buttons">
+      <button class="yn-btn" :class="{'selected-yes': q7 === true}" @click="q7 = true">Da</button>
+      <button class="yn-btn" :class="{'selected-no': q7 === false}" @click="q7 = false">Ne</button>
+    </div>
+  </div>
+
+  <!-- Question 8 -->
+  <div class="question-card" :class="{'answered': q8 !== null}">
+    <div class="question-number">8</div>
+    <div class="question-text">Sjećate li se nakon buđenja sadržaja snova prilično dobro?</div>
+    <div class="yn-buttons">
+      <button class="yn-btn" :class="{'selected-yes': q8 === true}" @click="q8 = true">Da</button>
+      <button class="yn-btn" :class="{'selected-no': q8 === false}" @click="q8 = false">Ne</button>
+    </div>
+  </div>
+
+  <!-- Question 9 -->
+  <div class="question-card" :class="{'answered': q9 !== null}">
+    <div class="question-number">9</div>
+    <div class="question-text">Je li Vaš san često poremećen?</div>
+    <div class="yn-buttons">
+      <button class="yn-btn" :class="{'selected-yes': q9 === true}" @click="q9 = true">Da</button>
+      <button class="yn-btn" :class="{'selected-no': q9 === false}" @click="q9 = false">Ne</button>
+    </div>
+  </div>
+
+  <!-- Question 10 -->
+  <div class="question-card" :class="{'answered': q10 !== null}">
+    <div class="question-number">10</div>
+    <div class="question-text">Imate li ili ste imali neku bolest živčanog sustava (npr. moždani udar, upalu mozga, Parkinsonovu bolest)?</div>
+    <div class="yn-buttons">
+      <button class="yn-btn" :class="{'selected-yes': q10 === true}" @click="q10 = true">Da</button>
+      <button class="yn-btn" :class="{'selected-no': q10 === false}" @click="q10 = false">Ne</button>
+    </div>
+  </div>
+
+  <!-- Score Display -->
+  <div class="score-display score-revealed" x-show="allAnswered" x-transition
+       x-effect="if (allAnswered) animateScoreUp()">
+    <div class="score-value">
+      <span x-text="displayScore"></span>
+      <span class="score-max">/ 10</span>
+    </div>
+    <div class="score-label">Ukupan rezultat</div>
+  </div>
+
+  <!-- Interpretation -->
+  <div class="interpretation-card"
+       :class="severityClass"
+       x-show="allAnswered"
+       x-transition>
+    <div class="interpretation-label" x-text="interpretation"></div>
+    <div class="interpretation-detail" x-show="interpretationDetail" x-text="interpretationDetail"></div>
+  </div>
+
+  <!-- Action Buttons -->
+  <div class="action-buttons" x-show="allAnswered" x-transition>
+    <button class="btn-action primary"
+            :class="{'btn-copy-success': copySuccess}"
+            @click="copyResult()"
+            x-text="copySuccess ? 'Kopirano!' : 'Kopiraj rezultat'">
+    </button>
+    <button class="btn-action" @click="window.print()">Ispiši</button>
+    <button class="btn-action" @click="reset()">Ispočetka</button>
+  </div>
+
+</div>
+
+<style>[x-cloak] { display: none !important; }</style>
+
+{% endblock %}

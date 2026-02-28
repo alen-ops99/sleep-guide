@@ -1,0 +1,258 @@
+{% extends "main.html" %}
+
+{% block tabs %}
+  {{ super() }}
+{% endblock %}
+
+{% block content %}
+<div class="questionnaire-app" x-cloak x-data="{
+  stop: { s: null, t: null, o: null, p: null },
+  bang: { b: null, a: null, n: null, g: null },
+  displayScore: 0,
+  height: null,
+  weight: null,
+  get bmi() {
+    if (!this.height || !this.weight || this.height <= 0 || this.weight <= 0) return null;
+    const h = this.height / 100;
+    return (this.weight / (h * h)).toFixed(1);
+  },
+  get score() {
+    let count = 0;
+    Object.values(this.stop).forEach(v => { if (v === true) count++; });
+    Object.values(this.bang).forEach(v => { if (v === true) count++; });
+    return count;
+  },
+  get answeredCount() {
+    return Object.values(this.stop).filter(v => v !== null).length +
+           Object.values(this.bang).filter(v => v !== null).length;
+  },
+  get allAnswered() {
+    return Object.values(this.stop).every(v => v !== null) &&
+           Object.values(this.bang).every(v => v !== null);
+  },
+  animateScoreUp() {
+    const target = this.score;
+    const duration = 600;
+    const start = performance.now();
+    const from = this.displayScore;
+    const step = (now) => {
+      const elapsed = now - start;
+      const progress = Math.min(elapsed / duration, 1);
+      const ease = 1 - Math.pow(1 - progress, 3);
+      this.displayScore = Math.round(from + (target - from) * ease);
+      if (progress < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  },
+  get interpretation() {
+    const s = this.score;
+    if (s <= 2) return 'Nizak rizik za opstruktivnu apneju u snu';
+    if (s <= 4) return 'Srednji (intermedijarni) rizik';
+    return 'Visoki rizik — indicirana polisomnografska obrada';
+  },
+  get interpretationDetail() {
+    const s = this.score;
+    if (s <= 2) return 'Niska vjerojatnost klinički značajne opstruktivne apneje u snu.';
+    if (s <= 4) return 'Umjeren rizik. Razmotriti kliničku procjenu i eventualno uputiti na polisomnografiju.';
+    return 'Visoka vjerojatnost opstruktivne apneje u snu. Preporuča se hitna polisomnografska obrada (PSG).';
+  },
+  get severityClass() {
+    const s = this.score;
+    if (s <= 2) return 'severity-normal';
+    if (s <= 4) return 'severity-moderate';
+    return 'severity-severe';
+  },
+  copySuccess: false,
+  copyResult() {
+    const stopLabels = {
+      s: 'Glasno hrkanje',
+      t: 'Umor / pospanost tijekom dana',
+      o: 'Opaženi prestanci disanja u snu',
+      p: 'Liječenje povišenog krvnog tlaka'
+    };
+    const bangLabels = {
+      b: 'BMI > 35',
+      a: 'Dob > 50 godina',
+      n: 'Opseg vrata > 40 cm',
+      g: 'Muški spol'
+    };
+
+    let text = 'STOP-BANG UPITNIK\n';
+    text += '=================\n';
+    text += 'Datum: ' + new Date().toLocaleDateString('hr-HR') + '\n\n';
+    text += 'UKUPAN REZULTAT: ' + this.score + ' / 8\n';
+    text += 'INTERPRETACIJA: ' + this.interpretation + '\n\n';
+    text += 'STOP:\n';
+    Object.keys(this.stop).forEach(k => {
+      text += '  ' + k.toUpperCase() + ' — ' + stopLabels[k] + ': ' + (this.stop[k] ? 'DA' : 'NE') + '\n';
+    });
+    text += '\nBANG:\n';
+    Object.keys(this.bang).forEach(k => {
+      text += '  ' + k.toUpperCase() + ' — ' + bangLabels[k] + ': ' + (this.bang[k] ? 'DA' : 'NE') + '\n';
+    });
+    if (this.bmi) {
+      text += '\nIzračunati BMI: ' + this.bmi + ' kg/m²\n';
+    }
+    text += '\nGenerirano pomoću: Vodič za poremećaje spavanja u PZZ\n';
+    text += 'Napomena: Upitnik nije dijagnostički instrument.\n';
+
+    navigator.clipboard.writeText(text).then(() => {
+      this.copySuccess = true;
+      setTimeout(() => this.copySuccess = false, 2000);
+    });
+  },
+  reset() {
+    this.stop = { s: null, t: null, o: null, p: null };
+    this.bang = { b: null, a: null, n: null, g: null };
+    this.height = null;
+    this.weight = null;
+    this.copySuccess = false;
+    window.scrollTo(0, 0);
+  }
+}">
+
+  <!-- Header -->
+  <div class="questionnaire-header">
+    <h1>STOP-BANG</h1>
+    <div class="subtitle">Brzi probir za opstruktivnu apneju u snu</div>
+    <div class="progress-badge" x-show="answeredCount > 0 && !allAnswered" x-transition>
+      <span x-text="answeredCount"></span> / 8 odgovoreno
+    </div>
+  </div>
+
+  <!-- ===== STOP Section ===== -->
+  <div class="section-divider">STOP — Pitanja za pacijenta</div>
+
+  <!-- S — Hrkanje -->
+  <div class="question-card" :class="{'answered': stop.s !== null, 'answered-yes': stop.s === true}">
+    <span class="question-number">S</span>
+    <div class="question-text">Hrčete li glasno (glasnije od razgovora ili čujno kroz zatvorena vrata)?</div>
+    <div class="yn-buttons">
+      <button class="yn-btn" :class="{'selected-yes': stop.s === true}" @click="stop.s = true">DA</button>
+      <button class="yn-btn" :class="{'selected-no': stop.s === false}" @click="stop.s = false">NE</button>
+    </div>
+  </div>
+
+  <!-- T — Umor -->
+  <div class="question-card" :class="{'answered': stop.t !== null, 'answered-yes': stop.t === true}">
+    <span class="question-number">T</span>
+    <div class="question-text">Osjećate li se često umorno, iscrpljeno ili pospano tijekom dana?</div>
+    <div class="yn-buttons">
+      <button class="yn-btn" :class="{'selected-yes': stop.t === true}" @click="stop.t = true">DA</button>
+      <button class="yn-btn" :class="{'selected-no': stop.t === false}" @click="stop.t = false">NE</button>
+    </div>
+  </div>
+
+  <!-- O — Prestanak disanja -->
+  <div class="question-card" :class="{'answered': stop.o !== null, 'answered-yes': stop.o === true}">
+    <span class="question-number">O</span>
+    <div class="question-text">Je li itko primijetio da prestajete disati ili da se gušite u snu?</div>
+    <div class="yn-buttons">
+      <button class="yn-btn" :class="{'selected-yes': stop.o === true}" @click="stop.o = true">DA</button>
+      <button class="yn-btn" :class="{'selected-no': stop.o === false}" @click="stop.o = false">NE</button>
+    </div>
+  </div>
+
+  <!-- P — Krvni tlak -->
+  <div class="question-card" :class="{'answered': stop.p !== null, 'answered-yes': stop.p === true}">
+    <span class="question-number">P</span>
+    <div class="question-text">Liječite li se ili ste se liječili od povišenog krvnog tlaka?</div>
+    <div class="yn-buttons">
+      <button class="yn-btn" :class="{'selected-yes': stop.p === true}" @click="stop.p = true">DA</button>
+      <button class="yn-btn" :class="{'selected-no': stop.p === false}" @click="stop.p = false">NE</button>
+    </div>
+  </div>
+
+  <!-- ===== BANG Section ===== -->
+  <div class="section-divider">BANG — Objektivni parametri</div>
+
+  <!-- B — BMI -->
+  <div class="question-card" :class="{'answered': bang.b !== null, 'answered-yes': bang.b === true}">
+    <span class="question-number">B</span>
+    <div class="question-text">BMI veći od 35 kg/m²?</div>
+
+    <!-- BMI Calculator -->
+    <div class="bmi-calculator">
+      <h4>Kalkulator BMI</h4>
+      <div class="bmi-fields">
+        <input type="number" x-model.number="height" placeholder="Visina (cm)" min="100" max="250" step="1">
+        <input type="number" x-model.number="weight" placeholder="Težina (kg)" min="20" max="300" step="0.1">
+      </div>
+      <div class="bmi-result" x-show="bmi !== null">
+        BMI: <strong x-text="bmi"></strong> kg/m²
+        <span x-show="bmi > 35" style="color: var(--screening-red);"> — iznad 35</span>
+        <span x-show="bmi !== null && bmi <= 35" style="color: var(--screening-green);"> — ispod ili jednako 35</span>
+      </div>
+    </div>
+
+    <div class="yn-buttons">
+      <button class="yn-btn" :class="{'selected-yes': bang.b === true}" @click="bang.b = true">DA</button>
+      <button class="yn-btn" :class="{'selected-no': bang.b === false}" @click="bang.b = false">NE</button>
+    </div>
+  </div>
+
+  <!-- A — Dob -->
+  <div class="question-card" :class="{'answered': bang.a !== null, 'answered-yes': bang.a === true}">
+    <span class="question-number">A</span>
+    <div class="question-text">Dob iznad 50 godina?</div>
+    <div class="yn-buttons">
+      <button class="yn-btn" :class="{'selected-yes': bang.a === true}" @click="bang.a = true">DA</button>
+      <button class="yn-btn" :class="{'selected-no': bang.a === false}" @click="bang.a = false">NE</button>
+    </div>
+  </div>
+
+  <!-- N — Opseg vrata -->
+  <div class="question-card" :class="{'answered': bang.n !== null, 'answered-yes': bang.n === true}">
+    <span class="question-number">N</span>
+    <div class="question-text">Opseg vrata veći od 40 cm?</div>
+    <div class="yn-buttons">
+      <button class="yn-btn" :class="{'selected-yes': bang.n === true}" @click="bang.n = true">DA</button>
+      <button class="yn-btn" :class="{'selected-no': bang.n === false}" @click="bang.n = false">NE</button>
+    </div>
+  </div>
+
+  <!-- G — Spol -->
+  <div class="question-card" :class="{'answered': bang.g !== null, 'answered-yes': bang.g === true}">
+    <span class="question-number">G</span>
+    <div class="question-text">Muški spol?</div>
+    <div class="yn-buttons">
+      <button class="yn-btn" :class="{'selected-yes': bang.g === true}" @click="bang.g = true">DA</button>
+      <button class="yn-btn" :class="{'selected-no': bang.g === false}" @click="bang.g = false">NE</button>
+    </div>
+  </div>
+
+  <!-- Score Display -->
+  <div class="score-display score-revealed" x-show="allAnswered" x-transition
+       x-effect="if (allAnswered) animateScoreUp()">
+    <div class="score-value">
+      <span x-text="displayScore"></span>
+      <span class="score-max">/ 8</span>
+    </div>
+    <div class="score-label">Ukupan rezultat</div>
+  </div>
+
+  <!-- Interpretation -->
+  <div class="interpretation-card"
+       :class="severityClass"
+       x-show="allAnswered"
+       x-transition>
+    <div class="interpretation-label" x-text="interpretation"></div>
+    <div class="interpretation-detail" x-text="interpretationDetail"></div>
+  </div>
+
+  <!-- Action Buttons -->
+  <div class="action-buttons" x-show="allAnswered" x-transition>
+    <button class="btn-action primary"
+            :class="{'btn-copy-success': copySuccess}"
+            @click="copyResult()"
+            x-text="copySuccess ? 'Kopirano!' : 'Kopiraj rezultat'">
+    </button>
+    <button class="btn-action" @click="window.print()">Ispiši</button>
+    <button class="btn-action" @click="reset()">Ispočetka</button>
+  </div>
+
+</div>
+
+<style>[x-cloak] { display: none !important; }</style>
+
+{% endblock %}

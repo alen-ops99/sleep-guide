@@ -12,9 +12,11 @@
         <meta name="author" content="Alen Juginović, dr. med.">
       
       
+        <link rel="canonical" href="https://alen-ops99.github.io/sleep-guide/">
       
       
-        <link rel="next" href="guide/01-nesanica/">
+      
+        <link rel="next" href="screening/interactive-screening/">
       
       
         
@@ -25,7 +27,7 @@
     
     
       
-        <title>Vodič za poremećaje spavanja u PZZ</title>
+        <title>Spavanje u HR</title>
       
     
     
@@ -46,12 +48,14 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Plus Jakarta Sans";--md-code-font:"JetBrains Mono"}</style>
       
     
     
       <link rel="stylesheet" href="stylesheets/custom.css">
+    
+      <link rel="stylesheet" href="stylesheets/screening.css">
     
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -60,18 +64,21 @@
     
     
   <!-- PWA Meta Tags -->
-  <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#1a237e">
+  <link rel="manifest" href="https://alen-ops99.github.io/sleep-guide/manifest.json">
+  <meta name="theme-color" content="#0f766e">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="Sleep Guide">
-  <link rel="apple-touch-icon" href="assets/icon-192.svg">
+  <meta name="apple-mobile-web-app-title" content="Spavanje u HR">
+  <link rel="apple-touch-icon" href="https://alen-ops99.github.io/sleep-guide/assets/icon-192.svg">
 
   <!-- Viewport for mobile optimization -->
   <meta name="mobile-web-app-capable" content="yes">
 
   <!-- Print stylesheet -->
-  <link rel="stylesheet" href="stylesheets/print.css" media="print">
+  <link rel="stylesheet" href="https://alen-ops99.github.io/sleep-guide/stylesheets/print.css" media="print">
+
+  <!-- Material Symbols for professional icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap">
 
   </head>
   
@@ -91,11 +98,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#o-vodicu" class="md-skip">
-          Preskoči na sadržaj
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -108,10 +110,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Zaglavlje">
-    <a href="." title="Vodič za poremećaje spavanja u PZZ" class="md-header__button md-logo" aria-label="Vodič za poremećaje spavanja u PZZ" data-md-component="logo">
+    <a href="." title="Spavanje u HR" class="md-header__button md-logo" aria-label="Spavanje u HR" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23 12h-6v-2l3.39-4H17V4h6v2l-3.38 4H23zm-8 4H9v-2l3.39-4H9V8h6v2l-3.38 4H15zm-8 4H1v-2l3.39-4H1v-2h6v2l-3.38 4H7z"/></svg>
+  <img src="assets/logo.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -122,7 +123,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Vodič za poremećaje spavanja u PZZ
+            Spavanje u HR
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -245,13 +246,12 @@
 
 <nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigacija" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Vodič za poremećaje spavanja u PZZ" class="md-nav__button md-logo" aria-label="Vodič za poremećaje spavanja u PZZ" data-md-component="logo">
+    <a href="." title="Spavanje u HR" class="md-nav__button md-logo" aria-label="Spavanje u HR" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23 12h-6v-2l3.39-4H17V4h6v2l-3.38 4H23zm-8 4H9v-2l3.39-4H9V8h6v2l-3.38 4H15zm-8 4H1v-2l3.39-4H1v-2h6v2l-3.38 4H7z"/></svg>
+  <img src="assets/logo.svg" alt="logo">
 
     </a>
-    Vodič za poremećaje spavanja u PZZ
+    Spavanje u HR
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -269,26 +269,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Početna
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
       
       <a href="." class="md-nav__link md-nav__link--active">
         
@@ -307,129 +287,245 @@
 
       </a>
       
-        
+    </li>
+  
 
-<nav class="md-nav md-nav--secondary" aria-label="Sadržaj">
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="screening/interactive-screening/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Brzi probir spavanja
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
   
   
   
     
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Sadržaj
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+    
       
-        <li class="md-nav__item">
-  <a href="#zasto-ovaj-vodic" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Zašto ovaj vodič?
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#za-koga-je-ovaj-vodic" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Za koga je ovaj vodič?
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sto-ovaj-vodic-jest-a-sto-nije" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Što ovaj vodič JEST, a što NIJE
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#kako-koristiti-ovaj-vodic" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Kako koristiti ovaj vodič
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Kako koristiti ovaj vodič">
-      <ul class="md-nav__list">
         
-          <li class="md-nav__item">
-  <a href="#edukacijski-dio-poglavlja-1-13" class="md-nav__link">
-    <span class="md-ellipsis">
       
-        Edukacijski dio (Poglavlja 1-13)
-      
-    </span>
-  </a>
-  
-</li>
         
-          <li class="md-nav__item">
-  <a href="#alat-za-probir" class="md-nav__link">
-    <span class="md-ellipsis">
       
-        Alat za probir
-      
-    </span>
-  </a>
-  
-</li>
         
-      </ul>
-    </nav>
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pregled-poremecaja" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Pregled poremećaja
-      
-    </span>
-  </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#kratice-koristene-u-vodicu" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Kratice korištene u vodiču
-      
-    </span>
-  </a>
+  <span class="md-ellipsis">
+    
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#o-autoru" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        O autoru
-      
-    </span>
-  </a>
+    Interaktivni upitnici
   
-</li>
-      
-    </ul>
+
+    
+  </span>
   
-</nav>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Interaktivni upitnici
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="questionnaires/ess-interactive/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Epworthova ljestvica pospanosti (ESS)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="questionnaires/stop-bang-interactive/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    STOP-BANG — probir apneje u snu
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="questionnaires/isi-interactive/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Indeks težine nesanice (ISI)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="questionnaires/irls-interactive/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ljestvica nemirnih nogu (IRLS)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="questionnaires/rbdsq-interactive/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Probir REM poremećaja ponašanja (RBDSQ)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
       
     </li>
   
@@ -443,6 +539,8 @@
   
     
     
+      
+        
       
         
       
@@ -485,10 +583,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
             
   
   
@@ -506,8 +604,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -524,6 +622,34 @@
   
   
     <li class="md-nav__item">
+      <a href="guide/00-uvod/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Uvod — O vodiču
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="guide/01-nesanica/" class="md-nav__link">
         
   
@@ -531,7 +657,7 @@
   <span class="md-ellipsis">
     
   
-    1. Nesanica
+    Nesanica
   
 
     
@@ -559,7 +685,7 @@
   <span class="md-ellipsis">
     
   
-    2. Opstruktivna apneja u snu
+    Opstruktivna apneja u snu
   
 
     
@@ -587,7 +713,7 @@
   <span class="md-ellipsis">
     
   
-    3. RLS / PLMD
+    Sindrom nemirnih nogu i PLMD
   
 
     
@@ -615,7 +741,7 @@
   <span class="md-ellipsis">
     
   
-    4. REM poremećaj ponašanja
+    REM poremećaj ponašanja u snu
   
 
     
@@ -643,7 +769,7 @@
   <span class="md-ellipsis">
     
   
-    5. NREM parasomnije
+    NREM parasomnije
   
 
     
@@ -671,7 +797,7 @@
   <span class="md-ellipsis">
     
   
-    6. Narkolepsija
+    Narkolepsija
   
 
     
@@ -699,7 +825,7 @@
   <span class="md-ellipsis">
     
   
-    7. Idiopatska hipersomnija
+    Idiopatska hipersomnija
   
 
     
@@ -727,7 +853,7 @@
   <span class="md-ellipsis">
     
   
-    8. Cirkadijani poremećaji
+    Cirkadijani poremećaji
   
 
     
@@ -755,7 +881,7 @@
   <span class="md-ellipsis">
     
   
-    9. Bruksizam u snu
+    Bruksizam u snu
   
 
     
@@ -783,7 +909,7 @@
   <span class="md-ellipsis">
     
   
-    10. Nedovoljan san
+    Nedovoljan san
   
 
     
@@ -811,7 +937,7 @@
   <span class="md-ellipsis">
     
   
-    11. Noćne more
+    Poremećaj noćnih mora
   
 
     
@@ -839,7 +965,7 @@
   <span class="md-ellipsis">
     
   
-    12. SRED
+    Poremećaj jedenja u snu (SRED)
   
 
     
@@ -867,7 +993,7 @@
   <span class="md-ellipsis">
     
   
-    13. Centralna apneja
+    Centralna apneja u snu
   
 
     
@@ -922,17 +1048,17 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
             
   
   
   <span class="md-ellipsis">
     
   
-    Alati za probir
+    Alati
   
 
     
@@ -943,12 +1069,12 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
   
-    Alati za probir
+    Alati
   
 
           </label>
@@ -1135,17 +1261,17 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
             
   
   
   <span class="md-ellipsis">
     
   
-    Upitnici
+    Upitnici (tiskovna verzija)
   
 
     
@@ -1156,12 +1282,12 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
   
-    Upitnici
+    Upitnici (tiskovna verzija)
   
 
           </label>
@@ -1181,7 +1307,7 @@
   <span class="md-ellipsis">
     
   
-    ESS (pospanost)
+    Epworthova ljestvica pospanosti (ESS)
   
 
     
@@ -1209,35 +1335,7 @@
   <span class="md-ellipsis">
     
   
-    STOP-BANG (apneja)
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="questionnaires/irls-hr/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    IRLS (nemirne noge)
+    STOP-BANG (apneja u snu)
   
 
     
@@ -1265,7 +1363,35 @@
   <span class="md-ellipsis">
     
   
-    ISI (nesanica)
+    Indeks težine nesanice (ISI)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="questionnaires/irls-hr/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ljestvica nemirnih nogu (IRLS)
   
 
     
@@ -1293,7 +1419,7 @@
   <span class="md-ellipsis">
     
   
-    RBDSQ (RBD)
+    Probir REM poremećaja ponašanja (RBDSQ)
   
 
     
@@ -1354,482 +1480,264 @@
               
               <article class="md-content__inner md-typeset">
                 
-<div class="home-content">
+<div class="home-content" x-data="{ expanded: null }">
 
-  <!-- Hero Section -->
-  <div class="home-hero">
-    <h1>Vodič za poremećaje spavanja</h1>
-    <p class="subtitle">Za liječnike obiteljske medicine</p>
+  <!-- App Header -->
+  <div class="app-header animate-in animate-delay-1">
+    <div class="app-header-icon">
+      <span class="material-symbols-outlined">sleep</span>
+    </div>
+    <h1 class="app-header-title">Spavanje u HR</h1>
+    <p class="app-header-subtitle">Klinički vodič za poremećaje spavanja</p>
   </div>
 
-  <!-- Quick Access Buttons -->
-  <div class="quick-access">
-    <a href="questionnaires/ess-hr/">📋 Upitnici</a>
-    <a href="screening/clinical-flowchart/">🔀 Dijagrami</a>
-    <a href="screening/dnevnik-spavanja/">📓 Dnevnik</a>
+  <!-- Hero Grid -->
+  <div class="hero-grid">
+
+    <!-- Card 1: Screening — direct link -->
+    <a href="screening/interactive-screening/" class="hero-card hero-screening animate-in animate-delay-2">
+      <div class="hero-card-icon">
+        <span class="material-symbols-outlined">vital_signs</span>
+      </div>
+      <div class="hero-card-body">
+        <div class="hero-card-title">Probir spavanja</div>
+        <div class="hero-card-desc">Interaktivni klinički probir za ordinaciju</div>
+        <div class="hero-badges">
+          <span class="hero-badge">~30 pitanja</span>
+          <span class="hero-badge">4–6 min</span>
+          <span class="hero-badge">Auto interpretacija</span>
+        </div>
+      </div>
+      <span class="material-symbols-outlined hero-card-arrow">arrow_forward</span>
+    </a>
+
+    <!-- Card 2: Klinički alati — expandable -->
+    <div class="hero-card hero-clinical animate-in animate-delay-3" @click="expanded = expanded === 'clin' ? null : 'clin'" :class="{'hero-card-active': expanded === 'clin'}">
+      <div class="hero-card-icon">
+        <span class="material-symbols-outlined">medical_services</span>
+      </div>
+      <div class="hero-card-body">
+        <div class="hero-card-title">Klinički alati</div>
+        <div class="hero-card-desc">Upitnici, predlošci i dijagrami za ordinaciju</div>
+      </div>
+      <span class="material-symbols-outlined hero-card-arrow" x-text="expanded === 'clin' ? 'expand_less' : 'expand_more'"></span>
+    </div>
+    <div class="hero-expand-panel" x-show="expanded === 'clin'"
+         x-transition:enter="expand-enter"
+         x-transition:enter-start="expand-enter-start"
+         x-transition:enter-end="expand-enter-end"
+         x-transition:leave="expand-leave"
+         x-transition:leave-start="expand-leave-start"
+         x-transition:leave-end="expand-leave-end">
+      <div class="expand-group-label">Interaktivni upitnici</div>
+      <a href="questionnaires/ess-interactive/" class="expand-item">
+        <span class="material-symbols-outlined expand-item-icon" style="color:#1e40af;">assignment</span>
+        <div class="expand-item-body">
+          <span class="expand-item-title">ESS</span>
+          <span class="expand-item-desc">Epworth — dnevna pospanost</span>
+        </div>
+        <span class="material-symbols-outlined expand-item-arrow">chevron_right</span>
+      </a>
+      <a href="questionnaires/stop-bang-interactive/" class="expand-item">
+        <span class="material-symbols-outlined expand-item-icon" style="color:#1e40af;">pulmonology</span>
+        <div class="expand-item-body">
+          <span class="expand-item-title">STOP-BANG</span>
+          <span class="expand-item-desc">Rizik za apneju</span>
+        </div>
+        <span class="material-symbols-outlined expand-item-arrow">chevron_right</span>
+      </a>
+      <a href="questionnaires/isi-interactive/" class="expand-item">
+        <span class="material-symbols-outlined expand-item-icon" style="color:#1e40af;">bedtime</span>
+        <div class="expand-item-body">
+          <span class="expand-item-title">ISI</span>
+          <span class="expand-item-desc">Težina nesanice</span>
+        </div>
+        <span class="material-symbols-outlined expand-item-arrow">chevron_right</span>
+      </a>
+      <a href="questionnaires/irls-interactive/" class="expand-item">
+        <span class="material-symbols-outlined expand-item-icon" style="color:#1e40af;">sprint</span>
+        <div class="expand-item-body">
+          <span class="expand-item-title">IRLS</span>
+          <span class="expand-item-desc">Težina nemirnih nogu</span>
+        </div>
+        <span class="material-symbols-outlined expand-item-arrow">chevron_right</span>
+      </a>
+      <a href="questionnaires/rbdsq-interactive/" class="expand-item">
+        <span class="material-symbols-outlined expand-item-icon" style="color:#1e40af;">neurology</span>
+        <div class="expand-item-body">
+          <span class="expand-item-title">RBDSQ</span>
+          <span class="expand-item-desc">REM poremećaj ponašanja</span>
+        </div>
+        <span class="material-symbols-outlined expand-item-arrow">chevron_right</span>
+      </a>
+      <div class="expand-group-label">Predlošci i dijagrami</div>
+      <a href="screening/patient-questions-hr/" class="expand-item">
+        <span class="material-symbols-outlined expand-item-icon" style="color:#1e40af;">quiz</span>
+        <div class="expand-item-body">
+          <span class="expand-item-title">Upitnik za pacijente</span>
+        </div>
+        <span class="material-symbols-outlined expand-item-arrow">chevron_right</span>
+      </a>
+      <a href="screening/clinical-flowchart/" class="expand-item">
+        <span class="material-symbols-outlined expand-item-icon" style="color:#1e40af;">account_tree</span>
+        <div class="expand-item-body">
+          <span class="expand-item-title">Dijagrami toka</span>
+        </div>
+        <span class="material-symbols-outlined expand-item-arrow">chevron_right</span>
+      </a>
+      <a href="screening/dnevnik-spavanja/" class="expand-item">
+        <span class="material-symbols-outlined expand-item-icon" style="color:#1e40af;">edit_note</span>
+        <div class="expand-item-body">
+          <span class="expand-item-title">Dnevnik spavanja</span>
+        </div>
+        <span class="material-symbols-outlined expand-item-arrow">chevron_right</span>
+      </a>
+      <a href="screening/predlozak-uputnice/" class="expand-item">
+        <span class="material-symbols-outlined expand-item-icon" style="color:#1e40af;">description</span>
+        <div class="expand-item-body">
+          <span class="expand-item-title">Predložak uputnice</span>
+        </div>
+        <span class="material-symbols-outlined expand-item-arrow">chevron_right</span>
+      </a>
+      <a href="screening/scoring-algorithms/" class="expand-item">
+        <span class="material-symbols-outlined expand-item-icon" style="color:#1e40af;">calculate</span>
+        <div class="expand-item-body">
+          <span class="expand-item-title">Algoritmi bodovanja</span>
+        </div>
+        <span class="material-symbols-outlined expand-item-arrow">chevron_right</span>
+      </a>
+      <a href="guide/14-reference/" class="expand-item">
+        <span class="material-symbols-outlined expand-item-icon" style="color:#1e40af;">menu_book</span>
+        <div class="expand-item-body">
+          <span class="expand-item-title">Reference</span>
+        </div>
+        <span class="material-symbols-outlined expand-item-arrow">chevron_right</span>
+      </a>
+    </div>
+
+    <!-- Card 3: Edukacija — expandable -->
+    <div class="hero-card hero-education animate-in animate-delay-4" @click="expanded = expanded === 'edu' ? null : 'edu'" :class="{'hero-card-active': expanded === 'edu'}">
+      <div class="hero-card-icon">
+        <span class="material-symbols-outlined">menu_book</span>
+      </div>
+      <div class="hero-card-body">
+        <div class="hero-card-title">Edukacija</div>
+        <div class="hero-card-desc">13 poglavlja kliničkog vodiča</div>
+      </div>
+      <span class="material-symbols-outlined hero-card-arrow" x-text="expanded === 'edu' ? 'expand_less' : 'expand_more'"></span>
+    </div>
+    <div class="hero-expand-panel" x-show="expanded === 'edu'"
+         x-transition:enter="expand-enter"
+         x-transition:enter-start="expand-enter-start"
+         x-transition:enter-end="expand-enter-end"
+         x-transition:leave="expand-leave"
+         x-transition:leave-start="expand-leave-start"
+         x-transition:leave-end="expand-leave-end">
+      <div class="expand-group-label">Često u ordinaciji</div>
+      <a href="guide/01-nesanica/" class="expand-item">
+        <span class="material-symbols-outlined expand-item-icon" style="color:#7c3aed;">bedtime</span>
+        <div class="expand-item-body">
+          <span class="expand-item-title">1. Nesanica</span>
+        </div>
+        <span class="material-symbols-outlined expand-item-arrow">chevron_right</span>
+      </a>
+      <a href="guide/02-osa/" class="expand-item">
+        <span class="material-symbols-outlined expand-item-icon" style="color:#7c3aed;">pulmonology</span>
+        <div class="expand-item-body">
+          <span class="expand-item-title">2. Opstruktivna apneja u snu</span>
+        </div>
+        <span class="material-symbols-outlined expand-item-arrow">chevron_right</span>
+      </a>
+      <a href="guide/13-centralna-apneja/" class="expand-item">
+        <span class="material-symbols-outlined expand-item-icon" style="color:#7c3aed;">cardiology</span>
+        <div class="expand-item-body">
+          <span class="expand-item-title">13. Centralna apneja u snu</span>
+        </div>
+        <span class="material-symbols-outlined expand-item-arrow">chevron_right</span>
+      </a>
+      <div class="expand-group-label">Često propušteni</div>
+      <a href="guide/03-rls-plmd/" class="expand-item">
+        <span class="material-symbols-outlined expand-item-icon" style="color:#7c3aed;">sprint</span>
+        <div class="expand-item-body">
+          <span class="expand-item-title">3. Nemirne noge (RLS/PLMD)</span>
+        </div>
+        <span class="material-symbols-outlined expand-item-arrow">chevron_right</span>
+      </a>
+      <a href="guide/04-rbd/" class="expand-item">
+        <span class="material-symbols-outlined expand-item-icon" style="color:#7c3aed;">neurology</span>
+        <div class="expand-item-body">
+          <span class="expand-item-title">4. REM poremećaj ponašanja</span>
+        </div>
+        <span class="material-symbols-outlined expand-item-arrow">chevron_right</span>
+      </a>
+      <a href="guide/06-narkolepsija/" class="expand-item">
+        <span class="material-symbols-outlined expand-item-icon" style="color:#7c3aed;">bolt</span>
+        <div class="expand-item-body">
+          <span class="expand-item-title">6. Narkolepsija</span>
+        </div>
+        <span class="material-symbols-outlined expand-item-arrow">chevron_right</span>
+      </a>
+      <a href="guide/07-idiopatska-hipersomnija/" class="expand-item">
+        <span class="material-symbols-outlined expand-item-icon" style="color:#7c3aed;">bed</span>
+        <div class="expand-item-body">
+          <span class="expand-item-title">7. Idiopatska hipersomnija</span>
+        </div>
+        <span class="material-symbols-outlined expand-item-arrow">chevron_right</span>
+      </a>
+      <a href="guide/08-cirkadijani-poremecaji/" class="expand-item">
+        <span class="material-symbols-outlined expand-item-icon" style="color:#7c3aed;">schedule</span>
+        <div class="expand-item-body">
+          <span class="expand-item-title">8. Cirkadijani poremećaji</span>
+        </div>
+        <span class="material-symbols-outlined expand-item-arrow">chevron_right</span>
+      </a>
+      <div class="expand-group-label">Noćni događaji</div>
+      <a href="guide/05-nrem-parasomnias/" class="expand-item">
+        <span class="material-symbols-outlined expand-item-icon" style="color:#7c3aed;">directions_walk</span>
+        <div class="expand-item-body">
+          <span class="expand-item-title">5. NREM parasomnije</span>
+        </div>
+        <span class="material-symbols-outlined expand-item-arrow">chevron_right</span>
+      </a>
+      <a href="guide/09-bruksizam/" class="expand-item">
+        <span class="material-symbols-outlined expand-item-icon" style="color:#7c3aed;">dentistry</span>
+        <div class="expand-item-body">
+          <span class="expand-item-title">9. Bruksizam</span>
+        </div>
+        <span class="material-symbols-outlined expand-item-arrow">chevron_right</span>
+      </a>
+      <a href="guide/10-nedovoljan-san/" class="expand-item">
+        <span class="material-symbols-outlined expand-item-icon" style="color:#7c3aed;">alarm</span>
+        <div class="expand-item-body">
+          <span class="expand-item-title">10. Nedovoljan san</span>
+        </div>
+        <span class="material-symbols-outlined expand-item-arrow">chevron_right</span>
+      </a>
+      <a href="guide/11-poremecaj-nocnih-mora/" class="expand-item">
+        <span class="material-symbols-outlined expand-item-icon" style="color:#7c3aed;">thunderstorm</span>
+        <div class="expand-item-body">
+          <span class="expand-item-title">11. Noćne more</span>
+        </div>
+        <span class="material-symbols-outlined expand-item-arrow">chevron_right</span>
+      </a>
+      <a href="guide/12-sred/" class="expand-item">
+        <span class="material-symbols-outlined expand-item-icon" style="color:#7c3aed;">restaurant</span>
+        <div class="expand-item-body">
+          <span class="expand-item-title">12. Jedenje u snu (SRED)</span>
+        </div>
+        <span class="material-symbols-outlined expand-item-arrow">chevron_right</span>
+      </a>
+    </div>
+
   </div>
 
-  <!-- Disorders Section -->
-  <div class="section-label">Poremećaji</div>
-
-  <div class="subsection-label">Često u ordinaciji</div>
-  <div class="card-grid">
-    <a href="guide/01-nesanica/">
-      <span class="card-icon">😴</span>
-      Nesanica
-      <span class="card-chapter">Pogl. 1</span>
-    </a>
-    <a href="guide/02-osa/">
-      <span class="card-icon">😤</span>
-      OSA
-      <span class="card-chapter">Pogl. 2</span>
-    </a>
-    <a href="guide/13-centralna-apneja/">
-      <span class="card-icon">💨</span>
-      CSA
-      <span class="card-chapter">Pogl. 13</span>
-    </a>
-  </div>
-
-  <div class="subsection-label">Često propušteni</div>
-  <div class="card-grid">
-    <a href="guide/03-rls-plmd/">
-      <span class="card-icon">🦵</span>
-      RLS
-      <span class="card-chapter">Pogl. 3</span>
-    </a>
-    <a href="guide/04-rbd/">
-      <span class="card-icon">🧠</span>
-      RBD
-      <span class="card-chapter">Pogl. 4</span>
-    </a>
-    <a href="guide/06-narkolepsija/">
-      <span class="card-icon">⚡</span>
-      Narkolepsija
-      <span class="card-chapter">Pogl. 6</span>
-    </a>
-    <a href="guide/07-idiopatska-hipersomnija/">
-      <span class="card-icon">🛌</span>
-      IH
-      <span class="card-chapter">Pogl. 7</span>
-    </a>
-    <a href="guide/08-cirkadijani-poremecaji/">
-      <span class="card-icon">🕐</span>
-      Cirkadijani
-      <span class="card-chapter">Pogl. 8</span>
-    </a>
-  </div>
-
-  <div class="subsection-label">Noćni događaji</div>
-  <div class="card-grid">
-    <a href="guide/05-nrem-parasomnias/">
-      <span class="card-icon">🚶</span>
-      NREM
-      <span class="card-chapter">Pogl. 5</span>
-    </a>
-    <a href="guide/09-bruksizam/">
-      <span class="card-icon">🦷</span>
-      Bruksizam
-      <span class="card-chapter">Pogl. 9</span>
-    </a>
-    <a href="guide/12-sred/">
-      <span class="card-icon">🍽️</span>
-      SRED
-      <span class="card-chapter">Pogl. 12</span>
-    </a>
-    <a href="guide/11-poremecaj-nocnih-mora/">
-      <span class="card-icon">👻</span>
-      Noćne more
-      <span class="card-chapter">Pogl. 11</span>
-    </a>
-    <a href="guide/10-nedovoljan-san/">
-      <span class="card-icon">⏰</span>
-      Nedovoljan san
-      <span class="card-chapter">Pogl. 10</span>
-    </a>
-  </div>
-
-  <!-- Tools Section -->
-  <div class="section-label">Alati</div>
-  <div class="card-grid">
-    <a href="screening/predlozak-uputnice/">
-      <span class="card-icon">📄</span>
-      Uputnica
-    </a>
-    <a href="screening/scoring-algorithms/">
-      <span class="card-icon">🔢</span>
-      Bodovanje
-    </a>
-    <a href="guide/14-reference/">
-      <span class="card-icon">📚</span>
-      Reference
-    </a>
-    <a href="screening/patient-questions-hr/">
-      <span class="card-icon">❓</span>
-      Probir
-    </a>
-  </div>
-
-  <!-- Author Footer -->
-  <div class="author-footer">
-    <strong>Alen Juginović, dr. med.</strong><br>
-    Harvard Medical School · Odjel za neurobiologiju<br>
+  <!-- Professional Footer -->
+  <div class="app-footer animate-in animate-delay-5">
+    <strong>Alen Juginović, dr. med.</strong> · Harvard Medical School · Odjel za neurobiologiju<br>
     <small>Posljednje ažuriranje: veljača 2026.</small>
   </div>
 
 </div>
-
-<!-- Render the markdown content from index.md below the card grid -->
-
-  
-                  
-  
-
-
-
-
-<h1 id="o-vodicu">O vodiču<a class="headerlink" href="#o-vodicu" title="Permanent link">&para;</a></h1>
-<h2 id="zasto-ovaj-vodic">Zašto ovaj vodič?<a class="headerlink" href="#zasto-ovaj-vodic" title="Permanent link">&para;</a></h2>
-<p>Poremećaji spavanja spadaju među najčešće medicinske probleme — pogađaju 30-45% odrasle populacije. Unatoč tome, obrazovanje liječnika obiteljske medicine (LOM) iz medicine spavanja u Hrvatskoj praktički ne postoji izvan osnovnog poznavanja nesanice i opstruktivne apneje u snu.</p>
-<p>Posljedice su mjerljive:</p>
-<ul>
-<li><strong>Sindrom nemirnih nogu</strong> (prevalencija 5-10%) — godinama se pogrešno dijagnosticira kao anksioznost ili periferna neuropatija</li>
-<li><strong>Narkolepsija</strong> — prosječno kašnjenje dijagnoze iznosi 8-15 godina</li>
-<li><strong>REM poremećaj ponašanja u snu</strong> — propušteni prodrom Parkinsonove bolesti i demencije s Lewyjevim tjelešcima</li>
-<li><strong>Cirkadijani poremećaji</strong> kod mladih — krivo protumačeni kao „lijenost" ili depresija</li>
-<li><strong>Sindrom nedovoljnog spavanja</strong> — najčešći uzrok pretjerane dnevne pospanosti, a najlakši za dijagnosticirati</li>
-</ul>
-<p>Ovaj vodič nastao je s jednim ciljem: omogućiti vam da u svojoj ordinaciji <strong>prepoznate, ispravno procijenite i adekvatno uputite</strong> pacijente s poremećajima spavanja koje dosad možda niste ni razmatrali u diferencijalnoj dijagnozi.</p>
-<hr />
-<h2 id="za-koga-je-ovaj-vodic">Za koga je ovaj vodič?<a class="headerlink" href="#za-koga-je-ovaj-vodic" title="Permanent link">&para;</a></h2>
-<p>Primarno za <strong>liječnike obiteljske medicine</strong> u hrvatskom zdravstvenom sustavu, ali koristan i za:
-- Specijalizante obiteljske medicine
-- Liječnike na hitnom prijemu (noćne smjene → susret s parasomnjama i akutnim stanjima)
-- Medicinske sestre u primarnoj zdravstvenoj zaštiti (PZZ)</p>
-<hr />
-<h2 id="sto-ovaj-vodic-jest-a-sto-nije">Što ovaj vodič JEST, a što NIJE<a class="headerlink" href="#sto-ovaj-vodic-jest-a-sto-nije" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>✅ Jest</th>
-<th>❌ Nije</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Praktični priručnik za svakodnevnu praksu</td>
-<td>Udžbenik medicine spavanja</td>
-</tr>
-<tr>
-<td>Fokusiran na prepoznavanje i trijažu</td>
-<td>Zamjena za specijalistički pregled</td>
-</tr>
-<tr>
-<td>Temeljen na smjernicama (ICSD-3, AASM, ESRS)</td>
-<td>Autorovo osobno mišljenje</td>
-</tr>
-<tr>
-<td>Prilagođen hrvatskom sustavu</td>
-<td>Primjenjiv bez prilagodbe u drugim zemljama</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="kako-koristiti-ovaj-vodic">Kako koristiti ovaj vodič<a class="headerlink" href="#kako-koristiti-ovaj-vodic" title="Permanent link">&para;</a></h2>
-<h3 id="edukacijski-dio-poglavlja-1-13">Edukacijski dio (Poglavlja 1-13)<a class="headerlink" href="#edukacijski-dio-poglavlja-1-13" title="Permanent link">&para;</a></h3>
-<p>Svako poglavlje pokriva jedan poremećaj ili skupinu poremećaja i slijedi istu strukturu:</p>
-<ol>
-<li><strong>Što je to?</strong> — Opis jednostavnim jezikom</li>
-<li><strong>Koliko je često?</strong> — Prevalencija s kontekstualizacijom za LOM praksu</li>
-<li><strong>Kako prepoznati?</strong> — Ključni simptomi, patognomonične značajke boldane</li>
-<li><strong>Crvene zastavice</strong> — Stanja koja zahtijevaju hitnu reakciju</li>
-<li><strong>Probir i dijagnostika</strong> — Što LOM može napraviti, a što zahtijeva specijalista</li>
-<li><strong>Liječenje u PZZ</strong> — Što je u domeni LOM-a</li>
-<li><strong>Kada uputiti specijalistu?</strong> — Jasni kriteriji s naznakom kamo uputiti</li>
-<li><strong>Česte zamke</strong> — Najčešće pogreške u praksi</li>
-<li><strong>Ključne poruke</strong> — 3-5 poruka za zapamtiti</li>
-</ol>
-<h3 id="alat-za-probir">Alat za probir<a class="headerlink" href="#alat-za-probir" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>Upitnik za pacijente</strong> — 12-14 pitanja za sistematsku detekciju poremećaja spavanja u čekaonici</li>
-<li><strong>Klinički dijagrami toka</strong> — 3 dijagrama prema vodećoj tegoji pacijenta</li>
-<li><strong>Algoritmi bodovanja</strong> — Za standardizirane upitnike (ESS, STOP-BANG, IRLS, ISI, RBDSQ)</li>
-</ul>
-<hr />
-<h2 id="pregled-poremecaja">Pregled poremećaja<a class="headerlink" href="#pregled-poremecaja" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>#</th>
-<th>Poremećaj</th>
-<th>Poglavlje</th>
-<th>Prevalencija</th>
-<th>Ključna poruka za LOM</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>Nesanica</td>
-<td>01-nesanica</td>
-<td>10-15% (kronična)</td>
-<td>CBT-I je prva linija, ne benzodiazepini</td>
-</tr>
-<tr>
-<td>2</td>
-<td>Opstruktivna apneja u snu (OSA)</td>
-<td>02-osa</td>
-<td>9-38% (muškarci), 4-28% (žene)</td>
-<td>Poddijagnosticirana kod žena; STOP-BANG ≥3 → uputiti</td>
-</tr>
-<tr>
-<td>3</td>
-<td>Sindrom nemirnih nogu / PLMD</td>
-<td>03-rls-plmd</td>
-<td>5-10%</td>
-<td>Provjerite feritin; nije anksioznost</td>
-</tr>
-<tr>
-<td>4</td>
-<td>REM poremećaj ponašanja u snu</td>
-<td>04-rbd</td>
-<td>1-2% (&gt;60 god.)</td>
-<td>Prodrom za Parkinsonovu bolest — hitno neurologu</td>
-</tr>
-<tr>
-<td>5</td>
-<td>NREM parasomnije</td>
-<td>05-nrem-parasomnije</td>
-<td>1-4% (odrasli)</td>
-<td>Razlikovati od RBD-a; sigurnost spavača</td>
-</tr>
-<tr>
-<td>6</td>
-<td>Narkolepsija (tip 1 i 2)</td>
-<td>06-narkolepsija</td>
-<td>0.02-0.05%</td>
-<td>Katapleksija = patognomonično; dijagnoza kasni 8-15 g.</td>
-</tr>
-<tr>
-<td>7</td>
-<td>Idiopatska hipersomnija</td>
-<td>07-idiopatska-hipersomnija</td>
-<td>~0.01%</td>
-<td>Razlikovati od narkolepsije tip 2 i nedovoljnog sna</td>
-</tr>
-<tr>
-<td>8</td>
-<td>Cirkadijani poremećaji</td>
-<td>08-cirkadijani-poremecaji</td>
-<td>1-3% (DSWPD)</td>
-<td>Mladi „koji ne mogu zaspati" — nije uvijek nesanica</td>
-</tr>
-<tr>
-<td>9</td>
-<td>Bruksizam u snu</td>
-<td>09-bruksizam</td>
-<td>8-13%</td>
-<td>Komorbiditet s OSA; uputiti stomatologu</td>
-</tr>
-<tr>
-<td>10</td>
-<td>Sindrom nedovoljnog spavanja</td>
-<td>10-nedovoljan-san</td>
-<td>Vrlo čest</td>
-<td>#1 uzrok dnevne pospanosti; najlakša dijagnoza</td>
-</tr>
-<tr>
-<td>11</td>
-<td>Poremećaj noćnih mora</td>
-<td>11-poremecaj-nocnih-mora</td>
-<td>2-8% (kronično)</td>
-<td>PTSP veza; terapija ponavljanjem slike (IRT)</td>
-</tr>
-<tr>
-<td>12</td>
-<td>SRED</td>
-<td>12-sred</td>
-<td>1-5%</td>
-<td>Zolpidem može izazvati SRED — sigurnost pacijenta!</td>
-</tr>
-<tr>
-<td>13</td>
-<td>Centralna apneja u snu</td>
-<td>13-centralna-apneja</td>
-<td>Rijetka (osim uz SI)</td>
-<td>Sumnjati kod srčanog zatajenja i opioida</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="kratice-koristene-u-vodicu">Kratice korištene u vodiču<a class="headerlink" href="#kratice-koristene-u-vodicu" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Kratica</th>
-<th>Značenje</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>AASM</td>
-<td>American Academy of Sleep Medicine</td>
-</tr>
-<tr>
-<td>ASWPD</td>
-<td>Advanced Sleep-Wake Phase Disorder (poremećaj faze spavanja s pomakom unaprijed)</td>
-</tr>
-<tr>
-<td>CBT-I</td>
-<td>Kognitivno-bihevioralna terapija za nesanicu</td>
-</tr>
-<tr>
-<td>COMISA</td>
-<td>Co-Morbid Insomnia and Sleep Apnea (komorbidna nesanica i apneja u snu)</td>
-</tr>
-<tr>
-<td>CSA</td>
-<td>Centralna apneja u snu</td>
-</tr>
-<tr>
-<td>CSR</td>
-<td>Cheyne-Stokesovo disanje (Cheyne-Stokes Respiration)</td>
-</tr>
-<tr>
-<td>DSWPD</td>
-<td>Delayed Sleep-Wake Phase Disorder (poremećaj faze spavanja s pomakom unatrag)</td>
-</tr>
-<tr>
-<td>ESRS</td>
-<td>European Sleep Research Society</td>
-</tr>
-<tr>
-<td>ESS</td>
-<td>Epworthova ljestvica pospanosti</td>
-</tr>
-<tr>
-<td>FFI</td>
-<td>Fatalna obiteljska nesanica (Fatal Familial Insomnia)</td>
-</tr>
-<tr>
-<td>HALMED</td>
-<td>Agencija za lijekove i medicinske proizvode</td>
-</tr>
-<tr>
-<td>HSAT</td>
-<td>Kućni test apneje u snu (Home Sleep Apnea Test)</td>
-</tr>
-<tr>
-<td>ICSD-3-TR</td>
-<td>International Classification of Sleep Disorders, 3rd edition, Text Revision (2023)</td>
-</tr>
-<tr>
-<td>IRLS</td>
-<td>International Restless Legs Syndrome Rating Scale</td>
-</tr>
-<tr>
-<td>ISI</td>
-<td>Insomnia Severity Index (indeks težine nesanice)</td>
-</tr>
-<tr>
-<td>LOM</td>
-<td>Liječnik obiteljske medicine</td>
-</tr>
-<tr>
-<td>MAD</td>
-<td>Mandibularni advancement uređaj (Mandibular Advancement Device)</td>
-</tr>
-<tr>
-<td>MSLT</td>
-<td>Test višestrukih latencija spavanja</td>
-</tr>
-<tr>
-<td>MWT</td>
-<td>Test održavanja budnosti</td>
-</tr>
-<tr>
-<td>NREM</td>
-<td>Non-rapid eye movement (spavanje bez brzih pokreta očiju)</td>
-</tr>
-<tr>
-<td>OSA</td>
-<td>Opstruktivna apneja u snu</td>
-</tr>
-<tr>
-<td>PLMD</td>
-<td>Periodic Limb Movement Disorder (poremećaj periodičnih pokreta udova)</td>
-</tr>
-<tr>
-<td>PSG</td>
-<td>Polisomnografija</td>
-</tr>
-<tr>
-<td>PZZ</td>
-<td>Primarna zdravstvena zaštita</td>
-</tr>
-<tr>
-<td>RBDSQ</td>
-<td>REM Sleep Behavior Disorder Screening Questionnaire</td>
-</tr>
-<tr>
-<td>RBD</td>
-<td>REM poremećaj ponašanja u snu</td>
-</tr>
-<tr>
-<td>REM</td>
-<td>Rapid eye movement (spavanje s brzim pokretima očiju)</td>
-</tr>
-<tr>
-<td>RLS</td>
-<td>Sindrom nemirnih nogu (Restless Legs Syndrome)</td>
-</tr>
-<tr>
-<td>SOREMP</td>
-<td>Sleep-Onset REM Period (REM epizoda pri usnivanju)</td>
-</tr>
-<tr>
-<td>SRED</td>
-<td>Sleep-Related Eating Disorder (poremećaj hranjenja povezan sa spavanjem)</td>
-</tr>
-<tr>
-<td>STOP-BANG</td>
-<td>Upitnik za probir OSA (Snoring, Tiredness, Observed apnea, Pressure, BMI, Age, Neck, Gender)</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="o-autoru">O autoru<a class="headerlink" href="#o-autoru" title="Permanent link">&para;</a></h2>
-<p><strong>Alen Juginović, dr. med.</strong> — postdoktorand na Harvard Medical School (Odjel za neurobiologiju, Rogulja Lab), istraživač u području neuroznanosti spavanja. Član uredništva Journal of Clinical Sleep Medicine (JCSM). Istraživačko područje: mehanizmi oštećenja uslijed gubitka sna, s fokusom na oksidativni stres u crijevu i posljedičnu neurodegeneraciju.</p>
-<p>Suosnivač i predsjednik udruge Med&amp;X te Plexus Conference — platforme koja je ugostila 9+ laureata Nobelove nagrade iz 30+ zemalja.</p>
-<hr />
-<p><em>Ovaj vodič ne zamjenjuje kliničku prosudbu. Sadržaj je temeljen na trenutno važećim smjernicama i može se razlikovati od lokalne kliničke prakse. Autor preuzima odgovornost za stručnu točnost sadržaja.</em></p>
-<p><em>Posljednje ažuriranje: veljača 2026.</em></p>
-
-
-
-
-
-
-
-  
-  
-
-
-
-
-  
-
-
-
-                
-
-  <!-- PWA Install Banner -->
-  <div id="pwa-install" class="pwa-install-banner">
-    Instalirajte aplikaciju za brži pristup
-    <button onclick="installPWA()">Instaliraj</button>
-    <button class="dismiss" onclick="dismissInstall()">Ne sada</button>
-  </div>
-
 
               </article>
             </div>
@@ -1848,50 +1756,6 @@
         
       </main>
       
-        <footer class="md-footer">
-  
-    
-      
-        
-      
-      <nav class="md-footer__inner md-grid" aria-label="Podnožje" >
-        
-        
-          
-          <a href="guide/01-nesanica/" class="md-footer__link md-footer__link--next" aria-label="Sljedeće: 1. Nesanica">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Sljedeće
-              </span>
-              <div class="md-ellipsis">
-                1. Nesanica
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
-    
-  
-  <div class="md-footer-meta md-typeset">
-    <div class="md-footer-meta__inner md-grid">
-      <div class="md-copyright">
-  
-  
-    Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-      Material for MkDocs
-    </a>
-  
-</div>
-      
-    </div>
-  </div>
-</footer>
-      
     </div>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
@@ -1908,11 +1772,38 @@
       <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
+
+  <!-- Alpine.js for interactive screening & questionnaires -->
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
   <script>
+    // Scroll-triggered animations via IntersectionObserver
+    document.addEventListener('DOMContentLoaded', function() {
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      var targets = document.querySelectorAll(
+        '.animate-on-scroll, .md-typeset .admonition, .md-typeset details, .md-typeset table:not([class]), .symptom-tiers'
+      );
+      if (!targets.length) return;
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+      targets.forEach(function(el) {
+        if (!el.classList.contains('animate-on-scroll')) {
+          el.classList.add('animate-on-scroll');
+        }
+        observer.observe(el);
+      });
+    });
+
     // Service Worker Registration
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function() {
-        navigator.serviceWorker.register('/sw.js').then(function(registration) {
+        navigator.serviceWorker.register('/sleep-guide/sw.js', { scope: '/sleep-guide/' }).then(function(registration) {
           console.log('SW registered: ', registration);
         }).catch(function(registrationError) {
           console.log('SW registration failed: ', registrationError);

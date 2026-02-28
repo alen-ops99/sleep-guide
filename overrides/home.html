@@ -4,132 +4,265 @@
   {{ super() }}
 {% endblock %}
 
+{% block footer %}{% endblock %}
+
 {% block content %}
-<div class="home-content">
+<div class="home-content" x-data="{ expanded: null }">
 
-  <!-- Hero Section -->
-  <div class="home-hero">
-    <h1>Vodič za poremećaje spavanja</h1>
-    <p class="subtitle">Za liječnike obiteljske medicine</p>
+  <!-- App Header -->
+  <div class="app-header animate-in animate-delay-1">
+    <div class="app-header-icon">
+      <span class="material-symbols-outlined">sleep</span>
+    </div>
+    <h1 class="app-header-title">Spavanje u HR</h1>
+    <p class="app-header-subtitle">Klinički vodič za poremećaje spavanja</p>
   </div>
 
-  <!-- Quick Access Buttons -->
-  <div class="quick-access">
-    <a href="questionnaires/ess-hr/">📋 Upitnici</a>
-    <a href="screening/clinical-flowchart/">🔀 Dijagrami</a>
-    <a href="screening/dnevnik-spavanja/">📓 Dnevnik</a>
+  <!-- Hero Grid -->
+  <div class="hero-grid">
+
+    <!-- Card 1: Screening — direct link -->
+    <a href="screening/interactive-screening/" class="hero-card hero-screening animate-in animate-delay-2">
+      <div class="hero-card-icon">
+        <span class="material-symbols-outlined">vital_signs</span>
+      </div>
+      <div class="hero-card-body">
+        <div class="hero-card-title">Probir spavanja</div>
+        <div class="hero-card-desc">Interaktivni klinički probir za ordinaciju</div>
+        <div class="hero-badges">
+          <span class="hero-badge">~30 pitanja</span>
+          <span class="hero-badge">4–6 min</span>
+          <span class="hero-badge">Auto interpretacija</span>
+        </div>
+      </div>
+      <span class="material-symbols-outlined hero-card-arrow">arrow_forward</span>
+    </a>
+
+    <!-- Card 2: Klinički alati — expandable -->
+    <div class="hero-card hero-clinical animate-in animate-delay-3" @click="expanded = expanded === 'clin' ? null : 'clin'" :class="{'hero-card-active': expanded === 'clin'}">
+      <div class="hero-card-icon">
+        <span class="material-symbols-outlined">medical_services</span>
+      </div>
+      <div class="hero-card-body">
+        <div class="hero-card-title">Klinički alati</div>
+        <div class="hero-card-desc">Upitnici, predlošci i dijagrami za ordinaciju</div>
+      </div>
+      <span class="material-symbols-outlined hero-card-arrow" x-text="expanded === 'clin' ? 'expand_less' : 'expand_more'"></span>
+    </div>
+    <div class="hero-expand-panel" x-show="expanded === 'clin'"
+         x-transition:enter="expand-enter"
+         x-transition:enter-start="expand-enter-start"
+         x-transition:enter-end="expand-enter-end"
+         x-transition:leave="expand-leave"
+         x-transition:leave-start="expand-leave-start"
+         x-transition:leave-end="expand-leave-end">
+      <div class="expand-group-label">Interaktivni upitnici</div>
+      <a href="questionnaires/ess-interactive/" class="expand-item">
+        <span class="material-symbols-outlined expand-item-icon" style="color:#1e40af;">assignment</span>
+        <div class="expand-item-body">
+          <span class="expand-item-title">ESS</span>
+          <span class="expand-item-desc">Epworth — dnevna pospanost</span>
+        </div>
+        <span class="material-symbols-outlined expand-item-arrow">chevron_right</span>
+      </a>
+      <a href="questionnaires/stop-bang-interactive/" class="expand-item">
+        <span class="material-symbols-outlined expand-item-icon" style="color:#1e40af;">pulmonology</span>
+        <div class="expand-item-body">
+          <span class="expand-item-title">STOP-BANG</span>
+          <span class="expand-item-desc">Rizik za apneju</span>
+        </div>
+        <span class="material-symbols-outlined expand-item-arrow">chevron_right</span>
+      </a>
+      <a href="questionnaires/isi-interactive/" class="expand-item">
+        <span class="material-symbols-outlined expand-item-icon" style="color:#1e40af;">bedtime</span>
+        <div class="expand-item-body">
+          <span class="expand-item-title">ISI</span>
+          <span class="expand-item-desc">Težina nesanice</span>
+        </div>
+        <span class="material-symbols-outlined expand-item-arrow">chevron_right</span>
+      </a>
+      <a href="questionnaires/irls-interactive/" class="expand-item">
+        <span class="material-symbols-outlined expand-item-icon" style="color:#1e40af;">sprint</span>
+        <div class="expand-item-body">
+          <span class="expand-item-title">IRLS</span>
+          <span class="expand-item-desc">Težina nemirnih nogu</span>
+        </div>
+        <span class="material-symbols-outlined expand-item-arrow">chevron_right</span>
+      </a>
+      <a href="questionnaires/rbdsq-interactive/" class="expand-item">
+        <span class="material-symbols-outlined expand-item-icon" style="color:#1e40af;">neurology</span>
+        <div class="expand-item-body">
+          <span class="expand-item-title">RBDSQ</span>
+          <span class="expand-item-desc">REM poremećaj ponašanja</span>
+        </div>
+        <span class="material-symbols-outlined expand-item-arrow">chevron_right</span>
+      </a>
+      <div class="expand-group-label">Predlošci i dijagrami</div>
+      <a href="screening/patient-questions-hr/" class="expand-item">
+        <span class="material-symbols-outlined expand-item-icon" style="color:#1e40af;">quiz</span>
+        <div class="expand-item-body">
+          <span class="expand-item-title">Upitnik za pacijente</span>
+        </div>
+        <span class="material-symbols-outlined expand-item-arrow">chevron_right</span>
+      </a>
+      <a href="screening/clinical-flowchart/" class="expand-item">
+        <span class="material-symbols-outlined expand-item-icon" style="color:#1e40af;">account_tree</span>
+        <div class="expand-item-body">
+          <span class="expand-item-title">Dijagrami toka</span>
+        </div>
+        <span class="material-symbols-outlined expand-item-arrow">chevron_right</span>
+      </a>
+      <a href="screening/dnevnik-spavanja/" class="expand-item">
+        <span class="material-symbols-outlined expand-item-icon" style="color:#1e40af;">edit_note</span>
+        <div class="expand-item-body">
+          <span class="expand-item-title">Dnevnik spavanja</span>
+        </div>
+        <span class="material-symbols-outlined expand-item-arrow">chevron_right</span>
+      </a>
+      <a href="screening/predlozak-uputnice/" class="expand-item">
+        <span class="material-symbols-outlined expand-item-icon" style="color:#1e40af;">description</span>
+        <div class="expand-item-body">
+          <span class="expand-item-title">Predložak uputnice</span>
+        </div>
+        <span class="material-symbols-outlined expand-item-arrow">chevron_right</span>
+      </a>
+      <a href="screening/scoring-algorithms/" class="expand-item">
+        <span class="material-symbols-outlined expand-item-icon" style="color:#1e40af;">calculate</span>
+        <div class="expand-item-body">
+          <span class="expand-item-title">Algoritmi bodovanja</span>
+        </div>
+        <span class="material-symbols-outlined expand-item-arrow">chevron_right</span>
+      </a>
+      <a href="guide/14-reference/" class="expand-item">
+        <span class="material-symbols-outlined expand-item-icon" style="color:#1e40af;">menu_book</span>
+        <div class="expand-item-body">
+          <span class="expand-item-title">Reference</span>
+        </div>
+        <span class="material-symbols-outlined expand-item-arrow">chevron_right</span>
+      </a>
+    </div>
+
+    <!-- Card 3: Edukacija — expandable -->
+    <div class="hero-card hero-education animate-in animate-delay-4" @click="expanded = expanded === 'edu' ? null : 'edu'" :class="{'hero-card-active': expanded === 'edu'}">
+      <div class="hero-card-icon">
+        <span class="material-symbols-outlined">menu_book</span>
+      </div>
+      <div class="hero-card-body">
+        <div class="hero-card-title">Edukacija</div>
+        <div class="hero-card-desc">13 poglavlja kliničkog vodiča</div>
+      </div>
+      <span class="material-symbols-outlined hero-card-arrow" x-text="expanded === 'edu' ? 'expand_less' : 'expand_more'"></span>
+    </div>
+    <div class="hero-expand-panel" x-show="expanded === 'edu'"
+         x-transition:enter="expand-enter"
+         x-transition:enter-start="expand-enter-start"
+         x-transition:enter-end="expand-enter-end"
+         x-transition:leave="expand-leave"
+         x-transition:leave-start="expand-leave-start"
+         x-transition:leave-end="expand-leave-end">
+      <div class="expand-group-label">Često u ordinaciji</div>
+      <a href="guide/01-nesanica/" class="expand-item">
+        <span class="material-symbols-outlined expand-item-icon" style="color:#7c3aed;">bedtime</span>
+        <div class="expand-item-body">
+          <span class="expand-item-title">1. Nesanica</span>
+        </div>
+        <span class="material-symbols-outlined expand-item-arrow">chevron_right</span>
+      </a>
+      <a href="guide/02-osa/" class="expand-item">
+        <span class="material-symbols-outlined expand-item-icon" style="color:#7c3aed;">pulmonology</span>
+        <div class="expand-item-body">
+          <span class="expand-item-title">2. Opstruktivna apneja u snu</span>
+        </div>
+        <span class="material-symbols-outlined expand-item-arrow">chevron_right</span>
+      </a>
+      <a href="guide/13-centralna-apneja/" class="expand-item">
+        <span class="material-symbols-outlined expand-item-icon" style="color:#7c3aed;">cardiology</span>
+        <div class="expand-item-body">
+          <span class="expand-item-title">13. Centralna apneja u snu</span>
+        </div>
+        <span class="material-symbols-outlined expand-item-arrow">chevron_right</span>
+      </a>
+      <div class="expand-group-label">Često propušteni</div>
+      <a href="guide/03-rls-plmd/" class="expand-item">
+        <span class="material-symbols-outlined expand-item-icon" style="color:#7c3aed;">sprint</span>
+        <div class="expand-item-body">
+          <span class="expand-item-title">3. Nemirne noge (RLS/PLMD)</span>
+        </div>
+        <span class="material-symbols-outlined expand-item-arrow">chevron_right</span>
+      </a>
+      <a href="guide/04-rbd/" class="expand-item">
+        <span class="material-symbols-outlined expand-item-icon" style="color:#7c3aed;">neurology</span>
+        <div class="expand-item-body">
+          <span class="expand-item-title">4. REM poremećaj ponašanja</span>
+        </div>
+        <span class="material-symbols-outlined expand-item-arrow">chevron_right</span>
+      </a>
+      <a href="guide/06-narkolepsija/" class="expand-item">
+        <span class="material-symbols-outlined expand-item-icon" style="color:#7c3aed;">bolt</span>
+        <div class="expand-item-body">
+          <span class="expand-item-title">6. Narkolepsija</span>
+        </div>
+        <span class="material-symbols-outlined expand-item-arrow">chevron_right</span>
+      </a>
+      <a href="guide/07-idiopatska-hipersomnija/" class="expand-item">
+        <span class="material-symbols-outlined expand-item-icon" style="color:#7c3aed;">bed</span>
+        <div class="expand-item-body">
+          <span class="expand-item-title">7. Idiopatska hipersomnija</span>
+        </div>
+        <span class="material-symbols-outlined expand-item-arrow">chevron_right</span>
+      </a>
+      <a href="guide/08-cirkadijani-poremecaji/" class="expand-item">
+        <span class="material-symbols-outlined expand-item-icon" style="color:#7c3aed;">schedule</span>
+        <div class="expand-item-body">
+          <span class="expand-item-title">8. Cirkadijani poremećaji</span>
+        </div>
+        <span class="material-symbols-outlined expand-item-arrow">chevron_right</span>
+      </a>
+      <div class="expand-group-label">Noćni događaji</div>
+      <a href="guide/05-nrem-parasomnias/" class="expand-item">
+        <span class="material-symbols-outlined expand-item-icon" style="color:#7c3aed;">directions_walk</span>
+        <div class="expand-item-body">
+          <span class="expand-item-title">5. NREM parasomnije</span>
+        </div>
+        <span class="material-symbols-outlined expand-item-arrow">chevron_right</span>
+      </a>
+      <a href="guide/09-bruksizam/" class="expand-item">
+        <span class="material-symbols-outlined expand-item-icon" style="color:#7c3aed;">dentistry</span>
+        <div class="expand-item-body">
+          <span class="expand-item-title">9. Bruksizam</span>
+        </div>
+        <span class="material-symbols-outlined expand-item-arrow">chevron_right</span>
+      </a>
+      <a href="guide/10-nedovoljan-san/" class="expand-item">
+        <span class="material-symbols-outlined expand-item-icon" style="color:#7c3aed;">alarm</span>
+        <div class="expand-item-body">
+          <span class="expand-item-title">10. Nedovoljan san</span>
+        </div>
+        <span class="material-symbols-outlined expand-item-arrow">chevron_right</span>
+      </a>
+      <a href="guide/11-poremecaj-nocnih-mora/" class="expand-item">
+        <span class="material-symbols-outlined expand-item-icon" style="color:#7c3aed;">thunderstorm</span>
+        <div class="expand-item-body">
+          <span class="expand-item-title">11. Noćne more</span>
+        </div>
+        <span class="material-symbols-outlined expand-item-arrow">chevron_right</span>
+      </a>
+      <a href="guide/12-sred/" class="expand-item">
+        <span class="material-symbols-outlined expand-item-icon" style="color:#7c3aed;">restaurant</span>
+        <div class="expand-item-body">
+          <span class="expand-item-title">12. Jedenje u snu (SRED)</span>
+        </div>
+        <span class="material-symbols-outlined expand-item-arrow">chevron_right</span>
+      </a>
+    </div>
+
   </div>
 
-  <!-- Disorders Section -->
-  <div class="section-label">Poremećaji</div>
-
-  <div class="subsection-label">Često u ordinaciji</div>
-  <div class="card-grid">
-    <a href="guide/01-nesanica/">
-      <span class="card-icon">😴</span>
-      Nesanica
-      <span class="card-chapter">Pogl. 1</span>
-    </a>
-    <a href="guide/02-osa/">
-      <span class="card-icon">😤</span>
-      OSA
-      <span class="card-chapter">Pogl. 2</span>
-    </a>
-    <a href="guide/13-centralna-apneja/">
-      <span class="card-icon">💨</span>
-      CSA
-      <span class="card-chapter">Pogl. 13</span>
-    </a>
-  </div>
-
-  <div class="subsection-label">Često propušteni</div>
-  <div class="card-grid">
-    <a href="guide/03-rls-plmd/">
-      <span class="card-icon">🦵</span>
-      RLS
-      <span class="card-chapter">Pogl. 3</span>
-    </a>
-    <a href="guide/04-rbd/">
-      <span class="card-icon">🧠</span>
-      RBD
-      <span class="card-chapter">Pogl. 4</span>
-    </a>
-    <a href="guide/06-narkolepsija/">
-      <span class="card-icon">⚡</span>
-      Narkolepsija
-      <span class="card-chapter">Pogl. 6</span>
-    </a>
-    <a href="guide/07-idiopatska-hipersomnija/">
-      <span class="card-icon">🛌</span>
-      IH
-      <span class="card-chapter">Pogl. 7</span>
-    </a>
-    <a href="guide/08-cirkadijani-poremecaji/">
-      <span class="card-icon">🕐</span>
-      Cirkadijani
-      <span class="card-chapter">Pogl. 8</span>
-    </a>
-  </div>
-
-  <div class="subsection-label">Noćni događaji</div>
-  <div class="card-grid">
-    <a href="guide/05-nrem-parasomnias/">
-      <span class="card-icon">🚶</span>
-      NREM
-      <span class="card-chapter">Pogl. 5</span>
-    </a>
-    <a href="guide/09-bruksizam/">
-      <span class="card-icon">🦷</span>
-      Bruksizam
-      <span class="card-chapter">Pogl. 9</span>
-    </a>
-    <a href="guide/12-sred/">
-      <span class="card-icon">🍽️</span>
-      SRED
-      <span class="card-chapter">Pogl. 12</span>
-    </a>
-    <a href="guide/11-poremecaj-nocnih-mora/">
-      <span class="card-icon">👻</span>
-      Noćne more
-      <span class="card-chapter">Pogl. 11</span>
-    </a>
-    <a href="guide/10-nedovoljan-san/">
-      <span class="card-icon">⏰</span>
-      Nedovoljan san
-      <span class="card-chapter">Pogl. 10</span>
-    </a>
-  </div>
-
-  <!-- Tools Section -->
-  <div class="section-label">Alati</div>
-  <div class="card-grid">
-    <a href="screening/predlozak-uputnice/">
-      <span class="card-icon">📄</span>
-      Uputnica
-    </a>
-    <a href="screening/scoring-algorithms/">
-      <span class="card-icon">🔢</span>
-      Bodovanje
-    </a>
-    <a href="guide/14-reference/">
-      <span class="card-icon">📚</span>
-      Reference
-    </a>
-    <a href="screening/patient-questions-hr/">
-      <span class="card-icon">❓</span>
-      Probir
-    </a>
-  </div>
-
-  <!-- Author Footer -->
-  <div class="author-footer">
-    <strong>Alen Juginović, dr. med.</strong><br>
-    Harvard Medical School · Odjel za neurobiologiju<br>
+  <!-- Professional Footer -->
+  <div class="app-footer animate-in animate-delay-5">
+    <strong>Alen Juginović, dr. med.</strong> · Harvard Medical School · Odjel za neurobiologiju<br>
     <small>Posljednje ažuriranje: veljača 2026.</small>
   </div>
 
 </div>
-
-<!-- Render the markdown content from index.md below the card grid -->
-{{ super() }}
 {% endblock %}
