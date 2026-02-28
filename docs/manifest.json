@@ -1,12 +1,12 @@
 {
-  "name": "Vodič za poremećaje spavanja",
-  "short_name": "Probir spavanja",
+  "name": "Spavanje u HR",
+  "short_name": "Spavanje",
   "description": "Praktični vodič za liječnike obiteljske medicine — prepoznavanje, probir i trijaža poremećaja spavanja",
-  "start_url": "/screening/interactive-screening/",
+  "start_url": "/sleep-guide/screening/interactive-screening/",
   "display": "standalone",
   "orientation": "portrait",
   "theme_color": "#0f766e",
-  "background_color": "#faf8f5",
+  "background_color": "#f7f3ee",
   "lang": "hr",
   "icons": [
     {

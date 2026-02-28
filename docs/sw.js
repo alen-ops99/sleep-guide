@@ -1,15 +1,16 @@
-const CACHE_NAME = 'sleep-guide-v2';
+const CACHE_NAME = 'sleep-guide-v3';
+const BASE = '/sleep-guide';
 
 // Core assets to cache immediately
 const PRECACHE_ASSETS = [
-  '/',
-  '/screening/interactive-screening/',
-  '/manifest.json',
-  '/stylesheets/custom.css',
-  '/stylesheets/screening.css',
-  '/stylesheets/print.css',
-  '/assets/icon-192.svg',
-  '/assets/icon-512.svg'
+  BASE + '/',
+  BASE + '/screening/interactive-screening/',
+  BASE + '/manifest.json',
+  BASE + '/stylesheets/custom.css',
+  BASE + '/stylesheets/screening.css',
+  BASE + '/stylesheets/print.css',
+  BASE + '/assets/icon-192.svg',
+  BASE + '/assets/icon-512.svg'
 ];
 
 // Install event — precache core assets
@@ -64,7 +65,7 @@ self.addEventListener('fetch', (event) => {
           }
           // If the request is for a page, return the cached screening tool
           if (event.request.headers.get('accept').includes('text/html')) {
-            return caches.match('/screening/interactive-screening/');
+            return caches.match(BASE + '/screening/interactive-screening/');
           }
         });
       })

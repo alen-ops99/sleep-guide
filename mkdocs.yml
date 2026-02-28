@@ -1,7 +1,7 @@
-site_name: Vodič za poremećaje spavanja u PZZ
+site_name: Spavanje u HR
 site_description: Praktični vodič za liječnike obiteljske medicine — prepoznavanje, probir i trijaža poremećaja spavanja
 site_author: Alen Juginović, dr. med.
-site_url: ""
+site_url: "https://alen-ops99.github.io/sleep-guide/"
 
 theme:
   name: material
@@ -21,8 +21,9 @@ theme:
         icon: material/brightness-4
         name: Svijetli način
   font:
-    text: Inter
+    text: Plus Jakarta Sans
     code: JetBrains Mono
+  logo: assets/logo.svg
   features:
     - navigation.sections
     - navigation.expand
@@ -35,9 +36,6 @@ theme:
     - content.tabs.link
     - toc.follow
     - toc.integrate
-  icon:
-    logo: material/sleep
-
 nav:
   - Početna: index.md
   - Brzi probir spavanja: screening/interactive-screening.md
