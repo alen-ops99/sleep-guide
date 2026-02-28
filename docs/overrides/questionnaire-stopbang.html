@@ -8,6 +8,7 @@
 <div class="questionnaire-app" x-cloak x-data="{
   stop: { s: null, t: null, o: null, p: null },
   bang: { b: null, a: null, n: null, g: null },
+  displayScore: 0,
   height: null,
   weight: null,
   get bmi() {
@@ -21,9 +22,27 @@
     Object.values(this.bang).forEach(v => { if (v === true) count++; });
     return count;
   },
+  get answeredCount() {
+    return Object.values(this.stop).filter(v => v !== null).length +
+           Object.values(this.bang).filter(v => v !== null).length;
+  },
   get allAnswered() {
     return Object.values(this.stop).every(v => v !== null) &&
            Object.values(this.bang).every(v => v !== null);
+  },
+  animateScoreUp() {
+    const target = this.score;
+    const duration = 600;
+    const start = performance.now();
+    const from = this.displayScore;
+    const step = (now) => {
+      const elapsed = now - start;
+      const progress = Math.min(elapsed / duration, 1);
+      const ease = 1 - Math.pow(1 - progress, 3);
+      this.displayScore = Math.round(from + (target - from) * ease);
+      if (progress < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
   },
   get interpretation() {
     const s = this.score;
@@ -96,6 +115,9 @@
   <div class="questionnaire-header">
     <h1>STOP-BANG</h1>
     <div class="subtitle">Brzi probir za opstruktivnu apneju u snu</div>
+    <div class="progress-badge" x-show="answeredCount > 0 && !allAnswered" x-transition>
+      <span x-text="answeredCount"></span> / 8 odgovoreno
+    </div>
   </div>
 
   <!-- ===== STOP Section ===== -->
@@ -200,9 +222,10 @@
   </div>
 
   <!-- Score Display -->
-  <div class="score-display" x-show="allAnswered" x-transition>
+  <div class="score-display score-revealed" x-show="allAnswered" x-transition
+       x-effect="if (allAnswered) animateScoreUp()">
     <div class="score-value">
-      <span x-text="score"></span>
+      <span x-text="displayScore"></span>
       <span class="score-max">/ 8</span>
     </div>
     <div class="score-label">Ukupan rezultat</div>

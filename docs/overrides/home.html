@@ -10,7 +10,7 @@
 <div class="home-content" x-data="{ expanded: null }">
 
   <!-- App Header -->
-  <div class="app-header">
+  <div class="app-header animate-in animate-delay-1">
     <div class="app-header-icon">
       <span class="material-symbols-outlined">sleep</span>
     </div>
@@ -22,7 +22,7 @@
   <div class="hero-grid">
 
     <!-- Card 1: Screening — direct link -->
-    <a href="screening/interactive-screening/" class="hero-card hero-screening">
+    <a href="screening/interactive-screening/" class="hero-card hero-screening animate-in animate-delay-2">
       <div class="hero-card-icon">
         <span class="material-symbols-outlined">vital_signs</span>
       </div>
@@ -39,7 +39,7 @@
     </a>
 
     <!-- Card 2: Klinički alati — expandable -->
-    <div class="hero-card hero-clinical" @click="expanded = expanded === 'clin' ? null : 'clin'" :class="{'hero-card-active': expanded === 'clin'}">
+    <div class="hero-card hero-clinical animate-in animate-delay-3" @click="expanded = expanded === 'clin' ? null : 'clin'" :class="{'hero-card-active': expanded === 'clin'}">
       <div class="hero-card-icon">
         <span class="material-symbols-outlined">medical_services</span>
       </div>
@@ -49,7 +49,13 @@
       </div>
       <span class="material-symbols-outlined hero-card-arrow" x-text="expanded === 'clin' ? 'expand_less' : 'expand_more'"></span>
     </div>
-    <div class="hero-expand-panel" x-show="expanded === 'clin'" x-transition.opacity x-transition.duration.200ms>
+    <div class="hero-expand-panel" x-show="expanded === 'clin'"
+         x-transition:enter="expand-enter"
+         x-transition:enter-start="expand-enter-start"
+         x-transition:enter-end="expand-enter-end"
+         x-transition:leave="expand-leave"
+         x-transition:leave-start="expand-leave-start"
+         x-transition:leave-end="expand-leave-end">
       <div class="expand-group-label">Interaktivni upitnici</div>
       <a href="questionnaires/ess-interactive/" class="expand-item">
         <span class="material-symbols-outlined expand-item-icon" style="color:#1e40af;">assignment</span>
@@ -137,7 +143,7 @@
     </div>
 
     <!-- Card 3: Edukacija — expandable -->
-    <div class="hero-card hero-education" @click="expanded = expanded === 'edu' ? null : 'edu'" :class="{'hero-card-active': expanded === 'edu'}">
+    <div class="hero-card hero-education animate-in animate-delay-4" @click="expanded = expanded === 'edu' ? null : 'edu'" :class="{'hero-card-active': expanded === 'edu'}">
       <div class="hero-card-icon">
         <span class="material-symbols-outlined">menu_book</span>
       </div>
@@ -147,7 +153,13 @@
       </div>
       <span class="material-symbols-outlined hero-card-arrow" x-text="expanded === 'edu' ? 'expand_less' : 'expand_more'"></span>
     </div>
-    <div class="hero-expand-panel" x-show="expanded === 'edu'" x-transition.opacity x-transition.duration.200ms>
+    <div class="hero-expand-panel" x-show="expanded === 'edu'"
+         x-transition:enter="expand-enter"
+         x-transition:enter-start="expand-enter-start"
+         x-transition:enter-end="expand-enter-end"
+         x-transition:leave="expand-leave"
+         x-transition:leave-start="expand-leave-start"
+         x-transition:leave-end="expand-leave-end">
       <div class="expand-group-label">Često u ordinaciji</div>
       <a href="guide/01-nesanica/" class="expand-item">
         <span class="material-symbols-outlined expand-item-icon" style="color:#7c3aed;">bedtime</span>
@@ -247,7 +259,7 @@
   </div>
 
   <!-- Professional Footer -->
-  <div class="app-footer">
+  <div class="app-footer animate-in animate-delay-5">
     <strong>Alen Juginović, dr. med.</strong> · Harvard Medical School · Odjel za neurobiologiju<br>
     <small>Posljednje ažuriranje: veljača 2026.</small>
   </div>

@@ -9,6 +9,7 @@
   q1: null, q2: null, q3: null, q4: null, q5: null,
   q6_1: null, q6_2: null, q6_3: null, q6_4: null,
   q7: null, q8: null, q9: null, q10: null,
+  displayScore: 0,
   get q6score() {
     return (this.q6_1 === true || this.q6_2 === true || this.q6_3 === true || this.q6_4 === true) ? 1 : 0;
   },
@@ -27,6 +28,11 @@
     if (this.q10 === true) s++;
     return s;
   },
+  get answeredCount() {
+    return [this.q1, this.q2, this.q3, this.q4, this.q5,
+            this.q6_1, this.q6_2, this.q6_3, this.q6_4,
+            this.q7, this.q8, this.q9, this.q10].filter(v => v !== null).length;
+  },
   get allAnswered() {
     return this.q1 !== null && this.q2 !== null && this.q3 !== null &&
            this.q4 !== null && this.q5 !== null &&
@@ -34,6 +40,20 @@
            this.q6_3 !== null && this.q6_4 !== null &&
            this.q7 !== null && this.q8 !== null &&
            this.q9 !== null && this.q10 !== null;
+  },
+  animateScoreUp() {
+    const target = this.score;
+    const duration = 600;
+    const start = performance.now();
+    const from = this.displayScore;
+    const step = (now) => {
+      const elapsed = now - start;
+      const progress = Math.min(elapsed / duration, 1);
+      const ease = 1 - Math.pow(1 - progress, 3);
+      this.displayScore = Math.round(from + (target - from) * ease);
+      if (progress < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
   },
   get interpretation() {
     const s = this.score;
@@ -104,6 +124,9 @@
   <div class="questionnaire-header">
     <h1>Upitnik za probir REM poremećaja ponašanja u snu (RBDSQ)</h1>
     <div class="subtitle">Probir za poremećaj ponašanja u REM spavanju</div>
+    <div class="progress-badge" x-show="answeredCount > 0 && !allAnswered" x-transition>
+      <span x-text="answeredCount"></span> / 13 odgovoreno
+    </div>
   </div>
 
   <!-- Question 1 -->
@@ -247,9 +270,10 @@
   </div>
 
   <!-- Score Display -->
-  <div class="score-display" x-show="allAnswered" x-transition>
+  <div class="score-display score-revealed" x-show="allAnswered" x-transition
+       x-effect="if (allAnswered) animateScoreUp()">
     <div class="score-value">
-      <span x-text="score"></span>
+      <span x-text="displayScore"></span>
       <span class="score-max">/ 10</span>
     </div>
     <div class="score-label">Ukupan rezultat</div>

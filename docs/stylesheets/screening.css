@@ -49,7 +49,7 @@
   color: var(--screening-text);
 }
 
-/* --- Progress Bar --- */
+/* --- Progress Bar (Enhanced) --- */
 .screening-progress {
   position: sticky;
   top: 0;
@@ -57,20 +57,40 @@
   background: var(--screening-card-bg);
   padding: 0.75rem 0;
   border-bottom: 1px solid var(--screening-card-border);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
 .progress-bar-track {
-  height: 6px;
+  height: 8px;
   background: var(--screening-surface);
-  border-radius: 3px;
+  border-radius: 4px;
   overflow: hidden;
 }
 
 .progress-bar-fill {
   height: 100%;
-  background: var(--screening-primary);
-  border-radius: 3px;
-  transition: width 0.4s ease;
+  background: linear-gradient(90deg, var(--screening-primary), var(--screening-accent));
+  border-radius: 4px;
+  transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.progress-bar-fill::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 24px;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4));
+  border-radius: 4px;
+  animation: progressGlow 2s ease-in-out infinite;
+}
+
+@keyframes progressGlow {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
 }
 
 .progress-label {
@@ -82,11 +102,41 @@
   color: var(--screening-text-secondary);
 }
 
-/* --- Screen Sections --- */
+/* --- Screen Sections (with entrance animation) --- */
 .screening-screen {
   min-height: 60vh;
   padding: 1.5rem 0;
 }
+
+.screening-screen.screen-entered {
+  animation: fadeInUp 0.4s ease-out both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* --- Staggered Question Cards --- */
+.screening-screen .question-card {
+  animation: fadeInUp 0.4s ease-out both;
+  animation-delay: calc(var(--card-index, 0) * 100ms + 50ms);
+}
+
+.screening-screen .question-card:nth-child(1) { --card-index: 0; }
+.screening-screen .question-card:nth-child(2) { --card-index: 1; }
+.screening-screen .question-card:nth-child(3) { --card-index: 2; }
+.screening-screen .question-card:nth-child(4) { --card-index: 3; }
+.screening-screen .question-card:nth-child(5) { --card-index: 4; }
+.screening-screen .question-card:nth-child(6) { --card-index: 5; }
+.screening-screen .question-card:nth-child(7) { --card-index: 6; }
+.screening-screen .question-card:nth-child(8) { --card-index: 7; }
 
 .screen-title {
   font-size: 1.3rem;
@@ -273,6 +323,24 @@
   text-align: center;
 }
 
+.yn-btn:active {
+  transform: scale(0.95);
+}
+
+.yn-btn.selected-yes,
+.yn-btn.selected-no {
+  animation: scaleIn 0.25s ease-out;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.92);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
 .yn-btn:hover {
   border-color: var(--screening-primary);
 }
@@ -318,6 +386,19 @@
 .btn-next {
   background: var(--screening-primary);
   color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.btn-next .btn-arrow {
+  font-size: 20px;
+  transition: transform 0.2s ease;
+}
+
+.btn-next:hover:not(:disabled) .btn-arrow {
+  transform: translateX(4px);
 }
 
 .btn-next:disabled {
@@ -357,6 +438,7 @@
 .results-header {
   text-align: center;
   margin-bottom: 2rem;
+  animation: fadeInUp 0.4s ease-out both;
 }
 
 .results-header h2 {
@@ -370,14 +452,19 @@
   color: var(--screening-text-secondary);
 }
 
-/* --- Red Flag Cards --- */
+/* --- Red Flag Cards (with stagger animation) --- */
 .red-flag-card {
   background: var(--screening-red-bg);
   border: 2px solid var(--screening-red);
   border-radius: 14px;
   padding: 1.25rem;
   margin-bottom: 1rem;
+  animation: fadeInUp 0.4s ease-out both;
 }
+
+.red-flag-card:nth-child(1) { animation-delay: 0.1s; }
+.red-flag-card:nth-child(2) { animation-delay: 0.2s; }
+.red-flag-card:nth-child(3) { animation-delay: 0.3s; }
 
 .red-flag-header {
   display: flex;
@@ -412,7 +499,7 @@
   display: inline-block;
 }
 
-/* --- Disorder Result Cards --- */
+/* --- Disorder Result Cards (with stagger animation) --- */
 .disorder-card {
   background: var(--screening-card-bg);
   border: 2px solid var(--screening-card-border);
@@ -420,7 +507,14 @@
   padding: 1.25rem;
   margin-bottom: 1rem;
   transition: border-color 0.2s;
+  animation: fadeInUp 0.4s ease-out both;
 }
+
+.disorder-card:nth-child(1) { animation-delay: 0.15s; }
+.disorder-card:nth-child(2) { animation-delay: 0.25s; }
+.disorder-card:nth-child(3) { animation-delay: 0.35s; }
+.disorder-card:nth-child(4) { animation-delay: 0.45s; }
+.disorder-card:nth-child(5) { animation-delay: 0.55s; }
 
 .disorder-card:hover {
   border-color: var(--screening-primary);
@@ -595,6 +689,20 @@
   font-size: 0.9rem;
 }
 
+/* --- Progress Badge --- */
+.progress-badge {
+  display: inline-block;
+  margin-top: 0.6rem;
+  padding: 0.3rem 0.8rem;
+  background: var(--screening-surface);
+  border: 1px solid var(--screening-card-border);
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--screening-primary);
+  letter-spacing: 0.02em;
+}
+
 /* --- Radio Chip Groups --- */
 .chip-group {
   display: flex;
@@ -626,10 +734,15 @@
   border-color: var(--screening-primary);
 }
 
+.chip:active {
+  transform: scale(0.95);
+}
+
 .chip.selected {
   background: var(--screening-primary);
   border-color: var(--screening-primary);
   color: white;
+  animation: scaleIn 0.25s ease-out;
 }
 
 /* --- Score Display --- */
@@ -639,6 +752,24 @@
   background: var(--screening-surface);
   border-radius: 14px;
   margin: 1.5rem 0;
+}
+
+.score-display.score-revealed {
+  animation: scoreReveal 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+@keyframes scoreReveal {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  60% {
+    transform: scale(1.06);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .score-value {
@@ -667,6 +798,7 @@
   border: 2px solid;
   margin: 1rem 0;
   text-align: center;
+  animation: fadeInUp 0.4s ease-out 0.2s both;
 }
 
 .interpretation-card.severity-normal {
@@ -1276,10 +1408,15 @@
   border-color: var(--screening-primary);
 }
 
+.select-btn:active {
+  transform: scale(0.97);
+}
+
 .select-btn.selected {
   background: var(--screening-primary);
   border-color: var(--screening-primary);
   color: white;
+  animation: scaleIn 0.25s ease-out;
 }
 
 /* --- Color-Coded Result Sections --- */
@@ -1685,10 +1822,15 @@
   border-color: var(--screening-primary);
 }
 
+.time-chip:active {
+  transform: scale(0.93);
+}
+
 .time-chip.selected {
   background: var(--screening-primary);
   border-color: var(--screening-primary);
   color: #fff;
+  animation: scaleIn 0.25s ease-out;
 }
 
 /* --- TST Display (auto-calculated sleep time) --- */
@@ -1968,5 +2110,43 @@
   .question-hint-warning {
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
+  }
+
+  .screening-screen,
+  .red-flag-card,
+  .disorder-card,
+  .results-header,
+  .score-display,
+  .interpretation-card,
+  .question-card {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .progress-bar-fill::after {
+    display: none;
+  }
+}
+
+/* --- Reduced Motion Safety for Screening --- */
+@media (prefers-reduced-motion: reduce) {
+  .screening-screen,
+  .red-flag-card,
+  .disorder-card,
+  .results-header,
+  .score-display,
+  .interpretation-card,
+  .question-card,
+  .yn-btn,
+  .chip,
+  .select-btn,
+  .time-chip {
+    animation: none !important;
+    transition-duration: 0.001ms !important;
+  }
+
+  .progress-bar-fill::after {
+    animation: none;
   }
 }
