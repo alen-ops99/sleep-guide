@@ -1578,6 +1578,8 @@
     navigator.clipboard.writeText(text).then(() => {
       this.copySuccess = true;
       setTimeout(() => this.copySuccess = false, 2000);
+    }).catch(() => {
+      this.copySuccess = false;
     });
   },
   reset() {

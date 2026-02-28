@@ -50,23 +50,23 @@
   },
   get interpretation() {
     const s = this.score;
-    if (s <= 7) return 'Normalna dnevna pospanost';
-    if (s <= 9) return 'Granična pospanost';
-    if (s <= 15) return 'Pretjerana dnevna pospanost (blaga do umjerena)';
-    return 'Pretjerana dnevna pospanost (teška)';
+    if (s <= 10) return 'Normalna dnevna pospanost';
+    if (s <= 14) return 'Blaga pretjerana dnevna pospanost';
+    if (s <= 17) return 'Umjerena pretjerana dnevna pospanost';
+    return 'Teška pretjerana dnevna pospanost';
   },
   get interpretationDetail() {
     const s = this.score;
-    if (s <= 7) return 'Rezultat u granicama normale. Nema znakova pretjerane dnevne pospanosti.';
-    if (s <= 9) return 'Granični rezultat. Preporuča se praćenje i ponovna evaluacija.';
-    if (s <= 15) return 'Povišena dnevna pospanost. Indicirana je daljnja obrada uzroka pospanosti.';
+    if (s <= 10) return 'Rezultat u granicama normale. Nema znakova pretjerane dnevne pospanosti.';
+    if (s <= 14) return 'Blago povišena pospanost. Preporuča se praćenje i evaluacija mogućih uzroka.';
+    if (s <= 17) return 'Umjerena dnevna pospanost. Indicirana je daljnja obrada uzroka pospanosti.';
     return 'Značajno povišena pospanost. Hitno razmotriti polisomnografiju i neurološku obradu.';
   },
   get severityClass() {
     const s = this.score;
-    if (s <= 7) return 'severity-normal';
-    if (s <= 9) return 'severity-mild';
-    if (s <= 15) return 'severity-moderate';
+    if (s <= 10) return 'severity-normal';
+    if (s <= 14) return 'severity-mild';
+    if (s <= 17) return 'severity-moderate';
     return 'severity-severe';
   },
   copySuccess: false,
@@ -87,6 +87,8 @@
     navigator.clipboard.writeText(text).then(() => {
       this.copySuccess = true;
       setTimeout(() => this.copySuccess = false, 2000);
+    }).catch(() => {
+      this.copySuccess = false;
     });
   },
   reset() {
