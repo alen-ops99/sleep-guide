@@ -7,6 +7,7 @@
 {% block content %}
 <div class="questionnaire-app" x-cloak x-data="{
   answers: [null, null, null, null, null, null, null],
+  displayScore: 0,
   items: [
     {
       text: 'Teškoća usnivanja',
@@ -37,12 +38,29 @@
       labels: ['0 — Nimalo', '1 — Malo', '2 — Donekle', '3 — Mnogo', '4 — Izrazito mnogo']
     }
   ],
+  get answeredCount() {
+    return this.answers.filter(a => a !== null).length;
+  },
   get score() {
     if (!this.allAnswered) return 0;
     return this.answers.reduce((sum, val) => sum + val, 0);
   },
   get allAnswered() {
     return this.answers.every(a => a !== null);
+  },
+  animateScoreUp() {
+    const target = this.score;
+    const duration = 600;
+    const start = performance.now();
+    const from = this.displayScore;
+    const step = (now) => {
+      const elapsed = now - start;
+      const progress = Math.min(elapsed / duration, 1);
+      const ease = 1 - Math.pow(1 - progress, 3);
+      this.displayScore = Math.round(from + (target - from) * ease);
+      if (progress < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
   },
   get interpretation() {
     const s = this.score;
@@ -96,6 +114,9 @@
   <div class="questionnaire-header">
     <h1>Indeks težine nesanice (ISI)</h1>
     <div class="subtitle">Procjena težine nesanice tijekom protekla 2 tjedna</div>
+    <div class="progress-badge" x-show="answeredCount > 0 && !allAnswered" x-transition>
+      <span x-text="answeredCount"></span> / <span x-text="items.length"></span> odgovoreno
+    </div>
   </div>
 
   <!-- Question Items -->
@@ -118,9 +139,10 @@
   </template>
 
   <!-- Score Display -->
-  <div class="score-display" x-show="allAnswered" x-transition>
+  <div class="score-display score-revealed" x-show="allAnswered" x-transition
+       x-effect="if (allAnswered) animateScoreUp()">
     <div class="score-value">
-      <span x-text="score"></span>
+      <span x-text="displayScore"></span>
       <span class="score-max">/ 28</span>
     </div>
     <div class="score-label">Ukupan rezultat</div>

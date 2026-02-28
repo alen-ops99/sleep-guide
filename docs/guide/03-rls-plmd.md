@@ -4,9 +4,9 @@
 
 !!! brzi-pregled "Brzi pregled"
 
-    **Prepoznaj:** Nemir/nelagoda u nogama navečer u mirovanju, poboljšanje na pokret, pogoršanje navečer — 4 klinička kriterija. Nije anksioznost, nije loša cirkulacija.
+    **Prepoznaj:** URGED mnemonik: **U**rge to move, **R**est worsens, **G**ets better with movement, **E**vening predominance, **D**istress/disability. Česti opisi pacijenata: "lude noge", "kao da mravci puzaju", "mjehurići sode". Nije anksioznost, nije loša cirkulacija.
 
-    **Učini:** Provjeri feritin (cilj ≥100 ng/mL; <75 = oralno/IV željezo, 75-100 = samo IV). Gabapentin 300 mg navečer kao prva linija. NE dopaminske agoniste rutinski (AASM 2024: uvjetno PROTIV).
+    **Učini:** Provjeri feritin (cilj ≥100 ng/mL; <75 = oralno/IV željezo, 75-100 = samo IV). Gabapentin 300 mg navečer kao prva linija. NE dopaminske agoniste rutinski (AASM 2024/JAMA 2026: uvjetno PROTIV, augmentacija 7–10%/godinu). PHQ-9 za depresiju (30% prevalencija). Provjeriti lijekove koji pogoršavaju RLS.
 
     **Uputi:** Ako gabapentinoidi ne pomažu, sumnja na augmentaciju, ili atipična prezentacija → neurolog.
 
@@ -43,10 +43,13 @@
 
     <div class="symptom-tier tier-critical" markdown>
     ### Kritični znakovi
-    - Nagon za kretanjem nogu uz neugodne senzacije (trnjenje, puzanje, bol)
-    - Simptomi se pogoršavaju u mirovanju (sjedenje, ležanje)
-    - Simptomi se poboljšavaju kretanjem (hodanje, istezanje)
-    - Simptomi imaju cirkadijanu komponentu — najjači navečer/noću
+    - **U**rge to move — nagon za kretanjem nogu uz neugodne senzacije (trnjenje, puzanje, bol)
+    - **R**est worsens — simptomi se pogoršavaju u mirovanju (sjedenje, ležanje)
+    - **G**ets better with movement — simptomi se poboljšavaju kretanjem (hodanje, istezanje)
+    - **E**vening predominance — simptomi imaju cirkadijanu komponentu — najjači navečer/noću
+    - **D**istress/disability — simptomi uzrokuju značajnu nelagodu ili funkcionalno oštećenje
+
+    > **URGED mnemonik** (JAMA 2026): Koristan za brzo prepoznavanje 5 dijagnostičkih značajki RLS-a. Česti opisi pacijenata: *"lude noge"*, *"kao da mravci puzaju"*, *"mjehurići sode"*, *"struja u nogama"*, *"crvi pod kožom"*.
     </div>
 
     <div class="symptom-tier tier-supporting" markdown>
@@ -89,7 +92,7 @@
 
     ### Augmentacija — najvažnija crvena zastavica kod liječenih pacijenata
 
-    **Augmentacija** je paradoksalno pogoršanje RLS simptoma uzrokovano dugotrajnom primjenom dopaminskih agonista (**30–50% pacijenata** na pramipeksolu ili ropinirolu). Prepoznajte je po:
+    **Augmentacija** je paradoksalno pogoršanje RLS simptoma uzrokovano dugotrajnom primjenom dopaminskih agonista (**30–50% pacijenata** na pramipeksolu ili ropinirolu; rizik **7–10% godišnje** — JAMA 2026). Prepoznajte je po:
     - **Simptomi se javljaju ranije u danu** (npr. prije u 22h, sada u 16h)
     - **Simptomi se šire** s nogu na ruke ili trup
     - **Simptomi postaju intenzivniji** unatoč stabilnoj dozi
@@ -278,7 +281,9 @@
 
     4. **Antihistaminici, SSRI/SNRI, antipsihotici i metoklopramid pogoršavaju RLS.** Revizija terapije može biti dovoljna intervencija.
 
-    5. **Simptomi ranije u danu + širenje na ruke = augmentacija.** Ne povećavajte dozu DA. Uputite specijalistu.
+    5. **Simptomi ranije u danu + širenje na ruke = augmentacija** (rizik 7–10%/godinu na DA). Ne povećavajte dozu DA. Uputite specijalistu.
+
+    6. **Probir depresije (PHQ-9) kod svih RLS pacijenata.** Prevalencija depresije: ~30%. Povišen kardiovaskularni rizik (OR 2,07) — JAMA 2026.
 
 ---
 
@@ -299,6 +304,8 @@
 7. Winkelman JW. Searching for the gene(s) for RLS — and asking what we will do when we find it (them). *JAMA*. 2017;317(15):1519-1521.
 
 8. Winkelman JW, Berkowski JA, DelRosso LM, et al. Treatment of restless legs syndrome and periodic limb movement disorder: an American Academy of Sleep Medicine clinical practice guideline. *J Clin Sleep Med.* 2024;20(12):2015-2048.
+
+9. Winkelman JW, Wipper B. Restless legs syndrome — a review. *JAMA.* 2026;335(5):xxx-xxx. doi:10.1001/jama.2025.23247
 
 ---
 

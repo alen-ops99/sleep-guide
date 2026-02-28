@@ -8,6 +8,7 @@
 <div class="questionnaire-app" x-cloak x-data="{
   criteria: [false, false, false, false],
   answers: [null, null, null, null, null, null, null, null, null, null],
+  displayScore: 0,
   items: [
     {
       text: 'Općenito, kako biste ocijenili nelagodu u nogama uzrokovanu RLS-om?',
@@ -59,12 +60,29 @@
   get allCriteriaMet() {
     return this.criteria.every(c => c === true);
   },
+  get answeredCount() {
+    return this.answers.filter(a => a !== null).length;
+  },
   get score() {
     if (!this.allAnswered) return 0;
     return this.answers.reduce((sum, val) => sum + val, 0);
   },
   get allAnswered() {
     return this.answers.every(a => a !== null);
+  },
+  animateScoreUp() {
+    const target = this.score;
+    const duration = 600;
+    const start = performance.now();
+    const from = this.displayScore;
+    const step = (now) => {
+      const elapsed = now - start;
+      const progress = Math.min(elapsed / duration, 1);
+      const ease = 1 - Math.pow(1 - progress, 3);
+      this.displayScore = Math.round(from + (target - from) * ease);
+      if (progress < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
   },
   get interpretation() {
     const s = this.score;
@@ -124,6 +142,9 @@
   <div class="questionnaire-header">
     <h1>Ljestvica težine sindroma nemirnih nogu (IRLS)</h1>
     <div class="subtitle">Procjena težine simptoma tijekom proteklog tjedna</div>
+    <div class="progress-badge" x-show="allCriteriaMet && answeredCount > 0 && !allAnswered" x-transition>
+      <span x-text="answeredCount"></span> / <span x-text="items.length"></span> odgovoreno
+    </div>
   </div>
 
   <!-- Diagnostic Criteria Gate -->
@@ -164,9 +185,10 @@
       </template>
 
       <!-- Score Display -->
-      <div class="score-display" x-show="allAnswered" x-transition>
+      <div class="score-display score-revealed" x-show="allAnswered" x-transition
+           x-effect="if (allAnswered) animateScoreUp()">
         <div class="score-value">
-          <span x-text="score"></span>
+          <span x-text="displayScore"></span>
           <span class="score-max">/ 40</span>
         </div>
         <div class="score-label">Ukupan rezultat</div>

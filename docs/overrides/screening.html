@@ -19,7 +19,8 @@
   </div>
 
   <!-- ============ SCREEN 0: Welcome ============ -->
-  <div class="screening-screen" x-show="screen === 0" x-transition>
+  <div class="screening-screen" x-show="screen === 0" x-transition
+       :class="{'screen-entered': screen === 0}">
     <div class="welcome-card">
       <h1>Brzi probir spavanja</h1>
       <p>Interaktivni alat za sistematsku detekciju poremećaja spavanja u ordinaciji</p>
@@ -81,11 +82,12 @@
       </div>
     </div>
 
-    <button class="btn-start" @click="screen = 1">Započni probir</button>
+    <button class="btn-start" @click="screen = 1; window.scrollTo({top:0, behavior:'smooth'})">Započni probir</button>
   </div>
 
   <!-- ============ SCREEN 1: Raspored spavanja ============ -->
-  <div class="screening-screen" x-show="screen === 1" x-transition>
+  <div class="screening-screen" x-show="screen === 1" x-transition
+       :class="{'screen-entered': screen === 1}">
     <div class="screen-title">Raspored spavanja</div>
     <div class="screen-subtitle">Pitanja o vašem uobičajenom ritmu spavanja</div>
 
@@ -231,13 +233,14 @@
     </template>
 
     <div class="screen-nav">
-      <button class="btn-prev" @click="screen = 0">Natrag</button>
-      <button class="btn-next" :class="{'btn-ready': screenComplete(1)}" @click="screen = 2" :disabled="!screenComplete(1)">Dalje</button>
+      <button class="btn-prev" @click="screen = 0; window.scrollTo({top:0, behavior:'smooth'})">Natrag</button>
+      <button class="btn-next" :class="{'btn-ready': screenComplete(1)}" @click="screen = 2; window.scrollTo({top:0, behavior:'smooth'})" :disabled="!screenComplete(1)">Dalje <span class="material-symbols-outlined btn-arrow">arrow_forward</span></button>
     </div>
   </div>
 
   <!-- ============ SCREEN 2: Kvaliteta sna ============ -->
-  <div class="screening-screen" x-show="screen === 2" x-transition>
+  <div class="screening-screen" x-show="screen === 2" x-transition
+       :class="{'screen-entered': screen === 2}">
     <div class="screen-title">Skupina A — Kvaliteta sna</div>
     <div class="screen-subtitle">Pitanja o kvaliteti noćnog sna</div>
 
@@ -285,13 +288,14 @@
     </div>
 
     <div class="screen-nav">
-      <button class="btn-prev" @click="screen = 1">Natrag</button>
-      <button class="btn-next" :class="{'btn-ready': screenComplete(2)}" @click="screen = 3" :disabled="!screenComplete(2)">Dalje</button>
+      <button class="btn-prev" @click="screen = 1; window.scrollTo({top:0, behavior:'smooth'})">Natrag</button>
+      <button class="btn-next" :class="{'btn-ready': screenComplete(2)}" @click="screen = 3; window.scrollTo({top:0, behavior:'smooth'})" :disabled="!screenComplete(2)">Dalje <span class="material-symbols-outlined btn-arrow">arrow_forward</span></button>
     </div>
   </div>
 
   <!-- ============ SCREEN 3: Disanje u snu ============ -->
-  <div class="screening-screen" x-show="screen === 3" x-transition>
+  <div class="screening-screen" x-show="screen === 3" x-transition
+       :class="{'screen-entered': screen === 3}">
     <div class="screen-title">Skupina B — Disanje u snu</div>
     <div class="screen-subtitle">Pitanja o disanju tijekom spavanja</div>
 
@@ -390,13 +394,14 @@
     </div>
 
     <div class="screen-nav">
-      <button class="btn-prev" @click="screen = 2">Natrag</button>
-      <button class="btn-next" :class="{'btn-ready': screenComplete(3)}" @click="screen = 4" :disabled="!screenComplete(3)">Dalje</button>
+      <button class="btn-prev" @click="screen = 2; window.scrollTo({top:0, behavior:'smooth'})">Natrag</button>
+      <button class="btn-next" :class="{'btn-ready': screenComplete(3)}" @click="screen = 4; window.scrollTo({top:0, behavior:'smooth'})" :disabled="!screenComplete(3)">Dalje <span class="material-symbols-outlined btn-arrow">arrow_forward</span></button>
     </div>
   </div>
 
   <!-- ============ SCREEN 4: Dnevna pospanost ============ -->
-  <div class="screening-screen" x-show="screen === 4" x-transition>
+  <div class="screening-screen" x-show="screen === 4" x-transition
+       :class="{'screen-entered': screen === 4}">
     <div class="screen-title">Skupina C — Dnevna pospanost</div>
     <div class="screen-subtitle">Pitanja o budnosti tijekom dana</div>
 
@@ -482,13 +487,14 @@
     </div>
 
     <div class="screen-nav">
-      <button class="btn-prev" @click="screen = 3">Natrag</button>
-      <button class="btn-next" :class="{'btn-ready': screenComplete(4)}" @click="screen = 5" :disabled="!screenComplete(4)">Dalje</button>
+      <button class="btn-prev" @click="screen = 3; window.scrollTo({top:0, behavior:'smooth'})">Natrag</button>
+      <button class="btn-next" :class="{'btn-ready': screenComplete(4)}" @click="screen = 5; window.scrollTo({top:0, behavior:'smooth'})" :disabled="!screenComplete(4)">Dalje <span class="material-symbols-outlined btn-arrow">arrow_forward</span></button>
     </div>
   </div>
 
   <!-- ============ SCREEN 5: Noćni događaji ============ -->
-  <div class="screening-screen" x-show="screen === 5" x-transition>
+  <div class="screening-screen" x-show="screen === 5" x-transition
+       :class="{'screen-entered': screen === 5}">
     <div class="screen-title">Skupina D — Noćni događaji</div>
     <div class="screen-subtitle">Pitanja o ponašanju i događajima tijekom spavanja</div>
 
@@ -713,13 +719,14 @@
     </div>
 
     <div class="screen-nav">
-      <button class="btn-prev" @click="screen = 4">Natrag</button>
-      <button class="btn-next" :class="{'btn-ready': screenComplete(5)}" @click="screen = 6; computeResults()" :disabled="!screenComplete(5)">Prikaži rezultate</button>
+      <button class="btn-prev" @click="screen = 4; window.scrollTo({top:0, behavior:'smooth'})">Natrag</button>
+      <button class="btn-next" :class="{'btn-ready': screenComplete(5)}" @click="screen = 6; computeResults(); window.scrollTo({top:0, behavior:'smooth'})" :disabled="!screenComplete(5)">Prikaži rezultate <span class="material-symbols-outlined btn-arrow">arrow_forward</span></button>
     </div>
   </div>
 
   <!-- ============ SCREEN 6: Rezultati ============ -->
-  <div class="screening-screen" x-show="screen === 6" x-transition>
+  <div class="screening-screen" x-show="screen === 6" x-transition
+       :class="{'screen-entered': screen === 6}">
     <div class="results-header">
       <h2>Nalaz probira</h2>
       <div class="results-summary">
