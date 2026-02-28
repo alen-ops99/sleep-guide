@@ -1,0 +1,175 @@
+{% extends "main.html" %}
+
+{% block tabs %}
+  {{ super() }}
+{% endblock %}
+
+{% block content %}
+<div class="questionnaire-app" x-cloak x-data="{
+  answers: [null, null, null, null, null, null, null],
+  displayScore: 0,
+  items: [
+    {
+      text: 'Teškoća usnivanja',
+      labels: ['0 — Nimalo', '1 — Blago', '2 — Umjereno', '3 — Izrazito', '4 — Izrazito teško']
+    },
+    {
+      text: 'Teškoća održavanja sna (česta buđenja tijekom noći)',
+      labels: ['0 — Nimalo', '1 — Blago', '2 — Umjereno', '3 — Izrazito', '4 — Izrazito teško']
+    },
+    {
+      text: 'Prerano jutarnje buđenje',
+      labels: ['0 — Nimalo', '1 — Blago', '2 — Umjereno', '3 — Izrazito', '4 — Izrazito teško']
+    },
+    {
+      text: 'Koliko ste zadovoljni svojim trenutnim obrascem spavanja?',
+      labels: ['0 — Vrlo zadovoljan/na', '1 — Zadovoljan/na', '2 — Ni zadovoljan/na ni nezadovoljan/na', '3 — Nezadovoljan/na', '4 — Vrlo nezadovoljan/na']
+    },
+    {
+      text: 'Koliko problemi sa spavanjem ometaju Vaše svakodnevno funkcioniranje?',
+      labels: ['0 — Nimalo', '1 — Malo', '2 — Donekle', '3 — Mnogo', '4 — Izrazito mnogo']
+    },
+    {
+      text: 'Koliko su Vaši problemi sa spavanjem uočljivi drugim ljudima?',
+      labels: ['0 — Nimalo uočljivi', '1 — Jedva uočljivi', '2 — Donekle uočljivi', '3 — Vrlo uočljivi', '4 — Izrazito uočljivi']
+    },
+    {
+      text: 'Koliko ste zabrinuti/uznemireni zbog trenutnih problema sa spavanjem?',
+      labels: ['0 — Nimalo', '1 — Malo', '2 — Donekle', '3 — Mnogo', '4 — Izrazito mnogo']
+    }
+  ],
+  get answeredCount() {
+    return this.answers.filter(a => a !== null).length;
+  },
+  get score() {
+    if (!this.allAnswered) return 0;
+    return this.answers.reduce((sum, val) => sum + val, 0);
+  },
+  get allAnswered() {
+    return this.answers.every(a => a !== null);
+  },
+  animateScoreUp() {
+    const target = this.score;
+    const duration = 600;
+    const start = performance.now();
+    const from = this.displayScore;
+    const step = (now) => {
+      const elapsed = now - start;
+      const progress = Math.min(elapsed / duration, 1);
+      const ease = 1 - Math.pow(1 - progress, 3);
+      this.displayScore = Math.round(from + (target - from) * ease);
+      if (progress < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  },
+  get interpretation() {
+    const s = this.score;
+    if (s <= 7) return 'Bez klinički značajne nesanice';
+    if (s <= 14) return 'Subklinička (podpražna) nesanica';
+    if (s <= 21) return 'Umjerena nesanica';
+    return 'Teška nesanica';
+  },
+  get interpretationDetail() {
+    const s = this.score;
+    if (s <= 7) return 'Normalan san ili minimalne tegobe';
+    if (s <= 14) return 'Blagi problemi sa spavanjem; pratiti, educirati';
+    if (s <= 21) return 'Klinički značajna nesanica; indicirana terapija (CBT-I prva linija)';
+    return 'Hitna intervencija; razmotriti psihijatrijsku komorbiditetnost';
+  },
+  get severityClass() {
+    const s = this.score;
+    if (s <= 7) return 'severity-normal';
+    if (s <= 14) return 'severity-mild';
+    if (s <= 21) return 'severity-moderate';
+    return 'severity-severe';
+  },
+  copySuccess: false,
+  copyResult() {
+    let text = 'INDEKS TEŽINE NESANICE (ISI)\n';
+    text += '======================================\n';
+    text += 'Datum: ' + new Date().toLocaleDateString('hr-HR') + '\n\n';
+    text += 'UKUPAN REZULTAT: ' + this.score + ' / 28\n';
+    text += 'INTERPRETACIJA: ' + this.interpretation + '\n';
+    text += 'DETALJ: ' + this.interpretationDetail + '\n\n';
+    text += 'ODGOVORI PO STAVKAMA:\n';
+    this.items.forEach((item, i) => {
+      text += '  ' + (i + 1) + '. ' + item.text + ' — ' + this.answers[i] + ' (' + item.labels[this.answers[i]] + ')\n';
+    });
+    text += '\nGenerirano pomoću: Vodič za poremećaje spavanja u PZZ\n';
+    text += 'Napomena: Upitnik nije dijagnostički instrument.\n';
+
+    navigator.clipboard.writeText(text).then(() => {
+      this.copySuccess = true;
+      setTimeout(() => this.copySuccess = false, 2000);
+    });
+  },
+  reset() {
+    this.answers = [null, null, null, null, null, null, null];
+    this.copySuccess = false;
+    window.scrollTo(0, 0);
+  }
+}">
+
+  <!-- Header -->
+  <div class="questionnaire-header">
+    <h1>Indeks težine nesanice (ISI)</h1>
+    <div class="subtitle">Procjena težine nesanice tijekom protekla 2 tjedna</div>
+    <div class="progress-badge" x-show="answeredCount > 0 && !allAnswered" x-transition>
+      <span x-text="answeredCount"></span> / <span x-text="items.length"></span> odgovoreno
+    </div>
+  </div>
+
+  <!-- Question Items -->
+  <template x-for="(item, index) in items" :key="index">
+    <div class="q-item" :class="{'answered': answers[index] !== null}">
+      <div class="q-item-header">
+        <span class="q-item-number" x-text="index + 1"></span>
+        <span class="q-item-text" x-text="item.text"></span>
+      </div>
+      <div class="chip-group">
+        <template x-for="val in [0, 1, 2, 3, 4]" :key="val">
+          <button class="chip"
+                  :class="{'selected': answers[index] === val}"
+                  @click="answers[index] = val"
+                  x-text="item.labels[val]">
+          </button>
+        </template>
+      </div>
+    </div>
+  </template>
+
+  <!-- Score Display -->
+  <div class="score-display score-revealed" x-show="allAnswered" x-transition
+       x-effect="if (allAnswered) animateScoreUp()">
+    <div class="score-value">
+      <span x-text="displayScore"></span>
+      <span class="score-max">/ 28</span>
+    </div>
+    <div class="score-label">Ukupan rezultat</div>
+  </div>
+
+  <!-- Interpretation -->
+  <div class="interpretation-card"
+       :class="severityClass"
+       x-show="allAnswered"
+       x-transition>
+    <div class="interpretation-label" x-text="interpretation"></div>
+    <div class="interpretation-detail" x-text="interpretationDetail"></div>
+  </div>
+
+  <!-- Action Buttons -->
+  <div class="action-buttons" x-show="allAnswered" x-transition>
+    <button class="btn-action primary"
+            :class="{'btn-copy-success': copySuccess}"
+            @click="copyResult()"
+            x-text="copySuccess ? 'Kopirano!' : 'Kopiraj rezultat'">
+    </button>
+    <button class="btn-action" @click="window.print()">Ispiši</button>
+    <button class="btn-action" @click="reset()">Ispočetka</button>
+  </div>
+
+</div>
+
+<style>[x-cloak] { display: none !important; }</style>
+
+{% endblock %}

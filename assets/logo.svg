@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <defs>
+    <linearGradient id="teal-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f766e"/>
+      <stop offset="100%" stop-color="#14b8a6"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(24,24)">
+    <!-- Moon crescent -->
+    <circle cx="-3" cy="-5" r="14" fill="url(#teal-grad)"/>
+    <circle cx="4" cy="-12" r="12" fill="white"/>
+    <!-- Stars -->
+    <circle cx="10" cy="-10" r="1.8" fill="url(#teal-grad)" opacity="0.9"/>
+    <circle cx="14" cy="-2" r="1.3" fill="url(#teal-grad)" opacity="0.7"/>
+    <!-- Medical cross -->
+    <rect x="-3" y="6" width="6" height="14" rx="1.5" fill="url(#teal-grad)"/>
+    <rect x="-7" y="10" width="14" height="6" rx="1.5" fill="url(#teal-grad)"/>
+  </g>
+</svg>

@@ -1,16 +1,33 @@
 /* ============================================
    Croatian Sleep Disorders Pocket Guide
    Custom Medical Reference App Styling
+   v2.0 — Premium Clinical Dashboard Redesign
    ============================================ */
 
 /* --- Color System (CSS Custom Properties) --- */
 :root {
-  --md-primary-fg-color: #1a237e;
-  --md-primary-fg-color--light: #3949ab;
-  --md-primary-fg-color--dark: #0d1642;
-  --md-accent-fg-color: #00897b;
+  --md-primary-fg-color: #0f766e;
+  --md-primary-fg-color--light: #14b8a6;
+  --md-primary-fg-color--dark: #0d5953;
+  --md-accent-fg-color: #f97316;
 
-  /* Clinical box colors */
+  /* Homepage tokens */
+  --home-bg: #f3ede6;
+  --home-card-bg: #ffffff;
+  --home-card-border: rgba(0,0,0,0.06);
+  --home-text-primary: #1c1917;
+  --home-text-secondary: #78716c;
+  --home-text-muted: #a8a29e;
+
+  /* Hero card gradient tokens */
+  --hero-screening-from: #0f766e;
+  --hero-screening-to: #0d9488;
+  --hero-clinical-from: #1e40af;
+  --hero-clinical-to: #3b82f6;
+  --hero-education-from: #7c3aed;
+  --hero-education-to: #8b5cf6;
+
+  /* Clinical box colors (unchanged — functional) */
   --color-brzi-pregled: #2e7d32;
   --color-brzi-pregled-bg: #e8f5e9;
   --color-brzi-pregled-border: #4caf50;
@@ -30,9 +47,23 @@
 
 /* Dark mode overrides */
 [data-md-color-scheme="slate"] {
-  --md-primary-fg-color: #5c6bc0;
-  --md-primary-fg-color--light: #7986cb;
-  --md-primary-fg-color--dark: #3949ab;
+  --md-primary-fg-color: #2dd4bf;
+  --md-primary-fg-color--light: #5eead4;
+  --md-primary-fg-color--dark: #14b8a6;
+
+  --home-bg: #0c0a09;
+  --home-card-bg: #1c1917;
+  --home-card-border: rgba(255,255,255,0.08);
+  --home-text-primary: #fafaf9;
+  --home-text-secondary: #a8a29e;
+  --home-text-muted: #78716c;
+
+  --hero-screening-from: #0d5953;
+  --hero-screening-to: #0f766e;
+  --hero-clinical-from: #1e3a8a;
+  --hero-clinical-to: #1e40af;
+  --hero-education-from: #5b21b6;
+  --hero-education-to: #7c3aed;
 
   --color-brzi-pregled-bg: #1b3a1e;
   --color-brzi-pregled-border: #388e3c;
@@ -159,147 +190,480 @@
   color: #9fa8da;
 }
 
-/* --- Homepage Card Grid --- */
-.home-hero {
-  text-align: center;
-  padding: 2rem 1rem 1rem;
-  background: linear-gradient(135deg, #1a237e 0%, #283593 50%, #00897b 100%);
-  color: white;
-  border-radius: 16px;
-  margin-bottom: 2rem;
-}
-
-.home-hero h1 {
-  color: white !important;
-  font-size: 1.6rem;
-  margin-bottom: 0.25rem;
-}
-
-.home-hero .subtitle {
-  opacity: 0.9;
-  font-size: 0.95rem;
-  margin-bottom: 1.5rem;
-}
-
-/* Quick access buttons on homepage */
-.quick-access {
-  display: flex;
-  gap: 0.75rem;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-bottom: 2rem;
-}
-
-.quick-access a {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  padding: 0.6rem 1.2rem;
-  background: white;
-  color: #1a237e;
-  border-radius: 12px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 0.9rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.15s, box-shadow 0.15s;
-  min-height: 44px;
-}
-
-.quick-access a:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
-}
-
-[data-md-color-scheme="slate"] .quick-access a {
-  background: #2e2e4a;
-  color: #9fa8da;
-}
-
-/* Section headers on homepage */
-.section-label {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.8rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: #5c6bc0;
-  margin: 2.5rem 0 1rem;
-  padding-bottom: 0.4rem;
-  border-bottom: 2px solid #e8eaf6;
-}
-
-[data-md-color-scheme="slate"] .section-label {
-  color: #7986cb;
-  border-bottom-color: #2e2e4a;
-}
-
-.subsection-label {
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: #78909c;
-  margin: 1.5rem 0 0.5rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-/* Card grid */
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-  gap: 0.75rem;
+/* --- Brzi Pregled 3-Section Styling --- */
+.md-typeset .admonition.brzi-pregled > .admonition-title ~ p:first-of-type {
+  border-left: 4px solid #2e7d32;
+  background: rgba(46, 125, 50, 0.06);
+  padding: 0.75rem 1rem;
+  border-radius: 0 8px 8px 0;
   margin-bottom: 0.5rem;
 }
 
-.card-grid a {
+.md-typeset .admonition.brzi-pregled > .admonition-title ~ p:nth-of-type(2) {
+  border-left: 4px solid #1565c0;
+  background: rgba(21, 101, 192, 0.06);
+  padding: 0.75rem 1rem;
+  border-radius: 0 8px 8px 0;
+  margin-bottom: 0.5rem;
+}
+
+.md-typeset .admonition.brzi-pregled > .admonition-title ~ p:nth-of-type(3) {
+  border-left: 4px solid #ef6c00;
+  background: rgba(239, 108, 0, 0.06);
+  padding: 0.75rem 1rem;
+  border-radius: 0 8px 8px 0;
+  margin-bottom: 0.5rem;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .admonition.brzi-pregled > .admonition-title ~ p:first-of-type {
+  background: rgba(46, 125, 50, 0.12);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .admonition.brzi-pregled > .admonition-title ~ p:nth-of-type(2) {
+  background: rgba(21, 101, 192, 0.12);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .admonition.brzi-pregled > .admonition-title ~ p:nth-of-type(3) {
+  background: rgba(239, 108, 0, 0.12);
+}
+
+/* --- Symptom Tier Styles --- */
+.symptom-tiers {
   display: flex;
   flex-direction: column;
+  gap: 0.75rem;
+}
+
+.symptom-tier {
+  border-left: 4px solid;
+  padding: 0.75rem 1rem;
+  border-radius: 0 8px 8px 0;
+}
+
+.symptom-tier h3 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0 0 0.5rem 0;
+  display: flex;
   align-items: center;
-  padding: 1rem 0.5rem;
-  background: white;
-  border: 1px solid #e0e0e0;
-  border-radius: 12px;
-  text-decoration: none;
-  color: #1a237e;
-  font-weight: 600;
-  font-size: 0.85rem;
+  gap: 0.5rem;
+}
+
+.symptom-tier h3::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.tier-critical h3::before {
+  background: #c62828;
+}
+
+.tier-supporting h3::before {
+  background: #1565c0;
+}
+
+.tier-differential h3::before {
+  background: #78909c;
+}
+
+[data-md-color-scheme="slate"] .tier-critical h3::before {
+  background: #ef5350;
+}
+
+[data-md-color-scheme="slate"] .tier-supporting h3::before {
+  background: #64b5f6;
+}
+
+[data-md-color-scheme="slate"] .tier-differential h3::before {
+  background: #90a4ae;
+}
+
+.symptom-tier ul {
+  margin: 0;
+}
+
+.tier-critical {
+  border-color: #c62828;
+  background: rgba(198, 40, 40, 0.05);
+}
+
+.tier-critical h3 {
+  color: #c62828;
+}
+
+.tier-supporting {
+  border-color: #1565c0;
+  background: rgba(21, 101, 192, 0.05);
+}
+
+.tier-supporting h3 {
+  color: #1565c0;
+}
+
+.tier-differential {
+  border-color: #78909c;
+  background: rgba(120, 144, 156, 0.05);
+}
+
+.tier-differential h3 {
+  color: #78909c;
+}
+
+/* Symptom tiers dark mode */
+[data-md-color-scheme="slate"] .tier-critical {
+  border-color: #ef5350;
+  background: rgba(239, 83, 80, 0.1);
+}
+
+[data-md-color-scheme="slate"] .tier-critical h3 {
+  color: #ef5350;
+}
+
+[data-md-color-scheme="slate"] .tier-supporting {
+  border-color: #64b5f6;
+  background: rgba(100, 181, 246, 0.1);
+}
+
+[data-md-color-scheme="slate"] .tier-supporting h3 {
+  color: #64b5f6;
+}
+
+[data-md-color-scheme="slate"] .tier-differential {
+  border-color: #90a4ae;
+  background: rgba(144, 164, 174, 0.1);
+}
+
+[data-md-color-scheme="slate"] .tier-differential h3 {
+  color: #90a4ae;
+}
+
+/* ============================================
+   HOMEPAGE — PREMIUM HERO CARD SYSTEM (v3.0)
+   ============================================ */
+
+/* --- Page Background — warm linen off-white + subtle glow --- */
+.home-content {
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(13, 148, 136, 0.06) 0%, transparent 60%),
+    var(--home-bg);
+  margin: -1rem -1.2rem;
+  padding: 1.5rem;
+  min-height: 80vh;
+}
+
+[data-md-color-scheme="slate"] .home-content {
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(45, 212, 191, 0.04) 0%, transparent 60%),
+    var(--home-bg);
+}
+
+/* --- App Header --- */
+.app-header {
   text-align: center;
-  transition: transform 0.15s, box-shadow 0.15s, border-color 0.15s;
-  min-height: 44px;
+  padding: 2rem 0 1.75rem;
+}
+
+.app-header-icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 0.75rem;
+  background: linear-gradient(135deg, var(--hero-screening-from), var(--hero-screening-to));
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-header-icon .material-symbols-outlined {
+  font-size: 28px;
+  color: white;
+}
+
+.app-header-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--home-text-primary);
+  margin: 0 0 0.25rem;
+  letter-spacing: -0.01em;
+}
+
+.app-header-subtitle {
+  font-size: 0.9rem;
+  color: var(--home-text-secondary);
+  margin: 0;
+  font-weight: 400;
+}
+
+/* --- Hero Grid — vertical stack --- */
+.hero-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+/* --- Hero Card — base --- */
+.hero-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.15rem 1.25rem;
+  border-radius: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.15s, box-shadow 0.15s, opacity 0.15s;
+  min-height: 72px;
+  position: relative;
+}
+
+.hero-card:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    0 2px 4px rgba(0,0,0,0.04),
+    0 4px 12px rgba(0,0,0,0.08),
+    0 12px 28px rgba(0,0,0,0.12),
+    0 20px 44px rgba(0,0,0,0.06);
+}
+
+.hero-card:active {
+  transform: translateY(0);
+}
+
+.hero-card-active {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+/* --- Hero Card Icon — glassmorphic circle --- */
+.hero-card-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.hero-card-icon .material-symbols-outlined {
+  font-size: 26px;
+  color: white;
+}
+
+/* --- Hero Card Body --- */
+.hero-card-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.hero-card-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: white;
   line-height: 1.3;
 }
 
-.card-grid a:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-  border-color: #5c6bc0;
-}
-
-.card-grid a .card-icon {
-  font-size: 1.5rem;
-  margin-bottom: 0.3rem;
-}
-
-.card-grid a .card-chapter {
-  font-size: 0.7rem;
-  color: #9e9e9e;
-  font-weight: 400;
+.hero-card-desc {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.75);
   margin-top: 0.15rem;
 }
 
-[data-md-color-scheme="slate"] .card-grid a {
-  background: #2e2e4a;
-  border-color: #404060;
-  color: #b0bec5;
+.hero-card-arrow {
+  color: rgba(255,255,255,0.6);
+  font-size: 22px;
+  flex-shrink: 0;
 }
 
-[data-md-color-scheme="slate"] .card-grid a:hover {
-  border-color: #7986cb;
+/* --- Hero Badges (screening card) --- */
+.hero-badges {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
 }
 
-/* --- Mobile Responsive Enhancements --- */
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0.6rem;
+  background: rgba(255,255,255,0.18);
+  border-radius: 20px;
+  font-size: 0.7rem;
+  color: rgba(255,255,255,0.9);
+  font-weight: 500;
+  backdrop-filter: blur(4px);
+}
+
+/* --- Card Color Variants --- */
+.hero-screening {
+  background: linear-gradient(135deg, var(--hero-screening-from), var(--hero-screening-to));
+}
+
+.hero-clinical {
+  background: linear-gradient(135deg, var(--hero-clinical-from), var(--hero-clinical-to));
+}
+
+.hero-education {
+  background: linear-gradient(135deg, var(--hero-education-from), var(--hero-education-to));
+}
+
+/* --- Expand Panel --- */
+.hero-expand-panel {
+  background: var(--home-card-bg);
+  border: 1px solid var(--home-card-border);
+  border-radius: 14px;
+  padding: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04), 0 4px 16px rgba(0,0,0,0.02);
+  overflow: hidden;
+}
+
+[data-md-color-scheme="slate"] .hero-expand-panel {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2), 0 4px 16px rgba(0,0,0,0.1);
+}
+
+/* --- Expand Panel Transition Classes (Alpine CSS) --- */
+.expand-enter {
+  transition: opacity 0.25s ease-out, max-height 0.3s ease-out, transform 0.25s ease-out;
+}
+.expand-enter-start {
+  opacity: 0;
+  max-height: 0;
+  transform: translateY(-8px);
+}
+.expand-enter-end {
+  opacity: 1;
+  max-height: 800px;
+  transform: translateY(0);
+}
+.expand-leave {
+  transition: opacity 0.2s ease-in, max-height 0.25s ease-in, transform 0.2s ease-in;
+}
+.expand-leave-start {
+  opacity: 1;
+  max-height: 800px;
+  transform: translateY(0);
+}
+.expand-leave-end {
+  opacity: 0;
+  max-height: 0;
+  transform: translateY(-8px);
+}
+
+/* --- Expand Panel Group Label --- */
+.expand-group-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--home-text-muted);
+  padding: 0.6rem 0.75rem 0.25rem;
+}
+
+/* --- Expand Item Row --- */
+.expand-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.7rem 0.75rem;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background 0.15s;
+  min-height: 44px;
+}
+
+.expand-item:hover {
+  background: rgba(0,0,0,0.04);
+}
+
+[data-md-color-scheme="slate"] .expand-item:hover {
+  background: rgba(255,255,255,0.06);
+}
+
+.expand-item-icon {
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.expand-item-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.expand-item-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--home-text-primary);
+  line-height: 1.3;
+}
+
+.expand-item-desc {
+  font-size: 0.78rem;
+  color: var(--home-text-secondary);
+  margin-top: 0.1rem;
+}
+
+.expand-item-arrow {
+  font-size: 18px;
+  color: var(--home-text-muted);
+  flex-shrink: 0;
+}
+
+/* --- Professional App Footer --- */
+.app-footer {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-size: 0.8rem;
+  color: var(--home-text-muted);
+  border-top: none;
+  margin-top: 1.5rem;
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.app-footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 10%;
+  right: 10%;
+  height: 2px;
+  background: linear-gradient(90deg, #0d9488, #3b82f6, #7c3aed);
+  border-radius: 1px;
+  opacity: 0.5;
+}
+
+.app-footer strong {
+  color: var(--md-primary-fg-color);
+  font-weight: 600;
+}
+
+.app-footer small {
+  display: block;
+  margin-top: 0.25rem;
+  color: var(--home-text-muted);
+}
+
+/* --- Hide MkDocs footer on homepage --- */
+.home-content ~ .md-footer,
+.home-content + .md-footer {
+  display: none;
+}
+
+/* ============================================
+   MOBILE RESPONSIVE
+   ============================================ */
 
 /* Ensure minimum 44px touch targets */
 .md-typeset a,
@@ -310,79 +674,178 @@
   align-items: center;
 }
 
-/* Mobile card grid: 2 columns */
 @media screen and (max-width: 600px) {
-  .card-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.5rem;
+  .home-content {
+    padding: 1rem;
+    margin: -0.5rem -0.8rem;
   }
 
-  .card-grid a {
-    padding: 0.75rem 0.4rem;
-    font-size: 0.8rem;
+  .app-header {
+    padding: 1.25rem 0 1.25rem;
   }
 
-  .home-hero h1 {
-    font-size: 1.3rem;
+  .app-header-title {
+    font-size: 1.25rem;
   }
 
-  .quick-access {
-    gap: 0.5rem;
+  .hero-card {
+    padding: 1rem;
+    min-height: 64px;
   }
 
-  .quick-access a {
-    font-size: 0.8rem;
-    padding: 0.5rem 0.8rem;
+  .hero-card-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+  }
+
+  .hero-card-icon .material-symbols-outlined {
+    font-size: 22px;
+  }
+
+  .hero-card-title {
+    font-size: 0.95rem;
+  }
+
+  .hero-card-desc {
+    font-size: 0.75rem;
   }
 }
 
-/* Tablet: 3 columns */
-@media screen and (min-width: 601px) and (max-width: 960px) {
-  .card-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
+/* ============================================
+   CHAPTER PAGE ENHANCEMENTS — Premium v4.0
+   ============================================ */
+
+/* --- All Admonitions: Multi-Layer Shadows + Hover --- */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 14px;
+  box-shadow:
+    0 1px 3px rgba(0,0,0,0.04),
+    0 4px 12px rgba(0,0,0,0.06);
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
 }
 
-/* --- Chapter Page Enhancements --- */
+.md-typeset .admonition:hover,
+.md-typeset details:hover {
+  box-shadow:
+    0 2px 6px rgba(0,0,0,0.06),
+    0 8px 24px rgba(0,0,0,0.1);
+  transform: translateY(-1px);
+}
 
-/* Make the brzi-pregled box the first prominent element */
+[data-md-color-scheme="slate"] .md-typeset .admonition,
+[data-md-color-scheme="slate"] .md-typeset details {
+  box-shadow:
+    0 1px 3px rgba(0,0,0,0.15),
+    0 4px 12px rgba(0,0,0,0.2);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .admonition:hover,
+[data-md-color-scheme="slate"] .md-typeset details:hover {
+  box-shadow:
+    0 2px 6px rgba(0,0,0,0.2),
+    0 8px 24px rgba(0,0,0,0.3);
+}
+
+/* --- Brzi pregled: Gradient Header Bar --- */
 .md-typeset .admonition.brzi-pregled {
   margin-top: 0;
-  border-width: 2px;
-  border-radius: 12px;
+  border-width: 0;
+  border-radius: 14px;
   padding: 0.5rem;
+  overflow: hidden;
+}
+
+.md-typeset .brzi-pregled > .admonition-title,
+.md-typeset .brzi-pregled > summary {
+  background: linear-gradient(135deg, #2e7d32, #43a047);
+  color: white;
+  border-color: transparent;
+  border-radius: 10px 10px 0 0;
+  margin: -0.5rem -0.5rem 0.75rem;
+  padding: 0.85rem 1rem;
+}
+
+.md-typeset .brzi-pregled > .admonition-title::before,
+.md-typeset .brzi-pregled > summary::before {
+  background-color: white;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .brzi-pregled > .admonition-title,
+[data-md-color-scheme="slate"] .md-typeset .brzi-pregled > summary {
+  background: linear-gradient(135deg, #1b5e20, #2e7d32);
 }
 
 .md-typeset .admonition.crvena-zastavica {
   border-width: 2px;
-  border-radius: 12px;
+  border-radius: 14px;
 }
 
 .md-typeset .admonition.zamka {
   border-width: 2px;
-  border-radius: 12px;
+  border-radius: 14px;
 }
 
 .md-typeset .admonition.kljucna-poruka {
   border-width: 2px;
-  border-radius: 12px;
+  border-radius: 14px;
 }
 
 /* Table styling for medical tables */
 .md-typeset table:not([class]) {
   font-size: 0.85rem;
-  border-radius: 8px;
+  border-radius: 12px;
   overflow: hidden;
+  border-collapse: separate;
+  border-spacing: 0;
+  box-shadow:
+    0 1px 3px rgba(0,0,0,0.04),
+    0 4px 12px rgba(0,0,0,0.06);
 }
 
 .md-typeset table:not([class]) th {
-  background-color: #e8eaf6;
+  background: linear-gradient(135deg, #e8eaf6, #ede7f6);
   font-weight: 700;
   white-space: nowrap;
+  padding: 0.75rem 1rem;
+  border-bottom: 2px solid rgba(0,0,0,0.08);
+}
+
+.md-typeset table:not([class]) td {
+  padding: 0.65rem 1rem;
+  border-bottom: 1px solid rgba(0,0,0,0.04);
+}
+
+.md-typeset table:not([class]) tbody tr:nth-child(even) {
+  background: rgba(0,0,0,0.015);
+}
+
+.md-typeset table:not([class]) tbody tr:hover {
+  background: rgba(15, 118, 110, 0.04);
 }
 
 [data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
-  background-color: #2e2e4a;
+  background: linear-gradient(135deg, #2e2e4a, #3a2e5a);
+  border-bottom-color: rgba(255,255,255,0.08);
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) td {
+  border-bottom-color: rgba(255,255,255,0.04);
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) tbody tr:nth-child(even) {
+  background: rgba(255,255,255,0.02);
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) tbody tr:hover {
+  background: rgba(45, 212, 191, 0.06);
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) {
+  box-shadow:
+    0 1px 3px rgba(0,0,0,0.15),
+    0 4px 12px rgba(0,0,0,0.2);
 }
 
 /* Bold text in admonitions */
@@ -403,7 +866,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: #1a237e;
+  background: #0f766e;
   color: white;
   padding: 0.75rem 1rem;
   text-align: center;
@@ -413,7 +876,7 @@
 
 .pwa-install-banner button {
   background: white;
-  color: #1a237e;
+  color: #0f766e;
   border: none;
   padding: 0.5rem 1.5rem;
   border-radius: 8px;
@@ -428,26 +891,66 @@
   text-decoration: underline;
 }
 
-/* --- Author Footer --- */
-.author-footer {
-  text-align: center;
-  padding: 1.5rem 1rem;
-  margin-top: 2rem;
-  border-top: 1px solid #e0e0e0;
-  font-size: 0.85rem;
-  color: #78909c;
+/* --- Warm page background for all pages --- */
+[data-md-color-scheme="default"] .md-main {
+  background: #f7f3ee;
 }
 
-.author-footer strong {
-  color: #1a237e;
+/* --- Heading typography tuning --- */
+.md-typeset h1, .md-typeset h2, .md-typeset h3 {
+  letter-spacing: -0.02em;
 }
 
-[data-md-color-scheme="slate"] .author-footer {
-  border-top-color: #404060;
+.md-typeset h1 {
+  font-weight: 900;
 }
 
-[data-md-color-scheme="slate"] .author-footer strong {
-  color: #9fa8da;
+/* --- Section Header (h2): Gradient Underline Accent --- */
+.md-typeset h2 {
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.md-typeset h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--md-primary-fg-color), transparent);
+  border-radius: 2px;
+}
+
+/* --- Collapsible Sections: Shadow on Open --- */
+.md-typeset details[open] {
+  box-shadow:
+    0 2px 6px rgba(0,0,0,0.06),
+    0 8px 20px rgba(0,0,0,0.08);
+}
+
+.md-typeset details > summary {
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.md-typeset details[open] > summary {
+  border-bottom-color: rgba(0,0,0,0.08);
+}
+
+[data-md-color-scheme="slate"] .md-typeset details[open] {
+  box-shadow:
+    0 2px 6px rgba(0,0,0,0.2),
+    0 8px 20px rgba(0,0,0,0.25);
+}
+
+[data-md-color-scheme="slate"] .md-typeset details[open] > summary {
+  border-bottom-color: rgba(255,255,255,0.08);
+}
+
+.app-header-title {
+  font-weight: 900;
+  letter-spacing: -0.02em;
 }
 
 /* --- Smooth scrolling --- */
@@ -463,16 +966,135 @@ html {
 }
 
 /* --- PWA Banner Content Spacing --- */
-/* Prevent fixed PWA install banner from overlapping page content */
 .md-content {
   padding-bottom: 70px;
 }
 
-/* --- Dark Mode Card Border Enhancement --- */
-[data-md-color-scheme="slate"] .card-grid a {
-  border-color: #505078;
+/* ============================================
+   ANIMATION SYSTEM — Premium UI/UX
+   ============================================ */
+
+/* --- Keyframes --- */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-[data-md-color-scheme="slate"] .card-grid a:hover {
-  border-color: #9fa8da;
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scoreReveal {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  60% {
+    transform: scale(1.08);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes progressGlow {
+  0%, 100% {
+    box-shadow: 0 0 4px rgba(15, 118, 110, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 12px rgba(15, 118, 110, 0.6);
+  }
+}
+
+/* --- Entrance Animation Utilities --- */
+.animate-in {
+  animation: fadeInUp 0.5s ease-out both;
+}
+
+.animate-fade {
+  animation: fadeIn 0.5s ease-out both;
+}
+
+.animate-scale {
+  animation: scaleIn 0.4s ease-out both;
+}
+
+.animate-delay-1 { animation-delay: 0.05s; }
+.animate-delay-2 { animation-delay: 0.12s; }
+.animate-delay-3 { animation-delay: 0.2s; }
+.animate-delay-4 { animation-delay: 0.28s; }
+.animate-delay-5 { animation-delay: 0.36s; }
+.animate-delay-6 { animation-delay: 0.44s; }
+.animate-delay-7 { animation-delay: 0.52s; }
+
+/* --- Scroll-Triggered Animation --- */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.animate-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --- Reduced Motion Safety --- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-delay: 0ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .animate-on-scroll {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* --- Print Safety --- */
+@media print {
+  .animate-in,
+  .animate-fade,
+  .animate-scale,
+  .animate-on-scroll {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+  }
 }

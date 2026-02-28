@@ -1,0 +1,161 @@
+{% extends "main.html" %}
+
+{% block tabs %}
+  {{ super() }}
+{% endblock %}
+
+{% block content %}
+<div class="questionnaire-app" x-cloak x-data="{
+  answers: [null, null, null, null, null, null, null, null],
+  displayScore: 0,
+  items: [
+    'Sjedite i čitate',
+    'Gledate televiziju',
+    'Sjedite neaktivno na javnom mjestu (npr. u kazalištu, na sastanku)',
+    'Vozite se kao putnik u automobilu neprekidno 1 sat',
+    'Legli ste da se odmorite poslijepodne kad su to okolnosti dopustile',
+    'Sjedite i razgovarate s nekim',
+    'Sjedite mirno nakon ručka bez alkohola',
+    'U automobilu ste, stojite u prometu nekoliko minuta'
+  ],
+  scaleLabels: [
+    '0 — Nikad ne bih zadrijemao/la',
+    '1 — Mala vjerojatnost',
+    '2 — Umjerena vjerojatnost',
+    '3 — Velika vjerojatnost'
+  ],
+  get answeredCount() {
+    return this.answers.filter(a => a !== null).length;
+  },
+  get score() {
+    if (!this.allAnswered) return 0;
+    return this.answers.reduce((sum, val) => sum + val, 0);
+  },
+  get allAnswered() {
+    return this.answers.every(a => a !== null);
+  },
+  animateScoreUp() {
+    const target = this.score;
+    const duration = 600;
+    const start = performance.now();
+    const from = this.displayScore;
+    const step = (now) => {
+      const elapsed = now - start;
+      const progress = Math.min(elapsed / duration, 1);
+      const ease = 1 - Math.pow(1 - progress, 3);
+      this.displayScore = Math.round(from + (target - from) * ease);
+      if (progress < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  },
+  get interpretation() {
+    const s = this.score;
+    if (s <= 7) return 'Normalna dnevna pospanost';
+    if (s <= 9) return 'Granična pospanost';
+    if (s <= 15) return 'Pretjerana dnevna pospanost (blaga do umjerena)';
+    return 'Pretjerana dnevna pospanost (teška)';
+  },
+  get interpretationDetail() {
+    const s = this.score;
+    if (s <= 7) return 'Rezultat u granicama normale. Nema znakova pretjerane dnevne pospanosti.';
+    if (s <= 9) return 'Granični rezultat. Preporuča se praćenje i ponovna evaluacija.';
+    if (s <= 15) return 'Povišena dnevna pospanost. Indicirana je daljnja obrada uzroka pospanosti.';
+    return 'Značajno povišena pospanost. Hitno razmotriti polisomnografiju i neurološku obradu.';
+  },
+  get severityClass() {
+    const s = this.score;
+    if (s <= 7) return 'severity-normal';
+    if (s <= 9) return 'severity-mild';
+    if (s <= 15) return 'severity-moderate';
+    return 'severity-severe';
+  },
+  copySuccess: false,
+  copyResult() {
+    let text = 'EPWORTHOVA LJESTVICA POSPANOSTI (ESS)\n';
+    text += '======================================\n';
+    text += 'Datum: ' + new Date().toLocaleDateString('hr-HR') + '\n\n';
+    text += 'UKUPAN REZULTAT: ' + this.score + ' / 24\n';
+    text += 'INTERPRETACIJA: ' + this.interpretation + '\n\n';
+    text += 'ODGOVORI PO STAVKAMA:\n';
+    this.items.forEach((item, i) => {
+      text += '  ' + (i + 1) + '. ' + item + ' — ' + this.answers[i] + '\n';
+    });
+    text += '\nLJESTVICA: 0 = Nikad ne bih zadrijemao/la, 1 = Mala vjerojatnost, 2 = Umjerena vjerojatnost, 3 = Velika vjerojatnost\n';
+    text += '\nGenerirano pomoću: Vodič za poremećaje spavanja u PZZ\n';
+    text += 'Napomena: Upitnik nije dijagnostički instrument.\n';
+
+    navigator.clipboard.writeText(text).then(() => {
+      this.copySuccess = true;
+      setTimeout(() => this.copySuccess = false, 2000);
+    });
+  },
+  reset() {
+    this.answers = [null, null, null, null, null, null, null, null];
+    this.copySuccess = false;
+    window.scrollTo(0, 0);
+  }
+}">
+
+  <!-- Header -->
+  <div class="questionnaire-header">
+    <h1>Epworthova ljestvica pospanosti (ESS)</h1>
+    <div class="subtitle">Koliko je vjerojatno da biste zadrijemali u sljedećim situacijama?</div>
+    <div class="progress-badge" x-show="answeredCount > 0 && !allAnswered" x-transition>
+      <span x-text="answeredCount"></span> / <span x-text="items.length"></span> odgovoreno
+    </div>
+  </div>
+
+  <!-- Question Items -->
+  <template x-for="(item, index) in items" :key="index">
+    <div class="q-item" :class="{'answered': answers[index] !== null}">
+      <div class="q-item-header">
+        <span class="q-item-number" x-text="index + 1"></span>
+        <span class="q-item-text" x-text="item"></span>
+      </div>
+      <div class="chip-group">
+        <template x-for="val in [0, 1, 2, 3]" :key="val">
+          <button class="chip"
+                  :class="{'selected': answers[index] === val}"
+                  @click="answers[index] = val"
+                  x-text="scaleLabels[val]">
+          </button>
+        </template>
+      </div>
+    </div>
+  </template>
+
+  <!-- Score Display -->
+  <div class="score-display score-revealed" x-show="allAnswered" x-transition
+       x-effect="if (allAnswered) animateScoreUp()">
+    <div class="score-value">
+      <span x-text="displayScore"></span>
+      <span class="score-max">/ 24</span>
+    </div>
+    <div class="score-label">Ukupan rezultat</div>
+  </div>
+
+  <!-- Interpretation -->
+  <div class="interpretation-card"
+       :class="severityClass"
+       x-show="allAnswered"
+       x-transition>
+    <div class="interpretation-label" x-text="interpretation"></div>
+    <div class="interpretation-detail" x-text="interpretationDetail"></div>
+  </div>
+
+  <!-- Action Buttons -->
+  <div class="action-buttons" x-show="allAnswered" x-transition>
+    <button class="btn-action primary"
+            :class="{'btn-copy-success': copySuccess}"
+            @click="copyResult()"
+            x-text="copySuccess ? 'Kopirano!' : 'Kopiraj rezultat'">
+    </button>
+    <button class="btn-action" @click="window.print()">Ispiši</button>
+    <button class="btn-action" @click="reset()">Ispočetka</button>
+  </div>
+
+</div>
+
+<style>[x-cloak] { display: none !important; }</style>
+
+{% endblock %}
