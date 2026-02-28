@@ -18,7 +18,7 @@
   radius: 2pt,
   fill: color-gray-bg,
   stroke: (left: 2pt + color-gray),
-  text(size: 8pt, style: "italic")[*Luka, 17 g.*, majka ga dovodi jer „ne može zaspati". U krevet ide u 23h, ali zaspi tek u 02–03h. Ujutro se jedva budi za školu. Vikendom? Spava od 03h do 12h — „odlično se naspava". Pedijatar propisao zolpidem — bez učinka (zolpidem nije indiciran u maloljetnika).]
+  text(size: 8pt, style: "italic")[*Luka, 17 g.*, majka ga dovodi jer „ne može zaspati“. U krevet ide u 23h, ali zaspi tek u 02–03h. Ujutro se jedva budi za školu. Vikendom? Spava od 03h do 12h — „odlično se naspava“. Pedijatar propisao zolpidem — bez učinka. Zolpidem nije indiciran u maloljetnika, a DSWPD nije nesanica — hipnotik ne rješava problem vremena.]
 )
 #v(3pt)
 
@@ -30,14 +30,14 @@
     stroke: none,
     [*Prepoznaj*], [Mladi koji "ne mogu zaspati" prije 02–03h, ali spavaju normalno vikendom (DSWPD). Stariji zaspu u 19–20h, bude se u 03–04h (ASWPD). Smjenski radnici s kroničnim umorom.],
     [*Učini*], [Dnevnik spavanja 2 tj. (uključi vikend!). DSWPD: melatonin 0,5–3 mg u 18–19h + jutarnje svjetlo 10.000 lux × 30 min. Smjenski rad: edukacija.],
-    [*Uputi*], [Bez odgovora na kronoterapiju 4–6 tj. → centar za spavanje (aktigrafija, DLMO).],
+    [*Uputi*], [Bez odgovora na kronoterapiju 4–6 tj. → centar za spavanje (aktigrafija, DLMO — _Dim Light Melatonin Onset_ — početak lučenja melatonina).],
   )
 ]
 
 #v(4pt)
 #kljucna-poruka[
-  + *Cirkadijani poremećaji = problem VREMENA, ne KVALITETE sna.* Ključno pitanje: „Spavate li dobro vikendom?" Ako DA → nije nesanica.
-  + *DSWPD je najčešći propušteni cirkadijani poremećaj.* Adolescenti koji „ne mogu zaspati" nemaju nesanicu — hipnotik ne pomaže.
+  + *Cirkadijani poremećaji = problem VREMENA, ne KVALITETE sna.* Ključno pitanje: „Spavate li dobro vikendom?“ Ako DA → nije nesanica.
+  + *DSWPD je najčešći propušteni cirkadijani poremećaj.* Adolescenti koji „ne mogu zaspati“ nemaju nesanicu — hipnotik ne pomaže.
   + *Melatonin za DSWPD: mala doza, rano navečer.* 0,5–3 mg u 18–19h. Više nije bolje.
   + *Smjenski rad nije benigan.* KV bolesti, metabolički sindrom, karcinomi. LOM aktivno probire i savjetuje.
   + *Rano buđenje starijih nije uvijek depresija.* Očuvano raspoloženje → ASWPD. Večernje svjetlo pomaže.
@@ -46,18 +46,18 @@
 #v(4pt)
 #pitanja-box[
   #pitanja-table((
-    [„Spavate li dobro vikendom kada nemate obaveza?"], [DA + loš san radnim danom = cirkadijani, ne nesanica],
-    [„Kada biste najradije išli spavati bez ikakvih obaveza?"], [>02h = sumnja na DSWPD],
-    [„U koliko sati se prirodno budite vikendom?"], [Spontano buđenje otkriva endogeni ritam],
-    [„Je li problem samo usnivanje ili i održavanje sna?"], [Samo usnivanje + vikendom OK = klasični DSWPD],
-    [„Radite li u smjenama?"], [Smjenski rad → specifičan protokol upravljanja],
+    [„Spavate li dobro vikendom kada nemate obaveza?“], [DA + loš san radnim danom = cirkadijani, ne nesanica],
+    [„Kada biste najradije išli spavati bez ikakvih obaveza?“], [>02h = sumnja na DSWPD],
+    [„U koliko sati se prirodno budite vikendom?“], [Spontano buđenje otkriva endogeni ritam],
+    [„Je li problem samo usnivanje ili i održavanje sna?“], [Samo usnivanje + vikendom OK = klasični DSWPD],
+    [„Radite li u smjenama?“], [Smjenski rad → specifičan protokol upravljanja],
   ))
 ]
 
 // === Kako prepoznati? ===
 == Kako prepoznati?
 
-Poremećaji cirkadijanog ritma nastaju kad je unutarnji biološki sat pomaknut u odnosu na društveni raspored — problem vremena, ne kvalitete sna. Prevalencija: DSWPD 1–3% opće populacije (7–16% adolescenata); u praksi s 2.000 pacijenata: 20–60 ima DSWPD.
+Poremećaji cirkadijanog ritma nastaju kad je unutarnji biološki sat pomaknut u odnosu na društveni raspored — problem vremena, ne kvalitete sna. Prevalencija: DSWPD (poremećaj faze odgođenog spavanja) 1–3% opće populacije (7–16% adolescenata); u praksi s 2.000 pacijenata: 20–60 ima DSWPD.
 
 === DSWPD — pomak unatrag
 
@@ -73,7 +73,7 @@ Poremećaji cirkadijanog ritma nastaju kad je unutarnji biološki sat pomaknut u
 
 *Tipičan pacijent:* Starija osoba (>60 g.) zaspi u 18–20h, budi se u 02–05h.
 
-*Ključna DD: ASWPD vs. depresija* — ako su raspoloženje, apetit i interesi očuvani → razmisliti o ASWPD-u prije dijagnoze depresije.
+*Ključna DD: ASWPD vs. depresija* — ako su raspoloženje, apetit i interesi očuvani → razmisliti o ASWPD-u (poremećaj faze unaprijeđenog spavanja) prije dijagnoze depresije.
 
 === Poremećaj smjenskog rada
 
@@ -81,12 +81,12 @@ Poremećaji cirkadijanog ritma nastaju kad je unutarnji biološki sat pomaknut u
 
 === Non-24
 
-Gotovo isključivo u *potpuno slijepih osoba* — endogeni sat „slobodno trči". LOM prepoznaje i upućuje specijalistu za melatonin protokole.
+Gotovo isključivo u *potpuno slijepih osoba* — endogeni sat „slobodno trči“. LOM prepoznaje i upućuje specijalistu za melatonin protokole.
 
 *Ključna pitanja:*
-+ „Spavate li dobro vikendom kada nemate obaveza?" — ako DA → cirkadijani, ne nesanica
-+ „Kada biste najradije išli spavati bez ikakvih obaveza?"
-+ „U koliko sati se prirodno budite vikendom?"
++ „Spavate li dobro vikendom kada nemate obaveza?“ — ako DA → cirkadijani, ne nesanica
++ „Kada biste najradije išli spavati bez ikakvih obaveza?“
++ „U koliko sati se prirodno budite vikendom?“
 
 // === Probir i dijagnostika ===
 == Probir i dijagnostika
@@ -155,6 +155,8 @@ Cilj: *pomicanje cirkadijanog ritma unaprijed* — melatonin (pomicanje sata) + 
 
 #pearl[*Česta pogreška:* Melatonin 5–10 mg u ponoć = koristi se kao (slab) hipnotik. Ispravno: *mala doza, rano navečer* — za pomicanje faze.]
 
+#pearl[*Razlikujte oblike melatonina:* Brzo otpuštajući (IR) melatonin u niskoj dozi za _pomicanje faze_ (kronobiološki učinak). Produljeno otpuštajući (PR) melatonin 2 mg za _održavanje sna_ u starijih. Za DSWPD uvijek brzo otpuštajući.]
+
 *2. Jutarnja svjetloterapija:* 10.000 lux × 30 min odmah po buđenju. Alternativa: izlazak na jutarnje sunce.
 
 *3. Izbjegavanje svjetla navečer:* Bez ekrana 2–3 h prije željenog usnivanja. Prigušiti rasvjetu od 20–21h.
@@ -216,6 +218,8 @@ Potpuna eliminacija smjenskog rada je idealna, ali rijetko praktična.
   ),
 ))
 
+#pearl[*Načelo „start low, go slow“:* Melatonin započeti s 0,5 mg. Ako nema učinka nakon 2 tjedna, povećati na 1–2 mg. Više doze rijetko donose dodatnu korist za pomak faze.]
+
 // === Praćenje ===
 == Praćenje
 
@@ -250,12 +254,38 @@ Potpuna eliminacija smjenskog rada je idealna, ali rijetko praktična.
 == Česte zamke
 
 #zamka-table((
-  [DSWPD → dijagnoza „nesanica" + hipnotik], [Pitajte o vikendnom snu; ako spava dobro = cirkadijani poremećaj],
+  [DSWPD → dijagnoza „nesanica“ + hipnotik], [Pitajte o vikendnom snu; ako spava dobro = cirkadijani poremećaj],
   [Melatonin 5–10 mg u ponoć za DSWPD], [Niske doze (0,5–3 mg) u 18–19h — *vrijeme > doza*],
   [Rano buđenje starije osobe = depresija], [Očuvano raspoloženje i interes → razmisliti o ASWPD-u],
-  [„Ma to je samo lijenost" (mladi s DSWPD)], [DSWPD je biološki poremećaj; kažnjavanje pogoršava],
-  [„Samo se naviknite" (smjenski radnik)], [Cirkadijani sustav se ne može „naviknuti" na noćni rad],
+  [„Ma to je samo lijenost“ (mladi s DSWPD)], [DSWPD je biološki poremećaj; kažnjavanje pogoršava],
+  [„Samo se naviknite“ (smjenski radnik)], [Cirkadijani sustav se ne može „naviknuti“ na noćni rad],
   [Ignoriranje razlike radni dan/vikend], [Upravo ta razlika otkriva cirkadijanu komponentu],
   [Zanemariti zdravstvene rizike smjenskog rada], [Aktivni probir: KV rizik, metabolički sindrom, karcinomi],
 ))
+
+#literatura((
+  [Auger RR et al. Clinical Practice Guideline for the Treatment of Intrinsic Circadian Rhythm Sleep-Wake Disorders. _J Clin Sleep Med._ 2015;11(10):1199–1236.],
+  [Morgenthaler TI et al. Practice Parameters for the Clinical Evaluation and Treatment of Circadian Rhythm Sleep Disorders. _Sleep._ 2007;30(11):1445–1459.],
+  [Zhu L, Zee PC. Circadian Rhythm Sleep Disorders. _Neurol Clin._ 2012;30(4):1167–1191.],
+  [Wickwire EM et al. Shift Work and Shift Work Sleep Disorder: Clinical and Organizational Perspectives. _Chest._ 2017;151(5):1156–1172.],
+  [Burgess HJ et al. Human phase response curves to three days of daily melatonin: 0.5 mg versus 3.0 mg. _J Clin Endocrinol Metab._ 2010;95(7):3325–3331.],
+))
+
+#chapter-summary(
+  title: "4. Cirkadijani poremećaji",
+  category: "Cirkadijani poremećaji",
+  color: cat-circadian,
+  prepoznaj: [San kvalitetan, ali u krivo vrijeme. DSWPD: ne može zaspati prije 02–04h. ASWPD: budni od 03–04h. Smjenski rad: nesanica + pospanost.],
+  ucini: [Dnevnik spavanja 2 tj. (uklj. vikend). Melatonin IR za pomak faze. Jutarnje/večernje svjetlo (10.000 lux, 30 min).],
+  uputi: [Bez odgovora 4–6 tj., neregularan tip, smjenski rad s prometnim nesrećama → centar za spavanje.],
+  drugs: (
+    ([Melatonin IR], [0,5–3 mg, 4–6h prije DLMO], [✓]),
+    ([Svjetloterapija], [10.000 lux, 30 min], [—]),
+  ),
+  red-flags: (
+    [Smjenski rad + pospanost za volanom — sigurnosna procjena obavezna],
+    [Depresija kod DSWPD — česta, liječiti paralelno],
+    [Adolescent s „lijenošću“ — razmotriti DSWPD prije psihijatrijske dijagnoze],
+  ),
+)
 

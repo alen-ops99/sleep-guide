@@ -6,7 +6,7 @@
 
 #chapter-title(
   number: 9,
-  title: "REM poremećaj ponašanja u snu (RBD)",
+  title: "Poremećaj ponašanja u REM spavanju (RBD)",
   mkb: "G47.52",
   icsd: "REM Sleep Behavior Disorder",
   color: cat-parasomnia,
@@ -18,7 +18,7 @@
   radius: 2pt,
   fill: color-gray-bg,
   stroke: (left: 2pt + color-gray),
-  text(size: 8pt, style: "italic")[*Zdravko, 67 g.*, supruga kaže da „udara rukama, viče i pada iz kreveta u snu" — počelo prije 2 godine. Epizode u drugoj polovici noći. On se ničega ne sjeća. U posljednje vrijeme primjećuje „sporije hodanje i trnu mu prsti."]
+  text(size: 8pt, style: "italic")[*Zdravko, 67 g.*, supruga kaže da „udara rukama, viče i pada iz kreveta u snu“ — počelo prije 2 godine. Epizode u drugoj polovici noći. On se ničega ne sjeća. U posljednje vrijeme primjećuje „sporije hodanje i trnu mu prsti.“ Četiri godine simptoma — nitko nije pitao o ponašanju u snu.]
 )
 #v(3pt)
 
@@ -36,9 +36,9 @@
 
 #v(4pt)
 #kljucna-poruka[
-  + *RBD = prozor u budućnost mozga.* >80% razvit će PD, DLB ili MSA unutar 10--15 godina. Rana dijagnoza omogućuje praćenje i pripremu.
+  + *RBD = prozor u budućnost mozga.* >80% razvit će Parkinsonovu bolest (PD), demenciju s Lewyjevim tjelešcima (DLB) ili multisistemsku atrofiju (MSA) unutar 10--15 godina. Rana dijagnoza omogućuje praćenje i pripremu.
   + *Pitajte partnera, ne samo pacijenta.* Heteroanamneza je najvažniji dijagnostički alat u PZZ.
-  + *Novo izvođenje snova >50 g. nikada nije benigno.* Ne otpisujte kao „čudne snove". Neurološka obrada obavezna.
+  + *Novo izvođenje snova >50 g. nikada nije benigno.* Ne otpisujte kao „čudne snove“. Neurološka obrada obavezna.
   + *Sigurnost spavaće sobe je intervencija br. 1* -- ispred svih lijekova. Madrac na pod, ukloniti oštre predmete.
   + *Provjerite listu lijekova.* SSRI, SNRI i beta-blokatori mogu izazvati ili demaskirati RBD.
 ]
@@ -46,11 +46,11 @@
 #v(4pt)
 #pitanja-box[
   #pitanja-table((
-    [Partner: „Je li Vaš partner ikada udarao, vikao ili se micao u snu?"], [Heteroanamneza je najvažniji dijagnostički alat],
-    [„Je li ikada pao iz kreveta tijekom spavanja?"], [Padanje iz kreveta → rizik ozljede + potvrda motorike u snu],
-    [„Sjećate li se živopisnih, nasilnih snova?"], [Sjećanje na san + motorička aktivnost = RBD],
-    [„Osjećate li gubitak njuha?"], [Anosmija + RBD → gotovo patognomonično za prodrom PD],
-    [„Primjećujete li sporije hodanje, ukočenost?"], [Rani parkinsonizam → fenokonverzija u tijeku],
+    [Partner: „Je li Vaš partner ikada udarao, vikao ili se micao u snu?“], [Heteroanamneza je najvažniji dijagnostički alat],
+    [„Je li ikada pao iz kreveta tijekom spavanja?“], [Padanje iz kreveta → rizik ozljede + potvrda motorike u snu],
+    [„Sjećate li se živopisnih, nasilnih snova?“], [Sjećanje na san + motorička aktivnost = RBD],
+    [„Osjećate li gubitak njuha?“], [Anosmija + RBD → gotovo patognomonično za prodrom PD],
+    [„Primjećujete li sporije hodanje, ukočenost?“], [Rani parkinsonizam → fenokonverzija u tijeku],
   ))
 ]
 
@@ -62,7 +62,7 @@ RBD nastaje kad fiziološka REM atonija izostane — pacijent doslovno izvodi sv
 *Kritični znakovi:*
 - Partner prijavljuje da se pacijent *tuče, udara, viče ili pada iz kreveta* u snu
 - Epizode u *drugoj polovici noći* (REM prevladava)
-- Pacijent može opisati *živopisne snove* koje „izvodi"
+- Pacijent može opisati *živopisne snove* koje „izvodi“
 
 *Podržavajući znakovi:*
 - Dob >50 godina
@@ -71,14 +71,14 @@ RBD nastaje kad fiziološka REM atonija izostane — pacijent doslovno izvodi sv
 - Korištenje SSRI/SNRI
 
 *Pitanja za partnera:*
-+ „Je li Vaš partner ikada udarao, vikao ili se micao u snu?"
-+ „Je li ikada pao iz kreveta tijekom spavanja?"
-+ „Jeste li Vi ikada bili ozlijeđeni dok je partner spavao?"
++ „Je li Vaš partner ikada udarao, vikao ili se micao u snu?“
++ „Je li ikada pao iz kreveta tijekom spavanja?“
++ „Jeste li Vi ikada bili ozlijeđeni dok je partner spavao?“
 
 *Pitanja za pacijenta:*
-+ „Sjećate li se živopisnih, često nasilnih snova?"
-+ „Jeste li se probudili na podu ili s neobjašnjenim modricama?"
-+ „Osjećate li gubitak njuha, usporavanje pokreta, zatvor?"
++ „Sjećate li se živopisnih, često nasilnih snova?“
++ „Jeste li se probudili na podu ili s neobjašnjenim modricama?“
++ „Osjećate li gubitak njuha, usporavanje pokreta, zatvor?“
 
 === Diferencijalna dijagnoza
 
@@ -106,7 +106,7 @@ RBD nastaje kad fiziološka REM atonija izostane — pacijent doslovno izvodi sv
 
 LOM ne postavlja definitivnu dijagnozu -- to zahtijeva *video-PSG s proširenim EMG montažom*. Zadaće LOM-a: (1) prepoznati sumnju, (2) primijeniti RBDSQ, (3) uputiti na PSG.
 
-*RBDSQ* -- 13 da/ne pitanja, primjenjiv u čekaonici:
+*RBDSQ* #see(<upitnik-rbdsq>) -- 13 da/ne pitanja, primjenjiv u čekaonici:
 - *≥5 bodova* = pozitivan probir → upućivanje na PSG
 - Osjetljivost 96%, specifičnost 56% (znatan broj lažno pozitivnih → PSG neophodan za potvrdu)
 
@@ -133,7 +133,7 @@ Najvažnija intervencija, *odmah*, prije dijagnostike ili farmakoterapije:
 - Spustiti krevet -- idealno *madrac na pod*
 - Podstaviti rubove kreveta jastucima
 - Zatvoriti i zaključati prozore u blizini kreveta
-- *Razdvojiti spavanje* ako je partner pod rizikom ozljede -- medicinska preporuka, ne „kraj odnosa"
+- *Razdvojiti spavanje* ako je partner pod rizikom ozljede -- medicinska preporuka, ne „kraj odnosa“
 
 === 2. Farmakoterapija
 
@@ -155,6 +155,8 @@ Najvažnija intervencija, *odmah*, prije dijagnostike ili farmakoterapije:
 ))
 
 *Melatonin:* Započeti s 3 mg, 30--60 min prije spavanja. Titrirati naviše svaka 2 tjedna. Za RBD su potrebne *više doze* nego za nesanicu (6--12 mg nije neuobičajeno). Puni učinak: 2--4 tjedna. Izvrstan sigurnosni profil.
+
+#pearl[*Načelo „start low, go slow“:* Melatonin za RBD započeti s 3 mg. Titrirati za 3 mg svaka 2 tjedna do učinka (max 12 mg). Klonazepam — započeti s 0,25 mg, nikada bez isključivanja OSA-e.]
 
 *Klonazepam:* 0,25 mg, titrirati svaka 1--2 tjedna. Učinkovitost 80--90%. *OPREZ:*
 - *OSA* → klonazepam pogoršava apneje (isključiti OSA ili započeti CPAP prije uvođenja)
@@ -205,11 +207,39 @@ Najvažnija intervencija, *odmah*, prije dijagnostike ili farmakoterapije:
 == Česte zamke
 
 #zamka-table((
-  [„To su noćne more"], [Noćne more = buđenje prestrašen, bez motorike. RBD = udaranje, vikanje, padanje],
-  [„To je mjesečarenje"], [NREM: prva trećina noći, oči otvorene, amnezija. RBD: zadnja trećina, oči zatvorene, sjećanje],
-  [„Star je, to je normalno"], [Novo izvođenje snova >50 g. *nikada nije normalno*. Crvena zastavica za neurodegeneraciju],
-  [„Ne treba neurologa, samo snovi"], [>80% idiopatskog RBD-a prelazi u PD/DLB/MSA. Neurološko praćenje obavezno],
-  [„SSRI ne mogu uzrokovati ovo"], [SSRI/SNRI su dokumentirani uzroci RBD-a. Provjerite listu lijekova],
-  [„Klonazepam, problem riješen"], [Simptomatsko liječenje bez neurološkog praćenja = propuštena prilika za rano otkrivanje],
+  [„To su noćne more“], [Noćne more = buđenje prestrašen, bez motorike. RBD = udaranje, vikanje, padanje],
+  [„To je mjesečarenje“], [NREM: prva trećina noći, oči otvorene, amnezija. RBD: zadnja trećina, oči zatvorene, sjećanje],
+  [„Star je, to je normalno“], [Novo izvođenje snova >50 g. *nikada nije normalno*. Crvena zastavica za neurodegeneraciju],
+  [„Ne treba neurologa, samo snovi“], [>80% idiopatskog RBD-a prelazi u PD/DLB/MSA. Neurološko praćenje obavezno],
+  [„SSRI ne mogu uzrokovati ovo“], [SSRI/SNRI su dokumentirani uzroci RBD-a. Provjerite listu lijekova],
+  [„Klonazepam, problem riješen“], [Simptomatsko liječenje bez neurološkog praćenja = propuštena prilika za rano otkrivanje],
 ))
+
+#literatura((
+  [Postuma RB et al. Risk and predictors of dementia and parkinsonism in idiopathic REM sleep behaviour disorder: a multicentre study. _Brain._ 2019;142(3):744–759.],
+  [St Louis EK, Boeve BF. REM Sleep Behavior Disorder: Diagnosis, Clinical Implications, and Future Directions. _Mayo Clin Proc._ 2017;92(11):1723–1736.],
+  [Iranzo A et al. Neurodegenerative disease status and post-mortem pathology in idiopathic rapid-eye-movement sleep behaviour disorder: an observational cohort study. _Lancet Neurol._ 2013;12(5):443–453.],
+  [McCarter SJ et al. Treatment outcomes in REM sleep behavior disorder. _Sleep Med._ 2013;14(3):237–242.],
+  [Högl B et al. Idiopathic REM sleep behaviour disorder and neurodegeneration — an update. _Nat Rev Neurol._ 2018;14(1):40–55.],
+  [Li SX et al. Validation of a new REM sleep behavior disorder questionnaire (RBDQ-HK). _Sleep Med._ 2010;11(1):43–48.],
+  [Howell M et al. Management of REM sleep behavior disorder: an American Academy of Sleep Medicine clinical practice guideline. _J Clin Sleep Med._ 2023;19(4):759–768.],
+))
+
+#chapter-summary(
+  title: "9. Poremećaj ponašanja u REM spavanju (RBD)",
+  category: "Parasomnije",
+  color: cat-parasomnia,
+  prepoznaj: [Partner: udaranje, vikanje, padanje iz kreveta. Druga polovica noći. Sjećanje na san. Dob >50 g. >80% razvije PD/DLB/MSA.],
+  ucini: [RBDSQ (≥5 = pozitivan). ODMAH sigurnost spavaće sobe. Melatonin 3–12 mg. Revizija lijekova (SSRI/SNRI).],
+  uputi: [SVE sumnje → neurolog. HITNO: rani parkinsonizam, kognitivni pad, teške ozljede.],
+  drugs: (
+    ([Melatonin], [3–12 mg navečer], [✓]),
+    ([Klonazepam], [0,25–2 mg (2. linija)], [✓]),
+  ),
+  red-flags: (
+    [Dob >50 + novo izvođenje snova — visoka vjerojatnost prodroma neurodegeneracije],
+    [Rani parkinsonizam uz RBD — fenokonverzija u tijeku, HITNO neurologu],
+    [Anosmija + RBD — gotovo patognomonično za prodrom PD],
+  ),
+)
 

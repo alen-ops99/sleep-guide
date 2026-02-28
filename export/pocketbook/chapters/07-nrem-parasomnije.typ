@@ -18,9 +18,11 @@
   radius: 2pt,
   fill: color-gray-bg,
   stroke: (left: 2pt + color-gray),
-  text(size: 8pt, style: "italic")[*Petra, 28 g.*, cimerica je dovodi jer „hoda po stanu noću, oči otvorene, ne reagira". Epizode u prvoj trećini noći, bez sjećanja. Uzima zolpidem 10 mg za nesanicu. Nedavno pala i udarila glavu.]
+  text(size: 8pt, style: "italic")[*Petra, 28 g.*, cimerica je dovodi jer „hoda po stanu noću, oči otvorene, ne reagira“. Epizode u prvoj trećini noći, bez sjećanja. Uzima zolpidem 10 mg za nesanicu. Nedavno pala i udarila glavu — nitko nije pitao uzima li zolpidem.]
 )
 #v(3pt)
+#text(size: 7.5pt, fill: color-gray, style: "italic")[Ovo poglavlje pokriva: somnambulizam, noćne strahove, konfuzna buđenja i SRED (poremećaj hranjenja u snu).]
+#v(2pt)
 
 #brzi-pregled[
   #set text(size: 8.5pt)
@@ -47,18 +49,18 @@
 #v(4pt)
 #pitanja-box[
   #pitanja-table((
-    [„U koje doba noći se to događa?"], [Prva trećina = NREM; zadnja trećina = RBD],
-    [„Jesu li oči otvorene ili zatvorene?"], [Otvorene = NREM; zatvorene = RBD],
-    [„Sjeća li se nečega ujutro?"], [Amnezija = NREM; sjećanje na san = RBD ili noćne more],
-    [„Hrče li? Ima li apneje?"], [OSA je čest trigger NREM parasomnija u odraslih],
-    [„Koji lijekove uzima?"], [Zolpidem, litij, sedativi — česti uzročnici],
+    [„U koje doba noći se to događa?“], [Prva trećina = NREM; zadnja trećina = RBD],
+    [„Jesu li oči otvorene ili zatvorene?“], [Otvorene = NREM; zatvorene = RBD],
+    [„Sjeća li se nečega ujutro?“], [Amnezija = NREM; sjećanje na san = RBD ili noćne more],
+    [„Hrče li? Ima li apneje?“], [OSA je čest trigger NREM parasomnija u odraslih],
+    [„Koji lijekove uzima?“], [Zolpidem, litij, sedativi — česti uzročnici],
   ))
 ]
 
 // === Kako prepoznati? ===
 == Kako prepoznati?
 
-NREM parasomnije su spektar triju poremećaja (somnambulizam, noćni strahovi, konfuzna buđenja) koji proizlaze iz nepotpunog buđenja iz dubokog N3 sna — tijelo se pokreće, ali svjesnost ostaje „isključena".
+NREM parasomnije su spektar triju poremećaja (somnambulizam, noćni strahovi, konfuzna buđenja) koji proizlaze iz nepotpunog buđenja iz dubokog N3 sna — tijelo se pokreće, ali svjesnost ostaje „isključena“.
 
 #set text(size: 8.5pt)
 #table(
@@ -89,13 +91,13 @@ NREM parasomnije su spektar triju poremećaja (somnambulizam, noćni strahovi, k
 == Probir i dijagnostika
 
 *Detaljna anamneza — temelj dijagnoze.* Ključna pitanja:
-+ „U koje doba noći se to događa?" — Prva trećina = NREM; zadnja trećina = RBD
-+ „Jesu li oči otvorene ili zatvorene?"
-+ „Sjeća li se nečega ujutro?"
-+ „Može li se osoba utješiti?" — Noćni strahovi: ne; noćna mora: da
-+ „Koliko traju i koliko su česte?" — Stereotipne kratke (< 60 s) = epilepsija
-+ „Hrče li? Ima li apneje?" — Obavezno za sve odrasle (OSA je čest trigger)
-+ „Koji lijekove uzima?" — Zolpidem, litij, sedativi
++ „U koje doba noći se to događa?“ — Prva trećina = NREM; zadnja trećina = RBD
++ „Jesu li oči otvorene ili zatvorene?“
++ „Sjeća li se nečega ujutro?“
++ „Može li se osoba utješiti?“ — Noćni strahovi: ne; noćna mora: da
++ „Koliko traju i koliko su česte?“ — Stereotipne kratke (< 60 s) = epilepsija
++ „Hrče li? Ima li apneje?“ — Obavezno za sve odrasle (OSA je čest trigger)
++ „Koji lijekove uzima?“ — Zolpidem, litij, sedativi
 
 *Video snimka:* Zamolite partnera/roditelja da snimi epizodu mobilnim telefonom.
 
@@ -179,6 +181,8 @@ Za djecu s predvidljivim vremenskim obrascem: *15–30 min PRIJE uobičajenog vr
   ),
 ))
 
+#pearl[*Načelo „start low, go slow“:* Klonazepam započeti s 0,25 mg. Većina pacijenata odgovara na 0,5–1 mg. Titrirati svaka 2 tjedna. Uvijek isključiti OSA prije uvođenja klonazepama.]
+
 #pearl[Za razliku od nesanice, klonazepam u niskim dozama za parasomnije ima dugogodišnje iskustvo sigurne primjene (~80% učinkovitost). Tolerancija i eskalacija su rijetke za ovu specifičnu indikaciju.]
 
 === 5. Posebne napomene za djecu
@@ -244,4 +248,30 @@ SRED je NREM parasomnije — epizode nehotičnog jedenja iz dubokog sna uz *amne
   [Propisati lijekove bez otklanjanja triggera], [Najprije identificirati okidače; farmakoterapija tek ako nefarmakološke mjere ne pomognu],
   [Uznemiriti roditelje tipičnih noćnih strahova], [Razuvjeriti: benigno, dijete preraste],
 ))
+
+#literatura((
+  [American Academy of Sleep Medicine. _International Classification of Sleep Disorders._ 3rd ed., Text Revision (ICSD-3-TR). Darien, IL: AASM; 2023.],
+  [Stallman HM, Kohler M. Prevalence of Sleepwalking: A Systematic Review and Meta-Analysis. _PLoS One._ 2016;11(11):e0164769.],
+  [Galbiati A et al. Pharmacotherapy for Disorders of Arousal in Adults: A Systematic Review. _Sleep Med Rev._ 2021;55:101381.],
+  [Howell MJ. Parasomnias: An Updated Review. _Neurotherapeutics._ 2012;9(4):753–775.],
+  [Broughton RJ. NREM Arousal Parasomnias. In: Kryger MH et al., eds. _Principles and Practice of Sleep Medicine._ 6th ed. Elsevier; 2017.],
+))
+
+#chapter-summary(
+  title: "7. NREM parasomnije",
+  category: "Parasomnije",
+  color: cat-parasomnia,
+  prepoznaj: [Prva trećina noći. Oči otvorene, konfuzija, amnezija. Somnambulizam, noćni strahovi, konfuzna buđenja, SRED.],
+  ucini: [Sigurnost! Zaključati vrata/prozore. Isključiti okidače: OSA, zolpidem, deprivacija sna, alkohol.],
+  uputi: [Novonastale u odraslih, ozljede, učestale epizode, sumnja na epilepsiju → neurolog / centar za spavanje.],
+  drugs: (
+    ([Klonazepam], [0,25–1 mg navečer], [✓]),
+    ([Melatonin], [2–6 mg], [✓]),
+  ),
+  red-flags: (
+    [Novonastale parasomnije u odraslih — isključiti OSA, lijekove, epilepsiju],
+    [Ozljede pacijenta ili ukućana — sigurnost + hitna obrada],
+    [Zolpidem kao okidač — čest i podcijenjen uzrok],
+  ),
+)
 

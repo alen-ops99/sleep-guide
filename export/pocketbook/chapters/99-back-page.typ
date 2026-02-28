@@ -13,15 +13,15 @@
   #v(1fr)
 
   #align(center)[
-    #text(size: 14pt, weight: "bold", fill: color-teal)[POREMEĆAJI SPAVANJA]
+    #text(size: 14pt, weight: "bold", fill: color-navy)[POREMEĆAJI SPAVANJA]
     #v(2mm)
-    #text(size: 9pt, fill: color-teal)[Džepni priručnik za liječnike obiteljske medicine]
+    #text(size: 9pt, fill: color-navy)[Džepni priručnik za liječnike obiteljske medicine]
 
     #v(4mm)
-    #text(size: 8pt, fill: color-gray, style: "italic")[Jer 9 od 10 poremećaja spavanja ostaje neprepoznato u ordinaciji]
+    #text(size: 8pt, fill: color-gray, style: "italic")[Jer većina poremećaja spavanja ostaje neprepoznata u ordinaciji]
 
     #v(8mm)
-    #line(length: 30%, stroke: 0.5pt + color-teal.lighten(50%))
+    #line(length: 30%, stroke: 0.5pt + color-navy.lighten(50%))
     #v(8mm)
 
     #text(size: 8.5pt, fill: color-gray, tracking: 0.3pt)[
@@ -49,7 +49,7 @@
 
     #v(10mm)
 
-    #text(size: 9pt, weight: "bold", fill: color-teal)[Alen Juginović, dr. med.]
+    #text(size: 9pt, weight: "bold", fill: color-navy)[Alen Juginović, dr. med.]
     #v(1.5mm)
     #text(size: 8.5pt, fill: color-gray, tracking: 0.8pt)[#smallcaps[Harvard Medical School]]
     #v(1mm)
@@ -62,7 +62,7 @@
   #block(
     width: 100%,
     inset: (x: 22mm, top: 7mm, bottom: 7mm),
-    fill: color-teal,
+    fill: color-navy,
     spacing: 0pt,
   )[
     #align(center)[

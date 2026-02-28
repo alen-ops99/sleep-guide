@@ -18,7 +18,7 @@
   radius: 2pt,
   fill: color-gray-bg,
   stroke: (left: 2pt + color-gray),
-  text(size: 8pt, style: "italic")[*Tomislav, 54 g.*, branitelj, dolazi zbog „loše spava". Na izravno pitanje: kronične noćne more 3–4× tjedno, isti scenarij. Izbjegava spavanje, pije 3–4 piva navečer „da lakše zaspi". Nikada nije govorio o traumi. Supruga: „Viče u snu, znoji se."]
+  text(size: 8pt, style: "italic")[*Tomislav, 54 g.*, branitelj, dolazi zbog „loše spava“. Na izravno pitanje: kronične noćne more 3–4× tjedno, isti scenarij. Izbjegava spavanje, pije 3–4 piva navečer „da lakše zaspi“. Nikada nije govorio o traumi. Supruga: „Viče u snu, znoji se.“ Liječen je samo za „lošu higijenu sna“ tri puta u različitim ordinacijama.]
 )
 #v(3pt)
 
@@ -46,11 +46,11 @@
 #v(4pt)
 #pitanja-box[
   #pitanja-table((
-    [„Imate li uznemirujuće snove koji Vas bude iz sna?"], [Ponavljajuće noćne more → poremećaj],
-    [„Koliko često? Ima li ponavljajući sadržaj?"], [Isti scenarij → PTSP-povezane noćne more],
-    [„Bojite li se ići spavati?"], [Izbjegavanje sna → značajan funkcionalni utjecaj],
-    [„Jeste li doživjeli traumatičan događaj?"], [PTSP je najčešći uzrok kroničnih noćnih mora],
-    [„Pijete li alkohol da lakše zaspite?"], [Alkohol → REM rebound → pogoršava noćne more],
+    [„Imate li uznemirujuće snove koji Vas bude iz sna?“], [Ponavljajuće noćne more → poremećaj],
+    [„Koliko često? Ima li ponavljajući sadržaj?“], [Isti scenarij → PTSP-povezane noćne more],
+    [„Bojite li se ići spavati?“], [Izbjegavanje sna → značajan funkcionalni utjecaj],
+    [„Jeste li doživjeli traumatičan događaj?“], [PTSP je najčešći uzrok kroničnih noćnih mora],
+    [„Pijete li alkohol da lakše zaspite?“], [Alkohol → REM rebound → pogoršava noćne more],
   ))
 ]
 
@@ -71,11 +71,11 @@ Noćne more su živopisni, uznemirujući snovi koji završavaju buđenjem uz pun
 - Komorbidna anksioznost ili depresija
 
 *Pitanja za anamnezu:*
-+ „Imate li uznemirujuće snove koji Vas bude iz sna?"
-+ „Koliko često? Ima li ponavljajući sadržaj?"
-+ „Bojite li se ići spavati? Odgađate li odlazak u krevet?"
-+ *„Jeste li doživjeli traumatičan događaj — nasilje, nesreću, ratno iskustvo?"*
-+ „Postoji li veza sadržaja snova s nečim proživljenim?"
++ „Imate li uznemirujuće snove koji Vas bude iz sna?“
++ „Koliko često? Ima li ponavljajući sadržaj?“
++ „Bojite li se ići spavati? Odgađate li odlazak u krevet?“
++ *„Jeste li doživjeli traumatičan događaj — nasilje, nesreću, ratno iskustvo?“*
++ „Postoji li veza sadržaja snova s nečim proživljenim?“
 
 #pearl[Pitanje o traumi izbjegava većina liječnika — a upravo je ono *najvažnije*. Bez pitanja o traumi, dijagnostika kroničnih noćnih mora je nepotpuna.]
 
@@ -139,6 +139,8 @@ Pacijent *preoblikuje sadržaj noćne more* dok je budan, zatim uvježbava novu 
 
 *Titracija:* 1 mg navečer → povećavati za 1–2 mg svaka 3–7 dana → ciljna doza 2–6 mg.
 
+#pearl[*Načelo „start low, go slow“:* Prazosin započeti s 1 mg. Uvijek mjeriti RR prije sljedeće titracije. Kod starijih i uz antihipertenzive, titrirati sporije (svaka 2 tjedna).]
+
 *Mjere opreza:*
 - *Ortostatska hipotenzija* — najčešća nuspojava. Prva tableta ležeći u krevetu, polako ustati sljedeće jutro
 - Mjeriti RR ležeći i stojeći *prije* uvođenja
@@ -200,11 +202,37 @@ Prazosin i IRT liječe *simptom* (noćne more), ali *ne liječe PTSP*. Sumnja na
 == Česte zamke
 
 #zamka-table((
-  [„Samo ružni snovi, proći će"], [Kronične noćne more su poremećaj — IRT i prazosin su učinkoviti],
+  [„Samo ružni snovi, proći će“], [Kronične noćne more su poremećaj — IRT i prazosin su učinkoviti],
   [Ne pitati o traumi], [PTSP je najčešći uzrok. *Uvijek pitajte o traumi*],
   [BZD za noćne more], [BZD *nisu učinkoviti*. IRT i prazosin su ispravne opcije],
   [Zamijeniti s noćnim strahovima], [Noćne more = REM, sjećanje. Strahovi = NREM, amnezija, 1. trećina noći],
   [Ignorirati suicidalni rizik], [Kronične noćne more = *nezavisni čimbenik rizika za suicid*],
-  [Alkohol za „opuštanje"], [Alkohol → REM rebound → *pogoršava* noćne more],
+  [Alkohol za „opuštanje“], [Alkohol → REM rebound → *pogoršava* noćne more],
 ))
+
+#literatura((
+  [Morgenthaler TI et al. Position Paper for the Treatment of Nightmare Disorder in Adults: An American Academy of Sleep Medicine Position Paper. _J Clin Sleep Med._ 2018;14(6):1041–1055.],
+  [Aurora RN et al. Best Practice Guide for the Treatment of Nightmare Disorder in Adults. _J Clin Sleep Med._ 2010;6(4):389–401.],
+  [Casement MD, Swanson LM. A meta-analysis of imagery rehearsal for post-trauma nightmares. _J Trauma Stress._ 2012;25(5):553–560.],
+  [Raskind MA et al. Trial of Prazosin for Post-Traumatic Stress Disorder in Military Veterans. _N Engl J Med._ 2018;378(6):507–517.],
+  [Gieselmann A et al. Aetiology and treatment of nightmare disorder: State of the art and future perspectives. _J Sleep Res._ 2019;28(4):e12820.],
+))
+
+#chapter-summary(
+  title: "6. Noćne more",
+  category: "Parasomnije",
+  color: cat-parasomnia,
+  prepoznaj: [Ponavljajući uznemirujući snovi s buđenjem. Sjećanje na san. PTSP najčešći uzrok u odraslih. Lijekovi: beta-blokatori, SSRI.],
+  ucini: [IRT tehnika (15 min edukacija). Prazosin 1–6 mg (do 15 mg) za refraktorne. Revizija lijekova.],
+  uputi: [PTSP, suicidalna ideacija, rezistentne noćne more → psihijatar/psihoterapeut.],
+  drugs: (
+    ([Prazosin], [1–6 mg (do 15 mg) navečer], [✓]),
+    ([IRT], [Bihevioralna tehnika], [—]),
+  ),
+  red-flags: (
+    [Suicidalna ideacija uz noćne more — HITNO psihijatru],
+    [PTSP s teškim noćnim morama — prazosin + psihoterapija],
+    [Novonastale nakon uvođenja lijeka — beta-blokatori, SSRI, melatonin],
+  ),
+)
 

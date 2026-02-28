@@ -101,6 +101,34 @@
   [5 mg → 10 mg],
   [2–3 h],
   [Samo ako SSRI uzrok],
+
+  // 12. Doxepin (low-dose)
+  [Nesanica],
+  [*Doxepin*#text(size: 6pt)[ (niska doza)]],
+  [3–6 mg],
+  [15 h],
+  [Jedini s FDA odobrenjem za nesanicu u niskoj dozi. *Nedostupan u HR* (✗)],
+
+  // 13. DORAs
+  [Nesanica],
+  [*DORA*#text(size: 6pt)[ (suvorexant, lemborexant)]],
+  [10–20 mg],
+  [12–17 h],
+  [Dualni antagonisti oreksina. *Nedostupni u HR* (✗)],
+
+  // 14. IV željezo
+  [RLS],
+  [*Željezo IV*#text(size: 6pt)[ (ferikarb. maltoza)]],
+  [500–1000 mg inf.],
+  [—],
+  [Za feritin 75–100 (oralno neučinkovito). Infuzija u bolnici],
+
+  // 15. Klonazepam (RBD/parasomnije)
+  [RBD / Parasomnije],
+  [*Klonazepam*],
+  [0,25–2 mg],
+  [30–40 h],
+  [2. linija za RBD; 1. linija za NREM parasomnije. Isključiti OSA!],
 )
 
 #v(8pt)
@@ -119,5 +147,7 @@
     + *Start low, go slow* — uvijek početi s najnižom dozom, titrirati postupno
     + *Stariji (>65 g.)* — izbjegavati BZD, Z-lijekove, antikolinergike (Beers kriteriji)
     + *Nikada sedative bez isključenja OSA-e* — uvijek STOP-BANG prije hipnotika
+    + *Prije svakog hipnotika* — isključite OSA-u (STOP-BANG) i RLS (feritin)
+    + *Revizija lijekova* — SSRI, antihistaminici, beta-blokatori i opioidi česti su uzročnici poremećaja sna
   ]
 )

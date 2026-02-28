@@ -14,7 +14,7 @@
   #block(
     width: 100%,
     inset: (x: 22mm, top: 28mm, bottom: 14mm),
-    fill: color-teal,
+    fill: color-navy,
   )[
     // Enhanced EEG wave motif — 8 layered polylines at varying opacities
     #place(top + left, dy: 4mm, dx: 8mm)[
@@ -78,22 +78,22 @@
       #v(2mm)
       #text(size: 8.5pt, fill: white.darken(15%), tracking: 1pt)[za liječnike obiteljske medicine]
       #v(5mm)
-      #text(size: 9pt, style: "italic", fill: white.transparentize(15%))[Jer 9 od 10 poremećaja spavanja ostaje neprepoznato u ordinaciji]
+      #text(size: 9pt, style: "italic", fill: white.transparentize(15%))[Jer većina poremećaja spavanja ostaje neprepoznata u ordinaciji]
     ]
   ]
 
   // --- Author section ---
   #v(1fr)
   #align(center)[
-    #line(length: 30%, stroke: 0.5pt + color-teal.lighten(50%))
+    #line(length: 30%, stroke: 0.5pt + color-navy.lighten(50%))
     #v(5mm)
-    #text(size: 10.5pt, weight: "bold", fill: color-teal)[Alen Juginović, dr. med.]
+    #text(size: 10.5pt, weight: "bold", fill: color-navy)[Alen Juginović, dr. med.]
     #v(2.5mm)
     #text(size: 8.5pt, fill: color-gray, tracking: 0.8pt)[#smallcaps[Harvard Medical School]]
     #v(1mm)
     #text(size: 8.5pt, fill: color-gray)[Neuroznanstvenik spavanja · Liječnik]
     #v(5mm)
-    #line(length: 30%, stroke: 0.5pt + color-teal.lighten(50%))
+    #line(length: 30%, stroke: 0.5pt + color-navy.lighten(50%))
   ]
   #v(1fr)
 ]
@@ -112,7 +112,7 @@
 
   #set text(size: 8.5pt, fill: rgb("#3d3d3d"))
 
-  Poremećaji spavanja zahvaćaju svaku treću odraslu osobu, a većina nikada ne bude prepoznata u ordinaciji. Ovaj priručnik pruža liječnicima obiteljske medicine praktičan alat za prepoznavanje, početno liječenje i pravodobnu uputnicu — utemeljen na smjernicama AASM-a i ESRS-a, prilagođen hrvatskom sustavu primarne zdravstvene zaštite i HALMED-ovoj bazi lijekova.
+  S više od 60 različitih dijagnoza prema ICSD-3 klasifikaciji, medicina spavanja obuhvaća područje koje većinom nije dio standardne medicinske edukacije. Ovaj priručnik pruža liječnicima obiteljske medicine praktičan alat za prepoznavanje, početno liječenje i pravodobnu uputnicu — utemeljen na smjernicama AASM-a i ESRS-a, prilagođen hrvatskom sustavu primarne zdravstvene zaštite i HALMED-ovoj bazi lijekova.
 
   #v(6pt)
 
@@ -122,9 +122,20 @@
   #align(center)[#line(length: 40%, stroke: 0.3pt + color-gray.lighten(30%))]
   #v(10pt)
 
-  #set text(size: 7.5pt, fill: color-gray)
-
-  Ovaj priručnik ne zamjenjuje kliničku prosudbu ni aktualne smjernice. Farmakološki podaci prema HALMED bazi lijekova (veljača 2026.). Besplatan za dijeljenje u edukativne svrhe, bez sponzorstva farmaceutske industrije.
+  #v(6pt)
+  #block(
+    width: 100%,
+    inset: (x: 10pt, y: 8pt),
+    radius: 3pt,
+    stroke: 0.5pt + color-gray.lighten(30%),
+    fill: color-gray-bg,
+    [
+      #text(weight: "bold", fill: color-gray, size: 8pt)[ODRICANJE OD ODGOVORNOSTI]
+      #v(3pt)
+      #set text(size: 7pt, fill: color-gray)
+      Ovaj priručnik služi isključivo u edukativne svrhe i ne zamjenjuje kliničku prosudbu, aktualne smjernice niti individualni pristup pacijentu. Autor ne preuzima odgovornost za kliničke odluke donesene na temelju ovog materijala. Farmakološki podaci odražavaju stanje prema HALMED bazi lijekova (veljača 2026.) i mogu se promijeniti. Prije propisivanja provjerite aktualni sažetak opisa svojstava lijeka (SmPC). Besplatan za dijeljenje u edukativne svrhe, bez sponzorstva farmaceutske industrije.
+    ]
+  )
 
   #v(1fr)
 
@@ -139,6 +150,51 @@
     #v(4mm)
     #line(length: 30%, stroke: 0.5pt + color-teal.lighten(50%))
   ]
+]
+
+// --- Predgovor ---
+#page(
+  header: none,
+  footer: none,
+  margin: (top: 35mm, bottom: 25mm, left: 18mm, right: 18mm),
+)[
+  #v(4pt)
+  #text(size: 14pt, weight: "bold", fill: color-teal)[Predgovor]
+  #v(2pt)
+  #line(length: 100%, stroke: 1pt + color-teal)
+  #v(10pt)
+
+  #set text(size: 8.5pt, fill: rgb("#3d3d3d"))
+
+  San zauzima trećinu ljudskog života — a ipak, medicina spavanja tek je nedavno postala prepoznata subspecijalnost. Prema ICSD-3-TR klasifikaciji, danas poznajemo više od 60 različitih poremećaja spavanja, od kojih su mnogi česti, a gotovo svi nedovoljno prepoznati u svakodnevnoj kliničkoj praksi.
+
+  #v(6pt)
+
+  Ovaj priručnik pokriva *10 najčešćih i klinički najvažnijih poremećaja spavanja u odraslih* — od nesanice i opstruktivne apneje do narkolepsije i RBD-a. Svaki je obrađen s istim ciljem: dati liječniku obiteljske medicine dovoljno znanja da *prepozna*, *započne liječenje* i *pravodobno uputi* specijalistu.
+
+  #v(6pt)
+
+  *Nekoliko načela provlači se kroz cijeli priručnik:*
+
+  #v(3pt)
+  + *„Start low, go slow“* — kod svih lijekova za spavanje: počnite niskom dozom, titrirajte polako, pratite učinak
+  + *Jedan poremećaj u jednom trenutku* — ali uvijek razmislite o komorbiditetu (osobito OSA + nesanica)
+  + *Edukacija pacijenta je terapija* — razumijevanje bolesti povećava suradljivost i smanjuje anksioznost
+  + *Nikada sedative bez isključenja apneje u snu* — zlatno pravilo koje spašava živote
+  + *PSG nije potrebna za većinu poremećaja* — klinička dijagnoza je dovoljna za nesanicu, RLS, nedovoljan san i noćne more
+
+  #v(8pt)
+
+  #block(
+    width: 100%,
+    inset: (x: 10pt, y: 6pt),
+    radius: 3pt,
+    stroke: (left: 2pt + color-orange),
+    fill: rgb("#fffbeb"),
+    [
+      #text(size: 7.5pt, style: "italic", fill: color-gray)[*Napomena:* Priručnik je usmjeren na odraslu populaciju. Pedijatrijski aspekti spominju se gdje je klinički relevantno (npr. narkolepsija u djece), ali sustavna obrada pedijatrijske medicine spavanja nadilazi opseg ovog izdanja.]
+    ]
+  )
 ]
 
 // --- Kako koristiti ovaj priručnik ---
@@ -239,14 +295,16 @@
     [*ASV*], [Adaptivna servoventilacija],
     [*BMI*], [Indeks tjelesne mase],
     [*CBT-I*], [Kognitivno-bihevioralna terapija za nesanicu],
-    [*COMISA†*], [Komorbidna nesanica i apneja u snu],
+    [*COMISA†*], [_Co-Morbid Insomnia and Sleep Apnea_ (komorbidna nesanica i apneja u snu)],
     [*CPAP*], [Kontinuirani pozitivni tlak u dišnim putevima],
     [*CSA*], [Centralna apneja u snu],
     [*CYP*], [Citokrom P450],
     [*dCBT-I*], [Digitalna CBT-I],
-    [*DLMO†*], [_Dim Light Melatonin Onset_],
-    [*DORA†*], [Dualni antagonist oreksina],
+    [*DLMO†*], [_Dim Light Melatonin Onset_ — početak lučenja melatonina u prigušenom svjetlu; marker cirkadijanog ritma],
+    [*DLB*], [Demencija s Lewyjevim tjelešcima (_Dementia with Lewy Bodies_)],
+    [*DORA†*], [_Dual Orexin Receptor Antagonist_ (dualni antagonist oreksina)],
     [*DSWPD*], [Poremećaj faze odgođenog spavanja],
+    [*DM*], [Dijabetes melitus],
     [*EDS*], [Pretjerana dnevna pospanost],
     [*ESS*], [Epworth ljestvica pospanosti],
     [*ESRS*], [European Sleep Research Society],
@@ -254,6 +312,7 @@
     [*HALMED*], [Agencija za lijekove i medicinske proizvode],
     [*ICSD-3†*], [International Classification of Sleep Disorders, 3. izdanje],
     [*IH*], [Idiopatska hipersomnija],
+    [*IPP*], [Inhibitori protonske pumpe],
     [*IRLS*], [International RLS Study Group Rating Scale],
     [*ISI*], [Insomnia Severity Index],
     [*IRT*], [Image Rehearsal Therapy],
@@ -261,21 +320,23 @@
     [*MAO*], [Monoamino-oksidaza],
     [*MED*], [Morfinski ekvivalent doze (_Morphine Equivalent Dose_)],
     [*MKB-10*], [Međunarodna klasifikacija bolesti, 10. revizija],
+    [*MSA*], [Multisistemska atrofija (_Multiple System Atrophy_)],
     [*MSLT†*], [Test multiplih latencija spavanja],
     [*NES*], [Sindrom noćnog jedenja],
     [*NREM*], [Non-REM spavanje],
     [*OSA*], [Opstruktivna apneja u snu],
-    [*PLMD*], [Periodični pokreti udova u snu],
+    [*PD*], [Parkinsonova bolest (_Parkinson's Disease_)],
+    [*PLMS*], [Periodični pokreti udova u snu (_Periodic Limb Movements of Sleep_)],
     [*PSG*], [Polisomnografija],
     [*PTSP*], [Posttraumatski stresni poremećaj],
     [*PZZ*], [Primarna zdravstvena zaštita],
-    [*RBD*], [REM poremećaj ponašanja u snu],
+    [*RBD*], [Poremećaj ponašanja u REM spavanju (_REM Sleep Behavior Disorder_)],
     [*RBDSQ*], [RBD Screening Questionnaire],
     [*REM*], [_Rapid Eye Movement_ spavanje],
     [*RLS*], [Sindrom nemirnih nogu],
     [*SARI*], [Serotonin antagonist/reuptake inhibitor],
     [*SNRI*], [Inhibitor ponovne pohrane serotonina i noradrenalina],
-    [*SOREMP†*], [_Sleep Onset REM Period_],
+    [*SOREMP†*], [_Sleep Onset REM Period_ — pojava REM-a unutar 15 min od usnivanja; ≥2 na MSLT-u sugestivno za narkolepsiju],
     [*SRED*], [Poremećaj hranjenja povezan sa spavanjem],
     [*SSRI*], [Selektivni inhibitor ponovne pohrane serotonina],
     [*STOP-BANG*], [Upitnik za probir OSA],

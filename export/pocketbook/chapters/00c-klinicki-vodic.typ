@@ -83,7 +83,7 @@
     [
       #text(size: 8pt, weight: "bold", fill: cat-hypersomnia)[A — POSPANI SU / UMORNI]
       #v(3pt)
-      #q-row(1, [Spava li manje od 7 sati radnim danom?], [Pogl. 1], cat-hypersomnia)
+      #q-row(1, [Spava li manje od 7 sati radnim danom?], [Pogl. 2], cat-hypersomnia)
       #q-row(2, [Hrče li? Debeo vrat? Visok tlak?], [Pogl. 3], cat-breathing)
       #q-row(3, [Vikendom spava normalno, radnim danom ne može?], [Pogl. 4], cat-circadian)
       #q-row(4, [Klecaju li mu koljena kad se smije?], [Pogl. 10], cat-hypersomnia)
@@ -107,8 +107,8 @@
       #q-row(1, [Vikendom spava normalno?], [Pogl. 4 (cirkadijani)], cat-circadian)
       #q-row(2, [Hrče li? Debeo vrat?], [Pogl. 3 (apneja u snu)], cat-breathing)
       #q-row(3, [Nemir u nogama navečer?], [Pogl. 5 (nemirne noge)], cat-movement)
-      #q-row(4, [Tegobe traju dulje od 3 mjeseca?], [Pogl. 2 (kronična nesanica)], cat-insomnia)
-      #q-row(5, [Tegobe traju kraće od 3 mjeseca?], [Pogl. 2 (kratkotrajna nesanica)], cat-insomnia)
+      #q-row(4, [Tegobe traju dulje od 3 mjeseca?], [Pogl. 1 (kronična nesanica)], cat-insomnia)
+      #q-row(5, [Tegobe traju kraće od 3 mjeseca?], [Pogl. 1 (kratkotrajna nesanica)], cat-insomnia)
     ]
   )
 
@@ -148,18 +148,22 @@
   )
 
   // =========================================================================
-  // BOTTOM WARNING STRIP
+  // BOTTOM — KLINIČKI SAVJETI
   // =========================================================================
   #block(
     width: 100%,
-    inset: (x: 8pt, y: 5pt),
+    inset: (x: 8pt, y: 6pt),
     radius: 2pt,
-    stroke: (left: 3pt + color-orange),
-    fill: color-orange.lighten(93%),
+    stroke: (left: 2pt + color-orange),
+    fill: rgb("#fffbeb"),
     [
-      #text(weight: "bold", fill: color-orange, size: 7pt)[UPOZORENJE]
-      #h(4pt)
-      #text(size: 7pt)[Više poremećaja može postojati istodobno. Nikada sedative bez isključenja apneje u snu.]
+      #text(weight: "bold", fill: color-orange, size: 7.5pt)[KLINIČKI SAVJETI]
+      #v(2pt)
+      #set text(size: 7pt)
+      - Više poremećaja može postojati istodobno — COMISA (nesanica + apneja) u 30–50%
+      - Nikada sedative bez isključenja apneje u snu — pitajte o hrkanju
+      - Novo izvođenje snova >50 g. nije benigno — uvijek neurolog
+      - Feritin 30 je „normalan“ za laboratorij, ali nedovoljan za mozak — cilj ≥100
     ]
   )
 ]
@@ -198,7 +202,7 @@
   #v(2pt)
   #line(length: 100%, stroke: 1.2pt + color-teal)
   #v(1pt)
-  #text(size: 7pt, fill: color-gray, style: "italic")[10 poremećaja — za svaki: što možete u ambulanti i kada uputiti]
+  #text(size: 7pt, fill: color-gray, style: "italic")[Svaki poremećaj ima korake za ambulantu i jasne kriterije za uputnicu. Dijagnoza počinje jednim dobrim pitanjem.]
   #v(4pt)
 
   // =========================================================================
@@ -211,17 +215,17 @@
     [
       #action-card(
         number: 1,
-        name: "Nedovoljan san",
-        cat-color: cat-hypersomnia,
-        ambulanta: [Dnevnik spavanja + test produljenja sna 2 tjedna],
-        uputite: [Pospanost traje unatoč ≥7 h sna],
-      )
-      #action-card(
-        number: 2,
         name: "Nesanica",
         cat-color: cat-insomnia,
         ambulanta: [Ograničenje sna + kontrola podražaja (CBT-I)],
         uputite: [Bez poboljšanja 4–6 tjedana ili ovisnost o tabletama],
+      )
+      #action-card(
+        number: 2,
+        name: "Nedovoljan san",
+        cat-color: cat-hypersomnia,
+        ambulanta: [Dnevnik spavanja + test produljenja sna 2 tjedna],
+        uputite: [Pospanost traje unatoč ≥7 h sna],
       )
       #action-card(
         number: 3,
