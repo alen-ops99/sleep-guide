@@ -18,7 +18,7 @@
   radius: 2pt,
   fill: color-gray-bg,
   stroke: (left: 2pt + color-gray),
-  text(size: 8pt, style: "italic")[*Ivan, 55 g.*, dolazi na kontrolu hipertenzije — 3 antihipertenziva, RR i dalje 155/95. Supruga kaže da „hrče kao traktor i prestaje disati". BMI 33. Umoran je, ali „to je normalno u mojim godinama." STOP-BANG 6/8.]
+  text(size: 8pt, style: "italic")[*Ivan, 55 g.*, dolazi na kontrolu hipertenzije — 3 antihipertenziva, RR i dalje 155/95. Supruga kaže da „hrče kao traktor i prestaje disati“. BMI 33. Umoran je, ali „to je normalno u mojim godinama.“ STOP-BANG 6/8. Tri kardiologa su ga vidjela — nitko nije pitao za hrkanje.]
 )
 #v(3pt)
 
@@ -36,7 +36,7 @@
 
 #v(4pt)
 #kljucna-poruka[
-  + *OSA je dramatično poddijagnosticirana* -- osobito kod žena (nesanica, umor, depresija). Aktivno pitajte i kod „atipičnog" profila.
+  + *OSA je dramatično poddijagnosticirana* -- osobito kod žena (nesanica, umor, depresija). Aktivno pitajte i kod „atipičnog“ profila.
   + *STOP-BANG ≥3 uz kliničku sumnju = uputnica za sleep studiju.* Ne čekajte -- svaki mjesec neliječene teške OSA-e je mjesec KV oštećenja.
   + *Rezistentna hipertenzija = probir na OSA-u.* Najčešći sekundarni uzrok.
   + *LOM je ključan za CPAP adherenciju.* Pitajte na svakoj kontroli, identificirajte barijere.
@@ -46,11 +46,11 @@
 #v(4pt)
 #pitanja-box[
   #pitanja-table((
-    [„Hrčete li?" (pitajte i partnera!)], [Glasno, iregularno hrkanje → visoka sumnja na OSA],
-    [„Je li vam itko rekao da prestajete disati u snu?"], [Svjedočene apneje = gotovo patognomonično],
-    [„Osjećate li se odmorni ujutro?"], [Neosvježavajući san unatoč dovoljnom trajanju → OSA],
-    [„Zasipate li nenamjerno — za volanom, čitajući?"], [Pozitivno = sigurnosno kritično → hitna obrada],
-    [„Budite li se noću na mokrenje više od jednom?"], [Nokturija ≥2× = čest, podcijenjen simptom OSA-e],
+    [„Hrčete li?“ (pitajte i partnera!)], [Glasno, iregularno hrkanje → visoka sumnja na OSA],
+    [„Je li vam itko rekao da prestajete disati u snu?“], [Svjedočene apneje = gotovo patognomonično],
+    [„Osjećate li se odmorni ujutro?“], [Neosvježavajući san unatoč dovoljnom trajanju → OSA],
+    [„Zasipate li nenamjerno — za volanom, čitajući?“], [Pozitivno = sigurnosno kritično → hitna obrada],
+    [„Budite li se noću na mokrenje više od jednom?“], [Nokturija ≥2× = čest, podcijenjen simptom OSA-e],
   ))
 ]
 
@@ -75,17 +75,17 @@ OSA je poremećaj disanja u snu s ponavljanim epizodama kolapsa gornjeg dišnog 
 #pearl[*Trudnoća:* OSA u trudnoći povećava rizik gestacijske hipertenzije i preeklampsije — probir kod trudnica s BMI >30, kroničnim hrkanjem ili hipertenzijom u trudnoći.]
 
 *Pitanja za ordinaciju:*
-+ „Hrčete li?" (pitajte i partnera!)
-+ „Je li vam itko rekao da prestajete disati u snu?"
-+ „Osjećate li se odmorni ujutro?"
-+ „Zasipate li nenamjerno tijekom dana -- za volanom, čitajući?"
-+ „Budite li se noću na mokrenje više od jednom?"
++ „Hrčete li?“ (pitajte i partnera!)
++ „Je li vam itko rekao da prestajete disati u snu?“
++ „Osjećate li se odmorni ujutro?“
++ „Zasipate li nenamjerno tijekom dana -- za volanom, čitajući?“
++ „Budite li se noću na mokrenje više od jednom?“
 
 // === Probir i dijagnostika ===
 == Probir i dijagnostika
 
 <stop-bang-upitnik>
-=== STOP-BANG upitnik
+=== STOP-BANG upitnik #see(<upitnik-stop-bang>)
 
 #set text(size: 8.5pt)
 #table(
@@ -133,7 +133,7 @@ OSA je poremećaj disanja u snu s ponavljanim epizodama kolapsa gornjeg dišnog 
   [*Teška*], [*≥30*], [CPAP obavezan; visoki KV rizik],
 )
 
-*PSG* -- zlatni standard. *HSAT* (kućna studija) -- prikladna za visoku pretestnu vjerojatnost bez značajnog komorbiditeta.
+*PSG* -- zlatni standard. *HSAT* (kućna studija spavanja — _Home Sleep Apnea Test_) -- prikladna za visoku pretestnu vjerojatnost bez značajnog komorbiditeta.
 
 // === Crvene zastavice ===
 #v(3pt)
@@ -162,7 +162,7 @@ OSA je poremećaj disanja u snu s ponavljanim epizodama kolapsa gornjeg dišnog 
 
 CPAP je zlatni standard za umjerenu i tešku OSA-u. Pulmolog propisuje, ali *LOM je ključan za adherenciju* (30--50% prestane unutar 1 godine).
 
-- Pitati na *svakoj kontroli:* „Koristite li CPAP svaku noć? Koliko sati?" (cilj: ≥4 h/noć, ≥70% noći)
+- Pitati na *svakoj kontroli:* „Koristite li CPAP svaku noć? Koliko sati?“ (cilj: ≥4 h/noć, ≥70% noći)
 - Identificirati barijere: suhoća nosa → grijani ovlaživač; klaustrofobija → promjena maske
 - Značajno mršavljenje → retitracija CPAP-a
 
@@ -170,9 +170,18 @@ CPAP je zlatni standard za umjerenu i tešku OSA-u. Pulmolog propisuje, ali *LOM
 
 Alternativa za *blagu do umjerenu OSA-u* ili CPAP netoleranciju. Propisuje stomatolog educiran u dentalnoj medicini spavanja. Manje učinkovit od CPAP-a, ali bolja adherencija. Kontrolna sleep studija nakon prilagodbe obavezna.
 
-=== COMISA
+=== COMISA (komorbidna nesanica i apneja u snu)
 
 COMISA pogađa *30--50% pacijenata s OSA-om*. Liječiti *oboje istovremeno* -- CBT-I za nesanicu + CPAP za OSA-u. CBT-I *prije* CPAP-a može poboljšati adherenciju. *Izbjegavati hipnotike* jer pogoršavaju OSA-u.
+
+=== OSA i drugi poremećaji spavanja
+
+OSA fragmentira san i može provocirati ili pogoršavati druge poremećaje spavanja:
+- *PLMS* — apneička mikrobuđenja pojačavaju periodične pokrete nogu
+- *NREM parasomnije* — fragmentacija N3 sna triggerira mjesečarenje i noćne strahove u odraslih
+- *RBD i pseudo-RBD* — teška OSA može imitirati RBD (pseudo-RBD); liječenje CPAP-om može eliminirati simptome
+
+#pearl[*CPAP ne liječi samo apneje* — uspješno liječenje OSA-e može eliminirati parasomnije, smanjiti PLMS i poboljšati RBD simptome. Uvijek razmislite o OSA-i kao podlozi drugih poremećaja spavanja.]
 
 // === Centralna apneja u snu (CSA) ===
 === Centralna apneja u snu (CSA)
@@ -214,7 +223,7 @@ CSA nastaje zbog *smanjenog ili odsutnog respiratornog napora* — mozak prestaj
 == Kada uputiti specijalistu?
 
 #referral-table((
-  [STOP-BANG ≥3 uz simptome], [Pulmolog / ORL], [Sleep studija],
+  [STOP-BANG ≥3 uz simptome], [Centar za medicinu spavanja / pulmolog], [Sleep studija],
   [STOP-BANG ≥5], [Pulmolog], [*Hitna* sleep studija],
   [Rezistentna hipertenzija], [Pulmolog + kardiolog], [OSA najčešći sekund. uzrok],
   [Pospanost za volanom / prof. vozač], [Pulmolog], [*Hitno* -- sigurnosno-kritično],
@@ -229,12 +238,39 @@ CSA nastaje zbog *smanjenog ili odsutnog respiratornog napora* — mozak prestaj
 == Česte zamke
 
 #zamka-table((
-  [„Ne hrče → nema OSA-u"], [Žene često ne hrču. Koristite STOP-BANG, pitajte za umor, nesanicu, nokturiju],
-  [„Normalan ESS → nema OSA-u"], [ESS mjeri pospanost, ne umor. Žene i stariji -- normalan ESS uz tešku OSA-u],
-  [„Mršav/mlad → ne može imati OSA-u"], [Kraniofacijalna anatomija jednako važna kao BMI],
-  [BZD za „nesanicu" bez isključenja OSA-e], [Potencijalno fatalno -- sedativi pogoršavaju apneje],
+  [„Ne hrče → nema OSA-u“], [Žene često ne hrču. Koristite STOP-BANG, pitajte za umor, nesanicu, nokturiju],
+  [„Normalan ESS → nema OSA-u“], [ESS mjeri pospanost, ne umor. Žene i stariji -- normalan ESS uz tešku OSA-u],
+  [„Mršav/mlad → ne može imati OSA-u“], [Kraniofacijalna anatomija jednako važna kao BMI],
+  [BZD za „nesanicu“ bez isključenja OSA-e], [Potencijalno fatalno -- sedativi pogoršavaju apneje],
   [Liječenje samo hipertenzije bez probira], [OSA najčešći sekund. uzrok rezistentne HTN],
   [CPAP bez praćenja adherencije], [CPAP bez praćenja = CPAP u ladici],
-  [Neprepoznavanje COMISA-e], [„Ne može spavati" + „ne podnosi CPAP" → CBT-I paralelno],
+  [Neprepoznavanje COMISA-e], [„Ne može spavati“ + „ne podnosi CPAP“ → CBT-I paralelno],
 ))
+
+#literatura((
+  [Benjafield AV et al. Estimation of the global prevalence and burden of obstructive sleep apnoea: a literature-based analysis. _Lancet Respir Med._ 2019;7(8):687–698.],
+  [Patil SP et al. Treatment of Adult Obstructive Sleep Apnea with Positive Airway Pressure: An American Academy of Sleep Medicine Clinical Practice Guideline. _J Clin Sleep Med._ 2019;15(2):335–343.],
+  [Young T et al. The occurrence of sleep-disordered breathing among middle-aged adults. _N Engl J Med._ 1993;328(17):1230–1235.],
+  [Chung F et al. STOP-Bang Questionnaire: A Practical Approach to Screening for Obstructive Sleep Apnea. _Chest._ 2016;149(3):631–638.],
+  [Lévy P et al. Obstructive sleep apnoea syndrome. _Nat Rev Dis Primers._ 2015;1:15015.],
+  [Javaheri S et al. Sleep Apnea: Types, Mechanisms, and Clinical Cardiovascular Consequences. _J Am Coll Cardiol._ 2017;69(7):841–858.],
+))
+
+#chapter-summary(
+  title: "3. Opstruktivna apneja u snu (OSA)",
+  category: "Poremećaji disanja u snu",
+  color: cat-breathing,
+  prepoznaj: [Hrkanje + svjedočeni apneički zastoji + EDS. BMI >30, opseg vrata >43 cm (M) / >41 cm (Ž). STOP-BANG ≥3.],
+  ucini: [STOP-BANG probir. ESS za pospanost. Uputiti na sleep studiju. Podrška za CPAP adherenciju.],
+  uputi: [STOP-BANG ≥3, pospanost za volanom, rezistentna hipertenzija, noćne aritmije → centar za medicinu spavanja.],
+  drugs: (
+    ([CPAP], [Individualna titracija], [—]),
+    ([MAD], [Kod AHI 5–15, stomatolog], [✓]),
+  ),
+  red-flags: (
+    [Pospanost za volanom — 2–7× veći rizik prometne nesreće],
+    [Rezistentna hipertenzija (≥3 lijeka) — 80% ima OSA],
+    [Noćne aritmije — fibrilacija atrija, bradikardija],
+  ),
+)
 

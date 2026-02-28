@@ -40,11 +40,11 @@
 // POREMEĆAJI SPAVANJA (10 poglavlja — poredano po učestalosti i relevantnosti za LOM)
 // ============================
 
-#include "chapters/01-nedovoljan-san.typ"
-#include "chapters/02-nesanica.typ"
+#include "chapters/01-nesanica.typ"
+#include "chapters/02-nedovoljan-san.typ"
 #include "chapters/03-osa.typ"
 #include "chapters/04-cirkadijani.typ"
-#include "chapters/05-rls-plmd.typ"
+#include "chapters/05-rls-plms.typ"
 #include "chapters/06-nocne-more.typ"
 #include "chapters/07-nrem-parasomnije.typ"
 #include "chapters/08-bruksizam.typ"
@@ -63,6 +63,7 @@
 #include "appendices/C-indeks-lijekova.typ"
 #include "appendices/D-posebne-populacije.typ"
 #include "appendices/E-upitnici.typ"
+#include "appendices/F-korisni-izvori.typ"
 
 // --- Back Page ---
 #include "chapters/99-back-page.typ"

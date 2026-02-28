@@ -12,6 +12,7 @@
 #let color-gray-bg = rgb("#f5f5f5")   // Light background for tables
 #let color-gray    = rgb("#4b5563")   // Subtle text (darkened for contrast)
 #let color-pitanja = rgb("#0d9488")   // Teal for pitanja-box
+#let color-navy    = rgb("#1e3a5f")   // Deep blue — cover/back pages ONLY
 
 // --- Category Colors (ICSD-3 groups, used for chapter color-coding) ---
 #let cat-insomnia      = rgb("#4338CA")   // Indigo — Nesanica
@@ -307,6 +308,103 @@
   for ref in refs {
     block(inset: (left: 8pt, y: 1pt))[#ref]
   }
+}
+
+// --- Chapter Summary Card (one-page printable) ---
+#let chapter-summary(
+  title: "",
+  category: "",
+  color: color-teal,
+  prepoznaj: "",
+  ucini: "",
+  uputi: "",
+  drugs: (),
+  red-flags: (),
+) = {
+  pagebreak(weak: true)
+  block(
+    width: 100%,
+    height: 100%,
+    inset: 0pt,
+    [
+      // Header bar
+      #block(
+        width: 100%,
+        inset: (x: 10pt, y: 6pt),
+        fill: color,
+        radius: (top: 3pt),
+        [
+          #text(weight: "bold", fill: white, size: 10pt)[#title]
+          #h(1fr)
+          #text(fill: white.transparentize(30%), size: 7.5pt)[#category]
+        ]
+      )
+
+      // Main content area
+      #block(
+        width: 100%,
+        inset: (x: 10pt, y: 8pt),
+        stroke: (left: 1.5pt + color, right: 1.5pt + color, bottom: 1.5pt + color),
+        radius: (bottom: 3pt),
+        [
+          #set text(size: 7.5pt)
+
+          // Prepoznaj / Učini / Uputi
+          #text(weight: "bold", fill: color-green, size: 8pt)[▸ PREPOZNAJ]
+          #v(1pt)
+          #prepoznaj
+          #v(4pt)
+
+          #text(weight: "bold", fill: color-teal, size: 8pt)[▸ UČINI]
+          #v(1pt)
+          #ucini
+          #v(4pt)
+
+          #text(weight: "bold", fill: color-blue, size: 8pt)[▸ UPUTI]
+          #v(1pt)
+          #uputi
+          #v(6pt)
+
+          // Key drugs
+          #if drugs.len() > 0 {
+            line(length: 100%, stroke: 0.3pt + color-gray.lighten(50%))
+            v(3pt)
+            text(weight: "bold", fill: color-teal, size: 7.5pt)[KLJUČNI LIJEKOVI]
+            v(2pt)
+            table(
+              columns: (1fr, 1fr, 0.3fr),
+              inset: (x: 3pt, y: 2pt),
+              stroke: 0.3pt + rgb("#d1d5db"),
+              fill: (_, row) => if row == 0 { color.lighten(90%) } else { white },
+              table.header(
+                text(weight: "bold", size: 6.5pt)[Lijek],
+                text(weight: "bold", size: 6.5pt)[Doza],
+                text(weight: "bold", size: 6.5pt)[HR],
+              ),
+              ..drugs.flatten()
+            )
+            v(4pt)
+          }
+
+          // Red flags
+          #if red-flags.len() > 0 {
+            line(length: 100%, stroke: 0.3pt + color-gray.lighten(50%))
+            v(3pt)
+            text(weight: "bold", fill: color-red, size: 7.5pt)[▲ CRVENE ZASTAVICE]
+            v(2pt)
+            for flag in red-flags {
+              block(inset: (left: 6pt, y: 1pt))[#text(size: 7pt)[• #flag]]
+            }
+          }
+
+          #v(1fr)
+          #align(center)[
+            #text(size: 6pt, fill: color-gray)[Ova kartica može se ispisati zasebno za brzu referencu u ordinaciji.]
+          ]
+        ]
+      )
+    ]
+  )
 }
 
 // --- Master Document Template ---

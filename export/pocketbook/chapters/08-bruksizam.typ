@@ -18,7 +18,7 @@
   radius: 2pt,
   fill: color-gray-bg,
   stroke: (left: 2pt + color-gray),
-  text(size: 8pt, style: "italic")[*Maja, 35 g.*, stomatolog je uputio — istrošena caklina, bolnost masetera ujutro. Na pitanje „Hrčete li?" — „Da, muž se žali." STOP-BANG 3/8. Uzima sertralin 50 mg za anksioznost.]
+  text(size: 8pt, style: "italic")[*Maja, 35 g.*, stomatolog je uputio — istrošena caklina, bolnost masetera ujutro. Na pitanje „Hrčete li?“ — „Da, muž se žali.“ STOP-BANG 3/8. Uzima sertralin 50 mg za anksioznost — nitko nije povezao bruksizam s antidepresivom.]
 )
 #v(3pt)
 
@@ -45,11 +45,11 @@
 #v(4pt)
 #pitanja-box[
   #pitanja-table((
-    [„Je li vam itko rekao da škrgućete zubima u snu?"], [Najčešći način otkrivanja — partner čuje],
-    [„Budite li se s bolnom ili ukočenom čeljusti?"], [Jutarnja bol masetera = klasičan znak],
-    [„Imate li jutarnje glavobolje?"], [Tenzijske glavobolje koje nestaju za 30–60 min],
-    [„Hrčete li? Prestajete li disati u snu?"], [25–50% bruksizma ima komorbidnu OSA-u],
-    [„Koji lijekove uzimate?"], [SSRI, SNRI, stimulansi = jatrogeni uzročnici],
+    [„Je li vam itko rekao da škrgućete zubima u snu?“], [Najčešći način otkrivanja — partner čuje],
+    [„Budite li se s bolnom ili ukočenom čeljusti?“], [Jutarnja bol masetera = klasičan znak],
+    [„Imate li jutarnje glavobolje?“], [Tenzijske glavobolje koje nestaju za 30–60 min],
+    [„Hrčete li? Prestajete li disati u snu?“], [25–50% bruksizma ima komorbidnu OSA-u],
+    [„Koji lijekove uzimate?“], [SSRI, SNRI, stimulansi = jatrogeni uzročnici],
   ))
 ]
 
@@ -70,11 +70,11 @@ Bruksizam u snu je repetitivno stiskanje i škrgutanje zuba tijekom sna s preval
 - *Komorbidna OSA* — epizode škrgutanja prate apneička mikrobuđenja
 
 *Pitanja za anamnezu:*
-+ „Je li vam itko rekao da škrgućete zubima u snu?"
-+ „Budite li se s bolnom ili ukočenom čeljusti?"
-+ „Imate li jutarnje glavobolje koje nestaju tijekom jutra?"
-+ *„Hrčete li? Prestajete li disati u snu?"* — probir za OSA
-+ „Koji lijekove uzimate?" — osobito SSRI, stimulansi
++ „Je li vam itko rekao da škrgućete zubima u snu?“
++ „Budite li se s bolnom ili ukočenom čeljusti?“
++ „Imate li jutarnje glavobolje koje nestaju tijekom jutra?“
++ *„Hrčete li? Prestajete li disati u snu?“* — probir za OSA
++ „Koji lijekove uzimate?“ — osobito SSRI, stimulansi
 
 // === Probir i dijagnostika ===
 == Probir i dijagnostika
@@ -84,7 +84,7 @@ Bruksizam u snu je repetitivno stiskanje i škrgutanje zuba tijekom sna s preval
 *Što LOM može učiniti:*
 - *Pregledati zube* — uočiti značajno trošenje okluzalnih ploha
 - *Palpirati maseter i temporalni mišić* — bolnost, hipertrofija
-- *Probir za OSA* — STOP-BANG kod svakog pacijenta s bruksizmom
+- *Probir za OSA* — STOP-BANG #see(<upitnik-stop-bang>) kod svakog pacijenta s bruksizmom
 - *Pregledati listu lijekova* — SSRI i stimulansi česti uzročnici
 - *Procjena stresa* — GAD-7 ili anamneza stresnih čimbenika
 - *Pitati o kofeinu i alkoholu* — oba pogoršavaju bruksizam
@@ -193,11 +193,37 @@ Za jutarnju bol: ibuprofen 400–600 mg po potrebi + topli oblozi na maseter (15
 == Česte zamke
 
 #zamka-table((
-  [Ignorirati bruksizam kao „bezazlen"], [Može uzrokovati trajno, ireverzibilno oštećenje zuba i TMZ-a],
+  [Ignorirati bruksizam kao „bezazlen“], [Može uzrokovati trajno, ireverzibilno oštećenje zuba i TMZ-a],
   [Ne pitati za hrkanje i OSA], [25–50% bruksizma asocirano s OSA — uvijek probir STOP-BANG],
   [Ne provjeriti listu lijekova], [SSRI, SNRI, stimulansi česti jatrogeni uzročnici],
-  [Udlaga „liječi" bruksizam], [Udlaga štiti zube, ali ne zaustavlja mišićnu aktivnost — liječiti uzrok],
-  [Dijagnosticirati „stres" bez obrade], [Isključiti OSA i jatrogeni uzrok prije pripisivanja stresu],
+  [Udlaga „liječi“ bruksizam], [Udlaga štiti zube, ali ne zaustavlja mišićnu aktivnost — liječiti uzrok],
+  [Dijagnosticirati „stres“ bez obrade], [Isključiti OSA i jatrogeni uzrok prije pripisivanja stresu],
   [Ne pratiti pacijenta], [Bruksizam je kroničan; stomatolog svakih 6–12 mj.],
 ))
+
+#literatura((
+  [Lobbezoo F et al. International consensus on the assessment of bruxism: Report of a work in progress. _J Oral Rehabil._ 2018;45(11):837–844.],
+  [Jokubauskas L, Baltrušaitytė A. Relationship between obstructive sleep apnoea syndrome and sleep bruxism: a systematic review. _J Oral Rehabil._ 2017;44(2):144–153.],
+  [Macedo CR et al. Pharmacotherapy for sleep bruxism. _Cochrane Database Syst Rev._ 2014;(10):CD005578.],
+  [Svensson P et al. Bruxism – A Systematic Review. _J Oral Rehabil._ 2008;35(7):509–523.],
+  [Manfredini D et al. Role of psychosocial factors in the etiology of bruxism. _J Orofac Pain._ 2009;23(2):153–166.],
+))
+
+#chapter-summary(
+  title: "8. Bruksizam u snu",
+  category: "Poremećaji pokreta",
+  color: cat-movement,
+  prepoznaj: [Partner čuje škrgutanje. Jutarnja bol čeljusti/sljepoočnica. Istrošena caklina. Hipertrofija masetera.],
+  ucini: [Stomatolog za udlagu (uvijek). STOP-BANG probir (25–50% komorbiditet s OSA). Revizija lijekova (SSRI → buspiron).],
+  uputi: [Stomatolog (svaki pacijent), pulmolog ako sumnja na OSA, neurolog za refraktorne slučajeve.],
+  drugs: (
+    ([Buspiron], [5–10 mg navečer], [✓]),
+    ([Okluzalna udlaga], [Stomatolog], [—]),
+  ),
+  red-flags: (
+    [Značajno oštećenje zuba — hitna uputnica stomatologu],
+    [Bruksizam + glasno hrkanje — probir za OSA],
+    [Novonastali nakon SSRI/SNRI — revizija farmakoterapije],
+  ),
+)
 

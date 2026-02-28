@@ -23,7 +23,7 @@
   // --- B ---
   [*BZD*#text(size: 6.5pt)[ (benzodiazepini)]],
   [Nesanica (izbjegavati! samo kratkoročno)],
-  [2],
+  [1],
 
   [*Buspiron*],
   [Bruksizam (SSRI-inducirani)],
@@ -31,13 +31,13 @@
 
   // --- G ---
   [*Gabapentin*],
-  [RLS / PLMD (prva linija)],
+  [RLS / PLMS (prva linija)],
   [5],
 
   // --- H ---
   [*Hidroksizin*],
   [Nesanica],
-  [2],
+  [1],
 
   // --- K ---
   [*Klonazepam*],
@@ -51,7 +51,7 @@
   // --- M ---
   [*Melatonin*],
   [Nesanica (prod. otpuštanje, >55 g.)],
-  [2],
+  [1],
 
   [*Melatonin*],
   [DSWPD (kronobiološki, 0,5--3 mg)],
@@ -81,13 +81,13 @@
 
   // --- Pr ---
   [*Pregabalin*],
-  [RLS / PLMD (alternativa gabapentinu)],
+  [RLS / PLMS (alternativa gabapentinu)],
   [5],
 
   // --- T ---
   [*Trazodon*],
   [Nesanica (off-label)],
-  [2],
+  [1],
 
   [*Trazodon*],
   [NREM parasomnije (off-label)],
@@ -96,7 +96,7 @@
   // --- Z ---
   [*Zolpidem*],
   [Nesanica (kratkoročno, do 4 tj.)],
-  [2],
+  [1],
 )
 
 #v(8pt)

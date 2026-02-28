@@ -46,7 +46,7 @@
   #cat-block(
     color: cat-insomnia,
     name: "[N] NESANICA",
-    chapters: "Poglavlje 2",
+    chapters: "Poglavlje 1",
     desc: "Teškoće s usnivanjem ili održavanjem sna uz dnevne posljedice.",
   )
 
@@ -62,7 +62,7 @@
   #cat-block(
     color: cat-hypersomnia,
     name: "[H] HIPERSOMNOLENCIJA",
-    chapters: "Poglavlja 1, 10",
+    chapters: "Poglavlja 2, 10",
     desc: "Pretjerana dnevna pospanost: najčešće nedovoljan san, rijetko narkolepsija ili idiopatska hipersomnija.",
   )
 
@@ -111,7 +111,7 @@
   #v(6pt)
 
   // --- Prevalence visualization ---
-  #text(weight: "bold", fill: color-teal, size: 8.5pt)[Koliko su česti? Procjena za praksu od 2.000 pacijenata]
+  #text(weight: "bold", fill: color-teal, size: 8.5pt)[Koliko su česti? Procijenjeni broj pacijenata na 2.000 u praksi]
   #v(3pt)
 
   #let prev-bar(name, low, high, color) = {
@@ -141,4 +141,7 @@
   #prev-bar("Cirkadijani", 20, 60, cat-circadian)
   #prev-bar("RBD", 15, 40, cat-parasomnia)
   #prev-bar("Narkolepsija/IH", 1, 2, cat-hypersomnia)
+
+  #v(3pt)
+  #text(size: 6pt, fill: color-gray, style: "italic")[Procjene temeljene na epidemiološkim podacima: Young 1993 (OSA), Allen 2005 (RLS), Ohayon 2002 (nesanica), Watson 2015 (nedovoljan san). Vrijednosti su okvirne i ovise o demografiji prakse.]
 ]

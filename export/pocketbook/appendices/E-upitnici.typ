@@ -13,6 +13,7 @@
 #v(6pt)
 
 // ─── 1. ESS ─────────────────────────────────────────────────────────────
+<upitnik-ess>
 == Epworthova ljestvica pospanosti (ESS)
 
 #text(fill: color-gray, size: 7.5pt)[Procjena dnevne pospanosti. Pacijent ocjenjuje vjerojatnost zasipanja (0–3) u 8 situacija.]
@@ -36,6 +37,7 @@
   [6.], [Sjedenje i razgovor s nekim], [#box(width: 22pt, stroke: (bottom: 0.5pt + luma(180)))[]],
   [7.], [Mirno sjedenje nakon ručka bez alkohola], [#box(width: 22pt, stroke: (bottom: 0.5pt + luma(180)))[]],
   [8.], [U automobilu zaustavljenom u prometu na nekoliko minuta], [#box(width: 22pt, stroke: (bottom: 0.5pt + luma(180)))[]],
+  table.cell(colspan: 2, align: right)[#text(weight: "bold")[UKUPNO:]], [#box(width: 22pt, stroke: (bottom: 1pt + luma(120)))[]/24],
 )
 
 #v(2pt)
@@ -54,10 +56,13 @@
   [*11–15*], [*Umjerena pospanost — indicirana obrada*],
   [*≥16*], [*Teška pospanost — hitna obrada*],
 )
+#v(1pt)
+#text(size: 6.5pt, fill: color-gray)[_Upišite zbroj bodova i usporedite s interpretacijom. ESS ≥11 indicira daljnju obradu._]
 
 #v(8pt)
 
 // ─── 2. ISI ─────────────────────────────────────────────────────────────
+<upitnik-isi>
 == Insomnia Severity Index (ISI)
 
 #text(fill: color-gray, size: 7.5pt)[7 pitanja o težini nesanice u zadnjih 2 tjedna. Svako se ocjenjuje 0–4.]
@@ -80,6 +85,7 @@
   [5.], [Utjecaj na dnevno funkcioniranje], [#box(width: 22pt, stroke: (bottom: 0.5pt + luma(180)))[]],
   [6.], [Koliko je problem spavanja vidljiv drugima], [#box(width: 22pt, stroke: (bottom: 0.5pt + luma(180)))[]],
   [7.], [Koliko ste zabrinuti zbog problema sa spavanjem], [#box(width: 22pt, stroke: (bottom: 0.5pt + luma(180)))[]],
+  table.cell(colspan: 2, align: right)[#text(weight: "bold")[UKUPNO:]], [#box(width: 22pt, stroke: (bottom: 1pt + luma(120)))[]/28],
 )
 
 #v(2pt)
@@ -99,6 +105,8 @@
   [*15–21*], [*Umjerena — indicirana intervencija*],
   [*22–28*], [*Teška — hitna intervencija*],
 )
+#v(1pt)
+#text(size: 6.5pt, fill: color-gray)[_Upišite zbroj bodova. ISI ≥15 indicira intervenciju; pad ≥8 bodova = klinički značajan odgovor._]
 
 #v(2pt)
 #text(size: 7pt, fill: color-gray)[Klinički značajan odgovor = pad ≥8 bodova; remisija = ISI < 8.]
@@ -106,6 +114,7 @@
 #v(8pt)
 
 // ─── 3. STOP-BANG ────────────────────────────────────────────────────────
+<upitnik-stop-bang>
 == STOP-BANG upitnik
 
 #text(fill: color-gray, size: 7.5pt)[Probir za opstruktivnu apneju u snu (OSA). 8 da/ne pitanja.]
@@ -129,6 +138,7 @@
   [*A*], [Dob > 50 godina?], [#box(width: 22pt, stroke: (bottom: 0.5pt + luma(180)))[]],
   [*N*], [Opseg vrata > 40 cm?], [#box(width: 22pt, stroke: (bottom: 0.5pt + luma(180)))[]],
   [*G*], [Muški spol?], [#box(width: 22pt, stroke: (bottom: 0.5pt + luma(180)))[]],
+  table.cell(colspan: 2, align: right)[#text(weight: "bold")[UKUPNO:]], [#box(width: 22pt, stroke: (bottom: 1pt + luma(120)))[]/8],
 )
 
 #v(2pt)
@@ -145,6 +155,8 @@
   [*3–4*], [*Intermedijarni → uputiti na obradu*],
   [*≥5*], [*Visoki → hitno uputiti*],
 )
+#v(1pt)
+#text(size: 6.5pt, fill: color-gray)[_Upišite zbroj „Da“ odgovora. ≥3 boda uz kliničku sumnju = uputnica za sleep studiju._]
 
 #v(2pt)
 #text(size: 7pt, fill: color-gray)[STOP-BANG ima nižu osjetljivost kod žena — kod žena s rezultatom 2–3 i kliničkom sumnjom ipak uputite.]
@@ -152,6 +164,7 @@
 #v(8pt)
 
 // ─── 4. RBDSQ ────────────────────────────────────────────────────────────
+<upitnik-rbdsq>
 == RBDSQ — RBD Screening Questionnaire
 
 #text(fill: color-gray, size: 7.5pt)[Probir za REM poremećaj ponašanja u snu. 13 da/ne pitanja. Primjenjivo u čekaonici.]
@@ -180,6 +193,7 @@
   [11.], [Moje se stanje sna promijenilo u zadnje vrijeme.], [#box(width: 22pt, stroke: (bottom: 0.5pt + luma(180)))[]],
   [12.], [Imam problema s njuhom (oslabljen/izgubljen).], [#box(width: 22pt, stroke: (bottom: 0.5pt + luma(180)))[]],
   [13.], [Uzimam antidepresive.], [#box(width: 22pt, stroke: (bottom: 0.5pt + luma(180)))[]],
+  table.cell(colspan: 2, align: right)[#text(weight: "bold")[UKUPNO:]], [#box(width: 22pt, stroke: (bottom: 1pt + luma(120)))[]/13],
 )
 
 #v(2pt)
@@ -195,6 +209,8 @@
   [0–4], [Negativan probir],
   [*≥5*], [*Pozitivan probir → uputiti na PSG*],
 )
+#v(1pt)
+#text(size: 6.5pt, fill: color-gray)[_Upišite zbroj „Da“ odgovora. ≥5 bodova = pozitivan probir → PSG za potvrdu._]
 
 #v(2pt)
 #text(size: 7pt, fill: color-gray)[Osjetljivost 96%, specifičnost 56%. Znatan broj lažno pozitivnih — PSG je neophodna za potvrdu dijagnoze.]
@@ -202,6 +218,7 @@
 #v(8pt)
 
 // ─── 5. IRLS ─────────────────────────────────────────────────────────────
+<upitnik-irls>
 == IRLS — International RLS Rating Scale
 
 #text(fill: color-gray, size: 7.5pt)[Procjena težine sindroma nemirnih nogu. 10 pitanja, svako 0–4. Primjenjivo nakon potvrde dijagnoze (4 IRLS kriterija).]
@@ -227,6 +244,7 @@
   [8.], [Koliko dugo u prosjeku traje epizoda?], [#box(width: 22pt, stroke: (bottom: 0.5pt + luma(180)))[]],
   [9.], [Koliko RLS utječe na svakodnevne aktivnosti?], [#box(width: 22pt, stroke: (bottom: 0.5pt + luma(180)))[]],
   [10.], [Koliko RLS utječe na raspoloženje?], [#box(width: 22pt, stroke: (bottom: 0.5pt + luma(180)))[]],
+  table.cell(colspan: 2, align: right)[#text(weight: "bold")[UKUPNO:]], [#box(width: 22pt, stroke: (bottom: 1pt + luma(120)))[]/40],
 )
 
 #v(2pt)
@@ -246,3 +264,5 @@
   [*21–30*], [*Teški*],
   [*31–40*], [*Vrlo teški*],
 )
+#v(1pt)
+#text(size: 6.5pt, fill: color-gray)[_Upišite zbroj bodova. ≥11 indicira farmakoterapiju; ≥21 = teški RLS._]
