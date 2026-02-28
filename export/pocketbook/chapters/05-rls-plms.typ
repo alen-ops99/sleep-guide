@@ -129,6 +129,10 @@ RLS je neurološki poremećaj s neodoljivim nagonom za pokretanjem nogu uz neugo
   *Lijekovi koji pogoršavaju RLS:* antihistaminici, SSRI/SNRI, antipsihotici, metoklopramid, mirtazapin
 ]
 
+#pearl[*Najrazornija pogreška u liječenju RLS-a:* Kad augmentacija počne, prirodan klinički refleks je povećati dozu DA — to dramatično pogoršava stanje. Druga pogreška: naglo ukinuti DA (dopaminski agonist) uz istovremeni početak novog lijeka — dopaminski odvikavajući sindrom (nesanica, depresija, suicidalnost) → pacijent zauvijek odbija novi lijek. *Ispravno:* prvo titrirajte novi lijek naviše, zatim polako smanjujte DA (0,25--0,5 mg/mj.).]
+
+#pearl[*Levodopa/karbidopa 25/100 za situacijsku upotrebu:* Prije leta, kazališta, operacije pod svjesnom sedacijom — jedna tableta 20--30 min ranije. Korišteno samo povremeno, bez rizika augmentacije. Za kronično liječenje: NIKADA levodopa (augmentacija 80--90%).]
+
 // === Liječenje u PZZ ===
 == Liječenje u PZZ
 
@@ -160,7 +164,9 @@ RLS je neurološki poremećaj s neodoljivim nagonom za pokretanjem nogu uz neugo
 
 *IV:* Ferikarbekstol maltoza ili željezov karboksimaltoza -- uputiti za infuziju.
 
-#pearl[UVIJEK provjerite feritin prije farmakoterapije RLS-a. Feritin od 30 ng/mL je „laboratorijski normalan“ ali nedovoljan za mozak. Korekcija željeza može potpuno riješiti simptome.]
+#pearl[UVIJEK provjerite feritin prije farmakoterapije RLS-a. Feritin od 30 ng/mL je „laboratorijski normalan” ali nedovoljan za mozak. Korekcija željeza može potpuno riješiti simptome.]
+
+#pearl[*Doziranje oralnog željeza:* Svaki drugi dan je BOLJE od svakodnevnog (bolja apsorpcija). Navečer, s 100--200 mg vitamina C. Obavezno: stopirati sve preparate željeza *3--4 dana* prije kontrolnog vađenja krvi — inače je feritin nepouzdan. Ako feritin ne raste nakon 3 mj. oralne terapije → IV željezo. Sigurnosno pravilo: nikada IV željezo ako je saturacija transferina >45%.]
 
 === 2. korak: Alfa-2-delta ligandi (prva linija farmakoterapije) #evidence("Ia")
 

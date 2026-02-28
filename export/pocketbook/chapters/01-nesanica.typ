@@ -184,6 +184,8 @@ Nesanica koja traje *\< 3 mjeseca*, najčešće precipitirana stresom, bolešću
 
 #pearl[LOM može primijeniti restrikciju sna + kontrolu podražaja i *bez* formalnog CBT-I treninga — učinak je značajan i samo s te dvije komponente.#evidence("Ib")]
 
+#pearl[*Analogija za objašnjavanje restrikcije sna pacijentu:* Ako ulijete tekućinu u široku posudu — razlije se tanko i plitko. Ulijte istu tekućinu u usku posudu — razina je duboka. San je isti: raširite ga na 12 h u krevetu — bit će plitak i fragmentiran. Ograničite vrijeme u krevetu i san se konsolidira i produbljuje.]
+
 #v(3pt)
 #crvena-zastavica[
   *Oprez pri restrikciji sna:* Kontraindicirana ili zahtijeva poseban oprez kod *bipolarnog poremećaja* (rizik manije), *epilepsije* (snižen prag napadaja) i pacijenata u *sigurnosno-kritičnim zanimanjima* tijekom početne faze (povećana pospanost).
@@ -260,6 +262,12 @@ Indicirani: (1) kratkoročno dok se čeka CBT-I; (2) uz CBT-I kod teške nesanic
 
 #v(4pt)
 #pearl[*Napomena o trazodonu:* AASM smjernice (Sateia 2017) uvjetno preporučuju PROTIV trazodona za nesanicu zbog ograničenih dokaza. Međutim, u kontekstu HR — gdje DORAs, doxepin i ramelteon nisu dostupni — trazodon ostaje najpraktičnija opcija s povoljnim sigurnosnim profilom, osobito u starijih. Europska praksa (ESRS) šire koristi trazodon.]
+
+#pearl[*Plafon sedacije trazodona je 50 mg.* Iznad 50 mg nema dodatnog hipnotičkog učinka — samo rastu nuspojave (ortostatska hipotenzija, pospanost). Mnogi liječnici eskaliraju dozu kad 50 mg ne pomaže — to je pogrešno razumijevanje farmakodinamike.]
+
+#pearl[*Kvetiapin kao hipnotik (bez psihoze): NE koristiti.* Čak i u niskim dozama uzrokuje porast težine + dislipidemiju. S obzirom na dostupnost sigurnijih opcija (trazodon, melatonin), omjer rizika i koristi je nepovoljan.]
+
+#pearl[*Z-lijekovi su sigurni uz OSA-u* — nema dokaza da pogoršavaju apneje (za razliku od BZD-a). Pacijent s COMISA-om ne smije biti uskraćen za hipnotik samo zbog dijagnoze OSA-e.]
 
 === Posebne populacije
 

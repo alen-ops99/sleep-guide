@@ -130,6 +130,10 @@ Istovremeno dijagnostički test i liječenje:
 #v(4pt)
 #pearl[*MSLT NIKADA bez prethodnog adekvatnog sna ≥2 tj.* Nedovoljan san daje skraćenu latenciju i SOREMP-ove (Sleep Onset REM Period — pojava REM-a unutar 15 min od usnivanja) na MSLT-u → moguća *lažno pozitivna dijagnoza narkolepsije*.]
 
+#pearl[*Bifazični san nije nesanica.* Pacijent (osobito stariji) koji se budi na 1--2 h usred noći pa ponovno zaspe — ako je ukupno trajanje ≥7 h i nema dnevne pospanosti — nema poremećaj. Normalizirajte bifazični obrazac: „To nije nesanica. To je vaš prirodni ritam."]
+
+#pearl[*Socijalni jet lag:* Razlika u vremenu spavanja radnim danom vs. vikendom >2 h povezana je s poremećajima raspoloženja i metaboličkim promjenama. Savjetujte: ne varirati više od 1--2 h između radnih i slobodnih dana.]
+
 // === Crvene zastavice ===
 #v(3pt)
 #crvena-zastavica[

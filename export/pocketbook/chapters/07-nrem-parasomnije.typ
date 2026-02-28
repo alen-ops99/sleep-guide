@@ -130,6 +130,8 @@ NREM parasomnije su spektar triju poremećaja (somnambulizam, noćni strahovi, k
 - *Spavaća soba u prizemlju* — izbjegavati stepenice
 - *Partner/ukućani:* NE pokušavati probuditi osobu na silu — samo osigurati sigurnost
 
+#pearl[*Prozori su najopasniji element.* Pacijenti se ne bude, ne otvaraju zavjese i prozore — bacaju se kroz staklo (vizija požara, opasnosti). Zabilježena trajna paraplegija nakon pada s 2. kata. *Uvijek:* teške zavjese + namještaj koji blokira pristup prozoru.]
+
 === 2. Otklanjanje provocirajućih čimbenika
 
 #set text(size: 8.5pt)

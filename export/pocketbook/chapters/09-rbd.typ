@@ -156,7 +156,13 @@ Najvažnija intervencija, *odmah*, prije dijagnostike ili farmakoterapije:
 
 *Melatonin:* Započeti s 3 mg, 30--60 min prije spavanja. Titrirati naviše svaka 2 tjedna. Za RBD su potrebne *više doze* nego za nesanicu (6--12 mg nije neuobičajeno). Puni učinak: 2--4 tjedna. Izvrstan sigurnosni profil.
 
-#pearl[*Načelo „start low, go slow“:* Melatonin za RBD započeti s 3 mg. Titrirati za 3 mg svaka 2 tjedna do učinka (max 12 mg). Klonazepam — započeti s 0,25 mg, nikada bez isključivanja OSA-e.]
+#pearl[*Načelo „start low, go slow”:* Melatonin za RBD započeti s 3 mg. Titrirati za 3 mg svaka 2 tjedna do učinka (max 12 mg). Klonazepam — započeti s 0,25 mg, nikada bez isključivanja OSA-e.]
+
+#pearl[*Konverzijski rizik po dobi* (Mayo Clinic, 2024, 372 pacijenta): >70 g. = ~6%/god.; 60--70 g. = ~2,6%/god.; 50--60 g. = \<1%/god.; \<50 g. = 0,11%/god. Samo 1 od 48 fenokonvertiranih bio je mlađi od 50. *Ispod 50 g. ne spominjite Parkinsonovu bolest* — profil rizika je potpuno drukčiji.]
+
+#pearl[*Etika priopćavanja prognoze:* Koristite pristup dijeljenog odlučivanja. Recite: „RBD može predstavljati rizik za razvoj drugih neuroloških stanja u budućnosti. Koliko biste o tome željeli znati?” Pustite pacijenta da odredi dubinu razgovora. Pacijenti gotovo uvijek žele znati — ali na svoj način i u svom tempu.]
+
+#pearl[*5-minutni neurološki pregled na godišnjoj kontroli:* (1) MoCA ili kratki kognitivni test, (2) ortostatski RR (pad sistolički ≥20 mmHg u 3 min), (3) tapkanje prstima za bradikineziju, (4) pasivni opseg pokreta za rigiditet, (5) inspekcija za tremor u mirovanju, (6) hod: kadenca, duljina koraka, okretanje.]
 
 *Klonazepam:* 0,25 mg, titrirati svaka 1--2 tjedna. Učinkovitost 80--90%. *OPREZ:*
 - *OSA* → klonazepam pogoršava apneje (isključiti OSA ili započeti CPAP prije uvođenja)
