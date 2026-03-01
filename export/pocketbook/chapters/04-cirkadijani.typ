@@ -50,14 +50,15 @@
     [„Kada biste najradije išli spavati bez ikakvih obaveza?“], [>02h = sumnja na DSWPD],
     [„U koliko sati se prirodno budite vikendom?“], [Spontano buđenje otkriva endogeni ritam],
     [„Je li problem samo usnivanje ili i održavanje sna?“], [Samo usnivanje + vikendom OK = klasični DSWPD],
-    [„Radite li u smjenama?“], [Smjenski rad → specifičan protokol upravljanja],
+    [„Radite li u smjenama?”], [Smjenski rad → specifičan protokol upravljanja],
+    [„Je li se u proteklih godinu dana nešto promijenilo u Vašem rasporedu spavanja?”], [Nagla promjena → novonastali poremećaj ili podležeći uzrok],
   ))
 ]
 
 // === Kako prepoznati? ===
 == Kako prepoznati?
 
-Poremećaji cirkadijanog ritma nastaju kad je unutarnji biološki sat pomaknut u odnosu na društveni raspored — problem vremena, ne kvalitete sna. Prevalencija: DSWPD (poremećaj faze odgođenog spavanja) 1–3% opće populacije (7–16% adolescenata); u praksi s 2.000 pacijenata: 20–60 ima DSWPD.
+Poremećaji cirkadijanog ritma nastaju kad je unutarnji biološki sat pomaknut u odnosu na društveni raspored — problem vremena, ne kvalitete sna. Prevalencija: poremećaj faze odgođenog spavanja (DSWPD; _Delayed Sleep-Wake Phase Disorder_) 1–3% opće populacije (7–16% adolescenata); u praksi s 2.000 pacijenata: 20–60 ima DSWPD.
 
 === DSWPD — pomak unatrag
 
@@ -66,14 +67,14 @@ Poremećaji cirkadijanog ritma nastaju kad je unutarnji biološki sat pomaknut u
 *Ključni simptomi:*
 - Nemogućnost usnivanja prije 02–04h
 - Velike poteškoće s buđenjem u 06–08h
-- *Za vikend spava odlično* (03–04h do 11–12h) — pun san
+- *Za vikend spava zadovoljavajuće* (03–04h do 11–12h) — pun san, ali prisilno buđenje radnim danima narušava ukupnu kvalitetu
 - Kronična parcijalna deprivacija radnim danima (3–5 h umjesto 8–9 h)
 
 === ASWPD — pomak unaprijed
 
 *Tipičan pacijent:* Starija osoba (>60 g.) zaspi u 18–20h, budi se u 02–05h.
 
-*Ključna DD: ASWPD vs. depresija* — ako su raspoloženje, apetit i interesi očuvani → razmisliti o ASWPD-u (poremećaj faze unaprijeđenog spavanja) prije dijagnoze depresije.
+*Ključna DD: ASWPD vs. depresija* — ako su raspoloženje, apetit i interesi očuvani → razmisliti o poremećaju faze unaprijeđenog spavanja (ASWPD; _Advanced Sleep-Wake Phase Disorder_) prije dijagnoze depresije.
 
 === Poremećaj smjenskog rada
 
@@ -86,7 +87,8 @@ Gotovo isključivo u *potpuno slijepih osoba* — endogeni sat „slobodno trči
 *Ključna pitanja:*
 + „Spavate li dobro vikendom kada nemate obaveza?“ — ako DA → cirkadijani, ne nesanica
 + „Kada biste najradije išli spavati bez ikakvih obaveza?“
-+ „U koliko sati se prirodno budite vikendom?“
++ „U koliko sati se prirodno budite vikendom?”
++ „Je li se u proteklih godinu dana nešto promijenilo u Vašem rasporedu spavanja?” — nagla promjena → novonastali poremećaj ili podležeći uzrok
 
 // === Probir i dijagnostika ===
 == Probir i dijagnostika
@@ -107,12 +109,12 @@ Gotovo isključivo u *potpuno slijepih osoba* — endogeni sat „slobodno trči
   [Usnivanje], [02–04h], [02–04h], [Varijabilno],
   [Buđenje], [06:30 (alarm, s mukom)], [11–12h (spontano)], [Varijabilno],
   [Trajanje sna], [3–4 h], [7–9 h], [Skraćeno],
-  [Kvaliteta], ["Odličan kad zaspim"], [Odlična], [Loša],
+  [Kvaliteta], ["Zadovoljavajuća kad zaspim"], [Zadovoljavajuća ako raspored odgovara biološkom satu], [Loša],
 )
 
 #pearl[Obrazac *kratkog sna radnim danima + dugog, kvalitetnog sna vikendom* gotovo je patognomoničan za DSWPD.]
 
-*Specijalistička dijagnostika:* Aktigrafija (≥7 dana) i DLMO. PSG nije potrebna osim za isključivanje komorbiditeta.
+*Specijalistička dijagnostika:* Aktigrafija (≥7 dana) i DLMO. Polisomnografija (PSG) nije potrebna osim za isključivanje komorbiditeta.
 
 *LOM može klinički dijagnosticirati DSWPD i poremećaj smjenskog rada* na temelju anamneze i 2-tjednog dnevnika.
 

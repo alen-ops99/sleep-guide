@@ -1,14 +1,14 @@
 # 13. Centralna apneja u snu (CSA)
 
-> **MKB-10:** G47.31 | **ICSD-3:** Central Sleep Apnea Syndromes
+> **MKB-10 (Međunarodna klasifikacija bolesti, 10. revizija):** G47.31 | **ICSD-3 (Međunarodna klasifikacija poremećaja spavanja, 3. izdanje):** Central Sleep Apnea Syndromes
 
 !!! brzi-pregled "Brzi pregled"
 
-    **Prepoznaj:** Sumnjaj na CSA kod: srčanog zatajenja (30-50% HFrEF!), kronične opioidne terapije, moždanog udara. Tihe apneje (manje hrkanja nego OSA). Nesanica s noćnom dispnejom.
+    **Prepoznaj:** Sumnjaj na CSA kod: srčanog zatajenja (30-50% HFrEF — srčano zatajivanje sa smanjenom ejekcijskom frakcijom!), kronične opioidne terapije, moždanog udara. Tihe apneje (manje hrkanja nego OSA — opstruktivna apneja u snu). Nesanica s noćnom dispnejom.
 
-    **Učini:** HSAT NE MOŽE pouzdano detektirati centralne apneje — potrebna PSG! Optimiziraj liječenje srčanog zatajenja. Reduciraj/ukini opioide ako je moguće.
+    **Učini:** HSAT (kućna studija spavanja) NE MOŽE pouzdano detektirati centralne apneje — potrebna PSG (polisomnografija)! Optimiziraj liječenje srčanog zatajenja. Reduciraj/ukini opioide ako je moguće.
 
-    **Uputi:** Pulmolog + kardiolog (paralelno ako HF). **VAŽNO:** ASV (adaptivna servoventilacija) je KONTRAINDICIRANA kod HFrEF s EF ≤45% (SERVE-HF studija: povećana smrtnost!).
+    **Uputi:** Pulmolog + kardiolog (paralelno ako HF). **VAŽNO:** ASV (adaptivna servo-ventilacija) je KONTRAINDICIRANA kod HFrEF s EF ≤45% (SERVE-HF studija: povećana smrtnost!).
 
 ---
 
@@ -22,7 +22,7 @@
     2. **Opioidi** — kronična uporaba opioida (morfij, oksikodon, metadon, fentanil) suprimira respiratorni centar, uzrokujući centralne apneje i ataksično disanje.
     3. **Moždani udar** — lezije moždanog debla mogu oštetiti respiratorni centar.
 
-    Poseban entitet je **treatment-emergent CSA (TE-CSA)** — pojava centralnih apneja kod OSA pacijenata nakon započinjanja CPAP terapije. Većina se spontano razriješi unutar tjedana.
+    Poseban entitet je **treatment-emergent CSA (TE-CSA)** — pojava centralnih apneja kod OSA pacijenata nakon započinjanja CPAP (kontinuirani pozitivni tlak u dišnim putovima) terapije. Većina se spontano razriješi unutar tjedana.
 
 ---
 

@@ -57,7 +57,7 @@
 // === Kako prepoznati? ===
 == Kako prepoznati?
 
-OSA je poremećaj disanja u snu s ponavljanim epizodama kolapsa gornjeg dišnog puta, mjereno apneja-hipopneja indeksom (AHI). Prevalencija: u praksi s 2.000 pacijenata: 150–400 odraslih ima klinički značajnu OSA-u.
+Opstruktivna apneja u snu (OSA; _Obstructive Sleep Apnea_) je poremećaj disanja u snu s ponavljanim epizodama kolapsa gornjeg dišnog puta, mjereno apneja-hipopneja indeksom (AHI; _Apnea-Hypopnea Index_). Prevalencija: u praksi s 2.000 pacijenata: 150–400 odraslih ima klinički značajnu OSA-u.
 
 *Klasična prezentacija* (češće muškarci):
 - Glasno, iregularno hrkanje s pauzama u disanju
@@ -111,7 +111,7 @@ OSA je poremećaj disanja u snu s ponavljanim epizodama kolapsa gornjeg dišnog 
 
 #text(size: 8pt, fill: color-gray)[STOP-BANG ima nižu osjetljivost kod žena (2 boda inherentno pristrana). Kod žena s rezultatom 2--3 i kliničkom sumnjom -- ipak uputite.]
 
-*ESS* (v. poglavlje 1, str. #context { let loc = query(<ess-tablica>).first().location(); str(counter(page).at(loc).first()) }) — normalno 0–10; patološki ≥11. Normalan ESS ne isključuje OSA-u.
+*Epworthova ljestvica pospanosti (ESS; _Epworth Sleepiness Scale_)* (v. poglavlje 1, str. #context { let loc = query(<ess-tablica>).first().location(); str(counter(page).at(loc).first()) }) — normalno 0–10; patološki ≥11. Normalan ESS ne isključuje OSA-u.
 
 *Što LOM može:* STOP-BANG + ESS, opseg vrata, orofarinks (Mallampati III--IV), noćna pulsna oksimetrija (ako dostupna), laboratorij (KKS, GUK/HbA1c, lipidogram, TSH).
 
@@ -133,7 +133,7 @@ OSA je poremećaj disanja u snu s ponavljanim epizodama kolapsa gornjeg dišnog 
   [*Teška*], [*≥30*], [CPAP obavezan; visoki KV rizik],
 )
 
-*PSG* -- zlatni standard. *HSAT* (kućna studija spavanja — _Home Sleep Apnea Test_) -- prikladna za visoku pretestnu vjerojatnost bez značajnog komorbiditeta.
+*Polisomnografija (PSG; _Polysomnography_)* -- zlatni standard. *HSAT* (kućna studija spavanja — _Home Sleep Apnea Test_) -- prikladna za visoku pretestnu vjerojatnost bez značajnog komorbiditeta.
 
 // === Crvene zastavice ===
 #v(3pt)
@@ -160,7 +160,7 @@ OSA je poremećaj disanja u snu s ponavljanim epizodama kolapsa gornjeg dišnog 
 
 === CPAP -- podrška adherenciji (kritična uloga LOM-a)
 
-CPAP je zlatni standard za umjerenu i tešku OSA-u. Pulmolog propisuje, ali *LOM je ključan za adherenciju* (30--50% prestane unutar 1 godine).
+Kontinuirani pozitivni tlak u dišnim putovima (CPAP; _Continuous Positive Airway Pressure_) je zlatni standard za umjerenu i tešku OSA-u. Pulmolog propisuje, ali *LOM je ključan za adherenciju* (30--50% prestane unutar 1 godine).
 
 - Pitati na *svakoj kontroli:* „Koristite li CPAP svaku noć? Koliko sati?” (cilj: ≥4 h/noć, ≥70% noći)
 - Identificirati barijere: suhoća nosa → grijani ovlaživač; klaustrofobija → promjena maske
@@ -174,14 +174,14 @@ Alternativa za *blagu do umjerenu OSA-u* ili CPAP netoleranciju. Propisuje stoma
 
 === COMISA (komorbidna nesanica i apneja u snu)
 
-COMISA pogađa *30--50% pacijenata s OSA-om*. Liječiti *oboje istovremeno* -- CBT-I za nesanicu + CPAP za OSA-u. CBT-I *prije* CPAP-a može poboljšati adherenciju. *Izbjegavati hipnotike* jer pogoršavaju OSA-u.
+Komorbidna nesanica i opstruktivna apneja u snu (COMISA; _Comorbid Insomnia and Sleep Apnea_) pogađa *30--50% pacijenata s OSA-om*. Liječiti *oboje istovremeno* -- kognitivno-bihevioralna terapija za nesanicu (CBT-I; _Cognitive Behavioral Therapy for Insomnia_) za nesanicu + CPAP za OSA-u. CBT-I *prije* CPAP-a može poboljšati adherenciju. *Izbjegavati hipnotike* jer pogoršavaju OSA-u.
 
 === OSA i drugi poremećaji spavanja
 
 OSA fragmentira san i može provocirati ili pogoršavati druge poremećaje spavanja:
-- *PLMS* — apneička mikrobuđenja pojačavaju periodične pokrete nogu
-- *NREM parasomnije* — fragmentacija N3 sna triggerira mjesečarenje i noćne strahove u odraslih
-- *RBD i pseudo-RBD* — teška OSA može imitirati RBD (pseudo-RBD); liječenje CPAP-om može eliminirati simptome
+- *Periodični pokreti udova u snu (PLMS; _Periodic Limb Movements in Sleep_)* — apneička mikrobuđenja pojačavaju periodične pokrete nogu
+- *Parasomnije sna bez brzih pokreta očiju (NREM; _Non-Rapid Eye Movement_)* — fragmentacija N3 sna triggerira mjesečarenje i noćne strahove u odraslih
+- *Poremećaj ponašanja u REM snu (RBD; _REM Sleep Behavior Disorder_) i pseudo-RBD* — teška OSA može imitirati RBD (pseudo-RBD); liječenje CPAP-om može eliminirati simptome
 
 #pearl[*CPAP ne liječi samo apneje* — uspješno liječenje OSA-e može eliminirati parasomnije, smanjiti PLMS i poboljšati RBD simptome. Uvijek razmislite o OSA-i kao podlozi drugih poremećaja spavanja.]
 
@@ -191,7 +191,7 @@ OSA fragmentira san i može provocirati ili pogoršavati druge poremećaje spava
 CSA nastaje zbog *smanjenog ili odsutnog respiratornog napora* — mozak prestaje slati signal dišnoj muskulaturi. Za razliku od OSA (fizička blokada uz napor), kod CSA *nema napora za disanje*.
 
 *Kada posumnjati:*
-- *Srčano zatajenje (HFrEF, EF \< 45%)* — Cheyne-Stokesovo disanje prisutno u 30–50%
+- *Srčano zatajivanje sa smanjenom ejekcijskom frakcijom (HFrEF), EF \< 45%* — Cheyne-Stokesovo disanje prisutno u 30–50%
 - *Kronična opioidna terapija* (morfij, oksikodon, metadon) — osobito ≥100 mg/dan MED
 - *Preboljeli moždani udar* — 10–25% akutnih CVI-a
 - Partner opisuje *tihe pauze u disanju* (manje hrkanja nego kod OSA)
@@ -201,7 +201,7 @@ CSA nastaje zbog *smanjenog ili odsutnog respiratornog napora* — mozak prestaj
 
 *Uloga LOM-a:* (1) Identificirati rizične pacijente (HF, opioidi, CVI). (2) Optimizirati liječenje srčanog zatajenja — to može eliminirati CSA. (3) Uputiti na PSG u laboratoriju.
 
-#pearl[*ASV je KONTRAINDICIRAN kod HFrEF (EF ≤45%).* Studija SERVE-HF pokazala povećanu smrtnost. Ako pacijent s HFrEF koristi ASV → hitno kontaktirati kardiologa i pulmologa.]
+#pearl[*Adaptivna servo-ventilacija (ASV; _Adaptive Servo-Ventilation_) je KONTRAINDICIRANA kod HFrEF (EF ≤45%).* Studija SERVE-HF pokazala povećanu smrtnost. Ako pacijent s HFrEF koristi ASV → hitno kontaktirati kardiologa i pulmologa.]
 
 #pearl[*Tretmanski emergentna CSA:* Kad se na CPAP downloadu pojave centralne apneje: (1) isključiti EPR/flex, (2) prebaciti s auto-CPAP-a na fiksni tlak, (3) ako se ne razriješi u 1 mjesec — neće ni u 3; uputiti specijalistu. Samo 1/3 se potpuno razriješi.]
 

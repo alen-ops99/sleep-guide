@@ -60,7 +60,7 @@
 // === Kako prepoznati? ===
 == Kako prepoznati?
 
-NREM parasomnije su spektar triju poremećaja (somnambulizam, noćni strahovi, konfuzna buđenja) koji proizlaze iz nepotpunog buđenja iz dubokog N3 sna — tijelo se pokreće, ali svjesnost ostaje „isključena“.
+Parasomnije sna bez brzih pokreta očiju (NREM; _Non-Rapid Eye Movement_) su spektar triju poremećaja (somnambulizam, noćni strahovi, konfuzna buđenja) koji proizlaze iz nepotpunog buđenja iz dubokog N3 sna — tijelo se pokreće, ali svjesnost ostaje „isključena”.
 
 #set text(size: 8.5pt)
 #table(
@@ -91,19 +91,19 @@ NREM parasomnije su spektar triju poremećaja (somnambulizam, noćni strahovi, k
 == Probir i dijagnostika
 
 *Detaljna anamneza — temelj dijagnoze.* Ključna pitanja:
-+ „U koje doba noći se to događa?“ — Prva trećina = NREM; zadnja trećina = RBD
++ „U koje doba noći se to događa?” — Prva trećina = NREM; zadnja trećina = poremećaj ponašanja u REM snu (RBD; _REM Sleep Behavior Disorder_)
 + „Jesu li oči otvorene ili zatvorene?“
 + „Sjeća li se nečega ujutro?“
 + „Može li se osoba utješiti?“ — Noćni strahovi: ne; noćna mora: da
 + „Koliko traju i koliko su česte?“ — Stereotipne kratke (< 60 s) = epilepsija
-+ „Hrče li? Ima li apneje?“ — Obavezno za sve odrasle (OSA je čest trigger)
-+ „Koji lijekove uzima?“ — Zolpidem, litij, sedativi
++ „Hrče li? Ima li apneje?” — Obavezno za sve odrasle (opstruktivna apneja u snu — OSA je čest trigger)
++ „Koji lijekove uzima?” — Zolpidem, litij, sedativi
 
 *Video snimka:* Zamolite partnera/roditelja da snimi epizodu mobilnim telefonom.
 
 *Probir za OSA:* Kod svakog odraslog s novonastalim NREM parasomnijama — barem STOP-Bang upitnik.
 
-*Video-PSG* indicirana kada: dijagnostička nesigurnost, ozljede, stereotipne kratke epizode (sumnja na epilepsiju), novonastale parasomnije u odraslog.
+*Video-polisomnografija (PSG)* indicirana kada: dijagnostička nesigurnost, ozljede, stereotipne kratke epizode (sumnja na epilepsiju), novonastale parasomnije u odraslog.
 
 #text(size: 8pt, fill: color-gray)[Rutinska PSG NIJE potrebna za tipične dječje NREM parasomnije s jasnom kliničkom slikom.]
 
@@ -194,13 +194,13 @@ Za djecu s predvidljivim vremenskim obrascem: *15–30 min PRIJE uobičajenog vr
 - Dovoljno sna za dob (deprivacija je najčešći trigger!)
 - Farmakoterapija samo iznimno — kod teških, učestalih epizoda s ozljedama
 
-=== SRED (poremećaj hranjenja u snu)
+=== Poremećaj jedenja povezan sa spavanjem (SRED; _Sleep-Related Eating Disorder_)
 
 SRED je NREM parasomnije — epizode nehotičnog jedenja iz dubokog sna uz *amneziju*. Pacijent ustaje, odlazi u kuhinju, jede neobične kombinacije hrane — ne sjeća se. Saznaje od partnera ili po tragovima u kuhinji.
 
 *Najčešći uzrok:* *Zolpidem* — do 5% korisnika. Svaki pacijent na zolpidemu s neobjašnjivim debljanjem ili tragovima noćnog jedenja → evaluirati za SRED.
 
-*SRED vs. NES:* SRED = smanjena svijest, amnezija, bizarno jedenje. NES (sindrom noćnog jedenja) = puna budnost, sjećanje, normalna hrana. Liječenje potpuno različito.
+*SRED vs. NES:* SRED = smanjena svijest, amnezija, bizarno jedenje. Sindrom noćnog jedenja (NES; _Night Eating Syndrome_) = puna budnost, sjećanje, normalna hrana. Liječenje potpuno različito.
 
 *Intervencija LOM-a:*
 + *Ukinuti zolpidem* (postupno kroz 1–2 tjedna) — u većini slučajeva potpuno rješava SRED

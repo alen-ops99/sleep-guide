@@ -34,9 +34,9 @@
   [RLS / PLMS (prva linija)],
   [5],
 
-  // --- H ---
-  [*Hidroksizin*],
-  [Nesanica],
+  // --- D ---
+  [*Daridorexant*#text(size: 6.5pt)[ (Quviviq)]],
+  [Nesanica (DORA — dostupan u HR od 2025.)],
   [1],
 
   // --- K ---

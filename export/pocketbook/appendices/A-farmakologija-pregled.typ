@@ -42,16 +42,16 @@
   // 3. Trazodon
   [Nesanica],
   [*Trazodon*],
-  [25 mg → 100 mg],
+  [25 mg → 75 mg],
   [5–9 h],
-  [Start low, go slow. QTc oprez],
+  [Maks. 75–100 mg za nesanicu. QTc oprez. Hepat. metab.],
 
-  // 4. Hidroksizin
+  // 4. Daridorexant (Quviviq)
   [Nesanica],
-  [*Hidroksizin*],
+  [*Daridorexant*#text(size: 6pt)[ (Quviviq)]],
   [25 mg → 50 mg],
-  [20 h],
-  [Antikolinergički. Ne u starijih],
+  [8 h],
+  [DORA. Dostupan u HR od 2025. Ne uz jake CYP3A4 inhib.],
 
   // 5. Melatonin (DSWPD)
   [DSWPD],
@@ -114,7 +114,7 @@
   [*DORA*#text(size: 6pt)[ (suvorexant, lemborexant)]],
   [10–20 mg],
   [12–17 h],
-  [Dualni antagonisti oreksina. *Nedostupni u HR* (✗)],
+  [Dualni antagonisti oreksina. Suvorexant/lemborexant *nedostupni u HR* (✗). *Daridorexant dostupan* — vidi redak 4.],
 
   // 14. IV željezo
   [RLS],
@@ -145,9 +145,10 @@
     #v(4pt)
     #set text(size: 7.5pt)
     + *Start low, go slow* — uvijek početi s najnižom dozom, titrirati postupno
-    + *Stariji (>65 g.)* — izbjegavati BZD, Z-lijekove, antikolinergike (Beers kriteriji)
-    + *Nikada sedative bez isključenja OSA-e* — uvijek STOP-BANG prije hipnotika
-    + *Prije svakog hipnotika* — isključite OSA-u (STOP-BANG) i RLS (feritin)
-    + *Revizija lijekova* — SSRI, antihistaminici, beta-blokatori i opioidi česti su uzročnici poremećaja sna
+    + *Stariji (>65 g.)* — izbjegavati benzodiazepine (BZD), Z-lijekove, antikolinergike (Beers kriteriji)
+    + *Nikada sedative bez isključenja opstruktivne apneje u snu (OSA)* — uvijek STOP-BANG prije hipnotika
+    + *Prije svakog hipnotika* — isključite OSA-u (STOP-BANG) i sindrom nemirnih nogu (RLS; feritin)
+    + *Revizija lijekova* — selektivni inhibitori ponovne pohrane serotonina (SSRI), antihistaminici, beta-blokatori i opioidi česti su uzročnici poremećaja sna
+    + *Antihistaminici (hidroksizin) NISU za nesanicu* — nedovoljni dokazi, antikolinergički rizik u starijih
   ]
 )

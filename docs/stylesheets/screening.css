@@ -1597,9 +1597,15 @@
   }
 
   .result-section-confirm,
+  .result-section-exclude,
   .result-section-manage,
   .result-section-labs,
   .result-section-referral {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .likelihood-badge {
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
@@ -2127,6 +2133,44 @@
   .progress-bar-fill::after {
     display: none;
   }
+}
+
+/* --- Likelihood Badges --- */
+.likelihood-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.15rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.likelihood-visoka { background: #dcfce7; color: #166534; }
+.likelihood-srednja { background: #fef3c7; color: #92400e; }
+.likelihood-niska { background: #f3f4f6; color: #6b7280; }
+
+[data-md-color-scheme="slate"] .likelihood-visoka { background: rgba(22, 101, 52, 0.2); color: #86efac; }
+[data-md-color-scheme="slate"] .likelihood-srednja { background: rgba(146, 64, 14, 0.2); color: #fcd34d; }
+[data-md-color-scheme="slate"] .likelihood-niska { background: rgba(107, 114, 128, 0.15); color: #9ca3af; }
+
+/* --- Exclude Section --- */
+.result-section-exclude {
+  border-left: 4px solid #ef4444;
+  background: rgba(239, 68, 68, 0.05);
+  padding: 0.75rem 1rem;
+  border-radius: 0 10px 10px 0;
+  margin-top: 0.5rem;
+  border-top: none;
+}
+
+.result-section-exclude .result-section-label {
+  color: #ef4444;
+}
+
+[data-md-color-scheme="slate"] .result-section-exclude {
+  background: rgba(239, 68, 68, 0.08);
 }
 
 /* --- Reduced Motion Safety for Screening --- */

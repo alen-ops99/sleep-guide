@@ -1,6 +1,6 @@
 # 2. Opstruktivna apneja u snu (OSA)
 
-> **MKB-10:** G47.3 — Apneja u snu | **ICSD-3:** Opstruktivna apneja u snu (odrasli)
+> **MKB-10 (Međunarodna klasifikacija bolesti, 10. revizija):** G47.3 — Apneja u snu | **ICSD-3 (Međunarodna klasifikacija poremećaja spavanja, 3. izdanje):** Opstruktivna apneja u snu (odrasli)
 
 !!! brzi-pregled "Brzi pregled"
 
@@ -33,7 +33,7 @@
     | Rezistentna hipertenzija | 70-83% | OSA je **najčešći sekundarni uzrok** |
     | Dijabetes tipa 2 | 58-86% | Bidirekcijski odnos |
     | Fibrilacija atrija | 32-49% | Liječenje OSA smanjuje rekurenciju AF |
-    | Srčano zatajenje | 50-70% | Može biti OSA, CSA ili oboje |
+    | Srčano zatajenje | 50-70% | Može biti OSA, CSA (centralna apneja u snu) ili oboje |
 
     **Kontekst za LOM praksu:** U praksi s 2.000 pacijenata, **150-400 odraslih ima klinički značajnu OSA-u** — većina nedijagnosticirana. Svaki pacijent s rezistentnom hipertenzijom, pretilošću, DM2 ili fibrilacijom atrija zaslužuje probir.
 
@@ -63,7 +63,7 @@
     <div class="symptom-tier tier-differential" markdown>
     ### Diferencijalni tragovi
     - Žene: češće nesanica, umor i jutarnje glavobolje nego klasično hrkanje → atipična prezentacija OSA!
-    - Ako nema hrkanja ali ima EDS → razmisliti o narkolepsiji ili IH
+    - Ako nema hrkanja ali ima EDS → razmisliti o narkolepsiji ili IH (idiopatska hipersomnija)
     - Cheyne-Stokesovo disanje + srčano zatajenje → centralna, ne opstruktivna apneja
     </div>
 
@@ -82,7 +82,7 @@
     ### Atipična prezentacija (češće žene) — KLJUČNO ZA PREPOZNAVANJE
 
     - **Nesanica** (osobito otežano održavanje sna)
-    - **Kronični umor i iscrpljenost** (bez značajne pospanosti na ESS-u)
+    - **Kronični umor i iscrpljenost** (bez značajne pospanosti na ESS-u — Epworthova ljestvica pospanosti)
     - **Jutarnje glavobolje**
     - **Depresija i anksioznost** (refrakterni na terapiju)
     - Suhoća usta ujutro
@@ -156,7 +156,7 @@
     ### Specijalistička dijagnostika
 
     - **Polisomnografija (PSG)** — zlatni standard; indicirana kod sumnje na komorbidnu parasomniju, CSA ili narkolepsiju
-    - **Kućna studija spavanja (HSAT)** — portabilni uređaj; prikladna za pacijente s visokom pretestnom vjerojatnošću za OSA-u bez značajnog komorbiditeta
+    - **Kućna studija spavanja (HSAT — *Home Sleep Apnea Test*)** — portabilni uređaj; prikladna za pacijente s visokom pretestnom vjerojatnošću za OSA-u bez značajnog komorbiditeta
 
     ### Klasifikacija težine (AHI)
 
@@ -164,7 +164,7 @@
     |---|---|---|
     | Normalno | <5 | — |
     | **Blaga OSA** | **5-14** | Simptomatska terapija; pratiti KV rizik |
-    | **Umjerena OSA** | **15-29** | Indikacija za CPAP ili MAD |
+    | **Umjerena OSA** | **15-29** | Indikacija za CPAP (kontinuirani pozitivni tlak u dišnim putovima) ili MAD |
     | **Teška OSA** | **≥30** | CPAP je obavezan; visoki KV rizik |
 
     ### Centri za medicinu spavanja u Hrvatskoj
@@ -224,7 +224,7 @@
 
     ### COMISA — komorbidna nesanica i apneja u snu
 
-    **COMISA** pogađa 30-50% pacijenata s OSA-om. Liječiti **oboje istovremeno** — CBT-I za nesanicu + CPAP za OSA-u. CBT-I **prije** uvođenja CPAP-a može poboljšati adherenciju. Izbjegavati hipnotike jer pogoršavaju OSA-u.
+    **COMISA** pogađa 30-50% pacijenata s OSA-om. Liječiti **oboje istovremeno** — CBT-I (kognitivno-bihevioralna terapija za nesanicu) za nesanicu + CPAP za OSA-u. CBT-I **prije** uvođenja CPAP-a može poboljšati adherenciju. Izbjegavati hipnotike jer pogoršavaju OSA-u.
 
 ---
 
@@ -298,4 +298,4 @@
 
 ---
 
-*Napomena: Poglavlje je namijenjeno kao klinički vodič za liječnike obiteljske medicine. Za detaljne dijagnostičke protokole i terapijske algoritme konzultirajte AASM/ESRS smjernice i specijalistu za medicinu spavanja.*
+*Napomena: Poglavlje je namijenjeno kao klinički vodič za liječnike obiteljske medicine. Za detaljne dijagnostičke protokole i terapijske algoritme konzultirajte AASM (Američka akademija za medicinu spavanja) / ESRS (Europsko društvo za istraživanje spavanja) smjernice i specijalistu za medicinu spavanja.*

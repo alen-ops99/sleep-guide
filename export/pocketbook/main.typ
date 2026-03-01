@@ -30,6 +30,9 @@
   )
 ]
 
+// --- Sleep Basics (Chapter 0) ---
+#include "chapters/00a-osnove-spavanja.typ"
+
 // --- Classification of Sleep Disorders ---
 #include "chapters/00b-klasifikacija.typ"
 
@@ -64,6 +67,8 @@
 #include "appendices/D-posebne-populacije.typ"
 #include "appendices/E-upitnici.typ"
 #include "appendices/F-korisni-izvori.typ"
+
+#include "appendices/G-letci-za-pacijente.typ"
 
 // --- Back Page ---
 #include "chapters/99-back-page.typ"

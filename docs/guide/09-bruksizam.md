@@ -1,12 +1,12 @@
 # 9. Bruksizam u snu
 
-> **MKB-10:** G47.63 — Bruksizam u snu | **ICSD-3:** Bruksizam vezan za spavanje (*Sleep Related Bruxism*)
+> **MKB-10 (Međunarodna klasifikacija bolesti, 10. revizija):** G47.63 — Bruksizam u snu | **ICSD-3 (Međunarodna klasifikacija poremećaja spavanja, 3. izdanje):** Bruksizam vezan za spavanje (*Sleep Related Bruxism*)
 
 !!! brzi-pregled "Brzi pregled"
 
     **Prepoznaj:** Partner čuje škripanje zubima noću. Jutarnja bol u čeljusti/temporalnom području. Istrošenost zubne cakline. Hipertrofija masetera.
 
-    **Učini:** Pregledaj zube i palpiraj maseter. Uputiti stomatologu za udlagu. Obavezno ispitati za OSA (25-50% komorbiditeta!). Provjeri lijekove (SSRI mogu izazvati bruksizam — buspiron 5-10 mg kao protumjera).
+    **Učini:** Pregledaj zube i palpiraj maseter. Uputiti stomatologu za udlagu. Obavezno ispitati za OSA (opstruktivna apneja u snu — 25-50% komorbiditeta!). Provjeri lijekove (SSRI — selektivni inhibitori ponovne pohrane serotonina — mogu izazvati bruksizam — buspiron 5-10 mg kao protumjera).
 
     **Uputi:** Stomatolog (uvijek — udlaga). Pulmolog ako sumnja na OSA. Neurolog ako refrakterno (botulinum toksin).
 
@@ -78,9 +78,9 @@
     |---|---|---|
     | **Značajno oštećenje zuba** (frakture, gubitak cakline do dentina) | Ireverzibilno uništenje dentalne strukture; progredira bez zaštite | Hitna uputnica stomatologu za okluzalnu udlagu i sanaciju |
     | **Disfunkcija TMZ-a** (zaključavanje čeljusti, nemogućnost otvaranja usta, krepitacije) | Oštećenje zglobne strukture — disc displacement, artritis TMZ-a | TMZ specijalist / maksilofacijalni kirurg |
-    | **Novonastali bruksizam nakon uvođenja lijeka** | SSRI (osobito sertralin, fluoksetin, paroksetin), stimulansi (metilfenidat, amfetamini), SNRI (venlafaksin) | Revizija farmakoterapije; razmotriti zamjenu lijeka ili dodavanje buspirona |
+    | **Novonastali bruksizam nakon uvođenja lijeka** | SSRI (osobito sertralin, fluoksetin, paroksetin), stimulansi (metilfenidat, amfetamini), SNRI — inhibitori ponovne pohrane serotonina i noradrenalina (venlafaksin) | Revizija farmakoterapije; razmotriti zamjenu lijeka ili dodavanje buspirona |
     | **Bruksizam uz glasno hrkanje i/ili svjedočene apneje** | Visoka vjerojatnost komorbidne OSA-e; bruksizam je dio arousal odgovora | Probir za OSA (STOP-BANG); uputiti na sleep studiju |
-    | **Teška jutarnja glavobolja svakodnevno** | Može ukazivati na tešku formu bruksizma; diferencijalna dijagnoza s drugim tipovima glavobolja | Evaluacija; razmotriti PSG |
+    | **Teška jutarnja glavobolja svakodnevno** | Može ukazivati na tešku formu bruksizma; diferencijalna dijagnoza s drugim tipovima glavobolja | Evaluacija; razmotriti PSG (polisomnografija) |
 
 ---
 
@@ -127,7 +127,7 @@
 
     Ako probir ukaže na mogućnost OSA-e:
     - **Uputiti na sleep studiju** (HSAT ili PSG)
-    - **CPAP terapija može značajno reducirati bruksizam** — uklanjanjem apneičkih mikrobuđenja koja triggiraju epizode škrgutanja
+    - **CPAP (kontinuirani pozitivni tlak u dišnim putovima) terapija može značajno reducirati bruksizam** — uklanjanjem apneičkih mikrobuđenja koja triggiraju epizode škrgutanja
     - Liječenje OSA-e je kauzalno liječenje bruksizma u ovoj subpopulaciji
     - Vidi poglavlje 2 (OSA) za detalje o dijagnostici i liječenju
 

@@ -1,12 +1,12 @@
 # 3. Sindrom nemirnih nogu (RLS) i periodični pokreti udova u snu (PLMD)
 
-> **MKB-10:** G25.81 (RLS), G47.61 (PLMD) | **ICSD-3:** Poremećaji pokreta povezani sa spavanjem (*Sleep-Related Movement Disorders*)
+> **MKB-10 (Međunarodna klasifikacija bolesti, 10. revizija):** G25.81 (RLS), G47.61 (PLMD) | **ICSD-3 (Međunarodna klasifikacija poremećaja spavanja, 3. izdanje):** Poremećaji pokreta povezani sa spavanjem (*Sleep-Related Movement Disorders*)
 
 !!! brzi-pregled "Brzi pregled"
 
     **Prepoznaj:** URGED mnemonik: **U**rge to move, **R**est worsens, **G**ets better with movement, **E**vening predominance, **D**istress/disability. Česti opisi pacijenata: "lude noge", "kao da mravci puzaju", "mjehurići sode". Nije anksioznost, nije loša cirkulacija.
 
-    **Učini:** Provjeri feritin (cilj ≥100 ng/mL; <75 = oralno/IV željezo, 75-100 = samo IV). Gabapentin 300 mg navečer kao prva linija. NE dopaminske agoniste rutinski (AASM 2024/JAMA 2026: uvjetno PROTIV, augmentacija 7–10%/godinu). PHQ-9 za depresiju (30% prevalencija). Provjeriti lijekove koji pogoršavaju RLS.
+    **Učini:** Provjeri feritin (cilj ≥100 ng/mL; <75 = oralno/IV željezo, 75-100 = samo IV). Gabapentin 300 mg navečer kao prva linija. NE dopaminske agoniste rutinski (AASM — Američka akademija za medicinu spavanja, 2024/JAMA 2026: uvjetno PROTIV, augmentacija 7–10%/godinu). PHQ-9 za depresiju (30% prevalencija). Provjeriti lijekove koji pogoršavaju RLS.
 
     **Uputi:** Ako gabapentinoidi ne pomažu, sumnja na augmentaciju, ili atipična prezentacija → neurolog.
 
@@ -16,7 +16,7 @@
 
     **Sindrom nemirnih nogu** (*Restless Legs Syndrome*, RLS) je neurološki poremećaj karakteriziran **neodoljivim nagonom za pokretanjem nogu**, obično popraćenim neugodnim osjetima (puzanje, strujanje, mravinjanje). Simptomi se javljaju u mirovanju, pogoršavaju navečer i ublažavaju pokretom. RLS nije „anksioznost" i nije „slaba cirkulacija" — to je poremećaj dopaminergičke funkcije mozga, snažno povezan s metabolizmom željeza u SŽS-u.
 
-    **Periodični pokreti udova u snu** (*Periodic Limb Movement Disorder*, PLMD) obilježen je ponavljajućim trzajima nogu tijekom spavanja koje pacijent ne osjeća — primjećuje ih partner. PLMD uzrokuje fragmentaciju sna i dnevnu pospanost. Oko 80% pacijenata s RLS-om ima i periodične pokrete udova (PLMS), ali većina osoba s PLMS-om nema RLS. Dijagnoza PLMD-a zahtijeva PSG i postavlja se samo kad postoje izolirani PLMS s kliničkim posljedicama, bez RLS simptoma.
+    **Periodični pokreti udova u snu** (*Periodic Limb Movement Disorder*, PLMD) obilježen je ponavljajućim trzajima nogu tijekom spavanja koje pacijent ne osjeća — primjećuje ih partner. PLMD uzrokuje fragmentaciju sna i dnevnu pospanost. Oko 80% pacijenata s RLS-om ima i periodične pokrete udova u snu (PLMS — *Periodic Limb Movements in Sleep*), ali većina osoba s PLMS-om nema RLS. Dijagnoza PLMD-a zahtijeva PSG (polisomnografija) i postavlja se samo kad postoje izolirani PLMS s kliničkim posljedicama, bez RLS simptoma.
 
 ---
 
@@ -84,7 +84,7 @@
 
     ### PLMD — Kako prepoznati?
 
-    Posumnjajte na PLMD kod: partnera koji opisuje **ritmičko trzanje nogu** u snu, **neosvježavajućeg spavanja** bez jasnog uzroka (kad ste isključili OSA, nesanicu, nedovoljan san), ili neobjašnjive **dnevne pospanosti**.
+    Posumnjajte na PLMD kod: partnera koji opisuje **ritmičko trzanje nogu** u snu, **neosvježavajućeg spavanja** bez jasnog uzroka (kad ste isključili OSA — opstruktivna apneja u snu, nesanicu, nedovoljan san), ili neobjašnjive **dnevne pospanosti**.
 
 ---
 
@@ -114,7 +114,7 @@
     | Skupina | Primjeri |
     |---|---|
     | **Antihistaminici** | Difenhidramin, klemastin, setirizin |
-    | **SSRI / SNRI** | Sertralin, paroksetin, fluoksetin, venlafaksin, duloksetin |
+    | **SSRI / SNRI (selektivni inhibitori ponovne pohrane serotonina / inhibitori ponovne pohrane serotonina i noradrenalina)** | Sertralin, paroksetin, fluoksetin, venlafaksin, duloksetin |
     | **Antipsihotici** | Kvetiapin, olanzapin, haloperidol |
     | **Antiemetici** | Metoklopramid, domperidon |
     | **Mirtazapin** | — |
@@ -127,7 +127,7 @@
 
     ### Što LOM može (i treba) učiniti
 
-    **RLS je klinička dijagnoza** — ne zahtijeva polisomnografiju niti bilo koji instrumentalni test. Četiri IRLS kriterija u anamnezi dovoljni su za postavljanje dijagnoze. Ovo je ključna poruka: **LOM može i treba dijagnosticirati RLS u svojoj ordinaciji.**
+    **RLS je klinička dijagnoza** — ne zahtijeva polisomnografiju niti bilo koji instrumentalni test. Četiri IRLS (Međunarodna ljestvica za sindrom nemirnih nogu) kriterija u anamnezi dovoljni su za postavljanje dijagnoze. Ovo je ključna poruka: **LOM može i treba dijagnosticirati RLS u svojoj ordinaciji.**
 
     #### Korak 1: Klinička dijagnoza
     - Primijenite 4 esencijalna IRLS dijagnostička kriterija (svi moraju biti prisutni)
@@ -222,6 +222,8 @@
     **Nuspojave:** Somnolencija, vrtoglavica, periferni edemi, povećanje tjelesne mase. Oprez kod pacijenata sa srčanim zatajivanjem (edemi) i starijih (rizik od padova).
 
     **Prilagodba doze:** Potrebna kod bubrežne insuficijencije (oba lijeka se izlučuju renalno).
+
+    > **Klinički savjet:** Gabapentin se izlučuje renalno. Provjerite bubrežnu funkciju (GFR — glomerularna filtracija) prije propisivanja i prilagodite dozu kod GFR <60 mL/min. Pregabalin također zahtijeva renalnu prilagodbu.
 
     **Početak učinka:** 1–2 tjedna.
 

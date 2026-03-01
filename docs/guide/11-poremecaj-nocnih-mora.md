@@ -1,10 +1,10 @@
 # 11. Poremećaj noćnih mora
 
-> **MKB-10:** F51.5 | **ICSD-3:** Nightmare Disorder (parasomnije povezane s REM spavanjem)
+> **MKB-10 (Međunarodna klasifikacija bolesti, 10. revizija):** F51.5 | **ICSD-3 (Međunarodna klasifikacija poremećaja spavanja, 3. izdanje):** Nightmare Disorder (parasomnije povezane s REM — san s brzim pokretima očiju — spavanjem)
 
 !!! brzi-pregled "Brzi pregled"
 
-    **Prepoznaj:** Česte noćne more s buđenjem u strahu, potpunim sjećanjem, bez motoričke aktivnosti (za razliku od RBD-a). Pitajte o traumi/PTSP-u — većina liječnika izbjegava to pitanje!
+    **Prepoznaj:** Česte noćne more s buđenjem u strahu, potpunim sjećanjem, bez motoričke aktivnosti (za razliku od RBD-a — poremećaj ponašanja u REM snu). Pitajte o traumi/PTSP-u — većina liječnika izbjegava to pitanje!
 
     **Učini:** IRT (terapija ponavljanjem slike) — LOM može naučiti pacijenta u 15 min. Prazosin 1-2 mg za tešku kliničku sliku (mješoviti dokazi). Probir za suicidalni rizik (noćne more = neovisni čimbenik rizika!).
 
@@ -24,7 +24,7 @@
 
     | Značajka | **Noćne more** | **Noćni strahovi** | **RBD** |
     |---|---|---|---|
-    | **Stadij sna** | REM (druga polovica noći) | NREM / N3 (prva trećina noći) | REM (druga polovica noći) |
+    | **Stadij sna** | REM (druga polovica noći) | NREM (san bez brzih pokreta očiju) / N3 (prva trećina noći) | REM (druga polovica noći) |
     | **Sjećanje na san** | **Da** — živopisno | **Ne** — amnezija | **Da** — odgovara ponašanju |
     | **Motorička aktivnost** | Minimalna | Sjedanje, vikanje, tahikardija | Udaranje, padanje iz kreveta |
     | **Buđenje** | Potpuno, brza orijentacija | Teško probudiv, konfuzija | Brzo, potpuna orijentacija |
@@ -60,7 +60,7 @@
     ### Podržavajući znakovi
     - Anamneza traumatskog iskustva ili PTSP-a
     - Izbjegavanje spavanja zbog straha od noćnih mora
-    - Lijekovi koji mogu provocirati: beta-blokatori, SSRI, melatonin u visokim dozama
+    - Lijekovi koji mogu provocirati: beta-blokatori, SSRI (selektivni inhibitori ponovne pohrane serotonina), melatonin u visokim dozama
     - Komorbidna anksioznost ili depresija
     </div>
 
@@ -108,7 +108,7 @@
 
     **1. Klinička dijagnoza — dovoljna u većini slučajeva**
 
-    **Klinička dijagnoza** — ne zahtijeva PSG ni laboratorij. Ključni kriteriji (ICSD-3):
+    **Klinička dijagnoza** — ne zahtijeva PSG (polisomnografija) ni laboratorij. Ključni kriteriji (ICSD-3):
 
     - Ponavljajuće epizode živopisnih, uznemirujućih snova s buđenjem
     - Puni sjećanje na sadržaj sna
@@ -131,7 +131,7 @@
 
     ### Prva linija: Image Rehearsal Therapy (IRT)
 
-    > **IRT je najučinkovitija terapija za poremećaj noćnih mora** — razina dokaza A (AASM). LOM je može naučiti pacijenta u ordinaciji za 10–15 minuta.
+    > **IRT je najučinkovitija terapija za poremećaj noćnih mora** — razina dokaza A (AASM — Američka akademija za medicinu spavanja). LOM je može naučiti pacijenta u ordinaciji za 10–15 minuta.
 
     IRT je kognitivno-bihevioralna tehnika kojom pacijent **preoblikuje sadržaj noćne more** dok je budan, a zatim uvježbava novu verziju sna. Jednostavna je, neinvazivna i učinkovita — smanjuje učestalost i intenzitet noćnih mora za **50–80%** unutar 4–8 tjedana.
 

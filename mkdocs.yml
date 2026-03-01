@@ -47,6 +47,7 @@ nav:
     - Probir REM poremećaja ponašanja (RBDSQ): questionnaires/rbdsq-interactive.md
   - Poglavlja:
     - Uvod — O vodiču: guide/00-uvod.md
+    - Osnove spavanja: guide/00a-osnove-spavanja.md
     - Nesanica: guide/01-nesanica.md
     - Opstruktivna apneja u snu: guide/02-osa.md
     - Sindrom nemirnih nogu i PLMD: guide/03-rls-plmd.md
@@ -61,6 +62,7 @@ nav:
     - Poremećaj jedenja u snu (SRED): guide/12-sred.md
     - Centralna apneja u snu: guide/13-centralna-apneja.md
   - Alati:
+    - Ključna pitanja za probir: screening/kljucna-pitanja-probir.md
     - Upitnik za pacijente: screening/patient-questions-hr.md
     - Klinički dijagrami toka: screening/clinical-flowchart.md
     - Algoritmi bodovanja: screening/scoring-algorithms.md

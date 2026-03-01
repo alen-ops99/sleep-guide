@@ -1,14 +1,14 @@
 # 6. Narkolepsija (tip 1 i tip 2)
 
-> **MKB-10:** G47.41 (narkolepsija tip 1), G47.42 (narkolepsija tip 2) | **ICSD-3:** Centralni poremećaji hipersomnolencije — Narkolepsija tip 1 i tip 2
+> **MKB-10 (Međunarodna klasifikacija bolesti, 10. revizija):** G47.41 (narkolepsija tip 1), G47.42 (narkolepsija tip 2) | **ICSD-3 (Međunarodna klasifikacija poremećaja spavanja, 3. izdanje):** Centralni poremećaji hipersomnolencije — Narkolepsija tip 1 i tip 2
 
 !!! brzi-pregled "Brzi pregled"
 
     **Prepoznaj:** Pretjerana dnevna pospanost + katapleksija (nagli gubitak mišićnog tonusa na emociju) = gotovo sigurna narkolepsija tip 1. Dijagnoza kasni 8-15 godina! Pitajte: „Jeste li ikada osjetili slabost u nogama ili ispuštanje predmeta pri smijehu?"
 
-    **Učini:** ESS upitnik. NE započinjati stimulanse bez dijagnoze! Razgovor o sigurnosti vožnje (dokumentirati!).
+    **Učini:** ESS (Epworthova ljestvica pospanosti) upitnik. NE započinjati stimulanse bez dijagnoze! Razgovor o sigurnosti vožnje (dokumentirati!).
 
-    **Uputi:** Svaka sumnja na narkolepsiju → neurolog / centar za spavanje (MSLT). **HITNO** ako: katapleksija s padovima, pospanost za volanom, dijete s naglim debljanjem + pospanosti.
+    **Uputi:** Svaka sumnja na narkolepsiju → neurolog / centar za spavanje (MSLT — test višestrukih latencija spavanja). **HITNO** ako: katapleksija s padovima, pospanost za volanom, dijete s naglim debljanjem + pospanosti.
 
 ---
 
@@ -76,7 +76,7 @@
 
     <div class="symptom-tier tier-differential" markdown>
     ### Diferencijalni tragovi
-    - **OSA** — pospanost se poboljšava s CPAP-om; hrkanje i apneja dominiraju
+    - **OSA (opstruktivna apneja u snu)** — pospanost se poboljšava s CPAP-om (kontinuirani pozitivni tlak u dišnim putovima); hrkanje i apneja dominiraju
     - **Nedovoljan san** — poboljšanje nakon produžetka sna na 8-9h x 2 tjedna
     - **Depresija** — umor, ne pospanost; nema katapleksije; gubitak interesa i anhedonija
     - **Idiopatska hipersomnija** — nema katapleksije, spavanje ne osvježava, izražena inercija spavanja
@@ -144,7 +144,7 @@
 
     **Dijagnozu narkolepsije MORA postaviti specijalist** (neurolog ili specijalist medicine spavanja) na temelju:
 
-    - **PSG + MSLT (Test višestrukih latencija spavanja)** — specijalistički test koji objektivno mjeri pospanost i utvrđuje prerani ulazak u REM spavanje
+    - **PSG (polisomnografija) + MSLT (Test višestrukih latencija spavanja)** — specijalistički test koji objektivno mjeri pospanost i utvrđuje prerani ulazak u REM (san s brzim pokretima očiju — *Rapid Eye Movement*) spavanje
     - **Hipokretin-1 u likvoru** — snižena razina potvrđuje tip 1 (ograničena dostupnost u Hrvatskoj)
 
     > **Uloga LOM-a: PROBIR i UPUĆIVANJE. Ne pokušavajte dijagnosticirati ili liječiti narkolepsiju u primarnoj zdravstvenoj zaštiti.**

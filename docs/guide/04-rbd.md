@@ -1,12 +1,12 @@
 # 4. REM poremećaj ponašanja u snu (RBD)
 
-> **MKB-10:** G47.52 | **ICSD-3:** REM Sleep Behavior Disorder (parasomnije povezane s REM spavanjem)
+> **MKB-10 (Međunarodna klasifikacija bolesti, 10. revizija):** G47.52 | **ICSD-3 (Međunarodna klasifikacija poremećaja spavanja, 3. izdanje):** REM Sleep Behavior Disorder (parasomnije povezane s REM spavanjem)
 
 !!! brzi-pregled "Brzi pregled"
 
     **Prepoznaj:** Partner prijavljuje udaranje, vikanje, padanje iz kreveta u snu (druga polovica noći). Pacijent se sjeća živopisnog sna. Dob >50 godina.
 
-    **Učini:** RBDSQ upitnik (≥5 = pozitivan). ODMAH sigurnost spavaće sobe (madrac na pod, ukloniti oštre predmete). Započni melatonin 3-6 mg. Provjeri listu lijekova (SSRI/SNRI mogu uzrokovati RBD).
+    **Učini:** RBDSQ (Upitnik za probir poremećaja ponašanja u REM snu) upitnik (≥5 = pozitivan). ODMAH sigurnost spavaće sobe (madrac na pod, ukloniti oštre predmete). Započni melatonin 3-6 mg. Provjeri listu lijekova (SSRI/SNRI — selektivni inhibitori ponovne pohrane serotonina / inhibitori ponovne pohrane serotonina i noradrenalina — mogu uzrokovati RBD).
 
     **Uputi:** SVE sumnje na RBD → neurolog. **HITNO** ako: rani parkinsonizam, kognitivni pad, teške ozljede. RBD = prodrom Parkinsonove bolesti (>80% konverzija).
 
@@ -14,7 +14,7 @@
 
 ??? note "Što je to?"
 
-    Tijekom normalnog REM spavanja mozak aktivno inhibira skeletnu muskulaturu — nastaje fiziološka **REM atonija** koja sprječava da tijelo izvodi pokrete iz snova. Kod REM poremećaja ponašanja u snu (engl. *REM Sleep Behavior Disorder*, RBD) ta atonija izostaje — pacijent doslovno **izvodi svoje snove**.
+    Tijekom normalnog REM (san s brzim pokretima očiju — *Rapid Eye Movement*) spavanja mozak aktivno inhibira skeletnu muskulaturu — nastaje fiziološka **REM atonija** koja sprječava da tijelo izvodi pokrete iz snova. Kod REM poremećaja ponašanja u snu (engl. *REM Sleep Behavior Disorder*, RBD) ta atonija izostaje — pacijent doslovno **izvodi svoje snove**.
 
     Klinička slika je dramatična i nezaboravna kada je jednom čujete od partnera:
 
@@ -37,7 +37,7 @@
     | Populacija | Prevalencija RBD-a |
     |---|---|
     | Opća odrasla populacija | **1-2%** |
-    | Osobe >60 godina | **5-13%** (subklinički RBD bez atonije na PSG-u) |
+    | Osobe >60 godina | **5-13%** (subklinički RBD bez atonije na PSG-u — polisomnografija) |
     | Pacijenti s Parkinsonovom bolešću | **30-60%** |
     | Pacijenti s DLB-om | **70-90%** |
     | Pacijenti s MSA | **80-95%** |
@@ -73,9 +73,9 @@
 
     <div class="symptom-tier tier-differential" markdown>
     ### Diferencijalni tragovi
-    - NREM parasomnije (somnambulizam) — prva trećina noći, pacijent hoda, oči otvorene
+    - NREM (san bez brzih pokreta očiju — *Non-Rapid Eye Movement*) parasomnije (somnambulizam) — prva trećina noći, pacijent hoda, oči otvorene
     - Noćna epilepsija — stereotipne epizode, kratke (<2 min), česte u noći
-    - OSA-inducirani pseudo-RBD — arousali iz apneja imitiraju izvođenje snova
+    - OSA (opstruktivna apneja u snu)-inducirani pseudo-RBD — arousali iz apneja imitiraju izvođenje snova
     </div>
 
     </div>
@@ -195,7 +195,7 @@ Ovo je klinički iznimno važno — **lijekovi su drugi najčešći uzrok RBD-a*
 
     **OPREZ — kontraindikacije i mjere opreza za klonazepam:**
 
-    - **Opstruktivna apneja u snu (OSA):** Klonazepam pogoršava OSA → prije uvođenja isključiti OSA ili započeti CPAP
+    - **Opstruktivna apneja u snu (OSA):** Klonazepam pogoršava OSA → prije uvođenja isključiti OSA ili započeti CPAP (kontinuirani pozitivni tlak u dišnim putovima)
     - **Starija dob (>75 godina):** Povećan rizik od padova, kognitivnog pogoršanja, paradoksalne agitacije
     - **Jetrena insuficijencija:** Smanjena eliminacija → niže doze
     - **Rizik od ovisnosti:** Minimalan u kontekstu RBD-a uz niske doze, ali oprez kod anamneze ovisnosti
@@ -297,4 +297,4 @@ Ovo je klinički iznimno važno — **lijekovi su drugi najčešći uzrok RBD-a*
 
 ---
 
-*Napomena: Poglavlje je namijenjeno kao klinički vodič za liječnike obiteljske medicine. Za detaljne dijagnostičke protokole i terapijske algoritme konzultirajte AASM/ESRS smjernice i specijalistu za medicinu spavanja.*
+*Napomena: Poglavlje je namijenjeno kao klinički vodič za liječnike obiteljske medicine. Za detaljne dijagnostičke protokole i terapijske algoritme konzultirajte AASM (Američka akademija za medicinu spavanja) / ESRS (Europsko društvo za istraživanje spavanja) smjernice i specijalistu za medicinu spavanja.*

@@ -50,6 +50,7 @@
     (left: 3pt + color)
   }
   block(
+    breakable: false,
     width: 100%,
     inset: (x: 10pt, y: 8pt),
     radius: 3pt,
@@ -66,7 +67,7 @@
 
 // Brzi pregled box (green — Quick Overview) — double top border
 #let brzi-pregled(body) = {
-  block(
+  block(breakable: false,
     width: 100%,
     inset: (x: 10pt, y: 8pt),
     radius: 3pt,
@@ -117,6 +118,7 @@
 // Clinical pearl inline
 #let pearl(body) = {
   block(
+    breakable: false,
     width: 100%,
     inset: (x: 8pt, y: 5pt),
     radius: 2pt,
@@ -124,6 +126,13 @@
     stroke: (left: 2pt + color-orange),
     text(size: 8pt, style: "italic")[*Klinički savjet:* #body]
   )
+}
+
+// Compact text for dense content sections
+#let compact(body) = {
+  set text(size: 8pt)
+  set par(leading: 0.55em)
+  body
 }
 
 // Evidence grade superscript
@@ -337,6 +346,8 @@
           #text(weight: "bold", fill: white, size: 10pt)[#title]
           #h(1fr)
           #text(fill: white.transparentize(30%), size: 7.5pt)[#category]
+          #v(2pt)
+          #text(fill: white.transparentize(50%), size: 6pt)[SAŽETAK POGLAVLJA]
         ]
       )
 

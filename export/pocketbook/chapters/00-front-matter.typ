@@ -78,7 +78,7 @@
       #v(2mm)
       #text(size: 8.5pt, fill: white.darken(15%), tracking: 1pt)[za liječnike obiteljske medicine]
       #v(5mm)
-      #text(size: 9pt, style: "italic", fill: white.transparentize(15%))[Jer većina poremećaja spavanja ostaje neprepoznata u ordinaciji]
+      #text(size: 9pt, style: "italic", fill: white.transparentize(15%))[Prepoznajte poremećaje spavanja u primarnoj zdravstvenoj zaštiti]
     ]
   ]
 
@@ -89,9 +89,9 @@
     #v(5mm)
     #text(size: 10.5pt, weight: "bold", fill: color-navy)[Alen Juginović, dr. med.]
     #v(2.5mm)
-    #text(size: 8.5pt, fill: color-gray, tracking: 0.8pt)[#smallcaps[Harvard Medical School]]
+    #text(size: 8.5pt, fill: color-gray, tracking: 0.8pt)[#smallcaps[Medicinski fakultet Sveučilišta Harvard]]
     #v(1mm)
-    #text(size: 8.5pt, fill: color-gray)[Neuroznanstvenik spavanja · Liječnik]
+    #text(size: 8.5pt, fill: color-gray)[Neuroznanstvenik u medicini spavanja · Liječnik]
     #v(5mm)
     #line(length: 30%, stroke: 0.5pt + color-navy.lighten(50%))
   ]
@@ -112,7 +112,7 @@
 
   #set text(size: 8.5pt, fill: rgb("#3d3d3d"))
 
-  S više od 60 različitih dijagnoza prema ICSD-3 klasifikaciji, medicina spavanja obuhvaća područje koje većinom nije dio standardne medicinske edukacije. Ovaj priručnik pruža liječnicima obiteljske medicine praktičan alat za prepoznavanje, početno liječenje i pravodobnu uputnicu — utemeljen na smjernicama AASM-a i ESRS-a, prilagođen hrvatskom sustavu primarne zdravstvene zaštite i HALMED-ovoj bazi lijekova.
+  S više od 60 različitih dijagnoza prema ICSD-3 (Međunarodna klasifikacija poremećaja spavanja, 3. izdanje) klasifikaciji, medicina spavanja obuhvaća područje koje većinom nije dio standardne medicinske edukacije. Ovaj priručnik pruža liječnicima obiteljske medicine praktičan alat za prepoznavanje, početno liječenje i pravodobnu uputnicu — utemeljen na smjernicama AASM-a (Američka akademija za medicinu spavanja; _American Academy of Sleep Medicine_) i ESRS-a (Europsko društvo za istraživanje spavanja; _European Sleep Research Society_), prilagođen hrvatskom sustavu primarne zdravstvene zaštite i HALMED-ovoj bazi lijekova.
 
   #v(6pt)
 
@@ -170,7 +170,7 @@
 
   #v(6pt)
 
-  Ovaj priručnik pokriva *10 najčešćih i klinički najvažnijih poremećaja spavanja u odraslih* — od nesanice i opstruktivne apneje do narkolepsije i RBD-a. Svaki je obrađen s istim ciljem: dati liječniku obiteljske medicine dovoljno znanja da *prepozna*, *započne liječenje* i *pravodobno uputi* specijalistu.
+  Ovaj priručnik pokriva *10 najčešćih i klinički najvažnijih poremećaja spavanja u odraslih* — od nesanice i opstruktivne apneje do narkolepsije i RBD-a (poremećaj ponašanja u REM snu; _REM Sleep Behavior Disorder_). Svaki je obrađen s istim ciljem: dati liječniku obiteljske medicine dovoljno znanja da *prepozna*, *započne liječenje* i *pravodobno uputi* specijalistu.
 
   #v(6pt)
 
@@ -178,10 +178,10 @@
 
   #v(3pt)
   + *„Start low, go slow“* — kod svih lijekova za spavanje: počnite niskom dozom, titrirajte polako, pratite učinak
-  + *Jedan poremećaj u jednom trenutku* — ali uvijek razmislite o komorbiditetu (osobito OSA + nesanica)
+  + *Jedan poremećaj u jednom trenutku* — ali uvijek razmislite o komorbiditetu (osobito OSA — opstruktivna apneja u snu + nesanica)
   + *Edukacija pacijenta je terapija* — razumijevanje bolesti povećava suradljivost i smanjuje anksioznost
   + *Nikada sedative bez isključenja apneje u snu* — zlatno pravilo koje spašava živote
-  + *PSG nije potrebna za većinu poremećaja* — klinička dijagnoza je dovoljna za nesanicu, RLS, nedovoljan san i noćne more
+  + *Polisomnografija (PSG) nije potrebna za većinu poremećaja* — klinička dijagnoza je dovoljna za nesanicu, sindrom nemirnih nogu (RLS; _Restless Legs Syndrome_), nedovoljan san i noćne more
 
   #v(8pt)
 
@@ -192,7 +192,7 @@
     stroke: (left: 2pt + color-orange),
     fill: rgb("#fffbeb"),
     [
-      #text(size: 7.5pt, style: "italic", fill: color-gray)[*Napomena:* Priručnik je usmjeren na odraslu populaciju. Pedijatrijski aspekti spominju se gdje je klinički relevantno (npr. narkolepsija u djece), ali sustavna obrada pedijatrijske medicine spavanja nadilazi opseg ovog izdanja.]
+      #text(size: 7.5pt, style: "italic", fill: color-gray)[*Napomena:* Priručnik je usmjeren na odraslu populaciju. Pedijatrijski aspekti — osobito nesanica u djece, koja je najčešći pedijatrijski poremećaj spavanja — kratko su obrađeni unutar odgovarajućih poglavlja. Sustavna obrada pedijatrijske medicine spavanja nadilazi opseg ovog izdanja.]
     ]
   )
 ]

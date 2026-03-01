@@ -17,17 +17,17 @@
 
 #v(2pt)
 
-*AASM* --- American Academy of Sleep Medicine #h(1fr) #text(fill: color-gray, size: 7pt)[aasm.org]\
+*AASM* --- Američka akademija za medicinu spavanja (_American Academy of Sleep Medicine_) #h(1fr) #text(fill: color-gray, size: 7pt)[aasm.org]\
 #text(fill: color-gray, size: 7.5pt)[Kliničke smjernice za sve poremećaje spavanja. Zlatni standard.]
 
 #v(3pt)
 
-*ICSD-3-TR (2023)* --- International Classification of Sleep Disorders, 3rd Ed., Text Revision\
+*ICSD-3-TR (2023)* --- Međunarodna klasifikacija poremećaja spavanja, 3. izdanje (_International Classification of Sleep Disorders, 3rd Ed., Text Revision_)\
 #text(fill: color-gray, size: 7.5pt)[Dijagnostički kriteriji za sve poremećaje spavanja.]
 
 #v(3pt)
 
-*ESRS* --- European Sleep Research Society #h(1fr) #text(fill: color-gray, size: 7pt)[esrs.eu]\
+*ESRS* --- Europsko društvo za istraživanje spavanja (_European Sleep Research Society_) #h(1fr) #text(fill: color-gray, size: 7pt)[esrs.eu]\
 #text(fill: color-gray, size: 7.5pt)[Europske smjernice; ESRS guideline za nesanicu (Riemann 2017).]
 
 #v(8pt)
@@ -53,7 +53,7 @@
 #v(2pt)
 
 *Mayo Clinic Sleep Medicine Podcasts*\
-#text(fill: color-gray, size: 7.5pt)[YouTube serija, 46 epizoda (8 sezona). Klinički orijentirano --- pokriva RLS, nesanicu, OSA-u, RBD, parasomnije, narkolepsiju, cirkadijane poremećaje. Izvrstan resurs za produbljivanje znanja.]\
+#text(fill: color-gray, size: 7.5pt)[YouTube serija, 46 epizoda (8 sezona). Klinički orijentirano --- pokriva sindrom nemirnih nogu (RLS), nesanicu, opstruktivnu apneju u snu (OSA), poremećaj ponašanja u REM snu (RBD), parasomnije, narkolepsiju, cirkadijane poremećaje. Izvrstan resurs za produbljivanje znanja.]\
 #text(fill: color-teal, size: 7pt)[youtube.com/\@MayoProc #sym.arrow.r Sleep Medicine Podcasts playlist]
 
 #v(3pt)
@@ -128,7 +128,7 @@
 #v(3pt)
 
 *Centri za medicinu spavanja*\
-#text(fill: color-gray, size: 7.5pt)[KBC Zagreb, KBC Rijeka, KBC Split --- polisomnografija i MSLT.]
+#text(fill: color-gray, size: 7.5pt)[KBC Zagreb, KBC Rijeka, KBC Split --- polisomnografija (PSG) i test višestrukih latencija spavanja (MSLT).]
 
 #v(4pt)
 
