@@ -56,7 +56,7 @@
 // === Kako prepoznati? ===
 == Kako prepoznati?
 
-Bruksizam u snu je repetitivno stiskanje i škrgutanje zuba tijekom sna s prevalencijom od 8–13% odraslih; 25–50% pacijenata s OSA-om ima komorbidni bruksizam. U praksi s 2.000 pacijenata: 160–260 odraslih.
+Bruksizam u snu je repetitivno stiskanje i škrgutanje zuba tijekom sna s prevalencijom od 8–13% odraslih; 25–50% pacijenata s opstruktivnom apnejom u snu (OSA; _Obstructive Sleep Apnea_) ima komorbidni bruksizam. U praksi s 2.000 pacijenata: 160–260 odraslih.
 
 *Ključni simptomi:*
 - *Škrgutanje zubi u snu* (prijavljuje partner) — najčešći način otkrivanja
@@ -91,7 +91,7 @@ Bruksizam u snu je repetitivno stiskanje i škrgutanje zuba tijekom sna s preval
 
 *Svaki pacijent s bruksizmom → uputnica stomatologu* za procjenu oštećenja i izradu okluzalne udlage.
 
-*PSG* — NIJE potrebna za rutinsku dijagnozu. Indicirana samo pri sumnji na komorbidnu OSA.
+*Polisomnografija (PSG)* — NIJE potrebna za rutinsku dijagnozu. Indicirana samo pri sumnji na komorbidnu OSA.
 
 // === Crvene zastavice ===
 #v(3pt)
@@ -116,7 +116,7 @@ Bruksizam u snu je repetitivno stiskanje i škrgutanje zuba tijekom sna s preval
 
 === Liječenje komorbidne OSA-e
 
-Ako probir ukaže na OSA: uputiti na sleep studiju. *CPAP može značajno reducirati bruksizam* — uklanjanjem apneičkih mikrobuđenja. Ovo je kauzalno liječenje u toj subpopulaciji.
+Ako probir ukaže na OSA: uputiti na sleep studiju. *Kontinuirani pozitivni tlak u dišnim putovima (CPAP; _Continuous Positive Airway Pressure_) može značajno reducirati bruksizam* — uklanjanjem apneičkih mikrobuđenja. Ovo je kauzalno liječenje u toj subpopulaciji.
 
 === Upravljanje stresom i bihevioralne mjere
 
@@ -137,8 +137,8 @@ Ako probir ukaže na OSA: uputiti na sleep studiju. *CPAP može značajno reduci
     text(weight: "bold")[Mehanizam],
     text(weight: "bold")[Pristup],
   ),
-  [*SSRI* (sertralin, fluoksetin, paroksetin)], [Serotonergička facilitacija motoričke aktivnosti], [Zamjena na mirtazapin/bupropion; ili dodati buspiron 5–10 mg navečer],
-  [*SNRI* (venlafaksin, duloksetin)], [Sličan kao SSRI], [Ista strategija kao za SSRI],
+  [*SSRI* — selektivni inhibitori ponovne pohrane serotonina (sertralin, fluoksetin, paroksetin)], [Serotonergička facilitacija motoričke aktivnosti], [Zamjena na mirtazapin/bupropion; ili dodati buspiron 5–10 mg navečer],
+  [*SNRI* — inhibitori ponovne pohrane serotonina i noradrenalina (venlafaksin, duloksetin)], [Sličan kao SSRI], [Ista strategija kao za SSRI],
   [*Stimulansi* (metilfenidat)], [Dopaminergička hiperaktivnost], [Smanjiti dozu; ne uzimati navečer],
   [*Alkohol*], [Fragmentacija sna, arousali], [Izbjegavati 3–4 h prije spavanja],
   [*Kofein*], [Mišićna ekscitabilnost], [Izbjegavati nakon 14h],

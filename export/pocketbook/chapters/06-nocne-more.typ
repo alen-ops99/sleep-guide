@@ -57,7 +57,7 @@
 // === Kako prepoznati? ===
 == Kako prepoznati?
 
-Noćne more su živopisni, uznemirujući snovi koji završavaju buđenjem uz puno sjećanje na sadržaj — javljaju se tijekom REM spavanja (druga polovica noći). Prevalencija: 2–8% opće populacije; 50–70% pacijenata s PTSP-om. Hrvatski kontekst: Domovinski rat — značajan dio populacije >45 g. ima neprepoznati PTSP.
+Noćne more su živopisni, uznemirujući snovi koji završavaju buđenjem uz puno sjećanje na sadržaj — javljaju se tijekom spavanja s brzim pokretima očiju (REM; _Rapid Eye Movement_) u drugoj polovici noći. Prevalencija: 2–8% opće populacije; 50–70% pacijenata s PTSP-om. Hrvatski kontekst: Domovinski rat — značajan dio populacije >45 g. ima neprepoznati PTSP.
 
 *Ključni simptomi:*
 - *Česte uznemirujuće noćne more s buđenjem* uz punu orijentaciju
@@ -67,7 +67,7 @@ Noćne more su živopisni, uznemirujući snovi koji završavaju buđenjem uz pun
 *Podržavajući znakovi:*
 - Anamneza traumatskog iskustva ili PTSP-a
 - Izbjegavanje spavanja zbog straha od noćnih mora
-- Lijekovi-okidači: beta-blokatori, nagli prekid SSRI-ja, inhibitori kolinesteraze, kortikosteroidi
+- Lijekovi-okidači: beta-blokatori, nagli prekid selektivnih inhibitora ponovne pohrane serotonina (SSRI), inhibitori kolinesteraze, kortikosteroidi
 - Komorbidna anksioznost ili depresija
 
 *Pitanja za anamnezu:*
@@ -82,7 +82,7 @@ Noćne more su živopisni, uznemirujući snovi koji završavaju buđenjem uz pun
 // === Probir i dijagnostika ===
 == Probir i dijagnostika
 
-*Klinička dijagnoza* — ne zahtijeva PSG ni laboratorij. ICSD-3 kriteriji:
+*Klinička dijagnoza* — ne zahtijeva polisomnografiju (PSG) ni laboratorij. ICSD-3 (Međunarodna klasifikacija poremećaja spavanja, 3. izdanje) kriteriji:
 - Ponavljajuće epizode živopisnih, uznemirujućih snova s buđenjem
 - Puno sjećanje na sadržaj sna + potpuna orijentacija nakon buđenja
 - Značajan distres ili narušeno funkcioniranje
@@ -90,7 +90,7 @@ Noćne more su živopisni, uznemirujući snovi koji završavaju buđenjem uz pun
 *Probir za PTSP — obavezan korak:*
 - *PCL-5* (PTSD Checklist for DSM-5) — 20 čestica, 5–10 min. *Rezultat ≥31–33* → uputiti psihijatru
 
-*Diferencijalna dijagnoza:* isključiti noćne strahove (NREM, amnezija), RBD (motorička aktivnost) i noćne napadaje panike (bez sadržaja sna).
+*Diferencijalna dijagnoza:* isključiti noćne strahove (san bez brzih pokreta očiju — NREM, amnezija), poremećaj ponašanja u REM snu (RBD; _REM Sleep Behavior Disorder_) s motoričkom aktivnošću, i noćne napadaje panike (bez sadržaja sna).
 
 *PSG* — NIJE potrebna. Indicirana samo pri sumnji na RBD, NREM parasomnije ili epilepsiju.
 
@@ -110,7 +110,7 @@ Noćne more su živopisni, uznemirujući snovi koji završavaju buđenjem uz pun
 
 === Prva linija: Image Rehearsal Therapy (IRT)
 
-*IRT je najučinkovitija terapija za noćne more* — razina dokaza A (AASM). LOM je može naučiti pacijenta u 10–15 minuta.#evidence("A")
+*IRT je najučinkovitija terapija za noćne more* — razina dokaza A (AASM — Američka akademija za medicinu spavanja). LOM je može naučiti pacijenta u 10–15 minuta.#evidence("A")
 
 Pacijent *preoblikuje sadržaj noćne more* dok je budan, zatim uvježbava novu verziju sna. Smanjuje učestalost i intenzitet za *50–80%* unutar 4–8 tjedana.
 

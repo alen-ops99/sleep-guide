@@ -63,7 +63,7 @@
 Narkolepsija je kronična neurološka bolest — nemogućnost mozga da regulira ciklus budnost-spavanje; tip 1 nastaje zbog gubitka hipokretinskih neurona. Prevalencija: 1 na 2.000–5.000; kašnjenje dijagnoze 8–15 godina. U praksi s 2.000 pacijenata: 1–2 bolesnika.
 
 *Kritični znakovi:*
-- *EDS >3 mjeseca* — neodoljivi napadaji sna u neprimjerenim situacijama (razgovor, obrok, vožnja)
+- *Pretjerana dnevna pospanost (EDS; _Excessive Daytime Sleepiness_) >3 mjeseca* — neodoljivi napadaji sna u neprimjerenim situacijama (razgovor, obrok, vožnja)
 - *Katapleksija* — iznenadna slabost mišića potaknuta emocijama (smijeh, iznenađenje). *Patognomonično za tip 1.* Parcijalna (pad čeljusti, klonulost glave, podkošavanje koljena) mnogo češća od potpunog kolapsa
 - *„Sleep attacks“* — neodoljivo usrednji razgovora, za volanom
 
@@ -81,7 +81,7 @@ Narkolepsija je kronična neurološka bolest — nemogućnost mozga da regulira 
 + „Jeste li se ikada probudili i niste se mogli pomaknuti?“
 
 *Diferencijalni tragovi:*
-- *OSA* — pospanost se poboljšava s CPAP-om; hrkanje dominira
+- *Opstruktivna apneja u snu (OSA)* — pospanost se poboljšava s CPAP-om; hrkanje dominira
 - *Nedovoljan san* — poboljšanje nakon produženja na 8–9 h × 2 tjedna
 - *Depresija* — umor (ne pospanost); nema katapleksije; anhedonija
 - *Idiopatska hipersomnija* — nema katapleksije, san ne osvježava, izražena inercija spavanja
@@ -98,7 +98,7 @@ Narkolepsija je kronična neurološka bolest — nemogućnost mozga da regulira 
 - Hipotireoza → TSH
 - Lijekovi koji uzrokuju pospanost
 
-*Dijagnozu narkolepsije MORA postaviti specijalist* na temelju PSG + MSLT (test multiplih latencija spavanja) ili hipokretina-1 u likvoru.
+*Dijagnozu narkolepsije MORA postaviti specijalist* na temelju polisomnografije (PSG; _Polysomnography_) + testa višestrukih latencija spavanja (MSLT; _Multiple Sleep Latency Test_) ili hipokretina-1 u likvoru.
 
 #pearl[*MSLT zamke:* Granični prag od 8 min NIJE biološki prag — ~15% narkoleptičara ima latenciju >8 min. Antidepresivi suprimiraju SOREMP-ove → lažno negativan MSLT (obavezno isključiti ≥2 tj. prije; fluoksetin 6 tj.). Nedovoljan san prije MSLT-a daje lažno pozitivne rezultate. Pošaljite pacijenta na MSLT *pripremljenog*: ≥8 h u krevetu × 2 tj., aktigrafija.]
 

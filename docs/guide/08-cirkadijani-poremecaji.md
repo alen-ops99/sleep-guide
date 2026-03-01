@@ -1,6 +1,6 @@
 # 8. Poremećaji cirkadijanog ritma spavanja i budnosti
 
-> **MKB-10:** G47.21 (poremećaj faze spavanja s pomakom unatrag — DSWPD), G47.22 (poremećaj faze spavanja s pomakom unaprijed — ASWPD), G47.26 (poremećaj spavanja povezan sa smjenskim radom), G47.24 (poremećaj ne-24-satnog ritma spavanja i budnosti) | **ICSD-3:** Circadian Rhythm Sleep-Wake Disorders
+> **MKB-10 (Međunarodna klasifikacija bolesti, 10. revizija):** G47.21 (poremećaj faze spavanja s pomakom unatrag — DSWPD), G47.22 (poremećaj faze spavanja s pomakom unaprijed — ASWPD), G47.26 (poremećaj spavanja povezan sa smjenskim radom), G47.24 (poremećaj ne-24-satnog ritma spavanja i budnosti) | **ICSD-3 (Međunarodna klasifikacija poremećaja spavanja, 3. izdanje):** Circadian Rhythm Sleep-Wake Disorders
 
 !!! brzi-pregled "Brzi pregled"
 
@@ -76,6 +76,7 @@
     - **"Spavate li dobro za vrijeme vikenda ili godišnjeg odmora kada nemate obaveza?"** — ako DA, razmislite o cirkadijanom poremećaju, ne o nesanici
     - "Kada biste najradije išli spavati da nemate nikakvih obaveza?"
     - "U koliko sati se prirodno budite vikendom?"
+    - **"Je li se u proteklih godinu dana nešto promijenilo u Vašem rasporedu spavanja? Ako da — što, kako i zašto?"** — nagla promjena može ukazivati na novonastali cirkadijani poremećaj ili podležeći uzrok (promjena posla, smjenski rad, lijekovi, neurološka bolest)
 
     ### DSWPD — poremećaj faze spavanja s pomakom unatrag
 
@@ -85,7 +86,7 @@
     - Nemogućnost usnivanja prije 2:00–4:00 (ili čak kasnije)
     - Velike poteškoće s buđenjem u društveno prihvatljivo vrijeme (6:00–8:00)
     - Kronična parcijalna deprivacija sna radnim danima (spava 3–5 sati umjesto 8–9 koje biološki treba)
-    - **Za vikend ili godišnji odmor: spava odlično**, obično od 3:00–4:00 do 11:00–12:00 — pun i osvježavajući san
+    - **Za vikend ili godišnji odmor: spava zadovoljavajuće**, obično od 3:00–4:00 do 11:00–12:00 — pun i osvježavajući san, ali prisilno buđenje radnim danima narušava ukupnu kvalitetu
     - Izrazita "večernjost" (*extreme eveningness*) — najproduktivniji kasno navečer
 
     *Vidi poglavlje 1 (Nesanica) — DSWPD je čest diferencijalnodijagnostički izazov.*
@@ -157,7 +158,7 @@
     | Vrijeme usnivanja | 2:00–4:00 | 2:00–4:00 | Varijabilno | Varijabilno |
     | Vrijeme buđenja | 6:30 (alarm, s mukom) | 11:00–12:00 (spontano) | Varijabilno | Varijabilno |
     | Trajanje sna | 3–4 sata | 7–9 sati | Skraćeno | Skraćeno |
-    | Kvaliteta sna | "Odličan kad zaspim" | Odlična | Loša | Loša |
+    | Kvaliteta sna | "Zadovoljavajuća kad zaspim" | Zadovoljavajuća ako raspored odgovara biološkom satu | Loša | Loša |
 
     > Obrazac **kratkog sna radnim danima + dugog, kvalitetnog sna vikendom** gotovo je patognomoničan za DSWPD.
 
@@ -170,7 +171,7 @@
 
     ### Specijalistička dijagnostika
 
-    Specijalist koristi **aktigrafiju** (≥7 dana; zlatni standard za objektivnu procjenu cirkadijanog obrasca) i eventualno DLMO za potvrdu dijagnoze. PSG nije potrebna osim za isključivanje komorbiditeta (OSA, PLMD).
+    Specijalist koristi **aktigrafiju** (≥7 dana; zlatni standard za objektivnu procjenu cirkadijanog obrasca) i eventualno DLMO za potvrdu dijagnoze. PSG (polisomnografija) nije potrebna osim za isključivanje komorbiditeta (OSA — opstruktivna apneja u snu, PLMD — periodični pokreti udova u snu).
 
     **Važno:** LOM može klinički dijagnosticirati DSWPD i poremećaj smjenskog rada na temelju anamneze i 2-tjednog dnevnika spavanja. Specijalist je potreban za refraktorne slučajeve i Non-24.
 
@@ -287,7 +288,7 @@
     | **Sumnja na Non-24** (slijepa osoba s progresivnim pomakom sna) | Neurolog / centar za medicinu spavanja | Specijalizirano liječenje (tasimelteon u nekim zemljama; melatonin protokoli) |
     | **Teška pospanost smjenskog radnika** s rizičnim zanimanjem (vozač, pilot, kirurg) | Centar za medicinu spavanja | Evaluacija za modafinil; testiranje budnosti (MWT); radno-pravni aspekti |
     | **Sekundarna depresija** kod mladog pacijenta s DSWPD-om | Psihijatar + centar za medicinu spavanja | Paralelno liječenje oboje; ne samo antidepresiv |
-    | **Komorbiditet s OSA-om ili RLS-om** | Centar za medicinu spavanja | PSG za potvrdu; komorbiditeti kompliciraju liječenje |
+    | **Komorbiditet s OSA-om ili RLS-om (sindrom nemirnih nogu)** | Centar za medicinu spavanja | PSG za potvrdu; komorbiditeti kompliciraju liječenje |
 
 ---
 

@@ -782,6 +782,7 @@
               <span class="disorder-name" x-text="d.name"></span>
               <div style="display:flex;align-items:center;gap:0.4rem;">
                 <span class="urgency-badge" :class="'urgency-' + d.urgency" x-text="d.urgencyLabel"></span>
+                <span class="likelihood-badge" :class="'likelihood-' + d.likelihood" x-text="d.likelihoodLabel"></span>
                 <span class="material-symbols-outlined toggle-icon" x-text="collapsed ? 'expand_more' : 'expand_less'"></span>
               </div>
             </div>
@@ -817,6 +818,18 @@
                 <div class="result-section-label"><span class="material-symbols-outlined" style="font-size:16px;vertical-align:middle;">search</span> Potvrditi — dijagnostički koraci</div>
                 <ul class="result-checklist">
                   <template x-for="step in d.confirmSteps" :key="step">
+                    <li x-html="step"></li>
+                  </template>
+                </ul>
+              </div>
+            </template>
+
+            <!-- Exclude steps -->
+            <template x-if="d.excludeSteps && d.excludeSteps.length > 0">
+              <div class="result-section result-section-exclude">
+                <div class="result-section-label"><span class="material-symbols-outlined" style="font-size:16px;vertical-align:middle;">block</span> Za isključenje</div>
+                <ul class="result-checklist">
+                  <template x-for="step in d.excludeSteps" :key="step">
                     <li x-html="step"></li>
                   </template>
                 </ul>
@@ -1202,13 +1215,28 @@ function screeningApp() {
           confirmSteps.push('Efikasnost spavanja ' + this.sleepEfficiency + '% (<85%) \u2192 sugestivno za nesanicu');
         }
 
+        // Likelihood calculation for insomnia
+        let insomniaCount = 0;
+        if (a.sleepBothers) insomniaCount++;
+        if (a.unrefreshed) insomniaCount++;
+        if (a.sleepOnsetLatency === '30-60min' || a.sleepOnsetLatency === '>60min') insomniaCount++;
+        if (a.nightAwakenings && a.nightAwakenings !== '0') insomniaCount++;
+        if (this.sleepEfficiency !== null && this.sleepEfficiency < 85) insomniaCount++;
+        const insomniaLikelihood = insomniaCount >= 3 ? 'visoka' : insomniaCount === 2 ? 'srednja' : 'niska';
+
         this.disorders.push({
           id: 'insomnia',
           name: 'Nesanica (kronična insomnia)',
           urgency: urgency,
           urgencyLabel: urgencyLabel,
+          likelihood: insomniaLikelihood,
+          likelihoodLabel: insomniaLikelihood === 'visoka' ? 'Visoka vjerojatnost' : insomniaLikelihood === 'srednja' ? 'Srednja vjerojatnost' : 'Niska vjerojatnost',
           clinicalBasis: 'Pacijentu smeta kvaliteta sna.' + durationNote + (a.unrefreshed ? ' Neodmoreno buđenje.' : ''),
           confirmSteps: confirmSteps,
+          excludeSteps: [
+            'Spava dobro vikendom \u2192 razmotriti cirkadijani poremećaj',
+            'Hrkanje + apneje \u2192 isključiti COMISA/OSA'
+          ],
           initialManagement: management,
           referral: { specialist: 'Psihijatar ili specijalist za medicinu spavanja', urgency: 'AMBULANTNO', note: 'Ako nesanica traje >3 mjeseca unatoč CBT-I' },
           labs: null,
@@ -1269,13 +1297,29 @@ function screeningApp() {
           'Mallampati skor: <strong>III–IV = povišen rizik</strong>'
         ];
 
+        // Likelihood calculation for OSA
+        let osaCount = 0;
+        if (a.loudSnoring) osaCount++;
+        if (a.witnessedApnea) osaCount++;
+        if (a.dryMouth) osaCount++;
+        if (a.bmi === '>35' || a.bmi === '30-35') osaCount++;
+        if (a.sex === 'M') osaCount++;
+        if (a.naps && a.napRefreshing === false) osaCount++;
+        const osaLikelihood = osaCount >= 3 ? 'visoka' : osaCount === 2 ? 'srednja' : 'niska';
+
         this.disorders.push({
           id: 'osa',
           name: 'Opstruktivna apneja u snu (OSA)',
           urgency: 'routine',
           urgencyLabel: 'Ambulantna obrada',
+          likelihood: osaLikelihood,
+          likelihoodLabel: osaLikelihood === 'visoka' ? 'Visoka vjerojatnost' : osaLikelihood === 'srednja' ? 'Srednja vjerojatnost' : 'Niska vjerojatnost',
           clinicalBasis: clinicalBasis,
           confirmSteps: osaConfirm,
+          excludeSteps: [
+            'BMI <25, bez hrkanja, bez svjedočenih apneja \u2192 mala vjerojatnost',
+            'Pospanost se povlači produljenjem sna \u2192 nedovoljan san, ne OSA'
+          ],
           initialManagement: bmiManagement,
           referral: { specialist: 'Specijalist za medicinu spavanja (ORL/pulmolog)', urgency: 'AMBULANTNO', note: 'PSG/HSAT za potvrdu i određivanje AHI' },
           labs: null,
@@ -1297,16 +1341,30 @@ function screeningApp() {
         if (a.stroke) comorbidities.push('moždani udar');
         if (a.opioids) comorbidities.push('opioidi');
 
+        // Likelihood calculation for CSA
+        let csaCount = 0;
+        if (a.witnessedApnea) csaCount++;
+        if (a.heartFailure) csaCount++;
+        if (a.stroke) csaCount++;
+        if (a.opioids) csaCount++;
+        const csaLikelihood = csaCount >= 3 ? 'visoka' : csaCount === 2 ? 'srednja' : 'niska';
+
         this.disorders.push({
           id: 'csa',
           name: 'Centralna apneja u snu (CSA)',
           urgency: 'urgent',
           urgencyLabel: 'Hitna obrada',
+          likelihood: csaLikelihood,
+          likelihoodLabel: csaLikelihood === 'visoka' ? 'Visoka vjerojatnost' : csaLikelihood === 'srednja' ? 'Srednja vjerojatnost' : 'Niska vjerojatnost',
           clinicalBasis: 'Svjedočeni prestanci disanja uz ' + comorbidities.join(', ') + '.',
           confirmSteps: [
             'Uputiti na <strong>laboratorijsku PSG</strong> (polisomnografija) — HSAT nije dovoljna za CSA!',
             'Provjeriti ejekcijsku frakciju (EF): <strong>EF <45% = ASV kontraindiciran</strong>',
             'Popis lijekova — opioidi? doza? (morfinski ekvivalent >90 mg = visoki rizik)'
+          ],
+          excludeSteps: [
+            'Bez kardiološkog komorbiditeta i bez opioida \u2192 mala vjerojatnost za CSA',
+            'Hrkanje dominira, apneje opstruktivnog tipa \u2192 vjerojatnije OSA nego CSA'
           ],
           initialManagement: [
             'Optimizacija srčanog zatajenja (kardiolog)',
@@ -1328,10 +1386,16 @@ function screeningApp() {
           name: 'Povišen rizik za centralnu apneju u snu',
           urgency: 'routine',
           urgencyLabel: 'Ambulantna obrada',
+          likelihood: 'niska',
+          likelihoodLabel: 'Niska vjerojatnost',
           clinicalBasis: 'Kardiovaskularni komorbiditeti bez svjedočenih prestanaka disanja.',
           confirmSteps: [
             'Aktivno pitati partnera o prestancima disanja ili <strong>Cheyne-Stokesovom tipu</strong> (crescendo-decrescendo disanje)',
             'Razmotriti uputnicu specijalistu za PSG ako se pojave simptomi'
+          ],
+          excludeSteps: [
+            'Partner ne prijavljuje prestanke disanja niti atipično disanje \u2192 rizik ostaje nizak',
+            'Kardiovaskularna bolest stabilna i dobro kontrolirana \u2192 pratiti'
           ],
           initialManagement: [
             'Optimizacija kardiovaskularne terapije',
@@ -1355,16 +1419,30 @@ function screeningApp() {
           clinBasis += ' Pospanost: ' + (a.sleepinessSeverity === 'teska' ? 'teška — rizik za volanom!' : a.sleepinessSeverity) + '.';
         }
 
+        // Likelihood calculation for insufficient sleep
+        let insuffCount = 0;
+        if (a.shortSleep) insuffCount++;
+        if (a.fatigueSleepiness === 'sleepiness' || a.fatigueSleepiness === 'both') insuffCount++;
+        if (a.sleepinessSeverity) insuffCount++;
+        if (this.totalSleepTime !== null && this.totalSleepTime < 7) insuffCount++;
+        const insuffLikelihood = insuffCount >= 3 ? 'visoka' : insuffCount === 2 ? 'srednja' : 'niska';
+
         this.disorders.push({
           id: 'insufficient-sleep',
           name: 'Sindrom nedovoljnog spavanja',
           urgency: 'elective',
           urgencyLabel: 'Savjetovanje',
+          likelihood: insuffLikelihood,
+          likelihoodLabel: insuffLikelihood === 'visoka' ? 'Visoka vjerojatnost' : insuffLikelihood === 'srednja' ? 'Srednja vjerojatnost' : 'Niska vjerojatnost',
           clinicalBasis: clinBasis,
           confirmSteps: [
             'Dnevnik spavanja 2 tjedna — dokumentirati trajanje sna',
             'Probni produžetak sna na <strong>7–9h \u00D7 2 tjedna</strong>',
             'Ako se pospanost poboljša \u2192 <strong>potvrđena dijagnoza</strong>'
+          ],
+          excludeSteps: [
+            'Spava \u22657h \u2192 nije nedovoljan san',
+            'Pospanost unatoč \u22657h sna \u2192 razmotriti narkolepsiju/IH'
           ],
           initialManagement: [
             'Edukacija: najčešći uzrok dnevne pospanosti u populaciji',
@@ -1390,16 +1468,29 @@ function screeningApp() {
           napNote = ' Kratki osvježavajući drijemovi — tipično za narkolepsiju.';
         }
 
+        // Likelihood calculation for narcolepsy
+        let narcoCount = 0;
+        if (a.cataplexy) narcoCount++;
+        if (a.fatigueSleepiness === 'sleepiness' || a.fatigueSleepiness === 'both') narcoCount++;
+        if (a.naps && a.napRefreshing === true && a.napDuration === '<20min') narcoCount++;
+        const narcoLikelihood = narcoCount >= 3 ? 'visoka' : narcoCount === 2 ? 'srednja' : 'niska';
+
         this.disorders.push({
           id: 'narcolepsy',
           name: 'Narkolepsija',
           urgency: 'urgent',
           urgencyLabel: 'Hitna obrada',
+          likelihood: narcoLikelihood,
+          likelihoodLabel: narcoLikelihood === 'visoka' ? 'Visoka vjerojatnost' : narcoLikelihood === 'srednja' ? 'Srednja vjerojatnost' : 'Niska vjerojatnost',
           clinicalBasis: 'Dnevna pospanost uz katapleksiju — iznenadnu mišićnu slabost pri emocijama.' + napNote,
           confirmSteps: [
             'Primijeniti ESS upitnik — <strong>ESS \u226511 = patološka pospanost</strong>',
             '<strong>Hitno uputiti neurologu</strong> — prosječno kašnjenje dijagnoze: 8–15 godina',
             'Neurolog indicira MSLT (multiple sleep latency test)'
+          ],
+          excludeSteps: [
+            'Nema katapleksije \u2192 narkolepsija tip 2 ili IH, ne tip 1',
+            'Drijemovi neosvježavajući i dugi \u2192 razmotriti IH umjesto narkolepsije'
           ],
           initialManagement: [
             '<strong>SIGURNOST: zabrana vožnje</strong> do specijalističke procjene',
@@ -1431,16 +1522,30 @@ function screeningApp() {
           clinBasis += ' TST >9h \u2192 moguća dugotrajna spavanja (long sleep), tipično za IH.';
         }
 
+        // Likelihood calculation for IH
+        let ihCount = 0;
+        if (a.fatigueSleepiness === 'sleepiness' || a.fatigueSleepiness === 'both') ihCount++;
+        if (!a.shortSleep) ihCount++;
+        if (a.naps && a.napRefreshing === false && a.napDuration === '>60min') ihCount++;
+        if (this.totalSleepTime !== null && this.totalSleepTime > 9) ihCount++;
+        const ihLikelihood = ihCount >= 3 ? 'visoka' : ihCount === 2 ? 'srednja' : 'niska';
+
         this.disorders.push({
           id: 'ih',
           name: 'Idiopatska hipersomnija (IH)',
           urgency: 'routine',
           urgencyLabel: 'Ambulantna obrada',
+          likelihood: ihLikelihood,
+          likelihoodLabel: ihLikelihood === 'visoka' ? 'Visoka vjerojatnost' : ihLikelihood === 'srednja' ? 'Srednja vjerojatnost' : 'Niska vjerojatnost',
           clinicalBasis: clinBasis,
           confirmSteps: [
             'Primijeniti ESS upitnik — <strong>ESS \u226511 = patološka pospanost</strong>',
             'Dnevnik spavanja 2 tjedna — dokumentirati ukupno vrijeme spavanja',
             'Isključiti druge uzroke: OSA, depresija, hipotireoza, anemija'
+          ],
+          excludeSteps: [
+            'Kratki osvježavajući drijemovi \u2192 razmotriti narkolepsiju, ne IH',
+            'TST <7h \u2192 nedovoljan san, ne IH'
           ],
           initialManagement: [
             'Isključiti česte uzroke: OSA, nedovoljan san, depresija',
@@ -1515,13 +1620,28 @@ function screeningApp() {
           management.push('<strong>NE dopaminski agonisti rutinski</strong> — AASM uvjetno PROTIV (augmentacija 7–10%/godinu)');
         }
 
+        // Likelihood calculation for RLS
+        let rlsCount = 0;
+        if (a.rlsSymptoms) rlsCount++;
+        if (a.rlsFrequency === '>=3tj') rlsCount++;
+        if (a.rlsMedication === true) rlsCount++;
+        if (a.rlsNeuropathy === true) rlsCount++;
+        if (a.ferritinKnown && (a.ferritinValue === '<50' || a.ferritinValue === '50-100')) rlsCount++;
+        const rlsLikelihood = rlsCount >= 3 ? 'visoka' : rlsCount === 2 ? 'srednja' : 'niska';
+
         this.disorders.push({
           id: 'rls',
           name: 'Sindrom nemirnih nogu (RLS)',
           urgency: urgencyLevel,
           urgencyLabel: urgencyText,
+          likelihood: rlsLikelihood,
+          likelihoodLabel: rlsLikelihood === 'visoka' ? 'Visoka vjerojatnost' : rlsLikelihood === 'srednja' ? 'Srednja vjerojatnost' : 'Niska vjerojatnost',
           clinicalBasis: 'Neugodne senzacije u nogama s nagonom za kretanjem, pogoršanje navečer.' + freqNote + (onMeds ? ' Uzima lijekove koji pogoršavaju RLS.' : ''),
           confirmSteps: confirmSteps,
+          excludeSteps: [
+            'Simptomi se ne pogoršavaju mirovanjem \u2192 nije RLS',
+            'Simptomi su bolni bez nereaktivnosti \u2192 razmotriti neuropatiju'
+          ],
           initialManagement: management,
           referral: { specialist: 'Neurolog ili specijalist za medicinu spavanja', urgency: 'AMBULANTNO', note: 'Ako nema odgovora na željezo + gabapentinoide ili sumnja na augmentaciju' },
           labs: ['Feritin (cilj \u2265100)', 'KKS', 'Kreatinin', 'GUK', 'TSH'],
@@ -1575,13 +1695,28 @@ function screeningApp() {
           }
         }
 
+        // Likelihood calculation for RBD
+        let rbdCount = 0;
+        if (a.rbdMovements) rbdCount++;
+        if (a.rbdVividDreams) rbdCount++;
+        if (a.rbdViolence) rbdCount++;
+        if (this.patientAge > 50) rbdCount++;
+        if (a.rbdNegativeContent) rbdCount++;
+        const rbdLikelihood = rbdCount >= 3 ? 'visoka' : rbdCount === 2 ? 'srednja' : 'niska';
+
         this.disorders.push({
           id: 'rbd',
           name: 'REM poremećaj ponašanja u snu (RBD)',
           urgency: rbdUrgency,
           urgencyLabel: rbdUrgencyLabel,
+          likelihood: rbdLikelihood,
+          likelihoodLabel: rbdLikelihood === 'visoka' ? 'Visoka vjerojatnost' : rbdLikelihood === 'srednja' ? 'Srednja vjerojatnost' : 'Niska vjerojatnost',
           clinicalBasis: 'Izvođenje snova — udaranje, vikanje u snu.' + dreamInfo + (onMeds ? ' Uzima SSRI/SNRI/beta-blokator.' : '') + (a.rbdViolence ? ' Ozljede pacijenta ili partnera.' : ''),
           confirmSteps: confirmSteps,
+          excludeSteps: [
+            'Pokreti samo u prvoj trećini noći \u2192 NREM parasomnije, ne RBD',
+            'Na SSRI/SNRI \u2192 moguć lijekom induciran RBD, ne idiopatski'
+          ],
           initialManagement: [
             '<strong>SIGURNOST SPAVAČA:</strong> ukloniti oštre predmete, spustiti krevet, zaštitne ograde',
             'Razmotriti melatonin <strong>s produženim otpuštanjem</strong> 3–15 mg, početi s 3 mg',
@@ -1607,17 +1742,29 @@ function screeningApp() {
         else if (a.nremFrequency === '1-4mj') nremFreqNote = ' Učestalost 1–4\u00D7/mjesec.';
         else if (a.nremFrequency === '<1mj') nremFreqNote = ' Učestalost <1\u00D7/mjesec.';
 
+        // Likelihood calculation for NREM
+        let nremCount = 0;
+        if (a.nremCurrently) nremCount++;
+        if (a.nremFrequency === '>1tj') nremCount++;
+        const nremLikelihood = nremCount >= 3 ? 'visoka' : nremCount === 2 ? 'srednja' : 'niska';
+
         this.disorders.push({
           id: 'nrem',
           name: 'NREM parasomnije (somnambulizam, pavor nocturnus)',
           urgency: 'elective',
           urgencyLabel: 'Savjetovanje',
+          likelihood: nremLikelihood,
+          likelihoodLabel: nremLikelihood === 'visoka' ? 'Visoka vjerojatnost' : nremLikelihood === 'srednja' ? 'Srednja vjerojatnost' : 'Niska vjerojatnost',
           clinicalBasis: 'Hodanje u snu ili noćni strahovi TRENUTNO (ne samo u djetinjstvu).' + nremFreqNote,
           confirmSteps: [
             '<strong>NREM parasomnije u odraslih su NEUOBIČAJENE</strong> \u2192 obavezno isključiti OSA, epilepsiju, RBD',
             'Učestalost: <strong>\u22651\u00D7/tjedan + trajanje >3 mjeseca = klinički značajno</strong>',
             'Sjećanje na epizodu? <strong>NE = tipično NREM</strong>; <strong>DA = razmotriti noćnu epilepsiju</strong>',
             'Trajanje epizode: <strong><15 min = tipično NREM</strong>; dulje ili stereotipno = razmotriti epilepsiju'
+          ],
+          excludeSteps: [
+            'Epizode u drugoj polovici noći \u2192 razmotriti RBD, ne NREM parasomnije',
+            'Sjeća se epizode jasno \u2192 razmotriti noćnu epilepsiju'
           ],
           initialManagement: [
             '<strong>SIGURNOST:</strong> zaključati prozore/vrata, ukloniti opasne predmete, alarm na vratima',
@@ -1644,10 +1791,16 @@ function screeningApp() {
           name: 'Bruksizam u snu',
           urgency: 'elective',
           urgencyLabel: 'Savjetovanje',
+          likelihood: 'niska',
+          likelihoodLabel: 'Niska vjerojatnost',
           clinicalBasis: 'Škrgutanje zubima u snu.',
           confirmSteps: [
             'Stomatološki pregled — <strong>trošenje zubne cakline, frakture, bol u TMZ-u</strong>',
             'Ispitati komorbiditet s OSA (česta asocijacija) — <strong>STOP-BANG</strong>'
+          ],
+          excludeSteps: [
+            'Stomatolog ne nalazi tragove trošenja cakline \u2192 moguć samo povremeni bruksizam',
+            'Škripanje samo danju \u2192 budni bruksizam, ne noćni'
           ],
           initialManagement: [
             'Uputiti stomatologu za okluzijsku udlagu (splint)',
@@ -1664,15 +1817,27 @@ function screeningApp() {
       // 12. SRED
       if (a.nocturnalEating) {
         const zolp = a.nocturnalEatingZolpidem === true;
+        // Likelihood calculation for SRED
+        let sredCount = 0;
+        if (a.nocturnalEating) sredCount++;
+        if (a.nocturnalEatingZolpidem) sredCount++;
+        const sredLikelihood = sredCount >= 3 ? 'visoka' : sredCount === 2 ? 'srednja' : 'niska';
+
         this.disorders.push({
           id: 'sred',
           name: 'Poremećaj jedenja povezan sa spavanjem (SRED)',
           urgency: zolp ? 'urgent' : 'routine',
           urgencyLabel: zolp ? 'Hitna obrada' : 'Ambulantna obrada',
+          likelihood: sredLikelihood,
+          likelihoodLabel: sredLikelihood === 'visoka' ? 'Visoka vjerojatnost' : sredLikelihood === 'srednja' ? 'Srednja vjerojatnost' : 'Niska vjerojatnost',
           clinicalBasis: 'Nesvjesno noćno jedenje' + (zolp ? ' uz korištenje zolpidema.' : '.'),
           confirmSteps: zolp
             ? ['Potvrditi korištenje zolpidema — doza, trajanje', 'Dokumentirati epizode noćnog jedenja (partner/ukućani)']
             : ['Ispitati koristi li pacijent bilo koji hipnotik', 'Dokumentirati epizode — učestalost, vrsta hrane, sjećanje', 'Isključiti <strong>noćni sindrom jedenja (NES)</strong> — svjesno jedenje navečer (\u2260 SRED)'],
+          excludeSteps: [
+            'Svjesno jedenje navečer \u2192 noćni sindrom jedenja (NES), ne SRED',
+            'Nema korištenja hipnotika i potpuno je svjestan \u2192 nije SRED'
+          ],
           initialManagement: zolp
             ? ['<strong>ODMAH ukinuti zolpidem</strong>', 'Razmotriti alternativni hipnotik (trazodon, suvoreksant)', 'Sigurnost kuhinje — zaključati ili alarm']
             : ['Sigurnost kuhinje — zaključati opasne predmete, alarm', 'Provjeriti lijekove koji mogu izazvati SRED'],
@@ -1693,16 +1858,28 @@ function screeningApp() {
           dswpdBasis += ' Kasni raspored spavanja potvrđen u anamnezi.';
         }
 
+        // Likelihood calculation for DSWPD
+        let dswpdCount = 0;
+        if (a.lateChronotype) dswpdCount++;
+        if (this.isScheduleLate) dswpdCount++;
+        const dswpdLikelihood = dswpdCount >= 3 ? 'visoka' : dswpdCount === 2 ? 'srednja' : 'niska';
+
         this.disorders.push({
           id: 'dswpd',
           name: 'Poremećaj kasne faze spavanja (DSWPD)',
           urgency: 'elective',
           urgencyLabel: 'Savjetovanje',
+          likelihood: dswpdLikelihood,
+          likelihoodLabel: dswpdLikelihood === 'visoka' ? 'Visoka vjerojatnost' : dswpdLikelihood === 'srednja' ? 'Srednja vjerojatnost' : 'Niska vjerojatnost',
           clinicalBasis: dswpdBasis,
           confirmSteps: [
             'Dnevnik spavanja 2 tjedna (uključujući vikend i slobodne dane)',
             'Razmotriti aktigrafiju za objektivnu potvrdu',
             'Isključiti nesanicu: kod DSWPD pacijent <strong>MOŽE spavati, samo kasno</strong>'
+          ],
+          excludeSteps: [
+            'Ne spava dobro ni vikendom \u2192 nesanica, ne DSWPD',
+            'Počelo naglo \u2192 isključiti depresiju, medicinsku bolest'
           ],
           initialManagement: [
             '<strong>Melatonin 0,5–3 mg</strong> 4–5h prije željenog vremena spavanja',
@@ -1724,11 +1901,19 @@ function screeningApp() {
       // 14. Nightmares
       if (a.nightmares) {
         const hasTrauma = a.nightmaresTrauma === true;
+        // Likelihood calculation for nightmares
+        let nightmaresCount = 0;
+        if (a.nightmares) nightmaresCount++;
+        if (a.nightmaresTrauma) nightmaresCount++;
+        const nightmaresLikelihood = nightmaresCount >= 3 ? 'visoka' : nightmaresCount === 2 ? 'srednja' : 'niska';
+
         this.disorders.push({
           id: 'nightmares',
           name: 'Poremećaj noćnih mora',
           urgency: hasTrauma ? 'routine' : 'elective',
           urgencyLabel: hasTrauma ? 'Ambulantna obrada' : 'Savjetovanje',
+          likelihood: nightmaresLikelihood,
+          likelihoodLabel: nightmaresLikelihood === 'visoka' ? 'Visoka vjerojatnost' : nightmaresLikelihood === 'srednja' ? 'Srednja vjerojatnost' : 'Niska vjerojatnost',
           clinicalBasis: 'Česte noćne more koje bude i uznemiruju.' + (hasTrauma ? ' <strong>Pozitivna anamneza traumatskog iskustva</strong> — probirati PTSP!' : ''),
           confirmSteps: hasTrauma
             ? [
@@ -1741,6 +1926,10 @@ function screeningApp() {
               'Provjeriti lijekove (beta-blokatori, SSRI mogu izazvati noćne more)',
               'Ispitati učestalost i utjecaj na dnevno funkcioniranje'
             ],
+          excludeSteps: [
+            'Noćne more samo uz nove lijekove (beta-blokatori, SSRI) \u2192 lijekom inducirane, ne primarni poremećaj',
+            'Noćne more rijetke (<1\u00D7/mjesec) i ne utječu na funkcioniranje \u2192 ne zahtijeva dijagnozu'
+          ],
           initialManagement: hasTrauma
             ? [
               '<strong>Uputiti na psihoterapiju za traumu</strong> (CBT za PTSP, EMDR)',
@@ -1771,11 +1960,17 @@ function screeningApp() {
           name: 'Poremećaj napredne faze spavanja (ASWPD)',
           urgency: 'elective',
           urgencyLabel: 'Savjetovanje',
+          likelihood: 'niska',
+          likelihoodLabel: 'Niska vjerojatnost',
           clinicalBasis: 'Rano buđenje (prije 05:00) uz dob >60 godina.',
           confirmSteps: [
             'Dnevnik spavanja 2 tjedna',
             'Razmotriti aktigrafiju',
             'Isključiti depresiju (rano buđenje je čest simptom)'
+          ],
+          excludeSteps: [
+            'Rano buđenje s tugom i gubitkom interesa \u2192 razmotriti depresiju, ne ASWPD',
+            'Raspored spavanja normalan vikendom \u2192 manje vjerojatno pravi ASWPD'
           ],
           initialManagement: [
             'Večernja ekspozicija jakoj svjetlosti (18-20h)',
@@ -1797,11 +1992,17 @@ function screeningApp() {
           name: 'Iregularni poremećaj ciklusa spavanja-budnosti (ISWRD)',
           urgency: 'routine',
           urgencyLabel: 'Ambulantna obrada',
+          likelihood: 'niska',
+          likelihoodLabel: 'Niska vjerojatnost',
           clinicalBasis: 'Potpuno nepravilan raspored spavanja uz ' + (this.patientAge > 70 ? 'dob >70' : 'kardiovaskularne komorbiditete') + '.',
           confirmSteps: [
             'Aktigrafija 7-14 dana',
             'Isključiti demenciju ili neurodegenerativnu bolest',
             'Provjeriti izloženost svjetlosti i socijalnu aktivnost'
+          ],
+          excludeSteps: [
+            'Raspored nepravilan samo zbog smjenskog rada \u2192 poremećaj smjenskog rada, ne ISWRD',
+            'Nema kognitivnog propadanja \u2192 manje vjerojatno ISWRD'
           ],
           initialManagement: [
             'Strukturirana ekspozicija jutarnjoj svjetlosti',
@@ -1823,11 +2024,17 @@ function screeningApp() {
           name: 'Kleine-Levin sindrom (rekurentna hipersomnija)',
           urgency: 'routine',
           urgencyLabel: 'Ambulantna obrada',
+          likelihood: 'niska',
+          likelihoodLabel: 'Niska vjerojatnost',
           clinicalBasis: 'Ciklička hipersomnija u trajanju dana/tjedana uz dob <30 godina.',
           confirmSteps: [
             'Detaljni intervju o epizodama: trajanje, učestalost, kognitivne promjene',
             'Pitajte: "Imate li promjene u ponašanju tijekom epizoda?" Ako DA (hiperfagija, hiperseksualnost, konfuzija) \u2192 snažna sumnja na KLS',
             'Isključiti psihijatrijske uzroke (bipolarni poremećaj, depresija)'
+          ],
+          excludeSteps: [
+            'Pospanost konstantna (ne epizodička) \u2192 IH ili narkolepsija, ne KLS',
+            'Nema kognitivnih/ponašajnih promjena tijekom epizoda \u2192 manje vjerojatno KLS'
           ],
           initialManagement: [
             'Educirajte obitelj — epizode su samoograničavajuće',
@@ -1842,9 +2049,14 @@ function screeningApp() {
         });
       }
 
-      // === SORT: urgent → urgent-outpatient → routine → elective ===
+      // === SORT: urgent → urgent-outpatient → routine → elective, then by likelihood (visoka first) ===
       const urgencyOrder = { urgent: 0, 'urgent-outpatient': 1, routine: 2, elective: 3 };
-      this.disorders.sort((a, b) => (urgencyOrder[a.urgency] ?? 2) - (urgencyOrder[b.urgency] ?? 2));
+      const likelihoodOrder = { visoka: 0, srednja: 1, niska: 2 };
+      this.disorders.sort((a, b) => {
+        const urgDiff = (urgencyOrder[a.urgency] ?? 2) - (urgencyOrder[b.urgency] ?? 2);
+        if (urgDiff !== 0) return urgDiff;
+        return (likelihoodOrder[a.likelihood] ?? 2) - (likelihoodOrder[b.likelihood] ?? 2);
+      });
 
       // === CROSS-REFERENCES ===
       const ids = this.disorders.map(d => d.id);
@@ -2039,11 +2251,15 @@ function screeningApp() {
       if (this.disorders.length > 0) {
         text += 'SUMNJA NA:\n';
         this.disorders.forEach(d => {
-          text += '\n  \u25A0 ' + d.name + ' [' + d.urgencyLabel + ']\n';
+          text += '\n  \u25A0 ' + d.name + ' [' + d.urgencyLabel + '] [' + d.likelihoodLabel + ']\n';
           text += '    Temelj: ' + stripHtml(d.clinicalBasis) + '\n';
           if (d.confirmSteps) {
             text += '    Potvrditi:\n';
             d.confirmSteps.forEach(s => text += '      \u2610 ' + stripHtml(s) + '\n');
+          }
+          if (d.excludeSteps && d.excludeSteps.length > 0) {
+            text += '    Za isključenje:\n';
+            d.excludeSteps.forEach(s => text += '      \u2718 ' + stripHtml(s) + '\n');
           }
           if (d.initialManagement) {
             text += '    Započeti odmah:\n';

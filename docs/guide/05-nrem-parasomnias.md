@@ -1,14 +1,14 @@
 # 5. NREM parasomnije
 
-> **MKB-10:** F51.3 (somnambulizam), F51.4 (noćni strahovi), G47.51 (konfuzna buđenja) | **ICSD-3:** Poremećaji buđenja iz NREM sna (*Disorders of Arousal from NREM Sleep*)
+> **MKB-10 (Međunarodna klasifikacija bolesti, 10. revizija):** F51.3 (somnambulizam), F51.4 (noćni strahovi), G47.51 (konfuzna buđenja) | **ICSD-3 (Međunarodna klasifikacija poremećaja spavanja, 3. izdanje):** Poremećaji buđenja iz NREM (san bez brzih pokreta očiju — *Non-Rapid Eye Movement*) sna
 
 !!! brzi-pregled "Brzi pregled"
 
     **Prepoznaj:** Hodanje u snu, noćni strahovi ili konfuzna buđenja — prva trećina noći, oči otvorene, amnezija za događaj, konfuzija pri buđenju. Djeca: uglavnom benigno. Odrasli: novi početak zahtijeva obradu.
 
-    **Učini:** Osiguraj sigurnost (zaključaj vrata/prozore). Isključi okidače: OSA, lijekovi (zolpidem!), stres, deprivacija sna. Kod djece: tehniku planiranih buđenja.
+    **Učini:** Osiguraj sigurnost (zaključaj vrata/prozore). Isključi okidače: OSA (opstruktivna apneja u snu), lijekovi (zolpidem!), stres, deprivacija sna. Kod djece: tehniku planiranih buđenja.
 
-    **Uputi:** Odrasli s novonastalim parasomnjama → neurolog (isključiti OSA, epilepsiju, RBD). Djeca: samo ako epizode perzistiraju nakon puberteta ili su učestale/opasne.
+    **Uputi:** Odrasli s novonastalim parasomnjama → neurolog (isključiti OSA, epilepsiju, RBD — poremećaj ponašanja u REM snu). Djeca: samo ako epizode perzistiraju nakon puberteta ili su učestale/opasne.
 
 ---
 
@@ -130,7 +130,7 @@
 
     ### Što zahtijeva specijalista
 
-    **Video-PSG** je indicirana kada: dijagnostička nesigurnost (NREM vs. epilepsija vs. RBD), ozljede, stereotipne kratke epizode (sumnja na epilepsiju), ili novonastale parasomnije u odraslog.
+    **Video-PSG (polisomnografija)** je indicirana kada: dijagnostička nesigurnost (NREM vs. epilepsija vs. RBD), ozljede, stereotipne kratke epizode (sumnja na epilepsiju), ili novonastale parasomnije u odraslog.
 
     > **Napomena:** Rutinska PSG NIJE potrebna za tipične dječje NREM parasomnije s jasnom kliničkom slikom i pozitivnom obiteljskom anamnezom.
 
@@ -186,7 +186,7 @@
     | **Klonazepam** | 0,25–2 mg navečer | Prva linija farmakoterapije za teške NREM parasomnije. Mehanizam: suprimira buđenja iz N3 sna. Učinkovit u ~80% slučajeva. Dugotrajna primjena moguća uz nadzor — tolerancija je rijetka za ovu indikaciju. Oprez: dnevna sedacija, rizik padova u starijih. |
     | **Melatonin** | 2–6 mg navečer | Može pomoći stabiliziranju arhitekture sna. Siguran profil nuspojava. Posebno razmotriti u djece. |
     | **Trazodon** | 25–100 mg navečer | Alternativa klonazepamu; reducira buđenja iz dubokog sna. Off-label, ali korisan u pacijenata kod kojih su benzodiazepini kontraindicirani. |
-    | **SSRI** (paroksetin, sertralin) | Uobičajene doze | Ponekad korišteni za teške slučajeve, posebno uz komorbidnu anksioznost. Dokazi su slabiji nego za klonazepam. |
+    | **SSRI (selektivni inhibitori ponovne pohrane serotonina)** (paroksetin, sertralin) | Uobičajene doze | Ponekad korišteni za teške slučajeve, posebno uz komorbidnu anksioznost. Dokazi su slabiji nego za klonazepam. |
 
     > **Napomena o klonazepamu:** Za razliku od nesanice (gdje su benzodiazepini problematični), klonazepam u niskim dozama za parasomnije ima dugogodišnje iskustvo sigurne primjene. Tolerancija i eskalacija doze su rijetke za ovu specifičnu indikaciju, ali lijek treba propisivati uz nadzor i uz jasnu dokumentaciju indikacije.
 
@@ -210,7 +210,7 @@
     | Dijagnostička nesigurnost (NREM vs. RBD vs. epilepsija) | Centar za medicinu spavanja | Video-PSG s proširenim EEG montažom |
     | Nasilno ili seksualno ponašanje tijekom sna | Centar za medicinu spavanja | Medikolegalna procjena; precizna dijagnoza |
     | Parasomnije rezistentne na nefarmakološke mjere i klonazepam | Centar za medicinu spavanja | Reevaluacija dijagnoze; isključivanje skrivenog triggera |
-    | Sumnja na komorbidnu OSA | Pulmolog / Centar za medicinu spavanja | PSG za dijagnozu OSA; CPAP može eliminirati parasomnije |
+    | Sumnja na komorbidnu OSA | Pulmolog / Centar za medicinu spavanja | PSG za dijagnozu OSA; CPAP (kontinuirani pozitivni tlak u dišnim putovima) može eliminirati parasomnije |
 
 ---
 

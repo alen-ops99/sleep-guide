@@ -1,12 +1,12 @@
 # 12. Poremećaj hranjenja povezan sa spavanjem (SRED)
 
-> **MKB-10:** G47.59 | **ICSD-3:** Sleep-Related Eating Disorder (parasomnije povezane s NREM spavanjem)
+> **MKB-10 (Međunarodna klasifikacija bolesti, 10. revizija):** G47.59 | **ICSD-3 (Međunarodna klasifikacija poremećaja spavanja, 3. izdanje):** Sleep-Related Eating Disorder (parasomnije povezane s NREM — san bez brzih pokreta očiju — spavanjem)
 
 !!! brzi-pregled "Brzi pregled"
 
     **Prepoznaj:** Hrana nestaje iz kuhinje, nered ujutro, pacijent se ne sjeća noćnog jedenja. Neobjašnjivo debljanje. Opekline ili porezotine na rukama.
 
-    **Učini:** Pitaj o zolpidemu — najčešći lijekovski uzrok! Ako pacijent uzima zolpidem → ODMAH ukinuti. Osiguraj kuhinju (zaključaj, ukloni opasne predmete). Razlikuj od NES-a (noćno jedenje pri punoj svijesti = NES, ne SRED).
+    **Učini:** Pitaj o zolpidemu — najčešći lijekovski uzrok! Ako pacijent uzima zolpidem → ODMAH ukinuti. Osiguraj kuhinju (zaključaj, ukloni opasne predmete). Razlikuj od NES-a (sindrom noćnog jedenja — noćno jedenje pri punoj svijesti = NES, ne SRED).
 
     **Uputi:** Neurolog / centar za spavanje ako: epizode perzistiraju nakon ukidanja zolpidema, ozljede, ili značajno debljanje.
 
@@ -55,7 +55,7 @@
     <div class="symptom-tier tier-supporting" markdown>
     ### Podržavajući znakovi
     - Korištenje zolpidema ili drugih Z-lijekova (poznati okidač)
-    - Komorbidne parasomnija (somnambulizam) ili OSA
+    - Komorbidne parasomnija (somnambulizam) ili OSA (opstruktivna apneja u snu)
     - Jutarnja sitost ili mučnina bez objašnjenja
     - Debljanje nejasnog uzroka
     </div>
@@ -119,7 +119,7 @@
     | **Tip ponašanja** | Bizarno jedenje, nejestive tvari, opasno kuhanje | Normalna hrana, kontrolirani odlasci po hranu |
     | **Klasifikacija** | **NREM parasomnije** (poremećaj spavanja) | **Poremećaj hranjenja** (F50.8) |
     | **Veza sa zolpidemom** | **Da** — čest uzrok | Ne |
-    | **Liječenje** | Ukinuti zolpidem, sigurnost kuhinje, topiramat | SSRI, CBT, savjetovanje o prehrani |
+    | **Liječenje** | Ukinuti zolpidem, sigurnost kuhinje, topiramat | SSRI (selektivni inhibitori ponovne pohrane serotonina), CBT, savjetovanje o prehrani |
 
     **Klinička pouka:** Ako pacijent jasno pamti da noću jede i potpuno je svjestan za vrijeme jedenja — to je NES, ne SRED. Ako partner prijavljuje da pacijent jede u snu s otvorenim očima ali „nije tu" i ujutro se ničega ne sjeća — to je SRED.
 
@@ -133,7 +133,7 @@
 
     - **Postupno smanjivanje doze** (ne nagli prekid) — ukinuti kroz 1–2 tjedna
     - U većini slučajeva, **samo ukidanje zolpidema potpuno rješava SRED**
-    - Za nesanicu koja je bila razlog propisivanja zolpidema — prijeći na alternativu: trazodon 25–50 mg, melatonin 2 mg, ili uputiti na CBT-I
+    - Za nesanicu koja je bila razlog propisivanja zolpidema — prijeći na alternativu: trazodon 25–50 mg, melatonin 2 mg, ili uputiti na CBT-I (kognitivno-bihevioralna terapija za nesanicu)
     - **Ne dodavati drugi lijek na zolpidem** u nadi da će SRED nestati — ukinuti uzrok, ne maskirati simptom
 
     ### 2. Sigurnosne mjere u kuhinji
@@ -216,6 +216,6 @@
 
 ---
 
-*Napomena: Poglavlje je namijenjeno kao klinički vodič za liječnike obiteljske medicine. Za detaljne dijagnostičke protokole i terapijske algoritme konzultirajte AASM/ESRS smjernice i specijalistu za medicinu spavanja.*
+*Napomena: Poglavlje je namijenjeno kao klinički vodič za liječnike obiteljske medicine. Za detaljne dijagnostičke protokole i terapijske algoritme konzultirajte AASM (Američka akademija za medicinu spavanja) / ESRS (Europsko društvo za istraživanje spavanja) smjernice i specijalistu za medicinu spavanja.*
 
 *Posljednje ažuriranje: veljača 2026.*

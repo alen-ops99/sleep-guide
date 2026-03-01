@@ -26,7 +26,7 @@ Primarno za **liječnike obiteljske medicine** u hrvatskom zdravstvenom sustavu,
 
 ### Interaktivni upitnici
 
-Pet validiranih upitnika s automatskim bodovanjem — ESS, STOP-BANG, ISI, IRLS, RBDSQ. Rezultat i interpretacija prikazuju se odmah, s mogućnošću kopiranja u karton.
+Pet validiranih upitnika s automatskim bodovanjem — ESS (Epworthova ljestvica pospanosti), STOP-BANG, ISI (Indeks težine nesanice), IRLS (Međunarodna ljestvica za sindrom nemirnih nogu) i RBDSQ (Upitnik za probir poremećaja ponašanja u REM snu). Rezultat i interpretacija prikazuju se odmah, s mogućnošću kopiranja u karton.
 
 ### Poglavlja (1-13)
 
@@ -40,14 +40,16 @@ Svako poglavlje pokriva jedan poremećaj i slijedi istu strukturu: brzi pregled,
 |---|---|
 | Praktični priručnik za svakodnevnu praksu | Udžbenik medicine spavanja |
 | Fokusiran na prepoznavanje i trijažu | Zamjena za specijalistički pregled |
-| Temeljen na smjernicama (ICSD-3, AASM, ESRS) | Autorovo osobno mišljenje |
+| Temeljen na smjernicama (ICSD-3 — Međunarodna klasifikacija poremećaja spavanja, 3. izdanje; AASM — Američka akademija za medicinu spavanja; ESRS — Europsko društvo za istraživanje spavanja) | Autorovo osobno mišljenje |
 | Prilagođen hrvatskom sustavu | Primjenjiv bez prilagodbe u drugim zemljama |
+
+> **Napomena:** Vodič je usmjeren na odraslu populaciju. Pedijatrijski aspekti — osobito nesanica u djece, koja je najčešći pedijatrijski poremećaj spavanja — kratko su obrađeni unutar odgovarajućih poglavlja. Sustavna obrada pedijatrijske medicine spavanja nadilazi opseg ovog izdanja.
 
 ---
 
 ## O autoru
 
-**Alen Juginović, dr. med.** — postdoktorand na Harvard Medical School (Odjel za neurobiologiju, Rogulja Lab), istraživač u području neuroznanosti spavanja. Član uredništva Journal of Clinical Sleep Medicine (JCSM). Suosnivač i predsjednik udruge Med&X te Plexus Conference.
+**Alen Juginović, dr. med.** — postdoktorand na Medicinskom fakultetu Sveučilišta Harvard (Odjel za neurobiologiju, Rogulja Lab), neuroznanstvenik u medicini spavanja. Član uredništva Journal of Clinical Sleep Medicine (JCSM). Suosnivač i predsjednik udruge Med&X te Plexus Conference.
 
 ---
 

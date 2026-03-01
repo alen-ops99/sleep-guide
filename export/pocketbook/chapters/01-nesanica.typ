@@ -6,7 +6,7 @@
 
 #chapter-title(
   number: 1,
-  title: "Nesanica (Kronična nesanica)",
+  title: "Nesanica",
   mkb: "G47.0 / F51.0",
   icsd: "Chronic Insomnia Disorder",
   color: cat-insomnia,
@@ -55,6 +55,26 @@
   ))
 ]
 
+#v(4pt)
+#block(
+  width: 100%,
+  inset: (x: 8pt, y: 6pt),
+  radius: 2pt,
+  fill: rgb("#FFF3CD"),
+  stroke: (left: 2.5pt + rgb("#FFC107")),
+  [
+    #text(weight: "bold", fill: rgb("#856404"), size: 8.5pt)[⚠ Prije dijagnoze nesanice — isključite druge uzroke]
+    #v(3pt)
+    #set text(size: 8pt)
+    - *Cirkadijani poremećaji* — Spava li dobro vikendom? Ako da → moguć poremećaj faze odgođenog spavanja (DSWPD; _Delayed Sleep-Wake Phase Disorder_), ne nesanica (→ Pogl. 4)
+    - *Periodični pokreti udova u snu (PLMS; _Periodic Limb Movements in Sleep_)* — Buđenja bez jasnog razloga? Trzaji nogu? (→ Pogl. 5)
+    - *Opstruktivna apneja u snu (OSA)* — Hrkanje? Apneje? BMI >30? (→ Pogl. 3)
+    - *Sindrom nemirnih nogu (RLS)* — Nemir u nogama navečer? (→ Pogl. 5)
+    - *Parasomnije* — Neobično ponašanje u snu? (→ Pogl. 7, 9)
+    - *Psihijatrijski uzroci* — Depresija, anksioznost, PTSP — liječiti paralelno
+  ]
+)
+
 // === Kako prepoznati? ===
 == Kako prepoznati?
 
@@ -76,7 +96,7 @@ Kronična nesanica je subjektivna teškoća usnivanja, održavanja sna ili prera
 + „Što radite kada ne možete zaspati?“ — otkriva kompenzatorne mehanizme
 + „Koliko vremena provodite u krevetu?“ — nesaničari: 9–10 h za 5–6 h sna
 + „Hrčete li? Imate li pauze u disanju?“ — *obavezno* za isključivanje OSA
-+ „Koji lijekove uzimate?“ — SSRI, kortikosteroidi, beta-blokatori, teofilin
++ „Koji lijekove uzimate?” — SSRI (selektivni inhibitori ponovne pohrane serotonina), kortikosteroidi, beta-blokatori, teofilin
 
 *Diferencijalni tragovi:*
 - Pospanost dominantna (ne umor) → razmisliti o OSA ili hipersomniji
@@ -109,7 +129,7 @@ Kronična nesanica je subjektivna teškoća usnivanja, održavanja sna ili prera
 
 *Isključiti:* OSA, RLS, cirkadijane poremećaje, poremećaj rada u smjenama. Evaluirati psihijatrijske komorbiditete.
 
-*PSG* — NIJE indicirana za rutinsku nesanicu. Indicirana samo pri sumnji na OSA, PLMS ili parasomnije.
+*Polisomnografija (PSG; _Polysomnography_)* — NIJE indicirana za rutinsku nesanicu. Indicirana samo pri sumnji na OSA, PLMS ili parasomnije.
 
 // === Crvene zastavice ===
 #v(3pt)
@@ -150,14 +170,14 @@ Kronična nesanica je subjektivna teškoća usnivanja, održavanja sna ili prera
 
 Nesanica koja traje *\< 3 mjeseca*, najčešće precipitirana stresom, bolešću ili promjenom okoline. U većini slučajeva prolazi spontano. Intervencija LOM-a: higijena sna, edukacija, kratkoročni hipnotik (do 2 tjedna) ako je potreban. *Ključno:* prevenirati kronifikaciju — ako traje \> 4 tjedna, započeti CBT-I elemente.
 
-#pearl[*Kada CBT-I nije dostupan, trazodon 25–50 mg i melatonin 2 mg su sigurne opcije u Hrvatskoj* — osobito za starije pacijente i one kod kojih BZD treba izbjegavati.]
+#pearl[*Kada CBT-I nije dostupan, trazodon 25–50 mg i melatonin 2 mg su sigurne opcije u Hrvatskoj* — osobito za starije pacijente i one kod kojih benzodiazepine (BZD) treba izbjegavati.]
 
 // === Liječenje u PZZ ===
 == Liječenje u PZZ
 
 === Prva linija: CBT-I
 
-*CBT-I je jedina terapija s razinom dokaza Ia* za kroničnu nesanicu — prva linija prema svim smjernicama (AASM 2021, ACP 2016, ESRS 2017, NICE).#evidence("Ia")
+*CBT-I je jedina terapija s razinom dokaza Ia* za kroničnu nesanicu — prva linija prema svim smjernicama (AASM — Američka akademija za medicinu spavanja, 2021; ACP 2016; ESRS — Europsko društvo za istraživanje spavanja, 2017; NICE).#evidence("Ia")
 
 #set text(size: 8.5pt)
 #table(
@@ -183,8 +203,6 @@ Nesanica koja traje *\< 3 mjeseca*, najčešće precipitirana stresom, bolešću
 + Cilj: ES ≥85% uz 7–8 h u krevetu
 
 #pearl[LOM može primijeniti restrikciju sna + kontrolu podražaja i *bez* formalnog CBT-I treninga — učinak je značajan i samo s te dvije komponente.#evidence("Ib")]
-
-#pearl[*Analogija za objašnjavanje restrikcije sna pacijentu:* Ako ulijete tekućinu u široku posudu — razlije se tanko i plitko. Ulijte istu tekućinu u usku posudu — razina je duboka. San je isti: raširite ga na 12 h u krevetu — bit će plitak i fragmentiran. Ograničite vrijeme u krevetu i san se konsolidira i produbljuje.]
 
 #v(3pt)
 #crvena-zastavica[
@@ -215,9 +233,17 @@ Indicirani: (1) kratkoročno dok se čeka CBT-I; (2) uz CBT-I kod teške nesanic
   // Trazodon (1. izbor)
   (
     [*Trazodon*\ #text(size: 7pt)[(1. izbor)]],
-    [25–100 mg\ t½ 5–9 h],
+    [25–75 mg\ t½ 5–9 h\ #text(size: 7pt)[(maks. 75–100 mg)]],
     [Hepat.\ CYP3A4],
     [MAOI *✖*\ QTc lijekovi *⚠*],
+    [✓],
+  ),
+  // Daridorexant / Quviviq (DORA — novo dostupan)
+  (
+    [*Daridorexant*\ #text(size: 7pt)[(Quviviq — DORA)]],
+    [25–50 mg\ t½ 8 h],
+    [Hepat.\ CYP3A4],
+    [Jaki CYP3A4\ inhib. *✖*],
     [✓],
   ),
   // Melatonin PR (1. izbor >55g.)
@@ -236,17 +262,9 @@ Indicirani: (1) kratkoročno dok se čeka CBT-I; (2) uz CBT-I kod teške nesanic
     [CNS depresanti *✖*\ CYP3A4 inhib. *⚠*\ Alkohol *✖*],
     [✓],
   ),
-  // Hidroksizin
-  (
-    [*Hidroksizin*],
-    [25–50 mg\ t½ 20 h],
-    [Hepat.\ CYP razni],
-    [Antikolinergici *⚠*],
-    [✓],
-  ),
   // Benzodiazepini
   (
-    text(fill: color-red)[*BZD*\ #text(size: 7pt)[(izbjegavati!)]],
+    text(fill: color-red)[*BZD*\ #text(size: 7pt)[(apsolutno zadnja opcija!)]],
     [—\ t½ varijab.],
     [Hepat./Ren.],
     [CNS depresanti *✖*\ Opioidi *✖*],
@@ -255,15 +273,19 @@ Indicirani: (1) kratkoročno dok se čeka CBT-I; (2) uz CBT-I kod teške nesanic
 ))
 
 #v(4pt)
-#pearl[*„Start low, go slow“:* Trazodon započnite s 25 mg. Melatonin PR s 2 mg. Zolpidem: uvijek najniža doza, nikad >4 tjedna. Kod starijih (>65 g.) — izbjegavajte Z-lijekove i BZD (Beers kriteriji).]
+#pearl[*„Start low, go slow”:* Trazodon započnite s 25 mg (maks. 75–100 mg za nesanicu — više nije preporučljivo). Daridorexant 25 mg, može do 50 mg. Melatonin PR 2 mg. Zolpidem: najniža doza, nikad >4 tj. Stariji (>65 g.) — izbjegavajte Z-lijekove i BZD (Beers kriteriji).]
 
 #v(4pt)
-#pearl[Eszopiclone, suvorexant, lemborexant, daridorexant, ramelteon, doxepin (3–6 mg) — *NISU dostupni u Hrvatskoj*. Ne propisivati i ne obećavati pristup.]
+#pearl[Eszopiclone, suvorexant, lemborexant, ramelteon, doxepin (3–6 mg) — *NISU dostupni u Hrvatskoj*. Ne propisivati i ne obećavati pristup. *Daridorexant (Quviviq)* je od 2025. *dostupan u HR* (HALMED).]
+
+#pearl[*Antihistaminici (npr. hidroksizin) NISU indicirani za nesanicu.* Nedovoljni dokazi za učinkovitost, značajni antikolinergički učinci, osobito štetni u starijih. Ne propisivati za nesanicu.]
+
+#pearl[*Off-label opcije:* Mirtazapin (7,5–15 mg) — koristan kod komorbidne depresije/gubitka apetita. Amitriptilin (10–25 mg) — koristan kod komorbidne kronične boli. Provjerite jetrenu funkciju kod lijekova s hepatalnim metabolizmom.]
 
 #v(4pt)
 #pearl[*Napomena o trazodonu:* AASM smjernice (Sateia 2017) uvjetno preporučuju PROTIV trazodona za nesanicu zbog ograničenih dokaza. Međutim, u kontekstu HR — gdje DORAs, doxepin i ramelteon nisu dostupni — trazodon ostaje najpraktičnija opcija s povoljnim sigurnosnim profilom, osobito u starijih. Europska praksa (ESRS) šire koristi trazodon.]
 
-#pearl[*Plafon sedacije trazodona je 50 mg.* Iznad 50 mg nema dodatnog hipnotičkog učinka — samo rastu nuspojave (ortostatska hipotenzija, pospanost). Mnogi liječnici eskaliraju dozu kad 50 mg ne pomaže — to je pogrešno razumijevanje farmakodinamike.]
+#pearl[*Plafon sedacije trazodona je oko 50 mg.* Iznad 50 mg nema dodatnog hipnotičkog učinka — samo rastu nuspojave. Doza za nesanicu: do 75–100 mg; više od toga nije preporučljivo. Mnogi liječnici eskaliraju dozu — to je pogrešno razumijevanje farmakodinamike.]
 
 #pearl[*Kvetiapin kao hipnotik (bez psihoze): NE koristiti.* Čak i u niskim dozama uzrokuje porast težine + dislipidemiju. S obzirom na dostupnost sigurnijih opcija (trazodon, melatonin), omjer rizika i koristi je nepovoljan.]
 
@@ -276,6 +298,18 @@ Indicirani: (1) kratkoročno dok se čeka CBT-I; (2) uz CBT-I kod teške nesanic
 *Trudnoća:* CBT-I je jedina sigurna opcija. Zolpidem i BZD — kontraindicirani (kategorija C). Melatonin — nedovoljno podataka.
 
 *COMISA:* Prisutna u *30–50% nesaničara*. Liječenje samo nesanice bez dijagnoze OSA = suboptimalan rezultat. *Kod svakog pacijenta pitajte o hrkanju.*
+
+=== Nesanica u djece i adolescenata
+
+Nesanica je *najčešći pedijatrijski poremećaj spavanja*. Dvije glavne forme:
+
+*Poremećaj asocijacije na usnivanje:* Dijete zaspi samo uz pomoć roditelja (ljuljanje, dojenje). Bez toga — ne može zaspati ni nakon noćnog buđenja.
+
+*Poremećaj postavljanja granica:* Dijete odbija ići spavati, izlazi iz kreveta. Roditelj ne provodi dosljedne granice → odgođeno usnivanje, nedovoljan san.
+
+*Upravljanje:* Edukacija roditelja, postupno uklanjanje asocijacija, dosljedne granice i rutine. Farmakoterapija u djece — izbjegavati osim iznimno.
+
+#pearl[*Uputiti* ako nesanica narušava školski uspjeh, sumnja na komorbiditet (ADHD, anksioznost, poremećaj autističnog spektra) ili OSA (opstruktivna apneja u snu) u djece (hrkanje, adenotonzilarna hipertrofija).]
 
 // === Praćenje ===
 == Praćenje
@@ -331,7 +365,7 @@ Indicirani: (1) kratkoročno dok se čeka CBT-I; (2) uz CBT-I kod teške nesanic
 ))
 
 #chapter-summary(
-  title: "1. Nesanica (Kronična nesanica)",
+  title: "1. Nesanica",
   category: "Nesanica",
   color: cat-insomnia,
   prepoznaj: [Teškoća usnivanja/održavanja sna ≥3 noći/tj. × ≥3 mj. + dnevna disfunkcija. Prekomjerno vrijeme u krevetu. Anksioznost pred spavanje.],

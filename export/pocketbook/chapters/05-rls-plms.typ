@@ -58,7 +58,7 @@
 // === Kako prepoznati? ===
 == Kako prepoznati?
 
-RLS je neurološki poremećaj s neodoljivim nagonom za pokretanjem nogu uz neugodne senzacije; PLMS (periodični pokreti udova u snu) obilježavaju ponavljajući trzaji nogu tijekom sna. Prevalencija: 5–10% opće populacije; u praksi s 2.000 pacijenata: 100–200 pacijenata s RLS-om.
+Sindrom nemirnih nogu (RLS; _Restless Legs Syndrome_) je neurološki poremećaj s neodoljivim nagonom za pokretanjem nogu uz neugodne senzacije; periodični pokreti udova u snu (PLMS; _Periodic Limb Movements in Sleep_) obilježavaju ponavljajući trzaji nogu tijekom sna. Prevalencija: 5–10% opće populacije; u praksi s 2.000 pacijenata: 100–200 pacijenata s RLS-om.
 
 *URGED mnemonik* -- svih 5 kriterija mora biti prisutno:
 - #strong[U]rge to move -- nagon za kretanjem uz neugodne senzacije
@@ -85,9 +85,9 @@ RLS je neurološki poremećaj s neodoljivim nagonom za pokretanjem nogu uz neugo
 // === Probir i dijagnostika ===
 == Probir i dijagnostika
 
-*RLS je klinička dijagnoza* -- ne zahtijeva PSG ni instrumentalni test. Četiri IRLS kriterija u anamnezi dovoljni su. *LOM može i treba dijagnosticirati RLS.*
+*RLS je klinička dijagnoza* -- ne zahtijeva polisomnografiju (PSG) ni instrumentalni test. Četiri dijagnostička kriterija u anamnezi dovoljni su. *LOM može i treba dijagnosticirati RLS.*
 
-=== IRLS ljestvica (procjena težine) #see(<upitnik-irls>)
+=== Međunarodna ljestvica za sindrom nemirnih nogu (IRLS) — procjena težine #see(<upitnik-irls>)
 
 #set text(size: 8.5pt)
 #table(
@@ -106,13 +106,13 @@ RLS je neurološki poremećaj s neodoljivim nagonom za pokretanjem nogu uz neugo
 
 === Laboratorijska obrada
 
-- *Feritin* -- cilj *≥100 ng/mL* (AASM 2024). POZOR: feritin je reaktant akutne faze; ako je CRP ↑, feritin može biti lažno normalan
+- *Feritin* -- cilj *≥100 ng/mL* (AASM — Američka akademija za medicinu spavanja, 2024). POZOR: feritin je reaktant akutne faze; ako je CRP ↑, feritin može biti lažno normalan
 - *KKS* -- anemija, sideropenija
 - *TSH* -- isključiti hipotireozu
 - *GUK, kreatinin, elektroliti* -- isključiti KBB (kronična bubrežna bolest), dijabetes
 - *HbA1c, vitamin B12* -- po potrebi
 
-*PSG* -- NIJE potrebna za RLS. Indicirana samo za PLMS i pri sumnji na komorbidnu OSA-u.
+*PSG* -- NIJE potrebna za RLS. Indicirana samo za PLMS i pri sumnji na komorbidnu opstruktivnu apneju u snu (OSA).
 
 // === Crvene zastavice ===
 #v(3pt)
@@ -188,6 +188,8 @@ RLS je neurološki poremećaj s neodoljivim nagonom za pokretanjem nogu uz neugo
 ))
 
 *Gabapentin:* Početna doza 300 mg navečer, titrirati polako. Nelinearna apsorpcija -- veće doze slabije se apsorbiraju. Doza navečer ili podijeljena (17 h + navečer). Prilagodba kod bubrežne insuficijencije.
+
+#pearl[*Klinički savjet:* Gabapentin se izlučuje renalno. Provjerite bubrežnu funkciju (GFR — glomerularna filtracija) prije propisivanja i prilagodite dozu kod GFR \< 60 mL/min. Pregabalin također zahtijeva renalnu prilagodbu.]
 
 #pearl[*„Start low, go slow“:* Gabapentin započnite s 300 mg navečer. Titrirati polako — svaka 1–2 tjedna za 300 mg. Pregabalin: započeti s 75 mg. Puni učinak može zahtijevati 2–4 tjedna strpljenja.]
 

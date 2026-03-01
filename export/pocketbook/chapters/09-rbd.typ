@@ -57,7 +57,7 @@
 // === Kako prepoznati? ===
 == Kako prepoznati?
 
-RBD nastaje kad fiziološka REM atonija izostane — pacijent doslovno izvodi svoje snove. RBD je najsnažniji poznati prodrom alfa-sinukleinopatija (PD, DLB, MSA) — >80% razvit će neurodegenerativnu bolest unutar 10–15 godina. Prevalencija: u praksi s 2.000 pacijenata: 15–40 pacijenata, većina nedijagnosticiranih.
+Poremećaj ponašanja u REM snu (RBD; _REM Sleep Behavior Disorder_) nastaje kad fiziološka atonija u snu s brzim pokretima očiju (REM; _Rapid Eye Movement_) izostane — pacijent doslovno izvodi svoje snove. RBD je najsnažniji poznati prodrom alfa-sinukleinopatija (PD, DLB, MSA) — >80% razvit će neurodegenerativnu bolest unutar 10–15 godina. Prevalencija: u praksi s 2.000 pacijenata: 15–40 pacijenata, većina nedijagnosticiranih.
 
 *Kritični znakovi:*
 - Partner prijavljuje da se pacijent *tuče, udara, viče ili pada iz kreveta* u snu
@@ -68,7 +68,7 @@ RBD nastaje kad fiziološka REM atonija izostane — pacijent doslovno izvodi sv
 - Dob >50 godina
 - Ozljede tijekom sna (pacijent ili partner)
 - Hiposmija, obstipacija, ortostatska hipotenzija (prodromalni parkinsonizam)
-- Korištenje SSRI/SNRI
+- Korištenje selektivnih inhibitora ponovne pohrane serotonina (SSRI) / inhibitora ponovne pohrane serotonina i noradrenalina (SNRI)
 
 *Pitanja za partnera:*
 + „Je li Vaš partner ikada udarao, vikao ili se micao u snu?“
@@ -104,9 +104,9 @@ RBD nastaje kad fiziološka REM atonija izostane — pacijent doslovno izvodi sv
 // === Probir i dijagnostika ===
 == Probir i dijagnostika
 
-LOM ne postavlja definitivnu dijagnozu -- to zahtijeva *video-PSG s proširenim EMG montažom*. Zadaće LOM-a: (1) prepoznati sumnju, (2) primijeniti RBDSQ, (3) uputiti na PSG.
+LOM ne postavlja definitivnu dijagnozu -- to zahtijeva *video-polisomnografiju (PSG; _Polysomnography_) s proširenim EMG montažom*. Zadaće LOM-a: (1) prepoznati sumnju, (2) primijeniti RBDSQ, (3) uputiti na PSG.
 
-*RBDSQ* #see(<upitnik-rbdsq>) -- 13 da/ne pitanja, primjenjiv u čekaonici:
+*Upitnik za probir poremećaja ponašanja u REM snu (RBDSQ)* #see(<upitnik-rbdsq>) -- 13 da/ne pitanja, primjenjiv u čekaonici:
 - *≥5 bodova* = pozitivan probir → upućivanje na PSG
 - Osjetljivost 96%, specifičnost 56% (znatan broj lažno pozitivnih → PSG neophodan za potvrdu)
 
@@ -165,7 +165,7 @@ Najvažnija intervencija, *odmah*, prije dijagnostike ili farmakoterapije:
 #pearl[*5-minutni neurološki pregled na godišnjoj kontroli:* (1) MoCA ili kratki kognitivni test, (2) ortostatski RR (pad sistolički ≥20 mmHg u 3 min), (3) tapkanje prstima za bradikineziju, (4) pasivni opseg pokreta za rigiditet, (5) inspekcija za tremor u mirovanju, (6) hod: kadenca, duljina koraka, okretanje.]
 
 *Klonazepam:* 0,25 mg, titrirati svaka 1--2 tjedna. Učinkovitost 80--90%. *OPREZ:*
-- *OSA* → klonazepam pogoršava apneje (isključiti OSA ili započeti CPAP prije uvođenja)
+- *Opstruktivna apneja u snu (OSA)* → klonazepam pogoršava apneje (isključiti OSA ili započeti CPAP prije uvođenja)
 - *Starija dob (>75 g.)* → povećan rizik padova, kognitivnog pogoršanja
 - *Apneja + RBD:* česta kombinacija u starijoj dobi → melatonin je jasniji izbor
 

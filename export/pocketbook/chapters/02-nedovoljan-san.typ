@@ -57,7 +57,7 @@
 // === Kako prepoznati? ===
 == Kako prepoznati?
 
-Sindrom nedovoljnog spavanja je kronično, dobrovoljno skraćivanje sna uz posljedičnu pretjeranu dnevnu pospanost (EDS — pretjerana dnevna pospanost). Prevalencija: 20–35% odraslih habitualno spava \<7h; u praksi s 2.000 pacijenata: 300–700 odraslih.
+Sindrom nedovoljnog spavanja je kronično, dobrovoljno skraćivanje sna uz posljedičnu pretjeranu dnevnu pospanost (EDS; _Excessive Daytime Sleepiness_). Prevalencija: 20–35% odraslih habitualno spava \<7h; u praksi s 2.000 pacijenata: 300–700 odraslih.
 
 *Ključni simptomi:*
 - *Spava \<7h radnim danima, ali značajno dulje vikendom/na odmoru* (≥2h razlike)
@@ -71,7 +71,7 @@ Sindrom nedovoljnog spavanja je kronično, dobrovoljno skraćivanje sna uz poslj
 - Mikrosanovi (kratki „zastoji“ za volanom ili na poslu)
 
 *Diferencijalni tragovi:*
-- *OSA* — pospanost unatoč „dovoljnom“ vremenu u krevetu; hrkanje + apneja
+- *Opstruktivna apneja u snu (OSA; _Obstructive Sleep Apnea_)* — pospanost unatoč „dovoljnom” vremenu u krevetu; hrkanje + apneja
 - *Narkolepsija* — pospanost neovisna o trajanju sna, katapleksija
 - *Hipotireoza* — umor uz debljanje, intoleranciju hladnoće; provjera TSH
 
@@ -124,11 +124,11 @@ Istovremeno dijagnostički test i liječenje:
     text(weight: "bold")[Interpretacija],
   ),
   [EDS se povukla, ESS normaliziran], [*Dijagnoza potvrđena: nedovoljan san*],
-  [EDS perzistira unatoč snu 7–9 h ≥2 tj.], [*Isključen nedovoljan san → daljnja obrada (MSLT, PSG)*],
+  [EDS perzistira unatoč snu 7–9 h ≥2 tj.], [*Isključen nedovoljan san → daljnja obrada (MSLT, polisomnografija — PSG)*],
 )
 
 #v(4pt)
-#pearl[*MSLT NIKADA bez prethodnog adekvatnog sna ≥2 tj.* Nedovoljan san daje skraćenu latenciju i SOREMP-ove (Sleep Onset REM Period — pojava REM-a unutar 15 min od usnivanja) na MSLT-u → moguća *lažno pozitivna dijagnoza narkolepsije*.]
+#pearl[*Test višestrukih latencija spavanja (MSLT; _Multiple Sleep Latency Test_) NIKADA bez prethodnog adekvatnog sna ≥2 tj.* Nedovoljan san daje skraćenu latenciju i SOREMP-ove (Sleep Onset REM Period — pojava REM-a unutar 15 min od usnivanja) na MSLT-u → moguća *lažno pozitivna dijagnoza narkolepsije*.]
 
 #pearl[*Bifazični san nije nesanica.* Pacijent (osobito stariji) koji se budi na 1--2 h usred noći pa ponovno zaspe — ako je ukupno trajanje ≥7 h i nema dnevne pospanosti — nema poremećaj. Normalizirajte bifazični obrazac: „To nije nesanica. To je vaš prirodni ritam."]
 
@@ -152,7 +152,7 @@ Istovremeno dijagnostički test i liječenje:
 
 === Praktični protokol
 
-*1. Ciljno vrijeme u krevetu* (AASM/SRS 2015):
+*1. Ciljno vrijeme u krevetu* (AASM — Američka akademija za medicinu spavanja / SRS 2015):
 - *18–64 g.:* 7–9 h sna po noći
 - *≥65 g.:* 7–8 h sna po noći
 - Ciljati 8–8,5h u krevetu da se osigura ≥7h stvarnog sna

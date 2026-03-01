@@ -63,7 +63,7 @@
 
 // ─── 2. ISI ─────────────────────────────────────────────────────────────
 <upitnik-isi>
-== Insomnia Severity Index (ISI)
+== Indeks težine nesanice (ISI; _Insomnia Severity Index_)
 
 #text(fill: color-gray, size: 7.5pt)[7 pitanja o težini nesanice u zadnjih 2 tjedna. Svako se ocjenjuje 0–4.]
 
@@ -165,9 +165,9 @@
 
 // ─── 4. RBDSQ ────────────────────────────────────────────────────────────
 <upitnik-rbdsq>
-== RBDSQ — RBD Screening Questionnaire
+== Upitnik za probir poremećaja ponašanja u REM snu (RBDSQ)
 
-#text(fill: color-gray, size: 7.5pt)[Probir za REM poremećaj ponašanja u snu. 13 da/ne pitanja. Primjenjivo u čekaonici.]
+#text(fill: color-gray, size: 7.5pt)[Probir za poremećaj ponašanja u REM snu (RBD). 13 da/ne pitanja. Primjenjivo u čekaonici.]
 
 #v(3pt)
 #table(
@@ -207,7 +207,7 @@
     text(weight: "bold")[Interpretacija],
   ),
   [0–4], [Negativan probir],
-  [*≥5*], [*Pozitivan probir → uputiti na PSG*],
+  [*≥5*], [*Pozitivan probir → uputiti na polisomnografiju (PSG)*],
 )
 #v(1pt)
 #text(size: 6.5pt, fill: color-gray)[_Upišite zbroj „Da“ odgovora. ≥5 bodova = pozitivan probir → PSG za potvrdu._]
@@ -219,9 +219,9 @@
 
 // ─── 5. IRLS ─────────────────────────────────────────────────────────────
 <upitnik-irls>
-== IRLS — International RLS Rating Scale
+== Međunarodna ljestvica za sindrom nemirnih nogu (IRLS)
 
-#text(fill: color-gray, size: 7.5pt)[Procjena težine sindroma nemirnih nogu. 10 pitanja, svako 0–4. Primjenjivo nakon potvrde dijagnoze (4 IRLS kriterija).]
+#text(fill: color-gray, size: 7.5pt)[Procjena težine sindroma nemirnih nogu (RLS). 10 pitanja, svako 0–4. Primjenjivo nakon potvrde dijagnoze.]
 
 #v(3pt)
 #table(

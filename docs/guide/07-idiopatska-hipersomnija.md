@@ -1,14 +1,14 @@
 # 7. Idiopatska hipersomnija
 
-> **MKB-10:** G47.1 — Poremećaji s pretjeranom pospanosti (hipersomnija) | **ICSD-3:** Idiopatska hipersomnija (*Idiopathic Hypersomnia*)
+> **MKB-10 (Međunarodna klasifikacija bolesti, 10. revizija):** G47.1 — Poremećaji s pretjeranom pospanosti (hipersomnija) | **ICSD-3 (Međunarodna klasifikacija poremećaja spavanja, 3. izdanje):** Idiopatska hipersomnija (*Idiopathic Hypersomnia*)
 
 !!! brzi-pregled "Brzi pregled"
 
     **Prepoznaj:** Pretjerana pospanost + teška inercija spavanja (30-60+ min „pijanstvo od sna" ujutro) + neokrepljujući drijemovi + produljeno noćno spavanje (>10 sati). Nema katapleksije.
 
-    **Učini:** Isključi nedovoljan san PRVO (2 tjedna produženog sna). ESS + dnevnik spavanja. NE propisivati stimulanse bez specijalističke obrade.
+    **Učini:** Isključi nedovoljan san PRVO (2 tjedna produženog sna). ESS (Epworthova ljestvica pospanosti) + dnevnik spavanja. NE propisivati stimulanse bez specijalističke obrade.
 
-    **Uputi:** Ako EDS perzistira unatoč adekvatnom snu → centar za spavanje (PSG + MSLT). LOM-ova uloga: prepoznati i pravovremeno uputiti.
+    **Uputi:** Ako EDS (pretjerana dnevna pospanost) perzistira unatoč adekvatnom snu → centar za spavanje (PSG — polisomnografija + MSLT — test višestrukih latencija spavanja). LOM-ova uloga: prepoznati i pravovremeno uputiti.
 
 ---
 
@@ -18,7 +18,7 @@
 
     Uzrok je nepoznat — otuda naziv „idiopatska". IH nije lijeni pacijent, nije depresija i nije loša disciplina spavanja. Radi se o neurobiološkom poremećaju koji devastira kvalitetu života — pacijenti gube poslove, padaju ispite, raspadaju im se veze — a prosječno vrijeme do dijagnoze iznosi **10-15 godina**.
 
-    Za liječnika obiteljske medicine, ključna uloga je prepoznati kliničku sliku, isključiti česte imitatore (ponajprije sindrom nedovoljnog sna i OSA-u) te pravodobno uputiti specijalistu. Ovo je poremećaj koji se ne može dijagnosticirati u ordinaciji LOM-a, ali se u ordinaciji LOM-a može — i mora — posumnjati na njega.
+    Za liječnika obiteljske medicine, ključna uloga je prepoznati kliničku sliku, isključiti česte imitatore (ponajprije sindrom nedovoljnog sna i OSA-u — opstruktivna apneja u snu) te pravodobno uputiti specijalistu. Ovo je poremećaj koji se ne može dijagnosticirati u ordinaciji LOM-a, ali se u ordinaciji LOM-a može — i mora — posumnjati na njega.
 
 ---
 
@@ -125,7 +125,7 @@
 
     | Test | Što se traži | Kriterij za IH |
     |---|---|---|
-    | **Polisomnografija (PSG)** — noć prije MSLT-a | Isključiti OSA, PLMD; dokumentirati normalnu arhitekturu sna | Bez značajne OSA (AHI <5) ili PLMD; ukupno vrijeme spavanja često produženo |
+    | **Polisomnografija (PSG)** — noć prije MSLT-a | Isključiti OSA, PLMD (periodični pokreti udova u snu); dokumentirati normalnu arhitekturu sna | Bez značajne OSA (AHI — apneja-hipopneja indeks <5) ili PLMD; ukupno vrijeme spavanja često produženo |
     | **MSLT (test multiple latencije usnivanja)** | 5 prilika za drijemanje tijekom dana, u razmacima od 2 sata | Srednja latencija usnivanja **≤8 minuta**, ali **<2 SOREMP-a** (REM unutar 15 min od usnivanja) |
     | **Alternativa: 24-satna PSG ili aktigrafija ≥7 dana** | Dokumentirati ukupno vrijeme spavanja | **Ukupno spavanje ≥11 sati u 24 sata** |
 

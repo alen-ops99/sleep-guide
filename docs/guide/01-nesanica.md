@@ -1,22 +1,35 @@
-# 1. Nesanica (Kronična nesanica)
+# 1. Nesanica
 
-> **MKB-10:** G47.0 (organska nesanica), F51.0 (neorganska nesanica) | **ICSD-3:** Kronični poremećaj nesanice (*Chronic Insomnia Disorder*)
+> **MKB-10 (Međunarodna klasifikacija bolesti, 10. revizija):** G47.0 (organska nesanica), F51.0 (neorganska nesanica) | **ICSD-3 (Međunarodna klasifikacija poremećaja spavanja, 3. izdanje):** Kronični poremećaj nesanice (*Chronic Insomnia Disorder*)
 
 !!! brzi-pregled "Brzi pregled"
 
     **Prepoznaj:** Teškoća usnivanja ili održavanja sna ≥3 noći/tjedan kroz ≥3 mjeseca + dnevna disfunkcija (umor, iritabilnost, pad koncentracije).
 
-    **Učini:** ISI upitnik (≥15 = intervencija). Započni CBT-I (restrikcija sna + kontrola stimulusa) — NE benzodiazepine kao prvu liniju. Obavezno pitaj o hrkanju (COMISA!).
+    **Učini:** ISI (Indeks težine nesanice) upitnik (≥15 = intervencija). Započni CBT-I (kognitivno-bihevioralna terapija za nesanicu — restrikcija sna + kontrola stimulusa) — NE benzodiazepine kao prvu liniju. Obavezno pitaj o hrkanju (COMISA — komorbidna nesanica i opstruktivna apneja u snu!).
 
-    **Uputi:** Ako nema odgovora na bihevioralne mjere 4-6 tjedana → psiholog/psihijatar s CBT-I edukacijom. Ako sumnja na OSA → pulmolog.
+    **Uputi:** Ako nema odgovora na bihevioralne mjere 4-6 tjedana → psiholog/psihijatar s CBT-I edukacijom. Ako sumnja na OSA (opstruktivna apneja u snu) → pulmolog.
 
 ---
+
+!!! warning "Prije dijagnoze nesanice — isključite druge uzroke"
+
+    Prije postavljanja dijagnoze nesanice, isključite sljedeće:
+
+    - **Cirkadijani poremećaji** — Spava li pacijent dobro vikendom? Ako da → moguć pomak faze (DSWPD — poremećaj faze odgođenog spavanja), ne nesanica. (→ Pogl. 8)
+    - **Periodični pokreti udova (PLMS — _Periodic Limb Movement Disorder_)** — Buđenja bez jasnog razloga? Partner primjećuje trzaje nogu? (→ Pogl. 5)
+    - **Opstruktivna apneja u snu (OSA)** — Hrkanje? Svjedočene apneje? BMI >30? (→ Pogl. 3)
+    - **Sindrom nemirnih nogu (RLS — _Restless Legs Syndrome_)** — Nemir u nogama navečer koji se poboljšava kretanjem? (→ Pogl. 5)
+    - **Parasomnije** — Neobično ponašanje u snu (hodanje, vikanje)? (→ Pogl. 7, 9)
+    - **Psihijatrijski uzroci** — Depresija, anksioznost, PTSP (posttraumatski stresni poremećaj) — liječiti paralelno, ne umjesto nesanice
 
 ??? note "Što je to?"
 
     Kronična nesanica je **subjektivna teškoća usnivanja, održavanja sna ili preranog buđenja**, unatoč adekvatnoj prilici za spavanje, uz posljedičnu dnevnu disfunkciju (umor, iritabilnost, smanjena koncentracija, pad radne sposobnosti).
 
     Današnje smjernice (ICSD-3) definiraju jedinstvenu dijagnozu — **kronični poremećaj nesanice** — i naglašavaju da nesanicu treba liječiti i kada postoji komorbiditet (depresija, bol, OSA), jer se rijetko spontano povlači nakon liječenja osnovnog stanja.
+
+    **Akutna (kratkotrajna) nesanica** traje < 3 mjeseca i najčešće je precipitirana stresom, bolešću ili promjenom okoline. U većini slučajeva prolazi spontano. Intervencija LOM-a: higijena sna, edukacija, kratkoročni hipnotik (do 2 tjedna) ako je potreban. **Ključno:** prevenirati kronifikaciju — ako traje > 4 tjedna, započeti CBT-I (kognitivno-bihevioralna terapija za nesanicu) elemente.
 
 ---
 
@@ -70,7 +83,7 @@
     - „Koliko vremena provodite u krevetu?" — nesaničari često provode 9–10 sati u krevetu za 5–6 sati sna
     - „Hrčete li? Imate li pauze u disanju?" — **obavezno pitanje** za isključivanje OSA (COMISA)
     - „Imate li nemir u nogama navečer?" — diferencijalna dijagnoza: sindrom nemirnih nogu (RLS)
-    - „Koji lijekove uzimate?" — mnogi lijekovi pogoršavaju nesanicu (SSRI, kortikosteroidi, beta-blokatori, teofilin)
+    - „Koji lijekove uzimate?" — mnogi lijekovi pogoršavaju nesanicu (SSRI — selektivni inhibitori ponovne pohrane serotonina, kortikosteroidi, beta-blokatori, teofilin)
     - „Koliko kofeina pijete, i kada?" — čest, a zanemareni čimbenik
 
 ---
@@ -117,7 +130,7 @@
 
     ### Što zahtijeva specijalista
 
-    - **Polisomnografija (PSG)** — NIJE indicirana za rutinsku nesanicu. Indicirana samo kada se sumnja na komorbidnu OSA, periodične pokrete udova (PLMD) ili parasomnije
+    - **Polisomnografija (PSG)** — NIJE indicirana za rutinsku nesanicu. Indicirana samo kada se sumnja na komorbidnu OSA, periodične pokrete udova u snu (PLMD — *Periodic Limb Movement Disorder*) ili parasomnije
     - **Aktigrafija** — korisna za procjenu cirkadijanih poremećaja; u Hrvatskoj ograničeno dostupna
     - **Kognitivno testiranje** — ako postoji sumnja na neurodegenerativni proces
 
@@ -127,7 +140,7 @@
 
     ### Prva linija: kognitivno-bihevioralna terapija za nesanicu (CBT-I)
 
-    > ⚠️ **CBT-I je jedina terapija s razinom dokaza Ia za kroničnu nesanicu — prva je linija liječenja prema SVIM važećim smjernicama (AASM, ACP, ESRS, NICE).** Propisivanje hipnotika bez ponude ili pokušaja CBT-I predstavlja suboptimalnu skrb.
+    > ⚠️ **CBT-I je jedina terapija s razinom dokaza Ia za kroničnu nesanicu — prva je linija liječenja prema SVIM važećim smjernicama (AASM — Američka akademija za medicinu spavanja, ACP, ESRS — Europsko društvo za istraživanje spavanja, NICE).** Propisivanje hipnotika bez ponude ili pokušaja CBT-I predstavlja suboptimalnu skrb.
 
     **Što je CBT-I?** Strukturirani program od **4–8 seansi** koji uključuje:
 
@@ -154,13 +167,19 @@
 
     | Lijek | Doza | Trajanje | Napomene |
     |---|---|---|---|
-    | **Zolpidem** | 5–10 mg (žene: 5 mg) | Do 4 tjedna | Z-lijek; oprez: kompleksno ponašanje u snu (SRED, somnambulizam); ne za dugotrajnu upotrebu |
+    | **Trazodon** (off-label) | 25–75 mg | Dulje prikladan | Sedativan bez rizika ovisnosti; do 75–100 mg za nesanicu — više od toga nije preporučljivo (plafon sedacije ~50 mg); oprez: ortostatska hipotenzija, prijapizam (rijetko). Provjerite jetrenu funkciju (hepatalni metabolizam, CYP3A4). |
+    | **Daridorexant (Quviviq)** | 25–50 mg | Dulje prikladan | DORA (dualni antagonist receptora oreksina); dostupan u HR od 2025. (HALMED). Bez rizika ovisnosti, bez rebound nesanice. Kontraindiciran uz jake CYP3A4 inhibitore. |
+    | **Zolpidem** | 5–10 mg (žene: 5 mg) | Do 4 tjedna | Z-lijek; oprez: kompleksno ponašanje u snu (SRED — poremećaj jedenja u snu, somnambulizam); ne za dugotrajnu upotrebu |
     | **Melatonin** (s produljenim otpuštanjem) | 2 mg | Do 13 tjedana (>55 god.) | Skroman učinak na nesanicu; koristan za cirkadijanu komponentu; ne djeluje kao hipnotik |
-    | **Trazodon** (off-label) | 25–100 mg | Dulje prikladan | Antidepresiv u niskoj dozi; sedativan bez rizika ovisnosti; oprez: ortostatska hipotenzija, prijapizam (rijetko) |
-    | **Hidroksizin** | 25–50 mg | Kratkoročno | Antihistaminik; sedativan; antikolinergički učinci ograničavaju uporabu u starijih |
-    | **Benzodiazepini** (diazepam, oksazepam) | — | **Izbjegavati** | Tolerancija, ovisnost, padovi u starijih, rebound nesanica; NE koristiti kao prvu liniju |
+    | **Benzodiazepini** (temazepam, diazepam) | — | **Apsolutno posljednja opcija** | Tolerancija, ovisnost, padovi u starijih, rebound nesanica; NE koristiti kao prvu liniju — samo iznimno, kratkoročno, uz plan ukidanja |
 
-    > ⚠️ **Važno:** Lijekovi koji NISU dostupni u Hrvatskoj ili nemaju indikaciju za nesanicu: eszopiclone, suvorexant, lemborexant, daridorexant, ramelteon, doxepin u niskoj dozi (3–6 mg). Ne propisivati i ne obećavati pacijentu pristup ovim lijekovima.
+    > ⚠️ **Antihistaminici (npr. hidroksizin) NISU indicirani za nesanicu.** Nedovoljni dokazi za učinkovitost, značajni antikolinergički učinci, osobito štetni u starijih (sedacija, konfuzija, suha usta, retencija urina). Ne propisivati za nesanicu.
+
+    > **Također korisni (off-label):** Mirtazapin u niskoj dozi (7,5–15 mg) — koristan kod komorbidne depresije ili gubitka apetita. Amitriptilin u niskoj dozi (10–25 mg) — koristan kod komorbidne kronične boli. Oba su off-label za nesanicu.
+
+    > ⚠️ **Lijekovi koji NISU dostupni u Hrvatskoj:** eszopiclone, suvorexant, lemborexant, ramelteon. Doxepin u niskoj dozi (3–6 mg) — nije dostupan u HR unatoč FDA odobrenju za nesanicu.
+
+    > **Napomena o trazodonu:** AASM smjernice (Sateia 2017) uvjetno preporučuju PROTIV trazodona za nesanicu zbog ograničenih dokaza. Međutim, u kontekstu HR — gdje su opcije ograničene — trazodon ostaje najpraktičnija opcija s povoljnim sigurnosnim profilom. Europska praksa (ESRS) šire koristi trazodon. **Doza do 75–100 mg; više od toga nije preporučljivo za nesanicu** (plafon sedacije je oko 50 mg — iznad toga rastu samo nuspojave bez dodatnog hipnotičkog učinka).
 
     **Stariji pacijenti (>65 godina):** Benzodiazepini i Z-lijekovi su na Beers listi za izbjegavanje (padovi, frakture, delirijum). Prva linija ostaje CBT-I; ako je nužan lijek → trazodon 25–50 mg ili melatonin 2 mg.
 
@@ -170,12 +189,44 @@
 
 ---
 
+??? note "Nesanica u djece i adolescenata"
+
+    Nesanica je **najčešći pedijatrijski poremećaj spavanja**. Dvije su glavne forme:
+
+    ### Bihevioralna nesanica dječje dobi
+
+    **Tip 1 — Poremećaj asocijacije na usnivanje (*Sleep-onset association type*):**
+    - Dijete može zaspati samo uz specifičnu pomoć roditelja (ljuljanje, dojenje, ležanje s djetetom)
+    - Bez te pomoći — ne može zaspati ili se ponovo uspavati nakon noćnog buđenja
+    - Buđenja su česta jer dijete traži isti kontekst usnivanja
+
+    **Tip 2 — Poremećaj postavljanja granica (*Limit-setting type*):**
+    - Dijete odbija ići spavati ili izlazi iz kreveta (traženje vode, priče, "još 5 minuta")
+    - Roditelj ne postavlja ili ne provodi dosljedne granice
+    - Rezultat: odgođeno usnivanje, nedovoljan san, dnevne posljedice
+
+    ### Upravljanje u ordinaciji LOM-a
+
+    - **Edukacija roditelja** o zdravim navikama spavanja (konzistentan raspored, rutina prije spavanja, samostalno usnivanje)
+    - **Postupno uklanjanje asocijacija** na usnivanje (npr. postupno smanjivanje prisustva roditelja)
+    - **Dosljedne granice** — jasna pravila i rutine, bez popuštanja
+    - **Farmakoterapija u djece** — izbjegavati osim u iznimnim okolnostima (melatonin za poremećaj cirkadijanog ritma u adolescenata, kratkoročno)
+
+    ### Kada uputiti
+
+    - Nesanica koja značajno narušava školski uspjeh ili obiteljsko funkcioniranje
+    - Sumnja na komorbidni poremećaj (ADHD, anksiozni poremećaj, poremećaj autističnog spektra)
+    - Sumnja na opstruktivnu apneju u snu u djece (hrkanje, adenotonzilarna hipertrofija)
+    - Neuspjeh bihevioralnih intervencija nakon 4–6 tjedana dosljedne primjene
+
+---
+
 ??? note "Kada uputiti specijalistu?"
 
     | Uputiti kada... | Kamo | Razlog |
     |---|---|---|
     | ISI ≥15 i nema odgovora na osnovne bihevioralne mjere (4–6 tjedana) | Psiholog/psihijatar s CBT-I edukacijom | Potreban strukturirani CBT-I program |
-    | Sumnja na komorbidnu OSA (hrkanje, apneje, BMI >30, Epworth >10) | Centar za medicinu spavanja / pulmolog | PSG za potvrdu dijagnoze i titraciju CPAP-a |
+    | Sumnja na komorbidnu OSA (hrkanje, apneje, BMI >30, Epworth >10) | Centar za medicinu spavanja / pulmolog | PSG za potvrdu dijagnoze i titraciju CPAP-a (kontinuirani pozitivni tlak u dišnim putovima) |
     | Ovisnost o benzodiazepinima ili Z-lijekovima | Psihijatar | Postupna redukcija uz nadzor; zamjenska terapija |
     | Rezistentna nesanica unatoč CBT-I + farmakoterapiji (>3 mjeseca) | Centar za medicinu spavanja | Evaluacija za skrivene komorbiditete (PLMD, cirkadijani poremećaj) |
     | Sumnja na psihijatrijsku etiologiju (teška depresija, bipolarni poremećaj, PTSP) | Psihijatar | Optimizacija psihofarmakoterapije |
@@ -223,8 +274,10 @@
 
 <!--
 NAPOMENE ZA AUTORA:
-- Provjereno: zolpidem, melatonin (retard), trazodon, hidroksizin — svi dostupni na HALMED-u (veljača 2026)
-- Provjereno: eszopiclone, suvorexant, lemborexant, daridorexant, ramelteon, doxepin 3-6mg — NISU dostupni u HR
+- Provjereno: zolpidem, melatonin (retard), trazodon — svi dostupni na HALMED-u (veljača 2026)
+- Provjereno: daridorexant (Quviviq) — DOSTUPAN u HR od 2025. (HALMED)
+- UKLONJENO: Hidroksizin — antihistaminici NISU indicirani za nesanicu
+- Provjereno: eszopiclone, suvorexant, lemborexant, ramelteon, doxepin 3-6mg — NISU dostupni u HR
 - ISI cutoffs prema Bastien et al. 2001 (referenca 5)
 - COMISA prevalencija prema Sweetman et al. 2019 (referenca 6)
 - CBT-I smjernice: AASM 2021 (referenca 8), ACP 2016 (referenca 2), ESRS 2017 (referenca 1)
